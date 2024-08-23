@@ -240,8 +240,12 @@ export default function Gettingthingsdone() {
                                 <div>
                                     <h2>Workshop</h2>
                                     <div class="workshop-date">
-                                        <h6><i class="fa fa-calendar" aria-hidden="true"></i>18th April ,2024</h6>
-                                        <h6><i class="fa fa-clock-o" aria-hidden="true"></i>9:00 AM - 5:30 PM</h6>
+                                        <h6><i class="fa fa-calendar" aria-hidden="true"></i>23rd August 2024</h6>
+                                        <h6><i class="fa fa-clock-o" aria-hidden="true"></i>10:00 AM - 5:00 PM</h6>
+                                        
+                                    </div>
+                                    <div class="workshop-date">
+                                    <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Bangalore</h5>
                                     </div>
                                 </div>
                                {/* <div>
@@ -297,8 +301,8 @@ export default function Gettingthingsdone() {
                                             <option value="Getting Things Done - November 9th to 10th, 2023">Getting Things Done - November 9th to 10th, 2023</option> */}
                                             
                                             {/* <option value="Getting Things Done, Workshop -  February 7th, 2024">Getting Things Done, Workshop - February 7th, 2024</option>*/}
-                                            <option value="Getting Things Done,Workshop -  18th April 2024">Getting Things Done, Workshop - 18th April, 2024</option>
-                                           
+                                            <option value="Getting Things Done,Workshop - 23rd August 2024">Getting Things Done, Workshop - 23rd August 2024</option>
+                                            
 
                                           
 
