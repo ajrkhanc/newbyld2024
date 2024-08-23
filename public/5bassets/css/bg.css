@@ -1,0 +1,18 @@
+.indusbg1 {
+    background: url(/5bassets/img/automobile.jpg) !important;
+  }
+
+  .homeslbgsl {
+    background: url(/5bassets/img/home-byld-banner.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+  }
+
+  .countersetion {
+    background: url(/5bassets/img/teams.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+  }

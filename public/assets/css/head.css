@@ -1,0 +1,20 @@
+@media (max-width:800px){
+    #rs-header .logo-area{
+        position: static;
+    }
+
+    #rs-header .container-fluid{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #rs-header .rs-menu-area{
+        margin-right: 0px;
+    }
+
+    .assesmentbannnertop h2 {
+        font-size: 25px !important;       
+        line-height: 36px !important;
+        padding-top: 21px !important;
+    }
+}

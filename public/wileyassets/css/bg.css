@@ -1,0 +1,18 @@
+.indusbg1 {
+    background: url(/wileyassets/img/automobile.jpg) !important;
+  }
+
+  .homeslbgsl {
+    background: url(/wileyassets/img/home-byld-banner.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+  }
+
+  .countersetion {
+    background: url(/wileyassets/img/teams.jpg) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+  }

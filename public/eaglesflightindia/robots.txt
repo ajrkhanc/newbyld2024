@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://byldgroup.com/eaglesflightindia/sitemap.xml

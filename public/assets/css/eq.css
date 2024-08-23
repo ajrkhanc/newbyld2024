@@ -1,0 +1,290 @@
+
+.imgbox{
+    width: 100%;
+   
+  }
+  
+  .imgbox img{
+    width: 100%;
+  }
+  .dtciun{
+    text-align: center;
+    margin-top: -75px;
+    margin-bottom: 27px;
+  }
+  
+  .dtciun h2{
+    color: white;
+      font-size: 57px;
+      line-height: 67px;
+      margin: 0px;
+  }
+  
+  .dtciun h2 span{
+    color: #ffaa00;
+  }
+  
+  .lsbtn{
+    color: #e88026;
+      font-size: 28px;
+      border: 2px solid #e88026;
+      border-radius: 20px;
+      padding: 4px 20px;
+  }
+  
+  .tmmcolor{
+    background-color: #3373af;
+  }
+  
+  .pad00{
+    padding: 0px !important;
+  }
+  
+  .tblcon{
+    padding-top: 120px;
+  }
+  .tblcon span{
+    background: #3373af;
+    color: #fff;
+    padding: 5px 28px;
+    font-size: 18px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    margin-top: 70px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .ccmdc h4{
+    font-size: 28px;
+    color: #000;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .ccmdc h5{
+    font-size: 26px;
+    color: #000;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  
+  .ccmdc h3{
+    font-size: 30px;
+    color: #000;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 1px;
+  }
+  
+  .ccmdc h2{
+    font-size: 33px;
+    color: #000;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 1px;
+  }
+  
+  .ccmdc p{
+    color: #000;
+      font-size: 19px;
+      line-height: 35px;
+  }
+  .ccmdc2 p{
+    margin-bottom: 10px;
+  }
+  
+  .clred{
+    color: #e22027;
+  }
+  
+  .clorg{
+    color: #f3a41d;
+  }
+  
+  .boximg{
+    text-align: center;
+    width: 100%;
+  }
+  .boximg img{
+    text-align: center;
+    width: 75%;
+  }
+  .tblx1{
+    width: 100%;
+  }
+  .tblx1 td{
+    border: 1px solid #000;
+    padding: 5px;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .tblx1 th{
+    border: 1px solid #000;
+    padding: 10px;
+    color: #000;
+    font-size: 19px;
+  }
+  
+  
+  .tblccl{
+    padding: 5px;
+  }
+  .tblcx2 td{
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-size: 17px;
+  }
+  
+  .tblcx2 th{
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .tblcx2 td h5{  
+    color: #fff;
+      font-size: 19px;
+      margin: 0px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      line-height: 25px;
+  }
+  
+  .tblcx2 td p{
+    font-size: 16px;
+      margin: 0px;
+      line-height: 21px;
+  }
+  .ajwh{
+    padding: 29px 15px 15px 15px;
+  }
+  .ajwh h4{
+    color: #000;
+    font-size: 30px;
+    margin: 0px;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  
+  .ajwh p{
+    font-size: 18px;
+    color: #000;
+    margin: 0px;
+  }
+  
+  .tclbg{
+    background-color: #3373af;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 12px 10px;
+    margin: 0px;
+    margin-bottom: 8px;
+  }
+  
+  .dtcilogol img{
+    /* width: 220px; */
+  }
+  
+  .dtcilogor{
+  text-align: right;
+  padding-bottom: 11px;
+  }
+  .dtcilogor img{
+    width: 220px;
+  }
+  
+  .dtcibgc{
+    background: #dddddd;
+  }
+  
+  .bgcwww{
+    background-color: #fff;
+  
+  }
+  
+  .cckv{
+    padding: 0px !important;
+  }
+  .cckv span{
+    border-bottom: 1px solid #000000;
+    width: 100%;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .ajoot1{
+    border: 0px !important;
+  }
+  .ajoot2{
+    border: 3px solid #2fac67 !important;
+  }
+  
+  .pabb1{
+    padding-bottom: 385px !important;
+  }
+  
+  .hfor h4{
+    margin-bottom: 0px;
+  }
+  
+  .hfor h3{
+    line-height: 30px;
+  }
+  
+  .ajp .estimate-info li:before {
+   background-color: none !important;
+   top: 4px;
+   width: 17px;
+   height: 17px;
+   background: url(/assets/img/unchecked.png);
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   left: -2px;
+  }
+  
+  .ajcbg{
+    background: url(/assets/img/cloud-bg.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 68% 52%;
+    min-height: 1130px;
+  }
+  
+  .ajcbg table{
+    background-color: #fff;
+  }
+  
+  .byldlc{
+  
+  }
+  
+  .byldlc img{
+    width: 150px;
+  }
+  
+  .cclmc{
+    text-align: right;
+    margin-bottom: -50px;
+    padding-top: 24px;
+  }
+  .marrcv{
+    margin-bottom: -20px !important;
+  }
+  
+  .ajjcvb{
+    text-align: center;
+  }
+  
+  .ajjcvb img{
+    width: 80%;
+  }
