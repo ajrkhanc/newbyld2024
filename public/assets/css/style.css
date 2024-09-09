@@ -9005,7 +9005,62 @@ body .search-modal .close:hover {
 
 
 
-* new workshop css  */
+/* new workshop css  */
+
+
+.modalHeadingPdf{
+  background-color: #3474af;
+}
+
+.modalHeadingPdf h3{
+  font-size: 25px;
+   text-align: center;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.event-table th, .event-table td {
+  padding: 10px;
+  border: 1.6px solid #e65b00;
+  text-align: left;
+  
+}
+
+.event-table th {
+  background-color: #3474af;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+
+.event-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.event-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.event-table td {
+  font-size: 16px;
+  color: #333;
+   font-weight: bold;
+}
+
+.pdfAddress ul{
+  text-align: center;
+}
+
+.pdfAddress ul li{
+  font-size: 14.5px;
+  color: #333;
+   font-weight: bold;
+}
+
+
 .orangebtn{
   background-color: #E5532A;
   border-radius: 30px;
