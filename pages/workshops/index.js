@@ -9,7 +9,7 @@ export default function Workshops() {
         <link rel="canonical" href="https://byldgroup.com/workshops" />
         <meta
           name="description"
-          content=""
+          content="workshop"
         />
         <link
           rel="stylesheet"
