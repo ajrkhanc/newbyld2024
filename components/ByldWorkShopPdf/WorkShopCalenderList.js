@@ -3,12 +3,9 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneVolume } from "react-icons/fa6";
 
 function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
-  function downloadAsPDF() {
-    var element = document.getElementById('demo');
-    html2pdf(element);
-}
+
   return (
-    <Modal isOpen={isOpen} OpenViewCalender={OpenViewCalender} id='demo'>
+    <Modal isOpen={isOpen} OpenViewCalender={OpenViewCalender} >
       <ModalHeader toggle={OpenViewCalender}>
         <div className="canvas-logo  text-center workshopPdfLogo">
           <a href="/">
@@ -19,7 +16,7 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
       <ModalBody className="p-0 pb-5">
         <div className=" p-3  modalHeadingPdf">
           <h3 className="text-white  mb-0">
-            BYLD Group Open Programs 2024-2025<a onClick={downloadAsPDF}><i className="fa fa-download" aria-hidden="true"></i></a>
+            BYLD Group Open Programs 2024-2025
           </h3>
         </div>
         <div className=" p-4 table-responsive">
