@@ -269,7 +269,7 @@ export default function BrowseCourses() {
         setTimeout(() => {
           window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
           setIsLoading(false); // Stop the loader after redirection
-        }, 4000);
+        }, 3000);
       }
     } catch (error) {
       console.error("Error during form submission:", error);
