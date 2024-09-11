@@ -3,217 +3,6 @@ import { Spinner } from "reactstrap";
 import { useState } from "react";
 
 export default function BrowseCourses() {
-  // const [isLoading, setIsLoading] = useState(false);
-
-  // const submitF = async (event) => {
-  //   event.preventDefault();
-  //   setIsLoading(true); // Start the loader
-  //   document.getElementById("submitbuttonform").value = "Submitting form....";
-
-  //   var trust1 = event.target.trust1.value;
-  //   var trust2 = event.target.trust2.value;
-  //   var trust3 = event.target.trust3.value;
-  //   var trust4 = event.target.trust4.value;
-  //   var trust5 = event.target.trust5.value;
-
-  //   var ec1 = event.target.ec1.value;
-  //   var ec2 = event.target.ec2.value;
-  //   var ec3 = event.target.ec3.value;
-  //   var ec4 = event.target.ec4.value;
-  //   var ec5 = event.target.ec5.value;
-  //   var ec6 = event.target.ec6.value;
-  //   var ec7 = event.target.ec7.value;
-  //   var ec8 = event.target.ec8.value;
-  //   var ec9 = event.target.ec9.value;
-  //   var ec10 = event.target.ec10.value;
-  //   var ec11 = event.target.ec11.value;
-  //   var ec12 = event.target.ec12.value;
-  //   var ec13 = event.target.ec13.value;
-  //   var ec14 = event.target.ec14.value;
-
-  //   var pf1 = event.target.pf1.value;
-  //   var pf2 = event.target.pf2.value;
-  //   var pf3 = event.target.pf3.value;
-  //   var pf4 = event.target.pf4.value;
-  //   var pf5 = event.target.pf5.value;
-  //   var pf6 = event.target.pf6.value;
-
-  //   var cr1 = event.target.cr1.value;
-  //   var cr2 = event.target.cr2.value;
-  //   var cr3 = event.target.cr3.value;
-  //   var cr4 = event.target.cr4.value;
-  //   var cr5 = event.target.cr5.value;
-
-  //   var organization = "Null";
-  //   const name = event.target.name.value;
-  //   const email = event.target.email.value;
-  //   const phone = event.target.phone.value;
-  //   var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
-  //   nameurl = nameurl.toLowerCase();
-  //   const newnameurl = nameurl.split(" ").join("-") + phone;
-  //   const result = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
-
-  //   var xhr = new XMLHttpRequest();
-  //   xhr.open("POST", "https://clblogs.vercel.app/api/career-coaching-snapshot");
-  //   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  //   xhr.send(
-  //     "trust1=" +
-  //       trust1 +
-  //       "&trust2=" +
-  //       trust2 +
-  //       "&trust3=" +
-  //       trust3 +
-  //       "&trust4=" +
-  //       trust4 +
-  //       "&trust5=" +
-  //       trust5 +
-  //       "&ec1=" +
-  //       ec1 +
-  //       "&ec2=" +
-  //       ec2 +
-  //       "&ec3=" +
-  //       ec3 +
-  //       "&ec4=" +
-  //       ec4 +
-  //       "&ec5=" +
-  //       ec5 +
-  //       "&ec6=" +
-  //       ec6 +
-  //       "&ec7=" +
-  //       ec7 +
-  //       "&ec8=" +
-  //       ec8 +
-  //       "&ec9=" +
-  //       ec9 +
-  //       "&ec10=" +
-  //       ec10 +
-  //       "&ec11=" +
-  //       ec11 +
-  //       "&ec12=" +
-  //       ec12 +
-  //       "&ec13=" +
-  //       ec13 +
-  //       "&ec14=" +
-  //       ec14 +
-  //       "&pf1=" +
-  //       pf1 +
-  //       "&pf2=" +
-  //       pf2 +
-  //       "&pf3=" +
-  //       pf3 +
-  //       "&pf4=" +
-  //       pf4 +
-  //       "&pf5=" +
-  //       pf5 +
-  //       "&pf6=" +
-  //       pf6 +
-  //       "&cr1=" +
-  //       cr1 +
-  //       "&cr2=" +
-  //       cr2 +
-  //       "&cr3=" +
-  //       cr3 +
-  //       "&cr4=" +
-  //       cr4 +
-  //       "&cr5=" +
-  //       cr5 +
-  //       "&name=" +
-  //       name +
-  //       "&email=" +
-  //       email +
-  //       "&phone=" +
-  //       phone +
-  //       "&organization=" +
-  //       organization +
-  //       "&newnameurl=" +
-  //       newnameurl
-  //   );
-
-  //   logmaintane(name, phone, email, organization, "IOC-assessment", result);
-
-  //   xhr.onreadystatechange = function () {
-  //     if (xhr.readyState === 4 && xhr.status === 200) {
-  //       var data = JSON.parse(xhr.responseText);
-  //       document.getElementById("response").innerHTML = data.message;
-
-  //       if (data.status === 0) {
-  //         var xhttp = xhr;
-  //         xhttp.open(
-  //           "POST",
-  //           "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback"
-  //         );
-  //         xhttp.setRequestHeader(
-  //           "Content-Type",
-  //           "application/x-www-form-urlencoded"
-  //         );
-  //         xhttp.send(
-  //           "name=" +
-  //             name +
-  //             "&email=" +
-  //             email +
-  //             "&phone=" +
-  //             phone +
-  //             "&result=" +
-  //             result
-  //         );
-
-  //         window.setTimeout(function () {
-  //           window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
-  //           setIsLoading(false); // Stop the loader after redirecting
-  //         }, 6000);
-  //       }
-  //     } else {
-  //       setTimeout(function () {
-  //         document.getElementById("response").innerHTML =
-  //           "Fetching your result";
-  //         document.getElementById("response").innerHTML = "";
-  //         document.getElementById("submitbuttonform").value = "Submit";
-  //         setIsLoading(false); // Stop the loader on error
-  //       }, 8000);
-  //     }
-  //   };
-
-  //   xhr.onerror = function () {
-  //     console.log("error");
-  //     setIsLoading(false); // Stop the loader if there's an error
-  //   };
-  // };
-
-  // function logmaintane(
-  //   nameabc,
-  //   phoneabc,
-  //   emailabc,
-  //   organizationabc,
-  //   assessmentabc,
-  //   resultabc
-  // ) {
-  //   var person = new Object();
-  //   person.name = nameabc;
-  //   person.phone = phoneabc;
-  //   person.email = emailabc;
-  //   person.organization = organizationabc;
-  //   person.assesment = assessmentabc;
-  //   person.result = resultabc;
-
-  //   $.ajax({
-  //     url: "https://api.yoma.co.in/api/IOCAssesmentByld",
-  //     type: "POST",
-  //     dataType: "json",
-  //     crossDomain: true,
-  //     "Access-Control-Allow-Origin": "*",
-
-  //     data: person,
-  //     success: function (data, textStatus, xhr) {
-  //       console.log(data);
-  //     },
-  //     error: function (xhr, textStatus, errorThrown) {
-  //       console.log("Error in Operation");
-  //     },
-  //   });
-  // }
-
-
-
   const [isLoading, setIsLoading] = useState(false);
 
   const submitF = async (event) => {
@@ -221,94 +10,305 @@ export default function BrowseCourses() {
     setIsLoading(true); // Start the loader
     document.getElementById("submitbuttonform").value = "Submitting form....";
 
-    // Extracting form data
-    const formData = new FormData(event.target);
-    const data = new URLSearchParams(formData); // Converting form data to URL-encoded format
+    var trust1 = event.target.trust1.value;
+    var trust2 = event.target.trust2.value;
+    var trust3 = event.target.trust3.value;
+    var trust4 = event.target.trust4.value;
+    var trust5 = event.target.trust5.value;
 
-    const name = formData.get("name");
-    const phone = formData.get("phone");
-    const email = formData.get("email");
+    var ec1 = event.target.ec1.value;
+    var ec2 = event.target.ec2.value;
+    var ec3 = event.target.ec3.value;
+    var ec4 = event.target.ec4.value;
+    var ec5 = event.target.ec5.value;
+    var ec6 = event.target.ec6.value;
+    var ec7 = event.target.ec7.value;
+    var ec8 = event.target.ec8.value;
+    var ec9 = event.target.ec9.value;
+    var ec10 = event.target.ec10.value;
+    var ec11 = event.target.ec11.value;
+    var ec12 = event.target.ec12.value;
+    var ec13 = event.target.ec13.value;
+    var ec14 = event.target.ec14.value;
 
-    let nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
+    var pf1 = event.target.pf1.value;
+    var pf2 = event.target.pf2.value;
+    var pf3 = event.target.pf3.value;
+    var pf4 = event.target.pf4.value;
+    var pf5 = event.target.pf5.value;
+    var pf6 = event.target.pf6.value;
+
+    var cr1 = event.target.cr1.value;
+    var cr2 = event.target.cr2.value;
+    var cr3 = event.target.cr3.value;
+    var cr4 = event.target.cr4.value;
+    var cr5 = event.target.cr5.value;
+
+    var organization = "Null";
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const phone = event.target.phone.value;
+    var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
+    nameurl = nameurl.toLowerCase();
     const newnameurl = nameurl.split(" ").join("-") + phone;
-    const resultUrl = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
+    const result = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
 
-    try {
-      // Send the main POST request using Fetch API
-      const response = await fetch("https://clblogs.vercel.app/api/career-coaching-snapshot", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: data,
-      });
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://clblogs.vercel.app/api/career-coaching-snapshot");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send(
+      "trust1=" +
+        trust1 +
+        "&trust2=" +
+        trust2 +
+        "&trust3=" +
+        trust3 +
+        "&trust4=" +
+        trust4 +
+        "&trust5=" +
+        trust5 +
+        "&ec1=" +
+        ec1 +
+        "&ec2=" +
+        ec2 +
+        "&ec3=" +
+        ec3 +
+        "&ec4=" +
+        ec4 +
+        "&ec5=" +
+        ec5 +
+        "&ec6=" +
+        ec6 +
+        "&ec7=" +
+        ec7 +
+        "&ec8=" +
+        ec8 +
+        "&ec9=" +
+        ec9 +
+        "&ec10=" +
+        ec10 +
+        "&ec11=" +
+        ec11 +
+        "&ec12=" +
+        ec12 +
+        "&ec13=" +
+        ec13 +
+        "&ec14=" +
+        ec14 +
+        "&pf1=" +
+        pf1 +
+        "&pf2=" +
+        pf2 +
+        "&pf3=" +
+        pf3 +
+        "&pf4=" +
+        pf4 +
+        "&pf5=" +
+        pf5 +
+        "&pf6=" +
+        pf6 +
+        "&cr1=" +
+        cr1 +
+        "&cr2=" +
+        cr2 +
+        "&cr3=" +
+        cr3 +
+        "&cr4=" +
+        cr4 +
+        "&cr5=" +
+        cr5 +
+        "&name=" +
+        name +
+        "&email=" +
+        email +
+        "&phone=" +
+        phone +
+        "&organization=" +
+        organization +
+        "&newnameurl=" +
+        newnameurl
+    );
 
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
+    logmaintane(name, phone, email, organization, "IOC-assessment", result);
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
+        document.getElementById("response").innerHTML = data.message;
+
+        if (data.status === 0) {
+          var xhttp = xhr;
+          xhttp.open(
+            "POST",
+            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback"
+          );
+          xhttp.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded"
+          );
+          xhttp.send(
+            "name=" +
+              name +
+              "&email=" +
+              email +
+              "&phone=" +
+              phone +
+              "&result=" +
+              result
+          );
+
+          window.setTimeout(function () {
+            window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+            setIsLoading(false); // Stop the loader after redirecting
+          }, 6000);
+        }
+      } else {
+        setTimeout(function () {
+          document.getElementById("response").innerHTML =
+            "Fetching your result";
+          document.getElementById("response").innerHTML = "";
+          document.getElementById("submitbuttonform").value = "Submit";
+          setIsLoading(false); // Stop the loader on error
+        }, 8000);
       }
-
-      const result = await response.json();
-      document.getElementById("response").innerHTML = result.message;
-
-      // If successful, submit additional data to another endpoint
-      if (result.status === 0) {
-        await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          body: new URLSearchParams({
-            name: name,
-            email: email,
-            phone: phone,
-            result: resultUrl,
-          }),
-        });
-
-        // Redirect after a delay
-        setTimeout(() => {
-          window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
-          setIsLoading(false); // Stop the loader after redirection
-        }, 1000);
-      }
-    } catch (error) {
-      console.error("Error during form submission:", error);
-      setIsLoading(false);
-      document.getElementById("response").innerHTML = "An error occurred. Please try again.";
-      document.getElementById("submitbuttonform").value = "Submit";
-    }
-  };
-
-  const logmaintane = async (name, phone, email, organization, assessment, result) => {
-    const person = {
-      name: name,
-      phone: phone,
-      email: email,
-      organization: organization || "Null",
-      assessment: assessment,
-      result: result,
     };
 
-    try {
-      const response = await fetch("https://api.yoma.co.in/api/IOCAssesmentByld", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*", // Ensure CORS is handled server-side
-        },
-        body: JSON.stringify(person),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to log data");
-      }
-
-      const resultData = await response.json();
-      console.log("Log result:", resultData);
-    } catch (error) {
-      console.error("Error logging data:", error);
-    }
+    xhr.onerror = function () {
+      console.log("error");
+      setIsLoading(false); // Stop the loader if there's an error
+    };
   };
+
+  function logmaintane(
+    nameabc,
+    phoneabc,
+    emailabc,
+    organizationabc,
+    assessmentabc,
+    resultabc
+  ) {
+    var person = new Object();
+    person.name = nameabc;
+    person.phone = phoneabc;
+    person.email = emailabc;
+    person.organization = organizationabc;
+    person.assesment = assessmentabc;
+    person.result = resultabc;
+
+    $.ajax({
+      url: "https://api.yoma.co.in/api/IOCAssesmentByld",
+      type: "POST",
+      dataType: "json",
+      crossDomain: true,
+      "Access-Control-Allow-Origin": "*",
+
+      data: person,
+      success: function (data, textStatus, xhr) {
+        console.log(data);
+      },
+      error: function (xhr, textStatus, errorThrown) {
+        console.log("Error in Operation");
+      },
+    });
+  }
+
+
+
+  // const [isLoading, setIsLoading] = useState(false);
+
+  // const submitF = async (event) => {
+  //   event.preventDefault();
+  //   setIsLoading(true); // Start the loader
+  //   document.getElementById("submitbuttonform").value = "Submitting form....";
+
+  //   // Extracting form data
+  //   const formData = new FormData(event.target);
+  //   const data = new URLSearchParams(formData); // Converting form data to URL-encoded format
+
+  //   const name = formData.get("name");
+  //   const phone = formData.get("phone");
+  //   const email = formData.get("email");
+
+  //   let nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
+  //   const newnameurl = nameurl.split(" ").join("-") + phone;
+  //   const resultUrl = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
+
+  //   try {
+  //     // Send the main POST request using Fetch API
+  //     const response = await fetch("https://clblogs.vercel.app/api/career-coaching-snapshot", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/x-www-form-urlencoded",
+  //       },
+  //       body: data,
+  //     });
+
+  //     if (!response.ok) {
+  //       throw new Error("Failed to submit form");
+  //     }
+
+  //     const result = await response.json();
+  //     document.getElementById("response").innerHTML = result.message;
+
+  //     // If successful, submit additional data to another endpoint
+  //     if (result.status === 0) {
+  //       await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/x-www-form-urlencoded",
+  //         },
+  //         body: new URLSearchParams({
+  //           name: name,
+  //           email: email,
+  //           phone: phone,
+  //           result: resultUrl,
+  //         }),
+  //       });
+
+  //       // Redirect after a delay
+  //       setTimeout(() => {
+  //         window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+  //         setIsLoading(false); // Stop the loader after redirection
+  //       }, 1000);
+  //     }
+  //   } catch (error) {
+  //     console.error("Error during form submission:", error);
+  //     setIsLoading(false);
+  //     document.getElementById("response").innerHTML = "An error occurred. Please try again.";
+  //     document.getElementById("submitbuttonform").value = "Submit";
+  //   }
+  // };
+
+  // const logmaintane = async (name, phone, email, organization, assessment, result) => {
+  //   const person = {
+  //     name: name,
+  //     phone: phone,
+  //     email: email,
+  //     organization: organization || "Null",
+  //     assessment: assessment,
+  //     result: result,
+  //   };
+
+  //   try {
+  //     const response = await fetch("https://api.yoma.co.in/api/IOCAssesmentByld", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         "Access-Control-Allow-Origin": "*", // Ensure CORS is handled server-side
+  //       },
+  //       body: JSON.stringify(person),
+  //     });
+
+  //     if (!response.ok) {
+  //       throw new Error("Failed to log data");
+  //     }
+
+  //     const resultData = await response.json();
+  //     console.log("Log result:", resultData);
+  //   } catch (error) {
+  //     console.error("Error logging data:", error);
+  //   }
+  // };
 
   return (
     <>
