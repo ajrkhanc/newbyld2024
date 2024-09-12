@@ -377,9 +377,9 @@ const workshops = [
   {
     id: 5,
     courseName: "Crucial Conversations® For Mastering Dialogue",
-    dateRangeOne: "October 10, 2024",
-    dateRangeTwo: "October 11, 2024",
-    location: "India | Mumbai",
+    dateRangeOne: "October 14, 2024",
+    dateRangeTwo: "October 15, 2024",
+    location: "India | Bangalore",
     format: "In Person",
     amount: 41300,
     pageUrl:

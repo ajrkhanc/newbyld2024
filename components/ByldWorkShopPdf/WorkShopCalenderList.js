@@ -55,8 +55,8 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
             <tbody>
               <tr>
                 <td>Crucial Conversations® For Mastering Dialogue</td>
-                <td> 10th &11th </td>
-                <td> Mumbai</td>
+                <td> 14th & 15th </td>
+                <td> Bangalore</td>
               </tr>
               <tr>
                 <td>The Power of Habit™ </td>
