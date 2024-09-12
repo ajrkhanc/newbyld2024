@@ -58,6 +58,10 @@ export default function PersonaGlobal(){
 
                             <h4 className="countertoph2 text-left">Privacy Policy Changes</h4>
                             <p>Although most changes are likely to be minor, BYLD Group may change its Privacy Policy from time to time, and in BYLD Group’s sole discretion. BYLD Group encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.</p>
+                            
+                            <h4 className="countertoph2 text-left">Calls and SMS Privacy Policy </h4>
+                            <p>We will be making promotional calls and sending you SMSes through a third party platform</p>
+
 
                             <h4 className="countertoph2 text-left">– BYLD Privacy terms</h4>
                             <p>We do not share any personal information of any client unless asked or are liable to do so.</p>
