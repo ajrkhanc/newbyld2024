@@ -30,7 +30,7 @@ export default function Books(){
                         
                         <div className="col-sm-3">
                            <div className="innervideoshd">
-                               <a href='https://payments.byldgroup.com/Home' target='_blank'>
+                               <a href='https://payments.byldgroup.com' target='_blank'>
                                <img src='/assets/img/books/crucialconversations.svg' alt="books"/>
                               <div className='book-details'>
                               <div className='title'>Crucial Conversations First Chapter</div>
@@ -38,7 +38,7 @@ export default function Books(){
 
                               <div className='d-flex justify-content-between align-items-center text-center p-3'>
                               <div className='price'>Rs.419.00/-</div>
-                              <a href='https://payments.byldgroup.com/Home' target='_blank' class="ebookbtn mt-0">Buy Now</a>
+                              <a href='https://payments.byldgroup.com' target='_blank' class="ebookbtn mt-0">Buy Now</a>
                               </div>
                                </a>
                             </div>
@@ -46,7 +46,7 @@ export default function Books(){
 
                         <div className="col-sm-3">
                            <div className="innervideoshd">
-                               <a href='https://payments.byldgroup.com/Home' target='_blank'>
+                               <a href='https://payments.byldgroup.com' target='_blank'>
                                <img src='/assets/img/books/crucialaccountability.svg' alt="books"/>
 
                                <div className='book-details'>
@@ -55,7 +55,7 @@ export default function Books(){
 
                               <div className='d-flex justify-content-between align-items-center text-center p-3'>
                               <div className='price'>Rs.642.00/-</div>
-                              <a href='https://payments.byldgroup.com/Home' target='_blank' class="ebookbtn mt-0">Buy Now</a>
+                              <a href='https://payments.byldgroup.com' target='_blank' class="ebookbtn mt-0">Buy Now</a>
                               </div>
 
                                
@@ -65,7 +65,7 @@ export default function Books(){
 
                         <div className="col-sm-3">
                            <div className="innervideoshd">
-                               <a href='https://payments.byldgroup.com/Home' target='_blank'>
+                               <a href='https://payments.byldgroup.com' target='_blank'>
                                <img src='/assets/img/books/influencer.svg' alt="books"/>
                                <div className='book-details'>
                               <div className='title'>Influencer First Chapter</div>
@@ -73,7 +73,7 @@ export default function Books(){
 
                               <div className='d-flex justify-content-between align-items-center text-center p-3'>
                               <div className='price'>Rs.742.00/-</div>
-                              <a href='https://payments.byldgroup.com/Home' target='_blank' class="ebookbtn mt-0">Buy Now</a>
+                              <a href='https://payments.byldgroup.com' target='_blank' class="ebookbtn mt-0">Buy Now</a>
                               </div>
 
                             
