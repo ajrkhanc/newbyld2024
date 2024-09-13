@@ -536,7 +536,7 @@ export default function JoinOurPartnerNetworkLP() {
                     <div className='row zindx'>
                         <div className='col-sm-12'>
                             <div className='row'>
-                                <div className='col-sm-4'>
+                                {/* <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/amarvijayy-taandur"><img src="/assets/img/team/amar1.jpg" alt="" /></a>
@@ -554,7 +554,7 @@ export default function JoinOurPartnerNetworkLP() {
                                         </div>
 
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
@@ -597,17 +597,17 @@ export default function JoinOurPartnerNetworkLP() {
                                 <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
-                                            <a href="/team/monica-sharma"><img src="/assets/img/team/monica.jpg" alt="" /></a>
+                                            <a href="/team/monica-sharma"><img src="/assets/img/team/Haritima-SrivastavImag1.webp" alt="" /></a>
                                         </div>
                                         <div className="team-info">
                                             <div className="name">
-                                                <a href="/team/monica-sharma">Monica Sharma</a>
+                                                <a href="#">Haritima Srivastav</a>
                                             </div>
-                                            <span className="post">Principal Advisor - Banking, Retail, Hospitality, Media and Travel</span>
+                                            <span className="post">Principal Advisor - Banking, Retail, Hospitality, Media & Travel</span>
                                         </div>
                                         <div>
                                             <ul className="social-icon">
-                                                <li><a target="_blank" href="#"><i className="fa fa-linkedin"></i></a></li>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/haritima-srivastav-1722bbbb/"><i className="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
