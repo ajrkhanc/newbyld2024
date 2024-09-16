@@ -302,6 +302,8 @@ export default function Books() {
                             </div>
                         </div>
 
+                        
+
                         <div className="col-sm-3">
                             <div className="innervideoshd">
                                 <img src="/assets/img/books/crucialaccountability.svg" alt="books" />
