@@ -229,7 +229,7 @@ export default function Books() {
         // if (!formData.entityName) errors.entityName = 'Entity Name is required';
         // if (!formData.address) errors.address = 'Address is required';
         // if (!formData.panNumber) errors.panNumber = 'PAN Number is required';
-        if (!formData.company) errors.company = 'Company is required';
+        // if (!formData.company) errors.company = 'Company is required';
         return errors;
     };
 
@@ -407,7 +407,7 @@ export default function Books() {
 
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <FormGroup>
-                                    <Label for="inpCompany">Company Name*</Label>
+                                    <Label for="inpCompany">Company Name</Label>
                                     <Input
                                         type="text"
                                         id="inpCompany"
@@ -415,7 +415,7 @@ export default function Books() {
                                         placeholder="Enter Company Name"
                                         value={formData.company}
                                         onChange={handleInputChange}
-                                        required
+                                        
                                     />
                                     {errors.company && <div className="text-danger">{errors.company}</div>}
                                 </FormGroup>
