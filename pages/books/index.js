@@ -356,7 +356,7 @@ export default function Books() {
 
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <FormGroup>
-                                    <Label for="inpName">Name</Label>
+                                    <Label for="inpName">Name*</Label>
                                     <Input
                                         type="text"
                                         id="inpName"
@@ -364,6 +364,8 @@ export default function Books() {
                                         placeholder="Enter Name"
                                         value={formData.name}
                                         onChange={handleInputChange}
+                                        required
+                                    
                                     />
                                     {errors.name && <div className="text-danger">{errors.name}</div>}
                                 </FormGroup>
@@ -371,7 +373,7 @@ export default function Books() {
 
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <FormGroup>
-                                    <Label for="inpEmail">Email</Label>
+                                    <Label for="inpEmail">Email*</Label>
                                     <Input
                                         type="email"
                                         id="inpEmail"
@@ -379,6 +381,7 @@ export default function Books() {
                                         placeholder="Enter Email"
                                         value={formData.email}
                                         onChange={handleInputChange}
+                                        required
                                     />
                                     {errors.email && <div className="text-danger">{errors.email}</div>}
                                 </FormGroup>
@@ -386,7 +389,7 @@ export default function Books() {
 
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <FormGroup>
-                                    <Label for="inpMobile">Phone</Label>
+                                    <Label for="inpMobile">Phone*</Label>
                                     <Input
                                         type="text"
                                         id="inpMobile"
@@ -404,7 +407,7 @@ export default function Books() {
 
                             <div className="col-lg-6 col-md-12 col-sm-12">
                                 <FormGroup>
-                                    <Label for="inpCompany">Company Name</Label>
+                                    <Label for="inpCompany">Company Name*</Label>
                                     <Input
                                         type="text"
                                         id="inpCompany"
@@ -412,6 +415,7 @@ export default function Books() {
                                         placeholder="Enter Company Name"
                                         value={formData.company}
                                         onChange={handleInputChange}
+                                        required
                                     />
                                     {errors.company && <div className="text-danger">{errors.company}</div>}
                                 </FormGroup>
