@@ -176,7 +176,7 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
                 placeholder="PAN Number"
                 value={panGST}
                 onChange={handlePanGSTChange}
-                required
+               
               />
               {!isPanGSTValid && (
                 <span style={{ color: "red" }}>Invalid PAN Number</span>
