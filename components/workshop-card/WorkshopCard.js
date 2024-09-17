@@ -599,4 +599,17 @@ const workshops = [
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
+  {
+    id: 23,
+    courseName: "Getting Things Done®",
+    dateRangeOne: "October 24, 2024",
+    dateRangeTwo: "",
+    location: "India",
+    format: "Virtual",
+    amount: 28910,
+    pageUrl:
+      "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
+    description:
+      "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
+  },
 ];

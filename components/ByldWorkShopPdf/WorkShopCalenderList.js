@@ -68,6 +68,11 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
                 <td> 18th</td>
                 <td>Virtual</td>
               </tr>
+              <tr>
+                <td>Getting Things Done® </td>
+                <td> 24th </td>
+                <td>Virtual</td>
+              </tr>
             </tbody>
             <thead>
               <tr className="bg-primary">
