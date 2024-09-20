@@ -536,7 +536,7 @@ export default function JoinOurPartnerNetworkLP() {
                     <div className='row zindx'>
                         <div className='col-sm-12'>
                             <div className='row'>
-                                <div className='col-sm-4 invisible'>
+                                {/* <div className='col-sm-4 invisible'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/amarvijayy-taandur"><img src="/assets/img/team/amar1.jpg" alt="" /></a>
@@ -554,9 +554,9 @@ export default function JoinOurPartnerNetworkLP() {
                                         </div>
 
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className='col-sm-4'>
+                                <div className='col-sm-6'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/ronald-soans"><img src="/assets/img/team/ronald1.jpg" alt="" /></a>
@@ -594,7 +594,7 @@ export default function JoinOurPartnerNetworkLP() {
                                     </div>
                                 </div> */}
 
-                                <div className='col-sm-4'>
+                                <div className='col-sm-6'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/monica-sharma"><img src="/assets/img/team/Haritima-SrivastavImag1.webp" alt="" /></a>
@@ -613,7 +613,7 @@ export default function JoinOurPartnerNetworkLP() {
                                     </div>
                                 </div>
 
-                                 <div className='col-sm-3 invisible'>
+                                 {/* <div className='col-sm-3 invisible'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/meghna-goyal"><img src="/assets/img/team/meghna.jpg" alt="" /></a>
@@ -630,7 +630,7 @@ export default function JoinOurPartnerNetworkLP() {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
