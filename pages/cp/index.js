@@ -536,7 +536,7 @@ export default function JoinOurPartnerNetworkLP() {
                     <div className='row zindx'>
                         <div className='col-sm-12'>
                             <div className='row'>
-                                {/* <div className='col-sm-4'>
+                                <div className='col-sm-4 d-none'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/amarvijayy-taandur"><img src="/assets/img/team/amar1.jpg" alt="" /></a>
@@ -554,7 +554,7 @@ export default function JoinOurPartnerNetworkLP() {
                                         </div>
 
                                     </div>
-                                </div> */}
+                                </div>
 
                                 <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
@@ -608,6 +608,25 @@ export default function JoinOurPartnerNetworkLP() {
                                         <div>
                                             <ul className="social-icon">
                                                 <li><a target="_blank" href="https://www.linkedin.com/in/haritima-srivastav-1722bbbb/"><i className="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div className='col-sm-3 d-none'>
+                                    <div className='innerteamc mbb-70'>
+                                        <div className='teamimgc1'>
+                                            <a href="/team/meghna-goyal"><img src="/assets/img/team/meghna.jpg" alt="" /></a>
+                                        </div>
+                                        <div className="team-info">
+                                            <div className="name">
+                                                <a href="/team/meghna-goyal">Meghna Goyal</a>
+                                            </div>
+                                            <span className="post">Principal Advisor - Pharma, <br></br>FMCG, E-commerce</span>
+                                        </div>
+                                        <div>
+                                            <ul className="social-icon">
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/meghna-goyal-442560b/"><i className="fa fa-linkedin"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
