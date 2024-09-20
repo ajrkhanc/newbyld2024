@@ -536,7 +536,7 @@ export default function JoinOurPartnerNetworkLP() {
                     <div className='row zindx'>
                         <div className='col-sm-12'>
                             <div className='row'>
-                                <div className='col-sm-4 d-none'>
+                                <div className='col-sm-4 invisible'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/amarvijayy-taandur"><img src="/assets/img/team/amar1.jpg" alt="" /></a>
@@ -613,7 +613,7 @@ export default function JoinOurPartnerNetworkLP() {
                                     </div>
                                 </div>
 
-                                 <div className='col-sm-3 d-none'>
+                                 <div className='col-sm-3 invisible'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/meghna-goyal"><img src="/assets/img/team/meghna.jpg" alt="" /></a>
