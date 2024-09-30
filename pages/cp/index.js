@@ -513,14 +513,14 @@ export default function JoinOurPartnerNetworkLP() {
                         </div>
                         <div className='col-sm-6'>
                             <div>
-                            <img src="/assets/img/cpb.png" />
+                            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/cpb_FQHgqiNwDQ.webp" />
                             </div>
                         </div>
                     </div>
 
                     <div className='clearfix'></div>                   
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/orangearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow1_ZBL_u1-FvC.webp?updatedAt=1727675005925" />
                     </div>
 
                 </div>
@@ -559,7 +559,7 @@ export default function JoinOurPartnerNetworkLP() {
                                 <div className='col-sm-6'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
-                                            <a href="/team/ronald-soans"><img src="/assets/img/team/ronald1.jpg" alt="" /></a>
+                                            <a href="/team/ronald-soans"><img src="/assets/img/team/ronald1.webp" alt="" /></a>
                                         </div>
                                         <div className="team-info">
                                             <div className="name">
@@ -637,10 +637,10 @@ export default function JoinOurPartnerNetworkLP() {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox1'>
-                        <img src="/assets/img/homeb/orangearrow.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp?updatedAt=1727675005934" />
                     </div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp?updatedAt=1727675005983" />
                     </div>
 
                 </div>
@@ -761,7 +761,7 @@ export default function JoinOurPartnerNetworkLP() {
                         </div>
                         <div className='col-sm-6'>
                             <div className='pll-50'>
-                                <img src="/assets/img/co/c1.png" alt="image" />
+                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/c1_Zh8Ub7_7c.webp" alt="image" />
 
                             </div>
                         </div>
@@ -785,76 +785,76 @@ export default function JoinOurPartnerNetworkLP() {
                             <Slider {...settings}>
                             <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/pharmaceutical-sector.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/pharmaceutical-sector_5SL3cjSKxD.webp' alt="books" />
                                         <a href='/cp/white-paper/pharmaceutical-sector'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/embracing-a-customer-centric-mindset.png' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/embracing-a-customer-centric-mindset_S_MEWG0bx.webp' alt="books" />
                                         <a href='/cp/white-paper/embracing-a-customer-centric-mindset'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/fostering-culture-of-high-performance.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/fostering-culture-of-high-performance_kvi2uYNSz.webp' alt="books" />
                                         <a href='/cp/white-paper/fostering-culture-of-high-performance'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/the-indian-automotive-sector-has-been-witnessing-changing-trends.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/the-indian-automotive-sector-has-been-witnessing-changing-trends_-PyHuPjdL.webp' alt="books" />
                                         <a href='/cp/white-paper/the-indian-automotive-sector-has-been-witnessing-changing-trends'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/the-indian-construction-industry-new-amarvijay-sir.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/the-indian-construction-industry-new-amarvijay-sir%20(1)_W5WLr8KSdy.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/driving-innovation.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/driving-innovation_QxiZua0Aj.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/issues-in-healthcare.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/issues-in-healthcare_5dHuHSc-9.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/hr-managing-fear.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/hr-managing-fear_2Wo2N3gum.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/culture-needed-in-an-airline-industry.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/culture-needed-in-an-airline-industry_f2HbXVa9zq.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                     </div>
                                 </div>
 
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/challenges-in-it-industry-today.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/challenges-in-it-industry-today_QMB44Hvb9.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                     </div>
                                 </div>
                                 <div className='logoslider'>
                                     <div className='impdf'>
-                                        <img src='/assets/img/white-paper/what-will-spur-bfsi-industry.jpg' alt="books" />
+                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/what-will-spur-bfsi-industry_utJUb-a34f.webp' alt="books" />
                                         <a href='/cp/white-paper'>Download White Paper</a>
                                         {/* <i class="blink fa fa-download" aria-hidden="true" onClick={() => setModalOpen7(!modalOpen7)}></i> */}
                                     </div>
@@ -873,10 +873,10 @@ export default function JoinOurPartnerNetworkLP() {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox1'>
-                        <img src="/assets/img/homeb/orangearrow.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp?updatedAt=1727675005934" />
                     </div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp?updatedAt=1727675005983" />
                     </div>
                     
                 </div>
