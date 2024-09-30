@@ -259,7 +259,7 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-sm-7">
-                  <div className="siderco wow fadeInUp delay-0-2s animated animateUP">
+                  <div className="siderco ">
                     <h1>
                       Driving You toward Individual and Organizational
                       Excellence
@@ -286,7 +286,7 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-sm-6">
-                  <div className="siderco wow fadeInUp delay-0-2s animated animateUP">
+                  <div className="siderco ">
                     <h1>
                       Tailor Your Corporate Needs with Our Customized Solutions{" "}
                     </h1>
@@ -312,7 +312,7 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-sm-7">
-                  <div className="siderco wow fadeInUp delay-0-2s animated animateUP">
+                  <div className="siderco ">
                     <h1>Empowering Businesses to Achieve Their Goals</h1>
                     <p>
                       We offer knowledge, skills, and expertise in various
@@ -335,7 +335,7 @@ export default function Home() {
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-sm-7">
-                  <div className="siderco wow fadeInUp delay-0-2s animated animateUP">
+                  <div className="siderco">
                     <h1>Get Instant Global Credibility and Recognition</h1>
                     <p>
                       Our experienced mentors, trainers, and subject matter
