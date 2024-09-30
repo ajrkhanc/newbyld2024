@@ -301,13 +301,44 @@ export default function JoinOurPartnerNetworkLP() {
 
     return (
         <>
-            <Head>
-                <title>Consulting Practice - BYLD Group</title>
-                <link rel="canonical" href="https://byldgroup.com/cp" />
-                <meta name="description" content="Welcome to BYLD Group! Join the BYLD Group Partner network, and become our business partner to maximize your growth opportunities. We are the largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies. Founded in 1998, backed by 1000+ years of accumulated professional… Continue reading Join our Partner network LP Ab Testing" />
-                <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"></link>
-                <link rel="stylesheet" type="text/css" href="/assets/css/homemodule.css" />
-            </Head>
+        <Head>
+            {/* Title and Meta Description */}
+            <title>Consulting Practice - BYLD Group</title>
+            <link rel="canonical" href="https://byldgroup.com/cp" />
+            <meta
+                name="description"
+                content="Welcome to BYLD Group! Join the BYLD Group Partner network, and become our business partner to maximize your growth opportunities. We are the largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies. Founded in 1998, backed by 1000+ years of accumulated professional… Continue reading Join our Partner network LP Ab Testing"
+            />
+
+            {/* Preload Font */}
+            <link
+                rel="preload"
+                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+                as="style"
+            />
+            <link
+                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+                rel="stylesheet"
+                media="print"
+                onload="this.media='all'"
+            />
+            <noscript>
+                <link
+                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+                rel="stylesheet"
+                />
+            </noscript>
+
+            {/* Preload Critical CSS */}
+            <link rel="preload" href="/assets/css/homemodule.css" as="style" />
+
+            {/* Load CSS Asynchronously */}
+            <link rel="stylesheet" href="/assets/css/homemodule.css" media="print" onload="this.media='all'" />
+            <noscript>
+                <link rel="stylesheet" href="/assets/css/homemodule.css" />
+            </noscript>
+        </Head>
+
 
             {/* <Modal className='toppc mwc500' toggle={() => setModalOpen1(!modalOpen1)} isOpen={modalOpen1} backdrop="static" keyboard={false}>
                 <button aria-label="Close" className="close popcl" type="button" onClick={() => setModalOpen1(!modalOpen1)}>
