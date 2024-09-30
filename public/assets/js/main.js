@@ -418,7 +418,7 @@ $(document).ready(function(){
     $('img').each(function(){
         var imageName = $(this).attr('src').split('/').pop().split('.')[0];
         $(this).attr('alt', imageName);
-	$(this).attr('loading', 'lazy');
+	$(this).attr('loading', 'eager');
 	
     });
 });
