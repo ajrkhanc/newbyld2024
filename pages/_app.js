@@ -2149,69 +2149,105 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   else if (router.pathname.startsWith('/byld-new')) {
-
     return (
       <BYLDNEW>
         <Head>
-          <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/fonts/flaticon.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/off-canvas.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/magnific-popup.css" />
-
-          <link rel="stylesheet" href="/assets/css/rsmenu-main.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/inc/custom-slider/css/nivo-slider.css" />
-          <link rel="stylesheet" type="text/css" href="/assets/inc/custom-slider/css/preview.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/rs-spacing.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-
-          <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css" />
-          <link rel="stylesheet" type="text/css" href="/assets/css/globals.css" />
-          <link rel="stylesheet" type="text/css" href="/assets/css/bg.css" />
-          <link rel="stylesheet" type="text/css" href="/assets/css/homemodule.css" />
-
-          <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
-          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+          {/* Preload critical styles */}
+          <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" />
+          <link rel="preload" href="/assets/css/style.css" as="style" />
+  
+          {/* Load stylesheets with media attribute to defer loading */}
+          <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/bootstrap.min.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/font-awesome.min.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/fonts/flaticon.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/fonts/flaticon.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/animate.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/animate.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/owl.carousel.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/off-canvas.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/off-canvas.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/magnific-popup.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/magnific-popup.css" /></noscript>
+  
+          <link rel="stylesheet" href="/assets/css/rsmenu-main.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/rsmenu-main.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/inc/custom-slider/css/nivo-slider.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/inc/custom-slider/css/nivo-slider.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/inc/custom-slider/css/preview.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/inc/custom-slider/css/preview.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/rs-spacing.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/rs-spacing.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/style.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/responsive.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/globals.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/globals.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/bg.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/bg.css" /></noscript>
+  
+          <link rel="stylesheet" type="text/css" href="/assets/css/homemodule.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="/assets/css/homemodule.css" /></noscript>
+  
+          {/* Load Slick CSS with preload */}
+          <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" as="style" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" /></noscript>
+  
+          <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" as="style" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" media="print" onLoad="this.media='all'" />
+          <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" /></noscript>
+  
+          {/* Google Tag Manager and Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PXTTR960E"></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
-              window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5PXTTR960E');
-          `,
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-5PXTTR960E');
+              `,
             }}
           />
-  <script
+  
+          <script
             dangerouslySetInnerHTML={{
               __html: `
-             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WF8WJWJ');
-          `,
+                (function(w,d,s,l,i){
+                  w[l]=w[l]||[];
+                  w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+                  var f=d.getElementsByTagName(s)[0],
+                  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+                  j.async=true;
+                  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                  f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-WF8WJWJ');
+              `,
             }}
           />
         </Head>
         <Component {...pageProps} />
       </BYLDNEW>
-    )
-
+    );
   }
+  
 
 
   else if (router.pathname.startsWith('/our-solutions/experiential-learning')) {
