@@ -1741,6 +1741,34 @@ h6 {
 }
 
 @media (max-width:767px) {
+
+    .slide1c {
+        background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSize_nrjDmkPAo.webp);
+        background-position: center center;
+        padding: 190px 0px 80px 0px;
+    }
+
+    .slide2c {
+        background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2JmH1qYAt.webp);
+        background-position:center center;
+       
+        padding: 190px 0px 80px 0px;
+    }
+
+    .slide3c {
+        background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__77iP6J_78.webp);
+        background-position:center center;
+       
+        padding: 190px 0px 80px 0px;
+    }
+
+    .slide4c {
+        background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_cHQ2SZAcX.webp);
+        background-position:center center;
+       
+        padding: 190px 0px 80px 0px;
+    }
+
     .siderco h1 {
         font-size: 25px;
         line-height: 36px;
