@@ -197,8 +197,8 @@ export default function Home() {
             <title>HR and Business Productivity Solutions | BYLD Group</title>
             <link rel="canonical" href="https://byldgroup.com" />
             <meta name="description" content="Largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies." />
-            <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-            <script
+            <script  defer type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+            <script  defer
                dangerouslySetInnerHTML={{
                   __html: `
               $(function() {
@@ -220,7 +220,7 @@ export default function Home() {
           `,
                }}
             />
-            <link rel="stylesheet" type="text/css" href="/assets/css/homemodule.css" />
+            <link rel="preload" type="text/css" href="/assets/css/homemodule.css" as="style" />
          </Head>
 
          <section className='bannersection'>
