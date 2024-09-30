@@ -361,23 +361,23 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <div class="sub-text supperh wow fadeInUp delay-0-2s animated animateUP">
+              <div class="sub-text supperh ">
                 What can we offer?{" "}
               </div>
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+              <h2 class="title mb-0 md-pb-20 h2call ">
                 Nurturing your full potential and abilities with our curated
                 solutions
               </h2>
             </div>
             <div className="col-sm-6">
-              <p class="mb-0 mtt-40 pall pbb-20 wow fadeInUp delay-0-2s animated animateUP ajccm">
+              <p class="mb-0 mtt-40 pall pbb-20  ajccm">
                 We empower organizations and individuals to excel and achieve
                 sustainable growth by offering them our expertise in learning
                 and people solutions. Further, we are a one-stop destination for
                 business productivity, leadership development, HR solutions,
                 team performance, and other domains.
               </p>
-              <div className="btn-part ptt-10 pbb-30 wow fadeInUp delay-0-2s animated animateUP">
+              <div className="btn-part ptt-10 pbb-30 ">
                 <Link href="#our-solutions">
                   <a className="readon2">
                     Learn More <div className="btn-arrow"></div>
@@ -393,11 +393,11 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 text-center">
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP pbb-30">
+              <h2 class="title mb-0 md-pb-20 h2call  pbb-30">
                 Nurturing a Healthy and Inclusive Work Culture to Transform the{" "}
                 <br></br>Lives of People Around Us{" "}
               </h2>
-              <div class="rs-videos choose-video wow fadeInUp delay-0-2s animated animateUP">
+              <div class="rs-videos choose-video ">
                 <div class="images-video fvideo">
                   <iframe
                     src="https://www.youtube.com/embed/LXd9OtxQQQA?si=fLtvIRyKpbvr6dCE"
@@ -422,12 +422,12 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-3">
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+              <h2 class="title mb-0 md-pb-20 h2call ">
                 OUR<br></br>SOLUTIONS
               </h2>
             </div>
             <div className="col-sm-9">
-              <p class="mb-0 pall pbb-20 wow fadeInUp delay-0-2s animated animateUP">
+              <p class="mb-0 pall pbb-20 ">
                 BYLD Group is committed to making a difference to people and
                 their organizations through its decades of excellence in
                 business solutions, diverse corporate exposure, and skilled
@@ -443,7 +443,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-sm-4">
                   <a href="/our-solutions/experiential-learning">
-                    <div className="solutionbox wow fadeInUp delay-0-2s animated animateUP">
+                    <div className="solutionbox ">
                       <h4>
                         <span>E</span>xperiential Learning
                       </h4>
@@ -466,7 +466,7 @@ export default function Home() {
                 </div>
                 <div className="col-sm-4">
                   <a href="/our-solutions/leadership-and-talent-development">
-                    <div className="solutionbox wow fadeInUp delay-0-2s animated animateUP">
+                    <div className="solutionbox ">
                       <h4>
                         <span>L</span>eadership & Performance
                       </h4>
@@ -489,7 +489,7 @@ export default function Home() {
                 </div>
                 <div className="col-sm-4">
                   <a href="/our-solutions/assessments">
-                    <div className="solutionbox wow fadeInUp delay-0-2s animated animateUP">
+                    <div className="solutionbox ">
                       <h4>
                         <span>A</span>ssessments
                       </h4>
@@ -512,7 +512,7 @@ export default function Home() {
                 </div>
                 <div className="col-sm-4">
                   <a href="/bespoke">
-                    <div className="solutionbox wow fadeInUp delay-0-2s animated animateUP">
+                    <div className="solutionbox ">
                       <h4>
                         <span>B</span>eSpoke
                       </h4>
@@ -535,7 +535,7 @@ export default function Home() {
                 </div>
                 <div className="col-sm-4">
                   <a href="/our-solutions/coaching">
-                    <div className="solutionbox wow fadeInUp delay-0-2s animated animateUP">
+                    <div className="solutionbox ">
                       <h4>
                         <span>C</span>oaching
                       </h4>
@@ -558,7 +558,7 @@ export default function Home() {
                 </div>
                 <div className="col-sm-4">
                   <a href="#/our-solutions/staffing">
-                    <div className="solutionbox wow fadeInUp delay-0-2s animated animateUP">
+                    <div className="solutionbox ">
                       <h4>
                         <span>S</span>taffing & Search
                       </h4>
@@ -603,14 +603,14 @@ export default function Home() {
         <div className="container">
           <div className="row rs-testimonial style2 rs-blog style1">
             <div className="col-sm-4">
-              <div className="mst wow fadeInUp delay-0-2s animated animateUP">
+              <div className="mst ">
                 <div className="sec-title3 mbb-35">
                   <h4 className="countertoph2">CLIENTS SPEAK</h4>
                   <div className="heading-border-line left-style"></div>
                 </div>
               </div>
               <Slider {...settings1}>
-                <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
+                <div class="testi-wrap ">
                   <div class="item-content">
                     <span>
                       <img
@@ -651,7 +651,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
+                <div class="testi-wrap ">
                   <div class="item-content">
                     <span>
                       <img
@@ -693,7 +693,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
+                <div class="testi-wrap ">
                   <div class="item-content">
                     <span>
                       <img
@@ -731,24 +731,24 @@ export default function Home() {
               </Slider>
             </div>
             <div className="col-sm-8">
-              <div className="sec-title3 mbb-35 wow fadeInUp delay-0-2s animated animateUP">
+              <div className="sec-title3 mbb-35 ">
                 <h4 className="countertoph2">WHY OUR CLIENTS TRUST US?</h4>
                 <div className="heading-border-line left-style"></div>
               </div>
               <div className="mycounter">
-                <div className="counterbox countb1 wow fadeInUp delay-0-2s animated animateUP">
+                <div className="counterbox countb1 ">
                   <span className="rs-count">500,000 +</span>
                   <h3>PEOPLE TRAINED</h3>
                 </div>
-                <div className="counterbox countb2 wow fadeInUp delay-0-2s animated animateUP">
+                <div className="counterbox countb2 ">
                   <span className="rs-count">1,000 +</span>
                   <h3>YEARS OF ACCUMULATED CONSULTING EXPERIENCE</h3>
                 </div>
-                <div className="counterbox countb3 wow fadeInUp delay-0-2s animated animateUP">
+                <div className="counterbox countb3 ">
                   <span className="rs-count">10 +</span>
                   <h3>GLOBAL PARTNERSHIPS</h3>
                 </div>
-                <div className="counterbox countb4 wow fadeInUp delay-0-2s animated animateUP">
+                <div className="counterbox countb4 ">
                   <span className="rs-count">100,000 +</span>
                   <h3>ACCESS TO PROFILES</h3>
                 </div>
@@ -762,34 +762,34 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 text-center">
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+              <h2 class="title mb-0 md-pb-20 h2call ">
                 Partnership with global leaders
               </h2>
             </div>
           </div>
         </div>
         <img
-          className="wow fadeInUp delay-0-2s animated animateUP img100p"
+          className=" img100p"
           src="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp"
         />
         <div className="container">
           <div className="row">
             <div className="col-sm-2"></div>
             <div className="col-sm-8 text-center">
-              <p class="mb-0 pall pbb-0 ptt-10 wow fadeInUp delay-0-2s animated animateUP ajcenter">
+              <p class="mb-0 pall pbb-0 ptt-10  ajcenter">
                 We are driven by the strong desire to deliver the best corporate
                 solutions and trainings to our valuable clients by establishing
                 strong business partnerships with global training and learning
                 providers.
               </p>
-              <p class="mb-0 pall pbb-20 ptt-10 wow fadeInUp delay-0-2s animated animateUP ajcenter">
+              <p class="mb-0 pall pbb-20 ptt-10  ajcenter">
                 To achieve success in this ever-lasting endeavor, BYLD Group is
                 in partnerships with global players such as Everything DiSC and
                 The Five Behaviors (Wiley brands), Blanchard, Trapologist at
                 Work, Eagle’s Flight, Tirian, Jenson8, Crucial Learning, and so
                 on.
               </p>
-              <div className="btn-part ptt-10 pbb-30 wow fadeInUp delay-0-2s animated animateUP">
+              <div className="btn-part ptt-10 pbb-30 ">
                 <Link href="/join-our-partner-network">
                   <a className="readon2">
                     Learn More <div className="btn-arrow"></div>
@@ -805,7 +805,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 text-center pbb-30">
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+              <h2 class="title mb-0 md-pb-20 h2call ">
                 Join the BYLD Family
               </h2>
             </div>
@@ -828,12 +828,12 @@ export default function Home() {
         <div class="container">
           <div className="row">
             <div className="col-sm-3">
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+              <h2 class="title mb-0 md-pb-20 h2call ">
                 Want to Bring the Real Change?{" "}
               </h2>
             </div>
             <div className="col-sm-9">
-              <p class="mb-0 pall pbb-20 wow fadeInUp delay-0-2s animated animateUP">
+              <p class="mb-0 pall pbb-20 ">
                 Whether you want to elevate your leadership skills, improve
                 self-awareness, enhance productivity, unlock the full potential
                 of your workforce, or strengthen communication skills, we are
@@ -845,7 +845,7 @@ export default function Home() {
 
           <div class="row y-middle">
             <div class="col-lg-5 md-mb-50 dnoneinm">
-              <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
+              <div class="contact-img ">
                 <img
                   src="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp"
                   alt="Contact"
@@ -854,7 +854,7 @@ export default function Home() {
             </div>
             <div class="col-lg-7">
               <div class="contact-wrap">
-                <div className="bannerform wow fadeInUp delay-0-2s animated animateUP">
+                <div className="bannerform ">
                   <form
                     id="contact-form"
                     className="clientcornner ptt-40 pbb-20"
