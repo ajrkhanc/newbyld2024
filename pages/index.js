@@ -442,20 +442,20 @@ export default function Home() {
                      <Slider {...settings1}>
                         <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
                            <div class="item-content">
-                              <span><img src="/assets/img/quote.png" alt="Testimonial" loading="eager" /></span>
+                              <span><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" alt="Testimonial" loading="eager" /></span>
                               <p>
                                  The online program was complete with several videos, real life examples and activities / note taking facility post each leg of the module which helped reflect on the learnings and its application. While a classroom training is best suited for this kind of a learning, the online module was well designed and engaging keeping the current constraints in perspective
                               </p>
                            </div>
                            <div class="testi-content">
                               <div class="image-wrap">
-                                 <img src="/assets/img/av.png" alt="Testimonial" loading="eager" />
+                                 <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" alt="Testimonial" loading="eager" />
                               </div>
                               <div class="testi-information">
                                  <div class="testi-name">Namita Shah</div>
                                  <span class="testi-title">(HSBC India)</span>
                                  <div class="ratting-img">
-                                    <img src="/assets/img/ratting.png" alt="Testimonial" loading="eager" />
+                                    <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" alt="Testimonial" loading="eager" />
                                  </div>
                               </div>
                            </div>
@@ -463,20 +463,20 @@ export default function Home() {
 
                         <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
                            <div class="item-content">
-                              <span><img src="/assets/img/quote.png" alt="Testimonial" /></span>
+                              <span><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" alt="Testimonial" /></span>
                               <p>
                                  We engaged their services for facilitating a session on SLII<sup>®</sup> for our 26 employees, who were members of the regional and local country leadership team spread across APAC, in Nov 2019. The objective of the learning program being enabling the leaders to drive change in the organization and have constructive & difficult conversations with their teams, ensuring the organizational goals are at the focal point of discussions.
                               </p>
                            </div>
                            <div class="testi-content">
                               <div class="image-wrap">
-                                 <img src="/assets/img/av.png" alt="Testimonial" />
+                                 <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" alt="Testimonial" />
                               </div>
                               <div class="testi-information">
                                  <div class="testi-name">Rangkynsai Nongbet</div>
                                  <span class="testi-title">(Ortho Clinical Diagnostics)</span>
                                  <div class="ratting-img">
-                                    <img src="/assets/img/ratting.png" alt="Testimonial" />
+                                    <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" alt="Testimonial" />
                                  </div>
                               </div>
                            </div>
@@ -484,20 +484,20 @@ export default function Home() {
 
                         <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
                            <div class="item-content">
-                              <span><img src="/assets/img/quote.png" alt="Testimonial" /></span>
+                              <span><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" alt="Testimonial" /></span>
                               <p>
                                  Thankful to the team at Crucial Life Changing Skills for conducting a power packed session on the topic of “Influencer” for our leaders at CK Birla Group. The simple (and powerful) 6 sources of influence model will guide us to to drive change in our personal and professional space!
                               </p>
                            </div>
                            <div class="testi-content">
                               <div class="image-wrap">
-                                 <img src="/assets/img/av.png" alt="Testimonial" />
+                                 <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" alt="Testimonial" />
                               </div>
                               <div class="testi-information">
                                  <div class="testi-name">Prerna S</div>
                                  <span class="testi-title">(Birla Fertility and IVF)</span>
                                  <div class="ratting-img">
-                                    <img src="/assets/img/ratting.png" alt="Testimonial" />
+                                    <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" alt="Testimonial" />
                                  </div>
                               </div>
                            </div>
@@ -540,7 +540,7 @@ export default function Home() {
                   </div>
                </div>
             </div>
-            <img className='wow fadeInUp delay-0-2s animated animateUP img100p' src='/assets/img/homeb/handb.jpg' />
+            <img className='wow fadeInUp delay-0-2s animated animateUP img100p' src='https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp' />
             <div className='container'>
                <div className='row'>
                   <div className='col-sm-2'></div>
@@ -567,13 +567,13 @@ export default function Home() {
                   </div>
                </div>
             </div>
-            <img className='img100p' src='/assets/img/homeb/byldteam.jpg' />
+            <img className='img100p' src='https://ik.imagekit.io/byld/BYLD/byldallasests/byldteam_cTSpTwFFTc.webp' />
             <div className='clearfix'></div>
             <div className='solutionarrowbox1'>
-               <img src="/assets/img/homeb/orangearrow.png" />
+               <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" />
             </div>
             <div className='solutionarrowbox2'>
-               <img src="/assets/img/homeb/bluearrow.png" />
+               <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
             </div>
          </section>
 
