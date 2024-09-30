@@ -221,6 +221,7 @@ export default function Home() {
                }}
             />
             <link rel="preload" type="text/css" href="/assets/css/homemodule.css" as="style" />
+            <link rel="stylesheet" href="/assets/css/homemodule.css" />
          </Head>
 
          <section className='bannersection'>
