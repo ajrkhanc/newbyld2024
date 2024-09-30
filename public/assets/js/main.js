@@ -423,6 +423,8 @@ $(document).ready(function(){
     });
 });
 
+
+
 $(document).ready(function() {
 
 
@@ -439,3 +441,18 @@ if (window.location.href === 'https://byldgroup.com/effective-manpower-staffing-
 
 
 })(jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the device is mobile (screen width below 768px)
+    if (window.innerWidth <= 768) {
+      // Select the element that has the classes you want to remove
+      const element = document.querySelector('.wow.fadeInUp.delay-0-2s.animated.animateUP');
+      
+      // If the element exists, remove the specific classes
+      if (element) {
+        element.classList.remove('wow', 'fadeInUp', 'delay-0-2s', 'animated', 'animateUP');
+      }
+    }
+  });
+  
