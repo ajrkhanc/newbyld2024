@@ -1713,7 +1713,7 @@ h6 {
 
 /* CP */
 .cpbg {
-    background-image: url(/assets/img/new/banner/cp.jpg);
+    background-image: url(https://ik.imagekit.io/byld/BYLD/byldallasests/cp__P_M_p9IS.webp);
 }
 
 .cpteambg {
@@ -1768,6 +1768,10 @@ h6 {
         background-position:center center;
         background-repeat: no-repeat;
         padding: 105px 0px 40px 0px;
+    }
+
+    .cpbg {
+        background-image: url(https://ik.imagekit.io/byld/BYLD/byldallasests/cpsmollImg_znOWn6AFz.webp);
     }
 
     .siderco h1 {

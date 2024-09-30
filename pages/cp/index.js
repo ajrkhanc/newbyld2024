@@ -470,7 +470,7 @@ export default function JoinOurPartnerNetworkLP() {
                 </ModalBody>
             </Modal> */}
 
-<div class="rs-breadcrumbs cpbg">
+            <div class="rs-breadcrumbs cpbg">
                 <div class="container">
                     <div class="breadcrumb-container theme1 wow fadeInUp delay-0-2s animated animateUP">
                         <ul>
