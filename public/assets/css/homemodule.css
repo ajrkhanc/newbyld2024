@@ -1771,12 +1771,18 @@ h6 {
     }
 
     .siderco h1 {
-        font-size: 25px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 25px;
         font-weight: 500;
         letter-spacing: normal;
         color: #3474af;
         margin-bottom: 11px;
+    }
+
+    .siderco p {
+        font-size: 15px;
+        color: #000;
+        line-height: 20px;
     }
 
     .h2call {
