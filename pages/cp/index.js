@@ -503,7 +503,7 @@ export default function JoinOurPartnerNetworkLP() {
 
             <div class="rs-breadcrumbs cpbg">
                 <div class="container">
-                    <div class="breadcrumb-container theme1 wow fadeInUp delay-0-2s animated animateUP">
+                    <div class="breadcrumb-container theme1 ">
                         <ul>
                             <li>
                                 <a href="/">
@@ -522,7 +522,7 @@ export default function JoinOurPartnerNetworkLP() {
                     <div className='row'>
                         <div className='col-sm-8'>
                             <div class="breadcrumbs-inner">                                
-                                <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
+                                <h1 class="page-title ">
                                 Consulting Practice
                                 </h1>
                             </div>
@@ -561,7 +561,7 @@ export default function JoinOurPartnerNetworkLP() {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-12 text-center'>
-                            <h2 class="title pbb-100 mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP pbb-30">Know Our Consulting Practitioners (CPs):</h2>
+                            <h2 class="title pbb-100 mb-0 md-pb-20 h2call  pbb-30">Know Our Consulting Practitioners (CPs):</h2>
                         </div>
                     </div>
                     <div className='row zindx'>
