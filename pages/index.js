@@ -353,8 +353,8 @@ export default function Home() {
                            <div className='solutionbox wow fadeInUp delay-0-2s animated animateUP'>
                               <h4><span>E</span>xperiential Learning</h4>
                               <div className='cicon'>
-                                 <img className='active' src="/assets/img/homeb/icon/experiential-learning.png" alt="images" />
-                                 <img className='hover' src="/assets/img/homeb/icon/experiential-learningw.png" alt="images" />
+                                 <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp" alt="images"  loading="eager"  />
+                                 <img className='hover' src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learningw_QCXfDVFAYK.webp" alt="images"  loading="eager"  />
                               </div>
                            </div>
                            </a>
@@ -364,8 +364,8 @@ export default function Home() {
                            <div className='solutionbox wow fadeInUp delay-0-2s animated animateUP'>
                               <h4><span>L</span>eadership & Performance</h4>
                               <div className='cicon'>
-                                 <img className='active' src="/assets/img/homeb/icon/leadership-performance.png" alt="images" />
-                                 <img className='hover' src="/assets/img/homeb/icon/leadership-performancew.png" alt="images" />
+                                 <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performance_NO5FCroQBk.webp" alt="images"  loading="eager"  />
+                                 <img className='hover' src="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performancew_jx1F-H4ux5.webp" alt="images"  loading="eager"  />
                               </div>
                            </div>
                            </a>
@@ -375,8 +375,8 @@ export default function Home() {
                            <div className='solutionbox wow fadeInUp delay-0-2s animated animateUP'>
                               <h4><span>A</span>ssessments</h4>
                               <div className='cicon'>
-                                 <img className='active' src="/assets/img/homeb/icon/assessments.png" alt="images" />
-                                 <img className='hover' src="/assets/img/homeb/icon/assessmentsw.png" alt="images" />
+                                 <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/assessments_mTorLOz_F.webp" alt="images"  loading="eager"  />
+                                 <img className='hover' src="https://ik.imagekit.io/byld/BYLD/byldallasests/assessmentsw_NcN1Urbw-v.webp" alt="images"  loading="eager"  />
                               </div>
                            </div>
                            </a>
@@ -386,8 +386,8 @@ export default function Home() {
                            <div className='solutionbox wow fadeInUp delay-0-2s animated animateUP'>
                               <h4><span>B</span>eSpoke</h4>
                               <div className='cicon'>
-                                 <img className='active' src="/assets/img/homeb/icon/bespoke.png" alt="images" />
-                                 <img className='hover' src="/assets/img/homeb/icon/bespokew.png" alt="images" />
+                                 <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/bespoke_15L20XFTtC.webp" alt="images"  loading="eager"  />
+                                 <img className='hover' src="https://ik.imagekit.io/byld/BYLD/byldallasests/bespokew_S0ZixVfkUD.webp" alt="images"  loading="eager"  />
                               </div>
                            </div>
                            </a>
@@ -397,8 +397,8 @@ export default function Home() {
                            <div className='solutionbox wow fadeInUp delay-0-2s animated animateUP'>
                               <h4><span>C</span>oaching</h4>
                               <div className='cicon'>
-                                 <img className='active' src="/assets/img/homeb/icon/coaching.png" alt="images" />
-                                 <img className='hover' src="/assets/img/homeb/icon/coachingw.png" alt="images" />
+                                 <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp" alt="images"  loading="eager"  />
+                                 <img className='hover' src="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp" alt="images"  loading="eager"  />
                               </div>
                            </div>
                            </a>
@@ -408,8 +408,8 @@ export default function Home() {
                            <div className='solutionbox wow fadeInUp delay-0-2s animated animateUP'>
                               <h4><span>S</span>taffing & Search</h4>
                               <div className='cicon'>
-                                 <img className='active' src="/assets/img/homeb/icon/staffing-search.png" alt="images" />
-                                 <img className='hover' src="/assets/img/homeb/icon/staffing-searchw.png" alt="images" />
+                                 <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp" alt="images"  loading="eager"  />
+                                 <img className='hover' src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp" alt="images"   loading="eager" />
                               </div>
                            </div>
                            </a>
@@ -420,10 +420,10 @@ export default function Home() {
 
                <div className='clearfix'></div>
                <div className='solutionarrowbox1'>
-                  <img src="/assets/img/homeb/orangearrow.png" />
+                  <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp"   loading="eager" />
                </div>
                <div className='solutionarrowbox2'>
-                  <img src="/assets/img/homeb/bluearrow1.png" />
+                  <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp"  loading="eager" />
                </div>
 
             </div>
@@ -442,20 +442,20 @@ export default function Home() {
                      <Slider {...settings1}>
                         <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
                            <div class="item-content">
-                              <span><img src="/assets/img/quote.png" alt="Testimonial" /></span>
+                              <span><img src="/assets/img/quote.png" alt="Testimonial" loading="eager" /></span>
                               <p>
                                  The online program was complete with several videos, real life examples and activities / note taking facility post each leg of the module which helped reflect on the learnings and its application. While a classroom training is best suited for this kind of a learning, the online module was well designed and engaging keeping the current constraints in perspective
                               </p>
                            </div>
                            <div class="testi-content">
                               <div class="image-wrap">
-                                 <img src="/assets/img/av.png" alt="Testimonial" />
+                                 <img src="/assets/img/av.png" alt="Testimonial" loading="eager" />
                               </div>
                               <div class="testi-information">
                                  <div class="testi-name">Namita Shah</div>
                                  <span class="testi-title">(HSBC India)</span>
                                  <div class="ratting-img">
-                                    <img src="/assets/img/ratting.png" alt="Testimonial" />
+                                    <img src="/assets/img/ratting.png" alt="Testimonial" loading="eager" />
                                  </div>
                               </div>
                            </div>
