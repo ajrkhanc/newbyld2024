@@ -197,31 +197,34 @@ export default function Home() {
             <title>HR and Business Productivity Solutions | BYLD Group</title>
             <link rel="canonical" href="https://byldgroup.com" />
             <meta name="description" content="Largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies." />
-            <script  defer type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-            <script  defer
-               dangerouslySetInnerHTML={{
-                  __html: `
-              $(function() {
-               var overlay = $('<div id="overlay"></div>');
-               overlay.delay();
-               overlay.appendTo(document.body);
-               $('.popup').delay(30000).fadeIn();
-               $('.close').click(function() {
-                 $('.popup').hide();
-                 overlay.appendTo(document.body).remove();
-                 return false;
-               });
-               $('.x').click(function() {
-                 $('.popup').hide();
-                 overlay.appendTo(document.body).remove();
-                 return false;
-               });
-             });
-          `,
-               }}
-            />
             <link rel="preload" type="text/css" href="/assets/css/homemodule.css" as="style" />
             <link rel="stylesheet" href="/assets/css/homemodule.css" />
+           
+            <script  defer type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+            <script
+               defer
+               dangerouslySetInnerHTML={{
+                  __html: `
+                     $(function() {
+                     var overlay = $('<div id="overlay"></div>');
+                     overlay.appendTo(document.body);
+                     $('.popup').delay(30000).fadeIn();
+                     $('.close').click(function() {
+                        $('.popup').hide();
+                        overlay.remove();
+                        return false;
+                     });
+                     $('.x').click(function() {
+                        $('.popup').hide();
+                        overlay.remove();
+                        return false;
+                     });
+                     });
+                  `,
+               }}
+               />
+
+           
          </Head>
 
          <section className='bannersection'>
