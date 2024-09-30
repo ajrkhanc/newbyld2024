@@ -594,7 +594,7 @@ export default function Home() {
                <div class="row y-middle">
                   <div class="col-lg-5 md-mb-50 dnoneinm">
                      <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
-                        <img src="/assets/img/homeb/contactl.png" alt="Contact" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" alt="Contact" />
                      </div>
                   </div>
                   <div class="col-lg-7">
