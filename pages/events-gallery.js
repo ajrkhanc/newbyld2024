@@ -296,10 +296,10 @@ export default class LightboxExample extends Component {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox1'>
-                        <img src="/assets/img/homeb/orangearrow.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" />
                     </div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
                     </div>
                 </div>                
             </div>
