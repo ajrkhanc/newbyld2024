@@ -170,7 +170,7 @@ export default function Home() {
                 <div className='col-sm-4 missionslrowbr missionslrowbb'>
                   <div className='solutionboxmission wow fadeInUp delay-0-2s animated animateUP'>
                     <div className='iconorh'>
-                      <img className='active' src="/assets/img/icon/imission.png" alt="images" />
+                      <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/imission_84HLPmvHu4.webp" alt="images" />
                       <h4><span>M</span>ISSION</h4>
                     </div>
                     <div className='onlytext'>
@@ -184,7 +184,7 @@ export default function Home() {
                 <div className='col-sm-4 missionslrowbr missionslrowbb'>
                   <div className='solutionboxmission wow fadeInUp delay-0-2s animated animateUP'>
                     <div className='iconorh'>
-                      <img className='active' src="/assets/img/icon/ivision.png" alt="images" />
+                      <img className='active' src="https://ik.imagekit.io/byld/BYLD/byldallasests/ivision_yu5vJoqozD.webp" alt="images" />
                       <h4><span>V</span>ISION</h4>
                     </div>
                     <div className='onlytext'>
@@ -200,10 +200,10 @@ export default function Home() {
 
           <div className='clearfix'></div>
           <div className='solutionarrowbox1'>
-            <img src="/assets/img/homeb/orangearrow.png" />
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" />
           </div>
           <div className='solutionarrowbox2'>
-            <img src="/assets/img/homeb/bluearrow1.png" />
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
           </div>
 
         </div>
@@ -278,59 +278,59 @@ export default function Home() {
                 <Slider {...settings}>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/bla.jpg" />
+                    <img src="/assets/img/new/logos/bla.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/eve.jpg" />
+                    <img src="/assets/img/new/logos/eve.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/five.jpg" />
+                    <img src="/assets/img/new/logos/five.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/jenson8l.jpg" />
+                    <img src="/assets/img/new/logos/jenson8l.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/tirianl.jpg" />
+                    <img src="/assets/img/new/logos/tirianl.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/lumi.jpg" />
+                    <img src="/assets/img/new/logos/lumi.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/inside.jpg" />
+                    <img src="/assets/img/new/logos/inside.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/persona.jpg" />
+                    <img src="/assets/img/new/logos/persona.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/trapo.jpg" />
+                    <img src="/assets/img/new/logos/trapo.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/bussion.jpg" />
+                    <img src="/assets/img/new/logos/bussion.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/by-cl.jpg" />
+                    <img src="/assets/img/new/logos/by-cl.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/flight.jpg" />
+                    <img src="/assets/img/new/logos/flight.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/yomalogs.jpg" />
+                    <img src="/assets/img/new/logos/yomalogs.webp" />
                   </div>
 
                   <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                    <img src="/assets/img/new/logos/dtci.jpg" />
+                    <img src="/assets/img/new/logos/dtci.webp" />
                   </div>
 
                 </Slider>
@@ -358,7 +358,7 @@ export default function Home() {
           <div class="row y-middle">
             <div class="col-lg-5 md-mb-50">
               <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
-                <img src="/assets/img/homeb/contactl.png" alt="Contact" />
+                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" alt="Contact" />
               </div>
             </div>
             <div class="col-lg-7">
