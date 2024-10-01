@@ -123,7 +123,7 @@ export default function Home() {
 
             <div class="rs-breadcrumbs leadershipbrud">
                 <div class="container">
-                    <div class="breadcrumb-container theme1 wow fadeInUp delay-0-2s animated animateUP">
+                    <div class="breadcrumb-container theme1 ">
                         <ul>
                             <li>
                                 <a href="/">
@@ -143,10 +143,10 @@ export default function Home() {
                         <div className='col-sm-7'>
                             <div class="breadcrumbs-inner">
                                 <span class="watermark ">TEAM</span>
-                                <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
+                                <h1 class="page-title ">
                                     Our Leadership Team
                                 </h1>
-                                <span class="sub-text wow fadeInUp delay-0-2s animated animateUP">
+                                <span class="sub-text ">
                                 The illustrious journey of BYLD Group has been shaped by the vision, beliefs, corporate knowledge, and prowess of our veteran leaders, who have the power to bring real change to people and organizations. With their extraordinary spirit, grit, and determination, we are steadily scaling new milestones every day.
                                 </span>
                             </div>
@@ -163,7 +163,7 @@ export default function Home() {
                     <div className='row'>
                         <div className='col-sm-2'></div>
                         <div className='col-sm-8'>
-                            <h2 class="title pbb-100 mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP pbb-30">Meet Our Leadership Team</h2>
+                            <h2 class="title pbb-100 mb-0 md-pb-20 h2call  pbb-30">Meet Our Leadership Team</h2>
                         </div>
                     </div>
                     <div className='row zindx'>
@@ -173,7 +173,7 @@ export default function Home() {
                                 <div className='col-sm-6'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
-                                            <a target="_blank" href="/yogesh-sood"><img src="/assets/img/team/yogesh-sood.jpg" alt="" /></a>
+                                            <a target="_blank" href="/yogesh-sood"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/yogesh-sood_TeqofA9Ch.webp" alt="" /></a>
                                         </div>
                                         <div className="team-info">
                                             <div className="name">
@@ -195,7 +195,7 @@ export default function Home() {
                                 <div className='col-sm-6'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
-                                            <a href="#"><img src="/assets/img/team/sandeep.jpg" alt="" /></a>
+                                            <a href="#"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/sandeep_eK3UKTzIG.webp" alt="" /></a>
                                         </div>
                                         <div className="team-info">
                                             <div className="name">
@@ -218,7 +218,7 @@ export default function Home() {
                                 <div className='col-sm-6'>
                                     <div className='innerteamc'>
                                         <div className='teamimgc1'>
-                                            <a href="#"><img src="/assets/img/team/anand.jpg" alt="" /></a>
+                                            <a href="#"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/anand_oKSTMrWy9.webp" alt="" /></a>
                                         </div>
                                         <div className="team-info">
                                             <div className="name">
@@ -240,7 +240,7 @@ export default function Home() {
                                 <div className='col-sm-6'>
                                     <div className='innerteamc'>
                                         <div className='teamimgc1'>
-                                            <a href="#"><img src="/assets/img/team/nishit.jpg" alt="" /></a>
+                                            <a href="#"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/nishit_T0upIoQEjV.webp" alt="" /></a>
                                         </div>
                                         <div className="team-info">
                                             <div className="name">
@@ -264,10 +264,10 @@ export default function Home() {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox1'>
-                        <img src="/assets/img/homeb/orangearrow.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" />
                     </div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
                     </div>
 
                 </div>
@@ -279,64 +279,64 @@ export default function Home() {
                     <div className="row">
                         <div className="col-sm-12">
                             <div className="pb-50">
-                                <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">Authorized Partners</h2>
+                                <h2 class="title mb-0 md-pb-20 h2call ">Authorized Partners</h2>
                                 <br></br>
                                 <Slider {...settings}>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/bla.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/bla.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/eve.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/eve.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/five.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/five.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/jenson8l.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/jenson8l.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/tirianl.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/tirianl.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/lumi.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/lumi.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/inside.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/inside.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/persona.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/persona.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/trapo.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/trapo.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/bussion.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/bussion.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/by-cl.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/by-cl.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/flight.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/flight.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/yomalogs.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/yomalogs.webp" />
                                     </div>
 
-                                    <div className='logoslider wow fadeInUp delay-0-2s animated animateUP'>
-                                        <img src="/assets/img/new/logos/dtci.jpg" />
+                                    <div className='logoslider '>
+                                        <img src="/assets/img/new/logos/dtci.webp" />
                                     </div>
 
                                 </Slider>
@@ -352,10 +352,10 @@ export default function Home() {
                 <div class="container">
                     <div className='row'>
                         <div className='col-sm-3'>
-                            <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">Want to Bring the Real Change? </h2>
+                            <h2 class="title mb-0 md-pb-20 h2call ">Want to Bring the Real Change? </h2>
                         </div>
                         <div className='col-sm-9'>
-                            <p class="mb-0 pall pbb-20 wow fadeInUp delay-0-2s animated animateUP">
+                            <p class="mb-0 pall pbb-20 ">
                             Whether you want to elevate your leadership skills, improve self-awareness, enhance productivity, unlock the full potential of your manpower, or strengthen communication skills, we are here to help you. Fill out the details in our form, and our experts will get back to you soon.
                             </p>
                         </div>
@@ -363,13 +363,13 @@ export default function Home() {
 
                     <div class="row y-middle">
                         <div class="col-lg-5 md-mb-50">
-                            <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
+                            <div class="contact-img ">
                                 <img src="/assets/img/homeb/contactl.png" alt="Contact" />
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="contact-wrap">
-                                <div className="bannerform wow fadeInUp delay-0-2s animated animateUP">
+                                <div className="bannerform ">
                                     <form id="contact-form" className='clientcornner ptt-40 pbb-20' onSubmit={registerUser}>
                                         <div className="row">
                                             <div className="col-sm-6 mb-12">
