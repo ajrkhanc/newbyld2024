@@ -288,7 +288,7 @@ export default function Books() {
 
                         <div className="col-sm-3">
                             <div className="innervideoshd">
-                                <img src="/assets/img/books/crucialconversations.svg" alt="books" />
+                                <img src="/assets/img/books/crucialconversations.webp" alt="books" />
                                 <div className="book-details">
                                     <div className="title">Crucial Conversations First Chapter</div>
                                 </div>
@@ -306,7 +306,7 @@ export default function Books() {
 
                         <div className="col-sm-3">
                             <div className="innervideoshd">
-                                <img src="/assets/img/books/crucialaccountability.svg" alt="books" />
+                                <img src="/assets/img/books/crucialaccountability.webp" alt="books" />
                                 <div className="book-details">
                                     <div className="title">Crucial Accountability First Chapter</div>
                                 </div>
@@ -322,7 +322,7 @@ export default function Books() {
 
                         <div className="col-sm-3">
                             <div className="innervideoshd">
-                                <img src="/assets/img/books/influencer.svg" alt="books" />
+                                <img src="/assets/img/books/influencer.webp" alt="books" />
                                 <div className="book-details">
                                     <div className="title">Influencer First Chapter</div>
                                 </div>
