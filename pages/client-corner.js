@@ -163,7 +163,7 @@ export default function ClientCorner() {
 
             <div class="rs-breadcrumbs aboutusbreadcrum">
                 <div class="container">
-                    <div class="breadcrumb-container theme1 wow fadeInUp delay-0-2s animated animateUP">
+                    <div class="breadcrumb-container theme1 ">
                         <ul>
                             <li>
                                 <a href="/">
@@ -183,10 +183,10 @@ export default function ClientCorner() {
                         <div className='col-sm-8'>
                             <div class="breadcrumbs-inner">
                                 <span class="watermark ">BYLD</span>
-                                <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
+                                <h1 class="page-title ">
                                     Continuously adding value to our customers' business!
                                 </h1>
-                                <span class="sub-text wow fadeInUp delay-0-2s animated animateUP">
+                                <span class="sub-text ">
                                     Let us help you find the best resource for your company. Highly effective, employee screening process for hiring of blue-collared and entry-level staff.
                                 </span>
                             </div>
@@ -200,40 +200,40 @@ export default function ClientCorner() {
                     <div className="row zindx">
                         <div className="col-sm-12">
                             <div className="pb-50 text-center">
-                                <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP text">Our Clientele</h2>
+                                <h2 class="title mb-0 md-pb-20 h2call  text">Our Clientele</h2>
                                 <br></br>
                                 <Slider {...settings}>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l1.jpg" />
+                                        <img src="/assets/img/logos/l1.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l2.jpg" />
+                                        <img src="/assets/img/logos/l2.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l3.jpg" />
+                                        <img src="/assets/img/logos/l3.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l4.jpg" />
+                                        <img src="/assets/img/logos/l4.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l5.jpg" />
+                                        <img src="/assets/img/logos/l5.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l6.jpg" />
+                                        <img src="/assets/img/logos/l6.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l7.jpg" />
+                                        <img src="/assets/img/logos/l7.webp" />
                                     </div>
 
                                     <div className='logoslider'>
-                                        <img src="/assets/img/logos/l8.jpg" />
+                                        <img src="/assets/img/logos/l8.webp" />
                                     </div>
 
                                 </Slider>
@@ -243,7 +243,7 @@ export default function ClientCorner() {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
                     </div>
                 </div>
             </div>
@@ -252,71 +252,71 @@ export default function ClientCorner() {
                 <div className='container'>
                     <div className='row rs-testimonial style2 rs-blog style1'>
                         <div className='col-sm-4'>
-                            <div className='mst wow fadeInUp delay-0-2s animated animateUP'>
+                            <div className='mst '>
                                 <div className='sec-title3 mbb-35'>
                                     <h4 className="countertoph2">CLIENTS SPEAK</h4>
                                     <div className="heading-border-line left-style"></div>
                                 </div>
                             </div>
                             <Slider {...settings1}>
-                                <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
+                                <div class="testi-wrap ">
                                     <div class="item-content">
-                                        <span><img src="/assets/img/quote.png" alt="Testimonial" /></span>
+                                        <span><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" alt="Testimonial" /></span>
                                         <p>
                                             The online program was complete with several videos, real life examples and activities / note taking facility post each leg of the module which helped reflect on the learnings and its application. While a classroom training is best suited for this kind of a learning, the online module was well designed and engaging keeping the current constraints in perspective
                                         </p>
                                     </div>
                                     <div class="testi-content">
                                         <div class="image-wrap">
-                                            <img src="/assets/img/av.png" alt="Testimonial" />
+                                            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" alt="Testimonial" />
                                         </div>
                                         <div class="testi-information">
                                             <div class="testi-name">Namita Shah</div>
                                             <span class="testi-title">(HSBC India)</span>
                                             <div class="ratting-img">
-                                                <img src="/assets/img/ratting.png" alt="Testimonial" />
+                                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" alt="Testimonial" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
+                                <div class="testi-wrap ">
                                     <div class="item-content">
-                                        <span><img src="/assets/img/quote.png" alt="Testimonial" /></span>
+                                        <span><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" alt="Testimonial" /></span>
                                         <p>
                                             We engaged their services for facilitating a session on SLII<sup>®</sup> for our 26 employees, who were members of the regional and local country leadership team spread across APAC, in Nov 2019. The objective of the learning program being enabling the leaders to drive change in the organization and have constructive & difficult conversations with their teams, ensuring the organizational goals are at the focal point of discussions.
                                         </p>
                                     </div>
                                     <div class="testi-content">
                                         <div class="image-wrap">
-                                            <img src="/assets/img/av.png" alt="Testimonial" />
+                                            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" alt="Testimonial" />
                                         </div>
                                         <div class="testi-information">
                                             <div class="testi-name">Rangkynsai Nongbet</div>
                                             <span class="testi-title">(Ortho Clinical Diagnostics)</span>
                                             <div class="ratting-img">
-                                                <img src="/assets/img/ratting.png" alt="Testimonial" />
+                                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" alt="Testimonial" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="testi-wrap wow fadeInUp delay-0-2s animated animateUP">
+                                <div class="testi-wrap ">
                                     <div class="item-content">
-                                        <span><img src="/assets/img/quote.png" alt="Testimonial" /></span>
+                                        <span><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" alt="Testimonial" /></span>
                                         <p>
                                             Thankful to the team at Crucial Life Changing Skills for conducting a power packed session on the topic of “Influencer” for our leaders at CK Birla Group. The simple (and powerful) 6 sources of influence model will guide us to to drive change in our personal and professional space!
                                         </p>
                                     </div>
                                     <div class="testi-content">
                                         <div class="image-wrap">
-                                            <img src="/assets/img/av.png" alt="Testimonial" />
+                                            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" alt="Testimonial" />
                                         </div>
                                         <div class="testi-information">
                                             <div class="testi-name">Prerna S</div>
                                             <span class="testi-title">(Birla Fertility and IVF)</span>
                                             <div class="ratting-img">
-                                                <img src="/assets/img/ratting.png" alt="Testimonial" />
+                                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" alt="Testimonial" />
                                             </div>
                                         </div>
                                     </div>
@@ -324,24 +324,24 @@ export default function ClientCorner() {
                             </Slider>
                         </div>
                         <div className='col-sm-8'>
-                            <div className='sec-title3 mbb-35 wow fadeInUp delay-0-2s animated animateUP'>
+                            <div className='sec-title3 mbb-35 '>
                                 <h4 className="countertoph2">WHY OUR CLIENTS TRUST US?</h4>
                                 <div className="heading-border-line left-style"></div>
                             </div>
                             <div className='mycounter'>
-                                <div className='counterbox countb1 wow fadeInUp delay-0-2s animated animateUP'>
+                                <div className='counterbox countb1 '>
                                     <span className="rs-count">500,000 +</span>
                                     <h3>PEOPLE TRAINED</h3>
                                 </div>
-                                <div className='counterbox countb2 wow fadeInUp delay-0-2s animated animateUP'>
+                                <div className='counterbox countb2 '>
                                     <span className="rs-count">1,000 +</span>
                                     <h3>YEARS OF ACCUMULATED CONSULTING EXPERIENCE</h3>
                                 </div>
-                                <div className='counterbox countb3 wow fadeInUp delay-0-2s animated animateUP'>
+                                <div className='counterbox countb3 '>
                                     <span className="rs-count">10 +</span>
                                     <h3>GLOBAL PARTNERSHIPS</h3>
                                 </div>
-                                <div className='counterbox countb4 wow fadeInUp delay-0-2s animated animateUP'>
+                                <div className='counterbox countb4 '>
                                     <span className="rs-count">100,000 +</span>
                                     <h3>ACCESS TO PROFILES</h3>
                                 </div>
@@ -359,7 +359,7 @@ export default function ClientCorner() {
                     <div className="row zindx">
                         <div className="col-sm-12">
                             <div className="pb-50 text-center">
-                                <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP text">Client Testimonials</h2>
+                                <h2 class="title mb-0 md-pb-20 h2call  text">Client Testimonials</h2>
                                 <br></br>
                                 <Slider {...testmonials}>
 
@@ -397,7 +397,7 @@ export default function ClientCorner() {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
                     </div>
                 </div>
             </div>
@@ -407,10 +407,10 @@ export default function ClientCorner() {
                 <div class="container">
                     <div className='row'>
                         <div className='col-sm-3'>
-                            <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">Get in touch</h2>
+                            <h2 class="title mb-0 md-pb-20 h2call ">Get in touch</h2>
                         </div>
                         <div className='col-sm-9'>
-                            <p class="mb-0 pall pbb-20 wow fadeInUp delay-0-2s animated animateUP">
+                            <p class="mb-0 pall pbb-20 ">
                                 Avail the development stream that is essential for your professional requirement. For more information, feel free to fill the form and we will get back to you
                             </p>
                         </div>
@@ -418,13 +418,13 @@ export default function ClientCorner() {
 
                     <div class="row y-middle">
                         <div class="col-lg-5 md-mb-50">
-                            <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
-                                <img src="/assets/img/homeb/contactl.png" alt="Contact" />
+                            <div class="contact-img ">
+                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" alt="Contact" />
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="contact-wrap">
-                                <div className="bannerform wow fadeInUp delay-0-2s animated animateUP">
+                                <div className="bannerform ">
                                     <form id="contact-form" className='clientcornner ptt-40 pbb-20' onSubmit={registerUser}>
                                         <div className="row">
                                             <div className="col-lg-12 mb-12">
