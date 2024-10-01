@@ -364,7 +364,7 @@ export default function Home() {
                     <div class="row y-middle">
                         <div class="col-lg-5 md-mb-50">
                             <div class="contact-img ">
-                                <img src="/assets/img/homeb/contactl.png" alt="Contact" />
+                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" alt="Contact" />
                             </div>
                         </div>
                         <div class="col-lg-7">
