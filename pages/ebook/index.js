@@ -40,7 +40,7 @@ export default function Books(){
                         <div className="col-sm-4">
                            <div className="innervideoshd ebookst text-center">
                                <a href='/ebook/2023-hr-and-trends'>
-                               <img src='/assets/img/ebook/2023-hr-and-trends.jwebp' alt="books"/>
+                               <img src='/assets/img/ebook/2023-hr-and-trends.webp' alt="books"/>
                                <h4 className=''>2023 HR and L&D Trends</h4>
                                <h3 className='ebookbtn'>Read E-book</h3>
                                </a>
