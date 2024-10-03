@@ -48,101 +48,101 @@ export default function AwardsAccolades() {
                     <div className="row zindx">
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a1.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a1.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a2.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a2.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a3.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a3.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a4.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a4.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a5.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a5.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a6.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a6.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a7.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a7.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a8.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a8.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a9.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a9.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a10.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a10.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a11.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a11.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a12.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a12.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a13.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a13.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a14.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a14.webp" alt="Awards" />
                             </div>
                         </div>
 
                         <div className='col-sm-4'>
                             <div className='awardsarea'>
-                                <img src="/assets/img/awards/a15.jpg" alt="Awards" />
+                                <img src="/assets/img/awards/a15.webp" alt="Awards" />
                             </div>
                         </div>
                     </div>
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox1'>
-                        <img src="/assets/img/homeb/orangearrow.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" />
                     </div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
                     </div>
                 </div>
             </div>
