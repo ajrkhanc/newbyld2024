@@ -288,7 +288,7 @@ export default function Books() {
 
                         <div className="col-sm-3">
                             <div className="innervideoshd">
-                                <img src="/assets/img/books/crucialconversations.webp" alt="books" />
+                                <img src="/assets/img/books/crucialconversations.jpg" alt="books" />
                                 <div className="book-details">
                                     <div className="title">Crucial Conversations First Chapter</div>
                                 </div>
