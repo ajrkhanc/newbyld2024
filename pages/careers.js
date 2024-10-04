@@ -172,7 +172,7 @@ export default function Home() {
 
                     <div className='clearfix'></div>
                     <div className='solutionarrowbox2'>
-                        <img src="/assets/img/homeb/bluearrow1.png" />
+                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
                     </div>
 
                 </div>
