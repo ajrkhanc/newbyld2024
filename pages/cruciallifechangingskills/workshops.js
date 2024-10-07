@@ -824,7 +824,7 @@ export default function Workshops() {
                       The Power of Habit-24th-October,2024
                     </option>
                     <option value="Crucial Influence-12th-Nov-2024	">
-                      Crucial Influence-4th-oct,2024	
+                      Crucial Influence-30th-oct,2024	
                     </option>
                     <option value="Crucial Influence-12th-Nov-2024	">
                       Crucial Influence-12th-Nov,2024	
