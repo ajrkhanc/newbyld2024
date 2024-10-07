@@ -808,9 +808,7 @@ export default function Workshops() {
                     <option value="The Power of Habit-13th-August-2024">
                      The Power of Habit-13th-August,2024
                     </option>
-                    <option value="Getting Things Done - 26rd-August-2024">
-                     Getting Things Done - 26rd-August,2024
-                    </option>
+                    
                     <option value="Crucial Conversations for Accountibility-12th& 13t -September-2024">
                      Crucial Conversations for Accountibility-12th& 13t -September,2024
                     </option>
@@ -823,7 +821,10 @@ export default function Workshops() {
                     <option value="The Power of Habit-24th-October-2024">
                       The Power of Habit-24th-October,2024
                     </option>
-                    <option value="Crucial Influence-12th-Nov-2024	">
+                    <option value="Getting Things Done - 24th-October,2024">
+                     Getting Things Done - 24th-October,2024
+                    </option>
+                    <option value="Crucial Influence-30th-oct,2024">
                       Crucial Influence-30th-oct,2024	
                     </option>
                     <option value="Crucial Influence-12th-Nov-2024	">
