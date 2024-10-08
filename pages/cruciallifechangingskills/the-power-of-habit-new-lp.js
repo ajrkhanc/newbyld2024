@@ -222,10 +222,10 @@ export default function BrowseCourses(){
         <section class="workshops">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 contact-title"> 
+                    {/* <div class="col-lg-12 contact-title"> 
                         <h1>Our Upcoming Programs</h1>
                     </div>
-                          
+                           */}
 {/*                  {/*                   
                     <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
@@ -278,7 +278,7 @@ export default function BrowseCourses(){
                                 </div>
                             </div>
                         </div> */}
-
+{/* 
                         <div class="col-md-4 workshop-col">
                             <div class="row workshop-row">
                                 <div class="col-md-12 workshop-content phothemecolor">
@@ -292,7 +292,7 @@ export default function BrowseCourses(){
                                     <a href='#registered'><button class="register phothemecolor">REGISTER NOW</button></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* <div class="col-md-4 workshop-col">
                             <div class="row workshop-row">
