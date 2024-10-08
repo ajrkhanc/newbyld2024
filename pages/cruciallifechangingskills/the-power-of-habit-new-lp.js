@@ -164,6 +164,8 @@ export default function BrowseCourses(){
                                         <option value="CCMD,24th-25th Oct-Open Program">CCMD, 24th-25th Oct - Open Program</option>
                                         <option value="POH, 17th Oct- Open Program">POH, 17th Oct- Open Program</option>
                                         <option value=" POH, 17th Oct- Public Workshop"> POH, 17th Oct- Public Workshop</option>
+                                        <option value=" GTD  24th Oct-Virtual Course"> GTD  24th Oct-Virtual Course</option>
+                                        <option value=" GTD 30th Oct Open Program"> GTD 30th Oct Open Program</option>
 
                                     
                                     </select>
