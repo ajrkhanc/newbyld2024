@@ -158,7 +158,6 @@ export default function Workshops() {
                        </div>
                     </div> */}
 
-
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content phothemecolor"> 
@@ -298,7 +297,7 @@ export default function Workshops() {
                             </div>
                        </div>
                     </div> */}
-                    {/* <div class="col-md-4 workshop-col"> 
+            {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
                             <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
@@ -313,7 +312,7 @@ export default function Workshops() {
                             </div>
                        </div>
                     </div>  */}
-          {/* <div class="col-md-4 workshop-col">
+            {/* <div class="col-md-4 workshop-col">
               <div class="row workshop-row">
                 <div class="col-md-12 workshop-content green-col">
                   <img
@@ -340,7 +339,7 @@ export default function Workshops() {
                 </div>
               </div>
             </div>*/}
-            <div class="col-md-4 workshop-col">
+            {/* <div class="col-md-4 workshop-col">
               <div class="row workshop-row">
                 <div class="col-md-12 workshop-content green-col">
                   <img
@@ -366,84 +365,144 @@ export default function Workshops() {
                   </a>
                 </div>
               </div>
+            </div> */}
+
+            {/* <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content gtdcolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-gtd.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">Getting Things Done</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 23rd
+                    August, 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register gtdcolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div> */}
+            {/* <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4>CRUCIAL CONVERSATIONS</h4>
+                  <p>for Accountability</p>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>12th& 13th
+                    September, 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
             </div>
-                      
-            <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
-                            <h4 className='pbb-20'>Getting Things Done</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 23rd August, 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register gtdcolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                  </div> 
-                  <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4>CRUCIAL CONVERSATIONS</h4>
-                            <p>for Accountability</p>
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i>12th& 13th September, 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div>
 
-                    <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
-                            <h4 className='pbb-20'>Trapologist At work</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 26th September , 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register gtdcolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div>  
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content gtdcolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-gtd.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">Trapologist At work</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 26th
+                    September , 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register gtdcolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div> */}
 
-                  <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4>CRUCIAL CONVERSATIONS</h4>
-                            <p>for Mastering Dialogue</p>
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 7th & 8th October   ,2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM - 5:00 PM</h6>
-                            <a href='#registered'><button class="register">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-                    <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content phothemecolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4 className='pbb-20'>THE POWER OF HABIT</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 24th October, 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register phothemecolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-                     
-                    <div class="col-md-4 workshop-col">
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4>CRUCIAL CONVERSATIONS</h4>
+                  <p>for Mastering Dialogue</p>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 7th & 8th
+                    October ,2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM -
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content phothemecolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">THE POWER OF HABIT</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 24th
+                    October, 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register phothemecolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 workshop-col">
               <div class="row workshop-row">
                 <div class="col-md-12 workshop-content green-col">
                   <img
@@ -457,7 +516,8 @@ export default function Workshops() {
                 <h5 className="eventt">Workshop</h5>
                 <div class="col-md-12 workshop-date green-col">
                   <h6>
-                    <i class="fa fa-calendar" aria-hidden="true"></i> 12th November,2024
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 12th
+                    November,2024
                   </h6>
                   <h6>
                     <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
@@ -469,145 +529,249 @@ export default function Workshops() {
                 </div>
               </div>
             </div>
-             <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
-                            <h4 className='pbb-20'>Getting Things Done</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 27th November, 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM - 5:00 PM </h6>
-                            <a href='#registered'><button class="register gtdcolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content gtdcolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-gtd.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">Getting Things Done</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 27th
+                    November, 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM -
+                    5:00 PM{" "}
+                  </h6>
+                  <a href="#registered">
+                    <button class="register gtdcolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content gtdcolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-gtd.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">Trapologist At work</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 11th
+                    December , 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 PM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register gtdcolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4>CRUCIAL CONVERSATIONS</h4>
+                  <p>for Accountability</p>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 19th &
+                    20th December, 2024
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content phothemecolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">THE POWER OF HABIT</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 10th
+                    January, 2025
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register phothemecolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content gtdcolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-gtd.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">Getting Things Done</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>24th
+                    January, 2025
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM -
+                    5:00 PM{" "}
+                  </h6>
+                  <a href="#registered">
+                    <button class="register gtdcolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-                 <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
-                            <h4 className='pbb-20'>Trapologist At work</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 11th December , 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 PM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register gtdcolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-                   <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4>CRUCIAL CONVERSATIONS</h4>
-                            <p>for Accountability</p>
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 19th & 20th December, 2024</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content gtdcolor">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-gtd.svg"
+                    alt=""
+                  />
+                  <h4 className="pbb-20">Trapologist At work</h4>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 7th
+                    February , 2025
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 PM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register gtdcolor">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content green-col">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4>INFLUENCER</h4>
+                  <p></p>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date green-col">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i> 20th
+                    February, 2025
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content phothemecolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4 className='pbb-20'>THE POWER OF HABIT</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 10th January, 2025</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register phothemecolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-                   <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
-                            <h4 className='pbb-20'>Getting Things Done</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i>24th January, 2025</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM - 5:00 PM </h6>
-                            <a href='#registered'><button class="register gtdcolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-  
-                 <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
-                            <h4 className='pbb-20'>Trapologist At work</h4>                            
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 7th February , 2025</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 PM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register gtdcolor">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-                   <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content green-col"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4>INFLUENCER</h4>
-                            <p></p>
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date green-col"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i> 20th February, 2025</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4>CRUCIAL CONVERSATIONS</h4>
+                  <p>for Mastering Dialogue</p>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>6th & 7th
+                    March, 2025
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 workshop-col">
+              <div class="row workshop-row">
+                <div class="col-md-12 workshop-content">
+                  <img
+                    class="left-image img100px mbb-30"
+                    src="/classets/img/logo-influencer.svg"
+                    alt=""
+                  />
+                  <h4>CRUCIAL CONVERSATIONS</h4>
+                  <p>for Accountability</p>
+                </div>
+                <h5 className="eventt">Workshop</h5>
+                <div class="col-md-12 workshop-date">
+                  <h6>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>19th & 20th
+                    March, 2025
+                  </h6>
+                  <h6>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to
+                    5:00 PM
+                  </h6>
+                  <a href="#registered">
+                    <button class="register">REGISTER NOW</button>
+                  </a>
+                </div>
+              </div>
+            </div>
 
-  
-            <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4>CRUCIAL CONVERSATIONS</h4>
-                            <p>for Mastering Dialogue</p>
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i>6th & 7th March, 2025</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div>  
-                    <div class="col-md-4 workshop-col"> 
-                       <div class="row workshop-row"> 
-                            <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
-                            <h4>CRUCIAL CONVERSATIONS</h4>
-                            <p>for Accountability</p>
-                            </div>
-                            <h5 className='eventt'>Workshop</h5>
-                             <div class="col-md-12 workshop-date"> 
-                            <h6><i class="fa fa-calendar" aria-hidden="true"></i>19th & 20th March, 2025</h6>
-                            <h6><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM to 5:00 PM</h6>
-                            <a href='#registered'><button class="register">REGISTER NOW</button></a>
-                            </div>
-                       </div>
-                    </div> 
-
-           
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
@@ -805,57 +969,54 @@ export default function Workshops() {
                       April 2024
                     </option> */}
 
-                    <option value="The Power of Habit-13th-August-2024">
-                     The Power of Habit-13th-August,2024
-                    </option>
-                    
-                    <option value="Crucial Conversations for Accountibility-12th& 13t -September-2024">
-                     Crucial Conversations for Accountibility-12th& 13t -September,2024
-                    </option>
-                    <option value="Trapologist At work-26th-September-2024	">
-                      Trapologist At work-26th-September,2024	
-                    </option>
+                  
+
+                 
                     <option value="Crucial Conversations for Mastering Dialogue-7th & 8th-October-2024">
-                   Crucial Conversations for Mastering Dialogue-7th & 8th-October,2024
+                      Crucial Conversations for Mastering Dialogue-7th &
+                      8th-October,2024
                     </option>
                     <option value="The Power of Habit-24th-October-2024">
                       The Power of Habit-24th-October,2024
                     </option>
                     <option value="Getting Things Done - 24th-October,2024">
-                     Getting Things Done - 24th-October,2024
+                      Getting Things Done - 24th-October,2024
                     </option>
                     <option value="Crucial Influence-30th-oct,2024">
-                      Crucial Influence-30th-oct,2024	
+                      Crucial Influence-30th-oct,2024
                     </option>
                     <option value="Crucial Influence-12th-Nov-2024	">
-                      Crucial Influence-12th-Nov,2024	
+                      Crucial Influence-12th-Nov,2024
                     </option>
                     <option value="Getting Things Done-27th-Nov-2024	">
-                     Getting Things Done-27th-Nov,2024
+                      Getting Things Done-27th-Nov,2024
                     </option>
                     <option value="Trapologist At work-11th-December-2024">
-                    Trapologist At work-11th-December,2024
+                      Trapologist At work-11th-December,2024
                     </option>
                     <option value="Crucial Conversations for Accountibility-19th & 20th-December-2024">
-                     Crucial Conversations for Accountibility-19th & 20th-December,2024
+                      Crucial Conversations for Accountibility-19th &
+                      20th-December,2024
                     </option>
                     <option value="The Power of Habit-10th-January-2025	">
-                     The Power of Habit-10th-January,2025	
+                      The Power of Habit-10th-January,2025
                     </option>
                     <option value="Getting Things Done-24th-January-2025		">
-                      Getting Things Done-24th-January,2025	
+                      Getting Things Done-24th-January,2025
                     </option>
                     <option value="Trapologist At work-7th-Feb-2025">
-                     Trapologist At work-7th-Feb,2025
+                      Trapologist At work-7th-Feb,2025
                     </option>
                     <option value="Crucial Influence-20th Feb-2025">
-                       Crucial Influence-20th Feb,2025	
+                      Crucial Influence-20th Feb,2025
                     </option>
                     <option value="Crucial Conversations for Mastering Dialogue-6th & 7th-March-2025">
-                     Crucial Conversations for Mastering Dialogue-6th & 7th-March,2025
+                      Crucial Conversations for Mastering Dialogue-6th &
+                      7th-March,2025
                     </option>
                     <option value="Crucial Conversations for Accountibility-19th & 20th-March-2025	">
-                    Crucial Conversations for Accountibility-19th & 20th-March-2025	
+                      Crucial Conversations for Accountibility-19th &
+                      20th-March-2025
                     </option>
                   </select>
                 </div>
