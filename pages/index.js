@@ -362,7 +362,7 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-6">
               <div class="sub-text supperh ">
-                What can we offer?{" "}
+                What can we offer?
               </div>
               <h2 class="title mb-0 md-pb-20 h2call ">
                 Nurturing your full potential and abilities with our curated
