@@ -304,6 +304,8 @@ h6 {
     height: 580px;
 }
 
+
+
 .bannersection {
     margin-top: -95px;
     height: 580px;
@@ -1763,11 +1765,15 @@ h6 {
         height: 420px;
     }
     .siderco{
-     height: 320px;
+     height: 223px;
     }
     .slick-list{
         height: 420px;
     }
+    .slick-track{
+        height: 420px;
+    }
+
     
     .bannersection {
        
