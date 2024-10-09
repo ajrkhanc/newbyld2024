@@ -294,7 +294,10 @@ h6 {
     height: 500px;
 }
 
-.siderco {}
+.siderco {
+
+    height: 250px;
+}
 
 .bannersection {
     margin-top: -95px;
