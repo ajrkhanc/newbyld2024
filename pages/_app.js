@@ -5209,68 +5209,80 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           {/* Critical CSS files */}
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/bootstrap.min.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/font-awesome.min.css"
+             as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/fonts/flaticon.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/animate.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/owl.carousel.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/off-canvas.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/magnific-popup.css"
+            as="style"
           />
-          <link rel="stylesheet" href="/assets/css/rsmenu-main.css" />
+          <link rel="preload" href="/assets/css/rsmenu-main.css"  as="style" />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/inc/custom-slider/css/nivo-slider.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/inc/custom-slider/css/preview.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/rs-spacing.css"
+            as="style"
           />
-          <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+          <link rel="preload" type="text/css" href="/assets/css/style.css"  as="style"  />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/responsive.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="/assets/css/globals.css"
+            as="style"
           />
-          <link rel="stylesheet" type="text/css" href="/assets/css/bg.css" />
+          <link  rel="preload" type="text/css" href="/assets/css/bg.css"  as="style"/>
 
           {/* Preload slick carousel CSS files */}
           <link
@@ -5286,14 +5298,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           {/* Slick Carousel CSS */}
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+            as="style"
           />
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+             as="style"
           />
 
           {/* Google Analytics (async) */}
