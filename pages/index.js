@@ -400,6 +400,8 @@ export default function Home() {
               <div class="rs-videos choose-video ">
                 <div class="images-video fvideo">
                   <iframe
+                    width={1000}
+                    height={650}
                     src="https://www.youtube.com/embed/LXd9OtxQQQA?si=fLtvIRyKpbvr6dCE"
                     title="YouTube video player"
                     frameborder="0"
