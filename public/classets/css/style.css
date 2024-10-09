@@ -200,6 +200,7 @@ html {
 	font-family: myFirstFont;
 	font-family: "HelveticaNeueLT Pro 57 Cn";
 	src: url(../fonts/HelveticaNeueLTPro-Cn.otf);
+	font-display: swap;
 }
 
 body {
@@ -7725,6 +7726,7 @@ table td {
 	font-family: myFirstFont;
 	font-family: "HelveticaNeueLT Pro 57 Cn";
 	src: url(../fonts/HelveticaNeueLTPro-Cn.otf);
+	font-display: swap;
 }
 
 body {

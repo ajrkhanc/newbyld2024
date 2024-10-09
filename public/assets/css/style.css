@@ -2,8 +2,12 @@
   font-family: myFirstFont;
   font-family: "HelveticaNeueLT Pro 57 Cn";
   src: url("../fonts/HelveticaNeueLTPro-Cn.otf");
+  font-display: swap;
 }
-body{font-family: "co Pro 57 Cn";}
+body{font-family: "co Pro 57 Cn";
+
+
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +19,9 @@ body{font-family: "co Pro 57 Cn";}
 
 
 body {
-  font-family: "HelveticaNeueLT Pro 57 Cn"; }
+  font-family: "HelveticaNeueLT Pro 57 Cn";
+
+}
 
 html,
 body {

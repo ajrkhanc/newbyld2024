@@ -2,6 +2,7 @@
     font-family: myFirstFont;
     font-family: "BwDarius";
     src: url("../fonts/BwDariusDEMO-Regular.otf");
+    font-display: swap;
 }
 
 * {
