@@ -778,7 +778,7 @@ export default function Home() {
                 </h3>
                 <p>
                   Learn skills to decrease distraction and improve focus in four
-                  short video lessons with GTD expert Justin Hale.
+                  short video lessons with GTD<sup>®</sup> expert Justin Hale.
                 </p>
                 <a className="regularbtn" href="#">
                   Learn More
@@ -884,7 +884,7 @@ export default function Home() {
             <div className="col-sm-12 text-center">
               <Slider {...settings}>
                 <div className="homesl">
-                  <h2 className="font50 cblack">New GTD Course</h2>
+                  <h2 className="font50 cblack">New GTD<sup>®</sup> Course</h2>
                   <p className="font24 pabb-20">
                     We’ve updated everything from videos to learner guides to
                     course content. <br></br>See what’s new in Getting Things
@@ -978,11 +978,11 @@ export default function Home() {
             <div className="col-sm-12 text-center">
               <Slider {...settings}>
                 <div className="homesl">
-                  <h2 className="font50 cblack">New GTD Course</h2>
+                  <h2 className="font50 cblack">New GTD<sup>®</sup> Course</h2>
                   <p className="font24 pabb-20">
                     We’ve updated everything from videos to learner guides to
                     course content. <br></br>See what’s new in Getting Things
-                    Done.
+                    Done <sup>®</sup>.
                   </p>
                   <a className="regularbtn" href="#">
                     Learn More
