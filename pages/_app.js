@@ -5189,11 +5189,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           {/* Preload critical CSS files */}
           <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" />
-          <link
-            rel="preload"
-            href="/assets/css/font-awesome.min.css"
-            as="style"
-          />
+          <link rel="preload" href="/assets/css/font-awesome.min.css" as="style" />
+          <link rel="preload" href="/assets/fonts/flaticon.css" as="style" />
+          <link rel="preload" href="/assets/css/animate.css" as="style" />
+          <link rel="preload" href="/assets/css/owl.carousel.css" as="style" />
+          <link rel="preload" href="/assets/css/off-canvas.css" as="style" />
+          <link rel="preload" href="/assets/css/magnific-popup.css" as="style" />
+          <link rel="preload" href="/assets/css/rsmenu-main.css" as="style" />
+          <link rel="preload" href="/assets/inc/custom-slider/css/nivo-slider.css" as="style" />
+          <link rel="preload" href="/assets/inc/custom-slider/css/preview.css" as="style" />
+          <link rel="preload" href="/assets/css/rs-spacing.css" as="style" />
+          <link rel="preload" href="/assets/css/style.css" as="style" />
           <link rel="preload" href="/assets/fonts/flaticon.css" as="style" />
           <link rel="preload" href="/assets/css/style.css" as="style" />
 
@@ -5207,70 +5213,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             rel="stylesheet"
           />
 
-          {/* Critical CSS files */}
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/bootstrap.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/font-awesome.min.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/fonts/flaticon.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/animate.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/owl.carousel.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/off-canvas.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/magnific-popup.css"
-          />
+          {/* Load critical CSS files */}
+          <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+          <link rel="stylesheet" href="/assets/fonts/flaticon.css" />
+          <link rel="stylesheet" href="/assets/css/animate.css" />
+          <link rel="stylesheet" href="/assets/css/owl.carousel.css" />
+          <link rel="stylesheet" href="/assets/css/off-canvas.css" />
+          <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
           <link rel="stylesheet" href="/assets/css/rsmenu-main.css" />
+          <link rel="stylesheet" href="/assets/inc/custom-slider/css/nivo-slider.css" />
+          <link rel="stylesheet" href="/assets/inc/custom-slider/css/preview.css" />
+          <link rel="stylesheet" href="/assets/css/rs-spacing.css" />
+          <link rel="stylesheet" href="/assets/css/style.css" />
+
+            
+          {/* Load non-critical CSS files asynchronously */}
           <link
             rel="stylesheet"
-            type="text/css"
-            href="/assets/inc/custom-slider/css/nivo-slider.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/inc/custom-slider/css/preview.css"
-          />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="/assets/css/rs-spacing.css"
-          />
-          <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-          <link
-            rel="stylesheet"
-            type="text/css"
             href="/assets/css/responsive.css"
+            media="print"
+            onLoad="this.media='all'"
           />
           <link
             rel="stylesheet"
-            type="text/css"
             href="/assets/css/globals.css"
+            media="print"
+            onLoad="this.media='all'"
           />
-          <link rel="stylesheet" type="text/css" href="/assets/css/bg.css" />
+          <link
+            rel="stylesheet"
+            href="/assets/css/bg.css"
+            media="print"
+            onLoad="this.media='all'"
+          />
 
           {/* Preload slick carousel CSS files */}
           <link
