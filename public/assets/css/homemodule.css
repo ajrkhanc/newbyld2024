@@ -299,9 +299,9 @@ h6 {
     height: 250px;
 }
 
-/* .slick-list{
-    height: 250px;
-} */
+.slick-list{
+    height: 580px;
+}
 
 .bannersection {
     margin-top: -95px;
