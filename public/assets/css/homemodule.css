@@ -1758,28 +1758,41 @@ h6 {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSize_nrjDmkPAo.webp);
         background-position: center center;
         background-repeat: no-repeat;
-        padding: 105px 0px 40px 0px;
+        /* padding: 105px 0px 40px 0px; */
+        height: 320px;
+    }
+
+    .slick-list{
+        height: 320px;
+    }
+    
+    .bannersection {
+       
+        height: 320px;
     }
 
     .slide2c {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2JmH1qYAt.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        padding: 105px 0px 40px 0px;
+        /* padding: 105px 0px 40px 0px; */
+        height: 320px;
     }
 
     .slide3c {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__77iP6J_78.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        padding: 105px 0px 40px 0px;
+        /* padding: 105px 0px 40px 0px; */
+        height: 320px;
     }
 
     .slide4c {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_cHQ2SZAcX.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        padding: 105px 0px 40px 0px;
+        /* padding: 105px 0px 40px 0px; */
+        height: 320px;
     }
 
     .cpbg {
