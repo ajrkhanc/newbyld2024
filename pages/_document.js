@@ -37,21 +37,23 @@ class MyDocument extends Document {
           `,
             }}
           />
+          
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <link rel="icon" href="/favicon.png" />
+           <link rel="preload" href="/favicon.png" as="image" />
           <meta name="google-site-verification" content="OM6hSC8XO4ylFInFKwcHaWp5gFMt0Nn6aQ6A-eV7SWc" />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <script src="/assets/js/jquery.min.js"></script>
-          <script src="/assets/js/owl.carousel.min.js"></script>
-          <script src="/assets/js/wow.js"></script>
-          <script src="/assets/js/main.js"></script>
-          <script src="/classets/js/script.js"></script>
-          <script src="/kbassets/js/meanmenu.js"></script>
-          <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+          <script src="/assets/js/jquery.min.js" defer></script>
+          <script src="/assets/js/owl.carousel.min.js" defer></script>
+          <script src="/assets/js/wow.js" defer></script>
+          <script src="/assets/js/main.js" defer></script>
+          <script src="/classets/js/script.js" defer></script>
+          <script src="/kbassets/js/meanmenu.js" defer></script>
+          <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js" defer></script>
+
        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R93RP8FMVC"></script>
           <script
             dangerouslySetInnerHTML={{
