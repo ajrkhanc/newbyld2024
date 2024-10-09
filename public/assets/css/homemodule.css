@@ -1759,16 +1759,18 @@ h6 {
         background-position: center center;
         background-repeat: no-repeat;
         /* padding: 105px 0px 40px 0px; */
-        height: 320px;
+        height: 420px;
     }
-
+    .siderco{
+     height: 320px;
+    }
     .slick-list{
-        height: 320px;
+        height: 420px;
     }
     
     .bannersection {
        
-        height: 320px;
+        height: 420px;
     }
 
     .slide2c {
@@ -1776,7 +1778,7 @@ h6 {
         background-position:center center;
         background-repeat: no-repeat;
         /* padding: 105px 0px 40px 0px; */
-        height: 320px;
+        height: 420px;
     }
 
     .slide3c {
@@ -1784,7 +1786,7 @@ h6 {
         background-position:center center;
         background-repeat: no-repeat;
         /* padding: 105px 0px 40px 0px; */
-        height: 320px;
+        height: 420px;
     }
 
     .slide4c {
@@ -1792,7 +1794,7 @@ h6 {
         background-position:center center;
         background-repeat: no-repeat;
         /* padding: 105px 0px 40px 0px; */
-        height: 320px;
+        height: 420px;
     }
 
     .cpbg {
