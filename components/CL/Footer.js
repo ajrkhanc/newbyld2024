@@ -39,19 +39,19 @@ export default function Footer() {
                         <a href="/cruciallifechangingskills/browse-courses"> Browse Courses</a>
                     </li>
                     <li>
-                        <a href="/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue"> Crucial Conversations for Mastering Dialogue</a>
+                        <a href="/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue">Crucial Conversations® For Mastering Dialogue</a>
                     </li>
                     <li>
-                        <a href="/cruciallifechangingskills/crucial-conversations-for-accountability"> Crucial Conversations for Accountability</a>
+                        <a href="/cruciallifechangingskills/crucial-conversations-for-accountability">Crucial Conversations® For Accountability</a>
                     </li>
                     <li>
-                        <a href="/cruciallifechangingskills/the-power-of-habit"> The Power of Habit</a>
+                        <a href="/cruciallifechangingskills/the-power-of-habit">The Power of Habit™</a>
                     </li>
                     <li>
-                        <a href="/cruciallifechangingskills/influencer"> Crucial Influence</a>
+                        <a href="/cruciallifechangingskills/influencer">Crucial Influence®</a>
                     </li>
                     <li>
-                        <a href='/cruciallifechangingskills/getting-things-done'>Getting Things Done</a>
+                        <a href='/cruciallifechangingskills/getting-things-done'>Getting Things Done®</a>
                     </li>
                 </ul>
             </div>
