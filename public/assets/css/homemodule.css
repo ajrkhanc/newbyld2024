@@ -1882,7 +1882,7 @@ h6 {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSizeOne_CVFteJy72W.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 327px;
     }
 
 
@@ -1890,21 +1890,31 @@ h6 {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2_-sjKtlxC9j.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 327px;
     }
 
     .slide3c {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__3_vS7JA0Wzk.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 327px;
     }
 
     .slide4c {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_4_D7qDCA28k.webp);
         background-position:center center;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 327px;
     }
+
+    .slick-track {
+        height: 327px;
+    }
+
+    .bannersection {
+       
+        height: 327px;
+    }
+
    
   }
