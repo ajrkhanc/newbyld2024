@@ -5250,14 +5250,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           {/* Preload slick carousel CSS files */}
           <link
-            rel="preload"
+            rel="stylesheet"
+            type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
             as="style"
           />
           <link
-            rel="preload"
+            rel="stylesheet"
+            type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-            as="style"
+           
           />
 
           {/* Slick Carousel CSS */}
