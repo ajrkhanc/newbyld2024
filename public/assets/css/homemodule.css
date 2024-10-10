@@ -298,6 +298,10 @@ h6 {
 
     height: 250px;
     margin-top: 150px;
+    display: flex;
+     flex-direction: column;
+      justify-content: start;
+      align-items: center;
 }
 
 .slick-list{
@@ -327,11 +331,13 @@ h6 {
     font-weight: 500;
     letter-spacing: normal;
     color: #3474af;
+    height: 50px;
 }
 
 .siderco p {
     font-size: 20px;
     color: #000;
+    height: 50px;
 }
 
 .h2call {
@@ -1915,6 +1921,9 @@ h6 {
        
         height: 327px;
     }
-
+    .siderco {
+       
+        margin-top: 116px;
+    }
    
   }
