@@ -450,7 +450,7 @@ export default function Home() {
                         <span>E</span>xperiential Learning
                       </h4>
                       <div className="cicon">
-                        <img
+                        {/* <img
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp"
                           alt="images"
@@ -461,7 +461,17 @@ export default function Home() {
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learningw_QCXfDVFAYK.webp"
                           alt="images"
                           loading="eager"
+                        /> */}
+                        <Image 
+                         className="active"
+                          src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp"
+                          alt="images"
+                          layout="responsive"
+                          loading="lazy"
+                        
                         />
+
+
                       </div>
                     </div>
                   </a>
