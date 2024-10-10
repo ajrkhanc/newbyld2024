@@ -301,7 +301,7 @@ h6 {
     display: flex;
      flex-direction: column;
       justify-content: start;
-      align-items: center;
+      align-items: start;
 }
 
 .slick-list{
@@ -1914,16 +1914,35 @@ h6 {
     }
 
     .slick-track {
-        height: 327px;
+        height: 290px;
     }
 
     .bannersection {
        
-        height: 327px;
+        height: 290px;
     }
     .siderco {
        
-        margin-top: 116px;
+        margin-top: 119px;
+    }
+
+    .siderco h1 {
+        font-size: 17px;
+        line-height: 21px;
+        height: 38px;
+        width: 100%;
+    }
+
+    .siderco p {
+        font-size: 14px;
+       
+        line-height: 20px;
+        margin-bottom: 5px;
+        height: 42px;
+    }
+
+    .slick-list {
+        height: 290px;
     }
    
   }
