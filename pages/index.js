@@ -454,13 +454,13 @@ export default function Home() {
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learningw_QCXfDVFAYK.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
 
 
@@ -479,13 +479,13 @@ export default function Home() {
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performance_NO5FCroQBk.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performancew_jx1F-H4ux5.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -502,13 +502,13 @@ export default function Home() {
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/assessments_mTorLOz_F.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/assessmentsw_NcN1Urbw-v.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -525,13 +525,13 @@ export default function Home() {
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/bespoke_15L20XFTtC.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/bespokew_S0ZixVfkUD.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -548,13 +548,13 @@ export default function Home() {
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -571,13 +571,13 @@ export default function Home() {
                           className="active"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp"
                           alt="images"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -591,13 +591,13 @@ export default function Home() {
           <div className="solutionarrowbox1">
             <img
               src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp"
-              loading="eager"
+              loading="lazy"
             />
           </div>
           <div className="solutionarrowbox2">
             <img
               src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp"
-              loading="eager"
+              loading="lazy"
             />
           </div>
         </div>
@@ -620,7 +620,7 @@ export default function Home() {
                       <img
                         src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp"
                         alt="Testimonial"
-                        loading="eager"
+                        loading="lazy"
                       />
                     </span>
                     <p>
@@ -638,7 +638,7 @@ export default function Home() {
                       <img
                         src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp"
                         alt="Testimonial"
-                        loading="eager"
+                        loading="lazy"
                       />
                     </div>
                     <div class="testi-information">
@@ -648,7 +648,7 @@ export default function Home() {
                         <img
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp"
                           alt="Testimonial"
-                          loading="eager"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -661,6 +661,7 @@ export default function Home() {
                       <img
                         src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp"
                         alt="Testimonial"
+                        loading="lazy"
                       />
                     </span>
                     <p>
@@ -680,6 +681,7 @@ export default function Home() {
                       <img
                         src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp"
                         alt="Testimonial"
+                        loading="lazy"
                       />
                     </div>
                     <div class="testi-information">
@@ -691,6 +693,7 @@ export default function Home() {
                         <img
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp"
                           alt="Testimonial"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -703,6 +706,7 @@ export default function Home() {
                       <img
                         src="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp"
                         alt="Testimonial"
+                        loading="lazy"
                       />
                     </span>
                     <p>
@@ -718,6 +722,7 @@ export default function Home() {
                       <img
                         src="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp"
                         alt="Testimonial"
+                        loading="lazy"
                       />
                     </div>
                     <div class="testi-information">
@@ -727,6 +732,7 @@ export default function Home() {
                         <img
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp"
                           alt="Testimonial"
+                          loading="lazy"
                         />
                       </div>
                     </div>
@@ -775,6 +781,7 @@ export default function Home() {
         <img
           className=" img100p"
           src="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp"
+          loading="lazy"
         />
         <div className="container">
           <div className="row">
@@ -818,13 +825,14 @@ export default function Home() {
         <img
           className="img100p"
           src="https://ik.imagekit.io/byld/BYLD/byldallasests/byldteam_cTSpTwFFTc.webp"
+          loading="lazy"
         />
         <div className="clearfix"></div>
         <div className="solutionarrowbox1">
-          <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" />
+          <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" loading="lazy" />
         </div>
         <div className="solutionarrowbox2">
-          <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" />
+          <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" loading="lazy" />
         </div>
       </section>
 
@@ -853,6 +861,7 @@ export default function Home() {
                 <img
                   src="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp"
                   alt="Contact"
+                  loading="lazy"
                 />
               </div>
             </div>
