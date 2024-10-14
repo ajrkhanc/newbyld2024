@@ -413,15 +413,15 @@
     });
 	
 
-$(document).ready(function(){
-    // Select all img tags and set alt attribute dynamically
-    $('img').each(function(){
-        var imageName = $(this).attr('src').split('/').pop().split('.')[0];
-        $(this).attr('alt', imageName);
-	$(this).attr('loading', 'eager');
+// $(document).ready(function(){
+//     // Select all img tags and set alt attribute dynamically
+//     $('img').each(function(){
+//         var imageName = $(this).attr('src').split('/').pop().split('.')[0];
+//         $(this).attr('alt', imageName);
+// 	$(this).attr('loading', 'eager');
 	
-    });
-});
+//     });
+// });
 
 
 
