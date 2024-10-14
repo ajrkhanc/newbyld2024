@@ -237,7 +237,7 @@ export default function Gettingthingsdone() {
                                     </div>
                                 </div>  */}
 
-                                <div>
+                                {/* <div>
                                     <h2>Workshop</h2>
                                     <div class="workshop-date">
                                         <h6><i class="fa fa-calendar" aria-hidden="true"></i>23rd August 2024</h6>
@@ -247,7 +247,7 @@ export default function Gettingthingsdone() {
                                     <div class="workshop-date">
                                     <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Bangalore</h5>
                                     </div>
-                                </div>
+                                </div> */}
                                {/* <div>
                                     <h2>Virtual Course Preview</h2>
                                     <div class="workshop-date">
@@ -301,7 +301,8 @@ export default function Gettingthingsdone() {
                                             <option value="Getting Things Done - November 9th to 10th, 2023">Getting Things Done - November 9th to 10th, 2023</option> */}
                                             
                                             {/* <option value="Getting Things Done, Workshop -  February 7th, 2024">Getting Things Done, Workshop - February 7th, 2024</option>*/}
-                                            <option value="Getting Things Done,Workshop - 23rd August 2024">Getting Things Done, Workshop - 23rd August 2024</option>
+                                            <option value="Getting Things Done®-24th-Oct-Virtual-Course-PreviewDate: 24th Oct">Getting Things Done®  24th Oct Virtual Course PreviewDate: 24th Oct</option>
+                                            <option value="Getting-Things-Done®-30th-Oct-Open-Program">Getting Things Done® 30th Oct Open Program</option>
                                             
 
                                           
