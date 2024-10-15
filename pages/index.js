@@ -246,6 +246,8 @@ export default function Home() {
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldteam_cTSpTwFFTc.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" as="image"/>
 
 
         {/* Load jQuery only when needed */}
