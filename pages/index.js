@@ -238,7 +238,7 @@ export default function Home() {
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp" as="image"/>
+        {/* <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp" as="image"/> */}
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
