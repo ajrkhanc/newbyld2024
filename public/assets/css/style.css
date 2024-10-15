@@ -8688,7 +8688,7 @@ body .search-modal .close:hover {
  
   width: 360px;
  
-  /* height: calc(100% - 20px - 80px); */
+  height: 360px !important;
   max-height: 610px !important;
   transition: all 0.3s ease-in-out;
 }
