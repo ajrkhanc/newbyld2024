@@ -248,6 +248,19 @@ export default function Home() {
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldteam_cTSpTwFFTc.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1_0ZtYzLNsy.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2_cMGKuHV8D.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4_VozZqoqC-.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3_hHuQrAHkVf.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSize_nrjDmkPAo.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2JmH1qYAt.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__77iP6J_78.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_cHQ2SZAcX.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/cpsmollImg_znOWn6AFz.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSizeOne_CVFteJy72W.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2_-sjKtlxC9j.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__3_vS7JA0Wzk.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_4_D7qDCA28k.webp" as="image"/>
 
 
         {/* Load jQuery only when needed */}
@@ -425,10 +438,10 @@ export default function Home() {
                     src="https://www.youtube.com/embed/LXd9OtxQQQA?si=fLtvIRyKpbvr6dCE"
                     title="YouTube video player"
                     loading="lazy"
-                    frameborder="0"
+                
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
-                    defer
+                   
                   ></iframe>
                 </div>
                 {/* <div class="animate-border">
