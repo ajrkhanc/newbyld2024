@@ -227,6 +227,25 @@ export default function Home() {
         <noscript>
           <link rel="stylesheet" href="/assets/css/homemodule.css" />
         </noscript>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learningw_QCXfDVFAYK.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performance_NO5FCroQBk.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performancew_jx1F-H4ux5.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/assessments_mTorLOz_F.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/assessmentsw_NcN1Urbw-v.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bespoke_15L20XFTtC.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bespokew_S0ZixVfkUD.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
+
 
         {/* Load jQuery only when needed */}
         <script async src="https://code.jquery.com/jquery-1.8.2.js"></script>
