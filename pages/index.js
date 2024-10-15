@@ -238,13 +238,14 @@ export default function Home() {
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp" as="image"/>
-        {/* <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp" as="image"/> */}
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_CjnDHFJCd.png" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" as="image"/>
         <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
+        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp" as="image"/>
 
 
         {/* Load jQuery only when needed */}
@@ -594,7 +595,7 @@ export default function Home() {
                         />
                         <img
                           className="hover"
-                          src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_V31k6RdvAX.webp"
+                          src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_CjnDHFJCd.png"
                           alt="images"
                           loading="lazy"
                         />
