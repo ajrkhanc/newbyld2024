@@ -8682,6 +8682,16 @@ body .search-modal .close:hover {
 /* ------------------------------------
     34. Animation Part CSS
 ---------------------------------------*/
+
+
+.opened-div {
+ 
+  width: 360px;
+ 
+  /* height: calc(100% - 20px - 80px); */
+  max-height: 610px !important;
+  transition: all 0.3s ease-in-out;
+}
 @keyframes loaderspin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
