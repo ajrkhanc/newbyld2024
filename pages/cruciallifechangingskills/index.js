@@ -772,7 +772,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/new/justinhale-cruciallearning.jpg" />
+                <img src="classets/img/new/justinhale-cruciallearning.webp" />
                 <h3>
                   Free GTD<sup>®</sup> Miniseries
                 </h3>
@@ -787,7 +787,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/clinf.jpg" />
+                <img src="classets/img/clinf.webp" />
                 <h3>New Leadership Course</h3>
                 <p>
                   Explore our new leadership course—find assessments, webinars,
@@ -803,7 +803,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/new/cl-3.jpg" />
+                <img src="classets/img/new/cl-3.webp" />
                 <h3>Can You Disagree Respectfully?</h3>
                 <p>
                   When faced with an argument, do you dig in, or give in? Shut
@@ -846,7 +846,7 @@ export default function Home() {
                   <div class="text-center chooseypbox">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-on-demand-1.svg"
+                      src="classets/img/icon-on-demand-1.webp"
                     />
                     <h4>On Demand</h4>
                     <p>Learn at your own pace online.</p>
@@ -856,7 +856,7 @@ export default function Home() {
                   <div class="text-center chooseypbox bgorangelight">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-virtual-1.svg"
+                      src="classets/img/icon-virtual-1.webp"
                     />
                     <h4>Virtual</h4>
                     <p>Join one of our instructors online.</p>
@@ -866,7 +866,7 @@ export default function Home() {
                   <div class="text-center chooseypbox bgsky">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-in-person.svg"
+                      src="classets/img/icon-in-person.webp"
                     />
                     <h4>In Person</h4>
                     <p>Attend a classroom course.</p>
