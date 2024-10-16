@@ -86,7 +86,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 contact-title">
-                            <img src="/classets/img/CrucialConversations_FMD.svg" />
+                            <img src="/classets/img/CrucialConversations_FMD.webp" alt="image1"  loading="lazy" />
                             <h1>The Standard in Effective Communication</h1>
                             <p>
                                 With 30 years of research in social science, Crucial Conversations skills provide the standard to make effective dialogues in a conversation which marks as an indicator of high-performing individuals and
@@ -122,7 +122,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/GET-UNSTUCK-4.svg" />
+                                    <img src="/classets/img/GET-UNSTUCK-4.webp"  alt="image2"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>GET UNSTUCK</h5>
@@ -133,7 +133,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/IDENTIFYING-STORIES-TO-MASTER-THEM.svg" />
+                                    <img src="/classets/img/IDENTIFYING-STORIES-TO-MASTER-THEM.webp" alt="image3"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>IDENTIFYING STORIES TO MASTER THEM</h5>
@@ -144,7 +144,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/BEGIN-WITH-YOUR-HEART.svg" />
+                                    <img src="/classets/img/BEGIN-WITH-YOUR-HEART.webp" alt="image4"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>BEGIN WITH YOUR HEART</h5>
@@ -155,7 +155,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/BE-CLEAR-ABOUT-PATH.svg" />
+                                    <img src="/classets/img/BE-CLEAR-ABOUT-PATH.webp"  alt="image5"  loading="lazy"/>
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>BE CLEAR ABOUT YOUR PATH</h5>
@@ -166,7 +166,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/GIVE-A-SAFE-SPACE-TO-TALK.svg" />
+                                    <img src="/classets/img/GIVE-A-SAFE-SPACE-TO-TALK.webp" alt="image6"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>GIVE A SAFE SPACE TO TALK</h5>

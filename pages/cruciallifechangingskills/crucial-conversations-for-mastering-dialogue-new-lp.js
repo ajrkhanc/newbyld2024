@@ -451,7 +451,7 @@ export default function BrowseCourses() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
