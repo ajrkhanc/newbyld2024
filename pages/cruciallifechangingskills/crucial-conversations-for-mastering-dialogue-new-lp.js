@@ -119,7 +119,7 @@ export default function BrowseCourses() {
             <div className="col-md-6 text-center">
               <img
                 className="prlogo"
-                src="/classets/img/CrucialConversations_FMD.svg"
+                src="/classets/img/CrucialConversations_FMD.webp"
               />
               <h1>The Standard in Effective Communication</h1>
               <p className="genericp">
@@ -162,7 +162,7 @@ export default function BrowseCourses() {
                 <video
                   controls
                   src="/classets/video/crucial-conversations-for-mastering-dialogue-course-crucial-learning.mp4"
-                  poster="/classets/img/cc1-vid.jpg"
+                  poster="/classets/img/cc1-vid.webp"
                   width="100%"
                 ></video>
               </div>
@@ -284,7 +284,7 @@ export default function BrowseCourses() {
                   <h4 className="testname">Alstom</h4>
                   <img
                     className="ratingw"
-                    src="/classets/img/five-star-rating.png"
+                    src="/classets/img/five-star-rating.webp"
                   />
                   <h5 className="compname">Crucial Conversations </h5>
                 </div>
@@ -303,7 +303,7 @@ export default function BrowseCourses() {
                   <h4 className="testname">Rohini Rastogi</h4>
                   <img
                     className="ratingw"
-                    src="/classets/img/five-star-rating.png"
+                    src="/classets/img/five-star-rating.webp"
                   />
                   <h5 className="compname">
                     Middleby Celfrost Innovations Pvt. Ltd.
