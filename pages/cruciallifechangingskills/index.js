@@ -1051,7 +1051,7 @@ export default function Home() {
               <Slider {...Coursec}>
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/ccmd.jpg" />
+                    <img src="/classets/img/ccmd.webp" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1079,7 +1079,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/gtd.jpg" />
+                    <img src="/classets/img/gtd.webp" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1107,7 +1107,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/cc.jpg" />
+                    <img src="/classets/img/cc.webp" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1135,7 +1135,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/tpoh.jpg" />
+                    <img src="/classets/img/tpoh.webp" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1163,7 +1163,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/inc.jpg" />
+                    <img src="/classets/img/inc.webp" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
