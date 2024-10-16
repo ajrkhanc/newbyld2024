@@ -86,7 +86,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 contact-title">
-                            <img src="/classets/img/CrucialConversations_FMD.svg"  alt="image1"  loading="lazy"/>
+                            <img src="/classets/img/crucialconversations-fmd.webp"  alt="image1"  loading="lazy"/>
                             <h1>The Standard in Effective Communication</h1>
                             <p>
                                 With 30 years of research in social science, Crucial Conversations skills provide the standard to make effective dialogues in a conversation which marks as an indicator of high-performing individuals and
@@ -293,7 +293,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                             <h6><i class="ph-play-circle-bold"></i>  05.47 Mins Video</h6>
                         </div>
                         <div class="col-lg-6 preview-image">
-                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/a4354e5d3b8f4f205bab9e53646a76bc.jpg" /></a>
+                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/a4354e5d3b8f4f205bab9e53646a76bc.jpg" alt="image66"  loading="lazy" /></a>
                         </div>
                     </div>
                 </div>
