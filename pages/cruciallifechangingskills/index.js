@@ -772,7 +772,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/new/justinhale-cruciallearning.webp" />
+                <img src="classets/img/new/justinhale-cruciallearning.webp" alt="image"  loading="lazy" />
                 <h3>
                   Free GTD<sup>®</sup> Miniseries
                 </h3>
@@ -787,7 +787,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/clinf.webp" />
+                <img src="classets/img/clinf.webp" alt="clinf"  loading="lazy" />
                 <h3>New Leadership Course</h3>
                 <p>
                   Explore our new leadership course—find assessments, webinars,
@@ -803,7 +803,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/new/cl-3.webp" />
+                <img src="classets/img/new/cl-3.webp" alt="cl-3"  loading="lazy" />
                 <h3>Can You Disagree Respectfully?</h3>
                 <p>
                   When faced with an argument, do you dig in, or give in? Shut
@@ -846,7 +846,7 @@ export default function Home() {
                   <div class="text-center chooseypbox">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-on-demand-1.webp"
+                      src="classets/img/icon-on-demand-1.webp" alt="icon-on-demand"  loading="lazy"
                     />
                     <h4>On Demand</h4>
                     <p>Learn at your own pace online.</p>
@@ -856,7 +856,7 @@ export default function Home() {
                   <div class="text-center chooseypbox bgorangelight">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-virtual-1.webp"
+                      src="classets/img/icon-virtual-1.webp" alt="icon-virtual-1"  loading="lazy"
                     />
                     <h4>Virtual</h4>
                     <p>Join one of our instructors online.</p>
@@ -866,7 +866,7 @@ export default function Home() {
                   <div class="text-center chooseypbox bgsky">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-in-person.webp"
+                      src="classets/img/icon-in-person.webp" alt="icon-in-person"  loading="lazy"
                     />
                     <h4>In Person</h4>
                     <p>Attend a classroom course.</p>
@@ -1051,7 +1051,7 @@ export default function Home() {
               <Slider {...Coursec}>
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/ccmd.webp" />
+                    <img src="/classets/img/ccmd.webp" alt="ccmd"  loading="lazy" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1079,7 +1079,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/gtd.webp" />
+                    <img src="/classets/img/gtd.webp" alt="gtd"  loading="lazy" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1107,7 +1107,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/cc.webp" />
+                    <img src="/classets/img/cc.webp" alt="cc"  loading="lazy" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1135,7 +1135,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/tpoh.webp" />
+                    <img src="/classets/img/tpoh.webp"  alt="tpoh"  loading="lazy"/>
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1163,7 +1163,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/inc.webp" />
+                    <img src="/classets/img/inc.webp" alt="inc"  loading="lazy" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
