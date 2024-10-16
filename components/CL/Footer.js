@@ -106,7 +106,7 @@ export default function Footer() {
             </div>
         </section>
 
-        <div id="popuphidec" class='popup wow fadeInUp delay-0-2s animated animateUP ppcc'>
+        {/* <div id="popuphidec" class='popup wow fadeInUp delay-0-2s animated animateUP ppcc'>
             <div class='cnt223'>
             <a href='' class='close popupclose clccc'>X</a>
                <div className='popupinner'>
@@ -125,7 +125,7 @@ export default function Footer() {
                   </div>
                </div>
             </div>
-         </div>
+         </div> */}
 
          <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
             <script
