@@ -19,7 +19,7 @@ export default function Blog(){
                         <p className='colorb'>Our award-winning courses and accompanying bestselling books include Crucial Conversations®, Crucial Accountability<sup>®</sup>, Crucial Influence, The Power of Habit™, and Getting Things Done<sup>®</sup></p>
                     </div>
                     <div class="col-lg-6 right-about-image">
-                        <img class="left-image img70" src="/classets/img/sitting-woman.webp" alt="image1"  loading="lazy" />
+                        <img class="left-image img70" src="/classets/img/sitting-woman.svg" alt="image1"  loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default function Blog(){
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 right-about-image">
-                        <img src="/classets/img/Human_Group-Talking_Color-1.webp" alt="image2"  loading="lazy"/>
+                        <img src="/classets/img/Human_Group-Talking_Color-1.svg" alt="image2"  loading="lazy"/>
                     </div>
                     <div class="col-lg-6 who-we-are title">
                         <h1>Who we are?</h1>
