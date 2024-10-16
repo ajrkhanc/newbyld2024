@@ -86,7 +86,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 contact-title">
-                            <img src="/classets/img/crucialconversations-fmd.webp" alt="image1"  loading="lazy" />
+                            <img src="/classets/img/CrucialConversations_FMD.svg"  alt="image1"  loading="lazy"/>
                             <h1>The Standard in Effective Communication</h1>
                             <p>
                                 With 30 years of research in social science, Crucial Conversations skills provide the standard to make effective dialogues in a conversation which marks as an indicator of high-performing individuals and
@@ -122,7 +122,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/GET-UNSTUCK-4.webp"  alt="image2"  loading="lazy" />
+                                    <img src="/classets/img/GET-UNSTUCK-4.svg" alt="image2"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>GET UNSTUCK</h5>
@@ -133,7 +133,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/IDENTIFYING-STORIES-TO-MASTER-THEM.webp" alt="image3"  loading="lazy" />
+                                    <img src="/classets/img/IDENTIFYING-STORIES-TO-MASTER-THEM.svg" alt="image3"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>IDENTIFYING STORIES TO MASTER THEM</h5>
@@ -144,7 +144,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/BEGIN-WITH-YOUR-HEART.webp" alt="image4"  loading="lazy" />
+                                    <img src="/classets/img/BEGIN-WITH-YOUR-HEART.svg" alt="image4"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>BEGIN WITH YOUR HEART</h5>
@@ -155,7 +155,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/BE-CLEAR-ABOUT-PATH.webp"  alt="image5"  loading="lazy"/>
+                                    <img src="/classets/img/BE-CLEAR-ABOUT-PATH.svg" alt="image5"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>BE CLEAR ABOUT YOUR PATH</h5>
@@ -166,7 +166,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/GIVE-A-SAFE-SPACE-TO-TALK.webp" alt="image6"  loading="lazy" />
+                                    <img src="/classets/img/GIVE-A-SAFE-SPACE-TO-TALK.svg" alt="image6"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>GIVE A SAFE SPACE TO TALK</h5>
@@ -178,7 +178,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/BE-A-CONVERSATIONIST-WHO-CARES.svg" />
+                                    <img src="/classets/img/BE-A-CONVERSATIONIST-WHO-CARES.svg" alt="image7"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>BE A CONVERSATIONIST WHO CARES</h5>
@@ -191,7 +191,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/WORK-IN-MUTUAL-CONSENSUS.svg" />
+                                    <img src="/classets/img/WORK-IN-MUTUAL-CONSENSUS.svg" alt="image8"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>WORK IN MUTUAL CONSENSUS</h5>
@@ -203,7 +203,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/EXPLORE-OTHERS-PATHS.svg" />
+                                    <img src="/classets/img/EXPLORE-OTHERS-PATHS.svg" alt="image9"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>EXPLORE OTHERS’ PATHS</h5>
@@ -215,7 +215,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                         <div class="col-md-4">
                             <div class="row feature-right">
                                 <div class="col-md-2 feature-icon">
-                                    <img src="/classets/img/TUNE-IN-TO-TAKE-ACTION-1.svg" />
+                                    <img src="/classets/img/TUNE-IN-TO-TAKE-ACTION-1.svg" alt="image10"  loading="lazy" />
                                 </div>
                                 <div class="col-md-10 feature-content">
                                     <h5>TUNE IN TO TAKE ACTION</h5>
@@ -245,21 +245,21 @@ export default function CrucialConversationsforMasteringDialogue() {
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-on-demand-1.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-on-demand-1.svg" alt="image11"  loading="lazy" />
                                         <h4>On Demand</h4>
                                         <p>Learn at your own pace online.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-virtual-1.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-virtual-1.svg" alt="image12"  loading="lazy" />
                                         <h4>Virtual</h4>
                                         <p>Join one of our instructors online.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.svg"  alt="image13"  loading="lazy"/>
                                         <h4>In Person</h4>
                                         <p>Attend a classroom course.</p>
                                     </div>
