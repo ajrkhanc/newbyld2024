@@ -94,7 +94,7 @@ export default function Home() {
             <Head>
                 <title>Our Leadership Team - BYLD Group</title>
                 <link rel="canonical" href="https://byldgroup.com/our-leadership-team" />
-                <meta name="description" content="Meet Our Leadership Team Yogesh Sood CMD – BYLD Group Sandeep Budhiraja Co-Founder – BYLD Group Anand Dewan Group CEO – BYLD Group Nishit Sood Chief Flow Officer – BYLD Group Amar Vijay Tandur Chief Business Officer Ronald Soans Business Head – BYLD Group Meet Our Consulting Team Naveen Kumar Learning Division at DTCI Ranjeet… Continue reading Our Leadership Team" />
+                <meta name="description" content="Meet Our Leadership Team Yogesh Sood CMD – BYLD Group Sandeep Budhiraja Co-Founder – BYLD Group Nishit Sood Chief Flow Officer – BYLD Group Amar Vijay Tandur Chief Business Officer Ronald Soans Business Head – BYLD Group Meet Our Consulting Team Naveen Kumar Learning Division at DTCI Ranjeet… Continue reading Our Leadership Team" />
                 <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
                 <script
                     dangerouslySetInnerHTML={{
@@ -215,7 +215,7 @@ export default function Home() {
                                 </div>
 
 
-                                <div className='col-sm-6'>
+                                {/* <div className='col-sm-6'>
                                     <div className='innerteamc'>
                                         <div className='teamimgc1'>
                                             <a href="#"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/anand_oKSTMrWy9.webp" alt="" /></a>
@@ -235,7 +235,7 @@ export default function Home() {
                                             <p>Passionate about empowering others to live their purpose. I am passionate about creating a positive, trusting and learning...</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className='col-sm-6'>
                                     <div className='innerteamc'>
