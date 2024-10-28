@@ -360,6 +360,47 @@ export default function Home() {
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
+                      Training Consultant
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <div className="cafaq">
+                      <h4>JOB ROLE</h4>
+                      <p>Training Consultant</p>
+                    </div>
+                    <div className="cafaq">
+                      <h4>EXPERIENCE</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                            5+ years business / management experience (of
+                            companies with more than Rs. 5 Cr revenue )
+                          </li>
+                          <li>
+                            Traning background and/or relevant business
+                            experience
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="cafaq">
+                      <h4>WORK LOCATION</h4>
+                      <p>NCR / Bangalore / Mumbai</p>
+                      <div className="caapplybtn">
+                        <a className="cabtnc1" href="#">
+                          SEE MORE
+                        </a>
+                        <a className="cabtnc2" href="#careerForm">
+                          APPLY
+                        </a>
+                      </div>
+                    </div>
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
                       Business Consultant
                     </AccordionItemButton>
                   </AccordionItemHeading>
