@@ -319,33 +319,85 @@ export default function Home() {
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      Training Consultant
+                    Paid Ads Specialist 
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <div className="cafaq">
                       <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
+                      <p>Paid Ads Specialist </p>
                     </div>
                     <div className="cafaq">
                       <h4>EXPERIENCE</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
+                            2 + Years
                           </li>
                           <li>
-                            Traning background and/or relevant business
-                            experience
+                            Marketing 
                           </li>
                         </ul>
                       </div>
                     </div>
 
                     <div className="cafaq">
+                      <h4>Job Description Role & Responsibilities:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Develop and execute paid advertising strategies across platforms (Google Ads, Facebook Ads, LinkedIn Ads, etc.).
+                          </li>
+                          <li>
+                          Conduct market research and analyze competitor advertising activity.
+                          </li>
+                          <li>Create and optimize ad copy, images, and landing pages for maximum conversions.</li>
+                          <li> Manage and optimize campaign budgets, targeting, and bidding.</li>
+                          <li> Monitor and report on campaign performance (CPC, CTR, CPA, ROI)</li>
+                          <li> Collaborate with content, SEO, and social media teams to ensure integrated digital marketing strategies.</li>
+                          <li>Stay up-to-date with platform updates, algorithm changes, and industry trends.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="cafaq">
+                      <h4>Requirements:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          2+ years of experience in paid advertising (Google Ads, Facebook Ads, LinkedIn Ads).
+                          </li>
+                          <li>
+                          Proven track record of improving campaign performance and ROI.
+                          </li>
+                          <li>In-depth knowledge of paid advertising platforms and formats (text, image, video).</li>
+                          <li>Excellent analytical, problem-solving, and communication skills.</li>
+                          <li>Experience with advertising analytics tools (Google Analytics, Facebook Ads Manager).</li>
+                          <li> Familiarity with CRM software and marketing automation tools.</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="cafaq">
+                      <h4>Skills:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Paid advertising strategy and execution.
+                          </li>
+                          <li>
+                          Ad copywriting and creative optimization.
+                          </li>
+                          <li>Campaign management and optimization.</li>
+                          <li>Analytics and reporting.</li>
+                          <li>Communication and teamwork.</li>
+                         
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="cafaq">
                       <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
+                      <p> Manesar Sec - 2</p>
                       <div className="caapplybtn">
                         <a className="cabtnc1" href="#">
                           SEE MORE
