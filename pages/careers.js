@@ -356,6 +356,7 @@ export default function Home() {
                           <li> Monitor and report on campaign performance (CPC, CTR, CPA, ROI)</li>
                           <li> Collaborate with content, SEO, and social media teams to ensure integrated digital marketing strategies.</li>
                           <li>Stay up-to-date with platform updates, algorithm changes, and industry trends.</li>
+                          <li>If interested, kindly share your CV at talentacquisition.aak@byldgroup.com</li>
                         </ul>
                       </div>
                     </div>
@@ -408,7 +409,7 @@ export default function Home() {
                       </div>
                     </div>
                   </AccordionItemPanel>
-                </AccordionItem>
+                {/* </AccordionItem>
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
@@ -654,7 +655,7 @@ export default function Home() {
                       </div>
                     </div>
                   </AccordionItemPanel>
-                </AccordionItem>
+                </AccordionItem> */}
               </Accordion>
             </div>
           </div>
@@ -737,10 +738,10 @@ export default function Home() {
                       <div className="col-sm-12 mb-12">
                         <select name="product" required>
                           <option value="">Select Position To Apply</option>
-                          <option value="Training Consultant">
-                            Training Consultant
+                          <option value="Paid Ads Specialist">
+                          Paid Ads Specialist
                           </option>
-                          <option value="Business Consultant CSR Corporate Sales">
+                          {/* <option value="Business Consultant CSR Corporate Sales">
                             Business Consultant CSR Corporate Sales
                           </option>
                           <option value="Business Consultant Corporate Sales">
@@ -761,7 +762,7 @@ export default function Home() {
                           <option value="Program Manager">
                             Program Manager
                           </option>
-                          <option value="HR generalist">HR generalist</option>
+                          <option value="HR generalist">HR generalist</option> */}
                         </select>
                       </div>
 
