@@ -356,7 +356,7 @@ export default function Home() {
                           <li> Monitor and report on campaign performance (CPC, CTR, CPA, ROI)</li>
                           <li> Collaborate with content, SEO, and social media teams to ensure integrated digital marketing strategies.</li>
                           <li>Stay up-to-date with platform updates, algorithm changes, and industry trends.</li>
-                          <li>If interested, kindly share your CV at talentacquisition.aak@byldgroup.com</li>
+                          <li> <strong> If interested, kindly share your CV at talentacquisition.aak@byldgroup.com</strong></li>
                         </ul>
                       </div>
                     </div>
