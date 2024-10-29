@@ -409,8 +409,8 @@ export default function Home() {
                       </div>
                     </div>
                   </AccordionItemPanel>
-                {/* </AccordionItem>
-                <AccordionItem>
+                </AccordionItem>
+                {/* <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
                       Training Consultant
