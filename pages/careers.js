@@ -51,27 +51,85 @@ export default function Home() {
     ],
   };
 
+  // const registerUser = async (event) => {
+  //   event.preventDefault();
+  //   document.getElementById("submitbuttonform").value = "Submitting form....";
+  //   const xhttp = new XMLHttpRequest();
+  //   xhttp.onload = function () {
+  //     console.log(this.responseText);
+  //   };
+  //   xhttp.open(
+  //     "Post",
+  //     "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/11/feedback"
+  //   );
+  //   xhttp.setRequestHeader(
+  //     "Content-Type",
+  //     "application/x-www-form-urlencoded;"
+  //   );
+  //   xhttp.onreadystatechange = function () {
+  //     if (xhttp.readyState == 4) {
+  //       if (xhttp.status == 200) {
+  //         document.getElementById("showlabel").innerHTML =
+  //           "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+
+  //         document.getElementById("showlabel").style.display = "block";
+  //         window.setTimeout(function () {
+  //           window.location.href = "/thank-you";
+  //         }, 3000);
+  //       } else {
+  //         alert("There was a problem with the request.");
+  //       }
+  //     }
+  //   };
+  //   xhttp.send(
+  //     "name=" +
+  //       event.target.name.value +
+  //       "&email=" +
+  //       event.target.email.value +
+  //       "&tel=" +
+  //       event.target.phone.value +
+  //       "&location=" +
+  //       event.target.Location.value +
+  //       "&Company=" +
+  //       event.target.organization.value +
+  //       "&Designation=" +
+  //       event.target.designation.value +
+  //       "&Product=" +
+  //       event.target.product.value +
+  //       "&referredby=" +
+  //       event.target.referredby.value +
+  //       "&textarea=" +
+  //       event.target.leadsquared_Notes.value
+  //   );
+  // };
+
+
   const registerUser = async (event) => {
     event.preventDefault();
     document.getElementById("submitbuttonform").value = "Submitting form....";
+  
+    const formData = new FormData();
+    formData.append("name", event.target.name.value);
+    formData.append("email", event.target.email.value);
+    formData.append("tel", event.target.phone.value);
+    formData.append("location", event.target.location ? event.target.location.value : ""); // assuming you may need location field
+    formData.append("Company", event.target.organization.value);
+    formData.append("Designation", event.target.resume.files[0]); // for resume file
+    formData.append("Product", event.target.product.value);
+    formData.append("referredby", event.target.referredby ? event.target.referredby.value : ""); // assuming you may need referredby
+    formData.append("textarea", event.target.leadsquared_Notes.value);
+  
     const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      console.log(this.responseText);
-    };
     xhttp.open(
-      "Post",
+      "POST",
       "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/11/feedback"
     );
-    xhttp.setRequestHeader(
-      "Content-Type",
-      "application/x-www-form-urlencoded;"
-    );
+    
     xhttp.onreadystatechange = function () {
       if (xhttp.readyState == 4) {
         if (xhttp.status == 200) {
           document.getElementById("showlabel").innerHTML =
-            "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-
+            "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
           document.getElementById("showlabel").style.display = "block";
           window.setTimeout(function () {
             window.location.href = "/thank-you";
@@ -79,29 +137,13 @@ export default function Home() {
         } else {
           alert("There was a problem with the request.");
         }
+        document.getElementById("submitbuttonform").value = "Submit";
       }
     };
-    xhttp.send(
-      "name=" +
-        event.target.name.value +
-        "&email=" +
-        event.target.email.value +
-        "&tel=" +
-        event.target.phone.value +
-        "&location=" +
-        event.target.Location.value +
-        "&Company=" +
-        event.target.organization.value +
-        "&Designation=" +
-        event.target.designation.value +
-        "&Product=" +
-        event.target.product.value +
-        "&referredby=" +
-        event.target.referredby.value +
-        "&textarea=" +
-        event.target.leadsquared_Notes.value
-    );
+    
+    xhttp.send(formData);
   };
+  
 
   return (
     <>
