@@ -104,45 +104,73 @@ export default function Home() {
   // };
 
 
-  const registerUser = async (event) => {
-    event.preventDefault();
-    document.getElementById("submitbuttonform").value = "Submitting form....";
+  // const registerUser = async (event) => {
+  //   event.preventDefault();
+  //   document.getElementById("submitbuttonform").value = "Submitting form....";
   
-    const formData = new FormData();
-    formData.append("name", event.target.name.value);
-    formData.append("email", event.target.email.value);
-    formData.append("tel", event.target.phone.value);
-    formData.append("location", event.target.location ? event.target.location.value : "NULL"); // assuming you may need location field
-    formData.append("Company", event.target.organization.value);
-    formData.append("Designation", event.target.resume.files[0]); // for resume file
-    formData.append("Product", event.target.product.value);
-    formData.append("referredby", event.target.referredby ? event.target.referredby.value : "NULL"); // assuming you may need referredby
-    formData.append("textarea", event.target.leadsquared_Notes.value);
+  //   const formData = new FormData();
+  //   formData.append("name", event.target.name.value);
+  //   formData.append("email", event.target.email.value);
+  //   formData.append("tel", event.target.phone.value);
+  //   formData.append("location", event.target.location ? event.target.location.value : "NULL"); // assuming you may need location field
+  //   formData.append("Company", event.target.organization.value);
+  //   formData.append("Designation", event.target.resume.files[0]); // for resume file
+  //   formData.append("Product", event.target.product.value);
+  //   formData.append("referredby", event.target.referredby ? event.target.referredby.value : "NULL"); // assuming you may need referredby
+  //   formData.append("textarea", event.target.leadsquared_Notes.value);
   
-    const xhttp = new XMLHttpRequest();
-    xhttp.open(
-      "POST",
-      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/11/feedback"
-    );
+  //   const xhttp = new XMLHttpRequest();
+  //   xhttp.open(
+  //     "POST",
+  //     "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/11/feedback"
+  //   );
     
-    xhttp.onreadystatechange = function () {
-      if (xhttp.readyState == 4) {
-        if (xhttp.status == 200) {
-          document.getElementById("showlabel").innerHTML =
-            "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
-          document.getElementById("showlabel").style.display = "block";
-          window.setTimeout(function () {
-            window.location.href = "/thank-you";
-          }, 3000);
-        } else {
-          alert("There was a problem with the request.");
-        }
-        document.getElementById("submitbuttonform").value = "Submit";
+  //   xhttp.onreadystatechange = function () {
+  //     if (xhttp.readyState == 4) {
+  //       if (xhttp.status == 200) {
+  //         document.getElementById("showlabel").innerHTML =
+  //           "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
+  //         document.getElementById("showlabel").style.display = "block";
+  //         window.setTimeout(function () {
+  //           window.location.href = "/thank-you";
+  //         }, 3000);
+  //       } else {
+  //         alert("There was a problem with the request.");
+  //       }
+  //       document.getElementById("submitbuttonform").value = "Submit";
+  //     }
+  //   };
+    
+  //   xhttp.send(formData);
+  // };
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.getElementById("contact-form"); // Adjust ID if needed
+  
+    contactForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      document.getElementById("submitbuttonform").value = "Submitting form....";
+  
+      const formData = new FormData(contactForm);
+  
+      const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const result = await response.json();
+      if (result.status === "mail_sent") {
+        document.getElementById("showlabel").innerHTML =
+          "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
+        document.getElementById("showlabel").style.display = "block";
+        setTimeout(() => {
+          window.location.href = "/thank-you";
+        }, 3000);
+      } else {
+        alert("There was a problem with the request.");
       }
-    };
-    
-    xhttp.send(formData);
-  };
+      document.getElementById("submitbuttonform").value = "Submit";
+    });
+  });
   
 
   return (
@@ -813,7 +841,7 @@ export default function Home() {
                         <input
                           className="borrr"
                           type="file"
-                          name="designation"
+                          name="resume"
                           placeholder="Upload Resume**"
                           required
                         />
