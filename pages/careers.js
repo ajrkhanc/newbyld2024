@@ -180,7 +180,6 @@ export default function Home() {
   // };
   
 
-
   const imageKitPublicKey = "public_8RkYigXi4FPDNkR3lO2Gwdk+Cdo="; // Your ImageKit Public Key
   const imageKitUrlEndpoint = "https://ik.imagekit.io/byld"; // Your ImageKit URL Endpoint
   
@@ -204,7 +203,11 @@ export default function Home() {
         headers: {
           "Authorization": `Basic ${btoa(imageKitPublicKey + ":")}`,
         },
-        body: new FormData().append('file', fileInput.files[0]), // Ensure FormData is created correctly
+        body: (() => {
+          const form = new FormData();
+          form.append('file', fileInput.files[0]);
+          return form;
+        })(),
       });
   
       const uploadResult = await uploadResponse.json();
@@ -215,6 +218,11 @@ export default function Home() {
       }
   
       const uploadedFileUrl = uploadResult.url; // Get the URL of the uploaded file
+      console.log("Uploaded File URL:", uploadedFileUrl);
+  
+      // Optional: Log or use the ImageKit URL Endpoint for displaying or managing the uploaded image
+      const imageUrl = `${imageKitUrlEndpoint}/${uploadResult.filePath}`; // Create a full URL for the uploaded image
+      console.log("ImageKit Image URL:", imageUrl); // You can use this URL for previews or further actions
   
       // Prepare form data to send along with the uploaded file URL
       const formWithFileUrl = {
@@ -253,6 +261,7 @@ export default function Home() {
   
     document.getElementById("submitbuttonform").value = "Submit";
   };
+  
   
 
   return (
