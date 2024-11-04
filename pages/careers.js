@@ -192,23 +192,31 @@ export default function Home() {
     const fileInput = event.target.resume; // Assuming the file input is named "resume"
   
     try {
+      // Check if a file was selected
+      if (!fileInput.files.length) {
+        alert("Please select a file to upload.");
+        return;
+      }
+  
       // Upload file to ImageKit
       const uploadResponse = await fetch("https://upload.imagekit.io/api/v1/files/upload", {
         method: "POST",
         headers: {
           "Authorization": `Basic ${btoa(imageKitPublicKey + ":")}`,
         },
-        body: new FormData().append('file', fileInput.files[0]) // Upload the file directly
+        body: new FormData().append('file', fileInput.files[0]), // Ensure FormData is created correctly
       });
   
       const uploadResult = await uploadResponse.json();
+  
+      // Check for upload response status
       if (!uploadResponse.ok) {
         throw new Error(uploadResult.message || "Failed to upload file");
       }
   
       const uploadedFileUrl = uploadResult.url; // Get the URL of the uploaded file
   
-      // Send form data along with the uploaded file URL
+      // Prepare form data to send along with the uploaded file URL
       const formWithFileUrl = {
         ...Object.fromEntries(formData), // Convert FormData to an object
         resumeUrl: uploadedFileUrl, // Add the uploaded file URL to the form data
