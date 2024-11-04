@@ -181,7 +181,7 @@ export default function Home() {
   
 
 
-  const imageKitPublicKey = "public_+4Tvc/YqftL6x3b17/zzOLC4vWc="; // Your ImageKit Public Key
+  const imageKitPublicKey = "public_8RkYigXi4FPDNkR3lO2Gwdk+Cdo="; // Your ImageKit Public Key
   const imageKitUrlEndpoint = "https://ik.imagekit.io/byld"; // Your ImageKit URL Endpoint
   
   const registerUser = async (event) => {
