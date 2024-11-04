@@ -112,11 +112,11 @@ export default function Home() {
     formData.append("name", event.target.name.value);
     formData.append("email", event.target.email.value);
     formData.append("tel", event.target.phone.value);
-    formData.append("location", event.target.location ? event.target.location.value : ""); // assuming you may need location field
+    formData.append("location", event.target.location ? event.target.location.value : "NULL"); // assuming you may need location field
     formData.append("Company", event.target.organization.value);
     formData.append("Designation", event.target.resume.files[0]); // for resume file
     formData.append("Product", event.target.product.value);
-    formData.append("referredby", event.target.referredby ? event.target.referredby.value : ""); // assuming you may need referredby
+    formData.append("referredby", event.target.referredby ? event.target.referredby.value : "NULL"); // assuming you may need referredby
     formData.append("textarea", event.target.leadsquared_Notes.value);
   
     const xhttp = new XMLHttpRequest();
