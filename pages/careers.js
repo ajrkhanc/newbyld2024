@@ -842,7 +842,7 @@ export default function Home() {
                           className="borrr"
                           type="file"
                           name="resume"
-                          placeholder="Upload Resume**"
+                          placeholder="Upload Resume*"
                           required
                         />
                       </div>
