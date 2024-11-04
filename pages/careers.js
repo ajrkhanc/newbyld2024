@@ -143,34 +143,41 @@ export default function Home() {
     
   //   xhttp.send(formData);
   // };
-  document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contact-form"); // Adjust ID if needed
+
+  const registerUser = async (event) => {
+    event.preventDefault();
+    document.getElementById("submitbuttonform").value = "Submitting form....";
+    
+    const formData = new FormData(event.target);  // Automatically gathers form data
   
-    contactForm.addEventListener("submit", async function (event) {
-      event.preventDefault();
-      document.getElementById("submitbuttonform").value = "Submitting form....";
-  
-      const formData = new FormData(contactForm);
-  
+    try {
       const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
         method: "POST",
         body: formData,
       });
   
-      const result = await response.json();
-      if (result.status === "mail_sent") {
-        document.getElementById("showlabel").innerHTML =
-          "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
-        document.getElementById("showlabel").style.display = "block";
-        setTimeout(() => {
-          window.location.href = "/thank-you";
-        }, 3000);
+      if (response.ok) {
+        const result = await response.json();
+        if (result.status === "mail_sent") {
+          document.getElementById("showlabel").innerHTML =
+            "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
+          document.getElementById("showlabel").style.display = "block";
+          setTimeout(() => {
+            window.location.href = "/thank-you";
+          }, 3000);
+        } else {
+          alert("There was a problem with the request.");
+        }
       } else {
         alert("There was a problem with the request.");
       }
-      document.getElementById("submitbuttonform").value = "Submit";
-    });
-  });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting the form. Please try again later.");
+    }
+  
+    document.getElementById("submitbuttonform").value = "Submit";
+  };
   
 
   return (
