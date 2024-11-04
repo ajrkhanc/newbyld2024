@@ -816,7 +816,7 @@ export default function Home() {
                           required
                         />
                       </div>
-                      <div className="col-sm-6 mb-12">
+                      <div className="col-sm-12 mb-12">
                         <input
                           className="borrr"
                           type="text"
