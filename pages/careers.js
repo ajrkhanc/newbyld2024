@@ -816,37 +816,25 @@ export default function Home() {
                           required
                         />
                       </div>
+                      <div className="col-sm-6 mb-12">
+                        <input
+                          className="borrr"
+                          type="text"
+                          name="position"
+                          placeholder="Position To Apply*"
+                          required
+                        />
+                      </div>
 
-                      <div className="col-sm-12 mb-12">
+                      {/* <div className="col-sm-12 mb-12">
                         <select name="product" required>
                           <option value="">Select Position To Apply</option>
                           <option value="Paid Ads Specialist">
                           Paid Ads Specialist
                           </option>
-                          {/* <option value="Business Consultant CSR Corporate Sales">
-                            Business Consultant CSR Corporate Sales
-                          </option>
-                          <option value="Business Consultant Corporate Sales">
-                            Business Consultant Corporate Sales
-                          </option>
-                          <option value="Digital Producer">
-                            Digital Producer
-                          </option>
-                          <option value="Trainer – Retail Banking">
-                            Trainer – Retail Banking
-                          </option>
-                          <option value="Trainer – Communication and Workplace Skills">
-                            Trainer – Communication and Workplace Skills
-                          </option>
-                          <option value="Trainer – Overview of Insurance">
-                            Trainer – Overview of Insurance
-                          </option>
-                          <option value="Program Manager">
-                            Program Manager
-                          </option>
-                          <option value="HR generalist">HR generalist</option> */}
+                         
                         </select>
-                      </div>
+                      </div> */}
 
                       <div className="col-sm-12 mb-12">
                         <span>Upload Resume*</span>
