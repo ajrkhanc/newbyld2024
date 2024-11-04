@@ -144,193 +144,45 @@ export default function Home() {
   //   xhttp.send(formData);
   // };
 
-  // const registerUser = async (event) => {
-  //   event.preventDefault();
-  //   document.getElementById("submitbuttonform").value = "Submitting form....";
+  const registerUser = async (event) => {
+    event.preventDefault();
+    document.getElementById("submitbuttonform").value = "Submitting form....";
     
-  //   const formData = new FormData(event.target);  // Automatically gathers form data
+    const formData = new FormData(event.target);  // Automatically gathers form data
   
-  //   try {
-  //     const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
-  //       method: "POST",
-  //       body: formData,
-  //     });
+    try {
+      const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
+        method: "POST",
+        body: formData,
+      });
   
-  //     if (response.ok) {
-  //       const result = await response.json();
-  //       if (result.status === "mail_sent") {
-  //         document.getElementById("showlabel").innerHTML =
-  //           "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
-  //         document.getElementById("showlabel").style.display = "block";
-  //         setTimeout(() => {
-  //           window.location.href = "/thank-you";
-  //         }, 3000);
-  //       } else {
-  //         alert("There was a problem with the request.");
-  //       }
-  //     } else {
-  //       alert("There was a problem with the request.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error submitting form:", error);
-  //     alert("There was an error submitting the form. Please try again later.");
-  //   }
-  
-  //   document.getElementById("submitbuttonform").value = "Submit";
-  // };
-  
-
-  // const imageKitPublicKey = "public_8RkYigXi4FPDNkR3lO2Gwdk+Cdo="; // Your ImageKit Public Key
-  // const imageKitUrlEndpoint = "https://ik.imagekit.io/byld"; // Your ImageKit URL Endpoint
-  
-  // const registerUser = async (event) => {
-  //   event.preventDefault();
-  //   document.getElementById("submitbuttonform").value = "Submitting form....";
-  
-  //   const formData = new FormData(event.target);
-  //   const fileInput = event.target.resume; // Assuming the file input is named "resume"
-  
-  //   try {
-  //     // Check if a file was selected
-  //     if (!fileInput.files.length) {
-  //       alert("Please select a file to upload.");
-  //       return;
-  //     }
-  
-  //     // Upload file to ImageKit
-  //     const uploadResponse = await fetch("https://upload.imagekit.io/api/v1/files/upload", {
-  //       method: "POST",
-  //       headers: {
-  //         "Authorization": `Basic ${btoa(imageKitPublicKey + ":")}`,
-  //       },
-  //       body: (() => {
-  //         const form = new FormData();
-  //         form.append('file', fileInput.files[0]);
-  //         return form;
-  //       })(),
-  //     });
-  
-  //     const uploadResult = await uploadResponse.json();
-  
-  //     // Check for upload response status
-  //     if (!uploadResponse.ok) {
-  //       throw new Error(uploadResult.message || "Failed to upload file");
-  //     }
-  
-  //     const uploadedFileUrl = uploadResult.url; // Get the URL of the uploaded file
-  //     console.log("Uploaded File URL:", uploadedFileUrl);
-  
-  //     // Optional: Log or use the ImageKit URL Endpoint for displaying or managing the uploaded image
-  //     const imageUrl = `${imageKitUrlEndpoint}/${uploadResult.filePath}`; // Create a full URL for the uploaded image
-  //     console.log("ImageKit Image URL:", imageUrl); // You can use this URL for previews or further actions
-  
-  //     // Prepare form data to send along with the uploaded file URL
-  //     const formWithFileUrl = {
-  //       ...Object.fromEntries(formData), // Convert FormData to an object
-  //       resumeUrl: uploadedFileUrl, // Add the uploaded file URL to the form data
-  //     };
-  
-  //     // Submit form data to your endpoint
-  //     const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
-  //       method: "POST",
-  //       body: JSON.stringify(formWithFileUrl),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //     });
-  
-  //     if (response.ok) {
-  //       const result = await response.json();
-  //       if (result.status === "mail_sent") {
-  //         document.getElementById("showlabel").innerHTML =
-  //           "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
-  //         document.getElementById("showlabel").style.display = "block";
-  //         setTimeout(() => {
-  //           window.location.href = "/thank-you";
-  //         }, 3000);
-  //       } else {
-  //         alert("There was a problem with the request.");
-  //       }
-  //     } else {
-  //       alert("There was a problem with the request.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error submitting form:", error);
-  //     alert("There was an error submitting the form. Please try again later.");
-  //   }
-  
-  //   document.getElementById("submitbuttonform").value = "Submit";
-  // };
-  
-  const imageKitPublicKey = "public_8RkYigXi4FPDNkR3lO2Gwdk+Cdo="; // Your ImageKit Public Key
-const uploadEndpoint = "https://upload.imagekit.io/api/v1/files/upload"; // ImageKit upload endpoint
-
-const registerUser = async (event) => {
-  event.preventDefault();
-  document.getElementById("submitbuttonform").value = "Submitting form....";
-
-  const formData = new FormData(event.target);
-  const fileInput = event.target.resume; // Assuming the file input is named "resume"
-
-  try {
-    // Check if a file is selected
-    if (!fileInput.files.length) {
-      throw new Error("Please select a file to upload.");
-    }
-
-    // Upload file to ImageKit
-    const uploadResponse = await fetch(uploadEndpoint, {
-      method: "POST",
-      headers: {
-        "Authorization": `Basic ${btoa(imageKitPublicKey + ":")}`, // Using only public key for client-side
-      },
-      body: new FormData().append('file', fileInput.files[0]) // Upload the file directly
-    });
-
-    const uploadResult = await uploadResponse.json();
-    if (!uploadResponse.ok) {
-      throw new Error(uploadResult.message || "Failed to upload file");
-    }
-
-    const uploadedFileUrl = uploadResult.url; // Get the URL of the uploaded file
-
-    // Send form data along with the uploaded file URL
-    const formWithFileUrl = {
-      ...Object.fromEntries(formData), // Convert FormData to an object
-      resumeUrl: uploadedFileUrl, // Add the uploaded file URL to the form data
-    };
-
-    // Submit form data to your endpoint
-    const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
-      method: "POST",
-      body: JSON.stringify(formWithFileUrl),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (response.ok) {
-      const result = await response.json();
-      if (result.status === "mail_sent") {
-        document.getElementById("showlabel").innerHTML =
-          "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
-        document.getElementById("showlabel").style.display = "block";
-        setTimeout(() => {
-          window.location.href = "/thank-you";
-        }, 3000);
+      if (response.ok) {
+        const result = await response.json();
+        if (result.status === "mail_sent") {
+          document.getElementById("showlabel").innerHTML =
+            "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
+          document.getElementById("showlabel").style.display = "block";
+          setTimeout(() => {
+            window.location.href = "/thank-you";
+          }, 3000);
+        } else {
+          alert("There was a problem with the request.");
+        }
       } else {
         alert("There was a problem with the request.");
       }
-    } else {
-      alert("There was a problem with the request.");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("There was an error submitting the form. Please try again later.");
     }
-  } catch (error) {
-    console.error("Error submitting form:", error);
-    alert(`There was an error submitting the form: ${error.message}`);
-  }
+  
+    document.getElementById("submitbuttonform").value = "Submit";
+  };
+  
 
-  document.getElementById("submitbuttonform").value = "Submit";
-};
+ 
+  
+
 
 
   return (
