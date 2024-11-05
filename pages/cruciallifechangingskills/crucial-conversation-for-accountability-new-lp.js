@@ -215,10 +215,10 @@ export default function BrowseCourses() {
             <section class="workshops">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 contact-title">
+                        {/* <div class="col-lg-12 contact-title">
                             <h1>Our Upcoming Programs</h1>
                         </div>
-                     
+                      */}
 
 
                       
