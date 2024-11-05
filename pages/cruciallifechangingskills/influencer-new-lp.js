@@ -230,8 +230,8 @@ export default function BrowseCourses() {
                        {/*<option value="Virtual Course Preview - 19th January, 2024">
                       Virtual Course Preview - 19th Jan, 2024
                     </option>*/}
-                    <option value="Virtual Course Preview - 10th April, 2024">
-                    Virtual Course Preview - 10th April, 2024
+                    <option value="Open Programs 12-Nov-24  (Virtual)">
+                     Open Programs 12-Nov-24  (Virtual)
                     </option>
                     {/* <option value="Workshop - February 28th - 29th, 2024">Workshop - February 28th - 29th, 2024</option> */}
                   </select>
@@ -422,14 +422,14 @@ export default function BrowseCourses() {
                   <h4>Crucial Influence</h4>
                   <p></p>
                 </div>
-                <h5 className="eventt">Virtual Course Preview</h5>
+                <h5 className="eventt"> Open Programs 12-Nov-24  (Virtual)</h5>
                 <div class="col-md-12 workshop-date green-col">
                   <h6>
-                    <i class="fa fa-calendar" aria-hidden="true"></i> 10th April,
+                    <i class="fa fa-calendar" aria-hidden="true"></i>12-Nov,
                     2024
                   </h6>
                   <h6>
-                    <i class="fa fa-clock-o" aria-hidden="true"></i> 3 PM - 4 PM
+                    <i class="fa fa-clock-o" aria-hidden="true"></i> 9:30 AM - 5:30 PM
                   </h6>
                   <a href="#registered">
                     <button class="register">REGISTER NOW</button>
