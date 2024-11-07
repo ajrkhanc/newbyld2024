@@ -153,11 +153,11 @@ export default function CoachCertificationLP(){
                                             </select>
                                         </div>
                                         <div className="col-sm-6 mb-12">
-                                           {/*    <select name="slot" required>
+                                              <select name="slot" required>
                                                 <option value="">Interested In*</option>                                                
-                                                <option value="21st March, 2024">21st March, 2024</option>
+                                                <option value="IOC- 28th Nov, 2024 (Educational Experience Session)">IOC- 28th Nov, 2024 (Educational Experience Session)</option>
                                                
-                                                </select> */}
+                                                </select>
                                         </div>
                                         <div className="col-lg-12 mb-12 d-none">
                                             <input type="text" name="leadsquared_mx_Business_Entity" placeholder="BYLD Group" value="BYLD Group" required />
