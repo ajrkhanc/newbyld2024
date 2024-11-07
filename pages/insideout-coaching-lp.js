@@ -147,6 +147,9 @@ export default function CoachCertificationLP(){
                                             <select name="wheredidyoucome" required>
                                                 <option value="">Referred By*</option>
                                                 <option value="Email">Email</option>                                                
+                                                <option value="Social Media">Social Media</option>                                                
+                                                <option value="Google Search">Google Search</option>                                                
+                                                <option value="Website">Website</option>                                                
                                             </select>
                                         </div>
                                         <div className="col-sm-6 mb-12">
