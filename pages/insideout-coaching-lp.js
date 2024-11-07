@@ -152,7 +152,7 @@ export default function CoachCertificationLP(){
                                                 <option value="Website">Website</option>                                                
                                             </select>
                                         </div>
-                                        <div className="col-sm-6 mb-12">
+                                        <div className="col-sm-12 mb-12">
                                               <select name="slot" required>
                                                 <option value="">Interested In*</option>                                                
                                                 <option value="IOC- 28th Nov, 2024 (Educational Experience Session)">IOC- 28th Nov, 2024 (Educational Experience Session)</option>
