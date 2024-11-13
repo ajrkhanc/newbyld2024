@@ -1,8 +1,26 @@
 import Head from "next/head"
 import Link from "next/link"
 import Slider from "react-slick";
+import React, { useState, useEffect } from 'react';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 export default function BlanchardGenericLP() {
+   const [showModal, setShowModal] = useState(false);
+
+useEffect(() => {
+   // Show the modal on component mount
+   setShowModal(true);
+
+   // Hide the modal after 10 seconds
+   const timer = setTimeout(() => {
+     setShowModal(false);
+   }, 10000);
+
+   // Clear the timer if the component is unmounted
+   return () => clearTimeout(timer);
+ }, []);
+ const handleClose = () => setShowModal(false);
+
     var settings = {
         dots: true,
         arrows: false,
@@ -378,7 +396,19 @@ export default function BlanchardGenericLP() {
             
          </div>
       </div>
-
+   <div>
+      <Modal isOpen={showModal} toggle={handleClose} centered size="lg">
+        {/* <ModalHeader toggle={handleClose}>Welcome!</ModalHeader> */}
+        <ModalBody className="p-0">
+        <img src="/kbassets/img/cele1.jpg" alt="Images" className="w-100"/>
+        </ModalBody>
+        {/* <ModalFooter>
+          <Button color="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </ModalFooter> */}
+      </Modal>
+    </div>
         
         </>
     )
