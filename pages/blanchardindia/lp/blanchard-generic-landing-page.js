@@ -154,7 +154,7 @@ useEffect(() => {
                               <div className="help-block with-errors"></div>
                            </div>
                         </div>
-                        <div className="col-lg-12">
+                        {/* <div className="col-lg-12">
                            <div className="form-group">
                               <label>Interested In*</label>                              
                               <select className="form-control" name="interest_in" required>
@@ -170,6 +170,20 @@ useEffect(() => {
                                  <option value="Legendary-Service">Legendary-Service</option>
                                  <option value="Blanchard-Online-Learning">Blanchard-Online-Learning</option>
                                  <option value="Coaching-Services">Coaching-Services</option>
+                              </select>
+                              <div className="help-block with-errors"></div>
+                           </div>
+                        </div> */}
+                        <div className="col-lg-12">
+                           <div className="form-group">
+                              <label>Event*</label>                              
+                              <select className="form-control" name="interest_in" required>
+                              <option value="">--Select Your Event--</option>
+<option value="SLII Open Program -Virtual - [ 25th &amp; 26st Nov 2024 ]">SLII Open Program -Virtual - [ 25th &amp; 26st Nov 2024 ]</option>
+<option value="The SLII Experience™ -Virtual - [ 20th &amp; 21st Jan 2025 ]">The SLII Experience™ -Virtual - [ 20th &amp; 21st Jan 2025 ]</option>
+<option value="The SLII Experience™T4T F2F - [22nd &amp; 23rd Jan 2025]">The SLII Experience™T4T F2F - [22nd &amp; 23rd Jan 2025]</option>
+<option value="The SLII Experience™ - [18th &amp; 19th March 2025]">The SLII Experience™ - [18th &amp; 19th March 2025]</option>
+<option value="The SLII Experience™T4T F2F - [20th &amp; 21st March 2025]">The SLII Experience™T4T F2F - [20th &amp; 21st March 2025]</option>
                               </select>
                               <div className="help-block with-errors"></div>
                            </div>
