@@ -816,12 +816,21 @@ export default function Home() {
                           required
                         />
                       </div>
-                      <div className="col-sm-12 mb-12">
+                      <div className="col-sm-6 mb-12">
                         <input
                           className="borrr"
                           type="text"
                           name="position"
                           placeholder="Position To Apply*"
+                          required
+                        />
+                      </div>
+                      <div className="col-sm-6 mb-12">
+                        <input
+                          className="borrr"
+                          type="text"
+                          name="ctc"
+                          placeholder="Your current CTC*"
                           required
                         />
                       </div>
@@ -859,7 +868,7 @@ export default function Home() {
                           id="submitbuttonform"
                           className="clientcornnerbtn bord0"
                           type="submit"
-                          value="CTA"
+                          value="Submit"
                         />
                       </div>
                       <p id="showlabel" style={{ display: "none" }}></p>
