@@ -428,7 +428,7 @@ const workshops = [
   {
     id: 9,
     courseName: "Getting Things Done®",
-    dateRangeOne: "December 20, 2024",
+    dateRangeOne: "December 13, 2024",
     dateRangeTwo: "",
     location: "India | Bangalore",
     format: "In Person",
@@ -441,7 +441,7 @@ const workshops = [
   {
     id: 10,
     courseName: "Trapologist At Work™",
-    dateRangeOne: "December 11, 2024",
+    dateRangeOne: "December 16, 2024",
     dateRangeTwo: "",
     location: "India",
     format: "Virtual",
