@@ -859,7 +859,7 @@ export default function Home() {
                           id="submitbuttonform"
                           className="clientcornnerbtn bord0"
                           type="submit"
-                          value="Submit"
+                          value="CTA"
                         />
                       </div>
                       <p id="showlabel" style={{ display: "none" }}></p>
