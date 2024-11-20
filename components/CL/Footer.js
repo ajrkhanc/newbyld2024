@@ -85,7 +85,7 @@ export default function Footer() {
                         <a target="_blank" href="https://twitter.com/crucial__skills"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://www.instagram.com/cruciallifechangingskills/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/byld_crucialskills/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </li>
                 </ul>
                 <p>Subscribe to our monthly newsletter and learn how to handle the most crucial challenges of life and work.</p>
