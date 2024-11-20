@@ -2439,7 +2439,7 @@ var _typeof =
         e(this)
           .attr("rel", "noopener noreferrer")
           .append(
-            "<span class='visually-hidden'>(Opens in a new window)</span>"
+            "<span class='visually-hidden'></span>"
           );
       }),
       e("#cookie-consent-form").submit(function (t) {
