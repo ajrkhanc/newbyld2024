@@ -98,12 +98,12 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
             <tbody>
               <tr>
                 <td>Getting Things Done® </td>
-                <td> 20th </td>
+                <td> 13th </td>
                 <td>Bangalore</td>
               </tr>
               <tr>
                 <td>Trapologist At Work™ </td>
-                <td> 11th </td>
+                <td> 16th </td>
                 <td>Virtual</td>
               </tr>
               <tr>
