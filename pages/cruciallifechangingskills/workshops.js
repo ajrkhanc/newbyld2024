@@ -192,7 +192,7 @@ export default function Workshops() {
                     <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                             <h4 className='pbb-20'>Getting Things Done</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
@@ -240,7 +240,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                             <h4 className='pbb-20'>Getting Things Done</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
@@ -255,7 +255,7 @@ export default function Workshops() {
                     <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                             <h4 className='pbb-20'>Getting Things Done</h4>                            
                             </div>
                             <h5 className='eventt'>Train-The-Trainers (TTT) - Workshop</h5>
@@ -372,7 +372,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
+                    src="/classets/img/logo-gtd.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">Getting Things Done</h4>
@@ -426,7 +426,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
+                    src="/classets/img/logo-gtd.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">Trapologist At work</h4>
@@ -534,7 +534,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
+                    src="/classets/img/logo-gtd.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">Getting Things Done</h4>
@@ -561,7 +561,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
+                    src="/classets/img/logo-gtd.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">Trapologist At work</h4>
@@ -641,7 +641,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
+                    src="/classets/img/logo-gtd.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">Getting Things Done</h4>
@@ -668,7 +668,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
+                    src="/classets/img/logo-gtd.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">Trapologist At work</h4>
@@ -853,7 +853,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                             <h4 className='pbb-20'>Trapologist At work</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
