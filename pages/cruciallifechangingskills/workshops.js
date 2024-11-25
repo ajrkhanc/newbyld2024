@@ -453,7 +453,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-conversations.webp"
                     alt=""
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
@@ -587,7 +587,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-conversations.webp"
                     alt=""
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
@@ -722,7 +722,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-conversations.webp"
                     alt=""
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
@@ -749,7 +749,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-conversations.webp"
                     alt=""
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
