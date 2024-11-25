@@ -341,7 +341,7 @@ export default function Influencer() {
                             <h6><i class="ph-play-circle-bold"></i>  01.11 Mins Video</h6>
                         </div>
                         <div class="col-lg-6 preview-image">
-                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/52df3c2121cb3476d031945c32e61e98.jpg" /></a>
+                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/52df3c2121cb3476d031945c32e61e98.webp" /></a>
                         </div>
                     </div>
                 </div>
