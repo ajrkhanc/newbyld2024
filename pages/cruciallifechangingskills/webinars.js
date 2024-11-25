@@ -112,8 +112,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
-                    alt=""
+                    src="/classets/img/logo-conversations.webp"
+                    alt="logo-conversations"
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
                   <p>for Accountability</p>
@@ -139,8 +139,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
-                    alt=""
+                    src="/classets/img/logo-gtd.webp"
+                    alt="logo-gtd"
                   />
                   <h4 className="pbb-20">Trapologist At work</h4>
                 </div>
@@ -165,8 +165,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-conversations.svg"
-                    alt=""
+                    src="/classets/img/logo-conversations.webp"
+                    alt="logo-conversations"
                   />
                   <h4>Crucial Conversations </h4>
                   <p>for Mastering Dialogue</p>
@@ -218,7 +218,7 @@ export default function Webinars() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content gtdcolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                             <h4 className='pbb-20'>Trapologist At work</h4>                            
                             </div>
                             <h5 className='eventt'>Virtual Course Preview</h5>
@@ -261,8 +261,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
-                    alt=""
+                    src="/classets/img/logo-gtd.webp"
+                    alt="logo-gtd"
                   />
                   <h4 className="pbb-20">Getting Things Done</h4>
                 </div>
@@ -287,8 +287,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
-                    alt=""
+                    src="/classets/img/logo-gtd.webp"
+                    alt="logo-gtd"
                   />
                   <h4 className="pbb-20">Trapologist At work</h4>
                 </div>
@@ -314,8 +314,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
-                    alt=""
+                    src="/classets/img/logo-conversations.webp"
+                    alt="logo-conversations"
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
                   <p>for Accountability</p>
@@ -367,8 +367,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
-                    alt=""
+                    src="/classets/img/logo-gtd.webp"
+                    alt="logo-gtd"
                   />
                   <h4 className="pbb-20">Getting Things Done</h4>
                 </div>
@@ -393,8 +393,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
-                    alt=""
+                    src="/classets/img/logo-gtd.webp"
+                    alt="logo-gtd"
                   />
                   <h4 className="pbb-20">Trapologist At work</h4>
                 </div>
@@ -447,8 +447,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-conversations.svg"
-                    alt=""
+                    src="/classets/img/logo-conversations.webp"
+                    alt="logo-conversations"
                   />
                   <h4>Crucial Conversations </h4>
                   <p>for Mastering Dialogue</p>
@@ -476,8 +476,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-conversations.svg"
-                    alt=""
+                    src="/classets/img/logo-conversations.webp"
+                    alt="logo-conversations"
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
                   <p>for Accountability</p>
@@ -505,8 +505,8 @@ export default function Webinars() {
                 <div class="col-md-12 workshop-content gtdcolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-gtd.svg"
-                    alt=""
+                    src="/classets/img/logo-gtd.webp"
+                    alt="logo-gtd"
                   />
                   <h4 className="pbb-20">Getting Things Done</h4>
                 </div>
@@ -576,7 +576,7 @@ export default function Webinars() {
                         <div class="col-md-4 workshop-col">
                             <div class="row workshop-row">
                                 <div class="col-md-12 workshop-content gtdcolor">
-                                    <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                                    <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                                     <h4 className='pbb-20'>Getting Things Done</h4>
                                 </div>
                                 <h5 className='eventt'>Virtual Course Preview</h5>
@@ -607,7 +607,7 @@ export default function Webinars() {
             {/* <div class="col-md-4 workshop-col">
                             <div class="row workshop-row">
                                 <div class="col-md-12 workshop-content gtdcolor">
-                                    <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.svg" alt="" />
+                                    <img class="left-image img100px mbb-30" src="/classets/img/logo-gtd.webp" alt="" />
                                     <h4 className='pbb-20'>Getting Things Done</h4>
                                 </div>
                                 <h5 className='eventt'>Virtual Course Preview</h5>
