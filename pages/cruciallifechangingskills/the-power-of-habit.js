@@ -252,21 +252,21 @@ export default function Thepowerofhabit() {
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-on-demand-1.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-on-demand-1.webp" />
                                         <h4>On Demand</h4>
                                         <p>Learn at your own pace online.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-virtual-1.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-virtual-1.webp" />
                                         <h4>Virtual</h4>
                                         <p>Join one of our instructors online.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.webp" />
                                         <h4>In Person</h4>
                                         <p>Attend a classroom course.</p>
                                     </div>
@@ -302,7 +302,7 @@ export default function Thepowerofhabit() {
                             <h6><i class="ph-play-circle-bold"></i>  01.11 Mins Video</h6>
                         </div>
                         <div class="col-lg-6 preview-image">
-                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/a722a96b50d2f217e40af20c8d3d179a.jpg" /></a>
+                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/a722a96b50d2f217e40af20c8d3d179a.webp" /></a>
                         </div>
                     </div>
                 </div>

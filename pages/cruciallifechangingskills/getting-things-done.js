@@ -207,21 +207,21 @@ export default function Gettingthingsdone() {
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-on-demand-1.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-on-demand-1.webp" />
                                         <h4>On Demand</h4>
                                         <p>Learn at your own pace online.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-virtual-1.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-virtual-1.webp" />
                                         <h4>Virtual</h4>
                                         <p>Join one of our instructors online.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.svg" />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.webp" />
                                         <h4>In Person</h4>
                                         <p>Attend a classroom course.</p>
                                     </div>
