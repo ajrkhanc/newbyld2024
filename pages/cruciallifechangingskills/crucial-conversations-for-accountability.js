@@ -255,7 +255,7 @@ export default function crucialconversationsforaccountability() {
                                 </div>
                                 <div class="col-md-4">
                                     <div class="row feature-content text-center feature-box">
-                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.webp />
+                                        <img className='imgmauto img70 pbb-30' src="/classets/img/icon-in-person.webp" />
                                         <h4>In Person</h4>
                                         <p>Attend a classroom course.</p>
                                     </div>
