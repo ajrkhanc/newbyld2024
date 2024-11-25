@@ -98,7 +98,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>CRUCIAL CONVERSATIONS</h4>
                             <p>for Mastering Dialogue</p>
                             </div>
@@ -114,7 +114,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>CRUCIAL CONVERSATIONS</h4>
                             <p>for Accountability</p>
                             </div>
@@ -130,7 +130,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content green-col"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>INFLUENCER</h4>
                             <p></p>
                             </div>
@@ -146,7 +146,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content phothemecolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4 className='pbb-20'>THE POWER OF HABIT</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
@@ -161,7 +161,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content phothemecolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4 className='pbb-20'>THE POWER OF HABIT</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
@@ -175,7 +175,7 @@ export default function Workshops() {
                     <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content green-col"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>INFLUENCER</h4>
                             <p></p>
                             </div>
@@ -207,7 +207,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>CRUCIAL CONVERSATIONS</h4>
                             <p>for Accountability</p>
                             </div>
@@ -271,7 +271,7 @@ export default function Workshops() {
                         <div class="col-md-4 workshop-col">
                             <div class="row workshop-row">
                                 <div class="col-md-12 workshop-content phothemecolor">
-                                    <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                                    <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                                     <h4 className='pbb-20'>THE POWER OF HABIT</h4>
                                 </div>
                                 <h5 className='eventt'>Workshop</h5>
@@ -286,7 +286,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content phothemecolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4 className='pbb-20'>THE POWER OF HABIT</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
@@ -300,7 +300,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>CRUCIAL CONVERSATIONS</h4>
                             <p>for Mastering Dialogue</p>
                             </div>
@@ -317,7 +317,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content green-col">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4>Crucial Influence</h4>
@@ -344,7 +344,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content green-col">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4>The Power of Habit</h4>
@@ -398,7 +398,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4>CRUCIAL CONVERSATIONS</h4>
@@ -480,7 +480,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content phothemecolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">THE POWER OF HABIT</h4>
@@ -507,7 +507,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content green-col">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4>Crucial Influence</h4>
@@ -615,7 +615,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content phothemecolor">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4 className="pbb-20">THE POWER OF HABIT</h4>
@@ -694,7 +694,7 @@ export default function Workshops() {
                 <div class="col-md-12 workshop-content green-col">
                   <img
                     class="left-image img100px mbb-30"
-                    src="/classets/img/logo-influencer.svg"
+                    src="/classets/img/logo-influencer.webp"
                     alt=""
                   />
                   <h4>INFLUENCER</h4>
@@ -775,7 +775,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>CRUCIAL CONVERSATIONS</h4>
                             <p>for Mastering Dialogue</p>
                             </div>
@@ -791,7 +791,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>CRUCIAL CONVERSATIONS</h4>
                             <p>for Accountability</p>
                             </div>
@@ -807,7 +807,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content green-col"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>INFLUENCER</h4>
                             <p></p>
                             </div>
@@ -823,7 +823,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content green-col"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4>INFLUENCER</h4>
                             <p></p>
                             </div>
@@ -839,7 +839,7 @@ export default function Workshops() {
             {/* <div class="col-md-4 workshop-col"> 
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content phothemecolor"> 
-                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.svg" alt="" />
+                            <img class="left-image img100px mbb-30" src="/classets/img/logo-influencer.webp" alt="" />
                             <h4 className='pbb-20'>THE POWER OF HABIT</h4>                            
                             </div>
                             <h5 className='eventt'>Workshop</h5>
