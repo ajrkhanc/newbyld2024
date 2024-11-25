@@ -293,7 +293,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                             <h6><i class="ph-play-circle-bold"></i>  05.47 Mins Video</h6>
                         </div>
                         <div class="col-lg-6 preview-image">
-                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/a4354e5d3b8f4f205bab9e53646a76bc.jpg" alt="image66"  loading="lazy" /></a>
+                            <a href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/a4354e5d3b8f4f205bab9e53646a76bc.webp" alt="image66"  loading="lazy" /></a>
                         </div>
                     </div>
                 </div>
