@@ -102,7 +102,7 @@ export default function Influencer() {
                         </div>
                         <div className='col-sm-4'>
                             <div className='incbox'>
-                                <img src="/classets/img/in1.jpg" />
+                                <img src="/classets/img/in1.webp" />
                                 <h3>Crucial Influence Miniseries</h3>
                                 <p>
                                     Join Joseph Grenny, coauthor of Crucial Influence and cofounder of Crucial Learning, in this video series that introduces concepts and skills from the course.
@@ -112,7 +112,7 @@ export default function Influencer() {
                         </div>
                         <div className='col-sm-4'>
                             <div className='incbox'>
-                                <img src="/classets/img/in2.jpg" />
+                                <img src="/classets/img/in2.webp" />
                                 <h3>What’s New in Crucial Influence</h3>
                                 <p>
                                     Formerly Influencer, Crucial Influence teaches leaders how to apply the Six Sources of Influence to create lasting behavior change. See what’s new.
@@ -122,7 +122,7 @@ export default function Influencer() {
                         </div>
                         <div className='col-sm-4'>
                             <div className='incbox'>
-                                <img src="/classets/img/in3.jpg" />
+                                <img src="/classets/img/in3.webp" />
                                 <h3>Crucial Influence Assessment</h3>
                                 <p>
                                     Discover your natural tendencies when trying to influence others and identify areas for improvement with this short self-assessment.
@@ -160,7 +160,7 @@ export default function Influencer() {
 
                         <div className='col-sm-5'>
                             <div className='incbox'>
-                                <img src="/classets/img/in4.png" />
+                                <img src="/classets/img/in4.webp" />
                             </div>
                         </div>
                     </div>
