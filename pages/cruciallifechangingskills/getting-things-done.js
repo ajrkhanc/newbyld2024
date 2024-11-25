@@ -257,7 +257,7 @@ export default function Gettingthingsdone() {
                             <h6><i class="ph-play-circle-bold"></i> 22 Mins Video</h6>
                         </div>
                         <div class="col-lg-6 preview-image">
-                            <a target="_blank" href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/gtd-img.jpg" /></a>
+                            <a target="_blank" href='https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA'><img src="/classets/img/gtd-img.webp" /></a>
                         </div>
                     </div>
                 </div>
