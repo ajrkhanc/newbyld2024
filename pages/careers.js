@@ -492,6 +492,176 @@ export default function Home() {
                     </div>
                   </AccordionItemPanel>
                 </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                    Sr. Net Developer
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <div className="cafaq">
+                      <h4>JOB ROLE</h4>
+                      <p>Sr. Net Developer </p>
+                    </div>
+                    <div className="cafaq">
+                      <h4>EXPERIENCE</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          5 Years +
+                          </li>
+                          <li>
+                            IT
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="cafaq">
+                      <h4>Report to</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Manager
+                          </li>
+                         </ul>
+                      </div>
+                    </div>
+                    <div className="cafaq">
+                      <h4>Entity</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Yoma Tech
+                          </li>
+                         </ul>
+                      </div>
+                    </div>
+
+                    <div className="cafaq">
+                      <h4>Job Description Role & Responsibilities:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Write clean, scalable code using .NET programming languages
+                          </li>
+                          <li>
+                          Remain up to date with the terminology, concepts and best practices for coding mobile apps
+                          </li>
+                          <li> Develop technical interfaces, specifications, and architecture</li>
+                          <li>Use and adapt existing web applications for apps</li>
+                          <li>Create and test software prototypes</li>
+                          <li> Develop client displays and user interfaces</li>
+                          <li>Stay up-to-date with platform updates, algorithm changes, and industry trends.</li>
+                          <li>Assist software personnel in handling project related work and other requirements</li>
+                          <li>Coordinate with other software professionals and developers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="cafaq">
+                      <h4>Required Skills :</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Exposure to .NET Frameworks 4.0/4.5 and Dotnet Core
+                          </li>
+                          <li>
+                          Minimum 5+ year experience in .NET Dot Net Core, MVC 4.0/5.0, SQL &amp;amp; C#
+                          </li>
+                          <li> Sound knowledge in Razor syntax, attribute-based routing, server, and client-side validations,
+                          partial views</li>
+                          <li>Experience in REST services e.g. Web API</li>
+                          <li>Adequate knowledge and experience in developing web applications</li>
+                          <li>Proficiency in programming in C# with knowledge of advanced subjects like LINQ, parallel</li>
+                          <li>programming, Generics</li>
+                          <li>Must have worked on any of the ORM technologies like Entity Framework, Dapper, etc.</li>
+                          <li>Experience in SQL Server 2008 and above</li>
+                          <li>Knowledge of client-side tools like JavaScript, JQuery, HTML, CSS</li>
+                          <li>Ability to write SQL queries, create stored procedures, functions, views</li>
+                          <li>Knowledge of unit testing</li>
+                          <li>Must have worked on 3-tier applications</li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                   
+                    <div className="cafaq">
+                      <h4>Mandatory Skills:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          .NET Dot Net Core, MVC 4.0/5.0, SQL,Ado.Net &amp;amp; C#
+                          </li>
+                          
+                         
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="cafaq">
+                      <h4>Qualifications:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Min. Bachelor’s /Master’s degree in Technology
+                          </li> 
+                          <li>
+                          If you are an energetic and ambitious individual with a background, we invite you to apply and
+                          be a partof our dynamic team
+                          </li>
+                          
+                         
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="cafaq">
+                      <h4>Working conditions</h4>
+                      <p>BYOD (bring your own device policy)- candidate will be eligible for monthly allowances apart from CTC
+                      for using their own assets/ devices.</p>
+                      
+                    </div>
+
+                    <div className="cafaq">
+                      <h4>Why join BYLD:</h4>
+                      <h4 className="mtt-5">Perks &amp; Benefits:</h4>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5">
+                          <li>
+                          Learn directly from industry experts with 20+ years of experience
+                          </li> 
+                          <li>
+                          Professional and Healthy work atmosphere
+                          </li>
+
+                          <li>
+                          Gain experience in world class management practices
+                          </li>
+                          <li>
+                          Health Insurance Job role &amp; Skills trainings
+                          </li>
+                           <li>
+                           Wide range of Rewards &amp; Recognition programs
+                          </li>
+                          
+                         
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="cafaq">
+                      <h4>WORK LOCATION</h4>
+                      <p> Gurgaon</p>
+                      <div className="caapplybtn">
+                        <a className="cabtnc1" href="#">
+                          SEE MORE
+                        </a>
+                        <a className="cabtnc2" href="#careerForm">
+                          APPLY
+                        </a>
+                      </div>
+                    </div>
+                  </AccordionItemPanel>
+                </AccordionItem>
                 {/* <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
