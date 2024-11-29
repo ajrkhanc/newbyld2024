@@ -552,7 +552,6 @@ export default function Home() {
                           <li>Use and adapt existing web applications for apps</li>
                           <li>Create and test software prototypes</li>
                           <li> Develop client displays and user interfaces</li>
-                          <li>Stay up-to-date with platform updates, algorithm changes, and industry trends.</li>
                           <li>Assist software personnel in handling project related work and other requirements</li>
                           <li>Coordinate with other software professionals and developers</li>
                         </ul>
