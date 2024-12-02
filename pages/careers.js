@@ -551,8 +551,8 @@ export default function Home() {
                           <li> Develop technical interfaces, specifications, and architecture</li>
                           <li>Use and adapt existing web applications for apps</li>
                           <li>Create and test software prototypes</li>
-                          <li> Develop client displays and user interfaces</li>
-                          <li>Assist software personnel in handling project related work and other requirements</li>
+                          <li>Develop client displays and user interfaces</li>
+                           <li>Assist software personnel in handling project related work and other requirements</li>
                           <li>Coordinate with other software professionals and developers</li>
                         </ul>
                       </div>
