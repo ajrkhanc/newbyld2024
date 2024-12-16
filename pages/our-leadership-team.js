@@ -168,7 +168,7 @@ export default function Home() {
                     </div>
                     <div className='row zindx'>
                         {/* <div className='col-sm-2'></div> */}
-                        <div className='col-sm-8'>
+                        <div className='col-sm-12'>
                             <div className='row'>
                                 <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
