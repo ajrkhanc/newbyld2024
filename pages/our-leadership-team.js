@@ -167,10 +167,10 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='row zindx'>
-                        <div className='col-sm-2'></div>
+                        {/* <div className='col-sm-2'></div> */}
                         <div className='col-sm-8'>
                             <div className='row'>
-                                <div className='col-sm-6'>
+                                <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a target="_blank" href="/yogesh-sood"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/yogesh-sood_TeqofA9Ch.webp" alt="" /></a>
@@ -192,7 +192,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className='col-sm-6'>
+                                <div className='col-sm-4'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="#"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/sandeep_eK3UKTzIG.webp" alt="" /></a>
@@ -237,7 +237,7 @@ export default function Home() {
                                     </div>
                                 </div> */}
 
-                                <div className='col-sm-6'>
+                                <div className='col-sm-4'>
                                     <div className='innerteamc'>
                                         <div className='teamimgc1'>
                                             <a href="#"><img src="https://ik.imagekit.io/byld/BYLD/byldallasests/nishit_T0upIoQEjV.webp" alt="" /></a>
