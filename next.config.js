@@ -900,9 +900,7 @@ module.exports = {
         source: '/how-to-choose-your-staffing-partner',
         destination: 'https://blog.byldgroup.com',
         permanent: true,
-      },
-
-      {
+      },{
         source: '/learn-how-to-coach-your-people-the-right-way',
         destination: 'https://blog.byldgroup.com',
         permanent: true,
@@ -3108,7 +3106,7 @@ module.exports = {
       }
       ,
       {
-        source: 'blanchardindia/who-we-help/leaders-at-all-levels/senior-leaders',
+        source: '/blanchardindia/who-we-help/leaders-at-all-levels/senior-leaders',
         destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/senior-leaders/',
         permanent: true,
       } ,
@@ -3310,7 +3308,11 @@ module.exports = {
         destination: 'https://blanchardinternational.co.in/resources/videos/',
         permanent: true,
       }
-
+      ,{
+        source: '/blanchardindia/about-us',
+        destination: 'https://blanchardinternational.co.in/about-us/',
+        permanent: true,
+      }
 
 
 
