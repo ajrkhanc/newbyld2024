@@ -3309,10 +3309,6 @@ module.exports = {
         source: '/blanchardindia/resources/videos',
         destination: 'https://blanchardinternational.co.in/resources/videos/',
         permanent: true,
-      },{
-        source: '/blanchardindia/about-us',
-        destination: 'https://blanchardinternational.co.in/about-us/',
-        permanent: true,
       }
 
 
