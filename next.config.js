@@ -4495,7 +4495,7 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/blanchardindia/podcast/love-work-With-Marcus-Buckingham.js",
+        source: "/blanchardindia/podcast/love-work-With-Marcus-Buckingham",
         destination:
           "https://blanchardinternational.co.in/podcast/love+work-With-Marcus-Buckingham/",
         permanent: true,
