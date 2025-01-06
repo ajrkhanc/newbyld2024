@@ -2985,8 +2985,12 @@ module.exports = {
         source: '/eaglesflightindia/how-to-build-teams-virtually',
         destination: 'https://blog.byldgroup.com/eaglesflightindia',
         permanent: true,
+      },
+      {
+        source: '/blanchardindia',
+        destination: 'https://blanchardinternational.co.in',
+        permanent: true,
       }
-
 
 
 
