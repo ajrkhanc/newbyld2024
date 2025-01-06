@@ -3190,7 +3190,149 @@ module.exports = {
         source: '/blanchardindia/our-content',
         destination: 'https://blanchardinternational.co.in/our-content/',
         permanent: true,
+      },
+      {
+        source: '/blanchardindia/our-content/programs',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/',
+        permanent: true,
       }
+      ,
+      {
+        source: '/blanchardindia/our-content/programs/blanchard-management-essentials',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/blanchard-management-essentials/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/our-content/programs/building-trust',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/building-trust/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/our-content/programs/coaching-essentials',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/coaching-essentials/',
+        permanent: true,
+      }   ,
+      {
+        source: '/blanchardindia/our-content/programs/conversational-capacity',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/conversational-capacity/',
+        permanent: true,
+      },{
+        source: '/blanchardindia/our-content/programs/leadership-point-of-view',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/leadership-point-of-view/',
+        permanent: true,
+      },{
+        source: '/blanchardindia/our-content/programs/leading-people-through-change',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/leading-people-through-change/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/programs/leading-virtually',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/leading-virtually/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/programs/legendary-service',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/legendary-service/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/programs/self-leadership',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/self-leadership/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/programs/servant-leadership-essentials',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/servant-leadership-essentials/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/programs/team-leadership',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/team-leadership/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges/leadership-capabilities',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/leadership-capabilities/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges/change-agility',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/change-agility/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges/engagement-retention',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/engagement-retention/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges/organizational-performance',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/organizational-performance/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges/personal-effectiveness',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/personal-effectiveness/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/challenges/teaming-collaboration',
+        destination: 'https://blanchardinternational.co.in/our-content/challenges/teaming-collaboration/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/our-content/modalities',
+        destination: 'https://blanchardinternational.co.in/our-content/modalities/',
+        permanent: true,
+      },{
+        source: '/blanchardindia/resources/newsletter',
+        destination: 'https://blanchardinternational.co.in/resources/newsletter/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/resources/research-insights',
+        destination: 'https://blanchardinternational.co.in/resources/research-insights/',
+        permanent: true,
+      },{
+        source: '/blanchardindia/podcast',
+        destination: 'https://blanchardinternational.co.in/podcast/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/resources/videos',
+        destination: 'https://blanchardinternational.co.in/resources/videos/',
+        permanent: true,
+      }
+,{
+        source: '/blanchardindia/about-us',
+        destination: 'https://blanchardinternational.co.in/about-us/',
+        permanent: true,
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
