@@ -3887,83 +3887,616 @@ module.exports = {
         destination:
           "https://blanchardinternational.co.in/white-paper/building-trust-the-critical-link-to-a-high-involvement-high-energy-workplace-begins-with-a-common-language/",
         permanent: true,
-      },  {
+      },
+      {
         source:
           "/blanchardindia/ebooks/HR-L&D-Trends-Survey-Navigating-the-High-Expectation-Work-Environment",
         destination:
           "https://blanchardinternational.co.in/ebooks/HR-L&D-Trends-Survey-Navigating-the-High-Expectation-Work-Environment/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/ebooks/The-Factors-That-Encourage-and-That-Discourage-Innovation-in-Organizations",
         destination:
           "https://blanchardinternational.co.in/ebooks/The-Factors-That-Encourage-and-That-Discourage-Innovation-in-Organizations/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/ebooks/The-Role-of-Strategic-and-Operational-Leadership-Skills",
         destination:
           "https://blanchardinternational.co.in/ebooks/The-Role-of-Strategic-and-Operational-Leadership-Skills/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/ebooks/why-its-crucial-for-your-leaders-to-take-a-situational-approach-to-management",
         destination:
           "https://blanchardinternational.co.in/ebooks/why-its-crucial-for-your-leaders-to-take-a-situational-approach-to-management/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/ebooks/five-communication-strategies-that-make-leading-change-work",
         destination:
           "https://blanchardinternational.co.in/ebooks/five-communication-strategies-that-make-leading-change-work/",
         permanent: true,
-      },{
-        source:
-          "/blanchardindia/ebooks/situational-approach-to-leadership",
+      },
+      {
+        source: "/blanchardindia/ebooks/situational-approach-to-leadership",
         destination:
           "https://blanchardinternational.co.in/ebooks/situational-approach-to-leadership/",
         permanent: true,
-      },{
-        source:
-          "/blanchardindia/ebooks/conversational-capacity",
+      },
+      {
+        source: "/blanchardindia/ebooks/conversational-capacity",
         destination:
           "https://blanchardinternational.co.in/ebooks/conversational-capacity/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/podcast/Understanding-Essential-Motivators-with-Linda-Berens",
         destination:
           "https://blanchardinternational.co.in/podcast/Understanding-Essential-Motivators-with-Linda-Berens/",
         permanent: true,
-      },{
-        source:
-          "/blanchardindia/podcast/risk-forward-with-victoria-labalme",
+      },
+      {
+        source: "/blanchardindia/podcast/risk-forward-with-victoria-labalme",
         destination:
           "https://blanchardinternational.co.in/podcast/risk-forward-with-victoria-labalmei/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/podcast/how-to-be-an-inclusive-leader-with-jennifer-brown-2",
         destination:
           "https://blanchardinternational.co.in/podcast/how-to-be-an-inclusive-leader-with-jennifer-brown/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/ebooks/Exploring-The-Heart-of-Human-Achievement",
         destination:
           "https://blanchardinternational.co.in/ebooks/exploring-the-heart-of-human-achievement/",
         permanent: true,
-      },{
-        source:
-          "/blanchardindia/ebooks/The-Five-Drivers-of-Learning-Impact",
+      },
+      {
+        source: "/blanchardindia/ebooks/The-Five-Drivers-of-Learning-Impact",
         destination:
           "https://blanchardinternational.co.in/ebooks/the-five-drivers-of-learning-impact/",
         permanent: true,
-      },{
+      },
+      {
         source:
           "/blanchardindia/ebooks/7-ways-poor-leaders-are-costing-your-company-money",
         destination:
           "https://blanchardinternational.co.in/ebooks/7-ways-poor-leaders-are-costing-your-company-money/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/ebooks/a-new-approach-to-creating-a-culture-of-success",
+        destination:
+          "https://blanchardinternational.co.in/ebooks/a-new-approach-to-creating-a-culture-of-success/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/ebooks/a-jump-start-for-virtual-facilitation-3",
+        destination:
+          "https://blanchardinternational.co.in/ebooks/a-jump-start-for-virtual-facilitation-3/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/ebooks/measuring-the-impact-and-roi-of-leadership-training",
+        destination:
+          "https://blanchardinternational.co.in/ebooks/measuring-the-impact-and-roi-of-leadership-training/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/ebooks/3-fatal-mistakes-managers-make-when-coaching-their-teams",
+        destination:
+          "https://blanchardinternational.co.in/ebooks/3-fatal-mistakes-managers-make-when-coaching-their-teams/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/The-Inner-Journey-of-Leadership-with-Dan-Rockwell",
+        destination:
+          "https://blanchardinternational.co.in/podcast/the-inner-journey-of-leadership-with-dan-rockwell/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/the-song-of-significance-with-seth-godin",
+        destination:
+          "https://blanchardinternational.co.in/podcast/the-song-of-significance-with-seth-godin/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/learn-how-to-master-your-motivation-with-susan-fowler",
+        destination:
+          "https://blanchardinternational.co.in/podcast/learn-how-to-master-your-motivation-with-susan-fowler/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/finding-your-dream-job-with-alexa-shoen",
+        destination:
+          "https://blanchardinternational.co.in/podcast/finding-your-dream-job-with-alexa-shoen/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/podcast/awaken-your-genius-with-ozan-varol",
+        destination:
+          "https://blanchardinternational.co.in/podcast/awaken-your-genius-with-ozan-varol/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/compassionate-accountability-with-nate-regier",
+        destination:
+          "https://blanchardinternational.co.in/podcast/compassionate-accountability-with-nate-regier/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/change-your-questions-change-your-life-with-dr-marilee-adams",
+        destination:
+          "https://blanchardinternational.co.in/podcast/change-your-questions-change-your-life-with-dr-marilee-adams/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/the-awesome-human-project-with-nataly-kogan",
+        destination:
+          "https://blanchardinternational.co.in/podcast/the-awesome-human-project-with-nataly-kogan/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/finding-your-true-north-with-bill-george",
+        destination:
+          "https://blanchardinternational.co.in/podcast/finding-your-true-north-with-bill-george/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/finding-your-true-north-with-bill-george",
+        destination:
+          "https://blanchardinternational.co.in/podcast/finding-your-true-north-with-bill-george/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/the-heart-of-human-achievement-with-scott-blanchard",
+        destination:
+          "https://blanchardinternational.co.in/podcast/the-heart-of-human-achievement-with-scott-blanchard/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/how-to-lead-from-the-future-with-mark-w-johnson",
+        destination:
+          "https://blanchardinternational.co.in/podcast/how-to-lead-from-the-future-with-mark-w-johnson/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/how-to-design-training-for-how-people-learn-with-julie-dirksen",
+        destination:
+          "https://blanchardinternational.co.in/podcast/how-to-design-training-for-how-people-learn-with-julie-dirksen/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/podcast/smart-growth-with-whitney-johnson",
+        destination:
+          "https://blanchardinternational.co.in/podcast/smart-growth-with-whitney-johnson/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/motivating-your-team-with-catherine-stothart",
+        destination:
+          "https://blanchardinternational.co.in/podcast/motivating-your-team-with-catherine-stothart/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/competing-in-the-new-world-of-work-keith-ferrazzi",
+        destination:
+          "https://blanchardinternational.co.in/podcast/competing-in-the-new-world-of-work-keith-ferrazzi/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/experiential-intelligence-with-soren-kaplan",
+        destination:
+          "https://blanchardinternational.co.in/podcast/experiential-intelligence-with-soren-kaplan/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/real-time-leadership-with-carol-kauffman",
+        destination:
+          "https://blanchardinternational.co.in/podcast/real-time-leadership-with-carol-kauffman/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/listening-2by2-with-tom-kaden-and-michael-gingerich",
+        destination:
+          "https://blanchardinternational.co.in/podcast/listeningby2-with-tom-kaden-and-michael-gingerich/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/becoming-a-self-evolved-leader-with-dave-mckeown",
+        destination:
+          "https://blanchardinternational.co.in/podcast/becoming-a-self-evolved-leader-with-dave-mckeown/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/simple-truths-of-leadership-with-ken-blanchard-and-randy-conley",
+        destination:
+          "https://blanchardinternational.co.in/podcast/simple-truths-of-leadership-with-ken-blanchard-and-randy-conley/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/building-high-performance-habits-with-brendon-burchard",
+        destination:
+          "https://blanchardinternational.co.in/podcast/building-high-performance-habits-with-brendon-burchard/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/podcast/a-minute-to-think-with-juliet-funt",
+        destination:
+          "https://blanchardinternational.co.in/podcast/a-minute-to-think-with-juliet-funt/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/leading-with-gratitude-with-adrian-gostick",
+        destination:
+          "https://blanchardinternational.co.in/podcast/leading-with-gratitude-with-adrian-gostick/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/entrepreneurial-leadership-with-joel-peterson",
+        destination:
+          "https://blanchardinternational.co.in/podcast/entrepreneurial-leadership-with-joel-peterson/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/exploring-diversity-beyond-lip-service-with-la-wana-harris",
+        destination:
+          "https://blanchardinternational.co.in/podcast/exploring-diversity-beyond-lip-service-with-la-wana-harris/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/how-to-lead-without-authority-with-keith-ferrazzi",
+        destination:
+          "https://blanchardinternational.co.in/podcast/how-to-lead-without-authority-with-keith-ferrazzi/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/winning-the-talent-shift-with-berta-aldrich",
+        destination:
+          "https://blanchardinternational.co.in/podcast/winning-the-talent-shift-with-berta-aldrich/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/creating-your-leadership-point-of-view-with-pat-zigarmi",
+        destination:
+          "https://blanchardinternational.co.in/podcast/creating-your-leadership-point-of-view-with-pat-zigarmi/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/creating-psychological-safety-with-randy-conley",
+        destination:
+          "https://blanchardinternational.co.in/podcast/creating-psychological-safety-with-randy-conley/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/the-job-you-were-born-for-with-eileen-hahn",
+        destination:
+          "https://blanchardinternational.co.in/podcast/the-job-you-were-born-for-with-eileen-hahn/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/refine-your-employee-culture-with-stan-slap",
+        destination:
+          "https://blanchardinternational.co.in/podcast/refine-your-employee-culture-with-stan-slap/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/podcast/leverage-change-with-jake-jacobs",
+        destination:
+          "https://blanchardinternational.co.in/podcast/refine-your-employee-culture-with-stan-slap/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/becoming-an-impact-player-with-liz-wiseman",
+        destination:
+          "https://blanchardinternational.co.in/podcast/becoming-an-impact-player-with-liz-wiseman/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/leadership-two-words-at-a-time-with-bill-treasurer",
+        destination:
+          "https://blanchardinternational.co.in/podcast/leadership-two-words-at-a-time-with-bill-treasurer/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/the-no-os-of-leadership-with-mike-easley",
+        destination:
+          "https://blanchardinternational.co.in/podcast/the-no-os-of-leadership-with-mike-easley/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/humbitious-the-power-of-low-ego-high-drive-leadership-with-amer-kaissi",
+        destination:
+          "https://blanchardinternational.co.in/podcast/humbitious-the-power-of-low-ego-high-drive-leadership-with-amer-kaissi/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/beating-burnout-with-christina-maslach",
+        destination:
+          "https://blanchardinternational.co.in/podcast/beating-burnout-with-christina-maslach/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/events-workshops/virtual-public-workshop",
+        destination:
+          "https://blanchardinternational.co.in/events-workshop/virtual-public-workshop/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/white-paper/complete-guide-for-first-time-managers",
+        destination:
+          "https://blanchardinternational.co.in/white-paper/complete-guide-for-first-time-managers/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/white-paper/creating-an-effective-elearning-solution",
+        destination:
+          "https://blanchardinternational.co.in/white-paper/creating-an-effective-elearning-solution/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/white-paper/getting-to-the-sweet-spot-of-effective-communication",
+        destination:
+          "https://blanchardinternational.co.in/white-paper/getting-to-the-sweet-spot-of-effective-communication/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/white-paper/how-we-helped-a-leading-financial-giant-through-slll-leadership-program",
+        destination:
+          "https://blanchardinternational.co.in/white-paper/how-we-helped-a-leading-financial-giant-through-slii-leadership-program/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/white-paper/leader-trustworthiness-and-employee-work-intentions-a-canonical-correlation-study",
+        destination:
+          "https://blanchardinternational.co.in/white-paper/leader-trustworthiness-and-employee-work-intentions-a-canonical-correlation-study/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/what-we-do/leadership-development/digital-virtual-learning-experiences",
+        destination:
+          "https://blanchardinternational.co.in/what-we-do/leadership-development/digital-virtual-learning-experiences/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/what-we-do/services/reinforcement-sustainment",
+        destination:
+          "https://blanchardinternational.co.in/what-we-do/services/reinforcement-sustainment/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/what-we-do/custom-solutions/custom-coaching",
+        destination:
+          "https://blanchardinternational.co.in/what-we-do/custom-solutions/custom-coaching/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/what-we-do/custom-solutions/executive-development",
+        destination:
+          "https://blanchardinternational.co.in/what-we-do/custom-solutions/executive-development/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/our-content/challenges/diversity-inclusion",
+        destination:
+          "https://blanchardinternational.co.in/our-content/challenges/diversity-inclusion/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/events-workshops",
+        destination: "https://blanchardinternational.co.in/events-workshops/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/about-us/our-commitments/blanchard-institute",
+        destination:
+          "https://blanchardinternational.co.in/about-us/our-commitments/blanchard-institute",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/resources/research-insights/amping-up-your-learning-investment",
+        destination:
+          "https://blanchardinternational.co.in/resources/research-insights/amping-up-your-learning-investment/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/research-insights/hybrid-work-pov",
+        destination:
+          "https://blanchardinternational.co.in/resources/research-insights/hybrid-work-pov/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/resources/research-insights/supercharge-your-one-on-one",
+        destination:
+          "https://blanchardinternational.co.in/resources/research-insights/supercharge-your-one-on-one/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/hcl-technologies",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/hcl-technologies/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/what-we-do/leadership-development/content-licensing",
+        destination:
+          "https://blanchardinternational.co.in/what-we-do/leadership-development/content-licensing/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/what-we-do/services/moderation-community-management",
+        destination:
+          "https://blanchardinternational.co.in/what-we-do/services/moderation-community-management/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/duke-energy",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/duke-energy/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/milltronics",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/milltronics/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/resources/client-spotlights/eli-lilly-and-company",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/eli-lilly-and-company/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/aral-germany",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/aral-germany/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/resources/client-spotlights/american-institutes-for-researchy",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/american-institutes-for-research/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/h-r-block",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/h-r-block/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/takeda",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/takeda/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/resources/client-spotlights/barilla",
+        destination:
+          "https://blanchardinternational.co.in/resources/client-spotlights/barilla/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/building-emotional-intelligence-habits-with-dr-travis-bradberry",
+        destination:
+          "https://blanchardinternational.co.in/podcast/building-emotional-intelligence-habits-with-dr-travis-bradberry/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/simple-truths-of-leadership-playbook-with-ken-blanchard-and-randy-conley",
+        destination:
+          "https://blanchardinternational.co.in/podcast/simple-truths-of-leadership-playbook-with-ken-blanchard-and-randy-conley/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/2024hr-l&d-trends-survey-a-conversation-about-the-results",
+        destination:
+          "https://blanchardinternational.co.in/podcast/2024hr-l&d-trends-survey-a-conversation-about-the-results/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/The-Trusted-Learning-Advisor-with-Dr.-Keith-Keating",
+        destination:
+          "https://blanchardinternational.co.in/podcast/The-Trusted-Learning-Advisor-with-Dr.-Keith-Keating/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/2023-The-Year-in-Review-with-Ken-Blanchard-and-Chad-Gordon",
+        destination:
+          "https://blanchardinternational.co.in/podcast/2023-The-Year-in-Review-with-Ken-Blanchard-and-Chad-Gordon/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/podcast/love+work-With-Marcus-Buckingham",
+        destination:
+          "https://blanchardinternational.co.in/podcast/love+work-With-Marcus-Buckingham/",
+        permanent: true,
+      },
+      {
+        source:
+          "/blanchardindia/podcast/bestofSeries-FearlessLeadershipwithCareyLohrenz",
+        destination:
+          "https://blanchardinternational.co.in/podcast/bestofSeries-FearlessLeadershipwithCareyLohrenz/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/white-paper/millennials-in-the-workplace",
+        destination:
+          "https://blanchardinternational.co.in/white-paper/millennials-in-the-workplace/",
         permanent: true,
       },
     ];
