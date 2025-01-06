@@ -2990,7 +2990,234 @@ module.exports = {
         source: '/blanchardindia',
         destination: 'https://blanchardinternational.co.in',
         permanent: true,
+      },
+      {
+        source: '/blanchardindia/our-content/programs/slii',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/slii/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/get-started',
+        destination: 'https://blanchardinternational.co.in/get-started/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/custom-solutions',
+        destination: 'https://blanchardinternational.co.in/what-we-do/custom-solutions/',
+        permanent: true,
       }
+      ,
+      {
+        source: '/blanchardindia/what-we-do',
+        destination: 'https://blanchardinternational.co.in/what-we-do/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/leadership-development',
+        destination: 'https://blanchardinternational.co.in/what-we-do/leadership-development/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/leadership-development/leadership-development-programs',
+        destination: 'https://blanchardinternational.co.in/what-we-do/leadership-development/leadership-development-programs/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/leadership-development/learning-journeys',
+        destination: 'https://blanchardinternational.co.in/what-we-do/leadership-development/learning-journeys/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/leadership-development/propel-by-blanchard',
+        destination: 'https://blanchardinternational.co.in/what-we-do/leadership-development/propel-by-blanchard/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/leadership-development/keynotes',
+        destination: 'https://blanchardinternational.co.in/what-we-do/leadership-development/keynotes/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/resources/public-courses',
+        destination: 'https://blanchardinternational.co.in/resources/public-courses/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/leadership-development/training-for-trainers',
+        destination: 'https://blanchardinternational.co.in/what-we-do/leadership-development/training-for-trainers/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/services',
+        destination: 'https://blanchardinternational.co.in/what-we-do/services/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/what-we-do/services/coaching/',
+        destination: 'https://blanchardinternational.co.in/what-we-do/services/coaching/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/what-we-do/services/facilitation',
+        destination: 'https://blanchardinternational.co.in/what-we-do/services/facilitation/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/what-we-do/services/measurement-impact',
+        destination: 'https://blanchardinternational.co.in/blanchardindia/what-we-do/services/measurement-impact',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/what-we-do/services/assessments',
+        destination: 'https://blanchardinternational.co.in/what-we-do/services/assessments/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/what-we-do/custom-solutions/curated-learning-journeys',
+        destination: 'https://blanchardinternational.co.in/what-we-do/custom-solutions/curated-learning-journeys/',
+        permanent: true,
+      }
+   ,
+      {
+        source: '/blanchardindia/what-we-do/custom-solutions/customized-learning-experiences',
+        destination: 'https://blanchardinternational.co.in/what-we-do/custom-solutions/customized-learning-experiences/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/what-we-do/custom-solutions/content-integration',
+        destination: 'https://blanchardinternational.co.in/what-we-do/custom-solutions/content-integration/',
+        permanent: true,
+      }
+
+      ,
+      {
+        source: '/blanchardindia/what-we-do/custom-solutions/talent-strategy',
+        destination: 'https://blanchardinternational.co.in/what-we-do/custom-solutions/talent-strategy/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/leaders-at-all-levels/new-managers',
+        destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/new-managers/',
+        permanent: true,
+      }
+      ,
+      {
+        source: 'blanchardindia/who-we-help/leaders-at-all-levels/senior-leaders',
+        destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/senior-leaders/',
+        permanent: true,
+      } ,
+      {
+        source: '/blanchardindia/who-we-help',
+        destination: 'https://blanchardinternational.co.in/who-we-help/',
+        permanent: true,
+      } ,
+      {
+        source: '/blanchardindia/who-we-help/leaders-at-all-levels',
+        destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/who-we-help/leaders-at-all-levels/emerging-leaders',
+        destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/emerging-leaders/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/leaders-at-all-levels/experienced-leaders',
+        destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/experienced-leaders/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/leaders-at-all-levels/executives',
+        destination: 'https://blanchardinternational.co.in/who-we-help/leaders-at-all-levels/executives/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/organizations',
+        destination: 'https://blanchardinternational.co.in/who-we-help/organizations/',
+        permanent: true,
+      }  ,
+      {
+        source: '/blanchardindia/who-we-help/training-professionals',
+        destination: 'https://blanchardinternational.co.in/who-we-help/training-professionals/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/coaching-professionals',
+        destination: 'https://blanchardinternational.co.in/who-we-help/coaching-professionals/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/teams',
+        destination: 'https://blanchardinternational.co.in/who-we-help/teams/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/individuals',
+        destination: 'https://blanchardinternational.co.in/who-we-help/individuals/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/who-we-help/students',
+        destination: 'https://blanchardinternational.co.in/who-we-help/students/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/our-content/programs/courageous-inclusion',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/courageous-inclusion/',
+        permanent: true,
+      }
+      ,
+      {
+        source: '/blanchardindia/our-content/programs/essential-motivators',
+        destination: 'https://blanchardinternational.co.in/our-content/programs/essential-motivators/',
+        permanent: true,
+      },
+      {
+        source: '/blanchardindia/our-content',
+        destination: 'https://blanchardinternational.co.in/our-content/',
+        permanent: true,
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
