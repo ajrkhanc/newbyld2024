@@ -4494,6 +4494,12 @@ module.exports = {
           "https://blanchardinternational.co.in/white-paper/millennials-in-the-workplace/",
         permanent: true,
       },
+      {
+        source: "/blanchardindia/podcast/love+work-With-Marcus-Buckingham",
+        destination:
+          "https://blanchardinternational.co.in/podcast/love+work-With-Marcus-Buckingham/",
+        permanent: true,
+      },
     ];
   },
 };
