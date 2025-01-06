@@ -3313,6 +3313,39 @@ module.exports = {
         destination: 'https://blanchardinternational.co.in/about-us/',
         permanent: true,
       }
+      ,{
+        source: '/blanchardindia/about-us/who-we-are',
+        destination: 'https://blanchardinternational.co.in/about-us/who-we-are/',
+        permanent: true,
+      } ,{
+        source: '/blanchardindia/about-us/who-we-are/leadership-team',
+        destination: 'https://blanchardinternational.co.in/about-us/who-we-are/leadership-team/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/about-us/who-we-are/innovation-lab',
+        destination: 'https://blanchardinternational.co.in/about-us/who-we-are/innovation-lab/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/white-paper',
+        destination: 'https://blanchardinternational.co.in/white-paper/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/terms-and-conditions',
+        destination: 'https://blanchardinternational.co.in/terms-and-conditions/',
+        permanent: true,
+      }
+      ,{
+        source: '/blanchardindia/cancellation-and-refund-policy',
+        destination: 'https://blanchardinternational.co.in/cancellation-and-refund-policy/',
+        permanent: true,
+      }
+
+
+
+
 
 
 
