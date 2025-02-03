@@ -102,7 +102,7 @@ export default function WebinarsAndProgramExperience() {
       <section className="ptt-60 pbb-60 positionrelative">
         <div className="container">
           <div className="row zindx">
-            <div className="col-sm-4">
+            {/* <div className="col-sm-4">
               <div className="eventsbox">
                 <div className="eventmiddle">
                   <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/events_GMK6eGd8I.webp" alt="" />
@@ -116,9 +116,9 @@ export default function WebinarsAndProgramExperience() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-sm-4">
+            {/* <div className="col-sm-4">
               <div className="eventsbox">
                 <div className="eventmiddle">
                   <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/events_GMK6eGd8I.webp" alt="" />
@@ -132,7 +132,7 @@ export default function WebinarsAndProgramExperience() {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="clearfix"></div>
           <div className="solutionarrowbox1">
