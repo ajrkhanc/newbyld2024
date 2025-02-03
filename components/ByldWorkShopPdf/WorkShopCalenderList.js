@@ -29,21 +29,13 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Getting Things Done® </td>
-                <td> 7th </td>
-                <td>Gurugram</td>
-              </tr>
+             
               <tr>
                 <td>Everything Disc Workshop Certification® </td>
                 <td> 24th & 27th </td>
                 <td>Virtual</td>
               </tr>
-              <tr>
-                <td>Crucial Influence </td>
-                <td> 20th - 21st </td>
-                <td>Virtual</td>
-              </tr>
+              
               <tr>
                 <td>Crucial Conversation for Mastering Dialogue </td>
                 <td> 20th-21st </td>

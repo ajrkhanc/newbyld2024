@@ -325,19 +325,19 @@ function WorkshopCard() {
 export default WorkshopCard;
 
 const workshops = [
-  {
-    id: 1,
-    courseName: "Getting Things Done®",
-    dateRangeOne: "February 7, 2025",
-    dateRangeTwo: "",
-    location: "India | Gurugram",
-    format: "In Person",
-    amount: 28910,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
-    description:
-      "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
-  },
+  // {
+  //   id: 1,
+  //   courseName: "Getting Things Done®",
+  //   dateRangeOne: "February 7, 2025",
+  //   dateRangeTwo: "",
+  //   location: "India | Gurugram",
+  //   format: "In Person",
+  //   amount: 28910,
+  //   pageUrl:
+  //     "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
+  //   description:
+  //     "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
+  // },
   {
     id: 2,
     courseName: "Crucial Conversations® For Mastering Dialogue",
@@ -351,18 +351,18 @@ const workshops = [
     description:
       "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   },
-  {
-    id: 3,
-    courseName: "Crucial Influence",
-    dateRangeOne: "February 20, 2025",
-    dateRangeTwo: "February 21, 2025",
-    location: "India",
-    format: "Virtual",
-    pageUrl: "https://byldgroup.com/cruciallifechangingskills/influencer",
-    amount: 41300,
-    description:
-      "Crucial Influence® teaches leadership skills that are essential to leaders at every level. Drawing on five decades of social science research and work with successful leaders around the world, the Crucial Influence Model reveals why people do what they do and how all leaders—from aspiring leaders to top executives—can influence others for lasting results.",
-  },
+  // {
+  //   id: 3,
+  //   courseName: "Crucial Influence",
+  //   dateRangeOne: "February 20, 2025",
+  //   dateRangeTwo: "February 21, 2025",
+  //   location: "India",
+  //   format: "Virtual",
+  //   pageUrl: "https://byldgroup.com/cruciallifechangingskills/influencer",
+  //   amount: 41300,
+  //   description:
+  //     "Crucial Influence® teaches leadership skills that are essential to leaders at every level. Drawing on five decades of social science research and work with successful leaders around the world, the Crucial Influence Model reveals why people do what they do and how all leaders—from aspiring leaders to top executives—can influence others for lasting results.",
+  // },
   {
     id: 4,
     courseName: "Everything Disc Workshop Certification®",
