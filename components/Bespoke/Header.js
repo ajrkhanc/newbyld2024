@@ -129,6 +129,7 @@ export default function Header() {
                                                                 </ul>
                                                             </li>
                                                             <li><a href="/join-our-partner-network">Partner Network</a></li>
+                                                            <li><a href="https://globalchecks.in/">verification</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
@@ -318,6 +319,7 @@ export default function Header() {
                                         </ul>
                                     </li>
                                     <li><a href="/join-our-partner-network">Partner Network</a></li>
+                                    <li><a href="https://globalchecks.in/">verification</a></li>
                                 </ul>
                             </li>
                             <li>
