@@ -229,9 +229,8 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     <h2>
                                         I find it hard to name the emotion(s) as I am experiencing them.
                                     </h2>
-                                  
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q2" value="1" id="q2a" required />
@@ -274,7 +273,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q2j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at all</label>
                                     </div>
                                 </div>
 
@@ -446,7 +445,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I lose my temper when I feel frustrated
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q6" value="1" id="q6a" required />
@@ -489,7 +488,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q6j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -551,7 +550,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I find it difficult to engage, when I feel frustrated or unhappy
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q8" value="1" id="q8a" required />
@@ -594,7 +593,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q8j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
                                 <div className='fcol1'>
@@ -602,7 +601,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I often feel, I don’t enjoy my work
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q9" value="1" id="q9a" required />
@@ -645,7 +644,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q9j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -654,7 +653,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I find it hard to resist the impulse to respond when I feel strong emotions
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q10" value="1" id="q10a" required />
@@ -697,7 +696,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q10j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -870,7 +869,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I find it difficult to read other people’s emotions
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q14" value="1" id="q14a" required />
@@ -913,7 +912,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q14j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -922,7 +921,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I find it hard to spot the mood in the room when things are not going well
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q15" value="1" id="q15a" required />
@@ -965,7 +964,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q15j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -979,7 +978,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I find it hard to get people to share what their real motives are
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q16" value="1" id="q16a" required />
@@ -1022,7 +1021,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q16j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>                                
 
@@ -1031,7 +1030,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I avoid conflict and negotiations
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q17" value="1" id="q17a" required />
@@ -1074,7 +1073,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q17j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -1135,7 +1134,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I struggle to build rapport with others
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q19" value="1" id="q19a" required />
@@ -1178,7 +1177,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q19j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
 
@@ -1187,7 +1186,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                     I find it hard to get everyone onboard with solutions that would satisfy all
                                     </h2>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Not at all</label>
+                                        <label className='beafinput'>Very Often</label>
                                     </div>
                                     <div className='fcolmain'>
                                         <input type="radio" name="q20" value="1" id="q20a" required />
@@ -1230,7 +1229,7 @@ function logmaintane(nameabc,phoneabc,emailabc,organizationabc,assessmentabc,res
                                         <label for="q20j">10</label>
                                     </div>
                                     <div className='fcolmain'>
-                                        <label className='beafinput'>Very often</label>
+                                        <label className='beafinput'>Not at All</label>
                                     </div>
                                 </div>
                             </div>
