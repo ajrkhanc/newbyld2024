@@ -92,17 +92,24 @@ export default function Home() {
   const HomeForm = async (event) => {
     event.preventDefault();
     document.getElementById("submitbuttonform").value = "Submitting form....";
+  
+    const form = event.currentTarget; // Ensures reference to the form
+    const formData = new FormData(form);
+  
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function () {
       console.log(this.responseText);
     };
+  
     xhttp.open(
-      "Post","https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/5/feedback"
+      "POST",
+      "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/5/feedback"
     );
     xhttp.setRequestHeader(
       "Content-Type",
-      "application/x-www-form-urlencoded;"
+      "application/x-www-form-urlencoded"
     );
+  
     xhttp.onreadystatechange = function () {
       if (xhttp.readyState == 4) {
         if (xhttp.status == 200) {
@@ -110,7 +117,7 @@ export default function Home() {
             "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
           document.getElementById("contactFormOne").reset();
           document.getElementById("showlabel").style.display = "block";
-          window.setTimeout(function () {
+          setTimeout(() => {
             window.location.href = "/cruciallifechangingskills/thank-you";
           }, 3000);
         } else {
@@ -118,19 +125,12 @@ export default function Home() {
         }
       }
     };
+  
     xhttp.send(
-      "your-name=" +
-        event.target.name.value +
-        "&your-email=" +
-        event.target.email.value +
-        "&PhoneNumber=" +
-        event.target.phone.value +
-        "&your-subject=" +
-        event.target.subject.value +
-        "&your-message=" +
-        event.target.message.value
+      `your-name=${formData.get("name")}&your-email=${formData.get("email")}&PhoneNumber=${formData.get("phone")}&your-subject=${formData.get("subject")}&your-message=${formData.get("message")}`
     );
   };
+  
 
   const ccmd2 = async (event) => {
     const coursename = "Crucial Conversations for Mastering Dialogue";
@@ -1206,7 +1206,7 @@ export default function Home() {
               </p>
             </div>
             <div class="col-md-5 newclf">
-              <form id="contactFormOne" class="row" onSubmit={HomeForm}>
+              <form id="contactFormOne" class="row" onSubmit="HomeForm(event)">
                 <div class="col-md-6">
                   <input
                     type="text"
