@@ -103,7 +103,7 @@ export default function Home() {
   
     xhttp.open(
       "POST",
-      "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/5/feedback"
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/519/feedback"
     );
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   
