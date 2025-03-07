@@ -108,7 +108,7 @@ export default function Home() {
         if (xhttp.status == 200) {
           document.getElementById("showlabel").innerHTML =
             "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-          document.getElementById("contactForm").reset();
+          document.getElementById("contactFormOne").reset();
           document.getElementById("showlabel").style.display = "block";
           window.setTimeout(function () {
             window.location.href = "/cruciallifechangingskills/thank-you";
@@ -1206,7 +1206,7 @@ export default function Home() {
               </p>
             </div>
             <div class="col-md-5 newclf">
-              <form id="contactForm" class="row" onSubmit={HomeForm}>
+              <form id="contactFormOne" class="row" onSubmit={HomeForm}>
                 <div class="col-md-6">
                   <input
                     type="text"
