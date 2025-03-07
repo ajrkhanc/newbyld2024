@@ -91,9 +91,9 @@ export default function Home() {
 
   const HomeForm = async (event) => {
     event.preventDefault();
-    document.getElementById("submitbuttonform").value = "Submitting form....";
+    document.getElementById("submitbuttonform").textContent = "Submitting...";
   
-    const form = event.currentTarget; // Ensures reference to the form
+    const form = event.currentTarget; // Ensures correct form reference
     const formData = new FormData(form);
   
     const xhttp = new XMLHttpRequest();
@@ -105,17 +105,14 @@ export default function Home() {
       "POST",
       "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/5/feedback"
     );
-    xhttp.setRequestHeader(
-      "Content-Type",
-      "application/x-www-form-urlencoded"
-    );
+    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   
     xhttp.onreadystatechange = function () {
-      if (xhttp.readyState == 4) {
-        if (xhttp.status == 200) {
-          document.getElementById("showlabel").innerHTML =
-            "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-          document.getElementById("contactFormOne").reset();
+      if (xhttp.readyState === 4) {
+        if (xhttp.status === 200) {
+          document.getElementById("showlabel").textContent =
+            "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
+          form.reset();
           document.getElementById("showlabel").style.display = "block";
           setTimeout(() => {
             window.location.href = "/cruciallifechangingskills/thank-you";
@@ -126,10 +123,15 @@ export default function Home() {
       }
     };
   
-    xhttp.send(
-      `your-name=${formData.get("name")}&your-email=${formData.get("email")}&PhoneNumber=${formData.get("phone")}&your-subject=${formData.get("subject")}&your-message=${formData.get("message")}`
-    );
+    // Encode form data for submission
+    const encodedData = new URLSearchParams();
+    formData.forEach((value, key) => {
+      encodedData.append(key, value);
+    });
+  
+    xhttp.send(encodedData.toString());
   };
+  
   
 
   const ccmd2 = async (event) => {
@@ -345,11 +347,16 @@ export default function Home() {
   return (
     <>
       <Head>
-    
-       <title>Crucial Leaning | Crucial Life-Changing Skills</title>
-       <meta name="robots" content="INDEX, FOLLOW" />  
-      <meta name="description" content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page." />
-      <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills" />
+        <title>Crucial Leaning | Crucial Life-Changing Skills</title>
+        <meta name="robots" content="INDEX, FOLLOW" />
+        <meta
+          name="description"
+          content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."
+        />
+        <link
+          rel="canonical"
+          href="https://byldgroup.com/cruciallifechangingskills"
+        />
         <link
           rel="stylesheet"
           type="text/css"
@@ -361,74 +368,110 @@ export default function Home() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        
-         <meta name="google-site-verification" content="OM6hSC8XO4ylFInFKwcHaWp5gFMt0Nn6aQ6A-eV7SWc" />
-         {/* og tag */}
 
-         <meta property="og:url" content="https://byldgroup.com/cruciallifechangingskills"/>
-          <meta property="og:type" content="website"/>
-          <meta property="og:title" content="Crucial Leaning | Crucial Life-Changing Skills"/>
-          <meta property="og:description" content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."/>
-          <meta property="og:image" content="https://byldgroup.com/classets/img/cruciallifechangingskills-logo.svg"/>
+        <meta
+          name="google-site-verification"
+          content="OM6hSC8XO4ylFInFKwcHaWp5gFMt0Nn6aQ6A-eV7SWc"
+        />
+        {/* og tag */}
+
+        <meta
+          property="og:url"
+          content="https://byldgroup.com/cruciallifechangingskills"
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Crucial Leaning | Crucial Life-Changing Skills"
+        />
+        <meta
+          property="og:description"
+          content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."
+        />
+        <meta
+          property="og:image"
+          content="https://byldgroup.com/classets/img/cruciallifechangingskills-logo.svg"
+        />
         {/* TWITTER TAG */}
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:site" content="@crucial__skills"/>
-        <meta name="twitter:title" content="Crucial Leaning | Crucial Life-Changing Skills"/>
-        <meta name="twitter:description" content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."/>
-        <meta name="twitter:image:src" content="https://pbs.twimg.com/profile_images/1475415956583186432/v2nzALrw_400x400.jpg"/>
-        <meta name="twitter:domain" content="https://byldgroup.com/cruciallifechangingskills"/>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@crucial__skills" />
+        <meta
+          name="twitter:title"
+          content="Crucial Leaning | Crucial Life-Changing Skills"
+        />
+        <meta
+          name="twitter:description"
+          content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."
+        />
+        <meta
+          name="twitter:image:src"
+          content="https://pbs.twimg.com/profile_images/1475415956583186432/v2nzALrw_400x400.jpg"
+        />
+        <meta
+          name="twitter:domain"
+          content="https://byldgroup.com/cruciallifechangingskills"
+        />
         {/* itemProp TAG */}
-        <meta itemProp="title" content="Crucial Leaning | Crucial Life-Changing Skills"/>
-        <meta itemProp="description" content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."/>
-        <meta itemProp="image" content="https://byldgroup.com/classets/img/cruciallifechangingskills-logo.svg"/>
+        <meta
+          itemProp="title"
+          content="Crucial Leaning | Crucial Life-Changing Skills"
+        />
+        <meta
+          itemProp="description"
+          content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."
+        />
+        <meta
+          itemProp="image"
+          content="https://byldgroup.com/classets/img/cruciallifechangingskills-logo.svg"
+        />
         {/* script schema */}
 
         <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org/",
-                "@type": "WebSite",
-                "name": "BYLD Crucial Skills",
-                "url": "https://byldgroup.com/cruciallifechangingskills",
-                "potentialAction": {
-                  "@type": "SearchAction",
-                  "target": "https://byldgroup.com/cruciallifechangingskills/search?q={search_term_string}",
-                  "query-input": "required name=search_term_string"
-                }
-              }),
-            }}
-          />
-            <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "BYLD Crucial Skills",
-                "alternateName": "Crucial Learning",
-                "url": "https://byldgroup.com/cruciallifechangingskills",
-                "logo": "https://byldgroup.com/classets/img/cruciallifechangingskills-logo.svg",
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "telephone": "18001021345",
-                  "contactType": "customer service",
-                  "contactOption": "TollFree",
-                  "areaServed": "IN",
-                  "availableLanguage": "en"
-                },
-                "sameAs": [
-                  "https://www.facebook.com/Cruciallifechangingskills",
-                  "https://twitter.com/crucial__skills",
-                  "https://www.instagram.com/cruciallifechangingskills/",
-                  "https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA",
-                  "https://www.linkedin.com/company/crucial-life-changing-skills",
-                  "https://byldgroup.com/cruciallifechangingskills"
-                ]
-              }),
-            }}
-          />
-
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              name: "BYLD Crucial Skills",
+              url: "https://byldgroup.com/cruciallifechangingskills",
+              potentialAction: {
+                "@type": "SearchAction",
+                target:
+                  "https://byldgroup.com/cruciallifechangingskills/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "BYLD Crucial Skills",
+              alternateName: "Crucial Learning",
+              url: "https://byldgroup.com/cruciallifechangingskills",
+              logo: "https://byldgroup.com/classets/img/cruciallifechangingskills-logo.svg",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "18001021345",
+                contactType: "customer service",
+                contactOption: "TollFree",
+                areaServed: "IN",
+                availableLanguage: "en",
+              },
+              sameAs: [
+                "https://www.facebook.com/Cruciallifechangingskills",
+                "https://twitter.com/crucial__skills",
+                "https://www.instagram.com/cruciallifechangingskills/",
+                "https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA",
+                "https://www.linkedin.com/company/crucial-life-changing-skills",
+                "https://byldgroup.com/cruciallifechangingskills",
+              ],
+            }),
+          }}
+        />
       </Head>
 
       <Modal
@@ -772,7 +815,11 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/new/justinhale-cruciallearning.webp" alt="image"  loading="lazy" />
+                <img
+                  src="classets/img/new/justinhale-cruciallearning.webp"
+                  alt="image"
+                  loading="lazy"
+                />
                 <h3>
                   Free GTD<sup>®</sup> Miniseries
                 </h3>
@@ -787,7 +834,7 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/clinf.webp" alt="clinf"  loading="lazy" />
+                <img src="classets/img/clinf.webp" alt="clinf" loading="lazy" />
                 <h3>New Leadership Course</h3>
                 <p>
                   Explore our new leadership course—find assessments, webinars,
@@ -803,7 +850,11 @@ export default function Home() {
             </div>
             <div className="col-sm-4">
               <div className="incbox">
-                <img src="classets/img/new/cl-3.webp" alt="cl-3"  loading="lazy" />
+                <img
+                  src="classets/img/new/cl-3.webp"
+                  alt="cl-3"
+                  loading="lazy"
+                />
                 <h3>Can You Disagree Respectfully?</h3>
                 <p>
                   When faced with an argument, do you dig in, or give in? Shut
@@ -846,7 +897,9 @@ export default function Home() {
                   <div class="text-center chooseypbox">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-on-demand-1.webp" alt="icon-on-demand"  loading="lazy"
+                      src="classets/img/icon-on-demand-1.webp"
+                      alt="icon-on-demand"
+                      loading="lazy"
                     />
                     <h4>On Demand</h4>
                     <p>Learn at your own pace online.</p>
@@ -856,7 +909,9 @@ export default function Home() {
                   <div class="text-center chooseypbox bgorangelight">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-virtual-1.webp" alt="icon-virtual-1"  loading="lazy"
+                      src="classets/img/icon-virtual-1.webp"
+                      alt="icon-virtual-1"
+                      loading="lazy"
                     />
                     <h4>Virtual</h4>
                     <p>Join one of our instructors online.</p>
@@ -866,7 +921,9 @@ export default function Home() {
                   <div class="text-center chooseypbox bgsky">
                     <img
                       className="imgmauto img70 pbb-30"
-                      src="classets/img/icon-in-person.webp" alt="icon-in-person"  loading="lazy"
+                      src="classets/img/icon-in-person.webp"
+                      alt="icon-in-person"
+                      loading="lazy"
                     />
                     <h4>In Person</h4>
                     <p>Attend a classroom course.</p>
@@ -884,7 +941,9 @@ export default function Home() {
             <div className="col-sm-12 text-center">
               <Slider {...settings}>
                 <div className="homesl">
-                  <h2 className="font50 cblack">New GTD<sup>®</sup> Course</h2>
+                  <h2 className="font50 cblack">
+                    New GTD<sup>®</sup> Course
+                  </h2>
                   <p className="font24 pabb-20">
                     We’ve updated everything from videos to learner guides to
                     course content. <br></br>See what’s new in Getting Things
@@ -978,7 +1037,9 @@ export default function Home() {
             <div className="col-sm-12 text-center">
               <Slider {...settings}>
                 <div className="homesl">
-                  <h2 className="font50 cblack">New GTD<sup>®</sup> Course</h2>
+                  <h2 className="font50 cblack">
+                    New GTD<sup>®</sup> Course
+                  </h2>
                   <p className="font24 pabb-20">
                     We’ve updated everything from videos to learner guides to
                     course content. <br></br>See what’s new in Getting Things
@@ -1051,7 +1112,11 @@ export default function Home() {
               <Slider {...Coursec}>
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/ccmd.webp" alt="ccmd"  loading="lazy" />
+                    <img
+                      src="/classets/img/ccmd.webp"
+                      alt="ccmd"
+                      loading="lazy"
+                    />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1079,7 +1144,11 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/gtd.webp" alt="gtd"  loading="lazy" />
+                    <img
+                      src="/classets/img/gtd.webp"
+                      alt="gtd"
+                      loading="lazy"
+                    />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1107,7 +1176,7 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/cc.webp" alt="cc"  loading="lazy" />
+                    <img src="/classets/img/cc.webp" alt="cc" loading="lazy" />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1135,7 +1204,11 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/tpoh.webp"  alt="tpoh"  loading="lazy"/>
+                    <img
+                      src="/classets/img/tpoh.webp"
+                      alt="tpoh"
+                      loading="lazy"
+                    />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1163,7 +1236,11 @@ export default function Home() {
 
                 <div className="ours">
                   <div className="innerbc">
-                    <img src="/classets/img/inc.webp" alt="inc"  loading="lazy" />
+                    <img
+                      src="/classets/img/inc.webp"
+                      alt="inc"
+                      loading="lazy"
+                    />
                     <span className="forbgs"></span>
                   </div>
                   <div className="inerbtnccmd">
@@ -1206,69 +1283,74 @@ export default function Home() {
               </p>
             </div>
             <div class="col-md-5 newclf">
-              <form id="contactFormOne" class="row" onSubmit="HomeForm(event)">
-                <div class="col-md-6">
+              <form id="contactFormOne" className="row" onSubmit={HomeForm}>
+                <div className="col-md-6">
                   <input
                     type="text"
-                    name="name"
-                    class="form-control"
+                    name="first_name"
+                    className="form-control"
                     placeholder="First Name*"
                     required
                   />
                 </div>
 
-                <div class="col-md-6">
+                <div className="col-md-6">
                   <input
                     type="text"
-                    name="name"
-                    class="form-control"
+                    name="last_name"
+                    className="form-control"
                     placeholder="Last Name*"
                     required
                   />
                 </div>
-                <div class="col-md-12">
+
+                <div className="col-md-12">
                   <input
                     type="email"
                     name="email"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Work Email*"
                     required
                   />
                 </div>
-                <div class="col-md-12">
+
+                <div className="col-md-12">
                   <input
                     type="text"
                     name="phone"
-                    class="form-control"
-                    maxlength="10"
-                    minlength="10"
+                    className="form-control"
+                    maxLength="10"
+                    minLength="10"
                     pattern="[0-9]*"
                     placeholder="Phone No.*"
                     required
                   />
                 </div>
-                <div class="col-md-12">
+
+                <div className="col-md-12">
                   <input
                     type="text"
                     name="company"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Company*"
                     required
                   />
                 </div>
-                <div class="col-md-12">
+
+                <div className="col-md-12">
                   <input
                     type="text"
                     name="designation"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Designation"
                     required
                   />
                 </div>
-                <div class="col-md-12">
+
+                <div className="col-md-12">
                   <button
                     id="submitbuttonform"
-                    class="formbtnall"
+                    className="formbtnall"
                     type="submit"
                   >
                     Start the Conversation
