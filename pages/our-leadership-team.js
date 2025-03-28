@@ -94,7 +94,7 @@ export default function Home() {
             <Head>
                 <title>Our Leadership Team - BYLD Group</title>
                 <link rel="canonical" href="https://byldgroup.com/our-leadership-team" />
-                <meta name="description" content="Meet Our Leadership Team Yogesh Sood CMD – BYLD Group Sandeep Budhiraja Co-Founder – BYLD Group Nishit Sood Chief Flow Officer – BYLD Group Amar Vijay Tandur Chief Business Officer Ronald Soans Business Head – BYLD Group Meet Our Consulting Team Naveen Kumar Learning Division at DTCI Ranjeet… Continue reading Our Leadership Team" />
+                <meta name="description" content="Meet Our Leadership Team Yogesh Sood CMD – BYLD Group Sandeep Budhiraja Co-Founder – BYLD Group Nishit Sood Chief Executive Officer – BYLD Group Amar Vijay Tandur Chief Business Officer Ronald Soans Business Head – BYLD Group Meet Our Consulting Team Naveen Kumar Learning Division at DTCI Ranjeet… Continue reading Our Leadership Team" />
                 <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
                 <script
                     dangerouslySetInnerHTML={{
@@ -246,7 +246,7 @@ export default function Home() {
                                             <div className="name">
                                                 <a href="#">Nishit Sood</a>
                                             </div>
-                                            <span className="post">Chief Flow Officer</span>
+                                            <span className="post">Chief Executive Officer</span>
                                         </div>
                                         <div>
                                             <ul className="social-icon">
