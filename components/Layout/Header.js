@@ -147,8 +147,8 @@ export default function Header() {
                                                                     <li className=''><a target="_blank" href="https://www.yomatechnologies.in/">YOMA Technologies</a></li>
                                                                 </ul>
                                                             </li>
-                                                            <li><a href="/join-our-partner-network">Partner Network</a></li>
-                                                            <li><a href="https://globalchecks.in/">verification</a></li>
+                                                            <li className="last-item menu-item-has-children"><a href="/join-our-partner-network">Partner Network</a></li>
+                                                            <li className="last-item menu-item-has-children"><a href="https://globalchecks.in/">verification</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
