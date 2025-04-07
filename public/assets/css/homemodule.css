@@ -1941,6 +1941,13 @@ h6 {
         width: 100%;
     }
 
+    .jointeam .solutionarrowbox2{
+        display: none;
+    }
+    .jointeam .solutionarrowbox1{
+        display: none;
+    }
+
     .siderco p {
         font-size: 14px;
        
