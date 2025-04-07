@@ -176,7 +176,7 @@ export default function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -649,7 +649,7 @@ export default function Home() {
                 </div>
               </div>
               <Slider {...settings1}>
-                <div class="testi-wrap ">
+                <div class="testi-wrap">
                   <div class="item-content">
                     <span>
                       <img
