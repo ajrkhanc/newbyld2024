@@ -1921,9 +1921,13 @@ h6 {
         height: 290px;
     }
 
-    .bannersection {
+    /* .bannersection {
        
         height: 290px;
+    } */
+
+    .bannersection {
+        height: 400px;
     }
     .siderco {
        
@@ -1954,7 +1958,7 @@ h6 {
     } */
 
     .slick-list {
-        height: 615px;
+        height: 420px;
     }
    
   }
