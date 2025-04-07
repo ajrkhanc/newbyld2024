@@ -1973,6 +1973,12 @@ h6 {
         width: 78%
     }
 
+    .siderco p {
+       
+        height: 103px;
+        width: 80%;
+    }
+
     /* .slick-list {
         height: 615px;
     } */
