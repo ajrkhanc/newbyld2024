@@ -326,8 +326,8 @@ h6 {
 }
 
 .siderco h1 {
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 48px;
+    line-height: 60px;
     font-weight: 500;
     letter-spacing: normal;
     color: #3474af;
@@ -335,14 +335,14 @@ h6 {
 }
 
 .siderco p {
-    font-size: 20px;
+    font-size: 19px;
     color: #000;
     height: 70px;
 }
 
 .h2call {
-    font-size: 40px;
-    line-height: 65px;
+    font-size: 39px;
+    line-height: 50px;
     font-weight: 400;
     color: #2a6db5;
 }
@@ -1761,7 +1761,11 @@ h6 {
     height: 500px;
 }
 
-@media (max-width:767px) {
+
+
+@media (max-width:768px) {
+
+
 
     .slide1c {
         background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSize_nrjDmkPAo.webp);
