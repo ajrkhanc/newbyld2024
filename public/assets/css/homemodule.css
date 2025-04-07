@@ -1955,12 +1955,13 @@ h6 {
    
   }
 
-  @media only screen and (max-width: 360px) {
+  
+  @media only screen and (max-width: 375px) {
 
     .siderco h1 {
         font-size: 19px;
-        line-height: 21px;
-        height: 52px;
+        line-height: 26px;
+        height: 62px;
         width: 100%;
     }
 }
