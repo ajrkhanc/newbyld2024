@@ -1948,9 +1948,13 @@ h6 {
     .siderco {
         height: 185px;
     }
-
+/* 
     .slick-list {
         height: 290px;
+    } */
+
+    .slick-list {
+        height: 615px;
     }
    
   }
@@ -1965,9 +1969,9 @@ h6 {
         width: 78%
     }
 
-    .slick-list {
+    /* .slick-list {
         height: 615px;
-    }
+    } */
 
     .slide1c {
       
