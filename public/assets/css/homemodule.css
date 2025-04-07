@@ -1761,6 +1761,12 @@ h6 {
     height: 500px;
 }
 
+@media (max-width:992px){
+    .siderco h1 {
+      
+        height: 223px;
+    }
+}
 
 
 @media (max-width:768px) {
