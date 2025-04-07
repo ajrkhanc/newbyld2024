@@ -1967,28 +1967,12 @@ h6 {
     .slick-list {
         height: 420px;
     }
-   
-  }
-
-  
-  @media only screen and (max-width: 375px) {
-
-    .siderco h1 {
-        font-size: 20px;
-        line-height: 26px;
-        height: 62px;
-        width: 78%
-    }
 
     .siderco p {
        
         height: 103px;
         width: 80%;
     }
-
-    /* .slick-list {
-        height: 615px;
-    } */
 
     .slide1c {
       
@@ -2009,6 +1993,26 @@ h6 {
       
         height: 580px;
     }
+   
+  }
+
+  
+  @media only screen and (max-width: 375px) {
+
+    .siderco h1 {
+        font-size: 20px;
+        line-height: 26px;
+        height: 62px;
+        width: 78%
+    }
+
+ 
+
+    /* .slick-list {
+        height: 615px;
+    } */
+
+   
 
 
 }
