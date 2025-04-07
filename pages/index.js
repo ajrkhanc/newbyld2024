@@ -169,7 +169,7 @@ export default function Home() {
   };
 
   var settings1 = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     speed: 500,
