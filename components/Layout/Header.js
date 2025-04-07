@@ -356,7 +356,7 @@ export default function Header() {
                                     </li>
 
                                     <li className="last-item menu-item-has-children d-block"><a href="/join-our-partner-network">Partner Network</a></li>
-                                    <li className="last-item menu-item-has-children d-block"><a href="https://globalchecks.in/">verification</a></li>
+                                    <li className="last-item menu-item-has-children d-block"><a href="https://globalchecks.in/">Verification</a></li>
 
 
                                 </ul>
