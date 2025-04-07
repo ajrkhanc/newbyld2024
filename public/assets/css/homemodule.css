@@ -1965,6 +1965,10 @@ h6 {
         width: 78%
     }
 
+    .slick-list {
+        height: 615px;
+    }
+
     .slide1c {
       
         height: 580px;
