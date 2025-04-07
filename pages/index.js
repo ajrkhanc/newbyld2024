@@ -217,7 +217,7 @@ export default function Home() {
         />
 
         {/* Preload critical CSS */}
-        <link rel="preload" href="/assets/css/homemodule.css" as="style" />
+        {/* <link rel="preload" href="/assets/css/homemodule.css" as="style" /> */}
         <link
           rel="stylesheet"
           href="/assets/css/homemodule.css"
