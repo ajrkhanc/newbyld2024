@@ -1763,7 +1763,6 @@ h6 {
 
 @media (max-width:992px){
     .siderco h1 {
-      
         height: 223px;
     }
 }
@@ -1998,6 +1997,11 @@ h6 {
     .slide4c {
       
         height: 400px;
+    }
+
+    .siderco h1 {
+       
+        width: 78%
     }
    
   }
