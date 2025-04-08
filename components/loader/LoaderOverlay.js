@@ -1,5 +1,5 @@
 // This component is used to display a loading spinner overlay on the screen.
-import { Spinner } from 'react-bootstrap';
+import { Spinner } from "reactstrap";
 
 const LoaderOverlay = () => {
   return (
@@ -15,7 +15,7 @@ const LoaderOverlay = () => {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-      <Spinner animation="border" variant="primary" />
+       <Spinner style={{ width: "3rem", height: "3rem", color: "#fff" }} />
     </div>
   );
 };
