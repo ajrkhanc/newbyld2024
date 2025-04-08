@@ -6,14 +6,15 @@ const LoaderOverlay = () => {
     <div style={{
       position: 'fixed',
       zIndex: 9999,
-      backgroundColor: 'rgba(255, 254, 254, 0.96)',
+      backgroundColor: 'rgb(255, 254, 254)',
       width: '100vw',
       height: '100vh',
       top: 0,
       left: 0,
+      overflow: 'hidden',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
     }}>
        <Spinner style={{ width: "3rem", height: "3rem", color: "#EB7A10" }} />
     </div>
