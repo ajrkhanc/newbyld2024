@@ -596,7 +596,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="col-sm-4">
-                  <a href="#/our-solutions/staffing">
+                  <a href="/our-solutions/staffing">
                     <div className="solutionbox ">
                       <h4>
                         <span>S</span>taffing & Search
@@ -611,6 +611,29 @@ export default function Home() {
                         <img
                           className="hover"
                           src="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_CjnDHFJCd.png"
+                          alt="images"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div className="col-sm-4">
+                  <a href="https://globalchecks.in/">
+                    <div className="solutionbox ">
+                      <h4>
+                        <span>V</span>erification
+                      </h4>
+                      <div className="cicon">
+                        <img
+                          className="active"
+                          src="https://ik.imagekit.io/byld/BYLD/v1_zWRzh7f7OA.png"
+                          alt="images"
+                          loading="lazy"
+                        />
+                        <img
+                          className="hover"
+                          src="https://ik.imagekit.io/byld/BYLD/vw2_sqSvSEJS_.png"
                           alt="images"
                           loading="lazy"
                         />
