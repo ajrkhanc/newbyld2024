@@ -33,7 +33,31 @@ import Head from "next/head";
 import Script from "next/script";
 import App from "next/app";
 
+import { useEffect, useState } from 'react';
+import LoaderOverlay from "../components/loader/LoaderOverlay";
+
 export default function MyApp({ Component, pageProps, router }) {
+  
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+  const handleLoad = () => {
+    setLoading(false);
+    document.body.style.overflow = 'auto';
+  };
+
+  document.body.style.overflow = 'hidden';
+
+  if (document.readyState === 'complete') {
+    handleLoad();
+  } else {
+    window.addEventListener('load', handleLoad);
+  }
+
+  return () => window.removeEventListener('load', handleLoad);
+}, []);
+
+
+
   if (router.pathname.startsWith("/cruciallifechangingskills")) {
     return (
       <CL>
@@ -5353,6 +5377,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }}
           />
         </Head>
+
+
+        {/* <LoaderOverlay/> */}
+        {loading && <LoaderOverlay />}
 
         <Component {...pageProps} />
       </Layout>
