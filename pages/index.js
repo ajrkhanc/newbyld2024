@@ -627,7 +627,7 @@ export default function Home() {
                       <div className="cicon">
                         <img
                           className="active"
-                          src="https://ik.imagekit.io/byld/BYLD/v1_zWRzh7f7OA.png"
+                          src="https://ik.imagekit.io/byld/BYLD/ver2_2OU_GLywm.png"
                           alt="images"
                           loading="lazy"
                         />
