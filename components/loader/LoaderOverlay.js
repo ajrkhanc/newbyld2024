@@ -15,7 +15,7 @@ const LoaderOverlay = () => {
       justifyContent: 'center',
       alignItems: 'center'
     }}>
-       <Spinner style={{ width: "3rem", height: "3rem", color: "#fff" }} />
+       <Spinner style={{ width: "3rem", height: "3rem", color: "#EB7A10" }} />
     </div>
   );
 };
