@@ -6,7 +6,7 @@ const LoaderOverlay = () => {
     <div style={{
       position: 'fixed',
       zIndex: 9999,
-      backgroundColor: 'rgba(255,255,255,0.9)',
+      backgroundColor: 'rgba(255, 254, 254, 0.96)',
       width: '100vw',
       height: '100vh',
       top: 0,
