@@ -70,6 +70,9 @@ discretion without prior notice. We recommend regularly reviewing these Terms fo
 continued use of the Website after any changes indicates your agreement with them. As long as you
 abide by these Terms, you are granted a personal, limited privilege to access and use the Website.
                             </p>
+                            <p className='text-justify pb-15'>
+                            We may contact individuals strictly for service-related communication through phone calls, SMS, emails, or other official modes. All outreach is conducted via our internal CRM system and is intended solely to address customer inquiries, support requirements, or ongoing service engagements.
+                            </p>
                             
                          
                             <h4 class="countertoph2 text-left">Get in touch with us</h4> 
