@@ -79,7 +79,7 @@ abide by these Terms, you are granted a personal, limited privilege to access an
                             
                             <p className='text-justify pb-15'>
                             Please contact us for any questions or comments (including all inquiries unrelated to copyright
-infringement) regarding this Website on on <a href='info@byldgroup.com'>info@byldgroup.com</a>
+infringement) regarding this Website on  <a href='info@byldgroup.com'>info@byldgroup.com</a>
                             </p>
                         </div>
                     </div>                      
