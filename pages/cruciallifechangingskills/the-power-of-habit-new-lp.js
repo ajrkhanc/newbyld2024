@@ -229,7 +229,7 @@ export default function BrowseCourses(){
                        <div class="row workshop-row"> 
                             <div class="col-md-12 workshop-content phothemecolor pt-0"> 
                                 <img class="left-image" src="/classets/img/thfimg.webp" alt="thfimg" />
-                            <h4 className='pbb-20'>THE POWER OF HABIT™</h4>                            
+                            <h4 className=''>THE POWER OF HABIT™</h4>                            
                             </div>
                             <h5 className='eventt'>Virtual</h5>
                              <div class="col-md-12 workshop-date"> 
