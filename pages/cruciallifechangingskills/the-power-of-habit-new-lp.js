@@ -161,11 +161,11 @@ export default function BrowseCourses(){
                                     <select name='slot' required>
                                         <option value="">Pick any Slot*</option>                                        
                                    
-                                        <option value="CCMD,24th-25th Oct-Open Program">CCMD, 24th-25th Oct - Open Program</option>
-                                        <option value="POH, 17th Oct- Open Program">POH, 17th Oct- Open Program</option>
+                                        <option value="Power-of-Habit™-1stMay-2025-Virtual-9:30AM-5:30-PM">Power of Habit™,1stMay,2025,Virtual Program(9:30 to 5:30 PM )</option>
+                                        {/* <option value="POH, 17th Oct- Open Program">POH, 17th Oct- Open Program</option>
                                         <option value=" POH, 17th Oct- Public Workshop"> POH, 17th Oct- Public Workshop</option>
                                         <option value=" GTD  24th Oct-Virtual Course"> GTD  24th Oct-Virtual Course</option>
-                                        <option value=" GTD 30th Oct Open Program"> GTD 30th Oct Open Program</option>
+                                        <option value=" GTD 30th Oct Open Program"> GTD 30th Oct Open Program</option> */}
 
                                     
                                     </select>
