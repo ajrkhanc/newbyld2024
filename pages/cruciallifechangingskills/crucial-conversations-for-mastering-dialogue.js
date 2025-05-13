@@ -4,10 +4,11 @@ export default function CrucialConversationsforMasteringDialogue() {
     return (
         <>
             <Head>
-                <title>Crucial Conversations for Mastering Dialogue Program | Corporate Communication Courses</title>
+                <title>Crucial Conversations for Mastering Dialogue Course | Corporate Communication Courses
+                </title>
                 <meta name="robots" content="INDEX, FOLLOW" />
                 <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue" />
-                <meta name="description" content="Crucial Learning provides interactive and engaging communication training for corporate employees which will hone your team's Crucial Conversations skills to make effective dialogues in a conversation. Enquire Today! " />
+                <meta name="description" content=" Crucial Learning offers crucial conversation training to enhance your team's Crucial Conversations skills through the Crucial Conversations for Mastering Dialogue course. Enquire Today!" />
                 {/* og tag */}
                 <meta property="og:url" content="https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue" />
                 <meta property="og:type" content="website" />

@@ -4,7 +4,11 @@ export default function Books(){
     return(
         <>
         <Head>
-            <title>Ebooks - Crucial Life-Changing Skills</title>     
+            <title>Download Free Crucial Conversations Book Resources | Crucial Learning</title>  
+            <meta
+          name="description"
+          content="Download free book resources for Crucial Conversations, Crucial Accountability, Influencer, Getting Things Done, and The Power of Habit. Access worksheets, guides, and tools from Crucial Learning to build better communication, habits, and productivity."
+        />   
         <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/ebook" />
         </Head>
         <section class="about-section workshop-hero">

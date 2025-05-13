@@ -63,11 +63,11 @@ export default function MyApp({ Component, pageProps, router }) {
       <CL>
         <Head>
           <title>
-            Crucial Life-Changing Skills | Our Solutions | BYLD Group
+          Crucial Learning Courses, Certification & Training | Crucial Conversations
           </title>
           <meta
             name="description"
-            content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."
+            content=" Explore Crucial Learning training and courses available both online and in person for your organization. Build essential skills in communication, leadership, and performance today"
           />
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />

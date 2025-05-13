@@ -4,10 +4,10 @@ export default function Gettingthingsdone() {
     return (
         <>
             <Head>
-                <title>Getting Things Done (GTD) Training Program | Getting Things Done Method</title>
+                <title>Getting Things Done Online Course | GTD Training & Method</title>
                 <meta name="robots" content="INDEX, FOLLOW" />
                 <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/getting-things-done" />
-                <meta name="description" content="Explore Getting Things Done Method to know How to be more productive at workplace. Click here for Getting Things Done (GTD) training, it's available learning formats, and how to bring the course to your organization." />
+                <meta name="description" content=" Master the Getting Things Done (GTD) method with our comprehensive online course. Learn practical techniques to boost productivity and achieve your goals effectively with expert-led GTD training." />
                 {/* og tag */}
                 <meta property="og:url" content="https://byldgroup.com/cruciallifechangingskills/getting-things-done" />
                 <meta property="og:type" content="website" />

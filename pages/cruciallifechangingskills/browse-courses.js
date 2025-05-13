@@ -4,9 +4,9 @@ export default function BrowseCourses() {
     return (
         <>
             <Head>
-                <title>The Power of Habit - Crucial Life-Changing Skills</title>
+                <title>Leadership & Communication Courses | Crucial Learning’s Bestselling Programs</title>
         <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/browse-courses" />
-                <meta name="description" content="The Greatest Predictor of High Performance Habits can determine your success more than talent, intelligence, luck, or decision-making. Many are aware of this fact but still lack control over their... Read more" />
+                <meta name="description" content="Explore leadership training and communication courses by Crucial Learning, featuring bestselling books like Crucial Conversations, Crucial Accountability, Crucial Influence, Getting Things Done, and The Power of Habit." />
             </Head>
             <div className='desktopviewbrowse'>
                 <section class="about-section">

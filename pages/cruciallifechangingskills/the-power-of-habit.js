@@ -4,10 +4,11 @@ export default function Thepowerofhabit() {
     return (
         <>
             <Head>
-                <title>The Power Of Habit Training Program</title>
+                <title>Power of Habit Course | The Power of Habit Training Program for High Performance</title>
                 <meta name="robots" content="INDEX, FOLLOW" />
                 <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/the-power-of-habit" />
-                <meta name="description" content="The bestseller by Charles Duhigg’s The Power of Habit Book and the latest science in habit formation has laid the foundation of this program. Habits can determine your workplace success. Enquire today to know more!" />
+                <meta name="description" content="Unlock the power of habits with our online course based on The Power of Habit book. Learn how to build productive habits and enhance your leadership skills with expert-led training for high performance and personal growth
+" />
 
                 {/* og tag */}
                 <meta property="og:url" content="https://byldgroup.com/cruciallifechangingskills/the-power-of-habit" />

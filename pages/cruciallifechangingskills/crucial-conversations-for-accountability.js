@@ -5,9 +5,9 @@ export default function crucialconversationsforaccountability() {
         <>
             <Head>
                 <meta name="robots" content="INDEX, FOLLOW" />
-                <title>Crucial Conversations for Accountability Program | Accountability in the Workplace</title>
+                <title>Crucial Conversations for Accountability Course | Leadership & Manager Training</title>
                 <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-accountability" />
-                <meta name="description" content="Upskill Your Team With Accountability Training. Leadership Accountability program helps in improving ROI as it builds accountability and trust throughout the organization.  " />
+                <meta name="description" content="Boost accountability in leadership with our Crucial Conversations for Accountability course. Ideal for managers, this training builds skills to hold others accountable effectively and respectfully." />
                 {/* og tag */}
                 <meta property="og:url" content="https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-accountability" />
                 <meta property="og:type" content="website" />

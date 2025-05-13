@@ -4,10 +4,10 @@ export default function Influencer() {
     return (
         <>
             <Head>
-                <title>Crucial Influence | Influential Leadership Training Program</title>
+                <title>Crucial Influence Training | Leadership Course Based on Crucial Influence Model</title>
                 <meta name="robots" content="INDEX, FOLLOW" />
                 <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/influencer" />
-                <meta name="description" content="Influence poeple skills training helps emerging leaders to reconstruct persuasion and perks with powerful influence strategies and skills that bring real-life changes. Ready to get started? " />
+                <meta name="description" content=" Master the Crucial Influence model with our leadership training course. Learn key strategies from the Crucial Influence book to enhance your leadership effectiveness and influence others in high-stakes situations." />
                 <link rel="stylesheet" type="text/css" href="/classets/css/cl.css" />
 
                 {/* og tag */}
