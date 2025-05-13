@@ -347,11 +347,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Crucial Leaning | Crucial Life-Changing Skills</title>
+        <title>Crucial Learning Courses, Certification & Training | Crucial Conversations</title>
         <meta name="robots" content="INDEX, FOLLOW" />
         <meta
           name="description"
-          content="We offer the best communication courses for leaders to ensure effective business communication through Influence skills training. To know more, check out the page."
+          content="Explore Crucial Learning training and courses available both online and in person for your organization. Build essential skills in communication, leadership, and performance today"
         />
         <link
           rel="canonical"
