@@ -6,11 +6,11 @@ export default function EverythingDiscSales() {
     <>
       <Head>
         <title>
-          Get the Best Learning Experience - Everything DiSC<sup>®</sup> Sales
+          Everything DiSC Sales Training & DISC Sales Assessment
         </title>
         <meta
           name="description"
-          content="Improve your sales with Everything Learning Experience. Everything DiSC<sup>®</sup> Sales helps you become customer-centric and change the usual sales approach."
+          content="Boost sales performance with Everything DiSC Sales training. Discover your DISC Sales profile and improve customer interactions with DISC Sales assessments."
         />
       </Head>
 

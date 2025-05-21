@@ -8,8 +8,8 @@ export default function Workplace(){
     return(
         <>
           <Head>
-            <title>Get the Best of Everything DiSC Workplace with Wiley DiSC Assessment</title>
-            <meta name="description" content="This workplace program helps to improve collaboration and communication at work. Wiley DiSC Assessment is the best evaluation tool to deliver fair results."/> 
+            <title>What is Everything DISC® Workplace | Disc Workplace Profile</title>
+            <meta name="description" content="Explore Everything DiSC Workplace® – a personalized assessment that helps individuals understand themselves and others to improve workplace communication, teamwork, and collaboration across all levels."/> 
           </Head>
 
           <div className="rs-services">

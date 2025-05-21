@@ -8,8 +8,8 @@ export default function EverythingDiscProductiveConflict(){
     return(
         <>
           <Head>
-            <title>Everything DiSC Productive Conflict<sup>®</sup> - Everything DiSC</title>
-            <meta name="description" content="Everything DiSC<sup>®</sup>  Productive Conflict Utilize the power of conflict by altering destructive behaviour into prolific responses. The Everything DiSC Productive Conflict Learning Experience Everything DiSC Productive Conflict<sup>®</sup> is a customized learning and classroom training experience that elevates self-awareness around conflict behaviors and helps participants effectively deal with workplace conflict. Rather than concentrating on a step-by-step"/> 
+            <title> Everything DiSC Productive Conflict | DISC Conflict Resolution</title>
+            <meta name="description" content=" Master DISC conflict resolution with Everything DiSC Productive Conflict. Build productive conflict in the workplace and improve team dynamics and communication."/> 
           </Head>
 
           <div className="rs-services">

@@ -45,8 +45,8 @@ export default function EverythingDiscAgileEQ(){
     return(
         <>
           <Head>
-            <title>Everything DiSC Agile EQ - Everything DiSC</title>
-            <meta name="description" content="Everything DiSC<sup>®</sup>  AGILE EQ™ is now LIVE! Develop the emotional intelligence necessary to support a thriving agile culture Everything DiSC<sup>®</sup> AGILE EQ™ is now LIVE! Develop the emotional intelligence necessary to support a thriving agile culture The Everything DiSC Agile EQ Learning Experience We, as partners of Wiley brands in India, provide globally researched and"/> 
+            <title>Everything DiSC Agile EQ | Agile Work Profiler & EIQ Test</title>
+            <meta name="description" content="Develop emotional intelligence with Everything DiSC Agile EQ. Take the Agile Work Profiler and EIQ test to boost adaptability and workplace effectiveness."/> 
           </Head>
 
           <div className="rs-services">

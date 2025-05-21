@@ -45,8 +45,8 @@ export default function EverythingDiscWorkofLeaders(){
     return(
         <>
           <Head>
-            <title>Develop the Best Emotional Intelligence and Leadership Culture</title>
-            <meta name="description" content="Emotional Intelligence and Leadership are essential for an agile organizational structure with an in-depth understanding of your people’s DiSC personality types."/> 
+            <title>Everything DiSC Work of Leaders – DISC Leadership Training</title>
+            <meta name="description" content="Explore DISC leadership training with Everything DiSC Work of Leaders. Discover your leadership DISC style with our DISC assessment for leaders and managers."/> 
           </Head>
 
           <div className="rs-services">

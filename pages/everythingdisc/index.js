@@ -43,8 +43,8 @@ export default function Home() {
   return (
     <>
          <Head>
-            <title>Everything DiSC | Personal Development Learning | BYLD Group</title>
-            <meta name="description" content="Explore Everything DiSC Workplace Profile to assess your working style, behavioral pattern, strengths, and weakness for effective team collaboration. To know more about various Everything DiSC solutions, check out the site."/> 
+            <title>Everything DiSC® Assessments | Online DISC Personality Test & DISC Model</title>
+            <meta name="description" content="Take the Everything DiSC Assessment – a trusted online DISC personality test based on the DISC model. Discover your style with our accurate DISC assessment and improve team dynamics."/> 
             <link rel="stylesheet" type="text/css" href="/assets/css/homemodule.css" />
           </Head>
 

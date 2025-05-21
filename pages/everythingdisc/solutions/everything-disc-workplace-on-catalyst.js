@@ -43,8 +43,8 @@ export default function Everythingdiscworkplaceoncatalyst(){
     return(
         <>
           <Head>
-            <title>Best Catalyst Everything DiSC Workplace Assessment to Flourish</title>
-            <meta name="description" content="Catalyst Everything DiSC<sup>®</sup> builds effective relationships. Everything DiSC<sup>®</sup> Workplace Assessment profile helps to improve collaboration and communication at work."/> 
+            <title>Everything DiSC Catalyst | DISC Catalyst Learning Platform</title>
+            <meta name="description" content="Explore Catalyst by Everything DiSC—a dynamic learning platform to enhance self-awareness, teamwork, and communication through DISC Catalyst profiles."/> 
           </Head>
 
           <div className="rs-services">

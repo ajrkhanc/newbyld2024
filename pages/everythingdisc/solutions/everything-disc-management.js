@@ -8,8 +8,8 @@ export default function EverythingDiscManagement(){
     return(
         <>
           <Head>
-            <title>Best DiSC Profile Assessment by Everything DiSC Management</title>
-            <meta name="description" content="DiSC Management helps you in decision-making. Implementing a DiSC profile assessment will teach you to inspire, develop, and engage your people successfully."/> 
+            <title>Everything DiSC Management Profile | DISC for Managers</title>
+            <meta name="description" content="Unlock leadership potential with Everything DiSC Management. Use DISC for managers to enhance communication, delegation, and team development effectively."/> 
           </Head>
 
           <div className="rs-services">
