@@ -7,8 +7,8 @@ export default function Assessments(){
     return(
         <>
           <Head>
-            <title>Our Solutions | Assessments | BYLD Group</title>
-            <meta name="description" content="Psychometric Assessment offers insight into the behavior and working style of an individual. Explore how Everything DiSC solutions play a crucial role in people’s development."/> 
+            <title>Behavioral Assessment Test for Workplace | BYLD group</title>
+            <meta name="description" content="Learn how behavioral assessment tests work and how they enhance workplace performance. Discover the power of behavioral assessments in the workplace to improve hiring, leadership, and team dynamics."/> 
           </Head>
             <div className="rs-services">
             <div className="container-full">

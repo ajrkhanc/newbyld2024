@@ -38,8 +38,8 @@ export default function JoinOurPartnerNetworkLP() {
     return (
         <>
             <Head>
-                <title>Join our Partner network - BYLD Group</title>
-                <meta name="description" content="Welcome to BYLD Group! Join the BYLD Group Partner network, and become our business partner to maximize your growth opportunities. We are the largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies. Founded in 1998, backed by 1000+ years of accumulated professional… Continue reading Join our Partner network LP Ab Testing" />
+                <title>Join BYLD Partner Network | Become a BYLD Network Partner Today</title>
+                <meta name="description" content="Explore growth opportunities with the BYLD Partners Network. Join our partner ecosystem to expand your impact, access world-class solutions, and become a valued BYLD network partner." />
                 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"></link>
                 <link rel="stylesheet" type="text/css" href="/assets/css/homemodule.css" />
             </Head>

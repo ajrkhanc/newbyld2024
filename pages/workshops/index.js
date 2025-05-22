@@ -5,11 +5,11 @@ export default function Workshops() {
   return (
     <>
       <Head>
-        <title>Workshops - BYLD Group</title>
+        <title>Leadership Skills Workshops & Training | Leadership Development Workshops by BYLD</title>
         <link rel="canonical" href="https://byldgroup.com/workshops" />
         <meta
           name="description"
-          content="workshop"
+          content="Enhance your team’s capabilities with BYLD’s leadership skills workshops. Our leadership skills training workshops and development programs empower leaders to drive performance, collaboration, and growth."
         />
         <link
           rel="stylesheet"

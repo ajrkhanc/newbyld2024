@@ -92,8 +92,8 @@ export default function Home() {
 
 
             <Head>
-                <title>Our Solutions | HR, Productivity & Assessment Solutions| BYLD Group</title>
-                <meta name="description" content="BYLD Group offers leadership development programs, coaching programs, and corporate training programs to boost self-performance and teamwork. To know more, check out the page." />
+                <title>Corporate Learning Solutions for Enterprises | BYLD Group</title>
+                <meta name="description" content="Transform your workforce with BYLD’s corporate learning solutions for enterprises. Our corporate learning and performance services drive employee development, engagement, and business impact." />
                 <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
                 <script
                     dangerouslySetInnerHTML={{

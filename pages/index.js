@@ -209,11 +209,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HR and Business Productivity Solutions | BYLD Group</title>
+        <title>Corporate HR Solutions | BYLD Group – Expert Corporate Solutions for Performance & Growth</title>
         <link rel="canonical" href="https://byldgroup.com" />
         <meta
           name="description"
-          content="Largest group in South Asia offering HR and business productivity solutions for individuals, teams, and organizations. Served 300 of 500 Fortune companies."
+          content="Discover BYLD’s Corporate HR Solutions tailored to enhance leadership, communication, and team performance. Explore our expert corporate solutions designed to align people strategies with business growth."
         />
 
         {/* Preload critical CSS */}

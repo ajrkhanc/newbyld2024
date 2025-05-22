@@ -7,9 +7,9 @@ export default function leadersShipAndTalentDevelopment(){
     return(
         <>
           <Head>
-            <title>Leadership and Talent development | Our Solutions | BYLD Group</title>
+            <title>Leadership Development Program & Solutions | BYLD Group</title>
             <link rel="canonical" href="https://byldgroup.com/our-solutions/leadership-and-talent-development" />
-            <meta name="description" content="BYLD Group provides various leadership training programs to boost leadership mentoring, organizational change and development. To know more, check out the page."/> 
+            <meta name="description" content="Unlock your team’s full potential with our proven leadership development programs. Explore BYLD’s leadership development solutions designed to build future-ready leaders and drive organizational success."/> 
           </Head>
             <div className="rs-services">
             <div className="container-full">

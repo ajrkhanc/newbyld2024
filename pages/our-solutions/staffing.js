@@ -7,8 +7,8 @@ export default function Staffing(){
     return(
         <>
           <Head>
-            <title>Staffing | Our Solutions | BYLD Group</title>
-            <meta name="description" content="BYLD Group offers corporate staffing services to organizations of different sizes. It provides manpower staffing to ensure easy recruitment, payrolls, payments, and other areas."/> 
+            <title>Corporate Staffing & Software Solutions | BYLD Group</title>
+            <meta name="description" content="Streamline hiring with BYLD’s corporate staffing services and custom software solutions. Discover tailored corporate staffing solutions designed to boost efficiency and meet your workforce needs."/> 
           </Head>
             <div className="rs-services">
             <div className="container-full">

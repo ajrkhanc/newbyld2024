@@ -58,10 +58,10 @@ export default function WebinarsAndProgramExperience() {
   return (
     <>
       <Head>
-        <title>Webinars and Program Experience - BYLD Group</title>
+        <title>Leadership Training Webinars | Live Leadership Development & Skills Training</title>
         <meta
           name="description"
-          content="Batches till 20th April 2022 Crucial Life Changing Skills Batches till 20th April 2022 Reserve Your Seat Batches till 29th April 2022 Blanchard India Webinars Batches till 29th April 2022 Reserve Your Seat May 4th, 2022Trapologist at WorkTM Webinar 4th May 2022 Reserve Your Seat Webinar May 6th, 2022Five Behaviours Team Development Webinar 6th May… Continue reading Webinars and Program Experience"
+          content="Join our expert-led leadership development webinars to build essential leadership skills. Explore interactive leadership skills training webinars designed to inspire, engage, and empower future-ready leaders."
         />
         <link
           rel="stylesheet"
