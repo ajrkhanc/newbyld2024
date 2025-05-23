@@ -7,8 +7,7 @@ export default function Thepowerofhabit() {
                 <title>Power of Habit Course | The Power of Habit Training Program for High Performance</title>
                 <meta name="robots" content="INDEX, FOLLOW" />
                 <link rel="canonical" href="https://byldgroup.com/cruciallifechangingskills/the-power-of-habit" />
-                <meta name="description" content="Unlock the power of habits with our online course based on The Power of Habit book. Learn how to build productive habits and enhance your leadership skills with expert-led training for high performance and personal growth
-" />
+                <meta name="description" content="Unlock the power of habits with our online course based on The Power of Habit book. Learn how to build productive habits and enhance your leadership skills with expert-led training for high performance and personal growth" />
 
                 {/* og tag */}
                 <meta property="og:url" content="https://byldgroup.com/cruciallifechangingskills/the-power-of-habit" />
