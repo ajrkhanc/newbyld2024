@@ -23,10 +23,7 @@ export default function Staffing(){
             <div class="shape-bg ptt-50 pbb-50 solutionsboxarea">
                 <div class="container">                    
                     <div class="row">
-
-                 
-
-                       <div class="col-sm-12 rightsides">
+                        <div class="col-sm-12 rightsides">
                           <div className="sec-title3 mbb-35 text-left">
                             <h4 className="countertoph2 text-left font30">Staffing & Search</h4>
                             <div className="heading-border-line left-style"></div>
