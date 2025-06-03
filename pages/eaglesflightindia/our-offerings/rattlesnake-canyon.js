@@ -29,7 +29,7 @@ export default function RattlesnakeCanyon(){
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h4 class="countertoph2 text-left font36">THE EXPERIENCE</h4>
+                        <h1 class="countertoph2 text-left font36">THE EXPERIENCE</h1>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         The Settlers and Merchants of <b>Rattlesnake Canyon™ for employees</b> have been offered a challenging proposition. The locals have four weeks to secure all the materials necessary to build a railroad as well as a camp for workers in <b>virtual fun activities for employees.</b>

@@ -29,7 +29,7 @@ export default function CouncilofTheMarbleStar(){
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h4 class="countertoph2 text-left font36">Best Business Team Building Activities – OVERVIEW</h4>
+                        <h1 class="countertoph2 text-left font36">Best Business Team Building Activities – OVERVIEW</h1>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         <b>Council of the Marble Star™</b> highlights the issues surrounding personal effectiveness. Participants take responsibility for producing quality results amid uncertainty, lack of direction, competition, and a changing environment. While some teams focus solely on results, others socialize and lose the focus of achieving a productive outcome. The experience teaches that combining the skills of being productive with the skills of building and maintaining relationships creates a competitive edge that leads to success.

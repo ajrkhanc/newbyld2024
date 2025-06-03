@@ -44,9 +44,9 @@ export default function MuseumCaper(){
     return(
         <>
           <Head>
-            <title>Best Team Activities Virtually for Communication- Museum Caper</title>
+            <title>Museum Caper - Virtual Team-Building Activity Offered by Eagle's Flight India.</title>
             <link rel="canonical"href="https://byldgroup.com/eaglesflightindia/our-offerings/museum-caper" />
-            <meta name="description" content="If you want to develop your communication skills, then you need outdoor team-building activities. You’ll do great with these team activities virtually."/> 
+            <meta name="description" content="Explore Museum Caper – a virtual team-building activity by Eagle's Flight India that boosts problem-solving, communication, and teamwork through a high-energy, interactive mystery challenge."/> 
           </Head>
 
           <div className="rs-services">
@@ -64,7 +64,7 @@ export default function MuseumCaper(){
                 <div class="row y-middle">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h4 class="countertoph2 text-left font28">Top Virtual Team-Building Activities for Employees</h4>
+                        <h1 class="countertoph2 text-left font28">Top Virtual Team-Building Activities for Employees</h1>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         In Eagle’s Flight’s mystery-themed virtual experiential activity, Museum Caper™, participants work in teams as detectives to track down the culprits of three major robberies using the evidence left at the scene of each crime.

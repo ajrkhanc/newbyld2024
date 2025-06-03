@@ -9,9 +9,9 @@ export default function ExpeditionOutback(){
     return(
         <>
           <Head>
-            <title>Expedition Outback - Eaglesflightinidia</title>
+            <title>Expedition Outback | Adventure by Eagle’s Flight India</title>
            <link rel="canonical"href="https://byldgroup.com/eaglesflightindia/our-offerings/expedition-outback" />
-        <meta name="description" content="THE EXPERIENCE Set in the outback of Australia, the annual Royal Exposition is about to begin. The Royals are looking for independent teams of Overlanders to bring to the Expo wealth of all kinds–in particular, Kangaroos. In Expedition OutbackTM, teams compete against each other to gain the most wealth for their team as they travel […]"/> 
+            <meta name="description" content="Join the Expedition Outback by Eagle’s Flight India – a high-impact experiential learning program designed to boost teamwork, leadership, and decision-making skills through a dynamic, hands-on adventure."/> 
           </Head>
 
           <div className="rs-services">
@@ -29,7 +29,7 @@ export default function ExpeditionOutback(){
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h4 class="countertoph2 text-left font36">THE EXPERIENCE</h4>
+                        <h1 class="countertoph2 text-left font36">THE EXPERIENCE</h1>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-20 justify mbb-5">
                         Set in the outback of Australia, the annual Royal Exposition is about to begin. The Royals are looking for independent teams of Overlanders to bring to the Expo wealth of all kinds–in particular, Kangaroos. In Expedition OutbackTM, teams compete against each other to gain the most wealth for their team as they travel from Home Base to the Royal Exposition.
