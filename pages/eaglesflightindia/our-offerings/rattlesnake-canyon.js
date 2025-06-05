@@ -18,7 +18,7 @@ export default function RattlesnakeCanyon(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/ef-rattlesnake.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/ef-rattlesnake.jpg" alt="Rattlesnake Canyon" />
                     </div>
                 </div>
             </div>
@@ -26,10 +26,19 @@ export default function RattlesnakeCanyon(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Rattlesnake Canyon</h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">THE EXPERIENCE</h1>
+                        <h4 class="countertoph2 text-left font36">THE EXPERIENCE</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         The Settlers and Merchants of <b>Rattlesnake Canyon™ for employees</b> have been offered a challenging proposition. The locals have four weeks to secure all the materials necessary to build a railroad as well as a camp for workers in <b>virtual fun activities for employees.</b>

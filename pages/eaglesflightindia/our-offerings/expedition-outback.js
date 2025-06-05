@@ -18,7 +18,7 @@ export default function ExpeditionOutback(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/ef-expedition-outback.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/ef-expedition-outback.jpg" alt="Expedition Outback" />
                     </div>
                 </div>
             </div>
@@ -26,10 +26,19 @@ export default function ExpeditionOutback(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Expedition Outback<sub>TM</sub></h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">THE EXPERIENCE</h1>
+                        <h4 class="countertoph2 text-left font36">THE EXPERIENCE</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-20 justify mbb-5">
                         Set in the outback of Australia, the annual Royal Exposition is about to begin. The Royals are looking for independent teams of Overlanders to bring to the Expo wealth of all kinds–in particular, Kangaroos. In Expedition OutbackTM, teams compete against each other to gain the most wealth for their team as they travel from Home Base to the Royal Exposition.

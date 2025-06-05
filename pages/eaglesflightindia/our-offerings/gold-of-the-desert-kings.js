@@ -53,7 +53,7 @@ export default function GoldofthedesertKings(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/ef-gold-of-the-desert-kings.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/ef-gold-of-the-desert-kings.jpg" alt=" Best Virtual Employee Engagement Activity - Gold of the Desert Kings™" />
                     </div>
                 </div>
             </div>
@@ -61,10 +61,19 @@ export default function GoldofthedesertKings(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Gold Of The Desert Kings<sup>TM</sup></h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">Decode the Enigma of the Best Employee Engagement Activity- Overview</h1>
+                        <h4 class="countertoph2 text-left font36">Decode the Enigma of the Best Employee Engagement Activity- Overview</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         Gold of the Desert Kings™ addresses the issue of effort versus productivity. Participants are placed in circumstances with limited time and resources and must rely on their team to achieve their goals. The pressures and anxiety experienced in virtual group games are similar to those experienced daily in a hectic work schedule. Participants contend with deadlines, a perceived lack of resources, others’ points of view, and the pressure to just do something while trying to accomplish team objectives.

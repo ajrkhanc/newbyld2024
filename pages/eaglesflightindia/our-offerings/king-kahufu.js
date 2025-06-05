@@ -73,7 +73,7 @@ export default function KingKahufu(){
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">The Experience</h1>
+                        <h4 class="countertoph2 text-left font36">The Experience</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         In the ancient Egypt-themed virtual experiential activity, King Kahufu, participants become agents representing major interest groups assembled to assess a newly discovered pyramid and propose a plan of action for opportunities that have emerged as a result of the discovery. The goal of the experience is to accomplish personal objectives as well as the team’s collective objectives via the virtual learning platform.

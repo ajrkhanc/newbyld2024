@@ -18,7 +18,7 @@ export default function ExpeditionOutback(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/ef-windjammer.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/ef-windjammer.jpg" alt="Windjammer" />
                     </div>
                 </div>
             </div>
@@ -26,10 +26,19 @@ export default function ExpeditionOutback(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Windjammer</h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">OVERVIEW</h1>
+                        <h4 class="countertoph2 text-left font36">OVERVIEW</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-20 justify mbb-5">
                         Enter the competitive world of Windjammer™, where you and your fellow purveyors of high-end sailing products vie for an edge in an exceedingly active marketplace. The demand for your products is high, but market fluctuations will affect your value over time. In this highly animated learning experience, you must acquire raw materials from other teams, manufacture your specialized products and sell them when the market demand is highest. But profit margin is not the ultimate measure of success in this nautical landscape –true victory is a performance beyond expected results. To capitalize upon every opportunity, your negotiation, relationship – and team-building skills will be tested and honed. Can you prosper and keep the wind at your back?

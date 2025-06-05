@@ -18,7 +18,7 @@ export default function CouncilofTheMarbleStar(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/ef-council-of-the-marblestar.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/ef-council-of-the-marblestar.jpg" alt="Council of the Marble Star" />
                     </div>
                 </div>
             </div>
@@ -26,10 +26,19 @@ export default function CouncilofTheMarbleStar(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Council of the Marble Star</h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">Best Business Team Building Activities – OVERVIEW</h1>
+                        <h4 class="countertoph2 text-left font36">Best Business Team Building Activities – OVERVIEW</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         <b>Council of the Marble Star™</b> highlights the issues surrounding personal effectiveness. Participants take responsibility for producing quality results amid uncertainty, lack of direction, competition, and a changing environment. While some teams focus solely on results, others socialize and lose the focus of achieving a productive outcome. The experience teaches that combining the skills of being productive with the skills of building and maintaining relationships creates a competitive edge that leads to success.

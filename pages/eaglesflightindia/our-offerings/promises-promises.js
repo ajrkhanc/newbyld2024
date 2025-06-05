@@ -53,7 +53,7 @@ export default function PromisesPromises(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/ef-promises-promises.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/ef-promises-promises.jpg" alt="Promises, Promises" />
                     </div>
                 </div>
             </div>
@@ -61,10 +61,19 @@ export default function PromisesPromises(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Promises, Promises!<sub>TM</sub></h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font36">Best Team-Building Games – OVERVIEW</h1>
+                        <h4 class="countertoph2 text-left font36">Best Team-Building Games – OVERVIEW</h4>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         By forcing people to deal with the pressures and obstacles of interdependent teams, <b>Promises, Promises!™</b> powerfully demonstrates the strong relationship between effective communication and quality results with the team-building games. To meet their goals and become a United League of Nations, all teams must get the right resources to the right people according to their needs and deadlines. Participants walk away from Promises, Promises!™ understanding that everyone within an organization is both a supplier and a customer.
