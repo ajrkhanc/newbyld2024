@@ -61,6 +61,15 @@ export default function KingKahufu(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Introducing King Kahufu<Sup>TM</sup> An Experiential journey to Accomplish Personal and Team Objectives</h1>
+                        <div class="heading-border-line left-style"></div>
+                        </div>
+                     </div>
+
+                </div>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
