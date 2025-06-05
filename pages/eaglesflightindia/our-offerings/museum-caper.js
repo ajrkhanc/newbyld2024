@@ -53,7 +53,7 @@ export default function MuseumCaper(){
             <div className="container-full">
                 <div className="row y-middle">
                     <div className="col-lg-12">
-                        <img className="img100" src="/efassets/img/banner/museum-caper-banner.jpg"/>
+                        <img className="img100" src="/efassets/img/banner/museum-caper-banner.jpg" alt="museum-caper-banner" />
                     </div>
                 </div>
             </div>
@@ -61,6 +61,16 @@ export default function MuseumCaper(){
 
             <div class="rs-about style4 bg21 mtt-60">
             <div class="container">
+                <div className="row">
+                    <div className="col-lg-6">
+                        <div class="sec-title3 mbb-35 text-left onlyshd">
+                        <h1 class="countertoph2 text-left font36">Introducing Museum Caper<sup>TM</sup>  Unfold The Mystery to success!</h1>
+                        <div class="heading-border-line left-style"></div>
+                       
+                        </div>
+                       
+
+                </div>
                 <div class="row y-middle">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
