@@ -66,15 +66,14 @@ export default function MuseumCaper(){
                         <div class="sec-title3 mbb-35 text-left onlyshd">
                         <h1 class="countertoph2 text-left font36">Introducing Museum Caper<sup>TM</sup>  Unfold The Mystery to success!</h1>
                         <div class="heading-border-line left-style"></div>
-                       
                         </div>
-                       
+                     </div>
 
                 </div>
                 <div class="row y-middle">
                     <div class="col-lg-6">
                         <div class="sec-title3 mbb-35 text-left onlyshd">
-                        <h1 class="countertoph2 text-left font28">Top Virtual Team-Building Activities for Employees</h1>
+                        <h class="countertoph2 text-left font28">Top Virtual Team-Building Activities for Employees</h>
                         <div class="heading-border-line left-style"></div>
                         <p class="mtt-40 justify">
                         In Eagle’s Flight’s mystery-themed virtual experiential activity, Museum Caper™, participants work in teams as detectives to track down the culprits of three major robberies using the evidence left at the scene of each crime.
