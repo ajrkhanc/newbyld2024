@@ -24,7 +24,7 @@ export default function CouncilofTheMarbleStar(){
             </div>
             </div>
 
-            <div class="rs-about style4 bg21 mtt-60">
+            <div class="rs-about style4  mtt-60">
             <div class="container">
                 <div className="row">
                     <div className="col-lg-6">
