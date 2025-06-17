@@ -130,10 +130,10 @@ export default function Result({ result }) {
                         <h4 className="yresultc text-center">
                           <span className="thmecc">{totalScore}</span>
                         </h4>
-                        {/* <h5 style={{ color: statusColor, marginTop: "10px" }}>
+                        <h5 style={{ color: statusColor, marginTop: "10px" }}>
                           Status: {status}
                         
-                        </h5> */}
+                        </h5>
                       </td>
                     </tr>
                     <tr>
