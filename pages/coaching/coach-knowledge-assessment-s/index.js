@@ -3,92 +3,93 @@ import { useState } from "react";
 import { Spinner } from "reactstrap";
 
 export default function CoachKnowledgeAssessment() {
-   const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-
-  const generateSlug = (name,phone) => {
-  const cleanName = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase().split(' ').join('-');
+  const generateSlug = (name, phone) => {
+    const cleanName = name
+      .replace(/[^a-zA-Z0-9 ]/g, "")
+      .toLowerCase()
+      .split(" ")
+      .join("-");
     return `${cleanName}${phone}`;
   };
 
- 
- 
-//   const submitF = async (e) => {
-//   e.preventDefault();
-//    setIsLoading(true); // Start the loader
+  //   const submitF = async (e) => {
+  //   e.preventDefault();
+  //    setIsLoading(true); // Start the loader
 
-//   const form = e.target;
-//   const submitBtn = document.getElementById("submitbuttonform");
-//   submitBtn.disabled = true;
-//   submitBtn.value = "Submitting...";
+  //   const form = e.target;
+  //   const submitBtn = document.getElementById("submitbuttonform");
+  //   submitBtn.disabled = true;
+  //   submitBtn.value = "Submitting...";
 
-//   const formData = new FormData(form);
-//   const name = formData.get('name');
-//   const phone = formData.get('phone');
-//   const email = formData.get('email');
-//   const organization = formData.get('organization') || 'Null';
-//   const newnameurl = generateSlug(name, phone);
+  //   const formData = new FormData(form);
+  //   const name = formData.get('name');
+  //   const phone = formData.get('phone');
+  //   const email = formData.get('email');
+  //   const organization = formData.get('organization') || 'Null';
+  //   const newnameurl = generateSlug(name, phone);
 
-//   const answers = {};
-//   for (let i = 1; i <= 80; i++) {
-//     answers[`q${i}`] = formData.get(`q${i}`);
-//   }
-//   answers.name = name;
-//   answers.phone = phone;
-//   answers.email = email;
-//   answers.organization = organization;
-//   answers.newnameurl = newnameurl;
+  //   const answers = {};
+  //   for (let i = 1; i <= 80; i++) {
+  //     answers[`q${i}`] = formData.get(`q${i}`);
+  //   }
+  //   answers.name = name;
+  //   answers.phone = phone;
+  //   answers.email = email;
+  //   answers.organization = organization;
+  //   answers.newnameurl = newnameurl;
 
-//   try {
-//     const response = await fetch('https://byldblogs.vercel.app/api/coach-knowledge-assessment', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify(answers),
-//     });
+  //   try {
+  //     const response = await fetch('https://byldblogs.vercel.app/api/coach-knowledge-assessment', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(answers),
+  //     });
 
-//     const data = await response.json();
-//     console.log("API response:", data);
+  //     const data = await response.json();
+  //     console.log("API response:", data);
 
-//     if (data.status === 0 || data.status === 'success') {
-//       // Optional extra submission
-//       await fetch('https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/72/feedback', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify({ name, email, phone }),
-//       });
+  //     if (data.status === 0 || data.status === 'success') {
+  //       // Optional extra submission
+  //       await fetch('https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/72/feedback', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //         },
+  //         body: JSON.stringify({ name, email, phone }),
+  //       });
 
-//       document.getElementById("response").textContent = data.message;
+  //       document.getElementById("response").textContent = data.message;
 
-//       // setTimeout(() => {
-//       //   router.push(`/coaching/coach-knowledge-assessment/${newnameurl}`);
-//       // }, 3000);
-//        window.setTimeout(function () {
-//                         window.location.href = `/coaching/coach-knowledge-assessment/${newnameurl}`
-//                          setIsLoading(false); // Stop the loader after redirecting
-//                     }, 2500);
+  //       // setTimeout(() => {
+  //       //   router.push(`/coaching/coach-knowledge-assessment/${newnameurl}`);
+  //       // }, 3000);
+  //        window.setTimeout(function () {
+  //                         window.location.href = `/coaching/coach-knowledge-assessment/${newnameurl}`
+  //                          setIsLoading(false); // Stop the loader after redirecting
+  //                     }, 2500);
 
-//     } else {
-//       document.getElementById("response").textContent = "Email is already registered";
-//     }
+  //     } else {
+  //       document.getElementById("response").textContent = "Email is already registered";
+  //     }
 
-//   } catch (error) {
-//     console.error("Error:", error);
-//     document.getElementById("response").textContent = "Submission failed. Please try again.";
-//   } finally {
-//     submitBtn.disabled = false;
-//     submitBtn.value = "Submit";
-//     setTimeout(() => {
-//       document.getElementById("response").textContent = "";
-//         setIsLoading(false); // Stop the loader on error
-//     }, 2000);
-//   }
-// };
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //     document.getElementById("response").textContent = "Submission failed. Please try again.";
+  //   } finally {
+  //     submitBtn.disabled = false;
+  //     submitBtn.value = "Submit";
+  //     setTimeout(() => {
+  //       document.getElementById("response").textContent = "";
+  //         setIsLoading(false); // Stop the loader on error
+  //     }, 2000);
+  //   }
+  // };
 
- const submitF = async (e) => {
+  const submitF = async (e) => {
     e.preventDefault();
     setIsLoading(true);
 
@@ -131,32 +132,34 @@ export default function CoachKnowledgeAssessment() {
       if (data.status === 0 || data.status === "success") {
         // Optional Contact Form 7 submission
 
-      const cf7FormData = new FormData();
-      cf7FormData.append("name", name);     // match exactly as in CF7
-      cf7FormData.append("email", email);
-      cf7FormData.append("phone", phone);
+        const cf7FormData = new FormData();
+        cf7FormData.append("name", name); // match exactly as in CF7
+        cf7FormData.append("email", email);
+        cf7FormData.append("phone", phone);
         await fetch(
           "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/526/feedback",
-           {
-          method: "POST",
-          body: cf7FormData,
-        }
+          {
+            method: "POST",
+            body: cf7FormData,
+          }
         );
 
         document.getElementById("response").textContent = data.message;
-       // ✅ Reset the form
-      form.reset();
+        // ✅ Reset the form
+        form.reset();
 
         setTimeout(() => {
           window.location.href = `/coaching/coach-knowledge-assessment-s/${newnameurl}`;
           setIsLoading(false); // stop loader after redirect
         }, 2500);
       } else {
-        document.getElementById("response").textContent = "Email is already registered.";
+        document.getElementById("response").textContent =
+          "Email is already registered.";
       }
     } catch (error) {
       console.error("Error submitting:", error);
-      document.getElementById("response").textContent = "Submission failed. Please try again.";
+      document.getElementById("response").textContent =
+        "Submission failed. Please try again.";
     } finally {
       submitBtn.disabled = false;
       submitBtn.value = "Submit";
@@ -166,7 +169,6 @@ export default function CoachKnowledgeAssessment() {
       }, 2000);
     }
   };
-
 
   return (
     <>
@@ -193,16 +195,14 @@ export default function CoachKnowledgeAssessment() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-12 text-center">
-              <h2 className="cacoh pbb-20">
-                Coach Knowledge Assessment
-              </h2>
+              <h2 className="cacoh pbb-20">Coach Knowledge Assessment</h2>
             </div>
           </div>
         </div>
       </section>
       <section className="pbb-40">
         <div className="container">
-          <form id="formreset" onSubmit={submitF} >
+          <form id="formreset" onSubmit={submitF}>
             <div className="row">
               <div className="col-sm-12">
                 <div className="fh3">
@@ -233,13 +233,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q1"
-                      value="1"
-                      id="q1c"
-                      required
-                    />
+                    <input type="radio" name="q1" value="1" id="q1c" required />
                     <label htmlFor="q1c">
                       Refer the client to a qualified mental health
                       professional.
@@ -278,13 +272,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q2"
-                      value="1"
-                      id="q2c"
-                      required
-                    />
+                    <input type="radio" name="q2" value="1" id="q2c" required />
                     <label htmlFor="q2c">
                       Decline unless the client has explicitly consented to
                       sharing recordings.
@@ -308,13 +296,7 @@ export default function CoachKnowledgeAssessment() {
                   </h2>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q3"
-                      value="1"
-                      id="q3a"
-                      required
-                    />
+                    <input type="radio" name="q3" value="1" id="q3a" required />
                     <label htmlFor="q3a">
                       Adjust the language to better reflect the client’s
                       cultural context.
@@ -363,13 +345,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q4"
-                      value="1"
-                      id="q4c"
-                      required
-                    />
+                    <input type="radio" name="q4" value="1" id="q4c" required />
                     <label htmlFor="q4c">
                       Clarify the distinction between coaching and therapy.
                     </label>
@@ -397,13 +373,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q5"
-                      value="1"
-                      id="q5b"
-                      required
-                    />
+                    <input type="radio" name="q5" value="1" id="q5b" required />
                     <label htmlFor="q5b">
                       Avoid using or referencing the information during
                       coaching.
@@ -446,13 +416,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q6"
-                      value="1"
-                      id="q6c"
-                      required
-                    />
+                    <input type="radio" name="q6" value="1" id="q6c" required />
                     <label htmlFor="q6c">
                       Reaffirm confidentiality terms aligned with the agreement
                       and laws.
@@ -475,13 +439,7 @@ export default function CoachKnowledgeAssessment() {
                   </h2>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q7"
-                      value="1"
-                      id="q7a"
-                      required
-                    />
+                    <input type="radio" name="q7" value="1" id="q7a" required />
                     <label htmlFor="q7a">
                       Reflect and manage personal bias to remain fully present
                       for the client.
@@ -523,13 +481,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q8"
-                      value="1"
-                      id="q8b"
-                      required
-                    />
+                    <input type="radio" name="q8" value="1" id="q8b" required />
                     <label htmlFor="q8b">
                       Clarify coaching boundaries and suggest they consult a
                       legal professional.
@@ -572,13 +524,7 @@ export default function CoachKnowledgeAssessment() {
                   </div>
 
                   <div className="fcolmain">
-                    <input
-                      type="radio"
-                      name="q9"
-                      value="1"
-                      id="q9c"
-                      required
-                    />
+                    <input type="radio" name="q9" value="1" id="q9c" required />
                     <label htmlFor="q9c">
                       No, because client consent is still required.
                     </label>
@@ -657,7 +603,7 @@ export default function CoachKnowledgeAssessment() {
             <div className="row">
               <div className="col-sm-12">
                 <div className="fh3">
-                  <h3>2. Scenario  &#34;Embodies a Coaching Mindset&#34;</h3>
+                  <h3>2. Scenario &#34;Embodies a Coaching Mindset&#34;</h3>
                 </div>
               </div>
               <div className="col-sm-12">
@@ -691,7 +637,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q11b">
                       Reflect on the emotion and explore its impact on the
-                      coaching process. 
+                      coaching process.
                     </label>
                   </div>
 
@@ -888,7 +834,7 @@ export default function CoachKnowledgeAssessment() {
                       required
                     />
                     <label htmlFor="q14d">
-                      Address the client’s behavior as the cause of stress.
+                      Shift to a lighter topic to avoid discomfort.
                     </label>
                   </div>
                 </div>
@@ -1029,7 +975,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q17a">
                       Learn and integrate the technique after assessing its
-                      relevance. 
+                      relevance.
                     </label>
                   </div>
 
@@ -1101,7 +1047,6 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q18b">
                       Seek supervision or mentor coaching to gain perspective.
-                      
                     </label>
                   </div>
 
@@ -1160,7 +1105,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q19b">
                       Remind the client they are responsible for their own
-                      choices. 
+                      choices.
                     </label>
                   </div>
 
@@ -1228,7 +1173,7 @@ export default function CoachKnowledgeAssessment() {
                       required
                     />
                     <label htmlFor="q20c">
-                      Reflective practice to improve coaching effectiveness. 
+                      Reflective practice to improve coaching effectiveness.
                     </label>
                   </div>
 
@@ -1249,7 +1194,9 @@ export default function CoachKnowledgeAssessment() {
             <div className="row">
               <div className="col-sm-12">
                 <div className="fh3">
-                  <h3>3. Scenario  &#34;Establishes and Maintains Agreements&#34;</h3>
+                  <h3>
+                    3. Scenario &#34;Establishes and Maintains Agreements&#34;
+                  </h3>
                 </div>
               </div>
               <div className="col-sm-12">
@@ -1283,7 +1230,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q21b">
                       Clarify the session’s purpose and co-create a focus before
-                      starting. 
+                      starting.
                     </label>
                   </div>
 
@@ -1343,7 +1290,7 @@ export default function CoachKnowledgeAssessment() {
                       required
                     />
                     <label htmlFor="q22b">
-                      Proactively clarify these aspects before proceeding. 
+                      Proactively clarify these aspects before proceeding.
                     </label>
                   </div>
 
@@ -1403,7 +1350,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q23b">
                       Clarify confidentiality terms and ensure a three-way
-                      agreement is in place. 
+                      agreement is in place.
                     </label>
                   </div>
 
@@ -1450,7 +1397,6 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q24a">
                       Pause and renegotiate the coaching goals with the client.
-                      
                     </label>
                   </div>
 
@@ -1548,7 +1494,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q25d">
                       Revisit and reinforce the original agreement on logistics
-                      and responsibilities. 
+                      and responsibilities.
                     </label>
                   </div>
                 </div>
@@ -1594,7 +1540,7 @@ export default function CoachKnowledgeAssessment() {
                       required
                     />
                     <label htmlFor="q26c">
-                      Clearly explain what coaching is and is not. 
+                      Clearly explain what coaching is and is not.
                     </label>
                   </div>
 
@@ -1628,7 +1574,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q27a">
                       Partner with the client to identify what they want to
-                      focus on today. 
+                      focus on today.
                     </label>
                   </div>
 
@@ -1701,7 +1647,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q28b">
                       Partner with the client to define what “confidence” means
-                      and how it will be measured. 
+                      and how it will be measured.
                     </label>
                   </div>
 
@@ -1774,7 +1720,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q29c">
                       Check in with the client to see if they want to redefine
-                      the session outcome. 
+                      the session outcome.
                     </label>
                   </div>
 
@@ -1834,7 +1780,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q30c">
                       Explore compatibility and the client’s expectations for
-                      coaching. 
+                      coaching.
                     </label>
                   </div>
 
@@ -1888,7 +1834,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q31b">
                       Gently acknowledge the hesitation and invite the client to
-                      share at their own pace. 
+                      share at their own pace.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -1970,7 +1916,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q32d">
                       Acknowledge and support the client’s feelings without
-                      judgment. 
+                      judgment.
                     </label>
                   </div>
                 </div>
@@ -2005,7 +1951,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q33b">
                       Seek to understand the client’s values and how they impact
-                      their experience. 
+                      their experience.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2053,7 +1999,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q34a">
                       Adapt the communication style to match the client’s pace
-                      and language. 
+                      and language.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2123,7 +2069,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q35b">
                       Express empathy and invite the client to explore what
-                      feels important to them. 
+                      feels important to them.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2194,7 +2140,6 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q36c">
                       Stay open and explore the client’s view with curiosity.
-                      
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2253,7 +2198,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q37c">
                       Acknowledge the defensiveness and invite exploration
-                      without pressure. 
+                      without pressure.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2309,7 +2254,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q38c">
                       Acknowledge the success and ask how it feels to the
-                      client. 
+                      client.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2356,7 +2301,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q39b">
                       Consider rescheduling or center themselves to stay fully
-                      present. 
+                      present.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2403,7 +2348,7 @@ export default function CoachKnowledgeAssessment() {
                     />
                     <label htmlFor="q40a">
                       Briefly share a relevant experience if it supports the
-                      client’s growth. 
+                      client’s growth.
                     </label>
                   </div>
                   <div className="fcolmain">
@@ -2452,237 +2397,587 @@ export default function CoachKnowledgeAssessment() {
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>1. A client becomes quiet during a session after discussing a difficult topic. What is the best way for the coach to respond?</h2>
+                  <h2>
+                    1. A client becomes quiet during a session after discussing
+                    a difficult topic. What is the best way for the coach to
+                    respond?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q41" value="0" id="q41a" required />
-                    <label htmlFor="q41a">Quickly move on to avoid discomfort.</label>
+                    <input
+                      type="radio"
+                      name="q41"
+                      value="0"
+                      id="q41a"
+                      required
+                    />
+                    <label htmlFor="q41a">
+                      Quickly move on to avoid discomfort.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q41" value="0" id="q41b" required />
-                    <label htmlFor="q41b">Ask a new question to fill the silence.</label>
+                    <input
+                      type="radio"
+                      name="q41"
+                      value="0"
+                      id="q41b"
+                      required
+                    />
+                    <label htmlFor="q41b">
+                      Ask a new question to fill the silence.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q41" value="0" id="q41c" required />
-                    <label htmlFor="q41c">Tell the client it’s okay to be quiet, then wait.</label>
+                    <input
+                      type="radio"
+                      name="q41"
+                      value="0"
+                      id="q41c"
+                      required
+                    />
+                    <label htmlFor="q41c">
+                      Tell the client it’s okay to be quiet, then wait.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q41" value="1" id="q41d" required />
-                    <label htmlFor="q41d">Hold the space and allow the silence for reflection. </label>
+                    <input
+                      type="radio"
+                      name="q41"
+                      value="1"
+                      id="q41d"
+                      required
+                    />
+                    <label htmlFor="q41d">
+                      Hold the space and allow the silence for reflection.{" "}
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>2. During a coaching session, the client expresses intense frustration about their team. What should the coach do?</h2>
+                  <h2>
+                    2. During a coaching session, the client expresses intense
+                    frustration about their team. What should the coach do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q42" value="0" id="q42a" required />
-                    <label htmlFor="q42a">Reassure the client that things will get better.</label>
+                    <input
+                      type="radio"
+                      name="q42"
+                      value="0"
+                      id="q42a"
+                      required
+                    />
+                    <label htmlFor="q42a">
+                      Reassure the client that things will get better.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q42" value="0" id="q42b" required />
-                    <label htmlFor="q42b">Shift to goal-setting to create momentum.</label>
+                    <input
+                      type="radio"
+                      name="q42"
+                      value="0"
+                      id="q42b"
+                      required
+                    />
+                    <label htmlFor="q42b">
+                      Shift to goal-setting to create momentum.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q42" value="1" id="q42c" required />
-                    <label htmlFor="q42c">Stay grounded and present while inviting the client to explore the emotion. </label>
+                    <input
+                      type="radio"
+                      name="q42"
+                      value="1"
+                      id="q42c"
+                      required
+                    />
+                    <label htmlFor="q42c">
+                      Stay grounded and present while inviting the client to
+                      explore the emotion.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q42" value="0" id="q42d" required />
-                    <label htmlFor="q42d">Share a similar personal story to show understanding.</label>
+                    <input
+                      type="radio"
+                      name="q42"
+                      value="0"
+                      id="q42d"
+                      required
+                    />
+                    <label htmlFor="q42d">
+                      Share a similar personal story to show understanding.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>3. A coach feels nervous while coaching a senior executive client and finds themselves overexplaining. What should they do to stay present?</h2>
+                  <h2>
+                    3. A coach feels nervous while coaching a senior executive
+                    client and finds themselves overexplaining. What should they
+                    do to stay present?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q43" value="0" id="q43a" required />
-                    <label htmlFor="q43a">Keep speaking to hide their nervousness.</label>
+                    <input
+                      type="radio"
+                      name="q43"
+                      value="0"
+                      id="q43a"
+                      required
+                    />
+                    <label htmlFor="q43a">
+                      Keep speaking to hide their nervousness.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q43" value="0" id="q43b" required />
-                    <label htmlFor="q43b">Avoid asking open-ended questions.</label>
+                    <input
+                      type="radio"
+                      name="q43"
+                      value="0"
+                      id="q43b"
+                      required
+                    />
+                    <label htmlFor="q43b">
+                      Avoid asking open-ended questions.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q43" value="1" id="q43c" required />
-                    <label htmlFor="q43c">Pause, take a breath, and refocus attention on the client. </label>
+                    <input
+                      type="radio"
+                      name="q43"
+                      value="1"
+                      id="q43c"
+                      required
+                    />
+                    <label htmlFor="q43c">
+                      Pause, take a breath, and refocus attention on the client.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q43" value="0" id="q43d" required />
-                    <label htmlFor="q43d">Let the client lead the session without coaching structure.</label>
+                    <input
+                      type="radio"
+                      name="q43"
+                      value="0"
+                      id="q43d"
+                      required
+                    />
+                    <label htmlFor="q43d">
+                      Let the client lead the session without coaching
+                      structure.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>4. A client says something surprising that challenges the coach’s assumptions. What does maintaining presence look like here?</h2>
+                  <h2>
+                    4. A client says something surprising that challenges the
+                    coach’s assumptions. What does maintaining presence look
+                    like here?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q44" value="0" id="q44a" required />
-                    <label htmlFor="q44a">Respond with advice based on past experiences.</label>
+                    <input
+                      type="radio"
+                      name="q44"
+                      value="0"
+                      id="q44a"
+                      required
+                    />
+                    <label htmlFor="q44a">
+                      Respond with advice based on past experiences.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q44" value="0" id="q44b" required />
-                    <label htmlFor="q44b">Ignore the comment and continue with the planned path.</label>
+                    <input
+                      type="radio"
+                      name="q44"
+                      value="0"
+                      id="q44b"
+                      required
+                    />
+                    <label htmlFor="q44b">
+                      Ignore the comment and continue with the planned path.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q44" value="1" id="q44c" required />
-                    <label htmlFor="q44c">Stay curious and ask the client to elaborate further. </label>
+                    <input
+                      type="radio"
+                      name="q44"
+                      value="1"
+                      id="q44c"
+                      required
+                    />
+                    <label htmlFor="q44c">
+                      Stay curious and ask the client to elaborate further.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q44" value="0" id="q44d" required />
-                    <label htmlFor="q44d">Politely disagree and shift the conversation.</label>
+                    <input
+                      type="radio"
+                      name="q44"
+                      value="0"
+                      id="q44d"
+                      required
+                    />
+                    <label htmlFor="q44d">
+                      Politely disagree and shift the conversation.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>5. The coach notices their own mind drifting to unrelated thoughts during a session. What is the best response?</h2>
+                  <h2>
+                    5. The coach notices their own mind drifting to unrelated
+                    thoughts during a session. What is the best response?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q45" value="0" id="q45a" required />
-                    <label htmlFor="q45a">Push through and hope the client doesn’t notice.</label>
+                    <input
+                      type="radio"
+                      name="q45"
+                      value="0"
+                      id="q45a"
+                      required
+                    />
+                    <label htmlFor="q45a">
+                      Push through and hope the client doesn’t notice.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q45" value="0" id="q45b" required />
-                    <label htmlFor="q45b">Pause the session to take a break.</label>
+                    <input
+                      type="radio"
+                      name="q45"
+                      value="0"
+                      id="q45b"
+                      required
+                    />
+                    <label htmlFor="q45b">
+                      Pause the session to take a break.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q45" value="1" id="q45c" required />
-                    <label htmlFor="q45c">Gently bring their attention back to the client and re-engage fully. </label>
+                    <input
+                      type="radio"
+                      name="q45"
+                      value="1"
+                      id="q45c"
+                      required
+                    />
+                    <label htmlFor="q45c">
+                      Gently bring their attention back to the client and
+                      re-engage fully.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q45" value="0" id="q45d" required />
-                    <label htmlFor="q45d">End the session early to avoid further distraction.</label>
+                    <input
+                      type="radio"
+                      name="q45"
+                      value="0"
+                      id="q45d"
+                      required
+                    />
+                    <label htmlFor="q45d">
+                      End the session early to avoid further distraction.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>6. The client suddenly starts crying while discussing a deeply personal experience. What is the most appropriate way to respond?</h2>
+                  <h2>
+                    6. The client suddenly starts crying while discussing a
+                    deeply personal experience. What is the most appropriate way
+                    to respond?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q46" value="0" id="q46a" required />
-                    <label htmlFor="q46a">Offer tissues and try to lighten the mood.</label>
+                    <input
+                      type="radio"
+                      name="q46"
+                      value="0"
+                      id="q46a"
+                      required
+                    />
+                    <label htmlFor="q46a">
+                      Offer tissues and try to lighten the mood.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q46" value="1" id="q46b" required />
-                    <label htmlFor="q46b">Remain calm, compassionate, and hold space without rushing. </label>
+                    <input
+                      type="radio"
+                      name="q46"
+                      value="1"
+                      id="q46b"
+                      required
+                    />
+                    <label htmlFor="q46b">
+                      Remain calm, compassionate, and hold space without
+                      rushing.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q46" value="0" id="q46c" required />
-                    <label htmlFor="q46c">Suggest moving to a less emotional topic.</label>
+                    <input
+                      type="radio"
+                      name="q46"
+                      value="0"
+                      id="q46c"
+                      required
+                    />
+                    <label htmlFor="q46c">
+                      Suggest moving to a less emotional topic.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q46" value="0" id="q46d" required />
-                    <label htmlFor="q46d">Ask the client if they want to stop the session.</label>
+                    <input
+                      type="radio"
+                      name="q46"
+                      value="0"
+                      id="q46d"
+                      required
+                    />
+                    <label htmlFor="q46d">
+                      Ask the client if they want to stop the session.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>7. A coach realizes that they don’t know how to “solve” the client’s challenge. What should they do?</h2>
+                  <h2>
+                    7. A coach realizes that they don’t know how to “solve” the
+                    client’s challenge. What should they do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q47" value="1" id="q47a" required />
-                    <label htmlFor="q47a">Embrace the uncertainty and stay curious with the client. </label>
+                    <input
+                      type="radio"
+                      name="q47"
+                      value="1"
+                      id="q47a"
+                      required
+                    />
+                    <label htmlFor="q47a">
+                      Embrace the uncertainty and stay curious with the client.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q47" value="0" id="q47b" required />
-                    <label htmlFor="q47b">Suggest a solution to regain control.</label>
+                    <input
+                      type="radio"
+                      name="q47"
+                      value="0"
+                      id="q47b"
+                      required
+                    />
+                    <label htmlFor="q47b">
+                      Suggest a solution to regain control.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q47" value="0" id="q47c" required />
-                    <label htmlFor="q47c">End the topic and shift to goal tracking.</label>
+                    <input
+                      type="radio"
+                      name="q47"
+                      value="0"
+                      id="q47c"
+                      required
+                    />
+                    <label htmlFor="q47c">
+                      End the topic and shift to goal tracking.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q47" value="0" id="q47d" required />
-                    <label htmlFor="q47d">Ask the client to research options and return with a plan.</label>
+                    <input
+                      type="radio"
+                      name="q47"
+                      value="0"
+                      id="q47d"
+                      required
+                    />
+                    <label htmlFor="q47d">
+                      Ask the client to research options and return with a plan.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>8. A client reflects deeply and says, “I’ve never thought about it this way before.” What is the best next step for the coach?</h2>
+                  <h2>
+                    8. A client reflects deeply and says, “I’ve never thought
+                    about it this way before.” What is the best next step for
+                    the coach?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q48" value="1" id="q48a" required />
-                    <label htmlFor="q48a">Pause and allow space for the client to continue processing. </label>
+                    <input
+                      type="radio"
+                      name="q48"
+                      value="1"
+                      id="q48a"
+                      required
+                    />
+                    <label htmlFor="q48a">
+                      Pause and allow space for the client to continue
+                      processing.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q48" value="0" id="q48b" required />
-                    <label htmlFor="q48b">Quickly ask another question to keep the flow going.</label>
+                    <input
+                      type="radio"
+                      name="q48"
+                      value="0"
+                      id="q48b"
+                      required
+                    />
+                    <label htmlFor="q48b">
+                      Quickly ask another question to keep the flow going.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q48" value="0" id="q48c" required />
-                    <label htmlFor="q48c">Move to action planning to build on the insight.</label>
+                    <input
+                      type="radio"
+                      name="q48"
+                      value="0"
+                      id="q48c"
+                      required
+                    />
+                    <label htmlFor="q48c">
+                      Move to action planning to build on the insight.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q48" value="0" id="q48d" required />
-                    <label htmlFor="q48d">Repeat the insight and ask for confirmation.</label>
+                    <input
+                      type="radio"
+                      name="q48"
+                      value="0"
+                      id="q48d"
+                      required
+                    />
+                    <label htmlFor="q48d">
+                      Repeat the insight and ask for confirmation.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>9. A client is stuck in circular thinking and the coach begins to feel impatient. What should the coach do?</h2>
+                  <h2>
+                    9. A client is stuck in circular thinking and the coach
+                    begins to feel impatient. What should the coach do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q49" value="0" id="q49a" required />
-                    <label htmlFor="q49a">Interrupt and guide them out of the loop.</label>
+                    <input
+                      type="radio"
+                      name="q49"
+                      value="0"
+                      id="q49a"
+                      required
+                    />
+                    <label htmlFor="q49a">
+                      Interrupt and guide them out of the loop.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q49" value="0" id="q49b" required />
-                    <label htmlFor="q49b">Challenge the client firmly to break the pattern.</label>
+                    <input
+                      type="radio"
+                      name="q49"
+                      value="0"
+                      id="q49b"
+                      required
+                    />
+                    <label htmlFor="q49b">
+                      Challenge the client firmly to break the pattern.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q49" value="1" id="q49c" required />
-                    <label htmlFor="q49c">Notice the feeling, stay present, and gently explore what’s underneath the repetition. </label>
+                    <input
+                      type="radio"
+                      name="q49"
+                      value="1"
+                      id="q49c"
+                      required
+                    />
+                    <label htmlFor="q49c">
+                      Notice the feeling, stay present, and gently explore
+                      what’s underneath the repetition.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q49" value="0" id="q49d" required />
-                    <label htmlFor="q49d">Let the client talk until they find their own way.</label>
+                    <input
+                      type="radio"
+                      name="q49"
+                      value="0"
+                      id="q49d"
+                      required
+                    />
+                    <label htmlFor="q49d">
+                      Let the client talk until they find their own way.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>10. The coach’s schedule is packed, and they feel rushed as the session begins. How can they maintain presence?</h2>
+                  <h2>
+                    10. The coach’s schedule is packed, and they feel rushed as
+                    the session begins. How can they maintain presence?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q50" value="0" id="q50a" required />
-                    <label htmlFor="q50a">Power through the session quickly.</label>
+                    <input
+                      type="radio"
+                      name="q50"
+                      value="0"
+                      id="q50a"
+                      required
+                    />
+                    <label htmlFor="q50a">
+                      Power through the session quickly.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q50" value="1" id="q50b" required />
-                    <label htmlFor="q50b">Take a moment to center themselves before fully engaging with the client. </label>
+                    <input
+                      type="radio"
+                      name="q50"
+                      value="1"
+                      id="q50b"
+                      required
+                    />
+                    <label htmlFor="q50b">
+                      Take a moment to center themselves before fully engaging
+                      with the client.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q50" value="0" id="q50c" required />
-                    <label htmlFor="q50c">Apologize to the client for being in a hurry.</label>
+                    <input
+                      type="radio"
+                      name="q50"
+                      value="0"
+                      id="q50c"
+                      required
+                    />
+                    <label htmlFor="q50c">
+                      Apologize to the client for being in a hurry.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q50" value="0" id="q50d" required />
-                    <label htmlFor="q50d">Keep the session short to manage time.</label>
+                    <input
+                      type="radio"
+                      name="q50"
+                      value="0"
+                      id="q50d"
+                      required
+                    />
+                    <label htmlFor="q50d">
+                      Keep the session short to manage time.
+                    </label>
                   </div>
                 </div>
               </div>
-
-
             </div>
 
             <div className="row">
@@ -2692,232 +2987,569 @@ export default function CoachKnowledgeAssessment() {
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>1. During a session, the client repeatedly mentions feeling “stuck,” but their tone is upbeat and they smile. What should the coach do?</h2>
+                  <h2>
+                    1. During a session, the client repeatedly mentions feeling
+                    “stuck,” but their tone is upbeat and they smile. What
+                    should the coach do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q51" value="0" id="q51a" required />
-                    <label htmlFor="q51a">Accept the client’s words and move forward.</label>
+                    <input
+                      type="radio"
+                      name="q51"
+                      value="0"
+                      id="q51a"
+                      required
+                    />
+                    <label htmlFor="q51a">
+                      Accept the client’s words and move forward.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q51" value="1" id="q51b" required />
-                    <label htmlFor="q51b">Explore the discrepancy between words and tone. </label>
+                    <input
+                      type="radio"
+                      name="q51"
+                      value="1"
+                      id="q51b"
+                      required
+                    />
+                    <label htmlFor="q51b">
+                      Explore the discrepancy between words and tone.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q51" value="0" id="q51c" required />
-                    <label htmlFor="q51c">Reassure the client that feeling stuck is common.</label>
+                    <input
+                      type="radio"
+                      name="q51"
+                      value="0"
+                      id="q51c"
+                      required
+                    />
+                    <label htmlFor="q51c">
+                      Reassure the client that feeling stuck is common.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q51" value="0" id="q51d" required />
-                    <label htmlFor="q51d">Offer a strategy that worked with a previous client.</label>
+                    <input
+                      type="radio"
+                      name="q51"
+                      value="0"
+                      id="q51d"
+                      required
+                    />
+                    <label htmlFor="q51d">
+                      Offer a strategy that worked with a previous client.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>2. A client says, “I just don’t know what to do anymore,” and sighs heavily. What is the most effective coach response?</h2>
+                  <h2>
+                    2. A client says, “I just don’t know what to do anymore,”
+                    and sighs heavily. What is the most effective coach
+                    response?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q52" value="0" id="q52a" required />
-                    <label htmlFor="q52a">Ignore the sigh and focus on next steps.</label>
+                    <input
+                      type="radio"
+                      name="q52"
+                      value="0"
+                      id="q52a"
+                      required
+                    />
+                    <label htmlFor="q52a">
+                      Ignore the sigh and focus on next steps.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q52" value="0" id="q52b" required />
+                    <input
+                      type="radio"
+                      name="q52"
+                      value="0"
+                      id="q52b"
+                      required
+                    />
                     <label htmlFor="q52b">Shift to a different topic.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q52" value="1" id="q52c" required />
-                    <label htmlFor="q52c">Reflect the emotional tone and ask what the sigh means. </label>
+                    <input
+                      type="radio"
+                      name="q52"
+                      value="1"
+                      id="q52c"
+                      required
+                    />
+                    <label htmlFor="q52c">
+                      Reflect the emotional tone and ask what the sigh means.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q52" value="0" id="q52d" required />
-                    <label htmlFor="q52d">Summarize the last thing the client said.</label>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-sm-12">
-                <div className="fcol1 newassesment">
-                  <h2>3. In response to a client describing a stressful work situation, the coach says: “So you’re overwhelmed and frustrated.” The client nods. What should the coach do next?</h2>
-                  <div className="fcolmain">
-                    <input type="radio" name="q53" value="0" id="q53a" required />
-                    <label htmlFor="q53a">Move on to setting goals for next week.</label>
-                  </div>
-                  <div className="fcolmain">
-                    <input type="radio" name="q53" value="0" id="q53b" required />
-                    <label htmlFor="q53b">Offer a suggestion for stress relief.</label>
-                  </div>
-                  <div className="fcolmain">
-                    <input type="radio" name="q53" value="1" id="q53c" required />
-                    <label htmlFor="q53c">Ask the client to share more about the frustration. </label>
-                  </div>
-                  <div className="fcolmain">
-                    <input type="radio" name="q53" value="0" id="q53d" required />
-                    <label htmlFor="q53d">Praise the client for being honest.</label>
+                    <input
+                      type="radio"
+                      name="q52"
+                      value="0"
+                      id="q52d"
+                      required
+                    />
+                    <label htmlFor="q52d">
+                      Summarize the last thing the client said.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>4. Over several sessions, the client uses words like “invisible,” “forgotten,” and “on the sidelines.” What should the coach do?</h2>
+                  <h2>
+                    3. In response to a client describing a stressful work
+                    situation, the coach says: “So you’re overwhelmed and
+                    frustrated.” The client nods. What should the coach do next?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q54" value="1" id="q54a" required />
-                    <label htmlFor="q54a">Bring up the recurring language and explore its meaning. </label>
+                    <input
+                      type="radio"
+                      name="q53"
+                      value="0"
+                      id="q53a"
+                      required
+                    />
+                    <label htmlFor="q53a">
+                      Move on to setting goals for next week.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q54" value="0" id="q54b" required />
-                    <label htmlFor="q54b">Tell the client to avoid negative language.</label>
+                    <input
+                      type="radio"
+                      name="q53"
+                      value="0"
+                      id="q53b"
+                      required
+                    />
+                    <label htmlFor="q53b">
+                      Offer a suggestion for stress relief.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q54" value="0" id="q54c" required />
-                    <label htmlFor="q54c">Focus only on what the client says today.</label>
+                    <input
+                      type="radio"
+                      name="q53"
+                      value="1"
+                      id="q53c"
+                      required
+                    />
+                    <label htmlFor="q53c">
+                      Ask the client to share more about the frustration.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q54" value="0" id="q54d" required />
-                    <label htmlFor="q54d">Encourage the client to be more optimistic.</label>
+                    <input
+                      type="radio"
+                      name="q53"
+                      value="0"
+                      id="q53d"
+                      required
+                    />
+                    <label htmlFor="q53d">
+                      Praise the client for being honest.
+                    </label>
                   </div>
                 </div>
               </div>
 
+              <div className="col-sm-12">
+                <div className="fcol1 newassesment">
+                  <h2>
+                    4. Over several sessions, the client uses words like
+                    “invisible,” “forgotten,” and “on the sidelines.” What
+                    should the coach do?
+                  </h2>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q54"
+                      value="1"
+                      id="q54a"
+                      required
+                    />
+                    <label htmlFor="q54a">
+                      Bring up the recurring language and explore its meaning.{" "}
+                    </label>
+                  </div>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q54"
+                      value="0"
+                      id="q54b"
+                      required
+                    />
+                    <label htmlFor="q54b">
+                      Tell the client to avoid negative language.
+                    </label>
+                  </div>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q54"
+                      value="0"
+                      id="q54c"
+                      required
+                    />
+                    <label htmlFor="q54c">
+                      Focus only on what the client says today.
+                    </label>
+                  </div>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q54"
+                      value="0"
+                      id="q54d"
+                      required
+                    />
+                    <label htmlFor="q54d">
+                      Encourage the client to be more optimistic.
+                    </label>
+                  </div>
+                </div>
+              </div>
 
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>5. A client describes an interaction with their boss and says, “I didn’t say anything, but inside I was boiling.” What should the coach explore?</h2>
+                  <h2>
+                    5. A client describes an interaction with their boss and
+                    says, “I didn’t say anything, but inside I was boiling.”
+                    What should the coach explore?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q55" value="0" id="q55a" required />
+                    <input
+                      type="radio"
+                      name="q55"
+                      value="0"
+                      id="q55a"
+                      required
+                    />
                     <label htmlFor="q55a">What the boss said.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q55" value="0" id="q55b" required />
-                    <label htmlFor="q55b">Whether the client should speak up next time.</label>
+                    <input
+                      type="radio"
+                      name="q55"
+                      value="0"
+                      id="q55b"
+                      required
+                    />
+                    <label htmlFor="q55b">
+                      Whether the client should speak up next time.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q55" value="1" id="q55c" required />
-                    <label htmlFor="q55c">What the client felt and chose not to express. </label>
+                    <input
+                      type="radio"
+                      name="q55"
+                      value="1"
+                      id="q55c"
+                      required
+                    />
+                    <label htmlFor="q55c">
+                      What the client felt and chose not to express.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q55" value="0" id="q55d" required />
-                    <label htmlFor="q55d">Whether silence is always the best approach.</label>
+                    <input
+                      type="radio"
+                      name="q55"
+                      value="0"
+                      id="q55d"
+                      required
+                    />
+                    <label htmlFor="q55d">
+                      Whether silence is always the best approach.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>6. When a client says, “I feel okay, I guess,” the coach replies, “You’re okay.” What’s missing in this response?</h2>
+                  <h2>
+                    6. When a client says, “I feel okay, I guess,” the coach
+                    replies, “You’re okay.” What’s missing in this response?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q56" value="0" id="q56a" required />
-                    <label htmlFor="q56a">Validation of client’s uncertainty.</label>
+                    <input
+                      type="radio"
+                      name="q56"
+                      value="0"
+                      id="q56a"
+                      required
+                    />
+                    <label htmlFor="q56a">
+                      Validation of client’s uncertainty.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q56" value="1" id="q56b" required />
-                    <label htmlFor="q56b">Exploration of the ambiguity in the client’s tone. </label>
+                    <input
+                      type="radio"
+                      name="q56"
+                      value="1"
+                      id="q56b"
+                      required
+                    />
+                    <label htmlFor="q56b">
+                      Exploration of the ambiguity in the client’s tone.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q56" value="0" id="q56c" required />
-                    <label htmlFor="q56c">Repetition of the client’s words.</label>
+                    <input
+                      type="radio"
+                      name="q56"
+                      value="0"
+                      id="q56c"
+                      required
+                    />
+                    <label htmlFor="q56c">
+                      Repetition of the client’s words.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q56" value="0" id="q56d" required />
+                    <input
+                      type="radio"
+                      name="q56"
+                      value="0"
+                      id="q56d"
+                      required
+                    />
                     <label htmlFor="q56d">Suggestion for next steps.</label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>7. A client is talking about a challenging project, and the coach notices the client wringing their hands. What should the coach do?</h2>
+                  <h2>
+                    7. A client is talking about a challenging project, and the
+                    coach notices the client wringing their hands. What should
+                    the coach do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q57" value="0" id="q57a" required />
-                    <label htmlFor="q57a">Ignore it; non-verbal cues are unreliable.</label>
+                    <input
+                      type="radio"
+                      name="q57"
+                      value="0"
+                      id="q57a"
+                      required
+                    />
+                    <label htmlFor="q57a">
+                      Ignore it; non-verbal cues are unreliable.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q57" value="0" id="q57b" required />
+                    <input
+                      type="radio"
+                      name="q57"
+                      value="0"
+                      id="q57b"
+                      required
+                    />
                     <label htmlFor="q57b">Ask if the client is anxious.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q57" value="1" id="q57c" required />
-                    <label htmlFor="q57c">Share the observation and ask what the gesture represents. </label>
+                    <input
+                      type="radio"
+                      name="q57"
+                      value="1"
+                      id="q57c"
+                      required
+                    />
+                    <label htmlFor="q57c">
+                      Share the observation and ask what the gesture represents.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q57" value="0" id="q57d" required />
-                    <label htmlFor="q57d">Reassure the client that stress is normal.</label>
-                  </div>
-                </div>
-              </div>
-
-
-              <div className="col-sm-12">
-                <div className="fcol1 newassesment">
-                  <h2>8. A client speaks with low energy and avoids eye contact. How should the coach respond?</h2>
-                  <div className="fcolmain">
-                    <input type="radio" name="q58" value="0" id="q58a" required />
-                    <label htmlFor="q58a">Keep the conversation focused on tasks.</label>
-                  </div>
-                  <div className="fcolmain">
-                    <input type="radio" name="q58" value="0" id="q58b" required />
-                    <label htmlFor="q58b">Ask if the client wants to talk about their week.</label>
-                  </div>
-                  <div className="fcolmain">
-                    <input type="radio" name="q58" value="1" id="q58c" required />
-                    <label htmlFor="q58c">Gently reflect on the observed low energy and invite exploration. </label>
-                  </div>
-                  <div className="fcolmain">
-                    <input type="radio" name="q58" value="0" id="q58d" required />
-                    <label htmlFor="q58d">Conclude the session early to allow rest.</label>
+                    <input
+                      type="radio"
+                      name="q57"
+                      value="0"
+                      id="q57d"
+                      required
+                    />
+                    <label htmlFor="q57d">
+                      Reassure the client that stress is normal.
+                    </label>
                   </div>
                 </div>
               </div>
 
+              <div className="col-sm-12">
+                <div className="fcol1 newassesment">
+                  <h2>
+                    8. A client speaks with low energy and avoids eye contact.
+                    How should the coach respond?
+                  </h2>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q58"
+                      value="0"
+                      id="q58a"
+                      required
+                    />
+                    <label htmlFor="q58a">
+                      Keep the conversation focused on tasks.
+                    </label>
+                  </div>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q58"
+                      value="0"
+                      id="q58b"
+                      required
+                    />
+                    <label htmlFor="q58b">
+                      Ask if the client wants to talk about their week.
+                    </label>
+                  </div>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q58"
+                      value="1"
+                      id="q58c"
+                      required
+                    />
+                    <label htmlFor="q58c">
+                      Gently reflect on the observed low energy and invite
+                      exploration.{" "}
+                    </label>
+                  </div>
+                  <div className="fcolmain">
+                    <input
+                      type="radio"
+                      name="q58"
+                      value="0"
+                      id="q58d"
+                      required
+                    />
+                    <label htmlFor="q58d">
+                      Conclude the session early to allow rest.
+                    </label>
+                  </div>
+                </div>
+              </div>
 
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>9. The client says, “I know I should be grateful, but I’m just tired.” What would demonstrate active listening?</h2>
+                  <h2>
+                    9. The client says, “I know I should be grateful, but I’m
+                    just tired.” What would demonstrate active listening?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q59" value="0" id="q59a" required />
-                    <label htmlFor="q59a">Tell the client to focus on gratitude.</label>
+                    <input
+                      type="radio"
+                      name="q59"
+                      value="0"
+                      id="q59a"
+                      required
+                    />
+                    <label htmlFor="q59a">
+                      Tell the client to focus on gratitude.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q59" value="0" id="q59b" required />
-                    <label htmlFor="q59b">Say, “You shouldn’t feel guilty.”</label>
+                    <input
+                      type="radio"
+                      name="q59"
+                      value="0"
+                      id="q59b"
+                      required
+                    />
+                    <label htmlFor="q59b">
+                      Say, “You shouldn’t feel guilty.”
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q59" value="0" id="q59c" required />
+                    <input
+                      type="radio"
+                      name="q59"
+                      value="0"
+                      id="q59c"
+                      required
+                    />
                     <label htmlFor="q59c">Ask what’s making them tired.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q59" value="1" id="q59d" required />
-                    <label htmlFor="q59d">Reflect the conflict between gratitude and exhaustion. </label>
+                    <input
+                      type="radio"
+                      name="q59"
+                      value="1"
+                      id="q59d"
+                      required
+                    />
+                    <label htmlFor="q59d">
+                      Reflect the conflict between gratitude and exhaustion.{" "}
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>10. The coach hears recurring themes of self-doubt over several sessions. What is the best course of action?</h2>
+                  <h2>
+                    10. The coach hears recurring themes of self-doubt over
+                    several sessions. What is the best course of action?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q60" value="0" id="q60a" required />
-                    <label htmlFor="q60a">Wait for the client to bring it up again.</label>
+                    <input
+                      type="radio"
+                      name="q60"
+                      value="0"
+                      id="q60a"
+                      required
+                    />
+                    <label htmlFor="q60a">
+                      Wait for the client to bring it up again.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q60" value="1" id="q60b" required />
-                    <label htmlFor="q60b">Explore the pattern of self-doubt as a theme. </label>
+                    <input
+                      type="radio"
+                      name="q60"
+                      value="1"
+                      id="q60b"
+                      required
+                    />
+                    <label htmlFor="q60b">
+                      Explore the pattern of self-doubt as a theme.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q60" value="0" id="q60c" required />
-                    <label htmlFor="q60c">Challenge the client to stop doubting themselves.</label>
+                    <input
+                      type="radio"
+                      name="q60"
+                      value="0"
+                      id="q60c"
+                      required
+                    />
+                    <label htmlFor="q60c">
+                      Challenge the client to stop doubting themselves.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q60" value="0" id="q60d" required />
-                    <label htmlFor="q60d">Redirect to setting performance goals.</label>
+                    <input
+                      type="radio"
+                      name="q60"
+                      value="0"
+                      id="q60d"
+                      required
+                    />
+                    <label htmlFor="q60d">
+                      Redirect to setting performance goals.
+                    </label>
                   </div>
                 </div>
               </div>
@@ -2930,232 +3562,573 @@ export default function CoachKnowledgeAssessment() {
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>1. A client says, “I always end up taking on too much at work.” What’s the best way for the coach to evoke insight?</h2>
+                  <h2>
+                    1. A client says, “I always end up taking on too much at
+                    work.” What’s the best way for the coach to evoke insight?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q61" value="0" id="q61a" required />
-                    <label htmlFor="q61a">Suggest time management tools immediately.</label>
+                    <input
+                      type="radio"
+                      name="q61"
+                      value="0"
+                      id="q61a"
+                      required
+                    />
+                    <label htmlFor="q61a">
+                      Suggest time management tools immediately.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q61" value="0" id="q61b" required />
-                    <label htmlFor="q61b">Ask if they’ve considered delegating.</label>
+                    <input
+                      type="radio"
+                      name="q61"
+                      value="0"
+                      id="q61b"
+                      required
+                    />
+                    <label htmlFor="q61b">
+                      Ask if they’ve considered delegating.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q61" value="1" id="q61c" required />
-                    <label htmlFor="q61c">Ask what patterns or beliefs might lead to saying yes too often. </label>
+                    <input
+                      type="radio"
+                      name="q61"
+                      value="1"
+                      id="q61c"
+                      required
+                    />
+                    <label htmlFor="q61c">
+                      Ask what patterns or beliefs might lead to saying yes too
+                      often.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q61" value="0" id="q61d" required />
-                    <label htmlFor="q61d">Offer to role-play how to say no.</label>
+                    <input
+                      type="radio"
+                      name="q61"
+                      value="0"
+                      id="q61d"
+                      required
+                    />
+                    <label htmlFor="q61d">
+                      Offer to role-play how to say no.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>2. The client expresses uncertainty about how to move forward. What coach response would best evoke awareness?</h2>
+                  <h2>
+                    2. The client expresses uncertainty about how to move
+                    forward. What coach response would best evoke awareness?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q62" value="0" id="q62a" required />
-                    <label htmlFor="q62a">Encourage the client to revisit past goals.</label>
+                    <input
+                      type="radio"
+                      name="q62"
+                      value="0"
+                      id="q62a"
+                      required
+                    />
+                    <label htmlFor="q62a">
+                      Encourage the client to revisit past goals.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q62" value="1" id="q62b" required />
-                    <label htmlFor="q62b">Ask, “What haven’t you tried yet that might be worth exploring?” </label>
+                    <input
+                      type="radio"
+                      name="q62"
+                      value="1"
+                      id="q62b"
+                      required
+                    />
+                    <label htmlFor="q62b">
+                      Ask, “What haven’t you tried yet that might be worth
+                      exploring?”{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q62" value="0" id="q62c" required />
-                    <label htmlFor="q62c">Offer examples of what other clients have done.</label>
+                    <input
+                      type="radio"
+                      name="q62"
+                      value="0"
+                      id="q62c"
+                      required
+                    />
+                    <label htmlFor="q62c">
+                      Offer examples of what other clients have done.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q62" value="0" id="q62d" required />
-                    <label htmlFor="q62d">Tell them to list out pros and cons.</label>
+                    <input
+                      type="radio"
+                      name="q62"
+                      value="0"
+                      id="q62d"
+                      required
+                    />
+                    <label htmlFor="q62d">
+                      Tell them to list out pros and cons.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>3. A client says, “I’m just not the kind of person who takes risks.” How should the coach respond to support deeper awareness?</h2>
+                  <h2>
+                    3. A client says, “I’m just not the kind of person who takes
+                    risks.” How should the coach respond to support deeper
+                    awareness?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q63" value="0" id="q63a" required />
-                    <label htmlFor="q63a">Agree and move on to something else.</label>
+                    <input
+                      type="radio"
+                      name="q63"
+                      value="0"
+                      id="q63a"
+                      required
+                    />
+                    <label htmlFor="q63a">
+                      Agree and move on to something else.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q63" value="0" id="q63b" required />
-                    <label htmlFor="q63b">Ask them to describe why they avoid risk.</label>
+                    <input
+                      type="radio"
+                      name="q63"
+                      value="0"
+                      id="q63b"
+                      required
+                    />
+                    <label htmlFor="q63b">
+                      Ask them to describe why they avoid risk.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q63" value="0" id="q63c" required />
-                    <label htmlFor="q63c">Encourage them to take small risks anyway.</label>
+                    <input
+                      type="radio"
+                      name="q63"
+                      value="0"
+                      id="q63c"
+                      required
+                    />
+                    <label htmlFor="q63c">
+                      Encourage them to take small risks anyway.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q63" value="1" id="q63d" required />
-                    <label htmlFor="q63d">Ask, “What has shaped your belief about risk?” </label>
+                    <input
+                      type="radio"
+                      name="q63"
+                      value="1"
+                      id="q63d"
+                      required
+                    />
+                    <label htmlFor="q63d">
+                      Ask, “What has shaped your belief about risk?”{" "}
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>4. A client is caught in a loop of negative self-talk. What would be the most effective coaching move?</h2>
+                  <h2>
+                    4. A client is caught in a loop of negative self-talk. What
+                    would be the most effective coaching move?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q64" value="0" id="q64a" required />
-                    <label htmlFor="q64a">Disagree with their statements to counter the negativity.</label>
+                    <input
+                      type="radio"
+                      name="q64"
+                      value="0"
+                      id="q64a"
+                      required
+                    />
+                    <label htmlFor="q64a">
+                      Disagree with their statements to counter the negativity.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q64" value="1" id="q64b" required />
-                    <label htmlFor="q64b">Invite them to explore where that inner voice comes from and how it serves them. </label>
+                    <input
+                      type="radio"
+                      name="q64"
+                      value="1"
+                      id="q64b"
+                      required
+                    />
+                    <label htmlFor="q64b">
+                      Invite them to explore where that inner voice comes from
+                      and how it serves them.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q64" value="0" id="q64c" required />
-                    <label htmlFor="q64c">Encourage affirmations to override the mindset.</label>
+                    <input
+                      type="radio"
+                      name="q64"
+                      value="0"
+                      id="q64c"
+                      required
+                    />
+                    <label htmlFor="q64c">
+                      Encourage affirmations to override the mindset.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q64" value="0" id="q64d" required />
-                    <label htmlFor="q64d">Share a success story to inspire them.</label>
+                    <input
+                      type="radio"
+                      name="q64"
+                      value="0"
+                      id="q64d"
+                      required
+                    />
+                    <label htmlFor="q64d">
+                      Share a success story to inspire them.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>5. A client says, “This just doesn’t feel like me,” while talking about a recent decision. What coach response could spark useful reflection?</h2>
+                  <h2>
+                    5. A client says, “This just doesn’t feel like me,” while
+                    talking about a recent decision. What coach response could
+                    spark useful reflection?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q65" value="0" id="q65a" required />
-                    <label htmlFor="q65a">Suggest they reverse the decision.</label>
+                    <input
+                      type="radio"
+                      name="q65"
+                      value="0"
+                      id="q65a"
+                      required
+                    />
+                    <label htmlFor="q65a">
+                      Suggest they reverse the decision.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q65" value="0" id="q65b" required />
-                    <label htmlFor="q65b">Tell them it’s okay to feel that way.</label>
+                    <input
+                      type="radio"
+                      name="q65"
+                      value="0"
+                      id="q65b"
+                      required
+                    />
+                    <label htmlFor="q65b">
+                      Tell them it’s okay to feel that way.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q65" value="1" id="q65c" required />
-                    <label htmlFor="q65c">Ask, “What about this decision feels out of alignment with who you are?” </label>
+                    <input
+                      type="radio"
+                      name="q65"
+                      value="1"
+                      id="q65c"
+                      required
+                    />
+                    <label htmlFor="q65c">
+                      Ask, “What about this decision feels out of alignment with
+                      who you are?”{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q65" value="0" id="q65d" required />
-                    <label htmlFor="q65d">Explore whether the consequences are serious.</label>
+                    <input
+                      type="radio"
+                      name="q65"
+                      value="0"
+                      id="q65d"
+                      required
+                    />
+                    <label htmlFor="q65d">
+                      Explore whether the consequences are serious.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>6. During a session, the coach notices the client’s energy drops when discussing a new job opportunity. What should the coach do?</h2>
+                  <h2>
+                    6. During a session, the coach notices the client’s energy
+                    drops when discussing a new job opportunity. What should the
+                    coach do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q66" value="0" id="q66a" required />
-                    <label htmlFor="q66a">Encourage the client to stay positive.</label>
+                    <input
+                      type="radio"
+                      name="q66"
+                      value="0"
+                      id="q66a"
+                      required
+                    />
+                    <label htmlFor="q66a">
+                      Encourage the client to stay positive.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q66" value="1" id="q66b" required />
-                    <label htmlFor="q66b">Share the observation and ask what might be happening internally. </label>
+                    <input
+                      type="radio"
+                      name="q66"
+                      value="1"
+                      id="q66b"
+                      required
+                    />
+                    <label htmlFor="q66b">
+                      Share the observation and ask what might be happening
+                      internally.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q66" value="0" id="q66c" required />
+                    <input
+                      type="radio"
+                      name="q66"
+                      value="0"
+                      id="q66c"
+                      required
+                    />
                     <label htmlFor="q66c">Move on to action steps.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q66" value="0" id="q66d" required />
-                    <label htmlFor="q66d">Ask about salary and logistics.</label>
+                    <input
+                      type="radio"
+                      name="q66"
+                      value="0"
+                      id="q66d"
+                      required
+                    />
+                    <label htmlFor="q66d">
+                      Ask about salary and logistics.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>7. A coach senses the client is operating on assumptions. What is the best way to support awareness?</h2>
+                  <h2>
+                    7. A coach senses the client is operating on assumptions.
+                    What is the best way to support awareness?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q67" value="0" id="q67a" required />
-                    <label htmlFor="q67a">Challenge the assumption by providing a counter-example.</label>
+                    <input
+                      type="radio"
+                      name="q67"
+                      value="0"
+                      id="q67a"
+                      required
+                    />
+                    <label htmlFor="q67a">
+                      Challenge the assumption by providing a counter-example.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q67" value="1" id="q67b" required />
-                    <label htmlFor="q67b">Ask, “What if the opposite were true—how would that change things?” </label>
+                    <input
+                      type="radio"
+                      name="q67"
+                      value="1"
+                      id="q67b"
+                      required
+                    />
+                    <label htmlFor="q67b">
+                      Ask, “What if the opposite were true—how would that change
+                      things?”{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q67" value="0" id="q67c" required />
-                    <label htmlFor="q67c">Ask the client to stop assuming and look at facts.</label>
+                    <input
+                      type="radio"
+                      name="q67"
+                      value="0"
+                      id="q67c"
+                      required
+                    />
+                    <label htmlFor="q67c">
+                      Ask the client to stop assuming and look at facts.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q67" value="0" id="q67d" required />
-                    <label htmlFor="q67d">Avoid the topic to keep the session flowing.</label>
+                    <input
+                      type="radio"
+                      name="q67"
+                      value="0"
+                      id="q67d"
+                      required
+                    />
+                    <label htmlFor="q67d">
+                      Avoid the topic to keep the session flowing.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>8. A client says they’ve had a great week and feel proud. What is an effective way to enhance learning in this moment?</h2>
+                  <h2>
+                    8. A client says they’ve had a great week and feel proud.
+                    What is an effective way to enhance learning in this moment?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q68" value="0" id="q68a" required />
+                    <input
+                      type="radio"
+                      name="q68"
+                      value="0"
+                      id="q68a"
+                      required
+                    />
                     <label htmlFor="q68a">Congratulate them and move on.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q68" value="1" id="q68b" required />
-                    <label htmlFor="q68b">Ask, “What worked well for you, and how can you apply that again?” </label>
+                    <input
+                      type="radio"
+                      name="q68"
+                      value="1"
+                      id="q68b"
+                      required
+                    />
+                    <label htmlFor="q68b">
+                      Ask, “What worked well for you, and how can you apply that
+                      again?”{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q68" value="0" id="q68c" required />
-                    <label htmlFor="q68c">Remind them that consistency is important.</label>
+                    <input
+                      type="radio"
+                      name="q68"
+                      value="0"
+                      id="q68c"
+                      required
+                    />
+                    <label htmlFor="q68c">
+                      Remind them that consistency is important.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q68" value="0" id="q68d" required />
+                    <input
+                      type="radio"
+                      name="q68"
+                      value="0"
+                      id="q68d"
+                      required
+                    />
                     <label htmlFor="q68d">Shift the focus to new goals.</label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>9. A client is overwhelmed by too many ideas. What coach approach supports clarity and insight?</h2>
+                  <h2>
+                    9. A client is overwhelmed by too many ideas. What coach
+                    approach supports clarity and insight?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q69" value="0" id="q69a" required />
+                    <input
+                      type="radio"
+                      name="q69"
+                      value="0"
+                      id="q69a"
+                      required
+                    />
                     <label htmlFor="q69a">Prioritize the ideas for them.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q69" value="0" id="q69b" required />
+                    <input
+                      type="radio"
+                      name="q69"
+                      value="0"
+                      id="q69b"
+                      required
+                    />
                     <label htmlFor="q69b">Ask which idea they like best.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q69" value="1" id="q69c" required />
-                    <label htmlFor="q69c">Invite the client to group or theme the ideas to see patterns. </label>
+                    <input
+                      type="radio"
+                      name="q69"
+                      value="1"
+                      id="q69c"
+                      required
+                    />
+                    <label htmlFor="q69c">
+                      Invite the client to group or theme the ideas to see
+                      patterns.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q69" value="0" id="q69d" required />
-                    <label htmlFor="q69d">Tell them to focus on just one and ignore the rest.</label>
+                    <input
+                      type="radio"
+                      name="q69"
+                      value="0"
+                      id="q69d"
+                      required
+                    />
+                    <label htmlFor="q69d">
+                      Tell them to focus on just one and ignore the rest.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>10. The client appears stuck between two choices and asks, “What would you do if you were me?” What is the best response?</h2>
+                  <h2>
+                    10. The client appears stuck between two choices and asks,
+                    “What would you do if you were me?” What is the best
+                    response?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q70" value="0" id="q70a" required />
-                    <label htmlFor="q70a">Share your personal experience.</label>
+                    <input
+                      type="radio"
+                      name="q70"
+                      value="0"
+                      id="q70a"
+                      required
+                    />
+                    <label htmlFor="q70a">
+                      Share your personal experience.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q70" value="1" id="q70b" required />
-                    <label htmlFor="q70b">Invite the client to consider what each option represents to them. </label>
+                    <input
+                      type="radio"
+                      name="q70"
+                      value="1"
+                      id="q70b"
+                      required
+                    />
+                    <label htmlFor="q70b">
+                      Invite the client to consider what each option represents
+                      to them.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q70" value="0" id="q70c" required />
+                    <input
+                      type="radio"
+                      name="q70"
+                      value="0"
+                      id="q70c"
+                      required
+                    />
                     <label htmlFor="q70c">Suggest the safer option.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q70" value="0" id="q70d" required />
-                    <label htmlFor="q70d">Help them decide by listing risks and benefits.</label>
+                    <input
+                      type="radio"
+                      name="q70"
+                      value="0"
+                      id="q70d"
+                      required
+                    />
+                    <label htmlFor="q70d">
+                      Help them decide by listing risks and benefits.
+                    </label>
                   </div>
                 </div>
               </div>
@@ -3167,243 +4140,580 @@ export default function CoachKnowledgeAssessment() {
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>1. A client says, “I realize I always avoid difficult conversations.” What should the coach do to facilitate growth?</h2>
+                  <h2>
+                    1. A client says, “I realize I always avoid difficult
+                    conversations.” What should the coach do to facilitate
+                    growth?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q71" value="0" id="q71a" required />
-                    <label htmlFor="q71a">Suggest a book on assertive communication.</label>
+                    <input
+                      type="radio"
+                      name="q71"
+                      value="0"
+                      id="q71a"
+                      required
+                    />
+                    <label htmlFor="q71a">
+                      Suggest a book on assertive communication.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q71" value="1" id="q71b" required />
-                    <label htmlFor="q71b">Ask how this insight might influence future choices or behaviors. </label>
+                    <input
+                      type="radio"
+                      name="q71"
+                      value="1"
+                      id="q71b"
+                      required
+                    />
+                    <label htmlFor="q71b">
+                      Ask how this insight might influence future choices or
+                      behaviors.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q71" value="0" id="q71c" required />
-                    <label htmlFor="q71c">Congratulate the client and move on.</label>
+                    <input
+                      type="radio"
+                      name="q71"
+                      value="0"
+                      id="q71c"
+                      required
+                    />
+                    <label htmlFor="q71c">
+                      Congratulate the client and move on.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q71" value="0" id="q71d" required />
-                    <label htmlFor="q71d">Recommend a role-play exercise immediately.</label>
+                    <input
+                      type="radio"
+                      name="q71"
+                      value="0"
+                      id="q71d"
+                      required
+                    />
+                    <label htmlFor="q71d">
+                      Recommend a role-play exercise immediately.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>2. The client says, “I want to commit to better time boundaries next week.” What’s the most appropriate coach response?</h2>
+                  <h2>
+                    2. The client says, “I want to commit to better time
+                    boundaries next week.” What’s the most appropriate coach
+                    response?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q72" value="0" id="q72a" required />
-                    <label htmlFor="q72a">Set specific deadlines for them.</label>
+                    <input
+                      type="radio"
+                      name="q72"
+                      value="0"
+                      id="q72a"
+                      required
+                    />
+                    <label htmlFor="q72a">
+                      Set specific deadlines for them.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q72" value="1" id="q72b" required />
-                    <label htmlFor="q72b">Ask how they want to stay accountable and what success would look like. </label>
+                    <input
+                      type="radio"
+                      name="q72"
+                      value="1"
+                      id="q72b"
+                      required
+                    />
+                    <label htmlFor="q72b">
+                      Ask how they want to stay accountable and what success
+                      would look like.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q72" value="0" id="q72c" required />
-                    <label htmlFor="q72c">Encourage the client to just try and see how it goes.</label>
+                    <input
+                      type="radio"
+                      name="q72"
+                      value="0"
+                      id="q72c"
+                      required
+                    />
+                    <label htmlFor="q72c">
+                      Encourage the client to just try and see how it goes.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q72" value="0" id="q72d" required />
-                    <label htmlFor="q72d">Give them a time management tool to follow.</label>
+                    <input
+                      type="radio"
+                      name="q72"
+                      value="0"
+                      id="q72d"
+                      required
+                    />
+                    <label htmlFor="q72d">
+                      Give them a time management tool to follow.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>3. A client takes a bold step in line with their goals. How can the coach reinforce client growth?</h2>
+                  <h2>
+                    3. A client takes a bold step in line with their goals. How
+                    can the coach reinforce client growth?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q73" value="1" id="q73a" required />
-                    <label htmlFor="q73a">Celebrate the action and invite the client to reflect on what they learned. </label>
+                    <input
+                      type="radio"
+                      name="q73"
+                      value="1"
+                      id="q73a"
+                      required
+                    />
+                    <label htmlFor="q73a">
+                      Celebrate the action and invite the client to reflect on
+                      what they learned.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q73" value="0" id="q73b" required />
-                    <label htmlFor="q73b">Suggest a more structured plan next time.</label>
+                    <input
+                      type="radio"
+                      name="q73"
+                      value="0"
+                      id="q73b"
+                      required
+                    />
+                    <label htmlFor="q73b">
+                      Suggest a more structured plan next time.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q73" value="0" id="q73c" required />
+                    <input
+                      type="radio"
+                      name="q73"
+                      value="0"
+                      id="q73c"
+                      required
+                    />
                     <label htmlFor="q73c">Review the risk they took.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q73" value="0" id="q73d" required />
-                    <label htmlFor="q73d">Move quickly to the next action item.</label>
+                    <input
+                      type="radio"
+                      name="q73"
+                      value="0"
+                      id="q73d"
+                      required
+                    />
+                    <label htmlFor="q73d">
+                      Move quickly to the next action item.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>4. At the end of a coaching session, the client seems energized but the coach ends abruptly due to time. What could the coach do differently next time?</h2>
+                  <h2>
+                    4. At the end of a coaching session, the client seems
+                    energized but the coach ends abruptly due to time. What
+                    could the coach do differently next time?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q74" value="0" id="q74a" required />
+                    <input
+                      type="radio"
+                      name="q74"
+                      value="0"
+                      id="q74a"
+                      required
+                    />
                     <label htmlFor="q74a">Skip summaries to save time.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q74" value="1" id="q74b" required />
-                    <label htmlFor="q74b">Reserve time to partner with the client in closing and capturing learning. </label>
+                    <input
+                      type="radio"
+                      name="q74"
+                      value="1"
+                      id="q74b"
+                      required
+                    />
+                    <label htmlFor="q74b">
+                      Reserve time to partner with the client in closing and
+                      capturing learning.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q74" value="0" id="q74c" required />
-                    <label htmlFor="q74c">Leave it to the client to reflect after the session.</label>
+                    <input
+                      type="radio"
+                      name="q74"
+                      value="0"
+                      id="q74c"
+                      required
+                    />
+                    <label htmlFor="q74c">
+                      Leave it to the client to reflect after the session.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q74" value="0" id="q74d" required />
-                    <label htmlFor="q74d">End early and send a follow-up email instead.</label>
+                    <input
+                      type="radio"
+                      name="q74"
+                      value="0"
+                      id="q74d"
+                      required
+                    />
+                    <label htmlFor="q74d">
+                      End early and send a follow-up email instead.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>5. A client says, “I learned I’m most productive in the mornings.” What is the coach’s best next step?</h2>
+                  <h2>
+                    5. A client says, “I learned I’m most productive in the
+                    mornings.” What is the coach’s best next step?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q75" value="0" id="q75a" required />
+                    <input
+                      type="radio"
+                      name="q75"
+                      value="0"
+                      id="q75a"
+                      required
+                    />
                     <label htmlFor="q75a">Move on to a new topic.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q75" value="0" id="q75b" required />
-                    <label htmlFor="q75b">Suggest adding morning goals to their to-do list.</label>
+                    <input
+                      type="radio"
+                      name="q75"
+                      value="0"
+                      id="q75b"
+                      required
+                    />
+                    <label htmlFor="q75b">
+                      Suggest adding morning goals to their to-do list.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q75" value="1" id="q75c" required />
-                    <label htmlFor="q75c">Ask how they want to integrate this learning into their weekly routine. </label>
+                    <input
+                      type="radio"
+                      name="q75"
+                      value="1"
+                      id="q75c"
+                      required
+                    />
+                    <label htmlFor="q75c">
+                      Ask how they want to integrate this learning into their
+                      weekly routine.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q75" value="0" id="q75d" required />
-                    <label htmlFor="q75d">Offer morning productivity hacks.</label>
+                    <input
+                      type="radio"
+                      name="q75"
+                      value="0"
+                      id="q75d"
+                      required
+                    />
+                    <label htmlFor="q75d">
+                      Offer morning productivity hacks.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>6. A client has not followed through on a planned action. How should the coach respond?</h2>
+                  <h2>
+                    6. A client has not followed through on a planned action.
+                    How should the coach respond?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q76" value="1" id="q76a" required />
-                    <label htmlFor="q76a">Invite the client to explore what got in the way and what they learned. </label>
+                    <input
+                      type="radio"
+                      name="q76"
+                      value="1"
+                      id="q76a"
+                      required
+                    />
+                    <label htmlFor="q76a">
+                      Invite the client to explore what got in the way and what
+                      they learned.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q76" value="0" id="q76b" required />
-                    <label htmlFor="q76b">Express disappointment and set a new deadline.</label>
+                    <input
+                      type="radio"
+                      name="q76"
+                      value="0"
+                      id="q76b"
+                      required
+                    />
+                    <label htmlFor="q76b">
+                      Express disappointment and set a new deadline.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q76" value="0" id="q76c" required />
+                    <input
+                      type="radio"
+                      name="q76"
+                      value="0"
+                      id="q76c"
+                      required
+                    />
                     <label htmlFor="q76c">Move on without addressing it.</label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q76" value="0" id="q76d" required />
-                    <label htmlFor="q76d">Remind them of their original commitment.</label>
+                    <input
+                      type="radio"
+                      name="q76"
+                      value="0"
+                      id="q76d"
+                      required
+                    />
+                    <label htmlFor="q76d">
+                      Remind them of their original commitment.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>7. A client shares excitement about a small win. What’s the best coach response?</h2>
+                  <h2>
+                    7. A client shares excitement about a small win. What’s the
+                    best coach response?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q77" value="0" id="q77a" required />
-                    <label htmlFor="q77a">Say, “That’s great—let’s focus on the next step.”</label>
+                    <input
+                      type="radio"
+                      name="q77"
+                      value="0"
+                      id="q77a"
+                      required
+                    />
+                    <label htmlFor="q77a">
+                      Say, “That’s great—let’s focus on the next step.”
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q77" value="0" id="q77b" required />
-                    <label htmlFor="q77b">Log the success for future tracking.</label>
+                    <input
+                      type="radio"
+                      name="q77"
+                      value="0"
+                      id="q77b"
+                      required
+                    />
+                    <label htmlFor="q77b">
+                      Log the success for future tracking.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q77" value="0" id="q77c" required />
-                    <label htmlFor="q77c">Tell them this is expected progress.</label>
+                    <input
+                      type="radio"
+                      name="q77"
+                      value="0"
+                      id="q77c"
+                      required
+                    />
+                    <label htmlFor="q77c">
+                      Tell them this is expected progress.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q77" value="1" id="q77d" required />
-                    <label htmlFor="q77d">Celebrate the success and ask what contributed to it. </label>
+                    <input
+                      type="radio"
+                      name="q77"
+                      value="1"
+                      id="q77d"
+                      required
+                    />
+                    <label htmlFor="q77d">
+                      Celebrate the success and ask what contributed to it.{" "}
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>8. A client is unsure how to move forward after a big realization. What should the coach do?</h2>
+                  <h2>
+                    8. A client is unsure how to move forward after a big
+                    realization. What should the coach do?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q78" value="0" id="q78a" required />
-                    <label htmlFor="q78a">Offer a few potential next steps.</label>
+                    <input
+                      type="radio"
+                      name="q78"
+                      value="0"
+                      id="q78a"
+                      required
+                    />
+                    <label htmlFor="q78a">
+                      Offer a few potential next steps.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q78" value="1" id="q78b" required />
-                    <label htmlFor="q78b">Ask, “What’s one small step you could take to act on this insight?” </label>
+                    <input
+                      type="radio"
+                      name="q78"
+                      value="1"
+                      id="q78b"
+                      required
+                    />
+                    <label htmlFor="q78b">
+                      Ask, “What’s one small step you could take to act on this
+                      insight?”{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q78" value="0" id="q78c" required />
-                    <label htmlFor="q78c">Delay action planning until the next session.</label>
+                    <input
+                      type="radio"
+                      name="q78"
+                      value="0"
+                      id="q78c"
+                      required
+                    />
+                    <label htmlFor="q78c">
+                      Delay action planning until the next session.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q78" value="0" id="q78d" required />
-                    <label htmlFor="q78d">Tell the client to sleep on it.</label>
+                    <input
+                      type="radio"
+                      name="q78"
+                      value="0"
+                      id="q78d"
+                      required
+                    />
+                    <label htmlFor="q78d">
+                      Tell the client to sleep on it.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>9. A client finishes summarizing their key insight from the session. What is a good next step for the coach?</h2>
+                  <h2>
+                    9. A client finishes summarizing their key insight from the
+                    session. What is a good next step for the coach?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q79" value="1" id="q79a" required />
-                    <label htmlFor="q79a">Partner with the client to identify how they want to apply that learning. </label>
+                    <input
+                      type="radio"
+                      name="q79"
+                      value="1"
+                      id="q79a"
+                      required
+                    />
+                    <label htmlFor="q79a">
+                      Partner with the client to identify how they want to apply
+                      that learning.{" "}
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q79" value="0" id="q79b" required />
-                    <label htmlFor="q79b">Compliment their awareness and close the session.</label>
+                    <input
+                      type="radio"
+                      name="q79"
+                      value="0"
+                      id="q79b"
+                      required
+                    />
+                    <label htmlFor="q79b">
+                      Compliment their awareness and close the session.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q79" value="0" id="q79c" required />
-                    <label htmlFor="q79c">Offer homework to reinforce the learning.</label>
+                    <input
+                      type="radio"
+                      name="q79"
+                      value="0"
+                      id="q79c"
+                      required
+                    />
+                    <label htmlFor="q79c">
+                      Offer homework to reinforce the learning.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q79" value="0" id="q79d" required />
-                    <label htmlFor="q79d">Write the summary down for them.</label>
+                    <input
+                      type="radio"
+                      name="q79"
+                      value="0"
+                      id="q79d"
+                      required
+                    />
+                    <label htmlFor="q79d">
+                      Write the summary down for them.
+                    </label>
                   </div>
                 </div>
               </div>
 
-
               <div className="col-sm-12">
                 <div className="fcol1 newassesment">
-                  <h2>10. A client is exploring how to manage competing priorities. How can the coach support forward momentum?</h2>
+                  <h2>
+                    10. A client is exploring how to manage competing
+                    priorities. How can the coach support forward momentum?
+                  </h2>
                   <div className="fcolmain">
-                    <input type="radio" name="q80" value="0" id="q80a" required />
-                    <label htmlFor="q80a">Create a step-by-step plan for them.</label>
+                    <input
+                      type="radio"
+                      name="q80"
+                      value="0"
+                      id="q80a"
+                      required
+                    />
+                    <label htmlFor="q80a">
+                      Create a step-by-step plan for them.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q80" value="0" id="q80b" required />
-                    <label htmlFor="q80b">Tell them to focus on their top three tasks.</label>
+                    <input
+                      type="radio"
+                      name="q80"
+                      value="0"
+                      id="q80b"
+                      required
+                    />
+                    <label htmlFor="q80b">
+                      Tell them to focus on their top three tasks.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q80" value="0" id="q80c" required />
-                    <label htmlFor="q80c">Ask what they’ve already tried.</label>
+                    <input
+                      type="radio"
+                      name="q80"
+                      value="0"
+                      id="q80c"
+                      required
+                    />
+                    <label htmlFor="q80c">
+                      Ask what they’ve already tried.
+                    </label>
                   </div>
                   <div className="fcolmain">
-                    <input type="radio" name="q80" value="1" id="q80d" required />
-                    <label htmlFor="q80d">Invite the client to consider resources, support, and potential obstacles. </label>
+                    <input
+                      type="radio"
+                      name="q80"
+                      value="1"
+                      id="q80d"
+                      required
+                    />
+                    <label htmlFor="q80d">
+                      Invite the client to consider resources, support, and
+                      potential obstacles.{" "}
+                    </label>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
 
             <div className="fcol1 lastinp ptt-20">
               <div className="row inpuut">
@@ -3471,7 +4781,7 @@ export default function CoachKnowledgeAssessment() {
             </div>
           </form>
         </div>
-          {/* Spinner Overlay */}
+        {/* Spinner Overlay */}
         {isLoading && (
           <div
             style={{
