@@ -4833,6 +4833,37 @@ text-align: center;
   color: black;
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+.thankyouRightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+.thankyouRightSide img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.thankyouRightSide p {
+  font-size: 18px;
+}
+
+.socialIcons img {
+  width: 50px;
+  height: 50px;
+  
+}
+
+
 @media (max-width:768px){
   .join55 {
     background: url(/assets/img/banner/img99.png);
@@ -4861,6 +4892,10 @@ text-align: center;
   position: relative;
   left: 234px;
   top: 39px;
+}
+
+.resh {
+  text-align: center;
 }
 
 	
