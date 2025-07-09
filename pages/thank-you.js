@@ -47,7 +47,7 @@ export default function ThankYou() {
                     className="socialIcons"
                     style={{
                       display: "flex",
-                      gap: "10px",
+                      gap: "20px",
                       justifyContent: "center",
                       alignItems: "center",
                       textAlign: "center",
