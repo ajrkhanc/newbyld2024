@@ -1,0 +1,600 @@
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right {
+  flex: 2;
+}
+
+.tab {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #fff;
+  color: #444;
+}
+
+.tab.active {
+  background: linear-gradient(to right, #01c7e4, #ff2bd2);
+  color: white;
+  border-color: transparent;
+}
+
+.questionCard {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.questionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: #eee;
+  padding: 9px;
+  background: rgba(243, 243, 243, 0.82);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 0px 80px;
+  padding-left: 45px;
+}
+
+.option {
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.tabWrapper {
+  display: inline-block;
+}
+
+.fancyTopBorder {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  /* margin-bottom: 1rem; */
+  outline: none;
+  overflow: visible;
+  /* padding: 2.25em 2em; */
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+  z-index: 0;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #eee 0%, #eeee 73%) border-box;
+  width: 100%;
+}
+
+.serialNumberText {
+  background: linear-gradient(to right, #2871b0 0%, #ee802a 73%) border-box;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 11px;
+}
+
+/* .option.selected {
+  border-color: #01c7e4;
+  background: #e7f9fc;
+} */
+
+.option.selected {
+  border: 2px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #2871b0 0%, #ee802a 73%) border-box;
+}
+
+.option.selected:hover {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #ee802a 0%, #2871b0 100%) border-box;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.scrollContainer {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.left {
+  flex: 1;
+  position: sticky;
+  top: 1rem; /* stick from 1rem below top */
+  align-self: flex-start;
+  /* max-height: calc(100vh - 2rem); */
+  overflow-y: auto;
+  width: 100%;
+}
+
+.right {
+  flex: 2;
+  height: 700px; /* You can adjust this */
+  overflow-y: auto;
+  padding-right: 10px;
+  /* padding-bottom: 10px; */
+  /* padding-top: 10px; */
+  scroll-behavior: smooth;
+  /* border-left: 2px solid #eee; */
+}
+
+.right::-webkit-scrollbar {
+  width: 6px;
+}
+.right::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.fancy {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  /* margin-bottom: 1rem; */
+  outline: none;
+  overflow: visible;
+  /* padding: 2.25em 2em; */
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+  z-index: 0;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #eee 0%, #eeee 73%) border-box;
+  width: 100%;
+}
+
+/* .bottomKey3 {
+  height: 4px;
+  width: 9rem;
+  left: 3rem;
+  bottom: -4px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+} */
+
+/* TOP short key (like bottomKey2) */
+/* .bottomKey4 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+} */
+
+.text {
+  font-size: 1.2em;
+  line-height: 1.53333em;
+  padding-left: 2em;
+  z-index: 9;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.topKey {
+  height: 4px;
+  width: 7rem;
+  top: -4px;
+  right: 3rem;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.topKey1 {
+  height: 4px;
+  width: 13rem;
+  top: -4px;
+  right: 14rem;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.bottomKey1 {
+  height: 4px;
+  width: 9rem;
+  left: 3rem;
+  bottom: -4px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.bottomKey2 {
+  height: 2px;
+  /* width: 0.625rem; */
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+/* Hover Effect */
+/* .fancy:hover {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #ee802a 0%, #2871b0 100%) border-box;
+} */
+/* .fancy:hover .topKey {
+  width: 9rem;
+  right: 2rem;
+} */
+/* .fancy:hover .bottomKey1 {
+  width: 7rem;
+  left: 2rem;
+} */
+/* .fancy:hover .bottomKey2 {
+  width: 1.25rem;
+  right: 1.25rem;
+} */
+
+/* Active Tab (optional highlight) */
+/* .active {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #2871b0 0%, #ee802a 73%) border-box;
+} */
+.fancyTopBorder.active,
+.fancy.active {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, #2871b0 0%, #ee802a 73%) border-box;
+}
+
+.buttonNav {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  min-width: 110px;
+  transition: all 0.3s ease;
+}
+
+.buttonPrev {
+  background-color: #6c757d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonNext {
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonDisabled {
+  background-color: #ccc !important;
+  color: #666 !important;
+  cursor: not-allowed !important;
+}
+
+.arrowText {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.arrowTextPrev {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+/* dynemic page css */
+
+.assesmentpartHeading {
+  text-align: center;
+  background: linear-gradient(to right, #6ec1e4, #1c75bc);
+  padding: 6rem 0;
+}
+
+.titles {
+  font-size: 45px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 1.2px;
+}
+
+.btnnewc {
+  background: #2b70b3;
+  color: #fff !important;
+  border-radius: 9px;
+  padding: 5px 33px;
+  font-size: 18px;
+  font-family: "HelveticaNeueLT Pro 57 Cn" !important;
+  border: 2px solid #2b70b3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cardItem {
+  background: linear-gradient(135deg, #fbe8ff, #e0f7ff);
+  /* background:  linear-gradient(to right, #2871b0 0%, #ee802a 73%); */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.cardNum {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: #999;
+}
+
+.cardBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scoreCircle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: orange;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  width: 30px;
+  height: 20px;
+  font-size: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreText {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #333;
+}
+
+.titles {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.btnnewc {
+  background-color: #2871b0;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.downBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardStyle {
+  background: linear-gradient(135deg, #fbe8ff, #e0f7ff);
+  border-radius: 16px;
+  padding: 16px 20px;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.scenarioTitle {
+  line-height: 20px;
+}
+
+.cardHeader {
+  display: flex;
+      justify-content: space-between;
+      align-items: start;
+      font-size: 22px;
+      font-weight: 500;
+      color: #444;
+  
+}
+
+.cardNum {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.scoreBox {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 1rem;
+}
+
+.innerCircleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: 500;
+  color: #2871b0;
+}
+
+/* .triangle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-33%, -50%) rotate(90deg);
+  background: #F27D0C;
+  -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  width: 68px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+} */
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-55%, -50%) rotate(90deg);
+  /* background: #F27D0C; */
+ 
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); */
+  
+}
+
+.triangleOne {
+  
+  font-size:500px;
+  color:#F27D0C ;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  position: relative;
+ 
+  
+
+}
+
+
+
+.trianglePercent {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  transform: translate(3%, 6%) rotate(-90deg);
+  position: absolute;
+  
+
+}
+
+.cardScore {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1a1a5e;
+}
+
+@media screen and (max-width: 575px) {
+  .downBtn {
+    justify-content: center;
+  }
+}

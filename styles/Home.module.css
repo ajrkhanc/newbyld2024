@@ -114,3 +114,30 @@
     flex-direction: column;
   }
 }
+
+.button-nav {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  min-width: 110px;
+  transition: all 0.3s ease;
+}
+
+.button-prev {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button-next {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-nav:disabled,
+.button-nav[disabled] {
+  background-color: #ccc !important;
+  color: #666 !important;
+  cursor: not-allowed !important;
+}
