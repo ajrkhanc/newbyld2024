@@ -59,7 +59,7 @@
   padding-left: 45px;
 }
 
-.option {
+/* .option {
   border: 2px solid #ccc;
   border-radius: 30px;
   padding: 10px 15px;
@@ -68,6 +68,19 @@
   transition: all 0.2s ease-in-out;
   display: flex;
   align-items: center;
+} */
+
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
 }
 
 .tabWrapper {
@@ -127,8 +140,39 @@
     linear-gradient(to right, #ee802a 0%, #2871b0 100%) border-box;
 }
 
-.option input[type="radio"] {
+/* .option input[type="radio"] {
   margin-right: 10px;
+} */
+
+.option input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  margin-right: 12px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.option input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.option input[type="radio"]:checked::before {
+  background: linear-gradient(45deg, #2871b0, #ee802a);
 }
 
 .scrollContainer {
@@ -485,12 +529,11 @@
 
 .cardHeader {
   display: flex;
-      justify-content: space-between;
-      align-items: start;
-      font-size: 22px;
-      font-weight: 500;
-      color: #444;
-  
+  justify-content: space-between;
+  align-items: start;
+  font-size: 22px;
+  font-weight: 500;
+  color: #444;
 }
 
 .cardNum {
@@ -549,7 +592,7 @@
   left: 0;
   transform: translate(-55%, -50%) rotate(90deg);
   /* background: #F27D0C; */
- 
+
   width: 80%;
   height: 100%;
   display: flex;
@@ -560,21 +603,14 @@
   font-weight: 600;
   text-align: center;
   /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); */
-  
 }
 
 .triangleOne {
-  
-  font-size:500px;
-  color:#F27D0C ;
+  font-size: 500px;
+  color: #f27d0c;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   position: relative;
- 
-  
-
 }
-
-
 
 .trianglePercent {
   /* display: flex;
@@ -583,8 +619,6 @@
   text-align: center; */
   transform: translate(3%, 6%) rotate(-90deg);
   position: absolute;
-  
-
 }
 
 .cardScore {
