@@ -262,7 +262,7 @@ export default function Result({ result }) {
                               position: "relative",
                               width: "160px",
                               height: "160px",
-                              left: "-75px",
+                              
                             }}
                           >
                             <ResponsiveContainer width="100%" height="100%">
@@ -284,7 +284,7 @@ export default function Result({ result }) {
                               style={{
                                 position: "absolute",
                                 top: "50%",
-                                left: "100%",
+                                left: "50%",
                                 transform: "translate(-50%, -50%)",
                                 fontSize: "22px",
                                 fontWeight: "bold",
