@@ -438,7 +438,7 @@ const CoachingKnowledgeAssessment = () => {
         </Form>
       </Modal>
 
-      <ToastContainer position="top-right" autoClose={4000} />
+      <ToastContainer position="top-right" autoClose={2000} />
     </div>
   );
 };
