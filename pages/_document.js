@@ -1,8 +1,8 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const originalRenderPage = ctx.renderPage;
+    const originalRenderPage = ctx.renderPage
 
     // Run the React rendering logic synchronously
     ctx.renderPage = () =>
@@ -11,12 +11,12 @@ class MyDocument extends Document {
         enhanceApp: (App) => App,
         // Useful for wrapping in a per-page basis
         enhanceComponent: (Component) => Component,
-      });
+      })
 
     // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-    const initialProps = await Document.getInitialProps(ctx);
+    const initialProps = await Document.getInitialProps(ctx)
 
-    return initialProps;
+    return initialProps
   }
 
   render() {
@@ -39,11 +39,7 @@ class MyDocument extends Document {
 
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <link
-            rel="preload"
-            href="https://byldgroup.com/favicon.png"
-            as="image"
-          />
+          <link rel="icon" href="/favicon.ico" as="image" />
           <meta
             name="google-site-verification"
             content="OM6hSC8XO4ylFInFKwcHaWp5gFMt0Nn6aQ6A-eV7SWc"
@@ -94,4 +90,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default MyDocument

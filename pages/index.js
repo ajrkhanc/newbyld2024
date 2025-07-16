@@ -214,11 +214,7 @@ export default function Home() {
           Performance & Growth
         </title>
         <link rel="canonical" href="https://byldgroup.com" />
-        <link
-          rel="preload"
-          href="https://byldgroup.com/favicon.png"
-          as="image"
-        />
+        <link rel="icon" href="/favicon.ico" as="image" />
         <meta
           name="description"
           content="Discover BYLD’s Corporate HR Solutions tailored to enhance leadership, communication, and team performance. Explore our expert corporate solutions designed to align people strategies with business growth."
