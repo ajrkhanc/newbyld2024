@@ -209,8 +209,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Corporate HR Solutions | BYLD Group – Expert Corporate Solutions for Performance & Growth</title>
+        <title>
+          Corporate HR Solutions | BYLD Group – Expert Corporate Solutions for
+          Performance & Growth
+        </title>
         <link rel="canonical" href="https://byldgroup.com" />
+        <link
+          rel="preload"
+          href="https://byldgroup.com/favicon.png"
+          as="image"
+        />
         <meta
           name="description"
           content="Discover BYLD’s Corporate HR Solutions tailored to enhance leadership, communication, and team performance. Explore our expert corporate solutions designed to align people strategies with business growth."
@@ -227,41 +235,176 @@ export default function Home() {
         <noscript>
           <link rel="stylesheet" href="/assets/css/homemodule.css" />
         </noscript>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learningw_QCXfDVFAYK.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performance_NO5FCroQBk.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performancew_jx1F-H4ux5.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/assessments_mTorLOz_F.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/assessmentsw_NcN1Urbw-v.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bespoke_15L20XFTtC.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bespokew_S0ZixVfkUD.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_CjnDHFJCd.png" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldteam_cTSpTwFFTc.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1_0ZtYzLNsy.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2_cMGKuHV8D.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4_VozZqoqC-.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3_hHuQrAHkVf.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSize_nrjDmkPAo.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2JmH1qYAt.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__77iP6J_78.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_cHQ2SZAcX.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/cpsmollImg_znOWn6AFz.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSizeOne_CVFteJy72W.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2_-sjKtlxC9j.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__3_vS7JA0Wzk.webp" as="image"/>
-        <link rel="preload" href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_4_D7qDCA28k.webp" as="image"/>
-
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learning_q260h2aTw.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/experiential-learningw_QCXfDVFAYK.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performance_NO5FCroQBk.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/leadership-performancew_jx1F-H4ux5.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/assessments_mTorLOz_F.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/assessmentsw_NcN1Urbw-v.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/bespoke_15L20XFTtC.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/bespokew_S0ZixVfkUD.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/coaching_1jP006fOBl.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/coachingw_68ZkCHybAM.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-search_tvTyJN41jb.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/staffing-searchw_CjnDHFJCd.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/av_F1t3RP1apA.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/ratting_eGQ1-rqTv.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/quote__zGVpNdMC.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/handb_A20SaYtbVo.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldteam_cTSpTwFFTc.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/contactl_jbAHOfbU3.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1_0ZtYzLNsy.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2_cMGKuHV8D.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4_VozZqoqC-.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3_hHuQrAHkVf.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSize_nrjDmkPAo.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2JmH1qYAt.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__77iP6J_78.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_cHQ2SZAcX.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/cpsmollImg_znOWn6AFz.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho1smollSizeOne_CVFteJy72W.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2_-sjKtlxC9j.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho3smollSize__3_vS7JA0Wzk.webp"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://ik.imagekit.io/byld/BYLD/byldallasests/byldho4smaollimg_4_D7qDCA28k.webp"
+          as="image"
+        />
 
         {/* Load jQuery only when needed */}
         <script async src="https://code.jquery.com/jquery-1.8.2.js"></script>
@@ -396,9 +539,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <div class="sub-text supperh ">
-                What can we offer?
-              </div>
+              <div class="sub-text supperh ">What can we offer?</div>
               <h2 class="title mb-0 md-pb-20 h2call ">
                 Nurturing your full potential and abilities with our curated
                 solutions
@@ -438,10 +579,8 @@ export default function Home() {
                     src="https://www.youtube.com/embed/LXd9OtxQQQA?si=fLtvIRyKpbvr6dCE"
                     title="YouTube video player"
                     loading="lazy"
-                
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
-                   
                   ></iframe>
                 </div>
                 {/* <div class="animate-border">
@@ -497,8 +636,6 @@ export default function Home() {
                           alt="images"
                           loading="lazy"
                         />
-
-
                       </div>
                     </div>
                   </a>
@@ -874,9 +1011,7 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 text-center pbb-30">
-              <h2 class="title mb-0 md-pb-20 h2call ">
-                Join the BYLD Family
-              </h2>
+              <h2 class="title mb-0 md-pb-20 h2call ">Join the BYLD Family</h2>
             </div>
           </div>
         </div>
@@ -887,10 +1022,16 @@ export default function Home() {
         />
         <div className="clearfix"></div>
         <div className="solutionarrowbox1">
-          <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp" loading="lazy" />
+          <img
+            src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp"
+            loading="lazy"
+          />
         </div>
         <div className="solutionarrowbox2">
-          <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp" loading="lazy" />
+          <img
+            src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp"
+            loading="lazy"
+          />
         </div>
       </section>
 
