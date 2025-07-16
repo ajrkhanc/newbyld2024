@@ -5,10 +5,10 @@ import { FaPhoneVolume } from "react-icons/fa6";
 function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
 
   return (
-    <Modal isOpen={isOpen} OpenViewCalender={OpenViewCalender} >
+    <Modal isOpen={isOpen} OpenViewCalender={OpenViewCalender}>
       <ModalHeader toggle={OpenViewCalender}>
         <div className="canvas-logo  text-center workshopPdfLogo">
-          <a href="/">
+          <a href="/" >
             <img src="/assets/img/byld-logo.svg" alt="logo" />
           </a>
         </div>
@@ -20,60 +20,84 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
           </h3>
         </div>
         <div className=" p-4 table-responsive">
-          <Table  bordered className="event-table">
+          <Table bordered className="event-table">
             <thead>
               <tr className="bg-primary">
-                <th colspan="4" className="text-center  text-white">
-                  February / 2025
+                <th colSpan="4" className="text-center  text-white">
+                  Jul-25
                 </th>
               </tr>
             </thead>
             <tbody>
-             
               <tr>
-                <td>Everything Disc Workshop Certification® </td>
-                <td> 24th & 27th </td>
-                <td>Virtual</td>
+                <td>The SLII Experience™ </td>
+                <td> 29th - 30th </td>
+                <td>Gurgaon</td>
               </tr>
-              
+
+              <tr>
+                <td>The SLII Experience™ TTT </td>
+                <td> 31th - 1st </td>
+                <td>Gurgaon</td>
+              </tr>
               <tr>
                 <td>Crucial Conversation for Mastering Dialogue </td>
-                <td> 20th-21st </td>
-                <td>Bengaluru</td>
-              </tr>
-              <tr>
-                <td>Crucial Conversation for Mastering Dialogue </td>
-                <td> 28th Feb- 1st March </td>
-                <td>Mumbai</td>
+                <td> 28th - 29th </td>
+                <td>Bangalore</td>
               </tr>
             </tbody>
             <thead>
               <tr className="bg-primary">
-                <th colspan="4" className="text-center  text-white">
-                  March / 2025
+                <th colSpan="4" className="text-center  text-white">
+                  Aug-25
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Crucial Conversations® For Mastering Dialogue </td>
-                <td> 6th - 7th </td>
+                <td>Getting Things Done </td>
+                <td> 29th, August, 2025 </td>
                 <td>Virtual</td>
-              </tr>
-              <tr>
-                <td>Crucial Conversations® For Mastering Dialogue TTT </td>
-                <td>  10th </td>
-                <td>Gurgaon</td>
               </tr>
               <tr>
                 <td>The SLII Experience™ </td>
-                <td> 18th - 19th </td>
+                <td> 20th - 21st Aug</td>
+                <td>Bangalore</td>
+              </tr>
+              <tr>
+                <td>The SLII Experience™ TTT </td>
+                <td> 22nd - 23rd Aug, 2025 </td>
+                <td>Bangalore</td>
+              </tr>
+              <tr>
+                <td>Crucial Conversations for Mastering Dialogue </td>
+                <td> 28th - 29th Aug, 2025 </td>
+                <td>Gurgaon</td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr className="bg-primary">
+                <th colSpan="4" className="text-center  text-white">
+                  Sep-25
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The SLII Experience™ </td>
+                <td> 23rd - 24th </td>
                 <td>Gurgaon</td>
               </tr>
               <tr>
-                <td>The SLII Experience™ T4T F2F </td>
-                <td> 20th - 21st </td>
-                <td>Virtual</td>
+                <td>The SLII Experience™ TTT </td>
+                <td> 25th - 26th</td>
+                <td>Gurgaon</td>
+              </tr>
+
+              <tr>
+                <td>Crucial Conversations for Mastering Dialogue </td>
+                <td> 25th - 26th </td>
+                <td>Mumbai</td>
               </tr>
             </tbody>
           </Table>
