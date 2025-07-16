@@ -8,16 +8,14 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
     <Modal isOpen={isOpen} OpenViewCalender={OpenViewCalender}>
       <ModalHeader toggle={OpenViewCalender}>
         <div className="canvas-logo  text-center workshopPdfLogo">
-          <a href="/" >
+          <a href="/">
             <img src="/assets/img/byld-logo.svg" alt="logo" />
           </a>
         </div>
       </ModalHeader>
       <ModalBody className="p-0 pb-5">
         <div className=" p-3  modalHeadingPdf">
-          <h3 className="text-white  mb-0">
-            BYLD Group Open Programs 2025
-          </h3>
+          <h3 className="text-white  mb-0">BYLD Group Open Programs 2025</h3>
         </div>
         <div className=" p-4 table-responsive">
           <Table bordered className="event-table">
@@ -30,6 +28,11 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
             </thead>
             <tbody>
               <tr>
+                <td>Crucial Conversation for Mastering Dialogue </td>
+                <td> 28th - 29th </td>
+                <td>Bangalore</td>
+              </tr>
+              <tr>
                 <td>The SLII Experience™ </td>
                 <td> 29th - 30th </td>
                 <td>Gurgaon</td>
@@ -40,11 +43,6 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
                 <td> 31th - 1st </td>
                 <td>Gurgaon</td>
               </tr>
-              <tr>
-                <td>Crucial Conversation for Mastering Dialogue </td>
-                <td> 28th - 29th </td>
-                <td>Bangalore</td>
-              </tr>
             </tbody>
             <thead>
               <tr className="bg-primary">
@@ -54,11 +52,6 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Getting Things Done </td>
-                <td> 29th, August, 2025 </td>
-                <td>Virtual</td>
-              </tr>
               <tr>
                 <td>The SLII Experience™ </td>
                 <td> 20th - 21st Aug</td>
@@ -73,6 +66,11 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
                 <td>Crucial Conversations for Mastering Dialogue </td>
                 <td> 28th - 29th Aug, 2025 </td>
                 <td>Gurgaon</td>
+              </tr>
+              <tr>
+                <td>Getting Things Done </td>
+                <td> 29th, August, 2025 </td>
+                <td>Virtual</td>
               </tr>
             </tbody>
             <thead>
