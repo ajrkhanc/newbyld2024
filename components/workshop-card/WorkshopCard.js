@@ -113,8 +113,8 @@ function WorkshopCard() {
     const dateB = new Date(b.dateRangeOne || b.dateRangeTwo);
 
     // Prioritize September dates first
-    if (dateA.getMonth() === 8 && dateB.getMonth() !== 8) return -1; // September is month 8 in JS Date
-    if (dateA.getMonth() !== 8 && dateB.getMonth() === 8) return 1;
+    if (dateA.getMonth() === 7 && dateB.getMonth() !== 7) return -1; // September is month 8 in JS Date
+    if (dateA.getMonth() !== 7 && dateB.getMonth() === 7) return 1;
 
     // Otherwise, sort by date
     return dateA - dateB;
@@ -269,7 +269,11 @@ function WorkshopCard() {
 
                   <p className="mt-3 fs-18">
                     {workshop.description}{" "}
-                    <a href={workshop.pageUrl} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={workshop.pageUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {" "}
                       Know More
                     </a>{" "}
