@@ -4480,7 +4480,7 @@ module.exports = {
           "https://blanchardinternational.co.in/podcast/2023-The-Year-in-Review-with-Ken-Blanchard-and-Chad-Gordon/",
         permanent: true,
       },
-    
+
       {
         source:
           "/blanchardindia/podcast/bestofSeries-FearlessLeadershipwithCareyLohrenz",
@@ -4498,6 +4498,11 @@ module.exports = {
         source: "/blanchardindia/podcast/love-work-With-Marcus-Buckingham",
         destination:
           "https://blanchardinternational.co.in/podcast/love+work-With-Marcus-Buckingham/",
+        permanent: true,
+      },
+      {
+        source: "/blanchardindia/lp/blanchard-generic-landing-page",
+        destination: "https://blanchardinternational.co.in",
         permanent: true,
       },
     ];
