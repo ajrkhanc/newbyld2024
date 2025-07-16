@@ -1,8 +1,8 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const originalRenderPage = ctx.renderPage
+    const originalRenderPage = ctx.renderPage;
 
     // Run the React rendering logic synchronously
     ctx.renderPage = () =>
@@ -11,19 +11,18 @@ class MyDocument extends Document {
         enhanceApp: (App) => App,
         // Useful for wrapping in a per-page basis
         enhanceComponent: (Component) => Component,
-      })
+      });
 
     // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-    const initialProps = await Document.getInitialProps(ctx)
+    const initialProps = await Document.getInitialProps(ctx);
 
-    return initialProps
+    return initialProps;
   }
 
   render() {
     return (
       <Html>
         <Head>
-
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -37,11 +36,18 @@ class MyDocument extends Document {
           `,
             }}
           />
-          
+
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-           <link rel="preload" href="/favicon.png" as="image" />
-          <meta name="google-site-verification" content="OM6hSC8XO4ylFInFKwcHaWp5gFMt0Nn6aQ6A-eV7SWc" />
+          <link
+            rel="preload"
+            href="https://byldgroup.com/favicon.png"
+            as="image"
+          />
+          <meta
+            name="google-site-verification"
+            content="OM6hSC8XO4ylFInFKwcHaWp5gFMt0Nn6aQ6A-eV7SWc"
+          />
         </Head>
         <body>
           <Main />
@@ -52,9 +58,15 @@ class MyDocument extends Document {
           <script src="/assets/js/main.js" defer></script>
           <script src="/classets/js/script.js" defer></script>
           <script src="/kbassets/js/meanmenu.js" defer></script>
-          <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js" defer></script>
+          <script
+            src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"
+            defer
+          ></script>
 
-       <script async src="https://www.googletagmanager.com/gtag/js?id=G-R93RP8FMVC"></script>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-R93RP8FMVC"
+          ></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -67,14 +79,19 @@ class MyDocument extends Document {
             }}
           />
 
-           {/* Start of HubSpot Embed Code */}
-           <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/48649180.js"></script>
-{/* End of HubSpot Embed Code  */}
-
-  </body>
+          {/* Start of HubSpot Embed Code */}
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js.hs-scripts.com/48649180.js"
+          ></script>
+          {/* End of HubSpot Embed Code  */}
+        </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
