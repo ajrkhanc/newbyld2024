@@ -16,7 +16,7 @@ function WorkShopCalenderList({ isOpen, OpenViewCalender }) {
       <ModalBody className="p-0 pb-5">
         <div className=" p-3  modalHeadingPdf">
           <h3 className="text-white  mb-0">
-            BYLD Group Open Programs 2024-2025
+            BYLD Group Open Programs 2025
           </h3>
         </div>
         <div className=" p-4 table-responsive">
