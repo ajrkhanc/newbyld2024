@@ -321,10 +321,10 @@ const CoachingKnowledgeAssessment = () => {
 
   return (
     <div>
-      <section className="pbb-40">
+      <section className="pbb-20 ptt-20">
         <div className="container">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12" style={{ textAlign: "right" }}>
               <img
                 src="/assets/images/bcaLogo.webp"
                 alt="bcaLogo"
