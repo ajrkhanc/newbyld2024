@@ -125,6 +125,19 @@ const CoachingKnowledgeAssessment = () => {
 
   return (
     <div>
+       <section className=" ptt-20">
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-12" style={{ textAlign: "right" }}>
+                    <img
+                      src="/assets/images/bcaLogo.webp"
+                      alt="bcaLogo"
+                      className={styles.bcaLogo}
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
       <section className="assesmentbannnerbg">
         <div className="container">
           <div className="row align-items-center">
