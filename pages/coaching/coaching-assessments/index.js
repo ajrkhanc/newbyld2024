@@ -42,7 +42,7 @@ const CoachingAssessmentsPage = () => {
         <div className="container">
           <div className="row zindx">
             <div className="col-sm-6">
-              <div className="eventsbox">
+              <div className="eventsbox" style={{ display: "flex", gap: "20px", marginBottom: "20px", alignItems: "center" }}>
                 <div className="eventmiddle">
                   <img
                     src="/assets/img/banner/inside-out-coaching-lp.jpg"
