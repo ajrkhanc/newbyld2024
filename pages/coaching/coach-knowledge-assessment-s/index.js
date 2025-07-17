@@ -328,8 +328,8 @@ const CoachingKnowledgeAssessment = () => {
               <Image
                 src="/assets/images/bcaLogo.webp"
                 alt="bcaLogo"
-                width={100}
-                height={100}
+               
+                className={styles.bcaLogo}
               />
             </div>
           </div>
