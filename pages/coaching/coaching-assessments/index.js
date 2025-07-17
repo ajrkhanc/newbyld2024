@@ -41,7 +41,7 @@ const CoachingAssessmentsPage = () => {
       <section className="ptt-60 pbb-60 positionrelative">
         <div className="container">
           <div className="row zindx">
-            <div className="col-sm-4">
+            <div className="col-sm-6">
               <div className="eventsbox">
                 <div className="eventmiddle">
                   <img
