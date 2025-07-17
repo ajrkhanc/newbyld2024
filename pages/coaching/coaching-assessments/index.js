@@ -45,8 +45,8 @@ const CoachingAssessmentsPage = () => {
               <div className="eventsbox">
                 <div className="eventmiddle">
                   <img
-                    src="https://ik.imagekit.io/byld/BYLD/byldallasests/events_GMK6eGd8I.webp"
-                    alt=""
+                    src="/assets/img/banner/inside-out-coaching-lp.jpg"
+                    alt="image"
                   />
                   {/* <span>Webinar 18th March 2024</span> */}
                 </div>
@@ -61,7 +61,7 @@ const CoachingAssessmentsPage = () => {
                     To receive your personalized assessment report with
                     actionable insights, please proceed with the payment.
                   </p>
-                  <button className="eventbtn btn" type="submit">
+                  <button className="eventbtn " type="submit">
                     Reserve Your Seat
                   </button>
                 </div>
