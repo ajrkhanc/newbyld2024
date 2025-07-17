@@ -36,6 +36,14 @@ const CoachingKnowledgeAssessment = () => {
   const currentIndex = scenarios.findIndex((s) => s.id === activeTab);
   const [isLoading, setIsLoading] = useState(false);
 
+  // ✅ Block unauthorized access
+  useEffect(() => {
+    const hasPaid = localStorage.getItem("paymentSuccess");
+    if (hasPaid !== "true") {
+      router.replace("/coaching/coaching-assessments");
+    }
+  }, []);
+
   useEffect(() => {
     if (questionListRef.current) {
       questionListRef.current.scrollTo({ top: 0, behavior: "smooth" });
@@ -251,6 +259,7 @@ const CoachingKnowledgeAssessment = () => {
         setActiveTab(1);
         setShowModal(false);
         setTimeout(() => {
+          localStorage.removeItem("paymentSuccess"); // ✅ clear flag after assessment
           window.location.href = `/coaching/coach-knowledge-assessment-s/${newnameurl}`;
           setIsLoading(false);
         }, 2500);
