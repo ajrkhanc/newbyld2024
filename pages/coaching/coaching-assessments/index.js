@@ -55,7 +55,7 @@ const CoachingAssessmentsPage = () => {
                     The Coach Knowledge Assessment is a structured evaluation
                     designed to measure your understanding and application of
                     core coaching competencies, aligned with international
-                    coaching standards. Access Your Detailed Report
+                    coaching standards.
                   </p>
                   <p>
                     To receive your personalized assessment report with
