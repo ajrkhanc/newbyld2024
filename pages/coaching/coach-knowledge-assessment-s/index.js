@@ -326,14 +326,12 @@ const CoachingKnowledgeAssessment = () => {
           <div className="row">
             <div className="col-md-12">
               <Image
-                width={150}
-                height={150}
+                width={50}
+                height={50}
                 src="/assets/images/bcaLogo.webp"
                 alt="bcaLogo"
-               
                 className={styles.bcaLogo}
                 layout="responsive"
-                
               />
             </div>
           </div>
