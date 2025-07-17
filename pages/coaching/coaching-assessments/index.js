@@ -1,10 +1,19 @@
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
-
+  
 const CoachingAssessmentsPage = () => {
   return (
     <>
+      <Head>
+        <title>Coaching Assessments </title>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="/assets/css/homemodule.css"
+        />
+        ;
+      </Head>
       <div className="rs-breadcrumbs webinarsbg">
         <div className="container">
           <div className="breadcrumb-container theme1">
