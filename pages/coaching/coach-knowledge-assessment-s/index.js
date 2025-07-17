@@ -8,7 +8,7 @@ import styles from "../../../styles/coachKnowledge.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { useRouter } from "next/router";
-import Image from "next/image";
+
 
 // ✅ Reactstrap Components
 import {
