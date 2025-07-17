@@ -9,7 +9,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import { useRouter } from "next/router";
 
-
 // ✅ Reactstrap Components
 import {
   Modal,
@@ -37,13 +36,19 @@ const CoachingKnowledgeAssessment = () => {
   const activeScenario = scenarios.find((s) => s.id === activeTab);
   const currentIndex = scenarios.findIndex((s) => s.id === activeTab);
   const [isLoading, setIsLoading] = useState(false);
+  // ✅ NEW: Guard check state variables
+  const [isAuthorized, setIsAuthorized] = useState(false);
+  const [checkingAccess, setCheckingAccess] = useState(true);
 
-  // ✅ Block unauthorized access
+  // ✅ NEW: Protect the page from unauthorized direct access
   useEffect(() => {
     const hasPaid = localStorage.getItem("paymentSuccess");
-    if (hasPaid !== "true") {
-      router.replace("/coaching/coaching-assessments");
+    if (hasPaid === "true") {
+      setIsAuthorized(true); // allow rendering
+    } else {
+      router.replace("/coaching/coaching-assessments"); // redirect if not paid
     }
+    setCheckingAccess(false);
   }, []);
 
   useEffect(() => {
@@ -280,6 +285,10 @@ const CoachingKnowledgeAssessment = () => {
       }, 2000);
     }
   };
+
+  // ✅ Don't render assessment unless access is checked and authorized
+  if (checkingAccess) return null;
+  if (!isAuthorized) return null;
 
   // const handleFormSubmit = async (e) => {
   //   e.preventDefault();
