@@ -62,7 +62,7 @@ const CoachingAssessmentsPage = () => {
                     To receive your personalized assessment report with
                     actionable insights, please proceed with the payment.
                   </p>
-                  <button className="eventbtn " type="submit">
+                  <button className={styles.eventbtn} type="submit">
                     Make Payment & Access Report
                   </button>
                 </div>
