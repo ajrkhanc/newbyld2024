@@ -37,6 +37,31 @@ const CoachingAssessmentsPage = () => {
           </div>
         </div>
       </div>
+
+      <section className="ptt-60 pbb-60 positionrelative">
+        <div className="container">
+          <div className="row zindx">
+            <div className="col-sm-4">
+              <div className="eventsbox">
+                <div className="eventmiddle">
+                  <img
+                    src="https://ik.imagekit.io/byld/BYLD/byldallasests/events_GMK6eGd8I.webp"
+                    alt=""
+                  />
+                  <span>Webinar 18th March 2024</span>
+                </div>
+                <div className="eventbottom">
+                  <h4 className="eventtitlec">Time: 4:00 PM - 5:00 PM</h4>
+                  <h3>Getting Things Done®</h3>
+                  <a className="eventbtn" href="#Register">
+                    Reserve Your Seat
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
