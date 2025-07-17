@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Link from "next/link";
 
-const CoachingAssessments = () => {
+const CoachingAssessmentsPage = () => {
   return (
     <>
       <div className="rs-breadcrumbs webinarsbg">
@@ -35,4 +35,4 @@ const CoachingAssessments = () => {
   );
 };
 
-export default CoachingAssessments;
+export default CoachingAssessmentsPage;
