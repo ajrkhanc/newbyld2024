@@ -4,6 +4,10 @@ import Link from "next/link";
 import styles from "../../../styles/coachKnowledge.module.css"; // Adjust the path as necessary
 
 const CoachingAssessmentsPage = () => {
+
+  const MakePayment = () => {
+    // Logic to handle payment processing
+  };
   return (
     <>
       <Head>
@@ -75,7 +79,7 @@ const CoachingAssessmentsPage = () => {
                     To receive your personalized assessment report with
                     actionable insights, please proceed with the payment.
                   </p>
-                  <button className={styles.eventbtn} type="submit">
+                  <button className={styles.eventbtn} type="submit" onClick={MakePayment}>
                     Make Payment & Access Report
                   </button>
                 </div>

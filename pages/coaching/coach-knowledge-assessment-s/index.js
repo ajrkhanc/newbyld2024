@@ -175,101 +175,6 @@ const CoachingKnowledgeAssessment = () => {
   //   }
   // };
 
-  // const handleFormSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setIsLoading(true);
-
-  //   const form = e.target;
-  //   const submitBtn = document.getElementById("submitbuttonform");
-  //   submitBtn.disabled = true;
-  //   submitBtn.value = "Submitting...";
-
-  //   const formData = new FormData(form);
-  //   const name = formData.get("name");
-  //   const phone = formData.get("phone");
-  //   const email = formData.get("email");
-  //   const organization = formData.get("organization") || "Null";
-  //   const newnameurl = generateSlug(name, phone);
-
-  //   const answers = {};
-  //   let qCounter = 1;
-
-  //   scenarios.forEach((scenario) => {
-  //     const scenarioAnswers = selectedAnswersPerScenario[scenario.id] || {};
-  //     Object.entries(scenarioAnswers).forEach(([qIndex, optIndex]) => {
-  //       const questionIndex = parseInt(qIndex);
-  //       const question = scenario.questions[questionIndex];
-  //       const selectedOption = question.options[optIndex];
-  //       answers[`q${qCounter}`] = selectedOption?.value?.toString() || "0";
-  //       qCounter++;
-  //     });
-  //   });
-
-  //   while (qCounter <= 80) {
-  //     answers[`q${qCounter}`] = "0";
-  //     qCounter++;
-  //   }
-
-  //   answers.name = name;
-  //   answers.phone = phone;
-  //   answers.email = email;
-  //   answers.organization = organization;
-  //   answers.newnameurl = newnameurl;
-
-  //   try {
-  //     const response = await fetch(
-  //       "https://byldblogs.vercel.app/api/coach-knowledge-assessment",
-  //       {
-  //         method: "POST",
-  //         headers: { "Content-Type": "application/json" },
-  //         body: JSON.stringify(answers),
-  //       }
-  //     );
-
-  //     const data = await response.json();
-
-  //     if (data.status === 0 || data.status === "success") {
-  //       // Submit to CF7
-  //       const cf7FormData = new FormData();
-  //       cf7FormData.append("name", name);
-  //       cf7FormData.append("email", email);
-  //       cf7FormData.append("phone", phone);
-
-  //       await fetch(
-  //         "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/526/feedback",
-  //         {
-  //           method: "POST",
-  //           body: cf7FormData,
-  //         }
-  //       );
-
-  //       // ✅ Show toast instead of DOM text
-  //       toast.success(data.message || "Submitted Successfully!");
-
-  //       form.reset();
-  //       setSelectedAnswersPerScenario({});
-  //       setActiveTab(1);
-  //       setShowModal(false);
-  //       setTimeout(() => {
-  //         window.location.href = `/coaching/coach-knowledge-assessment-s/${newnameurl}`;
-  //         setIsLoading(false);
-  //       }, 2500);
-  //     } else {
-  //       toast.error("Email is already registered.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Submission Error:", error);
-  //     toast.error("Submission failed. Please try again.");
-  //   } finally {
-  //     submitBtn.disabled = false;
-  //     submitBtn.value = "Submit";
-
-  //     setTimeout(() => {
-  //       setIsLoading(false);
-  //     }, 2000);
-  //   }
-  // };
-
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -277,7 +182,7 @@ const CoachingKnowledgeAssessment = () => {
     const form = e.target;
     const submitBtn = document.getElementById("submitbuttonform");
     submitBtn.disabled = true;
-    submitBtn.value = "Redirecting to Payment...";
+    submitBtn.value = "Submitting...";
 
     const formData = new FormData(form);
     const name = formData.get("name");
@@ -305,19 +210,114 @@ const CoachingKnowledgeAssessment = () => {
       qCounter++;
     }
 
-    // Add personal info
     answers.name = name;
     answers.phone = phone;
     answers.email = email;
     answers.organization = organization;
     answers.newnameurl = newnameurl;
 
-    // ✅ Store in localStorage temporarily
-    localStorage.setItem("coachAssessmentData", JSON.stringify(answers));
+    try {
+      const response = await fetch(
+        "https://byldblogs.vercel.app/api/coach-knowledge-assessment",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(answers),
+        }
+      );
 
-    // ✅ Redirect to Razorpay Payment Link
-    window.location.href = "https://pages.razorpay.com/pl_QqxfjgqkJSlEPY/view";
+      const data = await response.json();
+
+      if (data.status === 0 || data.status === "success") {
+        // Submit to CF7
+        const cf7FormData = new FormData();
+        cf7FormData.append("name", name);
+        cf7FormData.append("email", email);
+        cf7FormData.append("phone", phone);
+
+        await fetch(
+          "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/526/feedback",
+          {
+            method: "POST",
+            body: cf7FormData,
+          }
+        );
+
+        // ✅ Show toast instead of DOM text
+        toast.success(data.message || "Submitted Successfully!");
+
+        form.reset();
+        setSelectedAnswersPerScenario({});
+        setActiveTab(1);
+        setShowModal(false);
+        setTimeout(() => {
+          window.location.href = `/coaching/coach-knowledge-assessment-s/${newnameurl}`;
+          setIsLoading(false);
+        }, 2500);
+      } else {
+        toast.error("Email is already registered.");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error("Submission failed. Please try again.");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.value = "Submit";
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+    }
   };
+
+  // const handleFormSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsLoading(true);
+
+  //   const form = e.target;
+  //   const submitBtn = document.getElementById("submitbuttonform");
+  //   submitBtn.disabled = true;
+  //   submitBtn.value = "Redirecting to Payment...";
+
+  //   const formData = new FormData(form);
+  //   const name = formData.get("name");
+  //   const phone = formData.get("phone");
+  //   const email = formData.get("email");
+  //   const organization = formData.get("organization") || "Null";
+  //   const newnameurl = generateSlug(name, phone);
+
+  //   const answers = {};
+  //   let qCounter = 1;
+
+  //   scenarios.forEach((scenario) => {
+  //     const scenarioAnswers = selectedAnswersPerScenario[scenario.id] || {};
+  //     Object.entries(scenarioAnswers).forEach(([qIndex, optIndex]) => {
+  //       const questionIndex = parseInt(qIndex);
+  //       const question = scenario.questions[questionIndex];
+  //       const selectedOption = question.options[optIndex];
+  //       answers[`q${qCounter}`] = selectedOption?.value?.toString() || "0";
+  //       qCounter++;
+  //     });
+  //   });
+
+  //   while (qCounter <= 80) {
+  //     answers[`q${qCounter}`] = "0";
+  //     qCounter++;
+  //   }
+
+  //   // Add personal info
+  //   answers.name = name;
+  //   answers.phone = phone;
+  //   answers.email = email;
+  //   answers.organization = organization;
+  //   answers.newnameurl = newnameurl;
+
+  //   // ✅ Store in localStorage temporarily
+  //   localStorage.setItem("coachAssessmentData", JSON.stringify(answers));
+
+  //   // ✅ Redirect to Razorpay Payment Link
+  //   window.location.href = "https://pages.razorpay.com/pl_QqxfjgqkJSlEPY/view";
+  // };
 
   return (
     <div>
