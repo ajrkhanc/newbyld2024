@@ -325,9 +325,7 @@ const CoachingKnowledgeAssessment = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <Image
-                width={50}
-                height={50}
+              <img
                 src="/assets/images/bcaLogo.webp"
                 alt="bcaLogo"
                 className={styles.bcaLogo}
