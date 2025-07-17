@@ -48,14 +48,22 @@ const CoachingAssessmentsPage = () => {
                     src="https://ik.imagekit.io/byld/BYLD/byldallasests/events_GMK6eGd8I.webp"
                     alt=""
                   />
-                  <span>Webinar 18th March 2024</span>
+                  {/* <span>Webinar 18th March 2024</span> */}
                 </div>
                 <div className="eventbottom">
-                  <h4 className="eventtitlec">Time: 4:00 PM - 5:00 PM</h4>
-                  <h3>Getting Things Done®</h3>
-                  <a className="eventbtn" href="#Register">
+                  <p className="eventtitlec">
+                    The Coach Knowledge Assessment is a structured evaluation
+                    designed to measure your understanding and application of
+                    core coaching competencies, aligned with international
+                    coaching standards. Access Your Detailed Report
+                  </p>
+                  <p>
+                    To receive your personalized assessment report with
+                    actionable insights, please proceed with the payment.
+                  </p>
+                  <button className="eventbtn" type="submit">
                     Reserve Your Seat
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
