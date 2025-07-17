@@ -63,7 +63,7 @@ const CoachingAssessmentsPage = () => {
                     actionable insights, please proceed with the payment.
                   </p>
                   <button className="eventbtn " type="submit">
-                    Reserve Your Seat
+                    Make Payment & Access Report
                   </button>
                 </div>
               </div>
