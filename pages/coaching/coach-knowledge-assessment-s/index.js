@@ -7,6 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import styles from "../../../styles/coachKnowledge.module.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import Image from "next/image";
 
 // ✅ Reactstrap Components
 import {
@@ -320,6 +321,20 @@ const CoachingKnowledgeAssessment = () => {
 
   return (
     <div>
+      <section className="pbb-40">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <Image
+                src="/assets/images/bcaLogo.webp"
+                alt="bcaLogo"
+                width={100}
+                height={100}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="assesmentbannnerbg">
         <div className="container">
           <div className="row align-items-center">
