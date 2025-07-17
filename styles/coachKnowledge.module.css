@@ -9,8 +9,8 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.eventbtn{
-  background-color: #4CAF50;
+.eventbtn {
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -660,5 +660,11 @@
 @media screen and (max-width: 575px) {
   .downBtn {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .eventsbox {
+    flex-direction: column;
   }
 }
