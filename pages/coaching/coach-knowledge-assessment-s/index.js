@@ -321,7 +321,7 @@ const CoachingKnowledgeAssessment = () => {
 
   return (
     <div>
-      <section className="pbb-20 ptt-20">
+      <section className=" ptt-20">
         <div className="container">
           <div className="row">
             <div className="col-md-12" style={{ textAlign: "right" }}>
