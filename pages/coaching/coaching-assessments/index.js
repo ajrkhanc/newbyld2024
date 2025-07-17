@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
+import styles from "../../../styles/coachKnowledge.module.css"; // Adjust the path as necessary
 
 const CoachingAssessmentsPage = () => {
   return (
@@ -41,8 +42,8 @@ const CoachingAssessmentsPage = () => {
       <section className="ptt-60 pbb-60 positionrelative">
         <div className="container">
           <div className="row zindx">
-            <div className="col-sm-6">
-              <div className="eventsbox" style={{ display: "flex", gap: "20px", marginBottom: "20px", alignItems: "center" }}>
+            <div className="col-sm-12">
+              <div className={styles.eventsbox}>
                 <div className="eventmiddle">
                   <img
                     src="/assets/img/banner/inside-out-coaching-lp.jpg"
