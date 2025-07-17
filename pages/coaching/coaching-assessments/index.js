@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Link from "next/link";
-  
+
 const CoachingAssessmentsPage = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const CoachingAssessmentsPage = () => {
       </Head>
       <div className="rs-breadcrumbs webinarsbg">
         <div className="container">
-          <div className="breadcrumb-container theme1">
+          {/* <div className="breadcrumb-container theme1">
             <ul>
               <li>
                 <Link href="/">Home</Link>
@@ -26,15 +26,12 @@ const CoachingAssessmentsPage = () => {
                 <Link href="/webinars-and-program-experience">Webinars</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="row">
             <div className="col-sm-8">
               <div className="breadcrumbs-inner">
-                <h1 className="page-title">
-                  Register For Your Complimentary <br />
-                  Virtual Events
-                </h1>
+                <h1 className="page-title">Coach Knowledge Assessment</h1>
               </div>
             </div>
           </div>
