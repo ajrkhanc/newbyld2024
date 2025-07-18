@@ -90,7 +90,7 @@ export default function Ebook() {
                     To download the e-book, kindly fill in the details.
                   </h3>
                 </div>
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-6 col-sm-12">
                   <input
                     type="text"
                     name="name"
@@ -99,7 +99,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-6 col-sm-12">
                   <input
                     type="email"
                     name="email"
@@ -108,7 +108,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-6 col-sm-12">
                   <input
                     type="text"
                     name="phone"
@@ -119,7 +119,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-6 col-6">
+                <div class="col-md-6 col-6 col-sm-12">
                   <input
                     type="text"
                     name="organization"
