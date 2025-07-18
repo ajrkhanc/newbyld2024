@@ -49,7 +49,7 @@ export default function Ebook() {
     <>
       <Head>
         <title>
-          Leader's Guide to Team Productivity - Crucial Life-Changing Skills
+          Leader&#39;s Guide to Team Productivity - Crucial Life-Changing Skills
         </title>
         <link
           rel="canonical"
@@ -60,10 +60,10 @@ export default function Ebook() {
           content="Leader's Guide to Team Productivity"
         />
       </Head>
-      <section class="about-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 left-about-area ptt-70 pbb-70 text-center">
+      <section className="about-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 left-about-area ptt-70 pbb-70 text-center">
               <h1>COSTLY CONVERSATIONS</h1>
 
               <p className="colorb">STOP US IF THIS SOUNDS FAMILIAR . . .</p>
@@ -83,14 +83,14 @@ export default function Ebook() {
       <section className="ptt-40" id="registered">
         <div className="container">
           <div className="row workshop-form">
-            <div class="col-md-12 form-area ptt-10">
-              <form id="contactForm" class="row formb" onSubmit={EbookForm}>
-                <div class="col-lg-12 contact-title">
+            <div className="col-md-12 form-area ptt-10">
+              <form id="contactForm" className="row formb" onSubmit={EbookForm}>
+                <div className="col-lg-12 contact-title">
                   <h3 className="formh3 ptt-5">
                     To download the e-book, kindly fill in the details.
                   </h3>
                 </div>
-                <div class="col-md-6 col-6 col-sm-12">
+                <div className="col-md-12 col-lg-6 col-sm-12">
                   <input
                     type="text"
                     name="name"
@@ -99,7 +99,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-6 col-6 col-sm-12">
+                <div className="col-md-12 col-lg-6 col-sm-12">
                   <input
                     type="email"
                     name="email"
@@ -108,7 +108,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-6 col-6 col-sm-12">
+                <div className="col-md-12 col-lg-6 col-sm-12">
                   <input
                     type="text"
                     name="phone"
@@ -119,7 +119,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-6 col-6 col-sm-12">
+                <div className="col-md-12 col-lg-6 col-sm-12">
                   <input
                     type="text"
                     name="organization"
@@ -127,7 +127,7 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div className="col-sm-12 mb-12 d-none">
+                <div className="col-md-12 col-lg-6 col-sm-12 mb-12 d-none">
                   <input
                     type="checkbox"
                     name="ebookname"
@@ -135,10 +135,10 @@ export default function Ebook() {
                   />
                 </div>
 
-                <div class="col-md-12">
+                <div className="col-md-12">
                   <input
                     id="submitbuttonform"
-                    class="formbtn"
+                    className="formbtn"
                     type="submit"
                     value="Submit"
                     style={{ width: "100%" }}
