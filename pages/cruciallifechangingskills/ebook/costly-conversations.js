@@ -141,6 +141,7 @@ export default function Ebook() {
                     class="formbtn"
                     type="submit"
                     value="Submit"
+                    style={{ width: "100%" }}
                   />
                 </div>
                 <p id="showlabel" style={{ display: "none" }}></p>
