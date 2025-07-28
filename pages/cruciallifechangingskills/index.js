@@ -783,7 +783,8 @@ export default function Home() {
               <div className="ffffb">
                 {/* <h1>Learn Life-Transforming Skills</h1> */}
                 <h1>
-                  Master Crucial Conversations <br/> with Proven Leadership Courses
+                  Master Crucial Conversations <br /> with Proven Leadership
+                  Courses
                 </h1>
                 <p>
                   Enrol in our award-winning trainings and learn how to handle
@@ -953,7 +954,10 @@ export default function Home() {
                     course content. <br></br>See what’s new in Getting Things
                     Done.
                   </p>
-                  <a className="regularbtn" href="#">
+                  <a
+                    className="regularbtn"
+                    href="https://byldgroup.com/cruciallifechangingskills/getting-things-done"
+                  >
                     Learn More
                   </a>
                 </div>
@@ -1049,7 +1053,10 @@ export default function Home() {
                     course content. <br></br>See what’s new in Getting Things
                     Done <sup>®</sup>.
                   </p>
-                  <a className="regularbtn" href="#">
+                  <a
+                    className="regularbtn"
+                    href="https://byldgroup.com/cruciallifechangingskills/getting-things-done"
+                  >
                     Learn More
                   </a>
                 </div>
@@ -1100,7 +1107,10 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-12 text-center">
               <h2 className="font50 cwhite pabb-50">START YOUR JOURNEY</h2>
-              <a className="regularbtnwhite" href="#">
+              <a
+                className="regularbtnwhite"
+                href="https://byldgroup.com/cruciallifechangingskills/browse-courses"
+              >
                 Browse Courses
               </a>
             </div>
