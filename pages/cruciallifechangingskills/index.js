@@ -783,7 +783,7 @@ export default function Home() {
               <div className="ffffb">
                 {/* <h1>Learn Life-Transforming Skills</h1> */}
                 <h1>
-                  Master Crucial Conversations with Proven Leadership Courses
+                  Master Crucial Conversations <br/> with Proven Leadership Courses
                 </h1>
                 <p>
                   Enrol in our award-winning trainings and learn how to handle
