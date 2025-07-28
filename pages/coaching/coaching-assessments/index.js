@@ -116,7 +116,7 @@ const CoachingAssessmentsPage = () => {
         />
       </Head>
 
-      <div className="rs-breadcrumbs webinarsbg">
+      <div className="rs-breadcrumbs coachingbg1">
         <div className="container">
           <div className="row">
             <div className="col-sm-8">
