@@ -148,10 +148,7 @@ const CoachingAssessmentsPage = () => {
             <div className="col-sm-12">
               <div className={styles.eventsbox}>
                 <div className="eventmiddle">
-                  <img
-                    src="/assets/img/banner/inside-out-coaching-lp.jpg"
-                    alt="image"
-                  />
+                  <img src="/assets/img/coachPic.webp " alt="image" />
                 </div>
                 <div className="eventbottom">
                   <p className="eventtitlec">
