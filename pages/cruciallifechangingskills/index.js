@@ -92,21 +92,21 @@ export default function Home() {
   const HomeForm = async (event) => {
     event.preventDefault();
     document.getElementById("submitbuttonform").textContent = "Submitting...";
-  
+
     const form = event.currentTarget; // Ensures correct form reference
     const formData = new FormData(form);
-  
+
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function () {
       console.log(this.responseText);
     };
-  
+
     xhttp.open(
       "POST",
       "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/519/feedback"
     );
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  
+
     xhttp.onreadystatechange = function () {
       if (xhttp.readyState === 4) {
         if (xhttp.status === 200) {
@@ -122,17 +122,15 @@ export default function Home() {
         }
       }
     };
-  
+
     // Encode form data for submission
     const encodedData = new URLSearchParams();
     formData.forEach((value, key) => {
       encodedData.append(key, value);
     });
-  
+
     xhttp.send(encodedData.toString());
   };
-  
-  
 
   const ccmd2 = async (event) => {
     const coursename = "Crucial Conversations for Mastering Dialogue";
@@ -347,7 +345,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Crucial Learning Courses, Certification & Training | Crucial Conversations</title>
+        <title>
+          Crucial Learning Courses, Certification & Training | Crucial
+          Conversations
+        </title>
         <meta name="robots" content="INDEX, FOLLOW" />
         <meta
           name="description"
@@ -780,7 +781,10 @@ export default function Home() {
               </div>
 
               <div className="ffffb">
-                <h1>Learn Life-Transforming Skills</h1>
+                {/* <h1>Learn Life-Transforming Skills</h1> */}
+                <h1>
+                  Master Crucial Conversations with Proven Leadership Courses
+                </h1>
                 <p>
                   Enrol in our award-winning trainings and learn how to handle
                   the most<br></br>crucial challenges of life and work.
