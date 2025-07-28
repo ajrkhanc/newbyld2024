@@ -102,7 +102,8 @@ import styles from "../../../styles/coachKnowledge.module.css"; // Adjust the pa
 const CoachingAssessmentsPage = () => {
   const MakePayment = () => {
     // ✅ Redirect to Razorpay hosted payment page
-    window.location.href = "https://pages.razorpay.com/pl_QqxfjgqkJSlEPY/view";
+    // window.location.href = "https://pages.razorpay.com/pl_QqxfjgqkJSlEPY/view";
+    window.location.href = "https://pages.razorpay.com/pl_QyRLRyGcMDjxLL/view";
   };
 
   return (
