@@ -131,7 +131,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                   loading="lazy"
                 />
                 <p>
-                  Crucial Conversations<sub>®</sub> <span className="subTitle">for Mastering Dialogue</span>
+                  Crucial Conversations<sub className="tredMark">®</sub> <span className="subTitle">for Mastering Dialogue</span>
                 </p>
               </div>
               <h1>The Standard in Effective Communication</h1>
