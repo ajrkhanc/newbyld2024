@@ -422,16 +422,20 @@ export default function CrucialConversationsforMasteringDialogue() {
           <div class="row">
             <div class="col-md-6 ">
               <img
-                className="imgmauto img70"
-                src="/classets/img/choose-path-1.webp"
+                className="imgmauto img100"
+                src="/classets/img/c3D-Book-Cover-CC1-3rd-Ed.png"
                 alt="image14"
                 loading="lazy"
               />
             </div>
             <div class="col-md-6 newsletter-btn mtt-20">
-              <a href="/cruciallifechangingskills/contact-us" class="start">
-                Start a Conversation
-              </a>
+              <h2>BASED ON THE BESTSELLER</h2>
+
+              <p>
+                Get your copy of the New York Times bestseller and business
+                classic that has revolutionized interpersonal success for
+                millions of people worldwide.
+              </p>
             </div>
           </div>
         </div>
