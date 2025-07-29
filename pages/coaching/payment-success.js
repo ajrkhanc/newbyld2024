@@ -125,20 +125,69 @@
 
 // export default PaymentSuccessPage;
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
+// import { useRouter } from "next/router";
+
+// const PaymentSuccessPage = () => {
+//   const router = useRouter();
+
+//   useEffect(() => {
+//     // ✅ Directly set payment flag since we can't get query params
+//     localStorage.setItem("paymentSuccess", "true");
+//   }, []);
+
+//   const handleStartAssessment = () => {
+//     router.push("/coaching/coach-knowledge-assessment-s");
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
+//       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+//       <p>Thank you for your payment.</p>
+//       <p>You can now begin your Coach Knowledge Assessment.</p>
+
+//       <button
+//         onClick={handleStartAssessment}
+//         style={{
+//           marginTop: "20px",
+//           padding: "12px 24px",
+//           backgroundColor: "#007bff",
+//           color: "white",
+//           border: "none",
+//           fontSize: "16px",
+//           borderRadius: "5px",
+//           cursor: "pointer",
+//         }}
+//       >
+//         Start Assessment
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default PaymentSuccessPage;
+
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const PaymentSuccessPage = () => {
   const router = useRouter();
+  const [authorized, setAuthorized] = useState(false);
 
   useEffect(() => {
-    // ✅ Directly set payment flag since we can't get query params
-    localStorage.setItem("paymentSuccess", "true");
-  }, []);
+    const hasPaid = localStorage.getItem("paymentSuccess");
+    if (hasPaid === "true") {
+      setAuthorized(true);
+    } else {
+      router.replace("/coaching/coaching-assessments"); // redirect if not paid
+    }
+  }, [router]);
 
   const handleStartAssessment = () => {
     router.push("/coaching/coach-knowledge-assessment-s");
   };
+
+  if (!authorized) return null; // don't render anything until checked
 
   return (
     <div style={{ textAlign: "center", padding: "80px 20px" }}>
