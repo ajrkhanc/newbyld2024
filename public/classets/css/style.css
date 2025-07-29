@@ -9854,11 +9854,12 @@ Menu overlay
 .clLogoBox p{
 
   font-size: 5rem;
-    font-family: Flama Condensed Basic;
+    font-family: HelveticaNeueLT Pro 57 Cn;
     text-align: left;
     padding-left: 28px;
     letter-spacing: -.01rem;
     white-space: nowrap;
+    
 }
 
 .clLogoBox .subTitle{
