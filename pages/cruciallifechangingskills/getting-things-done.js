@@ -124,15 +124,15 @@ export default function Gettingthingsdone() {
           <div class="container">
             <div class="row">
               <div class="col-lg-12 contact-title">
-                <img src="/classets/img/gtd.svg" />
+                {/* <img src="/classets/img/gtd.svg" /> */}
                 <div className="clLogoBox">
                   <img
-                    src="/classets/img/icon-ThePowerofHabit.svg"
+                    src="/classets/img/icon-GTD.svg"
                     alt="image1"
                     loading="lazy"
                   />
                   <p>
-                    The Power of Habit<sup className="tredMark">®</sup>
+                    Getting Things Done<sub className="tredMark">®</sub>
                     {/* <span className="subTitle">for Mastering Dialogue</span> */}
                   </p>
                 </div>
