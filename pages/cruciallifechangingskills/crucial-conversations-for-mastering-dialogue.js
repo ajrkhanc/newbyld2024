@@ -417,7 +417,7 @@ export default function CrucialConversationsforMasteringDialogue() {
           </div>
         </div>
       </section>
-      <section className="features courses-features">
+      {/* <section className="features courses-features">
         <div class="container">
           <div class="row">
             <div class="col-md-6 ">
@@ -439,7 +439,7 @@ export default function CrucialConversationsforMasteringDialogue() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="why-us">
         <div class="container">
