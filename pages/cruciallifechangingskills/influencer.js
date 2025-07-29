@@ -136,12 +136,12 @@ export default function Influencer() {
                     alt="image1"
                     loading="lazy"
                   />
-                  <p>
+                  <h1>
                     Crucial Influence<sup className="tredMark">®</sup>
                     {/* <span className="subTitle">for Mastering Dialogue</span> */}
-                  </p>
+                  </h1>
                 </div>
-                <h1>The New Science of Leadership</h1>
+                <h2>The New Science of Leadership</h2>
                 <p>
                   Backed by 50 years of research in social science, Influencer
                   takes a route on corporate perks and charismatic personalities
@@ -279,9 +279,9 @@ export default function Influencer() {
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-12 learn-title text-center">
-                <h1>
+                <h2>
                   LEARN AND MASTER THE SKILLS OF THE WORLD’S GREATEST LEADERS
-                </h1>
+                </h2>
                 <p>
                   Any emerging leader — a first-time manager without formal
                   authority, an emerging leader, or a senior leader — can
@@ -462,7 +462,7 @@ export default function Influencer() {
           <div class="container">
             <div class="row">
               <div class="col-lg-6 left-about-area preview-course">
-                <h1>PREVIEW THE COURSE</h1>
+              <h2>PREVIEW THE COURSE</h2>
                 <p>
                   Watch the video to learn more about course skills, learning
                   formats, and delivery options. The Power of Habit is an

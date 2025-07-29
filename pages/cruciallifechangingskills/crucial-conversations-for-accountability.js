@@ -129,14 +129,14 @@ export default function crucialconversationsforaccountability() {
                     alt="image1"
                     loading="lazy"
                   />
-                  <p>
+                  <h1>
                     Crucial Conversations
                     <sub className="tredMark">®</sub>{" "}
                     <span className="subTitle">For Accountability</span>
-                  </p>
+                  </h1>
                 </div>
 
-                <h1>Performance Management Improved</h1>
+                <h2>Performance Management Improved</h2>
                 <p>
                   When it comes to creating healthy relationships between people
                   and organizations, accountability becomes critical. If people
@@ -181,7 +181,7 @@ export default function crucialconversationsforaccountability() {
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-12 learn-title text-center">
-                <h1>Here is what you will learn</h1>
+                <h2>Here is what you will learn</h2>
                 <p>
                   Explore and learn the nine powerful skills that result in easy
                   and simple problem solving along with strengthening trust, and
@@ -392,7 +392,7 @@ export default function crucialconversationsforaccountability() {
           <div class="container">
             <div class="row">
               <div class="col-lg-6 left-about-area preview-course">
-                <h1>PREVIEW THE COURSE</h1>
+                <h2>PREVIEW THE COURSE</h2>
                 <p>
                   Watch the video to learn more about course skills, learning
                   formats, and delivery options. Unlock the soft skills for

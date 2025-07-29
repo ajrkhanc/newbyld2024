@@ -9842,42 +9842,35 @@ Menu overlay
   gap: 20px;
   text-align: center;
   align-items: center;
-  margin-top: 60px ;
+  margin-top: 60px;
 }
 
 .clLogoBox img {
   max-width: 90px;
   max-height: 90px;
-   margin: 0px !important ;
+  margin: 0px !important ;
 }
 
-.clLogoBox p{
-
+.clLogoBox h1 {
   font-size: 2.3rem !important;
-    font-family: HelveticaNeueLT Pro 57 Cn;
-    text-align: left !important;
-    letter-spacing: -.01rem;
-    white-space: nowrap;
-    
+  font-family: HelveticaNeueLT Pro 57 Cn;
+  text-align: left !important;
+  letter-spacing: -0.01rem;
+  white-space: nowrap;
 }
 
-.clLogoBox .subTitle{
-    font-size: 1.8rem;
-    text-align: left;
-    /* padding-left: 30px; */
-    letter-spacing: .04rem;
-    display: block;
-    font-weight: 600;
+.clLogoBox .subTitle {
+  font-size: 1.8rem;
+  text-align: left;
+  /* padding-left: 30px; */
+  letter-spacing: 0.04rem;
+  display: block;
+  font-weight: 600;
 }
 
-.tredMark{
-  font-size:10px;
+.tredMark {
+  font-size: 10px;
 }
-  
-
-
-
-
 
 /* =============================================
 Menu slide

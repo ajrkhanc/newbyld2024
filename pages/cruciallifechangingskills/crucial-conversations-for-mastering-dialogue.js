@@ -130,12 +130,12 @@ export default function CrucialConversationsforMasteringDialogue() {
                   alt="image1"
                   loading="lazy"
                 />
-                <p>
+                <h1>
                   Crucial Conversations<sub className="tredMark">®</sub>{" "}
                   <span className="subTitle">for Mastering Dialogue</span>
-                </p>
+                </h1>
               </div>
-              <h1>The Standard in Effective Communication</h1>
+              <h2>The Standard in Effective Communication</h2>
               <p>
                 With 30 years of research in social science, Crucial
                 Conversations skills provide the standard to make effective
@@ -180,7 +180,7 @@ export default function CrucialConversationsforMasteringDialogue() {
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12 learn-title text-center">
-              <h1>Here is what you will learn</h1>
+              <h3>Here is what you will learn</h3>
               <p>
                 Explore and learn the nine powerful skills to obtain results
                 with clear and effective dialogues to work through
@@ -459,7 +459,7 @@ export default function CrucialConversationsforMasteringDialogue() {
         <div class="container">
           <div class="row">
             <div class="col-lg-6 left-about-area preview-course">
-              <h1>PREVIEW THE COURSE</h1>
+              <h2>PREVIEW THE COURSE</h2>
               <p>
                 Watch the video to learn more about course skills, learning
                 formats, and delivery options. Crucial Conversations Train The

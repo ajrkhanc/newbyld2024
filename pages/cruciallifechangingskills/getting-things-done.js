@@ -131,12 +131,12 @@ export default function Gettingthingsdone() {
                     alt="image1"
                     loading="lazy"
                   />
-                  <p>
+                  <h1>
                     Getting Things Done<sub className="tredMark">®</sub>
                     {/* <span className="subTitle">for Mastering Dialogue</span> */}
-                  </p>
+                  </h1>
                 </div>
-                <h1>Productivity with Purpose</h1>
+                <h2>Productivity with Purpose</h2>
                 <p>
                   Learn the skills that can help relieve the cognitive load,
                   allow for increased focus, and even result in optimal
@@ -181,7 +181,7 @@ export default function Gettingthingsdone() {
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-12 learn-title text-center">
-                <h1>HERE IS WHAT YOU’LL LEARN</h1>
+                <h2>HERE IS WHAT YOU’LL LEARN</h2>
                 <p>
                   Go beyond productivity tips and learn a personal workflow
                   management system through instruction, application, and
@@ -344,7 +344,7 @@ export default function Gettingthingsdone() {
           <div class="container">
             <div class="row">
               <div class="col-lg-6 left-about-area preview-course">
-                <h1>PREVIEW THE COURSE</h1>
+                <h2>PREVIEW THE COURSE</h2>
                 <p>
                   Play the video to learn more about the skills taught in
                   Getting Things Done, the available learning formats, and how
