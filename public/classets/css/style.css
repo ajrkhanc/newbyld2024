@@ -9842,12 +9842,13 @@ Menu overlay
   gap: 10px;
   text-align: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 60px ;
 }
 
 .clLogoBox img {
   max-width: 90px;
   max-height: 90px;
+   margin: 0px !important ;
 }
 
 .clLogoBox p{
