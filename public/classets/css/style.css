@@ -9872,6 +9872,24 @@ Menu overlay
   font-size: 10px;
 }
 
+
+.learn-titleBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.learn-titleBox h2{
+  font-size: 3rem !important;
+  font-family: HelveticaNeueLT Pro 57 Cn;
+ 
+}
+
+
+
+
 /* =============================================
 Menu slide
 ================================================ */

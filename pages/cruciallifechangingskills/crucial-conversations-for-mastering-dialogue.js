@@ -429,13 +429,15 @@ export default function CrucialConversationsforMasteringDialogue() {
               />
             </div>
             <div class="col-md-6  mtt-20">
-              <h2>BASED ON THE BESTSELLER</h2>
+              <div class="learn-titleBox">
+                <h2>BASED ON THE BESTSELLER</h2>
 
-              <p>
-                Get your copy of the New York Times bestseller and business
-                classic that has revolutionized interpersonal success for
-                millions of people worldwide.
-              </p>
+                <p>
+                  Get your copy of the New York Times bestseller and business
+                  classic that has revolutionized interpersonal success for
+                  millions of people worldwide.
+                </p>
+              </div>
             </div>
           </div>
         </div>
