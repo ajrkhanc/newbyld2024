@@ -131,7 +131,7 @@ export default function Thepowerofhabit() {
                     loading="lazy"
                   />
                   <p>
-                    The Power of Habit<sup className="tredMark">®</sup>
+                    The Power of Habit<sub className="tredMark">®</sub>
                     {/* <span className="subTitle">for Mastering Dialogue</span> */}
                   </p>
                 </div>
