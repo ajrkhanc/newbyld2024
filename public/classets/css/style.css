@@ -9666,7 +9666,12 @@ Menu overlay
 	gap: 10px;
 	text-align: center;
 	align-items: center;
-	
+
+}
+
+.clLogoBox img {
+	max-width: 90px;
+	max-height: 90px;
 }
 
 
