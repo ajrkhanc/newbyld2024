@@ -131,7 +131,8 @@ export default function CrucialConversationsforMasteringDialogue() {
                   loading="lazy"
                 />
                 <p>
-                  Crucial Conversations<sub className="tredMark">®</sub> <span className="subTitle">for Mastering Dialogue</span>
+                  Crucial Conversations<sub className="tredMark">®</sub>{" "}
+                  <span className="subTitle">for Mastering Dialogue</span>
                 </p>
               </div>
               <h1>The Standard in Effective Communication</h1>
@@ -412,6 +413,25 @@ export default function CrucialConversationsforMasteringDialogue() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="why-us choose-path">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ">
+              <img
+                className="imgmauto img70"
+                src="/classets/img/choose-path-1.webp"
+                alt="image14"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-md-6 newsletter-btn mtt-20">
+              <a href="/cruciallifechangingskills/contact-us" class="start">
+                Start a Conversation
+              </a>
             </div>
           </div>
         </div>
