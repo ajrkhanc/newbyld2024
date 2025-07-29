@@ -9850,7 +9850,24 @@ Menu overlay
   max-height: 90px;
 }
 
+.clLogoBox p{
 
+  font-size: 5rem;
+    font-family: Flama Condensed Basic;
+    text-align: left;
+    padding-left: 28px;
+    letter-spacing: -.01rem;
+    white-space: nowrap;
+}
+
+.clLogoBox .subTitle{
+    font-size: 2.2rem;
+    font-family: Flama SemiBold;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 6px;
+    letter-spacing: .04rem;
+}
 
 
 
