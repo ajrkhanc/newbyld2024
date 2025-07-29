@@ -9660,6 +9660,15 @@ Menu overlay
 	opacity: 0.6;
 }
 
+.clLogoBox{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	text-align: center;
+	align-items: center;
+	
+}
+
 
 /* =============================================
 Menu slide
