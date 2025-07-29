@@ -9853,10 +9853,10 @@ Menu overlay
 
 .clLogoBox p{
 
-  font-size: 5rem;
+  font-size: 5rem !important;
     font-family: HelveticaNeueLT Pro 57 Cn;
-    text-align: left;
-    padding-left: 28px;
+    text-align: left !important;
+    
     letter-spacing: -.01rem;
     white-space: nowrap;
     
@@ -9867,7 +9867,7 @@ Menu overlay
     font-family: Flama SemiBold;
     text-align: left;
     padding-left: 30px;
-    padding-top: 6px;
+    
     letter-spacing: .04rem;
         display: block;
   
