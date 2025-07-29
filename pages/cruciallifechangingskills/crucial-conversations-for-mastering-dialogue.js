@@ -428,7 +428,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                 loading="lazy"
               />
             </div>
-            <div class="col-md-6  mtt-20">
+            <div class="col-md-6  mtt-20  learn-titleBox">
               <div class="learn-titleBox">
                 <h2>BASED ON THE BESTSELLER</h2>
 
