@@ -9883,8 +9883,9 @@ Menu overlay
 }
 
 .learn-titleBox h2{
-  font-size: 3rem !important;
+  font-size: 4rem !important;
   font-family: HelveticaNeueLT Pro 57 Cn;
+  text-align: left !important;
  
 }
 
