@@ -174,14 +174,26 @@ const PaymentSuccessPage = () => {
   const router = useRouter();
   const [authorized, setAuthorized] = useState(false);
 
+  // useEffect(() => {
+  //   const hasPaid = localStorage.getItem("paymentSuccess");
+  //   if (hasPaid === "true") {
+  //     setAuthorized(true);
+  //   } else {
+  //     router.replace("/coaching/coaching-assessments"); // redirect if not paid
+  //   }
+  // }, [router]);
+
   useEffect(() => {
     const hasPaid = localStorage.getItem("paymentSuccess");
     if (hasPaid === "true") {
       setAuthorized(true);
+
+      // ✅ Remove the flag after showing this page once
+      localStorage.removeItem("paymentSuccess");
     } else {
-      router.replace("/coaching/coaching-assessments"); // redirect if not paid
+      router.replace("/coaching/coaching-assessments");
     }
-  }, [router]);
+  }, []);
 
   const handleStartAssessment = () => {
     router.push("/coaching/coach-knowledge-assessment-s");
