@@ -9872,29 +9872,24 @@ Menu overlay
   font-size: 10px;
 }
 
-
-.learn-titleBox{
+.learn-titleBox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   text-align: center;
   flex-direction: column;
-  
 }
 
-.learn-titleBox h2{
+.learn-titleBox h2 {
   font-size: 4rem !important;
   font-family: HelveticaNeueLT Pro 57 Cn;
   text-align: left !important;
- 
 }
 
 .learn-titleBox p {
   font-size: 1.5rem;
   text-align: left;
 }
-
-
 
 /* =============================================
 Menu slide
