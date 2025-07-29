@@ -417,7 +417,7 @@ export default function CrucialConversationsforMasteringDialogue() {
           </div>
         </div>
       </section>
-      <section className="why-us choose-path">
+      <section className="features courses-features">
         <div class="container">
           <div class="row">
             <div class="col-md-6 ">
