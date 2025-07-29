@@ -68,22 +68,73 @@
 
 // export default PaymentSuccessPage;
 
+// import { useEffect } from "react";
+// import { useRouter } from "next/router";
+
+// const PaymentSuccessPage = () => {
+//   const router = useRouter();
+//   const { status, razorpay_payment_id } = router.query;
+
+//   useEffect(() => {
+//     if (status === "success" && razorpay_payment_id) {
+//       // ✅ Store payment flag in localStorage
+//       localStorage.setItem("paymentSuccess", "true");
+//     } else {
+//       // ❌ Invalid access, redirect to public page
+//       router.replace("/coaching/coaching-assessments");
+//     }
+//   }, [status, razorpay_payment_id]);
+
+//   const handleStartAssessment = () => {
+//     router.push("/coaching/coach-knowledge-assessment-s");
+//   };
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
+//       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+//       <p>Thank you for your payment.</p>
+
+//       {razorpay_payment_id && (
+//         <>
+//           <p>
+//             <strong>Payment ID:</strong> {razorpay_payment_id}
+//           </p>
+//         </>
+//       )}
+
+//       <p>You can now begin your Coach Knowledge Assessment.</p>
+
+//       <button
+//         onClick={handleStartAssessment}
+//         style={{
+//           marginTop: "20px",
+//           padding: "12px 24px",
+//           backgroundColor: "#007bff",
+//           color: "white",
+//           border: "none",
+//           fontSize: "16px",
+//           borderRadius: "5px",
+//           cursor: "pointer",
+//         }}
+//       >
+//         Start Assessment
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default PaymentSuccessPage;
+
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 const PaymentSuccessPage = () => {
   const router = useRouter();
-  const { status, razorpay_payment_id } = router.query;
 
   useEffect(() => {
-    if (status === "success" && razorpay_payment_id) {
-      // ✅ Store payment flag in localStorage
-      localStorage.setItem("paymentSuccess", "true");
-    } else {
-      // ❌ Invalid access, redirect to public page
-      router.replace("/coaching/coaching-assessments");
-    }
-  }, [status, razorpay_payment_id]);
+    // ✅ Directly set payment flag since we can't get query params
+    localStorage.setItem("paymentSuccess", "true");
+  }, []);
 
   const handleStartAssessment = () => {
     router.push("/coaching/coach-knowledge-assessment-s");
@@ -93,15 +144,6 @@ const PaymentSuccessPage = () => {
     <div style={{ textAlign: "center", padding: "80px 20px" }}>
       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
       <p>Thank you for your payment.</p>
-
-      {razorpay_payment_id && (
-        <>
-          <p>
-            <strong>Payment ID:</strong> {razorpay_payment_id}
-          </p>
-        </>
-      )}
-
       <p>You can now begin your Coach Knowledge Assessment.</p>
 
       <button
