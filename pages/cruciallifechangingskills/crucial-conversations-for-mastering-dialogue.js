@@ -437,6 +437,14 @@ export default function CrucialConversationsforMasteringDialogue() {
                   classic that has revolutionized interpersonal success for
                   millions of people worldwide.
                 </p>
+                <h6>
+                  <a
+                    class="submit"
+                    href="/cruciallifechangingskills/course-overview-crucial-conversations-for-mastering-dialogue"
+                  >
+                    Download the Course Overview
+                  </a>
+                </h6>
               </div>
             </div>
           </div>
