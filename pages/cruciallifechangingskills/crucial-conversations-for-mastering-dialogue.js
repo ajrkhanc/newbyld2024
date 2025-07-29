@@ -423,12 +423,12 @@ export default function CrucialConversationsforMasteringDialogue() {
             <div class="col-md-6 ">
               <img
                 className="imgmauto img100"
-                src="/classets/img/c3D-Book-Cover-CC1-3rd-Ed.png"
+                src="/classets/img/3D-Book-Cover-CC1-3rd-Ed.webp"
                 alt="image14"
                 loading="lazy"
               />
             </div>
-            <div class="col-md-6 newsletter-btn mtt-20">
+            <div class="col-md-6  mtt-20">
               <h2>BASED ON THE BESTSELLER</h2>
 
               <p>
