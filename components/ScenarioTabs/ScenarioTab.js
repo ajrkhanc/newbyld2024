@@ -20,7 +20,7 @@ const ScenarioTabs = ({ scenarios, activeTab, setActiveTab }) => {
               <span className={styles.topKey}></span>
               <span className={styles.text}>
                 <span className={styles.serialNumberText}>{s.id}.</span>
-                Scenario &ldquo;{s.title}&rdquo;
+               {s.title}
               </span>
               <span className={styles.bottomKey1}></span>
               <span className={styles.bottomKey2}></span>
