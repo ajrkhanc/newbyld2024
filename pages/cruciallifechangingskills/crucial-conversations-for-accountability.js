@@ -82,7 +82,9 @@ export default function crucialconversationsforaccountability() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 contact-title">
-                            <img src="/classets/img/Crucial-Accountability.svg" />
+                            {/* <img src="/classets/img/Crucial-Accountability.svg" /> */}
+                            
+
                             <h1>Performance Management Improved</h1>
                             <p>
                                 When it comes to creating healthy relationships between people and organizations, accountability becomes critical. If people hold each other accountable, they can build trust, fulfill commitments, efficiency, engagement, and more.
