@@ -1299,7 +1299,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="features courses-features">
+      {/* <section className="features courses-features">
         <div class="container">
           <div class="row">
             <div className="col-12">
@@ -1402,7 +1402,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="darkbg patt-60 pabb-60">
         <div class="container">
