@@ -1299,11 +1299,110 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="darkbg patt-70 pabb-70">
-        
-        </section>
-      
+      <section className="features courses-features">
+        <div class="container">
+          <div class="row">
+            <div className="col-12">
+              <h3>Frequently Asked Questions:</h3>
+              <Accordion open={open} toggle={toggle}>
+                <AccordionItem>
+                  <AccordionHeader targetId="1">
+                    1. What is Crucial Learning, and how is it different?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="1">
+                    Crucial Learning offers research-based courses focusing on
+                    vital skills like conversations, influence, and performance
+                    improvement. Unlike other programs, it's grounded in 30+
+                    years of behavioral science and real-world application.
+                  </AccordionBody>
+                </AccordionItem>
 
+                <AccordionItem>
+                  <AccordionHeader targetId="2">
+                    2. Is Crucial Learning backed by research?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="2">
+                    Yes, all courses are based on decades of behavioral science,
+                    leadership research, and real-world case studies.
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="3">
+                    3. Who should take Crucial Conversations training?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="3">
+                    It's ideal for managers, leaders, HR professionals, teams,
+                    and anyone looking to improve communication and conflict
+                    resolution.
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="4">
+                    4. How is Crucial Conversations training delivered?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="4">
+                    It is offered in 3 formats: On-Demand (self-paced), Virtual
+                    (live online), and In-Person (classroom).
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="5">
+                    5. What competencies are developed?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="5">
+                    Communication in high-stakes situations, conflict
+                    resolution, building trust, influencing outcomes,
+                    accountability, and team performance.
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="6">
+                    6. Benefits of Crucial Conversations training?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="6">
+                    Stronger collaboration, reduced conflicts, higher
+                    engagement, better decisions, and a positive work culture.
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="7">
+                    7. Can it be customized?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="7">
+                    Yes. Training can be personalized to your organization's
+                    needs, industry, and challenges.
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="8">
+                    8. Is there training for health professionals?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="8">
+                    Yes, Crucial Conversations for Health is tailored to medical
+                    teams to improve safety, teamwork, and communication.
+                  </AccordionBody>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionHeader targetId="9">
+                    9. How to get started?
+                  </AccordionHeader>
+                  <AccordionBody accordionId="9">
+                    Visit our site, explore courses, or speak with a consultant
+                    to find the right fit for your organization.
+                  </AccordionBody>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="darkbg patt-60 pabb-60">
         <div class="container">
