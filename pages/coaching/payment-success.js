@@ -316,6 +316,37 @@
 
 // export default PaymentSuccessPage;
 
+// import { useEffect } from "react";
+// import { useRouter } from "next/router";
+
+// const PaymentSuccessPage = () => {
+//   const router = useRouter();
+
+//   useEffect(() => {
+//     // ✅ Store short-lived access (just for current tab/session)
+//     sessionStorage.setItem("paymentSuccess", "true");
+
+//     // ✅ Also store in localStorage in case of refresh
+//     localStorage.setItem("paymentSuccess", "true");
+
+//     // ✅ Redirect to assessment page after 1 second
+//     const timer = setTimeout(() => {
+//       router.push("/coaching/coach-knowledge-assessment-s");
+//     }, 1000);
+
+//     return () => clearTimeout(timer);
+//   }, []);
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
+//       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+//       <p>Redirecting you to the assessment page...</p>
+//     </div>
+//   );
+// };
+
+// export default PaymentSuccessPage;
+
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
@@ -323,18 +354,22 @@ const PaymentSuccessPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // ✅ Store short-lived access (just for current tab/session)
-    sessionStorage.setItem("paymentSuccess", "true");
-
-    // ✅ Also store in localStorage in case of refresh
-    localStorage.setItem("paymentSuccess", "true");
-
-    // ✅ Redirect to assessment page after 1 second
     const timer = setTimeout(() => {
-      router.push("/coaching/coach-knowledge-assessment-s");
-    }, 1000);
+      const now = Date.now();
+      const expiry = now + 1 * 60 * 1000; // 5 minutes from now
 
-    return () => clearTimeout(timer);
+      // Save access data right before redirect
+      localStorage.setItem("paymentSuccess", "true");
+      localStorage.setItem("paymentExpiry", expiry.toString());
+
+      sessionStorage.setItem("paymentSuccess", "true");
+      sessionStorage.setItem("paymentExpiry", expiry.toString());
+
+      // Redirect after setting values
+      router.push("/coaching/coach-knowledge-assessment");
+    }, 1000); // ⏱️ wait 1 second
+
+    return () => clearTimeout(timer); // cleanup
   }, []);
 
   return (
