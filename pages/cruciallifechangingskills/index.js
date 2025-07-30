@@ -1,11 +1,26 @@
+import React, { useState } from "react";
+
 import Head from "next/head";
 import Slider from "react-slick";
 import Link from "next/link";
 import Image from "next/image";
-import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
-import React from "react";
+import {
+  Button,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "reactstrap";
 
 export default function Home() {
+  const [open, setOpen] = useState("");
+
+  const toggle = (id) => {
+    open === id ? setOpen("") : setOpen(id);
+  };
   var settings = {
     dots: false,
     arrows: true,
@@ -1284,6 +1299,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="darkbg patt-70 pabb-70">
+        
+        </section>
+      
+
 
       <section class="darkbg patt-60 pabb-60">
         <div class="container">

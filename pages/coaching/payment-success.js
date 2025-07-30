@@ -366,7 +366,7 @@ const PaymentSuccessPage = () => {
       sessionStorage.setItem("paymentExpiry", expiry.toString());
 
       // Redirect after setting values
-      router.push("/coaching/coach-knowledge-assessment");
+      router.push("/coaching/coach-knowledge-assessment-s");
     }, 1000); // ⏱️ wait 1 second
 
     return () => clearTimeout(timer); // cleanup
