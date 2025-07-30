@@ -16,8 +16,6 @@ import {
   AccordionItem,
 } from "reactstrap";
 
-
-
 const faqs = [
   {
     id: "1",
@@ -1349,11 +1347,19 @@ export default function Home() {
                 >
                   {faqs.map((faq) => (
                     <AccordionItem key={faq.id}>
-                      <AccordionHeader targetId={faq.id} className="faq-header">
-                        <span>{faq.question}</span>
-                        <span className="icon">
-                          {open === faq.id ? <FaMinus /> : <FaPlus />}
-                        </span>
+                      <AccordionHeader targetId={faq.id}>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            width: "100%",
+                          }}
+                        >
+                          <span>{faq.question}</span>
+                          <span className="icon">
+                            {open === faq.id ? <FaMinus /> : <FaPlus />}
+                          </span>
+                        </div>
                       </AccordionHeader>
                       <AccordionBody accordionId={faq.id}>
                         {faq.answer}
