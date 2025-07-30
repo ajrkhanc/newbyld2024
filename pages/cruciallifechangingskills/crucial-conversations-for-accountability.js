@@ -373,6 +373,39 @@ export default function crucialconversationsforaccountability() {
             </div>
           </div>
         </section>
+        <section className="features courses-features">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 ">
+                <img
+                  className="imgmauto img100"
+                  src="/classets/img/VS_Book-Mock-up_CC2.webp"
+                  alt="image14"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-md-6  mtt-20  learn-titleBox">
+                <div class="learn-titleBox">
+                  <h2>READ THE BESTSELLER BEHIND THE COURSE</h2>
+
+                  <p>
+                    With more than half a million copies sold, Crucial
+                    Accountability continues to improve the health of
+                    relationships, teams, and organizations worldwide.
+                  </p>
+                  <h6 className="mtt-20">
+                    <a
+                      class="submit"
+                      href="/cruciallifechangingskills/course-overview-crucial-conversations-for-accountability"
+                    >
+                      Download the Course Overview
+                    </a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="why-us">
           <div class="container">
