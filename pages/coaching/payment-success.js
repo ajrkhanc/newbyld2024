@@ -228,88 +228,113 @@
 
 // export default PaymentSuccessPage;
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
+
+// const PaymentSuccessPage = () => {
+//   const router = useRouter();
+//   const [isAuthorized, setIsAuthorized] = useState(false);
+//   const [checkingAuth, setCheckingAuth] = useState(true);
+
+//   useEffect(() => {
+//     if (!router.isReady) return;
+
+//     const checkPayment = () => {
+//       const { status, razorpay_payment_id } = router.query;
+
+//       if (typeof window === "undefined") return;
+
+//       const hasPaid = localStorage.getItem("paymentSuccess");
+//       const sessionPaid = sessionStorage.getItem("justPaid");
+//       const sessionExpiry = sessionStorage.getItem("justPaidExpiry");
+//       const now = Date.now();
+
+//       // ✅ 1. Just redirected after payment
+//       if (status === "success" && razorpay_payment_id && hasPaid === "true") {
+//         setIsAuthorized(true);
+//         localStorage.removeItem("paymentSuccess");
+
+//         const expiresAt = now + 5 * 60 * 1000;
+//         sessionStorage.setItem("justPaid", "true");
+//         sessionStorage.setItem("justPaidExpiry", expiresAt.toString());
+
+//         setCheckingAuth(false);
+//         return;
+//       }
+
+//       // ✅ 2. Within valid session
+//       if (sessionPaid === "true" && now < parseInt(sessionExpiry || "0")) {
+//         setIsAuthorized(true);
+//         setCheckingAuth(false);
+//         return;
+//       }
+
+//       // ❌ 3. Invalid/Expired
+//       router.replace("/coaching/coaching-assessments");
+//     };
+
+//     checkPayment();
+//   }, [router.isReady, router.query]);
+
+//   const handleStartAssessment = () => {
+//     router.push("/coaching/coach-knowledge-assessment-s");
+//   };
+
+//   if (checkingAuth || !isAuthorized) return null;
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
+//       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+//       <p>Thank you for your payment.</p>
+
+//       {router.query.razorpay_payment_id && (
+//         <p>
+//           <strong>Payment ID:</strong> {router.query.razorpay_payment_id}
+//         </p>
+//       )}
+
+//       <p>You can now begin your Coach Knowledge Assessment.</p>
+
+//       <button
+//         onClick={handleStartAssessment}
+//         style={{
+//           marginTop: "20px",
+//           padding: "12px 24px",
+//           backgroundColor: "#007bff",
+//           color: "white",
+//           border: "none",
+//           fontSize: "16px",
+//           borderRadius: "5px",
+//           cursor: "pointer",
+//         }}
+//       >
+//         Start Assessment
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default PaymentSuccessPage;
+
+import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 const PaymentSuccessPage = () => {
   const router = useRouter();
-  const [isAuthorized, setIsAuthorized] = useState(false);
-  const [checkingAuth, setCheckingAuth] = useState(true);
 
   useEffect(() => {
-    if (!router.isReady) return;
+    // ✅ Redirect to assessment page after 1 second
+    const timer = setTimeout(() => {
+      router.push("/coaching/coach-knowledge-assessment-s");
+    }, 1000);
 
-    const checkPayment = () => {
-      const { status, razorpay_payment_id } = router.query;
-
-      if (typeof window === "undefined") return;
-
-      const hasPaid = localStorage.getItem("paymentSuccess");
-      const sessionPaid = sessionStorage.getItem("justPaid");
-      const sessionExpiry = sessionStorage.getItem("justPaidExpiry");
-      const now = Date.now();
-
-      // ✅ 1. Just redirected after payment
-      if (status === "success" && razorpay_payment_id && hasPaid === "true") {
-        setIsAuthorized(true);
-        localStorage.removeItem("paymentSuccess");
-
-        const expiresAt = now + 5 * 60 * 1000;
-        sessionStorage.setItem("justPaid", "true");
-        sessionStorage.setItem("justPaidExpiry", expiresAt.toString());
-
-        setCheckingAuth(false);
-        return;
-      }
-
-      // ✅ 2. Within valid session
-      if (sessionPaid === "true" && now < parseInt(sessionExpiry || "0")) {
-        setIsAuthorized(true);
-        setCheckingAuth(false);
-        return;
-      }
-
-      // ❌ 3. Invalid/Expired
-      router.replace("/coaching/coaching-assessments");
-    };
-
-    checkPayment();
-  }, [router.isReady, router.query]);
-
-  const handleStartAssessment = () => {
-    router.push("/coaching/coach-knowledge-assessment-s");
-  };
-
-  if (checkingAuth || !isAuthorized) return null;
+    return () => clearTimeout(timer); // clean up if component unmounts early
+  }, []);
 
   return (
     <div style={{ textAlign: "center", padding: "80px 20px" }}>
       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
-      <p>Thank you for your payment.</p>
-
-      {router.query.razorpay_payment_id && (
-        <p>
-          <strong>Payment ID:</strong> {router.query.razorpay_payment_id}
-        </p>
-      )}
-
-      <p>You can now begin your Coach Knowledge Assessment.</p>
-
-      <button
-        onClick={handleStartAssessment}
-        style={{
-          marginTop: "20px",
-          padding: "12px 24px",
-          backgroundColor: "#007bff",
-          color: "white",
-          border: "none",
-          fontSize: "16px",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-      >
-        Start Assessment
-      </button>
+      <p>Redirecting you to the assessment page...</p>
     </div>
   );
 };
