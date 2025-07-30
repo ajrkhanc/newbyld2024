@@ -325,6 +325,39 @@ export default function Gettingthingsdone() {
             </div>
           </div>
         </section>
+        <section className="features courses-features">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 ">
+                <img
+                  className="imgmauto img100"
+                  src="/classets/img/VS_Book-Mock-up_GTD.webp"
+                  alt="image14"
+                  loading="lazy"
+                />
+              </div>
+              <div class="col-md-6  mtt-20  learn-titleBox">
+                <div class="learn-titleBox">
+                  <h2>THE ART OF STRESS-FREE PRODUCTIVITY</h2>
+
+                  <p>
+                    Philosophical and practical, Getting Things Done has long
+                    been considered the manual for being productive and
+                    effective while staying relaxed with a “mind like water.”
+                  </p>
+                  <h6 className="mtt-20">
+                    <a
+                      class="submit"
+                      href="/cruciallifechangingskills/course-overview-getting-things-done"
+                    >
+                      Download the Course Overview
+                    </a>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="why-us">
           <div class="container">
