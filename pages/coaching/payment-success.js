@@ -323,12 +323,18 @@ const PaymentSuccessPage = () => {
   const router = useRouter();
 
   useEffect(() => {
+    // ✅ Store short-lived access (just for current tab/session)
+    sessionStorage.setItem("paymentSuccess", "true");
+
+    // ✅ Also store in localStorage in case of refresh
+    localStorage.setItem("paymentSuccess", "true");
+
     // ✅ Redirect to assessment page after 1 second
     const timer = setTimeout(() => {
-      router.push("/coaching/coach-knowledge-assessment-s");
+      router.push("/coaching/coach-knowledge-assessment");
     }, 1000);
 
-    return () => clearTimeout(timer); // clean up if component unmounts early
+    return () => clearTimeout(timer);
   }, []);
 
   return (
