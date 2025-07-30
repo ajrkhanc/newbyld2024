@@ -19,35 +19,63 @@ import {
 const faqs = [
   {
     id: "1",
-    question: "What is Crucial Learning, and how is it different?",
+    question:
+      "What is Crucial Learning, and how is it different from other leadership training programs?",
     answer:
-      "Crucial Learning offers research-based courses focusing on vital skills like conversations, influence, and performance improvement. Unlike other programs, it’s grounded in 30+ years of behavioral science and real-world application.",
+      "Crucial Learning offers research-based courses that focus on the vital skills proven to drive organizational success—such as crucial conversations, influence, and performance improvement. Unlike many training programs that offer broad, theoretical content, Crucial Learning is grounded in 30 years of behavioral science research and real-world application, delivering practical tools that create measurable change.",
   },
   {
     id: "2",
     question: "Is Crucial Learning backed by research?",
     answer:
-      "Yes, all courses are based on decades of behavioral science, leadership research, and real-world case studies.",
+      "Yes. Every Crucial Learning course is based on three decades of academic research and real-world field studies. Our methodologies draw from behavioral science, organizational psychology, and leadership research, ensuring that our training solutions are scientifically sound, practical, and effective.",
   },
   {
     id: "3",
     question: "Who should take Crucial Conversations training?",
     answer:
-      "It’s ideal for managers, leaders, HR professionals, teams, and anyone looking to improve communication and conflict resolution.",
+      "This training is ideal for professionals at all levels, including managers, leaders, HR professionals, project teams, and individuals looking to improve their conversation and conflict-resolution skills. Organizations that want to foster a culture of trust, transparency, and accountability can greatly benefit from it.",
   },
   {
     id: "4",
     question: "How is Crucial Conversations training delivered?",
     answer:
-      "It is offered in 3 formats: On-Demand (self-paced), Virtual (live online), and In-Person (classroom).",
+      "We offer flexible learning formats to accommodate different preferences:\n\nOn-Demand: Learn at your own pace through interactive online modules.\n\nVirtual: Engage in live, instructor-led training sessions online.\n\nIn-Person: Participate in immersive classroom sessions with certified trainers.",
   },
   {
     id: "5",
-    question: "What competencies are developed?",
+    question:
+      "What competencies are developed through Crucial Conversations training?",
     answer:
-      "Communication in high-stakes situations, conflict resolution, building trust, influencing outcomes, accountability, and team performance.",
+      "Participants cultivate critical competencies such as:\n\n- Communicating effectively and respectfully during high-stakes situations\n- Resolving conflict with confidence and diplomacy\n- Building trust and strengthening professional relationships\n- Influencing outcomes without relying on formal authority\n- Enhancing accountability and driving improved team performance\n\nThese competencies are essential for fostering a high-performing, collaborative organizational culture.",
+  },
+  {
+    id: "6",
+    question: "What are the benefits of Crucial Conversations training?",
+    answer:
+      "Organizations that implement Crucial Conversations training see measurable improvements, including:\n\n- Stronger collaboration and teamwork\n- Reduced conflicts and misunderstandings\n- Greater employee involvement and retention\n- Better decision-making and problem-solving\n- A more positive and responsible work culture",
+  },
+  {
+    id: "7",
+    question: "Can Crucial Conversations be customized to organizations?",
+    answer:
+      "Yes! We offer personalized training solutions to meet the exclusive needs of your organization, industry, and team structure. Our consultants work closely with clients to develop personalized learning experiences that address specific challenges.",
+  },
+  {
+    id: "8",
+    question:
+      "Does Crucial Learning provide training for health professionals?",
+    answer:
+      "Yes, Crucial Conversations for Health is a specialized course designed for medical professionals. It focuses on improving patient safety, increasing teamwork, and promoting better conversation between the health team.",
+  },
+  {
+    id: "9",
+    question: "How can I start with Crucial Learning?",
+    answer:
+      "To explore Crucial Conversations training or other leadership and interpersonal influence courses, visit our site, browse our learning options, or contact a customer consultant to discuss the best solution for your organization.",
   },
 ];
+
 
 export default function Home() {
   const [open, setOpen] = useState("");
