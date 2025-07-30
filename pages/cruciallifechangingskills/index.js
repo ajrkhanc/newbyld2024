@@ -1346,16 +1346,8 @@ export default function Home() {
                   className="custom-accordion"
                 >
                   {faqs.map((faq) => (
-                    <AccordionItem key={faq.id}>
-                      <AccordionHeader
-                        targetId={faq.id}
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          width: "100%",
-                          border: "none",
-                        }}
-                      >
+                    <AccordionItem key={faq.id} >
+                      <AccordionHeader targetId={faq.id}>
                         <div
                           style={{
                             display: "flex",
