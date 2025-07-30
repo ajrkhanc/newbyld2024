@@ -9891,6 +9891,67 @@ Menu overlay
   text-align: left;
 }
 
+/* Container for the whole FAQ section */
+.faq-container {
+  margin-top: 2rem;
+}
+
+/* Title styling */
+.faq-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Remove default borders and add spacing */
+.custom-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: #2373ba;
+  color: #ffffff;
+}
+
+/* Header (question) styling */
+.custom-accordion .accordion-header {
+  background-color: #2373ba;
+  color: #ffffff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for headers */
+.custom-accordion .accordion-header:hover {
+  background-color: #1f5fa0;
+}
+
+/* Body (answer) styling */
+.custom-accordion .accordion-body {
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Icon styling for plus/minus */
+.icon {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+/* Optional: Smooth transition on icon rotation if you animate it later */
+.icon svg {
+  transition: transform 0.3s ease;
+}
+
 /* =============================================
 Menu slide
 ================================================ */
