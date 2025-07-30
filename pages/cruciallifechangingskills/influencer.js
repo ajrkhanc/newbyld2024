@@ -449,7 +449,7 @@ export default function Influencer() {
             <div class="col-md-6 ">
               <img
                 className="imgmauto img100"
-                src="/classets/img/crucial-influence-3d-book-mock-up.webp"
+                src="/classets/img/Crucial-Influence_3D-Book-Mock-up-1.webp"
                 alt="image14"
                 loading="lazy"
               />
