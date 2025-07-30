@@ -228,32 +228,33 @@
 
 // export default PaymentSuccessPage;
 
-
-
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const PaymentSuccessPage = () => {
   const router = useRouter();
   const [isAuthorized, setIsAuthorized] = useState(false);
-  const [checkingAuth, setCheckingAuth] = useState(true); // to prevent premature redirect
+  const [checkingAuth, setCheckingAuth] = useState(true);
 
   useEffect(() => {
-    const validateAccess = () => {
+    if (!router.isReady) return;
+
+    const checkPayment = () => {
       const { status, razorpay_payment_id } = router.query;
+
+      if (typeof window === "undefined") return;
 
       const hasPaid = localStorage.getItem("paymentSuccess");
       const sessionPaid = sessionStorage.getItem("justPaid");
       const sessionExpiry = sessionStorage.getItem("justPaidExpiry");
-
       const now = Date.now();
 
-      // ✅ 1. If just paid via redirect
+      // ✅ 1. Just redirected after payment
       if (status === "success" && razorpay_payment_id && hasPaid === "true") {
         setIsAuthorized(true);
         localStorage.removeItem("paymentSuccess");
 
-        const expiresAt = now + 5 * 60 * 1000; // 5 min
+        const expiresAt = now + 5 * 60 * 1000;
         sessionStorage.setItem("justPaid", "true");
         sessionStorage.setItem("justPaidExpiry", expiresAt.toString());
 
@@ -261,20 +262,18 @@ const PaymentSuccessPage = () => {
         return;
       }
 
-      // ✅ 2. If within 5-min session window
-      if (sessionPaid === "true" && now < parseInt(sessionExpiry || 0)) {
+      // ✅ 2. Within valid session
+      if (sessionPaid === "true" && now < parseInt(sessionExpiry || "0")) {
         setIsAuthorized(true);
         setCheckingAuth(false);
         return;
       }
 
-      // ❌ 3. If invalid or expired
+      // ❌ 3. Invalid/Expired
       router.replace("/coaching/coaching-assessments");
     };
 
-    if (router.isReady) {
-      validateAccess();
-    }
+    checkPayment();
   }, [router.isReady, router.query]);
 
   const handleStartAssessment = () => {
