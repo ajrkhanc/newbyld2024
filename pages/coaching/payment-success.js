@@ -331,7 +331,7 @@ const PaymentSuccessPage = () => {
 
     // ✅ Redirect to assessment page after 1 second
     const timer = setTimeout(() => {
-      router.push("/coaching/coach-knowledge-assessment");
+      router.push("/coaching/coach-knowledge-assessment-s");
     }, 1000);
 
     return () => clearTimeout(timer);
