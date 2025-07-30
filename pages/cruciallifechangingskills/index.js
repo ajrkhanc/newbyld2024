@@ -1347,7 +1347,15 @@ export default function Home() {
                 >
                   {faqs.map((faq) => (
                     <AccordionItem key={faq.id}>
-                      <AccordionHeader targetId={faq.id}>
+                      <AccordionHeader
+                        targetId={faq.id}
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          width: "100%",
+                          border: "none",
+                        }}
+                      >
                         <div
                           style={{
                             display: "flex",
