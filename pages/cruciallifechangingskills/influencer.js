@@ -1,6 +1,53 @@
+import React, { useState } from "react";
 import Head from "next/head";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "reactstrap";
+const faqs = [
+  {
+    id: "1",
+    question: "What is the Crucial Influence® leadership course?",
+    answer:
+      "Crucial Influence® is a leadership training program that equips leaders with strategies to influence behavior change effectively. Built around the Six Sources of Influence model, the course helps leaders drive lasting impact by addressing personal, social, and structural factors that shape behavior.",
+  },
+  {
+    id: "2",
+    question: "What will I learn in the Crucial Influence® course?",
+    answer:
+      "You will learn how to uncover the root causes of behavior, apply the Six Sources of Influence, navigate resistance, and lead people toward meaningful, lasting change. The course empowers leaders to build accountability, foster trust, and create measurable results within their teams and organizations.",
+  },
+  {
+    id: "3",
+    question:
+      "What learning formats are available for Crucial Influence® training?",
+    answer:
+      "Crucial Influence® training is available in multiple flexible formats, including in-person workshops, virtual classrooms, and blended learning experiences. This makes it ideal for organizations seeking scalable leadership training solutions that fit various team needs.",
+  },
+  {
+    id: "4",
+    question:
+      "How does Crucial Influence® differ from traditional leadership training?",
+    answer:
+      "Unlike traditional leadership training that often focuses only on skills or knowledge, Crucial Influence® focuses on behavior change. It provides a practical framework based on 50 years of social science research, helping leaders influence real results by changing the behaviors that matter most.",
+  },
+  {
+    id: "5",
+    question: "What is the foundation of the Crucial Influence® model?",
+    answer:
+      "The Crucial Influence® model is based on the bestselling book that introduced the Six Sources of Influence. This framework has been successfully used by thousands of organizations to create sustainable change and drive high-impact leadership development programs around the world.",
+  },
+];
 
 export default function Influencer() {
+  const [open, setOpen] = useState("");
+
+  const toggle = (id) => {
+    setOpen(open === id ? "" : id);
+  };
   return (
     <>
       <Head>
@@ -512,6 +559,46 @@ export default function Influencer() {
               <a href="https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA">
                 <img src="/classets/img/52df3c2121cb3476d031945c32e61e98.webp" />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="darkbg courses-features pbb-60">
+        <div class="container">
+          <div class="row">
+            <div className="col-12">
+              <div className="faq-container">
+                <h3 className="faq-title">Frequently Asked Questions:</h3>
+                <Accordion
+                  open={open}
+                  toggle={toggle}
+                  className="custom-accordion"
+                >
+                  {faqs.map((faq) => (
+                    <AccordionItem key={faq.id}>
+                      <AccordionHeader targetId={faq.id}>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            width: "100%",
+                          }}
+                        >
+                          <span>{faq.question}</span>
+                          <span className="icon">
+                            {open === faq.id ? <FaMinus /> : <FaPlus />}
+                          </span>
+                        </div>
+                      </AccordionHeader>
+                      <AccordionBody accordionId={faq.id}>
+                        {faq.answer}
+                        {/* <div dangerouslySetInnerHTML={{ __html: faq.answer }} /> */}
+                      </AccordionBody>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
             </div>
           </div>
         </div>

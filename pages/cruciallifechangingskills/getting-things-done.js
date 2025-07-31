@@ -1,6 +1,53 @@
+import React, { useState } from "react";
 import Head from "next/head";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "reactstrap";
+const faqs = [
+  {
+    id: "1",
+    question: "What is the Getting Things Done® (GTD®) methodology?",
+    answer:
+      "Getting Things Done® (GTD®) is a productivity system developed by David Allen that helps individuals and teams manage tasks, priorities, and commitments more effectively. It reduces stress by providing a clear, actionable workflow to organize and execute work without feeling overwhelmed.",
+  },
+  {
+    id: "2",
+    question: "What will I learn in the Getting Things Done® (GTD®) course?",
+    answer:
+      "In the GTD® course, you’ll master five core practices: Capture, Clarify, Organize, Reflect, and Engage. These steps help you stay organized, prioritize tasks wisely, manage time effectively, and boost productivity both personally and professionally.",
+  },
+  {
+    id: "3",
+    question: "What formats are available for GTD® training?",
+    answer:
+      "GTD® training is available in live workshops, blended learning sessions, and online courses. These flexible options ensure that individuals, departments, or cross-functional teams can integrate GTD® methods into their preferred learning style and organizational culture.",
+  },
+  {
+    id: "4",
+    question:
+      "How does the GTD® method improve team and individual performance?",
+    answer:
+      "By implementing GTD®, teams and individuals experience reduced stress, stronger accountability, improved time management, better prioritization, and enhanced collaboration. The method ensures clearer communication and execution across all levels of an organization.",
+  },
+  {
+    id: "5",
+    question:
+      "What resources are available to support learning and practicing GTD®?",
+    answer:
+      "Learners can access updated course visuals, case studies (like MasterControl’s success story), and practical productivity tools. Additionally, the Getting Things Done book by David Allen offers a deeper understanding of the GTD® principles and supports sustainable, stress-free productivity.",
+  },
+];
 
 export default function Gettingthingsdone() {
+  const [open, setOpen] = useState("");
+
+  const toggle = (id) => {
+    setOpen(open === id ? "" : id);
+  };
   return (
     <>
       <Head>
@@ -392,6 +439,46 @@ export default function Gettingthingsdone() {
               >
                 <img src="/classets/img/gtd-img.webp" />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="darkbg courses-features pbb-60">
+        <div class="container">
+          <div class="row">
+            <div className="col-12">
+              <div className="faq-container">
+                <h3 className="faq-title">Frequently Asked Questions:</h3>
+                <Accordion
+                  open={open}
+                  toggle={toggle}
+                  className="custom-accordion"
+                >
+                  {faqs.map((faq) => (
+                    <AccordionItem key={faq.id}>
+                      <AccordionHeader targetId={faq.id}>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            width: "100%",
+                          }}
+                        >
+                          <span>{faq.question}</span>
+                          <span className="icon">
+                            {open === faq.id ? <FaMinus /> : <FaPlus />}
+                          </span>
+                        </div>
+                      </AccordionHeader>
+                      <AccordionBody accordionId={faq.id}>
+                        {faq.answer}
+                        {/* <div dangerouslySetInnerHTML={{ __html: faq.answer }} /> */}
+                      </AccordionBody>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
             </div>
           </div>
         </div>
