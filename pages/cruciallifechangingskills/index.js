@@ -42,13 +42,29 @@ const faqs = [
     answer:
       "We offer flexible learning formats to accommodate different preferences:\n\nOn-Demand: Learn at your own pace through interactive online modules.\n\nVirtual: Engage in live, instructor-led training sessions online.\n\nIn-Person: Participate in immersive classroom sessions with certified trainers.",
   },
+  // {
+  //   id: "5",
+  //   question:
+  //     "What competencies are developed through Crucial Conversations training?",
+  //   answer:
+  //     "Participants cultivate critical competencies such as:\n\n- Communicating effectively and respectfully during high-stakes situations\n- Resolving conflict with confidence and diplomacy\n- Building trust and strengthening professional relationships\n- Influencing outcomes without relying on formal authority\n- Enhancing accountability and driving improved team performance\n\nThese competencies are essential for fostering a high-performing, collaborative organizational culture.",
+  // },
   {
-    id: "5",
-    question:
-      "What competencies are developed through Crucial Conversations training?",
-    answer:
-      "Participants cultivate critical competencies such as:\n\n- Communicating effectively and respectfully during high-stakes situations\n- Resolving conflict with confidence and diplomacy\n- Building trust and strengthening professional relationships\n- Influencing outcomes without relying on formal authority\n- Enhancing accountability and driving improved team performance\n\nThese competencies are essential for fostering a high-performing, collaborative organizational culture.",
-  },
+  id: "5",
+  question: "What competencies are developed through Crucial Conversations training?",
+  answer: `
+    <p>Participants cultivate critical competencies such as:</p>
+    <ul>
+      <li>Communicating effectively and respectfully during high-stakes situations</li>
+      <li>Resolving conflict with confidence and diplomacy</li>
+      <li>Building trust and strengthening professional relationships</li>
+      <li>Influencing outcomes without relying on formal authority</li>
+      <li>Enhancing accountability and driving improved team performance</li>
+    </ul>
+    <p>These competencies are essential for fostering a high-performing, collaborative organizational culture.</p>
+  `,
+},
+
   {
     id: "6",
     question: "What are the benefits of Crucial Conversations training?",
@@ -1374,7 +1390,7 @@ export default function Home() {
                   className="custom-accordion"
                 >
                   {faqs.map((faq) => (
-                    <AccordionItem key={faq.id} >
+                    <AccordionItem key={faq.id}>
                       <AccordionHeader targetId={faq.id}>
                         <div
                           style={{
@@ -1390,7 +1406,8 @@ export default function Home() {
                         </div>
                       </AccordionHeader>
                       <AccordionBody accordionId={faq.id}>
-                        {faq.answer}
+                        {/* {faq.answer} */}
+                        <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
                       </AccordionBody>
                     </AccordionItem>
                   ))}

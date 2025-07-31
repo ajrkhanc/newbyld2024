@@ -420,7 +420,7 @@ export default function CrucialConversationsforMasteringDialogue() {
       <section className="features courses-features">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 ">
+            <div class="col-md-6">
               <img
                 className="imgmauto img100"
                 src="/classets/img/3D-Book-Cover-CC1-3rd-Ed.webp"

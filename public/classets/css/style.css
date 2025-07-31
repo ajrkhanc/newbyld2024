@@ -9939,6 +9939,16 @@ Menu overlay
   line-height: 1.6;
 }
 
+.accordion-body ul {
+  margin-left: 1.2rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.accordion-body p {
+  margin-bottom: 0.5rem;
+}
+
 /* Plus/minus icon on the right */
 .icon {
   font-size: 1rem;

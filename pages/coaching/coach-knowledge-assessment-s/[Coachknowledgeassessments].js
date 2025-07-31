@@ -117,11 +117,11 @@ export default function Result({ result }) {
       <section className="pbb-10 pll-20 prr-20">
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
+            {/* <div className="col-sm-6">
               <h4 className="countertoph2  resh ">
                 {result.name} - Self-Assessment Report
               </h4>
-            </div>
+            </div> */}
             <div className="col-sm-6 ">
               <div className={styles.downBtn}>
                 <button onClick={downloadAsPDF} className={styles.btnnewc}>
@@ -137,6 +137,13 @@ export default function Result({ result }) {
         {/* Scenario Wise Cards */}
         <section className="CardWise pbb-10 pll-20 prr-20">
           <div className="container">
+            <div className="row mbb-20">
+              <div className="col-sm-6">
+                <h4 className="countertoph2  resh ">
+                  {result.name} - Self-Assessment Report
+                </h4>
+              </div>
+            </div>
             <div className="row">
               {Array.from({ length: 8 }).map((_, scenarioIndex) => {
                 const startQ = scenarioIndex * 10 + 1;
@@ -262,7 +269,6 @@ export default function Result({ result }) {
                               position: "relative",
                               width: "160px",
                               height: "160px",
-                              
                             }}
                           >
                             <ResponsiveContainer width="100%" height="100%">
