@@ -1,6 +1,76 @@
+import React, { useState } from "react";
 import Head from "next/head";
+import { FaPlus, FaMinus } from "react-icons/fa";
+import {
+  Button,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "reactstrap";
+
+const faqs = [
+  {
+    id: "1",
+    question:
+      "What is the Crucial Conversations® for Mastering Dialogue course?",
+    answer:
+      "The Crucial Conversations® for Mastering Dialogue course equips you with the tools to handle high-stakes conversations effectively. Rooted in the principles of the bestselling Crucial Conversations® book, the course provides practical skills for resolving conflicts, making decisions, and influencing others in emotionally charged situations. It's ideal for leaders and teams aiming to enhance interpersonal influence skills and collaboration.",
+  },
+  {
+    id: "2",
+    question: "What key skills will I learn in the course?",
+    answer: `
+      <p>You’ll gain nine essential skills to improve your conversations, including:</p>
+      <ul>
+        <li>Managing emotions and staying composed during tough discussions</li>
+        <li>Sharing strong opinions respectfully without alienating others</li>
+        <li>Creating a safe environment for open dialogue</li>
+        <li>Navigating conflicts and building consensus</li>
+        <li>Taking actionable steps to drive real change within your organization</li>
+      </ul>
+      <p>These skills are proven to improve team dynamics and organizational effectiveness.</p>
+    `,
+  },
+  {
+    id: "3",
+    question: "How is the Crucial Conversations® book involved in the course?",
+    answer:
+      "The Crucial Conversations® book is the foundation of the course. It introduces the core principles of effective dialogue and offers actionable insights for handling critical conversations. With millions of copies sold worldwide, it’s the go-to guide for mastering interpersonal influence during high-pressure moments. The book serves as an essential reference throughout the course, ensuring you're equipped to apply its concepts in real-world situations.",
+  },
+  {
+    id: "4",
+    question: "What’s included in the training?",
+    answer: `
+      <p>The training offers flexibility and value, including:</p>
+      <ul>
+        <li>In-person, virtual, or on-demand learning options</li>
+        <li>Access to key frameworks like State My Path and Path to Action</li>
+        <li>Lifetime access to course materials and updates</li>
+        <li>A free Style Under Stress Assessment to understand your reaction style during critical conversations</li>
+      </ul>
+      <p>These resources ensure you can immediately apply the skills you learn to real-world challenges.</p>
+    `,
+  },
+  {
+    id: "5",
+    question: "How can Crucial Conversations® help my organization?",
+    answer:
+      "Crucial Conversations® helps organizations improve communication, resolve conflicts, and enhance decision-making. Whether you're training individual employees or rolling out a company-wide initiative, the course strengthens leadership skills and fosters a culture of open dialogue. With guidance from our experts, you can effectively integrate the training into your organization and see measurable improvements in performance and collaboration.",
+  },
+];
+
+
 
 export default function CrucialConversationsforMasteringDialogue() {
+    const [open, setOpen] = useState("");
+  
+    const toggle = (id) => {
+      setOpen(open === id ? "" : id);
+    };
   return (
     <>
       <Head>
@@ -437,7 +507,7 @@ export default function CrucialConversationsforMasteringDialogue() {
                   classic that has revolutionized interpersonal success for
                   millions of people worldwide.
                 </p>
-                <h6 className="mtt-20"> 
+                <h6 className="mtt-20">
                   <a
                     class="submit"
                     href="/cruciallifechangingskills/course-overview-crucial-conversations-for-mastering-dialogue"

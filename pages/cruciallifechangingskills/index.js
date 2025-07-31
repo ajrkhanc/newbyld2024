@@ -42,13 +42,7 @@ const faqs = [
     answer:
       "We offer flexible learning formats to accommodate different preferences:\n\nOn-Demand: Learn at your own pace through interactive online modules.\n\nVirtual: Engage in live, instructor-led training sessions online.\n\nIn-Person: Participate in immersive classroom sessions with certified trainers.",
   },
-  // {
-  //   id: "5",
-  //   question:
-  //     "What competencies are developed through Crucial Conversations training?",
-  //   answer:
-  //     "Participants cultivate critical competencies such as:\n\n- Communicating effectively and respectfully during high-stakes situations\n- Resolving conflict with confidence and diplomacy\n- Building trust and strengthening professional relationships\n- Influencing outcomes without relying on formal authority\n- Enhancing accountability and driving improved team performance\n\nThese competencies are essential for fostering a high-performing, collaborative organizational culture.",
-  // },
+
   {
   id: "5",
   question: "What competencies are developed through Crucial Conversations training?",
