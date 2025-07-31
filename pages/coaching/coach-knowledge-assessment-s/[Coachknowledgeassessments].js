@@ -122,7 +122,7 @@ export default function Result({ result }) {
                 {result.name} - Self-Assessment Report
               </h4>
             </div> */}
-            <div className="col-sm-6 ">
+            <div className="col-sm-12 ">
               <div className={styles.downBtn}>
                 <button onClick={downloadAsPDF} className={styles.btnnewc}>
                   <span>Download Result</span> <FaDownload />
