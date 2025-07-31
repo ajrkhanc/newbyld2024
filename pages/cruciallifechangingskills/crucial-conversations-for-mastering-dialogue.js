@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import {
-  Button,
-  Modal,
-  ModalBody,
-  ModalFooter,
   Accordion,
   AccordionBody,
   AccordionHeader,
@@ -562,7 +558,7 @@ export default function CrucialConversationsforMasteringDialogue() {
         </div>
       </section>
 
-      <section className="darkbg  courses-features">
+      <section className="darkbg courses-features">
         <div class="container">
           <div class="row">
             <div className="col-12">
