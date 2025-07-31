@@ -63,14 +63,12 @@ const faqs = [
   },
 ];
 
-
-
 export default function CrucialConversationsforMasteringDialogue() {
-    const [open, setOpen] = useState("");
-  
-    const toggle = (id) => {
-      setOpen(open === id ? "" : id);
-    };
+  const [open, setOpen] = useState("");
+
+  const toggle = (id) => {
+    setOpen(open === id ? "" : id);
+  };
   return (
     <>
       <Head>
@@ -559,6 +557,46 @@ export default function CrucialConversationsforMasteringDialogue() {
                   loading="lazy"
                 />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="darkbg  courses-features">
+        <div class="container">
+          <div class="row">
+            <div className="col-12">
+              <div className="faq-container">
+                <h3 className="faq-title">Frequently Asked Questions:</h3>
+                <Accordion
+                  open={open}
+                  toggle={toggle}
+                  className="custom-accordion"
+                >
+                  {faqs.map((faq) => (
+                    <AccordionItem key={faq.id}>
+                      <AccordionHeader targetId={faq.id}>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "space-between",
+                            width: "100%",
+                          }}
+                        >
+                          <span>{faq.question}</span>
+                          <span className="icon">
+                            {open === faq.id ? <FaMinus /> : <FaPlus />}
+                          </span>
+                        </div>
+                      </AccordionHeader>
+                      <AccordionBody accordionId={faq.id}>
+                        {/* {faq.answer} */}
+                        <div dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                      </AccordionBody>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
             </div>
           </div>
         </div>
