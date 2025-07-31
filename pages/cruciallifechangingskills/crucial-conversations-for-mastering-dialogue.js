@@ -558,7 +558,7 @@ export default function CrucialConversationsforMasteringDialogue() {
         </div>
       </section>
 
-      <section className="darkbg courses-features">
+      <section className="darkbg courses-features pbb-60">
         <div class="container">
           <div class="row">
             <div className="col-12">
