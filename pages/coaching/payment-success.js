@@ -347,35 +347,81 @@
 
 // export default PaymentSuccessPage;
 
-import { useEffect } from "react";
+// import { useEffect } from "react";
+// import { useRouter } from "next/router";
+
+// const PaymentSuccessPage = () => {
+//   const router = useRouter();
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       const now = Date.now();
+//       const expiry = now + 1 * 60 * 1000; // 5 minutes from now
+
+//       // Save access data right before redirect
+//       localStorage.setItem("paymentSuccess", "true");
+//       localStorage.setItem("paymentExpiry", expiry.toString());
+
+//       sessionStorage.setItem("paymentSuccess", "true");
+//       sessionStorage.setItem("paymentExpiry", expiry.toString());
+
+//       // Redirect after setting values
+//       router.push("/coaching/coach-knowledge-assessment-s");
+//     }, 1000); // ⏱️ wait 1 second
+
+//     return () => clearTimeout(timer); // cleanup
+//   }, []);
+
+//   return (
+//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
+//       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+//       <p>Redirecting you to the assessment page...</p>
+//     </div>
+//   );
+// };
+
+// export default PaymentSuccessPage;
+
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const PaymentSuccessPage = () => {
   const router = useRouter();
+  const [shouldRedirect, setShouldRedirect] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const now = Date.now();
-      const expiry = now + 1 * 60 * 1000; // 5 minutes from now
+    // Check if user just came from payment
+    const referrer = document.referrer;
+    const cameFromRazorpay = referrer.includes("razorpay.com");
 
-      // Save access data right before redirect
-      localStorage.setItem("paymentSuccess", "true");
-      localStorage.setItem("paymentExpiry", expiry.toString());
+    if (cameFromRazorpay) {
+      setShouldRedirect(true);
 
-      sessionStorage.setItem("paymentSuccess", "true");
-      sessionStorage.setItem("paymentExpiry", expiry.toString());
+      const timer = setTimeout(() => {
+        const now = Date.now();
+        const expiry = now + 1 * 60 * 1000; // 1 min
 
-      // Redirect after setting values
-      router.push("/coaching/coach-knowledge-assessment-s");
-    }, 1000); // ⏱️ wait 1 second
+        localStorage.setItem("paymentSuccess", "true");
+        localStorage.setItem("paymentExpiry", expiry.toString());
 
-    return () => clearTimeout(timer); // cleanup
+        sessionStorage.setItem("paymentSuccess", "true");
+        sessionStorage.setItem("paymentExpiry", expiry.toString());
+
+        router.push("/coaching/coach-knowledge-assessment-s");
+      }, 1000); // 1 sec delay
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
     <div style={{ textAlign: "center", padding: "80px 20px" }}>
       <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
-      <p>Redirecting you to the assessment page...</p>
+      {shouldRedirect ? (
+        <p>Redirecting you to the assessment page...</p>
+      ) : (
+        <p>This page is only accessible after a successful payment.</p>
+      )}
     </div>
   );
 };
