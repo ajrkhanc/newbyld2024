@@ -41,13 +41,27 @@ const CoachingKnowledgeAssessment = () => {
   const [checkingAccess, setCheckingAccess] = useState(true);
 
   // ✅ NEW: Protect the page from unauthorized direct access
+  // useEffect(() => {
+  //   const hasPaid = localStorage.getItem("paymentSuccess");
+  //   if (hasPaid === "true") {
+  //     setIsAuthorized(true); // allow rendering
+  //   } else {
+  //     router.replace("/coaching/coaching-assessments"); // redirect if not paid
+  //   }
+  //   setCheckingAccess(false);
+  // }, []);
+
   useEffect(() => {
     const hasPaid = localStorage.getItem("paymentSuccess");
-    if (hasPaid === "true") {
-      setIsAuthorized(true); // allow rendering
+    const expiry = localStorage.getItem("paymentSuccessExpiry");
+    const now = Date.now();
+
+    if (hasPaid === "true" && expiry && now < parseInt(expiry)) {
+      setIsAuthorized(true);
     } else {
-      router.replace("/coaching/coaching-assessments"); // redirect if not paid
+      router.replace("/coaching/coaching-assessments");
     }
+
     setCheckingAccess(false);
   }, []);
 

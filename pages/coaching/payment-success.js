@@ -382,56 +382,56 @@
 
 // export default PaymentSuccessPage;
 
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+// import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
 
-const PaymentSuccessPage = () => {
-  const router = useRouter();
-  const [shouldRedirect, setShouldRedirect] = useState(false);
-  const [isInvalidAccess, setIsInvalidAccess] = useState(false);
+// const PaymentSuccessPage = () => {
+//   const router = useRouter();
+//   const [shouldRedirect, setShouldRedirect] = useState(false);
+//   const [isInvalidAccess, setIsInvalidAccess] = useState(false);
 
-  useEffect(() => {
-    const referrer = document.referrer;
+//   useEffect(() => {
+//     const referrer = document.referrer;
 
-    if (referrer.includes("razorpay.com")) {
-      // ✅ Valid redirect from Razorpay
-      setShouldRedirect(true);
+//     if (referrer.includes("razorpay.com")) {
+//       // ✅ Valid redirect from Razorpay
+//       setShouldRedirect(true);
 
-      // Optional: Set expiry of 5 minutes from now
-      const expiryTime = Date.now() + 5 * 60 * 1000;
-      localStorage.setItem("paymentSuccess", "true");
-      localStorage.setItem("paymentSuccessExpiry", expiryTime.toString());
+//       // Optional: Set expiry of 5 minutes from now
+//       const expiryTime = Date.now() + 5 * 60 * 1000;
+//       localStorage.setItem("paymentSuccess", "true");
+//       localStorage.setItem("paymentSuccessExpiry", expiryTime.toString());
 
-      // Redirect after 1 second
-      setTimeout(() => {
-        router.push("/coaching/coach-knowledge-assessment-s");
-      }, 1000);
-    } else {
-      // ❌ Invalid access — maybe directly hit URL
-      setIsInvalidAccess(true);
-    }
-  }, []);
+//       // Redirect after 1 second
+//       setTimeout(() => {
+//         router.push("/coaching/coach-knowledge-assessment-s");
+//       }, 1000);
+//     } else {
+//       // ❌ Invalid access — maybe directly hit URL
+//       setIsInvalidAccess(true);
+//     }
+//   }, []);
 
-  return (
-    <div style={{ textAlign: "center", padding: "80px 20px" }}>
-      {shouldRedirect ? (
-        <>
-          <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
-          <p>Redirecting you to the assessment page...</p>
-        </>
-      ) : isInvalidAccess ? (
-        <>
-          <h1 style={{ color: "red" }}>⚠ Unauthorized Access</h1>
-          <p>This page can only be accessed after successful payment.</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
-  );
-};
+//   return (
+//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
+//       {shouldRedirect ? (
+//         <>
+//           <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+//           <p>Redirecting you to the assessment page...</p>
+//         </>
+//       ) : isInvalidAccess ? (
+//         <>
+//           <h1 style={{ color: "red" }}>⚠ Unauthorized Access</h1>
+//           <p>This page can only be accessed after successful payment.</p>
+//         </>
+//       ) : (
+//         <p>Loading...</p>
+//       )}
+//     </div>
+//   );
+// };
 
-export default PaymentSuccessPage;
+// export default PaymentSuccessPage;
 
 // import { useEffect, useState } from "react";
 // import { useRouter } from "next/router";
@@ -489,3 +489,63 @@ export default PaymentSuccessPage;
 // };
 
 // export default PaymentSuccessPage;
+
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
+const PaymentSuccessPage = () => {
+  const router = useRouter();
+  const [isValid, setIsValid] = useState(false);
+  const [checking, setChecking] = useState(true);
+
+  useEffect(() => {
+    const referrer =
+      document.referrer ||
+      (typeof window !== "undefined" && window.history.length > 1
+        ? document.referrer
+        : "");
+
+    const cameFromRazorpay = referrer.includes("razorpay.com");
+    const now = Date.now();
+
+    if (cameFromRazorpay) {
+      // ✅ Valid Razorpay redirect
+      const expiryTime = now + 5 * 60 * 1000; // 5 minutes
+      localStorage.setItem("paymentSuccess", "true");
+      localStorage.setItem("paymentSuccessExpiry", expiryTime.toString());
+
+      setIsValid(true);
+
+      // Redirect to assessment after 1 sec
+      setTimeout(() => {
+        router.push("/coaching/coach-knowledge-assessment-s");
+      }, 1000);
+    } else {
+      // ❌ Direct access attempt
+      setIsValid(false);
+    }
+
+    setChecking(false);
+  }, []);
+
+  if (checking) return null; // optional: show a spinner
+
+  if (!isValid) {
+    return (
+      <div style={{ textAlign: "center", padding: "80px 20px" }}>
+        <h1 style={{ color: "#dc3545" }}>Invalid Access</h1>
+        <p>This page can only be accessed after a successful payment.</p>
+      </div>
+    );
+  }
+
+  return (
+    <div style={{ textAlign: "center", padding: "80px 20px" }}>
+      <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+      <p>Thank you for your payment.</p>
+      <p>Redirecting you to the assessment page...</p>
+    </div>
+  );
+};
+
+export default PaymentSuccessPage;
