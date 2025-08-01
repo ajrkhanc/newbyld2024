@@ -382,53 +382,53 @@
 
 // export default PaymentSuccessPage;
 
-// import { useEffect, useState } from "react";
-// import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
-// const PaymentSuccessPage = () => {
-//   const router = useRouter();
-//   const [shouldRedirect, setShouldRedirect] = useState(false);
-//   const [isInvalidAccess, setIsInvalidAccess] = useState(false);
+const PaymentSuccessPage = () => {
+  const router = useRouter();
+  const [shouldRedirect, setShouldRedirect] = useState(false);
+  const [isInvalidAccess, setIsInvalidAccess] = useState(false);
 
-//   useEffect(() => {
-//     const referrer = document.referrer;
+  useEffect(() => {
+    const referrer = document.referrer;
 
-//     if (referrer.includes("razorpay.com")) {
-//       // ✅ Valid redirect from Razorpay
-//       setShouldRedirect(true);
+    if (referrer.includes("razorpay.com")) {
+      // ✅ Valid redirect from Razorpay
+      setShouldRedirect(true);
 
-//       // Optional: Set expiry of 5 minutes from now
-//       const expiryTime = Date.now() + 5 * 60 * 1000;
-//       localStorage.setItem("paymentSuccess", "true");
-//       localStorage.setItem("paymentSuccessExpiry", expiryTime.toString());
+      // Optional: Set expiry of 5 minutes from now
+      const expiryTime = Date.now() + 5 * 60 * 1000;
+      localStorage.setItem("paymentSuccess", "true");
+      localStorage.setItem("paymentSuccessExpiry", expiryTime.toString());
 
-//       // Redirect after 1 second
-//       setTimeout(() => {
-//         router.push("/coaching/coach-knowledge-assessment-s");
-//       }, 1000);
-//     } else {
-//       // ❌ Invalid access — maybe directly hit URL
-//       setIsInvalidAccess(true);
-//     }
-//   }, []);
+      // Redirect after 1 second
+      setTimeout(() => {
+        router.push("/coaching/coach-knowledge-assessment-s");
+      }, 1000);
+    } else {
+      // ❌ Invalid access — maybe directly hit URL
+      setIsInvalidAccess(true);
+    }
+  }, []);
 
-//   return (
-//     <div style={{ textAlign: "center", padding: "80px 20px" }}>
-//       {shouldRedirect ? (
-//         <>
-//           <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
-//           <p>Redirecting you to the assessment page...</p>
-//         </>
-//       ) : isInvalidAccess ? (
-//         <>
-//           <h1 style={{ color: "red" }}>⚠ Unauthorized Access</h1>
-//           <p>This page can only be accessed after successful payment.</p>
-//         </>
-//       ) : (
-//         <p>Loading...</p>
-//       )}
-//     </div>
-//   );
-// };
+  return (
+    <div style={{ textAlign: "center", padding: "80px 20px" }}>
+      {shouldRedirect ? (
+        <>
+          <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+          <p>Redirecting you to the assessment page...</p>
+        </>
+      ) : isInvalidAccess ? (
+        <>
+          <h1 style={{ color: "red" }}>⚠ Unauthorized Access</h1>
+          <p>This page can only be accessed after successful payment.</p>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
+  );
+};
 
-// export default PaymentSuccessPage;
+export default PaymentSuccessPage;
