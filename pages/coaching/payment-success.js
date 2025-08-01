@@ -516,10 +516,12 @@ const PaymentSuccessPage = () => {
 
       setIsValid(true);
 
-      // Redirect to assessment after 1 sec
-      setTimeout(() => {
+      // ✅ Redirect to assessment page after 1 second with cleanup
+      const timer = setTimeout(() => {
         router.push("/coaching/coach-knowledge-assessment-s");
       }, 1000);
+
+      return () => clearTimeout(timer); // 🔁 clean up timer on unmount
     } else {
       // ❌ Direct access attempt
       setIsValid(false);
