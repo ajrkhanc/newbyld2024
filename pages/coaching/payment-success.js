@@ -388,39 +388,44 @@ import { useRouter } from "next/router";
 const PaymentSuccessPage = () => {
   const router = useRouter();
   const [shouldRedirect, setShouldRedirect] = useState(false);
+  const [isInvalidAccess, setIsInvalidAccess] = useState(false);
 
   useEffect(() => {
-    // Check if user just came from payment
     const referrer = document.referrer;
-    const cameFromRazorpay = referrer.includes("razorpay.com");
 
-    if (cameFromRazorpay) {
+    if (referrer.includes("razorpay.com")) {
+      // ✅ Valid redirect from Razorpay
       setShouldRedirect(true);
 
-      const timer = setTimeout(() => {
-        const now = Date.now();
-        const expiry = now + 1 * 60 * 1000; // 1 min
+      // Optional: Set expiry of 5 minutes from now
+      const expiryTime = Date.now() + 5 * 60 * 1000;
+      localStorage.setItem("paymentSuccess", "true");
+      localStorage.setItem("paymentSuccessExpiry", expiryTime.toString());
 
-        localStorage.setItem("paymentSuccess", "true");
-        localStorage.setItem("paymentExpiry", expiry.toString());
-
-        sessionStorage.setItem("paymentSuccess", "true");
-        sessionStorage.setItem("paymentExpiry", expiry.toString());
-
+      // Redirect after 1 second
+      setTimeout(() => {
         router.push("/coaching/coach-knowledge-assessment-s");
-      }, 1000); // 1 sec delay
-
-      return () => clearTimeout(timer);
+      }, 1000);
+    } else {
+      // ❌ Invalid access — maybe directly hit URL
+      setIsInvalidAccess(true);
     }
   }, []);
 
   return (
     <div style={{ textAlign: "center", padding: "80px 20px" }}>
-      <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
       {shouldRedirect ? (
-        <p>Redirecting you to the assessment page...</p>
+        <>
+          <h1 style={{ color: "#28a745" }}>🎉 Payment Successful!</h1>
+          <p>Redirecting you to the assessment page...</p>
+        </>
+      ) : isInvalidAccess ? (
+        <>
+          <h1 style={{ color: "red" }}>⚠ Unauthorized Access</h1>
+          <p>This page can only be accessed after successful payment.</p>
+        </>
       ) : (
-        <p>This page is only accessible after a successful payment.</p>
+        <p>Loading...</p>
       )}
     </div>
   );
