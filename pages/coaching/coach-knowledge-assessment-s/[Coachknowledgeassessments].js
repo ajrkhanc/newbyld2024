@@ -167,8 +167,7 @@ export default function Result({ result }) {
                     <div className={styles.cardStyle}>
                       <div className={styles.cardHeader}>
                         <p className={styles.scenarioTitle}>
-                          Scenario &rdquo;{scenarioTitles[scenarioIndex]}
-                          &rdquo;
+                          {scenarioTitles[scenarioIndex]}
                         </p>
                         <span className={styles.cardNum}>
                           {String(scenarioIndex + 1).padStart(2, "0")}
