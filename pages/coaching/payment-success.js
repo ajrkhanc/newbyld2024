@@ -533,7 +533,7 @@ const PaymentSuccessPage = () => {
   if (!isValid) {
     return (
       <div style={{ textAlign: "center", padding: "80px 20px" }}>
-        <h1 style={{ color: "#dc3545" }}>Invalid Access</h1>
+        <h1 style={{ color: "#dc3545" }}>⚠ Unauthorized Access</h1>
         <p>This page can only be accessed after a successful payment.</p>
       </div>
     );
