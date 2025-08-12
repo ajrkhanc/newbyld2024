@@ -72,7 +72,7 @@ export default function Footer() {
                                         <li><a href="/client-corner">Client Corner</a></li>
                                         <li><a href="/our-solutions/leadership-and-talent-development">Leadership & Performance</a></li>
                                         <li><a href="/our-solutions/assessments">Assessments</a></li>
-                                        <li><a href="/bespoke">BeSpoke</a></li>
+                                        <li><a href="/bespoke">DTCI</a></li>
                                         <li><a href="/our-solutions/staffing">Staffing & Search</a></li>
                                         <li><a href="/our-solutions/coaching">Coaching</a></li>
                                     </ul>

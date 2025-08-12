@@ -9,7 +9,7 @@ export default function Sidebar() {
         <li><a href="/our-solutions/experiential-learning">Experiential Learning</a></li>
         <li><a href="/our-solutions/leadership-and-talent-development">Leadership & Performance</a></li>
         <li><a href="/our-solutions/assessments">Assessments</a></li>
-        <li><a class="" href="#">BeSpoke</a></li>
+        <li><a class="" href="#">DTCI</a></li>
         <li><a href="/our-solutions/staffing">Staffing & Search</a></li>
         <li><a class="" href="/our-solutions/coaching">Coaching</a></li>
       </ul>

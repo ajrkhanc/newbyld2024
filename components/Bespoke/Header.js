@@ -193,7 +193,7 @@ export default function Header() {
                                 </ul>
                               </li>
                               <li className="last-item menu-item-has-children">
-                                <a href="/bespoke">BeSpoke</a>
+                                <a href="/bespoke">DTCI</a>
                                 <ul className="sub-menu">
                                   <li>
                                     <a
@@ -577,7 +577,7 @@ export default function Header() {
                     </ul>
                   </li>
                   <li className="last-item menu-item-has-children">
-                    <a href="/bespoke">BeSpoke</a>
+                    <a href="/bespoke">DTCI</a>
                     <ul className="sub-menu">
                       <li>
                         <a
