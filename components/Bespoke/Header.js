@@ -240,7 +240,7 @@ export default function Header() {
                                       Persona Global<sup>®</sup>
                                     </a>{" "}
                                   </li>
-                                  <li>
+                                  <li className="d-none">
                                     <a
                                       target="_blank"
                                       href="https://doortraining.co.in/"
@@ -624,7 +624,7 @@ export default function Header() {
                           Persona Global<sup>®</sup>
                         </a>{" "}
                       </li>
-                      <li>
+                      <li className="d-none">
                         <a target="_blank" href="https://doortraining.co.in/">
                           Custom Solutions
                         </a>

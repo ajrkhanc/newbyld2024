@@ -55,7 +55,7 @@ export default function Footer() {
                             <li><a href="/our-solutions/experiential-learning">Experiential Learning</a></li> 
                             <li><a href="/our-solutions/leadership-and-talent-development">Leadership & Performance</a></li> 
                             <li><a href="/our-solutions/assessments">Assessments</a></li> 
-                            <li><a href="/bespoke">Custom Solutions (BeSpoke)</a></li> 
+                            {/* <li><a href="/bespoke">Custom Solutions (BeSpoke)</a></li>  */}
                             <li><a href="/our-solutions/coaching">Coaching</a></li> 
                             <li><a href="/our-solutions/staffing">Staffing & Search</a></li> 
                             <li><a href="/join-our-partner-network">Partner Network</a></li>                                                             
