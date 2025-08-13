@@ -283,7 +283,7 @@ function SpeakerCard() {
                     <hr className="mt-0" />
 
                     <a
-                      href="/givingandreceivingfeedback"
+                      href="/speakerseries/givingandreceivingfeedback"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="orangebtn"
