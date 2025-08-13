@@ -220,6 +220,46 @@ export default function Header() {
                                 <a href="/bespoke">DTCI</a>
                                 <ul className="sub-menu">
                                   <li>
+                                    <li>
+                                      <a
+                                        target="_blank"
+                                        href="https://doortraining.co.in/sales-solution/"
+                                      >
+                                        Sales Solution(SS)
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a
+                                        target="_blank"
+                                        href="https://doortraining.co.in/building-intelligence-bi/"
+                                      >
+                                        Building Intelligence (BI)
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a
+                                        target="_blank"
+                                        href="https://doortraining.co.in/leadership-development/"
+                                      >
+                                        Leadership Development(LD)
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a
+                                        target="_blank"
+                                        href="https://doortraining.co.in/individual-effectiveness/"
+                                      >
+                                        Individual Effectiveness (IE)
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a
+                                        target="_blank"
+                                        href="https://doortraining.co.in/culture-management/"
+                                      >
+                                        Culture Management (CM)
+                                      </a>
+                                    </li>
                                     <a href="https://doortraining.co.in/persona-global/">
                                       Persona Global<sup>®</sup>
                                     </a>{" "}
@@ -314,6 +354,9 @@ export default function Header() {
                           <li className="menu-item-has-children">
                             <a href="#">EVENTS</a>
                             <ul className="sub-menu">
+                              <li>
+                                <a href="/speakerseries">Speaker-Series</a>
+                              </li>
                               <li>
                                 <a href="/webinars-and-program-experience">
                                   Webinars
