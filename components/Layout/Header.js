@@ -260,11 +260,12 @@ export default function Header() {
                                         Culture Management (CM)
                                       </a>
                                     </li>
-                                    <a href="https://doortraining.co.in/persona-global/">
-                                      Persona Global<sup>®</sup>
-                                    </a>{" "}
-                                  </li>
-                                  <li className="d-none">
+                                    <li>
+                                      <a href="https://doortraining.co.in/persona-global/">
+                                        Persona Global<sup>®</sup>
+                                      </a>{" "}
+                                    </li>
+                                    <li className="d-none">
                                     <a
                                       target="_blank"
                                       href="https://doortraining.co.in/"
