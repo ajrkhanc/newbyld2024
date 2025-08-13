@@ -246,9 +246,7 @@ export default function GivingAndReceivingFeedback() {
           <div id="offerBar" className="offer-bar">
             <span className="tag">#speakerseries</span>
             <div className="marquee">
-              <span>
-                Get 10% off for 5+ nominations | 20% off for 10+ nominations
-              </span>
+              <span>Get 10% off for 5+ nominations | 20% off for 10+</span>
             </div>
           </div>
         </div>
