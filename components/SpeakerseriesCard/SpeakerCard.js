@@ -368,17 +368,16 @@ As part of the BYLD Group Speaker Series, this session on “Giving & Receiving 
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
     description: `
-      <p >In every organization, feedback is the fuel that drives growth, trust, and performance. Yet, many leaders and teams struggle with how to give or receive it effectively.
-As part of the BYLD Group Speaker Series, this session on “Giving & Receiving Feedback” explores how feedback—when delivered with clarity and intention—can become a powerful tool for alignment and accountability, not criticism.</p>
-      <p>TLearning Objectives:By attending this session, you will learn how to:</p>
+      <p >In every organization, clear goals are the compass that guides teams toward achievement and excellence. Yet, many leaders and employees struggle to set goals that are both inspiring and actionable. As part of the BYLD Group Speaker Series, this session on “Goal Setting for Performance & Success” explores how well-defined goals, when created with clarity and collaboration, can drive focus, accountability, and measurable results.</p>
+      <p>Learning Objectives: By attending this session, you will learn how to:</p>
 <div className="workshop-description">
       <ul >
-        <li >Build a safe and respectful environment for feedback conversations</li>
-        <li >Deliver feedback that inspires improvement rather than defensiveness</li>
-        <li>Foster a feedback culture that drives performance and trust</li>
+        <li >Define goals that are specific, measurable, and aligned with organizational priorities</li>
+        <li >Collaborate with team members to co-create goals that build ownership and commitment</li>
+        <li>Monitor progress and adjust goals to stay relevant in changing business conditions</li>
         
       </ul>
-        <p >Join us on August 21, 2025, with Yogesh Sood, CMD – BYLD Group, to discover how the right approach to feedback can transform people and performance.</p>
+        
     </div>
       
     `,
