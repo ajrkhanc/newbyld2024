@@ -512,4 +512,26 @@
     bottom: -20px;
     width: 75%;
   }
+  .marquee span {
+    font-size: 1.2rem;
+  }
+  .offer-bar {
+    flex-direction: column;
+  }
+  .iconSide::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(/assets/img/icon2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 121px;
+  }
+
+  .offer-bar .tag {
+    padding: 5px 30px;
+    font-size: 2rem;
+  }
 }
