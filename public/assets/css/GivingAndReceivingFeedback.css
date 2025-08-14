@@ -617,6 +617,16 @@
 
   .facilitator p {
     font-size: 0.8rem;
-    line-height: 1;
+    line-height: 1.5;
+  }
+  .event-details {
+    padding: 30px 25px;
+  }
+  .event-card {
+    padding: 15px;
+  }
+
+  .event-title {
+    top: 202px;
   }
 }
