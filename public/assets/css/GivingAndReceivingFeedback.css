@@ -584,24 +584,6 @@
   }
 }
 
-@media screen and (max-width: 390px) {
-  .event-title {
-    top: 225px;
-  }
-
-  .events-section h3 {
-    font-size: 1.2rem;
-  }
-
-      .event-title {
-        font-size: 12px;
-        right: 32px;
-        width: 75%;
-        top: 223px;
-    }
-}
-
-
 @media screen and (max-width: 480px) {
   .event-title {
     font-size: 12px;
@@ -615,3 +597,12 @@
   }
 }
 
+@media screen and (max-width: 393px) {
+  .events-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .event-title {
+    top: 223px;
+  }
+}
