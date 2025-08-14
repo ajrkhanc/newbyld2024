@@ -445,7 +445,7 @@
     /* bottom: 0%; */
     width: 50%;
     /* top: 242px; */
-    top: -20px;
+    top: -20px !important;
   }
 
   .event-title {
