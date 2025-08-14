@@ -462,11 +462,6 @@
     line-height: 1.6;
   }
 
-  .buttons {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-  }
   .details {
     padding: 20px 0px;
     background-color: #fff;
@@ -533,5 +528,13 @@
   .offer-bar .tag {
     padding: 5px 30px;
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
   }
 }
