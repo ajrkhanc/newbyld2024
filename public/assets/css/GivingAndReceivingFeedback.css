@@ -488,12 +488,28 @@
 
   .events-section h3 {
     font-size: 2rem;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
     margin-top: 80px;
   }
 
   .giving-receiving-feedback .content {
     flex: 1;
     max-width: 100%;
+  }
+
+  .dark-rect {
+    height: 120px;
+  }
+
+  .event-details {
+    max-width: 100%;
+  }
+
+  .event-title {
+    font-size: 12px;
+
+    right: 32px;
+    bottom: -20px;
+    width: 75%;
   }
 }
