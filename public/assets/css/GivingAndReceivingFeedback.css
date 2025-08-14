@@ -425,6 +425,15 @@
     padding: 60px 30px;
   }
 }
+@media screen and (max-width: 712px) {
+    .event-title {
+       
+        right: 90px;
+      
+        top: 214px;
+    }
+  
+}
 
 @media screen and (max-width: 768px) {
   .giving-receiving-feedback {
@@ -535,6 +544,7 @@
     font-size: 2rem;
   }
 }
+
 
 @media (max-width: 600px) {
   .event-card {
