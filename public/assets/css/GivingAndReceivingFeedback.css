@@ -440,3 +440,61 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+.giving-receiving-feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.giving-receiving-feedback h1
+
+ {
+    font-size: 2rem;
+   
+    line-height: 35px;
+}
+
+.giving-receiving-feedback p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.details {
+    padding: 20px 0px;
+    background-color: #fff;
+}
+
+.details p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ImgBox img {
+    width: 200px;
+    height: 200px;
+ 
+}
+
+.events-section {
+  
+    padding: 20px 0px;
+  
+}
+
+.events-section h3 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+}
+

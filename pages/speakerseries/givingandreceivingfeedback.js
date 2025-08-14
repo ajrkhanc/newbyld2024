@@ -196,7 +196,7 @@ export default function GivingAndReceivingFeedback() {
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-md-6 relative">
+            <div className="col-md-6 relative mb-5">
               <div class="wrapper">
                 <div class="top-v"></div>
                 <div class="orange-shape"></div>
