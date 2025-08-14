@@ -50,7 +50,7 @@ export default function GivingAndReceivingFeedback() {
             <div className="col-md-12 ">
               <h2>Webinar Preface</h2>
             </div>
-            <div className="col-md-6 mb-5">
+            <div className=" col-lg-6 col-md-12 col-sm-12 mb-5">
               <p>
                 In every organization, feedback is the fuel that drives growth,
                 trust, and performance. Yet, many leaders and teams struggle
@@ -80,7 +80,7 @@ export default function GivingAndReceivingFeedback() {
                 transform people and performance.
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="form-wrapper">
                 <form className="form-card">
                   <input type="text" placeholder="Full Name*" />

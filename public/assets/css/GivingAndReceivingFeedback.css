@@ -440,6 +440,12 @@
   }
 }
 
+@media screen and (max-width: 820px) {
+  .giving-receiving-feedback {
+    padding: 60px 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .giving-receiving-feedback {
     display: flex;
