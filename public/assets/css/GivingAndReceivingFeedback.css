@@ -597,7 +597,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .event-title {
     top: 225px;
   }
@@ -605,4 +605,11 @@
   .events-section h3 {
     font-size: 1.2rem;
   }
+
+      .event-title {
+        font-size: 12px;
+        right: 32px;
+        width: 75%;
+        top: 223px;
+    }
 }
