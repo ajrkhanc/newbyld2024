@@ -105,7 +105,7 @@ export default function GivingAndReceivingFeedback() {
       <section className="details ptt-5">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6 mb-5">
+            <div className="col-lg-6 col-md-12 col-sm-12 mb-5">
               <h3>Program Facilitator</h3>
               <p>
                 Yogesh Sood is the Founder and Chairman & Managing Director
@@ -171,7 +171,7 @@ export default function GivingAndReceivingFeedback() {
                 Read More
               </button>
             </div>
-            <div className="col-md-6">
+            <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="ImgBox">
                 <img
                   src="/assets/img/yogeshShoodImg.png"
@@ -196,7 +196,7 @@ export default function GivingAndReceivingFeedback() {
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-md-6 relative mb-5 mt-5">
+            <div className="col-lg-6 col-md-12 col-sm-12 relative mb-5 mt-5">
               <div class="wrapper">
                 <div class="top-v"></div>
                 <div class="orange-shape"></div>
@@ -217,7 +217,7 @@ export default function GivingAndReceivingFeedback() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 relative mt-5 mb-5">
+            <div className="col-lg-6 col-md-12 col-sm-12 relative mt-5 mb-5">
               <div class="wrapper">
                 <div class="top-v"></div>
                 <div class="orange-shape"></div>
