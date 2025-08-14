@@ -18,34 +18,29 @@ export default function GivingAndReceivingFeedback() {
         />
       </Head>
       <section className="giving-receiving-feedback">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="content">
-              <h1>Giving & Receiving Feedback</h1>
-              <p>
-                In every organization, feedback is the fuel that drives growth,
-                trust, and performance. Yet, many leaders and teams struggle
-                with how to give or receive it effectively.
-              </p>
-              <div className="buttons">
-                <a href="#webinar-preface" className="btn join">
-                  Join Now
-                </a>
-                <a href="#webinar-preface" className="btn learn">
-                  Learn More
-                </a>
-              </div>
-            </div>
+        <div className="content">
+          <h1>Giving & Receiving Feedback</h1>
+          <p>
+            In every organization, feedback is the fuel that drives growth,
+            trust, and performance. Yet, many leaders and teams struggle with
+            how to give or receive it effectively.
+          </p>
+          <div className="buttons">
+            <a href="#webinar-preface" className="btn join">
+              Join Now
+            </a>
+            <a href="#webinar-preface" className="btn learn">
+              Learn More
+            </a>
           </div>
-          <div className="col-md-6">
-            <div className="images">
-              <img
-                src="/assets/img/groupImg.png"
-                alt="Presentation"
-                className="img main-img"
-              />
-            </div>
-          </div>
+        </div>
+
+        <div className="images">
+          <img
+            src="/assets/img/groupImg.png"
+            alt="Presentation"
+            className="img main-img"
+          />
         </div>
       </section>
 
