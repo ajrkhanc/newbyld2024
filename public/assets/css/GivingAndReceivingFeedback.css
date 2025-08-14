@@ -404,7 +404,7 @@
 
 .marquee span {
   display: inline-block;
-  padding-left: 100%; 
+  padding-left: 100%;
   animation: marquee 10s linear infinite;
   font-size: 3rem;
 }
@@ -441,60 +441,59 @@
 }
 
 @media screen and (max-width: 768px) {
-.giving-receiving-feedback {
+  .giving-receiving-feedback {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 30px;
     gap: 40px;
     flex-direction: column;
-}
+  }
 
-.giving-receiving-feedback h1
-
- {
+  .giving-receiving-feedback h1 {
     font-size: 2rem;
-   
-    line-height: 35px;
-}
 
-.giving-receiving-feedback p {
+    line-height: 35px;
+  }
+
+  .giving-receiving-feedback p {
     font-size: 1rem;
     margin-bottom: 25px;
     line-height: 1.6;
-}
+  }
 
-.buttons {
+  .buttons {
     display: flex;
     gap: 10px;
     flex-direction: column;
-}
-.details {
+  }
+  .details {
     padding: 20px 0px;
     background-color: #fff;
-}
+  }
 
-.details p {
+  .details p {
     font-size: 1rem;
     line-height: 1.6;
-}
+  }
 
-.ImgBox img {
+  .ImgBox img {
     width: 200px;
     height: 200px;
- 
-}
+  }
 
-.events-section {
-  
+  .events-section {
     padding: 20px 0px;
-  
-}
+  }
 
-.events-section h3 {
+  .events-section h3 {
     font-size: 2rem;
     margin-bottom: 0px;
     margin-top: 80px;
-}
-}
+  }
 
+  .giving-receiving-feedback .content {
+    flex: 1;
+    max-width: 100%;
+  }
+}
