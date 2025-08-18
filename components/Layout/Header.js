@@ -758,9 +758,9 @@ export default function Header() {
                   <li>
                     <a href="/speakerseries">Speaker-Series</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="/webinars-and-program-experience">Webinars</a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="/workshops">Workshops</a>
                   </li>
