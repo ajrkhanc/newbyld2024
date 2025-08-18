@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Head from "next/head";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Loader2 } from "lucide-react";
 
 export default function GivingAndReceivingFeedback() {
   const [showText, setShowText] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -24,6 +26,7 @@ export default function GivingAndReceivingFeedback() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     const { fullName, email, phone, company, designation, slot } = formData;
     console.log("Form submitted:", formData);
 
@@ -44,12 +47,13 @@ export default function GivingAndReceivingFeedback() {
     )
       .then((response) => response.json())
       .then((data) => {
+        setLoading(false);
         if (data.status === "mail_sent") {
-          toast.success("✅ Form submitted successfully!");
+          toast.success("Form submitted successfully!");
 
           // Redirect after 2s
           setTimeout(() => {
-            window.location.href = "/thank-you"; // apne Thank You page ka slug yaha likho
+            window.location.href = "/thank-you";
           }, 2000);
 
           // Reset form
@@ -62,12 +66,13 @@ export default function GivingAndReceivingFeedback() {
             slot: "",
           });
         } else {
-          toast.error("❌ Form submission failed, please try again.");
+          toast.error("Form submission failed, please try again.");
         }
       })
       .catch((error) => {
+        setLoading(false);
         console.error("Error submitting form:", error);
-        toast.error("⚠️ Something went wrong. Please try again.");
+        toast.error("Something went wrong. Please try again.");
       });
   };
 
@@ -197,17 +202,20 @@ export default function GivingAndReceivingFeedback() {
                     onChange={handleInputChange}
                   >
                     <option value="">Choose your Slot*</option>
-                    <option value="Goal-Setting">
-                      Goal Setting September 05, 2025 11:00AM to 12PM to 04:00PM
-                      to 05:00PM
-                    </option>
-                    <option value="Accountability-Ownership">
-                      Accountability & Ownership-September 19, 2025 -11:00AM to
-                      12PM to 04:00PM to 05:00PM
-                    </option>
+                    <option value="11 AM - 12PM">11 AM - 12PM</option>
+                    <option value="4PM - 5PM">4PM - 5PM</option>
                   </select>
                   <div style={{ textAlign: "center" }}>
-                    <button className="register-btn mt-4">Register Now</button>
+                    <button className="register-btn mt-4" disabled={loading}>
+                      {loading ? (
+                        <span className="flex items-center justify-center gap-2">
+                          <Loader2 className="h-5 w-5 animate-spin" />
+                          Submitting...
+                        </span>
+                      ) : (
+                        "Register Now"
+                      )}
+                    </button>
                   </div>
                 </form>
               </div>
