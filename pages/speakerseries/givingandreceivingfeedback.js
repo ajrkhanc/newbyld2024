@@ -209,7 +209,6 @@ export default function GivingAndReceivingFeedback() {
                     <button className="register-btn mt-4">Register Now</button>
                   </div>
                 </form>
-                <ToastContainer position="top-right" autoClose={2000} />
               </div>
             </div>
           </div>
@@ -364,6 +363,7 @@ export default function GivingAndReceivingFeedback() {
           </div>
         </div>
       </section>
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }
