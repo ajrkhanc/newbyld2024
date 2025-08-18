@@ -20,7 +20,10 @@ export default function ThankYou() {
       </noscript>
 
       <div className="rs-services ">
-        <div className="container-fluid" style={{ padding: "0" }}>
+        <div
+          className="container-fluid"
+          style={{ padding: "0", overflow: "hidden" }}
+        >
           <div className="row y-middle">
             <div className="col-lg-6">
               <img
