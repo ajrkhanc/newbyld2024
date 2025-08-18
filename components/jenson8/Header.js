@@ -288,11 +288,11 @@ export default function Header() {
                             <li className="menu-item-has-children">
                               <a href="#">EVENTS</a>
                               <ul className="sub-menu">
-                                <li>
+                                {/* <li>
                                   <a href="/webinars-and-program-experience">
                                     Webinars
                                   </a>
-                                </li>
+                                </li> */}
                                 <li>
                                   <a href="/workshops">Workshops</a>
                                 </li>
@@ -634,9 +634,9 @@ export default function Header() {
                 <li className="menu-item-has-children">
                   <a href="#">EVENTS</a>
                   <ul className="sub-menu">
-                    <li>
+                    {/* <li>
                       <a href="/webinars-and-program-experience">Webinars</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="/workshops">Workshops</a>
                     </li>
