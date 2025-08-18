@@ -156,6 +156,7 @@ export default function GivingAndReceivingFeedback() {
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
+                    required
                   />
                   <input
                     type="email"
@@ -163,6 +164,7 @@ export default function GivingAndReceivingFeedback() {
                     placeholder="Email Address*"
                     value={formData.email}
                     onChange={handleInputChange}
+                    required
                   />
                   <input
                     type="tel"
@@ -170,6 +172,7 @@ export default function GivingAndReceivingFeedback() {
                     placeholder="Phone Number*"
                     value={formData.phone}
                     onChange={handleInputChange}
+                    required
                   />
                   <input
                     type="text"
@@ -177,6 +180,7 @@ export default function GivingAndReceivingFeedback() {
                     placeholder="Company Name*"
                     value={formData.company}
                     onChange={handleInputChange}
+                    required
                   />
                   <input
                     type="text"
@@ -184,11 +188,13 @@ export default function GivingAndReceivingFeedback() {
                     placeholder="Designation*"
                     value={formData.designation}
                     onChange={handleInputChange}
+                    required
                   />
                   <select
                     name="slot"
                     value={formData.slot}
                     onChange={handleInputChange}
+                    required
                   >
                     <option value="">Choose your Slot*</option>
                     <option value="Goal-Setting">
