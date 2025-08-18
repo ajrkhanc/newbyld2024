@@ -3,6 +3,39 @@ import Head from "next/head";
 
 export default function GivingAndReceivingFeedback() {
   const [showText, setShowText] = useState(false);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    company: "",
+    designation: "",
+    slot: "",
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { fullName, email, phone, company, designation, slot } = formData;
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+    // Reset form after submission
+    setFormData({
+      fullName: "",
+      email: "",
+      phone: "",
+      company: "",
+      designation: "",
+      slot: "",
+    });
+  };
+
   return (
     <>
       <Head>
@@ -82,16 +115,47 @@ export default function GivingAndReceivingFeedback() {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="form-wrapper">
-                <form className="form-card">
-                  <input type="text" placeholder="Full Name*" />
-                  <input type="email" placeholder="Email Address*" />
-                  <input type="tel" placeholder="Phone Number*" />
-                  <input type="text" placeholder="Company Name*" />
-                  <input type="text" placeholder="Designation*" />
-                  <select>
+                <form className="form-card" onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Full Name*"
+                    value={formData.fullName}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address*"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone Number*"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Company Name*"
+                    value={formData.company}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Designation*"
+                    value={formData.designation}
+                    onChange={handleInputChange}
+                  />
+                  <select value={formData.slot} onChange={handleInputChange}>
                     <option value="">Choose your Slot*</option>
-                    <option value="slot1">Slot 1</option>
-                    <option value="slot2">Slot 2</option>
+                    <option value="Goal-Setting">
+                      Goal Setting September 05, 2025 11:00AM to 12PM to 04:00PM
+                      to 05:00PM
+                    </option>
+                    <option value="Accountability-Ownership">
+                      Accountability & Ownership-September 19, 2025 -11:00AM to
+                      12PM to 04:00PM to 05:00PM
+                    </option>
                   </select>
                   <div style={{ textAlign: "center" }}>
                     <button className="register-btn mt-4">Register Now</button>
