@@ -209,7 +209,7 @@ export default function GivingAndReceivingFeedback() {
                     <button className="register-btn mt-4" disabled={loading}>
                       {loading ? (
                         <span className="flex items-center justify-center gap-2">
-                          <Loader2 className="h-5 w-5 animate-spin" />
+                          <Loader2 className="h-5 w-5 animate-spin me-2" />
                           Submitting...
                         </span>
                       ) : (
