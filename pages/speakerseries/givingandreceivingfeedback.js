@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function GivingAndReceivingFeedback() {
   const [showText, setShowText] = useState(false);
@@ -23,17 +24,50 @@ export default function GivingAndReceivingFeedback() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { fullName, email, phone, company, designation, slot } = formData;
-    // Handle form submission logic here
     console.log("Form submitted:", formData);
-    // Reset form after submission
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      company: "",
-      designation: "",
-      slot: "",
-    });
+
+    const cf7FormData = new FormData();
+    cf7FormData.append("fullName", fullName);
+    cf7FormData.append("email", email);
+    cf7FormData.append("phone", phone);
+    cf7FormData.append("company", company);
+    cf7FormData.append("designation", designation);
+    cf7FormData.append("slot", slot);
+
+    fetch(
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/530/feedback",
+      {
+        method: "POST",
+        body: cf7FormData,
+      }
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === "mail_sent") {
+          toast.success("✅ Form submitted successfully!");
+
+          // Redirect after 2s
+          setTimeout(() => {
+            window.location.href = "/thank-you"; // apne Thank You page ka slug yaha likho
+          }, 2000);
+
+          // Reset form
+          setFormData({
+            fullName: "",
+            email: "",
+            phone: "",
+            company: "",
+            designation: "",
+            slot: "",
+          });
+        } else {
+          toast.error("❌ Form submission failed, please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error submitting form:", error);
+        toast.error("⚠️ Something went wrong. Please try again.");
+      });
   };
 
   return (
@@ -324,6 +358,7 @@ export default function GivingAndReceivingFeedback() {
           </div>
         </div>
       </section>
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }
