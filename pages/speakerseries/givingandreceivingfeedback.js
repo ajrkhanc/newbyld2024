@@ -27,10 +27,10 @@ export default function GivingAndReceivingFeedback() {
     console.log("Form submitted:", formData);
 
     const cf7FormData = new FormData();
-    cf7FormData.append("fullName", fullName);
+    cf7FormData.append("full-name", fullName);
     cf7FormData.append("email", email);
     cf7FormData.append("phone", phone);
-    cf7FormData.append("company", company);
+    cf7FormData.append("company-name", company);
     cf7FormData.append("designation", designation);
     cf7FormData.append("slot", slot);
 
