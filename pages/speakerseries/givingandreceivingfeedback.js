@@ -119,34 +119,43 @@ export default function GivingAndReceivingFeedback() {
                   <input
                     type="text"
                     placeholder="Full Name*"
+                    name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
                   />
                   <input
                     type="email"
+                    name="email"
                     placeholder="Email Address*"
                     value={formData.email}
                     onChange={handleInputChange}
                   />
                   <input
                     type="tel"
+                    name="phone"
                     placeholder="Phone Number*"
                     value={formData.phone}
                     onChange={handleInputChange}
                   />
                   <input
                     type="text"
+                    name="company"
                     placeholder="Company Name*"
                     value={formData.company}
                     onChange={handleInputChange}
                   />
                   <input
                     type="text"
+                    name="designation"
                     placeholder="Designation*"
                     value={formData.designation}
                     onChange={handleInputChange}
                   />
-                  <select value={formData.slot} onChange={handleInputChange}>
+                  <select
+                    name="slot"
+                    value={formData.slot}
+                    onChange={handleInputChange}
+                  >
                     <option value="">Choose your Slot*</option>
                     <option value="Goal-Setting">
                       Goal Setting September 05, 2025 11:00AM to 12PM to 04:00PM
