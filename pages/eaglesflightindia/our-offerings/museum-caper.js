@@ -210,7 +210,7 @@ export default function MuseumCaper() {
                     </li>
                   </ul>
                 </div>
-                <h3 className=" fw-bold">
+                <h3 className=" fw-bold font20 mb-2">
                   Try a Demo of the Virtual Museum Caper Simulation
                 </h3>
                 <div className="btn-part ptt-10 pbb-30">
