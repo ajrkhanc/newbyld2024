@@ -40,8 +40,7 @@ export default function RattlesnakeCanyon(){
               <div className="col-lg-6">
                 <div class="sec-title3 mbb-35 text-left onlyshd">
                   <h1 class="countertoph2 text-left font36">
-                    Rattlesnake Canyon{" "}
-                    <sup style={{ fontSize: "11px" }}>TM️</sup>
+                    Rattlesnake Canyon<sup style={{ fontSize: "11px" }}>TM️</sup>
                   </h1>
                   <div class="heading-border-line left-style"></div>
                 </div>
