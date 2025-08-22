@@ -423,7 +423,8 @@ export default function Header() {
                 </li>
                 <li>
                   <a target="_blank" href="https://twitter.com/BYLDGroup">
-                    <i class="fa-brands fa-x-twitter"></i>
+                    {/* <i class="fa-brands fa-x-twitter"></i> */}
+                    <FaXTwitter className="" />
                   </a>
                 </li>
                 <li>

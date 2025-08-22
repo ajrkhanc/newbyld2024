@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Header() {
   return (
@@ -60,7 +61,7 @@ export default function Header() {
                           target="_blank"
                           href="https://twitter.com/ByldLearnings"
                         >
-                          <i class="fa-brands fa-x-twitter"></i>
+                           <FaXTwitter className="" />
                         </a>
                       </li>
                       <li>
@@ -428,7 +429,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a target="_blank" href="https://twitter.com/BYLDGroup">
-                    <i class="fa-brands fa-x-twitter"></i>
+                     <FaXTwitter className="" />
                   </a>
                 </li>
                 <li>

@@ -1,4 +1,5 @@
 import Head from "next/dist/shared/lib/head";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function ThankYou() {
   return (
@@ -49,7 +50,7 @@ export default function ThankYou() {
           <div className="col-md-4">
             <a href="https://twitter.com/crucial__skills" target="_blank">
               <div className="innerboxthankyou">
-                <i class="fa-brands fa-x-twitter"></i>
+                 <FaXTwitter className="" />
                 <h4>Follow us on TWITTER</h4>
                 <h5>@crucial__skills</h5>
               </div>
