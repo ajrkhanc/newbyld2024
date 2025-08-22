@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const FooregisterUser = async (event) => {
@@ -145,8 +146,13 @@ export default function Footer() {
                       href="https://twitter.com/ByldAssessments"
                       target="_blank"
                     >
-                      <span>
+                      {/* <span>
                         <i class="fa-brands fa-x-twitter"></i>
+                      </span> */}
+                      <span className="twitter-icon">
+                        {/* <i className="fa fa-twitter att"></i> */}
+                        {/* <i className="fa-brands fa-x-twitter att"></i> */}
+                        <FaXTwitter className="att  twIcon" />
                       </span>
                     </a>
                   </li>
