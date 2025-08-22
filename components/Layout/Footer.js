@@ -169,10 +169,10 @@ export default function Footer() {
 
                   <li>
                     <a href="https://twitter.com/BYLDGroup" target="_blank">
-                      <span>
+                      <span className="twitter-icon">
                         {/* <i className="fa fa-twitter att"></i> */}
                         {/* <i className="fa-brands fa-x-twitter att"></i> */}
-                        <FaXTwitter className="att twitter-icon " />
+                        <FaXTwitter className="att  " />
                       </span>
                     </a>
                   </li>
