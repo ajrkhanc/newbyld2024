@@ -1,10 +1,8 @@
-import Link from 'next/link'
-import React from 'react'
-import Image from 'next/image'
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
 
 export default function Footer() {
-   
-    
   return (
     <>
       <footer id="rs-footer" className="rs-footer style1">
@@ -138,7 +136,7 @@ export default function Footer() {
               <div className="col-lg-12">
                 <div className="copyright text-lg-start text-center ">
                   <p className="text-center">
-                    © 2023 BYLD Group. All Rights Reserved.
+                    © 2025 BYLD Group. All Rights Reserved.
                   </p>
                 </div>
               </div>
