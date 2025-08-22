@@ -148,7 +148,7 @@ export default function Footer() {
                       rel="noopener noreferrer"
                     >
                       <span>
-                        <i class="fa fa-twitter"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
                       </span>
                     </a>
                   </li>
@@ -164,7 +164,7 @@ export default function Footer() {
                     </a>
                   </li>
 
-                         <li>
+                  <li>
                     <a
                       href="https://www.instagram.com/dtci_india/"
                       target="_blank"

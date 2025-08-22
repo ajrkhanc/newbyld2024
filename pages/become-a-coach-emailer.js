@@ -8,9 +8,6 @@
 // import CountUp from 'react-countup';
 // import React from 'react';
 
-
-
-
 // export default function Home() {
 
 //     var settings = {
@@ -51,7 +48,6 @@
 //         ]
 //     };
 
-
 //     const registerUser = async event => {
 //         event.preventDefault()
 //         document.getElementById("submitbuttonform").value = "Submitting form...."
@@ -88,7 +84,6 @@
 
 //     }
 
-
 //     const submit = async event => {
 //         event.preventDefault()
 //         document.getElementById("submitbuttonform").value = "Submitting form...."
@@ -123,12 +118,10 @@
 
 //     }
 
-
 //     const [modalOpen, setModalOpen] = React.useState(false);
 
 //     return (
 //         <>
-
 
 //             <Head>
 //                 <title>Get Your Certification Today | BYLD Group</title>
@@ -159,7 +152,6 @@
 //                 <link rel="stylesheet" type="text/css" href="/assets/css/cohomemodule.css" />
 //             </Head>
 
-
 //             <Modal toggle={() => setModalOpen(!modalOpen)} isOpen={modalOpen} backdrop="static" keyboard={false} className='ccmdc'>
 //                 <button
 //                     aria-label="Close"
@@ -184,7 +176,6 @@
 //                                 <input type="email" name="email" placeholder="Professional/Personal Email Address*" required />
 //                             </div>
 
-
 //                             <div className="col-sm-12 mb-12">
 //                                 <input type="text" name="organization" placeholder="Organization*" required />
 //                             </div>
@@ -204,7 +195,6 @@
 //                                     <option value='09 March 2024'>09 March 2024</option>
 //                                 </select>
 //                             </div>
-
 
 //                             <div className="col-sm-12 d-none">
 //                                 <input type="text" name="Business_Entity" value="ICF" required />
@@ -243,9 +233,6 @@
 //                     </div>
 //                 </div>
 //             </div>
-
-
-
 
 //             {/* <section className='solutionrow ptt-60 pbb-60'>
 //                 <div className='container'>
@@ -341,7 +328,6 @@
 //                 </div>
 //             </div>
 
-
 //             <section className='aboutmap ptt-50 pbb-40'>
 //                 <div className='container'>
 //                     <div className='row'>
@@ -421,7 +407,6 @@
 //                 </div>
 //             </section>
 
-
 //             <section id="rs-team" className='style2 solutionrow ptt-60 pbb-60 rsteam'>
 //                 <div className='container'>
 //                     <div className='row'>
@@ -493,7 +478,6 @@
 //                 </div>
 //             </section>
 
-
 //             <section className='solutionrow ptt-60 pbb-60'>
 //                 <div className='container'>
 //                     <div className='row'>
@@ -541,9 +525,6 @@
 //                 </div>
 //             </section>
 
-
-
-
 //             <section className='aboutmap ptt-50 pbb-40 zinc'>
 //                 <div className='container'>
 //                     <div className='row align-items-center'>
@@ -561,7 +542,7 @@
 //                                 </div>
 //                                 <div className='textsidec'>
 //                                     <div className='eventi'>
-//                                     ICF Coach Certification 
+//                                     ICF Coach Certification
 //                                     </div>
 //                                     <div className='timed'>
 //                                         <ul>
@@ -587,7 +568,7 @@
 //                                 </div>
 //                                 <div className='textsidec'>
 //                                     <div className='eventi'>
-//                                     ICF Coach Certification 
+//                                     ICF Coach Certification
 //                                     </div>
 //                                     <div className='timed'>
 //                                         <ul>
@@ -612,7 +593,7 @@
 //                                 </div>
 //                                 <div className='textsidec'>
 //                                     <div className='eventi'>
-//                                     ICF Coach Certification 
+//                                     ICF Coach Certification
 //                                     </div>
 //                                     <div className='timed'>
 //                                         <ul>
@@ -727,7 +708,6 @@
 //                             </div>
 //                         </div>
 
-
 //                         {/* <div className='col-sm-12'>
 //                             <div>
 //                                 <table className='mtblc wow fadeInUp delay-0-2s animated animateUP width100p'>
@@ -786,8 +766,6 @@
 //                 </div>
 //             </section>
 
-
-
 //             <div id='know-more' class="homecon ptt-60 zinc">
 //                 <div class="container">
 //                     <div className='row'>
@@ -806,7 +784,6 @@
 //                             <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
 //                                 <img src="/assets/img/homeb/contactl.png" alt="Contact" />
 //                             </div>
-
 
 //                         </div>
 //                         <div class="col-lg-4">
@@ -859,7 +836,7 @@
 //                                     </li>
 //                                     <li>
 //                                         <a href='/policies/ethical-marketing-policy'>Ethical Marketing Practice</a>
-//                                     </li> 
+//                                     </li>
 //                                 </ul>
 //                             </div>
 //                         </div>
@@ -870,153 +847,182 @@
 //     )
 // }
 
-
-
-
-import Head from 'next/head'
-import Link from 'next/link'
-import Image from 'next/image'
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
 import Slider from "react-slick";
-import React from 'react';
-import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel, } from 'react-accessible-accordion';
-import 'react-accessible-accordion/dist/fancy-example.css';
+import React from "react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from "react-accessible-accordion";
+import "react-accessible-accordion/dist/fancy-example.css";
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 
 export async function getServerSideProps() {
-    const res = await fetch('https://byldgroup.com/assets/countryPhoneCodes.json')
-    const country = await res.json()
-    return {
-        props: {
-            country
-        },
-    }
+  const res = await fetch(
+    "https://byldgroup.com/assets/countryPhoneCodes.json"
+  );
+  const country = await res.json();
+  return {
+    props: {
+      country,
+    },
+  };
 }
 
 export default function Home({ country }) {
+  const [modalOpen1, setModalOpen1] = React.useState(false);
 
+  const submit = async (event) => {
+    var name = event.target.name.value;
+    var email = event.target.email.value;
+    var phone = event.target.phone.value;
+    var cocode = event.target.cocode.value;
+    var organization = event.target.organization.value;
+    var designation = event.target.designation.value;
+    var slot = event.target.slot.value;
+    var Business_Entity = event.target.Business_Entity.value;
 
-    const [modalOpen1, setModalOpen1] = React.useState(false);
-
-    const submit = async event => {
-        var name = event.target.name.value;
-        var email = event.target.email.value;
-        var phone = event.target.phone.value;
-        var cocode = event.target.cocode.value;
-        var organization = event.target.organization.value;
-        var designation = event.target.designation.value;
-        var slot = event.target.slot.value;
-        var Business_Entity = event.target.Business_Entity.value;
-
-        event.preventDefault()
-        document.getElementById("submitbuttonform").value = "Submitting...."
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
-            console.log(this.responseText);
-        }
-        xhttp.open("Post", 'https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/141/feedback');
-        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-        xhttp.onreadystatechange = function () {
-            if (xhttp.readyState == 4) {
-                if (xhttp.status == 200) {
-                    document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-                    document.getElementById("contactForm").reset();
-                    document.getElementById("showlabel").style.display = "block";
-                    window.setTimeout(function () {
-                        window.location.href = "/thank-you"
-                    });
-
-                } else {
-                    alert('There was a problem with the request.');
-                }
-            }
-        };
-        xhttp.send("leadsquared-FirstName=" + name +
-            "&leadsquared-EmailAddress=" + email +
-            "&leadsquared-Mobile=" + cocode + '-' + phone +
-            "&leadsquared-Company=" + organization +
-            "&leadsquared-JobTitle=" + designation +
-            "&slot=" + slot +
-            "&leadsquared-mx_Business_Entity=" + Business_Entity)
-    }
-
-    const FooregisterUser = async event => {
-        event.preventDefault()
-        document.getElementById("submitbuttonform1").value = "Submitting form...."
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
-            console.log(this.responseText);
-        }
-        xhttp.open("Post", 'https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/22/feedback');
-        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-        xhttp.onreadystatechange = function () {
-            if (xhttp.readyState == 4) {
-                if (xhttp.status == 200) {
-                    document.getElementById("showlabel1").innerHTML = "Thank you for your details. Check your inbox for more details.";
-                    document.getElementById("resetform").reset();
-                    document.getElementById("showlabel1").style.display = "block";
-                    setTimeout(function () {
-                        document.getElementById("showlabel1").style.display = "none";
-                    }, 3000);
-
-                } else {
-                    alert('There was a problem with the request.');
-                }
-            }
-        };
-        xhttp.send("your-email=" + event.target.email.value)
-
-    }
-
-
-
-    var settings = {
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        autoplay: false,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+    event.preventDefault();
+    document.getElementById("submitbuttonform").value = "Submitting....";
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      console.log(this.responseText);
     };
+    xhttp.open(
+      "Post",
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/141/feedback"
+    );
+    xhttp.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded;"
+    );
+    xhttp.onreadystatechange = function () {
+      if (xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+          document.getElementById("showlabel").innerHTML =
+            "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+          document.getElementById("contactForm").reset();
+          document.getElementById("showlabel").style.display = "block";
+          window.setTimeout(function () {
+            window.location.href = "/thank-you";
+          });
+        } else {
+          alert("There was a problem with the request.");
+        }
+      }
+    };
+    xhttp.send(
+      "leadsquared-FirstName=" +
+        name +
+        "&leadsquared-EmailAddress=" +
+        email +
+        "&leadsquared-Mobile=" +
+        cocode +
+        "-" +
+        phone +
+        "&leadsquared-Company=" +
+        organization +
+        "&leadsquared-JobTitle=" +
+        designation +
+        "&slot=" +
+        slot +
+        "&leadsquared-mx_Business_Entity=" +
+        Business_Entity
+    );
+  };
 
-    return (
-        <>
-            <Head>
-                <title>Become a Coach Emailer | BYLD Group</title>
-                <meta name="description" content="When you think of becoming a coach – Think BYLD" />
-                <link rel="stylesheet" type="text/css" href="/efassets/css/new.css" />
-                <meta property="og:image" content="/efassets/img/business-team-building.svg"></meta>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
+  const FooregisterUser = async (event) => {
+    event.preventDefault();
+    document.getElementById("submitbuttonform1").value = "Submitting form....";
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      console.log(this.responseText);
+    };
+    xhttp.open(
+      "Post",
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/22/feedback"
+    );
+    xhttp.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded;"
+    );
+    xhttp.onreadystatechange = function () {
+      if (xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+          document.getElementById("showlabel1").innerHTML =
+            "Thank you for your details. Check your inbox for more details.";
+          document.getElementById("resetform").reset();
+          document.getElementById("showlabel1").style.display = "block";
+          setTimeout(function () {
+            document.getElementById("showlabel1").style.display = "none";
+          }, 3000);
+        } else {
+          alert("There was a problem with the request.");
+        }
+      }
+    };
+    xhttp.send("your-email=" + event.target.email.value);
+  };
+
+  var settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <Head>
+        <title>Become a Coach Emailer | BYLD Group</title>
+        <meta
+          name="description"
+          content="When you think of becoming a coach – Think BYLD"
+        />
+        <link rel="stylesheet" type="text/css" href="/efassets/css/new.css" />
+        <meta
+          property="og:image"
+          content="/efassets/img/business-team-building.svg"
+        ></meta>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
                         window.__lo_site_id = 330055;
 (function() {
 var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
@@ -1024,11 +1030,11 @@ wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
  })();
           `,
-                    }}
-                />
-            </Head>
+          }}
+        />
+      </Head>
 
-            {/* <Modal className='toppc mwc500' toggle={() => setModalOpen1(!modalOpen1)} isOpen={modalOpen1} backdrop="static" keyboard={false}>
+      {/* <Modal className='toppc mwc500' toggle={() => setModalOpen1(!modalOpen1)} isOpen={modalOpen1} backdrop="static" keyboard={false}>
                 <button aria-label="Close" className="close popcl" type="button" onClick={() => setModalOpen1(!modalOpen1)}>
                     <span aria-hidden={true}>×</span>
                 </button>
@@ -1061,354 +1067,523 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa
                 </ModalBody>
             </Modal> */}
 
-            <section className='videosection'>
-                <div class="videowrapper">
-                    <video src="/efassets/img/video/video.mp4" autoPlay muted loop type="video/mp4"></video>
-                </div>
+      <section className="videosection">
+        <div class="videowrapper">
+          <video
+            src="/efassets/img/video/video.mp4"
+            autoPlay
+            muted
+            loop
+            type="video/mp4"
+          ></video>
+        </div>
 
-                <div className='container ggt'>
-                    <div className='row'>
-                        <div className='col-sm-8'></div>
-                        <div className='col-sm-4'>
-                            <div className='formhh'>
-                                <div className="bannerform msddd">
-                                   <h3>Enroll in our ICF Accredited Coach Certification Batch 44, 17 February 10:00 am to 4:00 pm</h3>
-                                    {/*<h3>ICF Coach Certification Program by BYLD Group, Sat, Dec 16, 2023, 11:00 AM - 12:00 PM</h3> */}
+        <div className="container ggt">
+          <div className="row">
+            <div className="col-sm-8"></div>
+            <div className="col-sm-4">
+              <div className="formhh">
+                <div className="bannerform msddd">
+                  <h3>
+                    Enroll in our ICF Accredited Coach Certification Batch 44,
+                    17 February 10:00 am to 4:00 pm
+                  </h3>
+                  {/*<h3>ICF Coach Certification Program by BYLD Group, Sat, Dec 16, 2023, 11:00 AM - 12:00 PM</h3> */}
 
-
-                                    <form id="contactForm" className='clientcornner ptt-5 pbb-0' onSubmit={submit}>
-                                        <div className="row">
-                                            <div className="col-sm-12 mb-12">
-                                                <input type="text" name="name" placeholder="Name*" required />
-                                            </div>
-                                            <div className="col-sm-12 mb-12 eqlcwi">
-                                                <select className='wi10' name='cocode'>
-                                                    {
-                                                        country.slice().map((countrys) => {
-                                                            return (
-                                                                <option value={countrys.code}>{countrys.iso}-{countrys.code}</option>
-                                                            )
-                                                        })
-                                                    }
-                                                </select>
-                                                <input type="text" className='wi90' name="phone" maxlength="10" minlength="10" pattern="[0-9]*" placeholder="Phone No.*" required />
-                                            </div>
-                                            <div className="col-sm-12 mb-12">
-                                                <input type="email" name="email" placeholder="Work Email / Personal Email*" required />
-                                            </div>
-
-
-                                            <div className="col-sm-6 mb-12">
-                                                <input type="text" name="organization" placeholder="Organization*" required />
-                                            </div>
-                                            <div className="col-sm-6 mb-12">
-                                                <input type="text" name="designation" placeholder="Designation*" required />
-                                            </div>
-                                            <div className="col-sm-12 mb-12">
-                                                <input type="text" name="email" placeholder="Emailer" disabled />
-                                            </div>
-
-
-                                            <div className="col-sm-12 mb-12">
-                                                <select name='slot' required>
-                                                    <option value=''>Pick up any Slot*</option>   
-                                                    
-{/* 
-                                                    <option value='06 January 2024'>06 January 2024</option> */}
-                                                    <option value='17 February 2024'>17 February 2024</option>
-                                                </select>
-                                            </div>
-
-
-                                            <div className="col-sm-12 d-none">
-                                                <input type="text" name="Business_Entity" value="ICF" required />
-                                            </div>
-                                            <div className="col-lg-12 mb-12 text-center">
-                                                <input id='submitbuttonform' className="clientcornnerbtn" type="submit" value="Register" />
-                                            </div>
-                                            <p id="showlabel" style={{ display: "none" }}></p>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="rs-about style4 bg21 mtt-60">
-                <div class="container">
-                    <div class="row y-middle">
-                        <div class="col-lg-7">
-                            <div class="sec-title3 mbb-35 text-left onlyshd pbb-50">
-                                <h4 class="countertoph2 text-left font36">ABOUT OUR FIRM</h4>
-                                <div class="heading-border-line left-style"></div>
-                                <p class="mtt-40 font-20">
-                                    Largest Training & Consulting company that helps certify leaders as Coaches based on <b>ICF approved</b> Curriculum licensed by Aster Coaching LLC (USA).
-                                </p>
-                                <div className='rs-estimate'>
-                                    <ul className="estimate-info mtt-5 font-20 listhight">
-                                        <li>Competitively priced program with the highest return on investment.</li>
-                                        <li>Helped <b>600+</b> professionals from various industries</li>
-                                    </ul>
-                                </div>
-                                {/* <a className='dbro' href='#'>Download Brochure</a> */}
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="about-img"><img src="/assets/img/business-team-building.png" alt="images" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="rs-project style2 efhbg mtt-40 ptt-30 pbb-60">
-                <div class="container">
-                    <div class="row">
-                        <div className='col-sm-12'>
-                            <div className="sec-title3 mbb-35">
-                                <h4 className="countertoph2 text-center font36">Reasons To Choose BYLD</h4>
-                                <div className="heading-border-line center-style mbb-50"></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="rcbyldbox rcby1">
-                                <h3><span>100%</span> Online (ViLT)</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                            <div class="rcbyldbox  rcby2">
-                                <h3>Guaranteed Peer coaching assistance</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="rcbyldbox  rcby3">
-                                <h3>Coaches Trained</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                            <div class="rcbyldbox  rcby4">
-                                <h3><span>9+</span> Years of Experience</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="rcbyldbox  rcby5">
-                                <h3><span>10 hours</span> of mentor Coaching included</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                            <div class="rcbyldbox  rcby6">
-                                <h3><span>100%</span> Pass Results for CKA</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="rcbyldbox  rcby7">
-                                <h3>ICF Accredited Coaches</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                            <div class="rcbyldbox  rcby8">
-                                <h3>Unlimited access Online Mock assessments</h3>
-                                <a class="p-icon"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="shape-bg ptt-50 pbb-40 solutionsboxarea">
-                <div className="container">
+                  <form
+                    id="contactForm"
+                    className="clientcornner ptt-5 pbb-0"
+                    onSubmit={submit}
+                  >
                     <div className="row">
-                        <div className="col-sm-12">
-                            <div className="sec-title3 mbb-35">
-                                <h4 className="countertoph2 text-center font36">A Quick Insight into ICF Certification</h4>
-                                <div className="heading-border-line center-style mbb-30"></div>
-                            </div>
+                      <div className="col-sm-12 mb-12">
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Name*"
+                          required
+                        />
+                      </div>
+                      <div className="col-sm-12 mb-12 eqlcwi">
+                        <select className="wi10" name="cocode">
+                          {country.slice().map((countrys) => {
+                            return (
+                              <option value={countrys.code}>
+                                {countrys.iso}-{countrys.code}
+                              </option>
+                            );
+                          })}
+                        </select>
+                        <input
+                          type="text"
+                          className="wi90"
+                          name="phone"
+                          maxlength="10"
+                          minlength="10"
+                          pattern="[0-9]*"
+                          placeholder="Phone No.*"
+                          required
+                        />
+                      </div>
+                      <div className="col-sm-12 mb-12">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Work Email / Personal Email*"
+                          required
+                        />
+                      </div>
 
-                            <div className='testmm'>
-                                <Slider {...settings}>
-                                    <div class="innertest">
-                                        <div class="item-content">
-                                            <div className='testmicon1'>
-                                                <img src="/efassets/img/t1.png" alt="Testimonial" />
-                                            </div>
-                                            <div className='testmh'>
-                                                <h3>Why ICF certification is imperative?</h3>
-                                            </div>
-                                            <div className='testmp'>
-                                                <p>
-                                                    The online program was complete with several videos, real life examples and activities / note taking facility post each leg of the module which helped reflect on the learnings and its application. While a classroom training is best suited for this kind of a learning, the online module was well designed and engaging keeping the current constraints in perspective
-                                                </p>
-                                            </div>
-                                            <div className='testmicon2'>
-                                                <img src="/efassets/img/t2.png" alt="Testimonial" />
-                                            </div>
-                                        </div>
-                                    </div>
+                      <div className="col-sm-6 mb-12">
+                        <input
+                          type="text"
+                          name="organization"
+                          placeholder="Organization*"
+                          required
+                        />
+                      </div>
+                      <div className="col-sm-6 mb-12">
+                        <input
+                          type="text"
+                          name="designation"
+                          placeholder="Designation*"
+                          required
+                        />
+                      </div>
+                      <div className="col-sm-12 mb-12">
+                        <input
+                          type="text"
+                          name="email"
+                          placeholder="Emailer"
+                          disabled
+                        />
+                      </div>
 
-                                    <div class="innertest">
-                                        <div class="item-content">
-                                            <div className='testmicon1'>
-                                                <img src="/efassets/img/t1.png" alt="Testimonial" />
-                                            </div>
-                                            <div className='testmh'>
-                                                <h3>Who can consider the ICF accredited certification program?</h3>
-                                            </div>
-                                            {/* <div className='testmp'>
+                      <div className="col-sm-12 mb-12">
+                        <select name="slot" required>
+                          <option value="">Pick up any Slot*</option>
+
+                          {/* 
+                                                    <option value='06 January 2024'>06 January 2024</option> */}
+                          <option value="17 February 2024">
+                            17 February 2024
+                          </option>
+                        </select>
+                      </div>
+
+                      <div className="col-sm-12 d-none">
+                        <input
+                          type="text"
+                          name="Business_Entity"
+                          value="ICF"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-12 mb-12 text-center">
+                        <input
+                          id="submitbuttonform"
+                          className="clientcornnerbtn"
+                          type="submit"
+                          value="Register"
+                        />
+                      </div>
+                      <p id="showlabel" style={{ display: "none" }}></p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="rs-about style4 bg21 mtt-60">
+        <div class="container">
+          <div class="row y-middle">
+            <div class="col-lg-7">
+              <div class="sec-title3 mbb-35 text-left onlyshd pbb-50">
+                <h4 class="countertoph2 text-left font36">ABOUT OUR FIRM</h4>
+                <div class="heading-border-line left-style"></div>
+                <p class="mtt-40 font-20">
+                  Largest Training & Consulting company that helps certify
+                  leaders as Coaches based on <b>ICF approved</b> Curriculum
+                  licensed by Aster Coaching LLC (USA).
+                </p>
+                <div className="rs-estimate">
+                  <ul className="estimate-info mtt-5 font-20 listhight">
+                    <li>
+                      Competitively priced program with the highest return on
+                      investment.
+                    </li>
+                    <li>
+                      Helped <b>600+</b> professionals from various industries
+                    </li>
+                  </ul>
+                </div>
+                {/* <a className='dbro' href='#'>Download Brochure</a> */}
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="about-img">
+                <img
+                  src="/assets/img/business-team-building.png"
+                  alt="images"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rs-project style2 efhbg mtt-40 ptt-30 pbb-60">
+        <div class="container">
+          <div class="row">
+            <div className="col-sm-12">
+              <div className="sec-title3 mbb-35">
+                <h4 className="countertoph2 text-center font36">
+                  Reasons To Choose BYLD
+                </h4>
+                <div className="heading-border-line center-style mbb-50"></div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="rcbyldbox rcby1">
+                <h3>
+                  <span>100%</span> Online (ViLT)
+                </h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+              <div class="rcbyldbox  rcby2">
+                <h3>Guaranteed Peer coaching assistance</h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="rcbyldbox  rcby3">
+                <h3>Coaches Trained</h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+              <div class="rcbyldbox  rcby4">
+                <h3>
+                  <span>9+</span> Years of Experience
+                </h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="rcbyldbox  rcby5">
+                <h3>
+                  <span>10 hours</span> of mentor Coaching included
+                </h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+              <div class="rcbyldbox  rcby6">
+                <h3>
+                  <span>100%</span> Pass Results for CKA
+                </h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="rcbyldbox  rcby7">
+                <h3>ICF Accredited Coaches</h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+              <div class="rcbyldbox  rcby8">
+                <h3>Unlimited access Online Mock assessments</h3>
+                <a class="p-icon">
+                  <i class="fa fa-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="shape-bg ptt-50 pbb-40 solutionsboxarea">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="sec-title3 mbb-35">
+                <h4 className="countertoph2 text-center font36">
+                  A Quick Insight into ICF Certification
+                </h4>
+                <div className="heading-border-line center-style mbb-30"></div>
+              </div>
+
+              <div className="testmm">
+                <Slider {...settings}>
+                  <div class="innertest">
+                    <div class="item-content">
+                      <div className="testmicon1">
+                        <img src="/efassets/img/t1.png" alt="Testimonial" />
+                      </div>
+                      <div className="testmh">
+                        <h3>Why ICF certification is imperative?</h3>
+                      </div>
+                      <div className="testmp">
+                        <p>
+                          The online program was complete with several videos,
+                          real life examples and activities / note taking
+                          facility post each leg of the module which helped
+                          reflect on the learnings and its application. While a
+                          classroom training is best suited for this kind of a
+                          learning, the online module was well designed and
+                          engaging keeping the current constraints in
+                          perspective
+                        </p>
+                      </div>
+                      <div className="testmicon2">
+                        <img src="/efassets/img/t2.png" alt="Testimonial" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="innertest">
+                    <div class="item-content">
+                      <div className="testmicon1">
+                        <img src="/efassets/img/t1.png" alt="Testimonial" />
+                      </div>
+                      <div className="testmh">
+                        <h3>
+                          Who can consider the ICF accredited certification
+                          program?
+                        </h3>
+                      </div>
+                      {/* <div className='testmp'>
                                                 <p>
                                                     The online program was complete with several videos, real life examples and activities / note taking facility post each leg of the module which helped reflect on the learnings and its application. While a classroom training is best suited for this kind of a learning, the online module was well designed and engaging keeping the current constraints in perspective
                                                 </p>
                                             </div> */}
-                                            <div className='rs-estimate'>
-                                                <ul className="estimate-info mtt-5 font-20 listhight">
-                                                    <li>HR heads, HR managers, Training managers, Trainers, and Consultants</li>
-                                                    <li>Business Heads, Directors, General Managers, Managers, and Entrepreneurs</li>
-                                                    <li>CEOs, Senior leaders, Line Managers, Team Leaders, Supervisors, and all other C-suit executives.</li>
-                                                </ul>
-                                            </div>
-                                            <div className='testmicon2'>
-                                                <img src="/efassets/img/t2.png" alt="Testimonial" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </Slider>
-
-                            </div>
-                        </div>
+                      <div className="rs-estimate">
+                        <ul className="estimate-info mtt-5 font-20 listhight">
+                          <li>
+                            HR heads, HR managers, Training managers, Trainers,
+                            and Consultants
+                          </li>
+                          <li>
+                            Business Heads, Directors, General Managers,
+                            Managers, and Entrepreneurs
+                          </li>
+                          <li>
+                            CEOs, Senior leaders, Line Managers, Team Leaders,
+                            Supervisors, and all other C-suit executives.
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="testmicon2">
+                        <img src="/efassets/img/t2.png" alt="Testimonial" />
+                      </div>
                     </div>
-                </div>
+                  </div>
+                </Slider>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-
-
-            <div className="ptt-60 pbb-50">
-                <div className="container">
-                    <div className="row ">
-                        <div className='col-sm-4'></div>
-                        <div className='col-sm-4 text-center'>
-                            <img src="/efassets/img/teststar.png" alt="Testimonial" />
-                        </div>
-                    </div>
-
-                    <div className="row ptt-40">
-                        <div className='col-sm-4 nntestb'>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/0fzpMkqCU9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div className='col-sm-4 nntestb'>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/LaabW0vlKE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div className='col-sm-4 nntestb'>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/xiT1GoXSOps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
+      <div className="ptt-60 pbb-50">
+        <div className="container">
+          <div className="row ">
+            <div className="col-sm-4"></div>
+            <div className="col-sm-4 text-center">
+              <img src="/efassets/img/teststar.png" alt="Testimonial" />
             </div>
+          </div>
 
-
-            <div id="rs-faq" class="rs-faq ptt-60 pbb-50">
-                <div className="container">
-                    <div className="row ">
-                        <div className='col-sm-4'></div>
-                        <div className='col-sm-4 text-center'>
-                            <img src="/efassets/img/faqs.png" alt="Testimonial" />
-                        </div>
-                    </div>
-
-                    <div className="row ptt-40">
-                        <div className='col-sm-12 faqss'>
-                            <Accordion allowZeroExpanded>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            What is included in the fees of the course?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <p>
-                                            The fees of the Coaching Certification includes facilitation fees for Classroom Sessions (Virtual Instructor led) and Asynchronous learning Sessions. We also offer 10 hrs of ‘Mentor Coaching’ sessions, along with ‘Peer Coaching Support’ with unlimited access to Mock Tests for CKA ( now replaced with the new Credentialing Exam). That’s not all, we provide flexible finance options with interest free EMIs. Moreover, various other certifications & programs worth more than Rs. 1 Lakh are complimentary with the course.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            In Addition to the coaching sessions, what else is included in the program?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <p>
-                                            In addition, we offer you the following certifications and programs worth more than Rs. 1 lakh, as complimentary :<br></br>
-
-                                            ‘Emotional Intelligence Train the Trainer’ certification.<br></br>
-                                            25 free EQ assessments for your coaching assignments.<br></br>
-                                            Free Workshop on setting up your coaching practice or profession.<br></br>
-                                            ‘Advance Learning Professional Certification’ program (a 3 months certification course).<br></br>
-                                            These certifications can be availed anytime within 6 months.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Are there easy finance options available?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <p>
-                                            To reduce your upfront payment burden, we offer ‘Interest Free EMIs’, where you only pay 3 EMIs as advance payment. The rest can be paid over 6/9/12 months depending on the finance institution’s loan tenure scheme.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            Does the institute provide mentor coaching hours or do we have to pay extra?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <p>
-                                            At no additional cost, we offer 10 hrs of Mentor Coaching along with ‘Guaranteed Peer Coaching’ assistance and strong back-end support access to Master Coach / Facilitator. This will help you speed up your coaching journey and help establish coaching practice whether inside your organization or as a professional coach.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            How well experienced are the Master Coaches/ Instructors?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <p>
-                                            The International Master Coaches who conduct this training are very seasoned coaches with close to 30 years of coaching experience between the two of them. In association with Aster Coaching US (Accredited by ICF), we take pride in sharing with you that we certify and develop high-caliber coaches who meet global standards and are in tune with local, regional and global business practices.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-
-                                <AccordionItem>
-                                    <AccordionItemHeading>
-                                        <AccordionItemButton>
-                                            What is the flexibility of the Coaching Program?
-                                        </AccordionItemButton>
-                                    </AccordionItemHeading>
-                                    <AccordionItemPanel>
-                                        <p>
-                                            Keeping in mind one’s work schedule, we offer ViLT sessions on weekends per your convenience. This helps in finishing classroom credits without work being affected. In case of any unforeseen challenges, you can also opt to discontinue the batch and continue later with the next upcoming batch, at no additional Cost.
-                                        </p>
-                                    </AccordionItemPanel>
-                                </AccordionItem>
-                            </Accordion>
-                        </div>
-                    </div>
-                </div>
+          <div className="row ptt-40">
+            <div className="col-sm-4 nntestb">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/0fzpMkqCU9Y"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
+            <div className="col-sm-4 nntestb">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/LaabW0vlKE0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div className="col-sm-4 nntestb">
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/xiT1GoXSOps"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            {/* 
+      <div id="rs-faq" class="rs-faq ptt-60 pbb-50">
+        <div className="container">
+          <div className="row ">
+            <div className="col-sm-4"></div>
+            <div className="col-sm-4 text-center">
+              <img src="/efassets/img/faqs.png" alt="Testimonial" />
+            </div>
+          </div>
+
+          <div className="row ptt-40">
+            <div className="col-sm-12 faqss">
+              <Accordion allowZeroExpanded>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      What is included in the fees of the course?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      The fees of the Coaching Certification includes
+                      facilitation fees for Classroom Sessions (Virtual
+                      Instructor led) and Asynchronous learning Sessions. We
+                      also offer 10 hrs of ‘Mentor Coaching’ sessions, along
+                      with ‘Peer Coaching Support’ with unlimited access to Mock
+                      Tests for CKA ( now replaced with the new Credentialing
+                      Exam). That’s not all, we provide flexible finance options
+                      with interest free EMIs. Moreover, various other
+                      certifications & programs worth more than Rs. 1 Lakh are
+                      complimentary with the course.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      In Addition to the coaching sessions, what else is
+                      included in the program?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      In addition, we offer you the following certifications and
+                      programs worth more than Rs. 1 lakh, as complimentary :
+                      <br></br>
+                      ‘Emotional Intelligence Train the Trainer’ certification.
+                      <br></br>
+                      25 free EQ assessments for your coaching assignments.
+                      <br></br>
+                      Free Workshop on setting up your coaching practice or
+                      profession.<br></br>
+                      ‘Advance Learning Professional Certification’ program (a 3
+                      months certification course).<br></br>
+                      These certifications can be availed anytime within 6
+                      months.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Are there easy finance options available?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      To reduce your upfront payment burden, we offer ‘Interest
+                      Free EMIs’, where you only pay 3 EMIs as advance payment.
+                      The rest can be paid over 6/9/12 months depending on the
+                      finance institution’s loan tenure scheme.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Does the institute provide mentor coaching hours or do we
+                      have to pay extra?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      At no additional cost, we offer 10 hrs of Mentor Coaching
+                      along with ‘Guaranteed Peer Coaching’ assistance and
+                      strong back-end support access to Master Coach /
+                      Facilitator. This will help you speed up your coaching
+                      journey and help establish coaching practice whether
+                      inside your organization or as a professional coach.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      How well experienced are the Master Coaches/ Instructors?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      The International Master Coaches who conduct this training
+                      are very seasoned coaches with close to 30 years of
+                      coaching experience between the two of them. In
+                      association with Aster Coaching US (Accredited by ICF), we
+                      take pride in sharing with you that we certify and develop
+                      high-caliber coaches who meet global standards and are in
+                      tune with local, regional and global business practices.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      What is the flexibility of the Coaching Program?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Keeping in mind one’s work schedule, we offer ViLT
+                      sessions on weekends per your convenience. This helps in
+                      finishing classroom credits without work being affected.
+                      In case of any unforeseen challenges, you can also opt to
+                      discontinue the batch and continue later with the next
+                      upcoming batch, at no additional Cost.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 
             <div class="ptt-60 pbb-50 lastcc">
                 <div className="container">
                     <div className="row ">
@@ -1419,36 +1594,50 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa
                     </div>
                 </div>
             </div> */}
-            <div className='rs-footer ptt-50'>
-                <div className='bg-wrap'>
-                    <div class="container">
-                        <div class="newslatter-wrap extra-pt">
-                            <div class="footer-newsletter fly-up">
-                                <div className='row'>
-                                    <div className='col-sm-6'>
-                                        <div class="sec-title4 text-center mb-40 plllc">
-                                            <h2 class="title">Subscribe to Our Newsletter</h2>
-                                            <p>Stay updated with the latest on BYLD</p>
-                                        </div>
-                                    </div>
-                                    <div className='col-sm-6'>
-                                        <form id="resetform" class="subscribe-form" onSubmit={FooregisterUser}>
-                                            <input type="email" name="email" placeholder="Enter Your Email" required />
-                                            <button id='submitbuttonform1' class="readon2" type="submit">Subscribe Now <div class="btn-arrow"></div></button>
-                                            <p id="showlabel1" style={{ display: "none" }}></p>
-                                        </form>
-                                    </div>
-                                </div>
-
-
-                                {/* <img class="img1 pattern" src="assets/images/pattern/pattern8.png" alt="" />
-                                <img class="img2 pattern" src="assets/images/pattern/pattern9.png" alt="" /> */}
-                            </div>
-                        </div>
+      <div className="rs-footer ptt-50">
+        <div className="bg-wrap">
+          <div class="container">
+            <div class="newslatter-wrap extra-pt">
+              <div class="footer-newsletter fly-up">
+                <div className="row">
+                  <div className="col-sm-6">
+                    <div class="sec-title4 text-center mb-40 plllc">
+                      <h2 class="title">Subscribe to Our Newsletter</h2>
+                      <p>Stay updated with the latest on BYLD</p>
                     </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <form
+                      id="resetform"
+                      class="subscribe-form"
+                      onSubmit={FooregisterUser}
+                    >
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter Your Email"
+                        required
+                      />
+                      <button
+                        id="submitbuttonform1"
+                        class="readon2"
+                        type="submit"
+                      >
+                        Subscribe Now <div class="btn-arrow"></div>
+                      </button>
+                      <p id="showlabel1" style={{ display: "none" }}></p>
+                    </form>
+                  </div>
                 </div>
+
+                {/* <img class="img1 pattern" src="assets/images/pattern/pattern8.png" alt="" />
+                                <img class="img2 pattern" src="assets/images/pattern/pattern9.png" alt="" /> */}
+              </div>
             </div>
-            {/* <div class="rs-footer relative">
+          </div>
+        </div>
+      </div>
+      {/* <div class="rs-footer relative">
                 <div class="bg-wrap">
                     
                     <div class="footer-content pb-90">
@@ -1468,7 +1657,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa
                                         </ul>
                                         <ul class="social-links">
                                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                                             <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                         </ul>
                                     </div>
@@ -1519,8 +1708,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa
                 </div>
                 <img class="pattern-right" src="assets/images/pattern/pattern7.png" alt=""/>
             </div> */}
-
-
-        </>
-    )
+    </>
+  );
 }

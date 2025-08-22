@@ -1542,7 +1542,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa
                                         </ul>
                                         <ul class="social-links">
                                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                                             <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
                                         </ul>
                                     </div>
