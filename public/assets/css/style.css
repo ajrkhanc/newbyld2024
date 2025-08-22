@@ -9788,6 +9788,7 @@ body .search-modal .close:hover {
   border-radius: 0;
   color: #fff;
   text-align: center;
+  display: inline-block;
 }
 
 .rs-footer.style1 .footer-top .footer-social li a i:hover {

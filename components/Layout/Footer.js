@@ -172,7 +172,7 @@ export default function Footer() {
                       <span className="twitter-icon">
                         {/* <i className="fa fa-twitter att"></i> */}
                         {/* <i className="fa-brands fa-x-twitter att"></i> */}
-                        <FaXTwitter className="att  " />
+                        <FaXTwitter className="att  twIcon" />
                       </span>
                     </a>
                   </li>
