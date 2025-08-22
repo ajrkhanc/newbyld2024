@@ -161,7 +161,7 @@ export default function Footer() {
                   <li>
                     <a href="https://twitter.com/BYLDGroup" target="_blank">
                       <span>
-                        <i class="fa-brands fa-x-twitter"></i>
+                        <i className="fa-brands fa-x-twitter"></i>
                       </span>
                     </a>
                   </li>
