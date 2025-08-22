@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { FaXTwitter } from "react-icons/fa6";
+
 
 export default function Footer() {
   return (
@@ -82,7 +84,9 @@ export default function Footer() {
                         <a target="_blank" href="https://www.youtube.com/channel/UCwpwP8sH7YBIFs4xJeID9uA"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a target="_blank" href="https://twitter.com/crucial__skills"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://twitter.com/crucial__skills"> 
+                        <FaXTwitter className="" />
+                        </a>
                     </li>
                     <li>
                         <a target="_blank" href="https://www.instagram.com/byld_crucialskills/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
