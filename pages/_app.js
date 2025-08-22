@@ -33,37 +33,35 @@ import Head from "next/head";
 import Script from "next/script";
 import App from "next/app";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import LoaderOverlay from "../components/loader/LoaderOverlay";
 
 export default function MyApp({ Component, pageProps, router }) {
-  
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-  const handleLoad = () => {
-    setLoading(false);
-    document.body.style.overflow = 'auto';
-  };
+    const handleLoad = () => {
+      setLoading(false);
+      document.body.style.overflow = "auto";
+    };
 
-  document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
 
-  if (document.readyState === 'complete') {
-    handleLoad();
-  } else {
-    window.addEventListener('load', handleLoad);
-  }
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
 
-  return () => window.removeEventListener('load', handleLoad);
-}, []);
-
-
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   if (router.pathname.startsWith("/cruciallifechangingskills")) {
     return (
       <CL>
         <Head>
           <title>
-          Crucial Learning Courses, Certification & Training | Crucial Conversations
+            Crucial Learning Courses, Certification & Training | Crucial
+            Conversations
           </title>
           <meta
             name="description"
@@ -79,7 +77,10 @@ export default function MyApp({ Component, pageProps, router }) {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          />
 
           <link
             rel="stylesheet"
@@ -3637,6 +3638,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <noscript>
             <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
           </noscript>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          />
 
           <link
             rel="stylesheet"
@@ -5215,15 +5220,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           {/* Preload critical CSS files */}
           <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" />
-          <link rel="preload" href="/assets/css/font-awesome.min.css" as="style" />
+          <link
+            rel="preload"
+            href="/assets/css/font-awesome.min.css"
+            as="style"
+          />
           <link rel="preload" href="/assets/fonts/flaticon.css" as="style" />
           <link rel="preload" href="/assets/css/animate.css" as="style" />
           <link rel="preload" href="/assets/css/owl.carousel.css" as="style" />
           <link rel="preload" href="/assets/css/off-canvas.css" as="style" />
-          <link rel="preload" href="/assets/css/magnific-popup.css" as="style" />
+          <link
+            rel="preload"
+            href="/assets/css/magnific-popup.css"
+            as="style"
+          />
           <link rel="preload" href="/assets/css/rsmenu-main.css" as="style" />
-          <link rel="preload" href="/assets/inc/custom-slider/css/nivo-slider.css" as="style" />
-          <link rel="preload" href="/assets/inc/custom-slider/css/preview.css" as="style" />
+          <link
+            rel="preload"
+            href="/assets/inc/custom-slider/css/nivo-slider.css"
+            as="style"
+          />
+          <link
+            rel="preload"
+            href="/assets/inc/custom-slider/css/preview.css"
+            as="style"
+          />
           <link rel="preload" href="/assets/css/rs-spacing.css" as="style" />
           <link rel="preload" href="/assets/css/style.css" as="style" />
           <link rel="preload" href="/assets/fonts/flaticon.css" as="style" />
@@ -5248,12 +5269,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <link rel="stylesheet" href="/assets/css/off-canvas.css" />
           <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
           <link rel="stylesheet" href="/assets/css/rsmenu-main.css" />
-          <link rel="stylesheet" href="/assets/inc/custom-slider/css/nivo-slider.css" />
-          <link rel="stylesheet" href="/assets/inc/custom-slider/css/preview.css" />
+          <link
+            rel="stylesheet"
+            href="/assets/inc/custom-slider/css/nivo-slider.css"
+          />
+          <link
+            rel="stylesheet"
+            href="/assets/inc/custom-slider/css/preview.css"
+          />
           <link rel="stylesheet" href="/assets/css/rs-spacing.css" />
           <link rel="stylesheet" href="/assets/css/style.css" />
 
-            
           {/* Load non-critical CSS files asynchronously */}
           <link
             rel="stylesheet"
@@ -5285,7 +5311,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             rel="stylesheet"
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-           
           />
 
           {/* Slick Carousel CSS */}
@@ -5379,7 +5404,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }}
           />
         </Head>
-
 
         {/* <LoaderOverlay/> */}
         {/* {loading && <LoaderOverlay />} */}
