@@ -81,7 +81,7 @@ export default function Header() {
                       </li>
                       <li>
                         <a target="_blank" href="https://twitter.com/BYLDGroup">
-                          <i className="fa fa-twitter"></i>
+                          <i class="fa-brands fa-x-twitter"></i>
                         </a>
                       </li>
                       <li>
@@ -511,7 +511,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a target="_blank" href="https://twitter.com/BYLDGroup">
-                    <i className="fa fa-twitter"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
                   </a>
                 </li>
                 <li>

@@ -1,36 +1,41 @@
-import Link from 'next/link'
-import React from 'react'
-import Image from 'next/image'
+import Link from "next/link";
+import React from "react";
+import Image from "next/image";
 
 export default function Footer() {
-    const FooregisterUser = async event => {
-        event.preventDefault()
-        document.getElementById("submitbuttonform1").value = "Submitting form...."
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
-            console.log(this.responseText);
+  const FooregisterUser = async (event) => {
+    event.preventDefault();
+    document.getElementById("submitbuttonform1").value = "Submitting form....";
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      console.log(this.responseText);
+    };
+    xhttp.open(
+      "Post",
+      "https://ajrkhan.xyz/byldgroup/wp-json/contact-form-7/v1/contact-forms/22/feedback"
+    );
+    xhttp.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded;"
+    );
+    xhttp.onreadystatechange = function () {
+      if (xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+          document.getElementById("showlabel1").innerHTML =
+            "Thank you for your details. Check your inbox for more details.";
+
+          document.getElementById("showlabel1").style.display = "block";
+          setTimeout(function () {
+            document.getElementById("showlabel1").style.display = "none";
+          }, 3000);
+        } else {
+          alert("There was a problem with the request.");
         }
-        xhttp.open("Post", 'https://ajrkhan.xyz/byldgroup/wp-json/contact-form-7/v1/contact-forms/22/feedback');
-        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-        xhttp.onreadystatechange = function () {
-            if (xhttp.readyState == 4) {
-                if (xhttp.status == 200) {
-                    document.getElementById("showlabel1").innerHTML = "Thank you for your details. Check your inbox for more details.";
+      }
+    };
+    xhttp.send("your-email=" + event.target.email.value);
+  };
 
-                    document.getElementById("showlabel1").style.display = "block";
-                    setTimeout(function () {
-                        document.getElementById("showlabel1").style.display = "none";
-                    }, 3000);
-
-                } else {
-                    alert('There was a problem with the request.');
-                }
-            }
-        };
-        xhttp.send("your-email=" + event.target.email.value)
-
-    }
-    
   return (
     <>
       <footer id="rs-footer" className="rs-footer style1">
@@ -138,7 +143,7 @@ export default function Footer() {
                   <li>
                     <a href="https://twitter.com/Byld_Coaching" target="_blank">
                       <span>
-                        <i className="fa fa-twitter"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
                       </span>
                     </a>
                   </li>

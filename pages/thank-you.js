@@ -108,7 +108,7 @@ export default function ThankYou() {
                     <div className="col-md-4">
                         <a href="https://twitter.com/BYLDGroup" target="_blank">
                             <div className="innerboxthankyou">
-                                <i className="fa fa-twitter"></i>
+                               <i class="fa-brands fa-x-twitter"></i>
                                 <h4>Follow us on TWITTER</h4>
                                 <h5>@BYLDGroup</h5>
                             </div>
