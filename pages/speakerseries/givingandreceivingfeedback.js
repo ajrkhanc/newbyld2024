@@ -309,8 +309,8 @@ export default function GivingAndReceivingFeedback() {
           </div>
         </div>
       </section>
-      <section class="events-section">
-        <div class="container-fluid iconSide">
+      <section className="events-section">
+        <div className="container-fluid iconSide">
           <div className="row">
             <div className="col-md-12  mb-3">
               <h3>Upcoming Events &amp; Learning Opportunities</h3>
@@ -318,10 +318,10 @@ export default function GivingAndReceivingFeedback() {
           </div>
           <div className="row mt-5">
             <div className="col-lg-6 col-md-12 col-sm-12 relative mb-5 mt-5">
-              <div class="wrapper">
-                <div class="top-v"></div>
-                <div class="orange-shape"></div>
-                <div class="dark-rect">
+              <div className="wrapper">
+                <div className="top-v"></div>
+                <div className="orange-shape"></div>
+                <div className="dark-rect">
                   <p className="month mb-0">September</p>
                   <p className="date mb-0">05, 2025</p>
                 </div>
@@ -339,10 +339,10 @@ export default function GivingAndReceivingFeedback() {
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 relative mt-5 mb-5">
-              <div class="wrapper">
-                <div class="top-v"></div>
-                <div class="orange-shape"></div>
-                <div class="dark-rect">
+              <div className="wrapper">
+                <div className="top-v"></div>
+                <div className="orange-shape"></div>
+                <div className="dark-rect">
                   <p className="month mb-0">September</p>
                   <p className="date mb-0">19, 2025</p>
                 </div>
