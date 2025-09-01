@@ -95,8 +95,8 @@ export default function AuthenticExecutivePresence() {
         style={{ background: "#fff" }}
       >
         <div className="content">
-          <h1>Authentic Executive Presence</h1>
-          <p>
+          <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
+          <p style={{ color: "#000" }}>
             Learn how authenticity creates lasting trust, impact, and leadership
             success.
           </p>
@@ -104,7 +104,11 @@ export default function AuthenticExecutivePresence() {
             <a href="#webinar-preface" className="btn join">
               Join Now
             </a>
-            <a href="#webinar-preface" className="btn learn">
+            <a
+              href="#webinar-preface"
+              className="btn learn"
+              style={{ background: "#e0e0e0", color: "#333" }}
+            >
               Learn More
             </a>
           </div>
