@@ -406,7 +406,9 @@
   padding: 10px 15px;
   border: 1px solid #e66e06;
   box-shadow: 7px 1px 16px rgba(230, 110, 6, 0.34);
-  border-radius: 40px;
+  border-radius: 40px; 
+  list-style: none;
+  margin: 0 10px;
 }
 
 .marquee span {
