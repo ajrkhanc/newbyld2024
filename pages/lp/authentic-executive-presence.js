@@ -118,12 +118,12 @@ export default function AuthenticExecutivePresence() {
           <img
             src="/assets/img/imageUi.png"
             alt="Presentation"
-            className="img main-img"
+            className="img2 main-img"
           />
         </div>
       </section>
 
-      <section className="details" id="webinar-preface">
+      <section className="details pt-0" id="webinar-preface">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 ">
