@@ -239,7 +239,7 @@ export default function AuthenticExecutivePresence() {
                 such as Samsung India, Pepsico, Tata Sky, Tata AIG, United
                 Spirits, and Bharat Benz, helping them strengthen talent
                 development and business effectiveness. With a passion for
-                mentoring and coaching,
+                mentoring and coaching, 
                 {showText && (
                   <span>
                     Ronald continues to inspire leaders to build authentic
