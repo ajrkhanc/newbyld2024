@@ -92,7 +92,7 @@ export default function AuthenticExecutivePresence() {
       </Head>
       <section
         className="giving-receiving-feedback"
-        style={{ background: "#fff" }}
+        style={{ background: "#fff", padding: "50px 60px" }}
       >
         <div className="content">
           <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
