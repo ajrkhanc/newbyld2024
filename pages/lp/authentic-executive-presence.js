@@ -137,15 +137,15 @@ export default function AuthenticExecutivePresence() {
               <h3>By attending this session, you will learn how to:</h3>
               <div className="pointsPillS">
                 <ul className="row">
-                  <li className="PillSContent col-lg-6 col-md-12">Show care</li>
-                  <li className="PillSContent col-lg-6 col-md-12">
+                  <li className="PillSContent col-lg-5 col-md-12">Show care</li>
+                  <li className="PillSContent col-lg-5 col-md-12">
                     Stay curious
                   </li>
-                  <li className="PillSContent col-lg-6 col-md-12">Be clear</li>
-                  <li className="PillSContent col-lg-6 col-md-12">
+                  <li className="PillSContent col-lg-5 col-md-12">Be clear</li>
+                  <li className="PillSContent col-lg-5 col-md-12">
                     Lead with courage
                   </li>
-                  <li className="PillSContent col-lg-6 col-md-12">
+                  <li className="PillSContent col-lg-5 col-md-12">
                     Inspire authentically
                   </li>
                 </ul>
