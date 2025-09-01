@@ -116,9 +116,11 @@ export default function AuthenticExecutivePresence() {
 
         <div className="images">
           <img
-            src="/assets/img/imageUi1.png"
+            src="/assets/img/imageUi.png"
             alt="Presentation"
             className="img main-img"
+            width={250}
+            height={250}
           />
         </div>
       </section>
