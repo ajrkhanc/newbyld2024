@@ -119,8 +119,6 @@ export default function AuthenticExecutivePresence() {
             src="/assets/img/imageUi.png"
             alt="Presentation"
             className="img main-img"
-            width={250}
-            height={250}
           />
         </div>
       </section>
@@ -281,7 +279,7 @@ export default function AuthenticExecutivePresence() {
           </div>
         </div>
       </section>
-      <section className="events-section">
+      {/* <section className="events-section">
         <div className="container-fluid iconSide">
           <div className="row">
             <div className="col-md-12  mb-3">
@@ -333,7 +331,7 @@ export default function AuthenticExecutivePresence() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="offer-bar-section">
         <div className="container-fluid">
           <div id="offerBar" className="offer-bar">
