@@ -91,7 +91,7 @@ export default function AuthenticExecutivePresence() {
         />
       </Head>
       <section
-        className="giving-receiving-feedbackTwo"
+        className="giving-receiving-feedback"
         style={{ background: "#fff" }}
       >
         <div className="content">
