@@ -79,7 +79,7 @@ export default function AuthenticExecutivePresence() {
   return (
     <>
       <Head>
-        <title>Giving &amp; Receiving Feedback</title>
+        <title>Authentic Executive Presence</title>
         <meta
           name="description"
           content="Learn how to give and receive feedback effectively in your organization."
@@ -92,11 +92,10 @@ export default function AuthenticExecutivePresence() {
       </Head>
       <section className="giving-receiving-feedback">
         <div className="content">
-          <h1>Giving & Receiving Feedback</h1>
+          <h1>Authentic Executive Presence</h1>
           <p>
-            In every organization, feedback is the fuel that drives growth,
-            trust, and performance. Yet, many leaders and teams struggle with
-            how to give or receive it effectively.
+            Learn how authenticity creates lasting trust, impact, and leadership
+            success.
           </p>
           <div className="buttons">
             <a href="#webinar-preface" className="btn join">
@@ -125,33 +124,26 @@ export default function AuthenticExecutivePresence() {
             </div>
             <div className=" col-lg-6 col-md-12 col-sm-12 mb-5">
               <p>
-                In every organization, feedback is the fuel that drives growth,
-                trust, and performance. Yet, many leaders and teams struggle
-                with how to give or receive it effectively. As part of the BYLD
-                Group Speaker Series, this session on “Giving & Receiving
-                Feedback” explores how feedback, when delivered with clarity and
-                intention, can become a powerful tool for alignment and
-                accountability, not criticism.
+                In today’s fast-paced corporate world, leaders are remembered
+                not just for what they achieve, but for how they show up.
+                Authentic Executive Presence is the key to building credibility,
+                trust, and influence that lasts. Yet, many leaders struggle to
+                balance authority with authenticity, and confidence with care.
+                As part of the BYLD Group Speaker Series, this session on
+                “Authentic Executive Presence” explores the four pillars - Care,
+                Curiosity, Candor, and Courage - that define how leaders inspire
+                others, build stronger relationships, and create lasting impact.
               </p>
-              <h3>By attending this session, you will learn how to</h3>
-              <ul>
-                <li>
-                  Build a safe and respectful environment for feedback
-                  conversations
-                </li>
-                <li>
-                  Deliver feedback that inspires improvement rather than
-                  defensiveness
-                </li>
-                <li>Receive feedback with openness and self-awareness</li>
-                <li>
-                  Foster a feedback culture that drives performance and trust
-                </li>
-              </ul>
-              <p>
-                Join us to discover how the right approach to feedback can
-                transform people and performance.
-              </p>
+              <h3>By attending this session, you will learn how to:</h3>
+              <div className="pointsPillS">
+                <ul className="row">
+                  <li className="PillSContent col-lg-6 col-md-12">Show care</li>
+                  <li className="PillSContent col-lg-6 col-md-12">Stay curious</li>
+                  <li className="PillSContent col-lg-6 col-md-12">Be clear</li>
+                  <li className="PillSContent col-lg-6 col-md-12">Lead with courage</li>
+                  <li className="PillSContent col-lg-6 col-md-12">Inspire authentically</li>
+                </ul>
+              </div>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="form-wrapper">
