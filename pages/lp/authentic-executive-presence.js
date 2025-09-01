@@ -90,7 +90,10 @@ export default function AuthenticExecutivePresence() {
           href="/assets/css/GivingAndReceivingFeedback.css"
         />
       </Head>
-      <section className="giving-receiving-feedback">
+      <section
+        className="giving-receiving-feedbackTwo"
+        style={{ background: "#fff" }}
+      >
         <div className="content">
           <h1>Authentic Executive Presence</h1>
           <p>
@@ -109,7 +112,7 @@ export default function AuthenticExecutivePresence() {
 
         <div className="images">
           <img
-            src="/assets/img/groupImg.png"
+            src="/assets/img/imageUi.png"
             alt="Presentation"
             className="img main-img"
           />
@@ -258,7 +261,7 @@ export default function AuthenticExecutivePresence() {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="ImgBox">
                 <img
-                  src="/assets/img/yogeshShoodImg.png"
+                  src="/assets/img/RonaldSoans.png"
                   alt="Speaker 1"
                   className="img"
                 />
