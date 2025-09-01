@@ -39,7 +39,7 @@ export default function AuthenticExecutivePresence() {
     cf7FormData.append("slot", slot);
 
     fetch(
-      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/530/feedback",
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/532/feedback",
       {
         method: "POST",
         body: cf7FormData,
@@ -138,10 +138,16 @@ export default function AuthenticExecutivePresence() {
               <div className="pointsPillS">
                 <ul className="row">
                   <li className="PillSContent col-lg-6 col-md-12">Show care</li>
-                  <li className="PillSContent col-lg-6 col-md-12">Stay curious</li>
+                  <li className="PillSContent col-lg-6 col-md-12">
+                    Stay curious
+                  </li>
                   <li className="PillSContent col-lg-6 col-md-12">Be clear</li>
-                  <li className="PillSContent col-lg-6 col-md-12">Lead with courage</li>
-                  <li className="PillSContent col-lg-6 col-md-12">Inspire authentically</li>
+                  <li className="PillSContent col-lg-6 col-md-12">
+                    Lead with courage
+                  </li>
+                  <li className="PillSContent col-lg-6 col-md-12">
+                    Inspire authentically
+                  </li>
                 </ul>
               </div>
             </div>
@@ -221,59 +227,25 @@ export default function AuthenticExecutivePresence() {
             <div className="col-lg-6 col-md-12 col-sm-12 mb-5">
               <h3>Program Facilitator</h3>
               <p>
-                Yogesh Sood is the Founder and Chairman & Managing Director
-                (CMD) of BYLD Group He also leads the Indian boards of reputed
-                global organizations, including DOOR Training and Consulting,
-                VitalSmarts USA, Blanchard International, and Aspectum
-                Consulting, Finland—all recognized for their excellence in
-                business consulting, training, and coaching. With nearly four
-                decades of professional experience in sales, marketing, and
-                learning & development roles at top-tier companies like
-                Novartis, Amul, and the Aditya Birla Group, Yogesh brings
-                unparalleled industry insight and leadership acumen to the
-                table.
+                Ronald Soans, Principal – Services Sector at BYLD Group, brings
+                over four decades of expertise in LNOD consulting, leadership
+                and soft skills training, sales, and recruitment. An ICF and
+                ACDP certified coach and IOC Certified Performance Coaching
+                Trainer, Ronald is also a Master Trainer in Everything DiSC, a
+                certified facilitator for Lumina Assessments, and a
+                Blanchard-certified facilitator for programs including
+                Situational Leadership® II, Legendary Service, Whale Done, and
+                Self Leadership. He has partnered with leading organizations
+                such as Samsung India, Pepsico, Tata Sky, Tata AIG, United
+                Spirits, and Bharat Benz, helping them strengthen talent
+                development and business effectiveness. With a passion for
+                mentoring and coaching,
               </p>
               {showText && (
                 <div>
                   <p>
-                    Yogesh Sood is the Founder and Chairman & Managing Director
-                    (CMD) of BYLD Group (www.byldgroup.com). He also leads the
-                    Indian boards of reputed global organizations, including
-                    DOOR Training and Consulting, VitalSmarts USA, Blanchard
-                    International, and Aspectum Consulting, Finland—all
-                    recognized for their excellence in business consulting,
-                    training, and coaching. With nearly four decades of
-                    professional experience in sales, marketing, and learning &
-                    development roles at top-tier companies like Novartis, Amul,
-                    and the Aditya Birla Group, Yogesh brings unparalleled
-                    industry insight and leadership acumen to the table. A
-                    distinguished MCC (Master Certified Coach) accredited by
-                    ICF, Yogesh has over 19 years of active coaching and
-                    mentoring experience, working closely with senior leadership
-                    teams across multinational and Indian corporations. His
-                    expertise lies in enhancing leadership effectiveness,
-                    resolving team conflicts, and managing difficult workplace
-                    dialogues to positively influence business outcomes. He was
-                    instrumental in establishing the first ICF chapter in South
-                    Asia in 2005 and is also a member of the elite international
-                    panel of coaches for Korn Ferry, contributing to leadership
-                    development across global markets. Yogesh holds a
-                    postgraduate degree in management, is an alumnus of Harvard
-                    Business School, and a graduate of the College of Executive
-                    Coaching, USA. He has completed advanced certifications in
-                    areas such as design thinking, digital strategies, health
-                    and wellness coaching, and executive and performance
-                    coaching. His thought leadership is widely recognized
-                    through various Indian and international publications.
-                    Additionally, he has contributed to two globally acclaimed
-                    books: “Diversity in Coaching” (Kogan Page UK, 2009) and
-                    “Ready, Aim, Excel” (Expert Insights USA, 2011). Among his
-                    prestigious clientele are organizations like Airtel, Canon,
-                    Microsoft India, Tata Sky, and Infosys. Yogesh continues to
-                    travel globally to deliver internationally certified
-                    leadership and strategy development programs. He can be
-                    reached via LinkedIn or through the official BYLD Group
-                    website.
+                    Ronald continues to inspire leaders to build authentic
+                    presence, unlock potential, and drive sustainable results.
                   </p>
                 </div>
               )}
