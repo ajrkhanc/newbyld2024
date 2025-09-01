@@ -240,15 +240,21 @@ export default function AuthenticExecutivePresence() {
                 Spirits, and Bharat Benz, helping them strengthen talent
                 development and business effectiveness. With a passion for
                 mentoring and coaching,
+                {showText && (
+                  <span>
+                    Ronald continues to inspire leaders to build authentic
+                    presence, unlock potential, and drive sustainable results.
+                  </span>
+                )}
               </p>
-              {showText && (
+              {/* {showText && (
                 <div>
                   <p>
                     Ronald continues to inspire leaders to build authentic
                     presence, unlock potential, and drive sustainable results.
                   </p>
                 </div>
-              )}
+              )} */}
               <button
                 className="register-btn"
                 onClick={() => setShowText(!showText)}
