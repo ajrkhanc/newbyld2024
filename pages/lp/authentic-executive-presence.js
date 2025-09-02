@@ -283,7 +283,7 @@ export default function AuthenticExecutivePresence() {
           </div>
         </div>
       </section>
-      <section className="events-section">
+      <section className="events-section" style={{background: "#9ED8B3"}}>
         <div className="container-fluid iconSide">
           <div className="row">
             <div className="col-md-12  mb-3">
