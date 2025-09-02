@@ -284,55 +284,62 @@ export default function AuthenticExecutivePresence() {
         </div>
       </section>
       <section className="events-section" style={{background: "#9ED8B3"}}>
-        <div className="container-fluid iconSide">
+        <div className="container iconSide">
           <div className="row">
             <div className="col-md-12  mb-3">
               <h3 className="text-dark font-weight-extrabold">Event Details</h3>
             </div>
           </div>
           <div className="row mt-5">
-            <div className="col-lg-6 col-md-12 col-sm-12 relative mb-5 mt-5">
-              <div className="wrapper">
-                <div className="top-v"></div>
-                <div className="orange-shape"></div>
-                <div className="dark-rect">
-                  <p className="month mb-0">September</p>
-                  <p className="date mb-0">05, 2025</p>
-                </div>
-              </div>
-              <div className="event-title">Facilitator : Yogesh Sood</div>
-              <div className="event-card">
-                <div className="event-details">
-                  <div className="facilitator">
-                    <h3 className="mb-0">Goal Setting</h3>
-                    <p className="mb-0">
-                      11:00AM to 12PM to 04:00PM to 05:00PM
-                    </p>
+            <div className="col-lg-3 col-md-12 col-sm-12">
+              <div className="eventBox">
+                  <div className="eventImg">
+                    <img src="/assets/img/cl.png" alt="Event 1" />
                   </div>
-                </div>
+                  <div className="eventContent">
+                    <p>September</p>
+                    <p className="smallText"> 26, 2025</p>
+                  </div>
+               
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 relative mt-5 mb-5">
-              <div className="wrapper">
-                <div className="top-v"></div>
-                <div className="orange-shape"></div>
-                <div className="dark-rect">
-                  <p className="month mb-0">September</p>
-                  <p className="date mb-0">19, 2025</p>
-                </div>
-              </div>
-              <div className="event-title">Facilitator : Yogesh Sood</div>
-              <div className="event-card">
-                <div className="event-details">
-                  <div className="facilitator">
-                    <h3 className="mb-0">Accountability & Ownership</h3>
-                    <p className="mb-0">
-                      11:00AM to 12PM to 04:00PM to 05:00PM
-                    </p>
+            <div className="col-lg-3 col-md-12 col-sm-12">
+              <div className="eventBox">
+                  <div className="eventImg">
+                    <img src="/assets/img/time.png" alt="Event 2" />
                   </div>
-                </div>
+                  <div className="eventContent">
+                    <p>Time</p>
+                    <p className="smallText"> 03:00 PM – 05:00 PM</p>
+                  </div>
+               
               </div>
             </div>
+            <div className="col-lg-3 col-md-12 col-sm-12">
+              <div className="eventBox">
+                  <div className="eventImg">
+                    <img src="/assets/img/user.png" alt="Event 3" />
+                  </div>
+                  <div className="eventContent">
+                    <p>Facilitator</p>
+                    <p className="smallText">Ronald Soans</p>
+                  </div>
+               
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-12 col-sm-12">
+              <div className="eventBox">
+                  <div className="eventImg">
+                    <img src="/assets/img/cl.png" alt="Event 4" />
+                  </div>
+                  <div className="eventContent">
+                    <p>Price</p>
+                    <p className="smallText"> ₹5,000 + GST<sub>per person</sub></p>
+                  </div>
+               
+              </div>
+            </div>
+           
           </div>
         </div>
       </section>
