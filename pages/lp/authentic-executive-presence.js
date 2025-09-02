@@ -287,7 +287,7 @@ export default function AuthenticExecutivePresence() {
         <div className="container-fluid iconSide">
           <div className="row">
             <div className="col-md-12  mb-3">
-              <h3>Upcoming Events &amp; Learning Opportunities</h3>
+              <h3 className="text-dark">Event Details</h3>
             </div>
           </div>
           <div className="row mt-5">
