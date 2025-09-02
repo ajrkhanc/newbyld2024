@@ -91,7 +91,7 @@ export default function AuthenticExecutivePresence() {
         />
       </Head>
       <section
-        className="giving-receiving-feedback bgImgAuthenticExecutivePresence"
+        className="bgImgAuthenticExecutivePresence"
         style={{ background: "#fff", padding: "50px 60px" }}
       >
         <div className="content">
