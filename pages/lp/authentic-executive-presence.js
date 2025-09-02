@@ -343,7 +343,7 @@ export default function AuthenticExecutivePresence() {
               <div className="col-md-12">
             
 
-                <a href="#webinar-preface" className="register-btn" style={{color: "#fff",padding: "20px"}}> Reserve Your Seat Now</a>
+                <a href="#webinar-preface" className="register-btn" style={{color: "#fff",padding: "20px 50px"}}> Reserve Your Seat Now</a>
               </div>
 
             </div>
