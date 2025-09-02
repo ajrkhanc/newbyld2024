@@ -97,7 +97,7 @@ export default function AuthenticExecutivePresence() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12">
-              <div className="content">
+              <div className="content mb-5">
                 <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
                 <p style={{ color: "#000" }}>
                   Learn how authenticity creates lasting trust, impact, and leadership
