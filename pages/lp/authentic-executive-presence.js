@@ -341,7 +341,9 @@ export default function AuthenticExecutivePresence() {
             </div>
             <div className="row mt-5">
               <div className="col-md-12">
-               <button className="register-btn">Reserve Your Seat Now</button>
+            
+
+                <a href="#webinar-preface" className="register-btn"> Reserve Your Seat Now</a>
               </div>
 
             </div>
