@@ -274,16 +274,16 @@ export default function AuthenticExecutivePresence() {
                   className="img"
                 />
                 <div className="contentBOx1">
-                  <p>Mr. Yogesh sood, ACTP, </p>
-                  <p>MCC(ICF)</p>
-                  <p className="smallText">(CMD BYLD Group)</p>
+                  <p>Mr. Ronald Soans, Principal </p>
+                  <p>Consultant & Evangelist</p>
+                  {/* <p className="smallText">(CMD BYLD Group)</p> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <section className="events-section">
+      <section className="events-section">
         <div className="container-fluid iconSide">
           <div className="row">
             <div className="col-md-12  mb-3">
@@ -335,7 +335,7 @@ export default function AuthenticExecutivePresence() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section className="offer-bar-section">
         <div className="container-fluid">
           <div id="offerBar" className="offer-bar">
