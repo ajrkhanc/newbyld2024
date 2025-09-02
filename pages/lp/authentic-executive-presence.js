@@ -92,35 +92,36 @@ export default function AuthenticExecutivePresence() {
       </Head>
       <section
         className="bgImgAuthenticExecutivePresence"
-        
+
       >
-        <div className="content">
-          <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
-          <p style={{ color: "#000" }}>
-            Learn how authenticity creates lasting trust, impact, and leadership
-            success.
-          </p>
-          <div className="buttons">
-            <a href="#webinar-preface" className="btn join">
-              Join Now
-            </a>
-            <a
-              href="#webinar-preface"
-              className="btn learn"
-              style={{ background: "#e0e0e0", color: "#333" }}
-            >
-              Learn More
-            </a>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="content">
+                <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
+                <p style={{ color: "#000" }}>
+                  Learn how authenticity creates lasting trust, impact, and leadership
+                  success.
+                </p>
+                <div className="buttons">
+                  <a href="#webinar-preface" className="btn join">
+                    Join Now
+                  </a>
+                  <a
+                    href="#webinar-preface"
+                    className="btn learn"
+                    style={{ background: "#e0e0e0", color: "#333" }}
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
 
-        {/* <div className="images">
-          <img
-            src="/assets/img/imageUi.png"
-            alt="Presentation"
-            className="img2 main-img"
-          />
-        </div> */}
+
       </section>
 
       <section className="details pt-0" id="webinar-preface">
