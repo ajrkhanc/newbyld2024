@@ -127,8 +127,8 @@ export default function AuthenticExecutivePresence() {
       <section className="details " id="webinar-preface">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-12 mb-3">
-              <img src="/assets/img/blanchandLogo.png" className="img-fluid" alt="blanchandLogo" />
+            <div className="col-md-12 mb-3 mt-3 text-align-center">
+              <img src="/assets/img/blanchandLogo.png" className="img-fluid " alt="blanchandLogo"  />
             </div>
             <div className="col-md-12 ">
               <h2>Webinar Preface</h2>
