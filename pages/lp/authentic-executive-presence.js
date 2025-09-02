@@ -214,7 +214,7 @@ export default function AuthenticExecutivePresence() {
                     <option value="11 AM - 12PM">11 AM - 12PM</option>
                     <option value="4PM - 5PM">4PM - 5PM</option>
                   </select>
-                  <div style={{ textAlign: "center" }}>
+                  <div style={{ textAlign: "right" }}>
                     <button className="register-btn mt-4" disabled={loading}>
                       {loading ? (
                         <span className="flex items-center justify-center gap-2">
