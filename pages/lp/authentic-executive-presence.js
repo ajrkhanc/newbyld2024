@@ -286,12 +286,12 @@ export default function AuthenticExecutivePresence() {
       <section className="events-section" style={{background: "#9ED8B3"}}>
         <div className="container iconSide">
           <div className="row">
-            <div className="col-md-12  mb-3">
+            <div className="col-md-12">
               <h3 className="text-dark font-weight-extrabold">Event Details</h3>
             </div>
           </div>
           <div className="row mt-3">
-            <div className="col-lg-3 col-md-12 col-sm-12">
+            <div className="col-lg-3 col-md-6  col-sm-12 mb-2">
               <div className="eventBox">
                   <div className="eventImg">
                     <img src="/assets/img/cl.png" alt="Event 1" />
@@ -303,7 +303,7 @@ export default function AuthenticExecutivePresence() {
                
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-sm-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
               <div className="eventBox">
                   <div className="eventImg">
                     <img src="/assets/img/time.png" alt="Event 2" />
@@ -315,7 +315,7 @@ export default function AuthenticExecutivePresence() {
                
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-sm-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
               <div className="eventBox">
                   <div className="eventImg">
                     <img src="/assets/img/user.png" alt="Event 3" />
@@ -327,7 +327,7 @@ export default function AuthenticExecutivePresence() {
                
               </div>
             </div>
-            <div className="col-lg-3 col-md-12 col-sm-12">
+            <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
               <div className="eventBox">
                   <div className="eventImg">
                     <img src="/assets/img/cl.png" alt="Event 4" />
@@ -339,8 +339,15 @@ export default function AuthenticExecutivePresence() {
                
               </div>
             </div>
+            <div className="row">
+              <div className="col-md-12">
+               <button className="register-btn">Reserve Your Seat Now</button>
+              </div>
+
+            </div>
            
           </div>
+
         </div>
       </section>
       <section className="offer-bar-section">
