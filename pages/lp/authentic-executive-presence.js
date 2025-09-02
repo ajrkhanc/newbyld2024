@@ -290,7 +290,7 @@ export default function AuthenticExecutivePresence() {
               <h3 className="text-dark font-weight-extrabold">Event Details</h3>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-3">
             <div className="col-lg-3 col-md-12 col-sm-12">
               <div className="eventBox">
                   <div className="eventImg">
