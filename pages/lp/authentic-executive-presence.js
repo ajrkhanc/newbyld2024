@@ -298,7 +298,7 @@ export default function AuthenticExecutivePresence() {
                   </div>
                   <div className="eventContent">
                     <p>September</p>
-                    <p className="smallText"> 26, 2025</p>
+                    <p className="smallTextOne"> 26, 2025</p>
                   </div>
                
               </div>
@@ -310,7 +310,7 @@ export default function AuthenticExecutivePresence() {
                   </div>
                   <div className="eventContent">
                     <p>Time</p>
-                    <p className="smallText"> 03:00 PM – 05:00 PM</p>
+                    <p className="smallTextOne"> 03:00 PM – 05:00 PM</p>
                   </div>
                
               </div>
@@ -322,7 +322,7 @@ export default function AuthenticExecutivePresence() {
                   </div>
                   <div className="eventContent">
                     <p>Facilitator</p>
-                    <p className="smallText">Ronald Soans</p>
+                    <p className="smallTextOne">Ronald Soans</p>
                   </div>
                
               </div>
@@ -334,7 +334,7 @@ export default function AuthenticExecutivePresence() {
                   </div>
                   <div className="eventContent">
                     <p>Price</p>
-                    <p className="smallText"> ₹5,000 + GST<sub>per person</sub></p>
+                    <p className="smallTextOne"> ₹5,000 + GST<sub>per person</sub></p>
                   </div>
                
               </div>
