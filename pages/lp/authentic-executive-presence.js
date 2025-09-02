@@ -339,7 +339,7 @@ export default function AuthenticExecutivePresence() {
                
               </div>
             </div>
-            <div className="row">
+            <div className="row mt-5">
               <div className="col-md-12">
                <button className="register-btn">Reserve Your Seat Now</button>
               </div>
