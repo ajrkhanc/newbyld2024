@@ -91,7 +91,7 @@ export default function AuthenticExecutivePresence() {
         />
       </Head>
       <section
-        className="giving-receiving-feedback"
+        className="giving-receiving-feedback bgImgAuthenticExecutivePresence"
         style={{ background: "#fff", padding: "50px 60px" }}
       >
         <div className="content">
@@ -114,13 +114,13 @@ export default function AuthenticExecutivePresence() {
           </div>
         </div>
 
-        <div className="images">
+        {/* <div className="images">
           <img
             src="/assets/img/imageUi.png"
             alt="Presentation"
             className="img2 main-img"
           />
-        </div>
+        </div> */}
       </section>
 
       <section className="details pt-0" id="webinar-preface">
