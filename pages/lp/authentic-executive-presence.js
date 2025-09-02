@@ -124,7 +124,7 @@ export default function AuthenticExecutivePresence() {
 
       </section>
 
-      <section className="details pt-0" id="webinar-preface">
+      <section className="details " id="webinar-preface">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 ">
