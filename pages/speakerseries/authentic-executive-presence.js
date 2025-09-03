@@ -3,6 +3,7 @@ import Head from "next/head";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Loader2 } from "lucide-react";
+import { TiSocialLinkedin } from "react-icons/ti";
 
 export default function AuthenticExecutivePresence() {
   const [showText, setShowText] = useState(false);
@@ -278,9 +279,14 @@ export default function AuthenticExecutivePresence() {
                   className="img"
                 />
                 <div className="contentBOx1">
-                  <p>Mr. Ronald Soans, Principal </p>
-                  <p>Consultant & Evangelist</p>
+                  <p>Mr. Ronald Soans</p>
+                  <p>Principal Consultant & Evangelist</p>
                   {/* <p className="smallText">(CMD BYLD Group)</p> */}
+                  <div>
+                    <a href="https://www.linkedin.com/in/ronaldsoans/" target="_blank" rel="noopener noreferrer">
+                      <TiSocialLinkedin />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
