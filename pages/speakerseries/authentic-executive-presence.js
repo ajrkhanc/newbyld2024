@@ -284,12 +284,13 @@ export default function AuthenticExecutivePresence() {
                   {/* <p className="smallText">(CMD BYLD Group)</p> */}
                   <div>
                     <a
-                      href="https://www.linkedin.com/in/ronaldsoans/"
+                      href="https://www.linkedin.com/in/ronald-soans-4b703412/
+"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <IoLogoLinkedin
-                        style={{ color: "#0A66C2", fontSize: "24px" }}
+                        style={{ color: "#0A66C2", fontSize: "28px" }}
                       />
                     </a>
                   </div>
