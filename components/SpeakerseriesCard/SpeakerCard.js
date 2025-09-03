@@ -333,8 +333,8 @@ export default SpeakerCard;
 const workshops = [
   {
     id: 1,
-    courseName: "Giving & receiving feedback",
-    dateRangeOne: "August 21, 2025",
+    courseName: "Authentic Executive Presence",
+    dateRangeOne: "26th September 2025",
     dateRangeTwo: "",
     location: "India",
     format: "Virtual",
@@ -342,25 +342,14 @@ const workshops = [
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
     description: `
-      <p >In every organization, feedback is the fuel that drives growth, trust, and performance. Yet, many leaders and teams struggle with how to give or receive it effectively.
-As part of the BYLD Group Speaker Series, this session on “Giving & Receiving Feedback” explores how feedback—when delivered with clarity and intention—can become a powerful tool for alignment and accountability, not criticism.</p>
-      <p>TLearning Objectives:By attending this session, you will learn how to:</p>
-<div className="workshop-description">
-      <ul >
-        <li >Build a safe and respectful environment for feedback conversations</li>
-        <li >Deliver feedback that inspires improvement rather than defensiveness</li>
-        <li>Foster a feedback culture that drives performance and trust</li>
-        
-      </ul>
-        <p >Join us on August 21, 2025, with Yogesh Sood, CMD – BYLD Group, to discover how the right approach to feedback can transform people and performance.</p>
-    </div>
-      
-    `,
+      <p >Executive presence isn’t about titles—it’s about how you show up as a leader. This 90-minute, facilitator-led virtual session introduces leaders to the essentials of Authentic Executive Presence. Participants will explore what authenticity means in leadership, reflect on their own leadership situations, and understand the impact of executive presence.
+The session dives into the Four Pillars of authentic leadership—Care, Curiosity, Candor, and Courage— through guided discussion, self-reflection, and practical tools. Leaders leave with actionable strategies to strengthen trust, influence, and credibility in their day-to-day roles.</p>
+`,
   },
   {
     id: 2,
-    courseName: "Goal Setting ",
-    dateRangeOne: "Sept 5, 2025",
+    courseName: "High Performing Teams",
+    dateRangeOne: "14th October 2025",
     dateRangeTwo: "",
     location: "India",
     format: "virtual",
@@ -368,25 +357,17 @@ As part of the BYLD Group Speaker Series, this session on “Giving & Receiving 
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
     description: `
-      <p >In every organization, clear goals are the compass that guides teams toward achievement and excellence. Yet, many leaders and employees struggle to set goals that are both inspiring and actionable. As part of the BYLD Group Speaker Series, this session on “Goal Setting for Performance & Success” explores how well-defined goals, when created with clarity and collaboration, can drive focus, accountability, and measurable results.</p>
-      <p>Learning Objectives: By attending this session, you will learn how to:</p>
-<div className="workshop-description">
-      <ul >
-        <li >Define goals that are specific, measurable, and aligned with organizational priorities</li>
-        <li >Collaborate with team members to co-create goals that build ownership and commitment</li>
-        <li>Monitor progress and adjust goals to stay relevant in changing business conditions</li>
-        
-      </ul>
-        
-    </div>
+      <p >High-performing teams don’t happen by chance—they are built through intentional leadership. This 90-minute, facilitator-led virtual session introduces leaders to the mindset, structure, and behaviors needed to create and sustain high-performing teams. Participants will explore the predictable stages of team development and understand how productivity and morale shift along the way.</p>
+      <p>The session dives into core elements of team effectiveness—purpose, goals, roles, and norms—through guided discussion, observation strategies, and team charter development. Leaders gain practical approaches to foster trust, provide the right balance of direction and support, and keep teams focused, connected, and performing at their best.</p>
+
       
     `,
   },
 
   {
     id: 3,
-    courseName: "Accountability & Ownership",
-    dateRangeOne: "Sept  10, 2025",
+    courseName: "Highly Trusted Leader",
+    dateRangeOne: "21st November 2025",
     dateRangeTwo: "",
     location: "India",
     format: "virtual",
@@ -394,19 +375,8 @@ As part of the BYLD Group Speaker Series, this session on “Giving & Receiving 
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
     description: `
-      <p >In organizations today, accountability and ownership are the cornerstones of trust, performance, and long-term success. Yet, many leaders and teams avoid holding crucial conversations about missed commitments or unclear expectations, leading to unresolved issues and stalled progress. As part of the BYLD Group Speaker Series, this session on “Accountability & Ownership” explores how fostering a culture of responsibility can drive alignment, strengthen relationships, and deliver measurable results.</p>
-      <p>Learning Objectives:</p>
-<div className="workshop-description">
-      <ul >
-        <li >By attending this session, you will learn how to:
-Approach accountability conversations with confidence, clarity, and respect
-Build a culture where individuals take ownership of their commitments and outcomes
-Turn challenging situations into opportunities for learning and improved performance</li>
-       
-
-      </ul>
-        <p >Join us on 10th September 2025, with Yogesh Sood, CMD – BYLD Group to discover how embracing accountability and ownership can transform people, teams, and organizational results.</p>
-    </div>
+      <p >Trust is the foundation of effective leadership. This 90-minute, facilitator-led virtual session introduces leaders to the essentials of Becoming a Highly Trusted Leader. Participants will reflect on the meaning of trust in leadership, explore the benefits of high trust, and examine the costs of low trust in teams and organizations.</p>
+      <p>The session dives into the Four Elements of Trust—Able, Believable, Connected, and Dependable—through guided discussion, self-reflection, and interactive activities. Leaders will learn practical ways to build, demonstrate, and restore trust, enabling them to elevate performance and deepen connection. They leave with actionable strategies to create environments where people feel safe, supported, and empowered to thrive.</p>
 
     `,
   },
