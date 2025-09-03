@@ -90,18 +90,15 @@ export default function AuthenticExecutivePresence() {
           href="/assets/css/GivingAndReceivingFeedback.css"
         />
       </Head>
-      <section
-        className="bgImgAuthenticExecutivePresence"
-
-      >
+      <section className="bgImgAuthenticExecutivePresence">
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-12">
               <div className="content mb-5">
                 <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
                 <p style={{ color: "#000" }}>
-                  Learn how authenticity creates lasting trust, impact, and leadership
-                  success.
+                  Learn how authenticity creates lasting trust, impact, and
+                  leadership success.
                 </p>
                 <div className="buttons">
                   <a href="#webinar-preface" className="btn join">
@@ -118,17 +115,18 @@ export default function AuthenticExecutivePresence() {
               </div>
             </div>
           </div>
-
         </div>
-
-
       </section>
 
       <section className="details " id="webinar-preface">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12 mb-3 mt-3 text-center">
-              <img src="/assets/img/blanchandLogo.png" className="img-fluid " alt="blanchandLogo"  />
+              <img
+                src="/assets/img/blanchandLogo.png"
+                className="img-fluid "
+                alt="blanchandLogo"
+              />
             </div>
             <div className="col-md-12 ">
               <h2>Webinar Preface</h2>
@@ -210,9 +208,15 @@ export default function AuthenticExecutivePresence() {
                     value={formData.slot}
                     onChange={handleInputChange}
                   >
-                    <option value="">Choose your Slot*</option>
-                    <option value="11 AM - 12PM">11 AM - 12PM</option>
-                    <option value="4PM - 5PM">4PM - 5PM</option>
+                    <option value="">Referred By</option>
+                    <option value="Email">Email</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Google Search">Google Search</option>
+                    <option value="Website">Website</option>
+                    <option value="Reference">Reference</option>
+                    <option value="Sales Representative">
+                      Sales Representative
+                    </option>
                   </select>
                   <div style={{ textAlign: "right" }}>
                     <button className="register-btn mt-4" disabled={loading}>
@@ -283,7 +287,7 @@ export default function AuthenticExecutivePresence() {
           </div>
         </div>
       </section>
-      <section className="events-section" style={{background: "#9ED8B3"}}>
+      <section className="events-section" style={{ background: "#9ED8B3" }}>
         <div className="container iconSide">
           <div className="row">
             <div className="col-md-12">
@@ -293,63 +297,61 @@ export default function AuthenticExecutivePresence() {
           <div className="row mt-3">
             <div className="col-lg-3 col-md-6  col-sm-12 mb-2">
               <div className="eventBox">
-                  <div className="eventImg">
-                    <img src="/assets/img/cl.png" alt="Event 1" />
-                  </div>
-                  <div className="eventContent">
-                    <p>September</p>
-                    <p className="smallTextOne"> 26, 2025</p>
-                  </div>
-               
+                <div className="eventImg">
+                  <img src="/assets/img/cl.png" alt="Event 1" />
+                </div>
+                <div className="eventContent">
+                  <p>Date</p>
+                  <p className="smallTextOne"> 26 September, 2025</p>
+                </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
               <div className="eventBox">
-                  <div className="eventImg">
-                    <img src="/assets/img/time.png" alt="Event 2" />
-                  </div>
-                  <div className="eventContent">
-                    <p>Time</p>
-                    <p className="smallTextOne"> 03:00 PM – 05:00 PM</p>
-                  </div>
-               
+                <div className="eventImg">
+                  <img src="/assets/img/time.png" alt="Event 2" />
+                </div>
+                <div className="eventContent">
+                  <p>Time</p>
+                  <p className="smallTextOne"> 03:00 PM – 05:00 PM</p>
+                </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
               <div className="eventBox">
-                  <div className="eventImg">
-                    <img src="/assets/img/user.png" alt="Event 3" />
-                  </div>
-                  <div className="eventContent">
-                    <p>Facilitator</p>
-                    <p className="smallTextOne">Ronald Soans</p>
-                  </div>
-               
+                <div className="eventImg">
+                  <img src="/assets/img/user.png" alt="Event 3" />
+                </div>
+                <div className="eventContent">
+                  <p>Facilitator</p>
+                  <p className="smallTextOne">Ronald Soans</p>
+                </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12 mb-2">
               <div className="eventBox">
-                  <div className="eventImg">
-                    <img src="/assets/img/cl.png" alt="Event 4" />
-                  </div>
-                  <div className="eventContent">
-                    <p>Price</p>
-                    <p className="smallTextOne"> ₹5,000 + GST<sub>per person</sub></p>
-                  </div>
-               
+                <div className="eventImg">
+                  <img src="/assets/img/cl.png" alt="Event 4" />
+                </div>
+                <div className="eventContent">
+                  <p>Price</p>
+                  <p className="smallTextOne"> ₹5,000 + GST (per person)</p>
+                </div>
               </div>
             </div>
             <div className="row mt-5">
               <div className="col-md-12">
-            
-
-                <a href="#webinar-preface" className="register-btn" style={{color: "#fff",padding: "20px 50px"}}> Reserve Your Seat Now</a>
+                <a
+                  href="#webinar-preface"
+                  className="register-btn"
+                  style={{ color: "#fff", padding: "20px 50px" }}
+                >
+                  {" "}
+                  Reserve Your Seat Now
+                </a>
               </div>
-
             </div>
-           
           </div>
-
         </div>
       </section>
       <section className="offer-bar-section">

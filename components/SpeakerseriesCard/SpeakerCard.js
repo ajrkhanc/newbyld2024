@@ -3,6 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { BiCalendar, BiMap, BiGlobe } from "react-icons/bi";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
+import { IoTimeOutline } from "react-icons/io5";
 import { FaRegCalendarDays } from "react-icons/fa6";
 import { Button } from "reactstrap";
 import BookNowFormModal from "../BookNowFromModal/BookNowFromModal";
@@ -260,6 +261,10 @@ function SpeakerCard() {
                         <BiGlobe />
                         <span className="ms-2">{workshop.format}</span>
                       </div>
+                      <div className="d-flex align-items-center ml-15">
+                        <IoTimeOutline />
+                        <span className="ms-2">{workshop.time}</span>
+                      </div>
                       {/* <div className="d-flex align-items-center ml-15">
                         <RiMoneyRupeeCircleFill />
                         <span className="ms-2">
@@ -338,6 +343,7 @@ const workshops = [
     dateRangeTwo: "",
     location: "India",
     format: "Virtual",
+    time: "3:00 PM - 5:00 PM",
     // amount: 28910,
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
@@ -353,6 +359,7 @@ The session dives into the Four Pillars of authentic leadership—Care, Curiosit
     dateRangeTwo: "",
     location: "India",
     format: "virtual",
+    time: "3:00 PM - 5:00 PM",
     // amount: 41300,
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
@@ -371,6 +378,7 @@ The session dives into the Four Pillars of authentic leadership—Care, Curiosit
     dateRangeTwo: "",
     location: "India",
     format: "virtual",
+    time: "3:00 PM - 5:00 PM",
     // amount: 41300,
     pageUrl:
       "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
