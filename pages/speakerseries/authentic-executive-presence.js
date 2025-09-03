@@ -3,7 +3,7 @@ import Head from "next/head";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Loader2 } from "lucide-react";
-import { TiSocialLinkedin } from "react-icons/ti";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 export default function AuthenticExecutivePresence() {
   const [showText, setShowText] = useState(false);
@@ -283,8 +283,14 @@ export default function AuthenticExecutivePresence() {
                   <p>Principal Consultant & Evangelist</p>
                   {/* <p className="smallText">(CMD BYLD Group)</p> */}
                   <div>
-                    <a href="https://www.linkedin.com/in/ronaldsoans/" target="_blank" rel="noopener noreferrer">
-                      <TiSocialLinkedin />
+                    <a
+                      href="https://www.linkedin.com/in/ronaldsoans/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IoLogoLinkedin
+                        style={{ color: "#0A66C2", fontSize: "24px" }}
+                      />
                     </a>
                   </div>
                 </div>
