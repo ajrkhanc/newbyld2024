@@ -569,7 +569,7 @@ export default function JoinOurPartnerNetworkLP() {
 
           <div className="clearfix"></div>
           <div className="solutionarrowbox2">
-            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow1_ZBL_u1-FvC.webp?updatedAt=1727675005925" />
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow1_ZBL_u1-FvC.webp?updatedAt=1727675005925"/>
           </div>
         </div>
       </section>
