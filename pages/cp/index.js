@@ -609,7 +609,7 @@ export default function JoinOurPartnerNetworkLP() {
                                     </div>
                                 </div> */}
 
-                <div className="col-sm-6">
+                <div className="col-sm-6 m-auto">
                   <div className="innerteamc mbb-70">
                     <div className="teamimgc1">
                       <a href="/team/ronald-soans">
