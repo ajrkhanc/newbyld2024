@@ -1,346 +1,359 @@
-import Head from 'next/head'
+import Head from "next/head";
 import Slider from "react-slick";
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 import React from "react";
 
 export default function JoinOurPartnerNetworkLP() {
+  const [modalOpen1, setModalOpen1] = React.useState(false);
+  const [modalOpen2, setModalOpen2] = React.useState(false);
+  const [modalOpen3, setModalOpen3] = React.useState(false);
+  const [modalOpen4, setModalOpen4] = React.useState(false);
+  const [modalOpen5, setModalOpen5] = React.useState(false);
+  const [modalOpen6, setModalOpen6] = React.useState(false);
+  const [modalOpen7, setModalOpen7] = React.useState(false);
 
-    const [modalOpen1, setModalOpen1] = React.useState(false);
-    const [modalOpen2, setModalOpen2] = React.useState(false);
-    const [modalOpen3, setModalOpen3] = React.useState(false);
-    const [modalOpen4, setModalOpen4] = React.useState(false);
-    const [modalOpen5, setModalOpen5] = React.useState(false);
-    const [modalOpen6, setModalOpen6] = React.useState(false);
-    const [modalOpen7, setModalOpen7] = React.useState(false);
+  var settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
-
-    var settings = {
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        initialSlide: 0,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true,
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+  const registerUser = async (event) => {
+    event.preventDefault();
+    document.getElementById("submitbuttonform").value = "Submitting form....";
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function () {
+      console.log(this.responseText);
     };
+    xhttp.open(
+      "Post",
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/79/feedback"
+    );
+    xhttp.setRequestHeader(
+      "Content-Type",
+      "application/x-www-form-urlencoded;"
+    );
+    xhttp.onreadystatechange = function () {
+      if (xhttp.readyState == 4) {
+        if (xhttp.status == 200) {
+          document.getElementById("showlabel").innerHTML =
+            "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
 
-    const registerUser = async event => {
-        event.preventDefault()
-        document.getElementById("submitbuttonform").value = "Submitting form...."
-        const xhttp = new XMLHttpRequest();
-        xhttp.onload = function () {
-            console.log(this.responseText);
+          document.getElementById("showlabel").style.display = "block";
+          window.setTimeout(function () {
+            window.location.href = "/thank-you";
+          }, 3000);
+        } else {
+          alert("There was a problem with the request.");
         }
-        xhttp.open("Post", 'https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/79/feedback');
-        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-        xhttp.onreadystatechange = function () {
-            if (xhttp.readyState == 4) {
-                if (xhttp.status == 200) {
-                    document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+      }
+    };
+    xhttp.send(
+      "fname=" +
+        event.target.fname.value +
+        "&email=" +
+        event.target.email.value +
+        "&phone=" +
+        event.target.phone.value +
+        "&company=" +
+        event.target.company.value +
+        "&designation=" +
+        event.target.designation.value +
+        "&howdidyouknowaboutus=" +
+        event.target.howdidyouknowaboutus.value +
+        "&leadsquared_Notes=" +
+        event.target.leadsquared_Notes.value
+    );
+  };
 
-                    document.getElementById("showlabel").style.display = "block";
-                    window.setTimeout(function () {
-                        window.location.href = "/thank-you"
-                    }, 3000);
+  // const whitp1 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform1").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/challenges-and-recommendations-for-auto-industry.pdf"
+  //                 });
 
-                } else {
-                    alert('There was a problem with the request.');
-                }
-            }
-        };
-        xhttp.send("fname=" + event.target.fname.value +
-            "&email=" + event.target.email.value +
-            "&phone=" + event.target.phone.value +
-            "&company=" + event.target.company.value +
-            "&designation=" + event.target.designation.value +
-            "&howdidyouknowaboutus=" + event.target.howdidyouknowaboutus.value +
-            "&leadsquared_Notes=" + event.target.leadsquared_Notes.value)
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
-    }
+  // const whitp2 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform2").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/auto-industry-white-paper.pdf"
+  //                 });
 
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
+  // const whitp3 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform3").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/roadblocks-in-the-growth-path-for-BFSI-Industry.pdf"
+  //                 });
 
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
-    // const whitp1 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform1").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/challenges-and-recommendations-for-auto-industry.pdf"
-    //                 });
+  // const whitp4 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform4").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/what-will-spur-BFSI-industry-to-its-next-peak.pdf"
+  //                 });
 
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
-    // const whitp2 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform2").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/auto-industry-white-paper.pdf"
-    //                 });
+  // const whitp5 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform4").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/culture-needed-in-an-airline-Industry-to-ride-the-talent-shortage.pdf"
+  //                 });
 
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
-    // const whitp3 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform3").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/roadblocks-in-the-growth-path-for-BFSI-Industry.pdf"
-    //                 });
+  // const whitp6 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform4").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/explain-nature-of-leadership-required-in-a-bfsi-industry.pdf"
+  //                 });
 
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
-    // const whitp4 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform4").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/what-will-spur-BFSI-industry-to-its-next-peak.pdf"
-    //                 });
+  // const whitp7 = async event => {
+  //     const coursename = 'White Paper';
+  //     event.preventDefault()
+  //     document.getElementById("submitbuttonform4").value = "Submitting...."
+  //     const xhttp = new XMLHttpRequest();
+  //     xhttp.onload = function () {
+  //         console.log(this.responseText);
+  //     }
+  //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
+  //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
+  //     xhttp.onreadystatechange = function () {
+  //         if (xhttp.readyState == 4) {
+  //             if (xhttp.status == 200) {
+  //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+  //                 document.getElementById("contactForm").reset();
+  //                 document.getElementById("showlabel").style.display = "block";
+  //                 window.setTimeout(function () {
+  //                     window.location.href = "/assets/pdf/hr-manage-fear-of-job-loss-among-employees-given-the-lay-off-culture-prevalent-in-it-industry-currently.pdf"
+  //                 });
 
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
+  //             } else {
+  //                 alert('There was a problem with the request.');
+  //             }
+  //         }
+  //     };
+  //     xhttp.send("name=" + event.target.name.value +
+  //     "&youremail=" + event.target.email.value +
+  //     "&coursename=" + coursename)
+  // }
 
-    // const whitp5 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform4").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/culture-needed-in-an-airline-Industry-to-ride-the-talent-shortage.pdf"
-    //                 });
+  return (
+    <>
+      <Head>
+        {/* Title and Meta Description */}
+        <title>Consulting Practice - BYLD Group</title>
+        <link rel="canonical" href="https://byldgroup.com/cp" />
+        <meta
+          name="description"
+          content="Welcome to BYLD Group! Join the BYLD Group Partner network, and become our business partner to maximize your growth opportunities. We are the largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies. Founded in 1998, backed by 1000+ years of accumulated professional… Continue reading Join our Partner network LP Ab Testing"
+        />
 
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
+        {/* Preload Font */}
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+          as="style"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+          rel="stylesheet"
+          media="print"
+          onload="this.media='all'"
+        />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+            rel="stylesheet"
+          />
+        </noscript>
 
-    // const whitp6 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform4").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/explain-nature-of-leadership-required-in-a-bfsi-industry.pdf"
-    //                 });
+        {/* Preload Critical CSS */}
+        <link rel="preload" href="/assets/css/homemodule.css" as="style" />
 
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
+        {/* Load CSS Asynchronously */}
+        <link
+          rel="stylesheet"
+          href="/assets/css/homemodule.css"
+          media="print"
+          onload="this.media='all'"
+        />
+        <noscript>
+          <link rel="stylesheet" href="/assets/css/homemodule.css" />
+        </noscript>
+      </Head>
 
-    // const whitp7 = async event => {
-    //     const coursename = 'White Paper';
-    //     event.preventDefault()
-    //     document.getElementById("submitbuttonform4").value = "Submitting...."
-    //     const xhttp = new XMLHttpRequest();
-    //     xhttp.onload = function () {
-    //         console.log(this.responseText);
-    //     }
-    //     xhttp.open("Post", 'https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/115/feedback');
-    //     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;");
-    //     xhttp.onreadystatechange = function () {
-    //         if (xhttp.readyState == 4) {
-    //             if (xhttp.status == 200) {
-    //                 document.getElementById("showlabel").innerHTML = "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-    //                 document.getElementById("contactForm").reset();
-    //                 document.getElementById("showlabel").style.display = "block";
-    //                 window.setTimeout(function () {
-    //                     window.location.href = "/assets/pdf/hr-manage-fear-of-job-loss-among-employees-given-the-lay-off-culture-prevalent-in-it-industry-currently.pdf"
-    //                 });
-
-    //             } else {
-    //                 alert('There was a problem with the request.');
-    //             }
-    //         }
-    //     };
-    //     xhttp.send("name=" + event.target.name.value +
-    //     "&youremail=" + event.target.email.value +
-    //     "&coursename=" + coursename)
-    // }
-
-    return (
-        <>
-        <Head>
-            {/* Title and Meta Description */}
-            <title>Consulting Practice - BYLD Group</title>
-            <link rel="canonical" href="https://byldgroup.com/cp" />
-            <meta
-                name="description"
-                content="Welcome to BYLD Group! Join the BYLD Group Partner network, and become our business partner to maximize your growth opportunities. We are the largest group in South Asia offering HR and business productivity solutions for individuals, teams and organizations. Served 300 of 500 Fortune companies. Founded in 1998, backed by 1000+ years of accumulated professional… Continue reading Join our Partner network LP Ab Testing"
-            />
-
-            {/* Preload Font */}
-            <link
-                rel="preload"
-                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-                as="style"
-            />
-            <link
-                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-                rel="stylesheet"
-                media="print"
-                onload="this.media='all'"
-            />
-            <noscript>
-                <link
-                href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-                rel="stylesheet"
-                />
-            </noscript>
-
-            {/* Preload Critical CSS */}
-            <link rel="preload" href="/assets/css/homemodule.css" as="style" />
-
-            {/* Load CSS Asynchronously */}
-            <link rel="stylesheet" href="/assets/css/homemodule.css" media="print" onload="this.media='all'" />
-            <noscript>
-                <link rel="stylesheet" href="/assets/css/homemodule.css" />
-            </noscript>
-        </Head>
-
-
-            {/* <Modal className='toppc mwc500' toggle={() => setModalOpen1(!modalOpen1)} isOpen={modalOpen1} backdrop="static" keyboard={false}>
+      {/* <Modal className='toppc mwc500' toggle={() => setModalOpen1(!modalOpen1)} isOpen={modalOpen1} backdrop="static" keyboard={false}>
                 <button aria-label="Close" className="close popcl" type="button" onClick={() => setModalOpen1(!modalOpen1)}>
                     <span aria-hidden={true}>×</span>
                 </button>
@@ -501,73 +514,82 @@ export default function JoinOurPartnerNetworkLP() {
                 </ModalBody>
             </Modal> */}
 
-            <div class="rs-breadcrumbs cpbg">
-                <div class="container">
-                    <div class="breadcrumb-container theme1 ">
-                        <ul>
-                            <li>
-                                <a href="/">
-                                    <span>Home</span>
-                                </a>
-                                <span class="separator">/</span>
-                            </li>
-                            <li>
-                                <a href="/cp">
-                                    <span>Consulting Practice</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+      <div class="rs-breadcrumbs cpbg">
+        <div class="container">
+          <div class="breadcrumb-container theme1 ">
+            <ul>
+              <li>
+                <a href="/">
+                  <span>Home</span>
+                </a>
+                <span class="separator">/</span>
+              </li>
+              <li>
+                <a href="/cp">
+                  <span>Consulting Practice</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                    <div className='row'>
-                        <div className='col-sm-8'>
-                            <div class="breadcrumbs-inner">                                
-                                <h1 class="page-title ">
-                                Consulting Practice
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className="row">
+            <div className="col-sm-8">
+              <div class="breadcrumbs-inner">
+                <h1 class="page-title ">Consulting Practice</h1>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
+      <section className="cplps1 ptt-50 pbb-50 positionrelative">
+        <div className="container">
+          <div className="row align-items-center zindx">
+            <div className="col-sm-6">
+              <div>
+                <h1>
+                  We Diagnose Your Problems, Curate an Action Plan, and Offer
+                  Bespoke Solutions for Actionable Results
+                </h1>
+                <p>
+                  BYLD Group, a leading multinational organization, is working
+                  closely with various Fortune 500 and Business World Top 1000
+                  companies through its technology-enabled HR, leadership,
+                  assessment, and business productivity solutions.
+                </p>
+                <a href="#GetinTouch">Explore our whitepapers</a>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <div>
+                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/cpb_FQHgqiNwDQ.webp" />
+              </div>
+            </div>
+          </div>
 
-            <section className='cplps1 ptt-50 pbb-50 positionrelative'>
-                <div className='container'>
-                    <div className='row align-items-center zindx'>
-                        <div className='col-sm-6'>
-                            <div>
-                                <h1>We Diagnose Your Problems, Curate an Action Plan, and Offer Bespoke Solutions for Actionable Results</h1>
-                                <p>BYLD Group, a leading multinational organization, is working closely with various Fortune 500 and Business World Top 1000 companies through its technology-enabled HR, leadership, assessment, and business productivity solutions.</p>
-                                <a href='#GetinTouch'>Explore our whitepapers</a>
-                            </div>
-                        </div>
-                        <div className='col-sm-6'>
-                            <div>
-                            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/cpb_FQHgqiNwDQ.webp" />
-                            </div>
-                        </div>
-                    </div>
+          <div className="clearfix"></div>
+          <div className="solutionarrowbox2">
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow1_ZBL_u1-FvC.webp?updatedAt=1727675005925" />
+          </div>
+        </div>
+      </section>
 
-                    <div className='clearfix'></div>                   
-                    <div className='solutionarrowbox2'>
-                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow1_ZBL_u1-FvC.webp?updatedAt=1727675005925" />
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="rs-team" className='style2 solutionrow ptt-60 pbb-60 cpteambg'>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-sm-12 text-center'>
-                            <h2 class="title pbb-100 mb-0 md-pb-20 h2call  pbb-30">Know Our Consulting Practitioners (CPs):</h2>
-                        </div>
-                    </div>
-                    <div className='row zindx'>
-                        <div className='col-sm-12'>
-                            <div className='row'>
-                                {/* <div className='col-sm-4 invisible'>
+      <section
+        id="rs-team"
+        className="style2 solutionrow ptt-60 pbb-60 cpteambg"
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12 text-center">
+              <h2 class="title pbb-100 mb-0 md-pb-20 h2call  pbb-30">
+                Know Our Consulting Practitioners (CPs):
+              </h2>
+            </div>
+          </div>
+          <div className="row zindx">
+            <div className="col-sm-12">
+              <div className="row">
+                {/* <div className='col-sm-4 invisible'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/amarvijayy-taandur"><img src="/assets/img/team/amar1.jpg" alt="" /></a>
@@ -587,26 +609,38 @@ export default function JoinOurPartnerNetworkLP() {
                                     </div>
                                 </div> */}
 
-                                <div className='col-sm-6'>
-                                    <div className='innerteamc mbb-70'>
-                                        <div className='teamimgc1'>
-                                            <a href="/team/ronald-soans"><img src="/assets/img/team/ronald1.webp" alt="" /></a>
-                                        </div>
-                                        <div className="team-info">
-                                            <div className="name">
-                                                <a href="/team/ronald-soans">Ronald Soans</a>
-                                            </div>
-                                            <span className="post">Principal Advisor - IT, ITES, <br></br>Consulting and BFSI</span>
-                                        </div>
-                                        <div>
-                                            <ul className="social-icon">
-                                                <li><a target="_blank" href="https://www.linkedin.com/in/ronald-soans-4b703412/"><i className="fa fa-linkedin"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                <div className="col-sm-6">
+                  <div className="innerteamc mbb-70">
+                    <div className="teamimgc1">
+                      <a href="/team/ronald-soans">
+                        <img src="/assets/img/team/ronald1.webp" alt="" />
+                      </a>
+                    </div>
+                    <div className="team-info">
+                      <div className="name">
+                        <a href="/team/ronald-soans">Ronald Soans</a>
+                      </div>
+                      <span className="post">
+                        Principal Advisor - IT, ITES, <br></br>Consulting and
+                        BFSI
+                      </span>
+                    </div>
+                    <div>
+                      <ul className="social-icon">
+                        <li>
+                          <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/ronald-soans-4b703412/"
+                          >
+                            <i className="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-                                {/* <div className='col-sm-3'>
+                {/* <div className='col-sm-3'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/meghna-goyal"><img src="/assets/img/team/meghna.jpg" alt="" /></a>
@@ -625,7 +659,7 @@ export default function JoinOurPartnerNetworkLP() {
                                     </div>
                                 </div> */}
 
-                                <div className='col-sm-6'>
+                {/* <div className='col-sm-6'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/monica-sharma"><img src="/assets/img/team/Haritima-SrivastavImag1.webp" alt="" /></a>
@@ -642,9 +676,9 @@ export default function JoinOurPartnerNetworkLP() {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                 {/* <div className='col-sm-3 invisible'>
+                {/* <div className='col-sm-3 invisible'>
                                     <div className='innerteamc mbb-70'>
                                         <div className='teamimgc1'>
                                             <a href="/team/meghna-goyal"><img src="/assets/img/team/meghna.jpg" alt="" /></a>
@@ -662,22 +696,21 @@ export default function JoinOurPartnerNetworkLP() {
                                         </div>
                                     </div>
                                 </div> */}
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
 
-                    <div className='clearfix'></div>
-                    <div className='solutionarrowbox1'>
-                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp?updatedAt=1727675005934" />
-                    </div>
-                    <div className='solutionarrowbox2'>
-                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp?updatedAt=1727675005983" />
-                    </div>
+          <div className="clearfix"></div>
+          <div className="solutionarrowbox1">
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp?updatedAt=1727675005934" />
+          </div>
+          <div className="solutionarrowbox2">
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp?updatedAt=1727675005983" />
+          </div>
+        </div>
+      </section>
 
-                </div>
-            </section>
-
-            {/* <section className='cplps2 ptt-50 pbb-50'>
+      {/* <section className='cplps2 ptt-50 pbb-50'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-12'>
@@ -733,202 +766,275 @@ export default function JoinOurPartnerNetworkLP() {
                 </div>
             </section> */}
 
+      <section className="jopn1 ptt-50 pbb-50 cplps3">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-sm-12">
+              <div class="sec-title3 text-center mb-30">
+                <h2 class="title color2 font345">
+                  Stuck with your business? Ask our seasoned industry experts
+                </h2>
+                <div class="heading-border-line center-style"></div>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <div className="boxshd borderr mtt-30">
+                <div className="bannerform">
+                  <p className="cplpf">
+                    Fill out the form below, and we will reach out to you within
+                    24 hours.
+                  </p>
+                  <form
+                    id="contact-form"
+                    className="clientcornner"
+                    onSubmit={registerUser}
+                  >
+                    <div className="row">
+                      <div className="col-lg-6 mb-12">
+                        <input
+                          type="text"
+                          name="fname"
+                          placeholder="First Name*"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-6 mb-12">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Work Email/Email*"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-12 mb-12">
+                        <input
+                          type="text"
+                          name="phone"
+                          maxlength="10"
+                          minlength="10"
+                          pattern="[0-9]*"
+                          placeholder="Phone No.*"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-12 mb-12">
+                        <input
+                          type="text"
+                          name="company"
+                          placeholder="Company Name*"
+                          required
+                        />
+                      </div>
 
+                      <div className="col-lg-12 mb-12">
+                        <input
+                          type="text"
+                          name="designation"
+                          placeholder="Designation*"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-12 mb-12">
+                        <select name="howdidyouknowaboutus" required>
+                          <option value="">Referred By</option>
+                          <option value="Email">Email</option>
+                          <option value="LinkedIn">LinkedIn</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Twitter">Twitter</option>
+                        </select>
+                      </div>
 
-            <section className='jopn1 ptt-50 pbb-50 cplps3'>
-                <div className='container'>
-                    <div className='row align-items-center'>
-                        <div className='col-sm-12'>
-                            <div class="sec-title3 text-center mb-30">
-                                <h2 class="title color2 font345">Stuck with your business? Ask our seasoned industry experts</h2>
-                                <div class="heading-border-line center-style"></div>
-                            </div>
-                        </div>
-                        <div className='col-sm-6'>
-                            <div className='boxshd borderr mtt-30'>
-                                <div className="bannerform">
-                                    <p className='cplpf'>Fill out the form below, and we will reach out to you within 24 hours.</p>
-                                    <form id="contact-form" className='clientcornner' onSubmit={registerUser}>
-                                        <div className="row">
-                                            <div className="col-lg-6 mb-12">
-                                                <input type="text" name="fname" placeholder="First Name*" required />
-                                            </div>
-                                            <div className="col-lg-6 mb-12">
-                                                <input type="email" name="email" placeholder="Work Email/Email*" required />
-                                            </div>
-                                            <div className="col-lg-12 mb-12">
-                                                <input type="text" name="phone" maxlength="10" minlength="10" pattern="[0-9]*" placeholder="Phone No.*" required />
-                                            </div>
-                                            <div className="col-lg-12 mb-12">
-                                                <input type="text" name="company" placeholder="Company Name*" required />
-                                            </div>
+                      <div className="col-lg-12 mb-12">
+                        <textarea
+                          className="from-control"
+                          name="leadsquared_Notes"
+                          placeholder="Questions/Comments:"
+                        ></textarea>
+                      </div>
 
-                                            <div className="col-lg-12 mb-12">
-                                                <input type="text" name="designation" placeholder="Designation*" required />
-                                            </div>
-                                            <div className="col-lg-12 mb-12">
-                                                <select name="howdidyouknowaboutus" required>
-                                                    <option value="">Referred By</option>
-                                                    <option value="Email">Email</option>
-                                                    <option value="LinkedIn">LinkedIn</option>
-                                                    <option value="Facebook">Facebook</option>
-                                                    <option value="Instagram">Instagram</option>
-                                                    <option value="Twitter">Twitter</option>
-                                                </select>
-                                            </div>
-
-                                            <div className="col-lg-12 mb-12">
-                                                <textarea className="from-control" name="leadsquared_Notes" placeholder="Questions/Comments:"></textarea>
-                                            </div>
-
-                                            <div className="col-lg-12 mb-12">
-                                                <input id="submitbuttonform" className="clientcornnerbtn" type="submit" value="Get help now" />
-                                            </div>
-                                            <p id="showlabel" style={{ display: "none" }}></p>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-sm-6'>
-                            <div className='pll-50'>
-                                <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/c1_Zh8Ub7_7c.webp" alt="image" />
-
-                            </div>
-                        </div>
+                      <div className="col-lg-12 mb-12">
+                        <input
+                          id="submitbuttonform"
+                          className="clientcornnerbtn"
+                          type="submit"
+                          value="Get help now"
+                        />
+                      </div>
+                      <p id="showlabel" style={{ display: "none" }}></p>
                     </div>
+                  </form>
                 </div>
-            </section>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <div className="pll-50">
+                <img
+                  src="https://ik.imagekit.io/byld/BYLD/byldallasests/c1_Zh8Ub7_7c.webp"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section
+        id="GetinTouch"
+        className="ptt-50 pbb-70 cplps4 positionrelative"
+      >
+        <div className="container">
+          <div className="row zindx">
+            <div className="col-sm-12">
+              <div class="sec-title3 text-center mb-30">
+                <h2 class="title color2 font345">
+                  Let Us Explore Our Professional Journey Together
+                </h2>
+                <div class="heading-border-line center-style"></div>
+              </div>
+            </div>
 
-           <section id='GetinTouch' className='ptt-50 pbb-70 cplps4 positionrelative'>
-                <div className="container">
-                    <div className="row zindx">
-                        <div className='col-sm-12'>
-                            <div class="sec-title3 text-center mb-30">
-                                <h2 class="title color2 font345">Let Us Explore Our Professional Journey Together</h2>
-                                <div class="heading-border-line center-style"></div>
-                            </div>
-                        </div>
+            <div className="col-sm-12 cld">
+              <Slider {...settings}>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/pharmaceutical-sector_5SL3cjSKxD.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper/pharmaceutical-sector">
+                      Download White Paper
+                    </a>
+                  </div>
+                </div>
 
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/embracing-a-customer-centric-mindset_S_MEWG0bx.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper/embracing-a-customer-centric-mindset">
+                      Download White Paper
+                    </a>
+                  </div>
+                </div>
 
-                        <div className='col-sm-12 cld'>
-                            <Slider {...settings}>
-                            <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/pharmaceutical-sector_5SL3cjSKxD.webp' alt="books" />
-                                        <a href='/cp/white-paper/pharmaceutical-sector'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/fostering-culture-of-high-performance_kvi2uYNSz.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper/fostering-culture-of-high-performance">
+                      Download White Paper
+                    </a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/embracing-a-customer-centric-mindset_S_MEWG0bx.webp' alt="books" />
-                                        <a href='/cp/white-paper/embracing-a-customer-centric-mindset'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/the-indian-automotive-sector-has-been-witnessing-changing-trends_-PyHuPjdL.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper/the-indian-automotive-sector-has-been-witnessing-changing-trends">
+                      Download White Paper
+                    </a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/fostering-culture-of-high-performance_kvi2uYNSz.webp' alt="books" />
-                                        <a href='/cp/white-paper/fostering-culture-of-high-performance'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/the-indian-construction-industry-new-amarvijay-sir%20(1)_W5WLr8KSdy.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/the-indian-automotive-sector-has-been-witnessing-changing-trends_-PyHuPjdL.webp' alt="books" />
-                                        <a href='/cp/white-paper/the-indian-automotive-sector-has-been-witnessing-changing-trends'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/driving-innovation_QxiZua0Aj.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/the-indian-construction-industry-new-amarvijay-sir%20(1)_W5WLr8KSdy.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/issues-in-healthcare_5dHuHSc-9.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/driving-innovation_QxiZua0Aj.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/hr-managing-fear_2Wo2N3gum.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/issues-in-healthcare_5dHuHSc-9.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                    </div>
-                                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/culture-needed-in-an-airline-industry_f2HbXVa9zq.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                  </div>
+                </div>
 
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/hr-managing-fear_2Wo2N3gum.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                    </div>
-                                </div>
-
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/culture-needed-in-an-airline-industry_f2HbXVa9zq.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                    </div>
-                                </div>
-
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/challenges-in-it-industry-today_QMB44Hvb9.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                    </div>
-                                </div>
-                                <div className='logoslider'>
-                                    <div className='impdf'>
-                                        <img src='https://ik.imagekit.io/byld/BYLD/byldallasests/what-will-spur-bfsi-industry_utJUb-a34f.webp' alt="books" />
-                                        <a href='/cp/white-paper'>Download White Paper</a>
-                                        {/* <i class="blink fa fa-download" aria-hidden="true" onClick={() => setModalOpen7(!modalOpen7)}></i> */}
-                                    </div>
-                                </div>
-
-                            </Slider>
-                        </div>
-                        {/* <div className='col-sm-4'>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/challenges-in-it-industry-today_QMB44Hvb9.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                  </div>
+                </div>
+                <div className="logoslider">
+                  <div className="impdf">
+                    <img
+                      src="https://ik.imagekit.io/byld/BYLD/byldallasests/what-will-spur-bfsi-industry_utJUb-a34f.webp"
+                      alt="books"
+                    />
+                    <a href="/cp/white-paper">Download White Paper</a>
+                    {/* <i class="blink fa fa-download" aria-hidden="true" onClick={() => setModalOpen7(!modalOpen7)}></i> */}
+                  </div>
+                </div>
+              </Slider>
+            </div>
+            {/* <div className='col-sm-4'>
                             <div className='aass'>
                                 <a target="_blank" href='https://byldgroup.com/cruciallifechangingskills/assessment/gtd-assessment-marketing'>
                                     <img src="/assets/img/assessing.jpg" />                                   
                                 </a>
                             </div>
                         </div> */}
-                    </div>
+          </div>
 
-                    <div className='clearfix'></div>
-                    <div className='solutionarrowbox1'>
-                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp?updatedAt=1727675005934" />
-                    </div>
-                    <div className='solutionarrowbox2'>
-                        <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp?updatedAt=1727675005983" />
-                    </div>
-                    
-                </div>
-            </section>
+          <div className="clearfix"></div>
+          <div className="solutionarrowbox1">
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/orangearrow_Y2tPSed3ik.webp?updatedAt=1727675005934" />
+          </div>
+          <div className="solutionarrowbox2">
+            <img src="https://ik.imagekit.io/byld/BYLD/byldallasests/bluearrow1_IallzTm-61.webp?updatedAt=1727675005983" />
+          </div>
+        </div>
+      </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* <section className='ptt-20 pbb-20'>
+      {/* <section className='ptt-20 pbb-20'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-sm-12'>
@@ -973,10 +1079,6 @@ export default function JoinOurPartnerNetworkLP() {
                     </div>
                 </div>
             </section> */}
-
-
-        </>
-    )
+    </>
+  );
 }
-
-
