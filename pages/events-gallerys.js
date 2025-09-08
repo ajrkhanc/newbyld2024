@@ -22,7 +22,7 @@ export default function EventsGallerys() {
           <div className="row">
             <div className="col-sm-12">
               <div class="breadcrumbs-innerOne">
-                <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
+                <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP text-white">
                   Where Leaders Emerge, Ideas Transform, and Growth Begins
                 </h1>
                 <div className="buttons">
