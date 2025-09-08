@@ -287,7 +287,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="rs-faq" class="rs-faq ptt-60 pbb-50 zinc">
+      {/* <div id="rs-faq" class="rs-faq ptt-60 pbb-50 zinc">
         <div className="container">
           <div className="row ">
             <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
@@ -622,7 +622,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container ptt-60 pbb-60">
         <div className="row ">
