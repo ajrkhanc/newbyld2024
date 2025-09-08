@@ -625,7 +625,15 @@ export default function Home() {
       </div>
 
       <div className="container ptt-60 pbb-60">
-        <h2 className="title mb-20">Current Openings</h2>
+        <div className="row ">
+          <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+            Join the BYLD Family
+          </h2>
+          <p class="mb-0 pall pbb-20 wow fadeInUp delay-0-2s animated animateUP">
+            Want to excel professionally, enhance your abilities, and strengthen
+            a strong network of growth opportunities? <b>APPLY NOW!</b>
+          </p>
+        </div>
 
         {/* ✅ Keka Jobs Embed */}
         <Script id="keka-config" strategy="afterInteractive">
