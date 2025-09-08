@@ -19,8 +19,6 @@ export default function EventsGallerys() {
 
       <div class="rs-breadcrumbs events_glaybg">
         <div class="container">
-         
-
           <div className="row">
             <div className="col-sm-8">
               <div class="breadcrumbs-inner">
