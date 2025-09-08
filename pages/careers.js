@@ -286,8 +286,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div id="rs-faq" class="rs-faq ptt-60 pbb-50 zinc">
+      {/* 
+      <div id="rs-faq" class="rs-faq ptt-60 pbb-50 zinc">
         <div className="container">
           <div className="row ">
             <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
@@ -634,6 +634,23 @@ export default function Home() {
             a strong network of growth opportunities? <b>APPLY NOW!</b>
           </p>
         </div>
+
+        {/* ✅ Keka Jobs Embed */}
+        <Script id="keka-config" strategy="afterInteractive">
+          {`
+            window.khConfig = {
+              identifier: '2eb863de-a5e4-4ffc-89f3-c05e44ce3a18',
+              domain: 'https://byld.keka.com/careers/',
+              targetContainer: '#khembedjobs'
+            }
+          `}
+        </Script>
+        <Script
+          src="https://byld.keka.com/careers/api/embedjobs/js/2eb863de-a5e4-4ffc-89f3-c05e44ce3a18"
+          strategy="afterInteractive"
+          defer
+        />
+        <div id="khembedjobs"></div>
       </div>
 
       <div id="careerForm" class="homecon ptt-60">
