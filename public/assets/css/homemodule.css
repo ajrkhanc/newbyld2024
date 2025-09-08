@@ -1692,7 +1692,6 @@ h6 {
   background-image: url(/assets/img/banner/coachingmain.jpg);
 }
 
-
 .mshdc {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -1731,6 +1730,69 @@ h6 {
 .fvideo iframe {
   width: 100%;
   height: 500px;
+}
+
+/* Container */
+#khembedjobs {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Department Heading */
+#khembedjobs h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 30px 0 15px;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+  color: #333;
+}
+
+/* Job Card */
+#khembedjobs .job-card,
+#khembedjobs .job-opening,
+#khembedjobs .job-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#khembedjobs .job-card:hover,
+#khembedjobs .job-opening:hover,
+#khembedjobs .job-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Job Title */
+#khembedjobs .job-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+/* Job Meta Info */
+#khembedjobs .job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Date */
+#khembedjobs .job-date {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 @media (max-width: 992px) {
