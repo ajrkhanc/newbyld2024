@@ -1663,6 +1663,34 @@ h6 {
   padding-bottom: 5px;
 }
 
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.join {
+  background-color: #f2780f;
+  color: white;
+  padding: 8px 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn.learn {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 50px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 /* Awards */
 .awardbg {
   background-image: url(https://ik.imagekit.io/byld/BYLD/awards_1pukwYl1h.webp);

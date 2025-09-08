@@ -21,10 +21,22 @@ export default function EventsGallerys() {
         <div class="container">
           <div className="row">
             <div className="col-sm-12">
-              <div class="breadcrumbs-inner">
+              <div class="breadcrumbs-innerOne">
                 <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
                   Where Leaders Emerge, Ideas Transform, and Growth Begins
                 </h1>
+                <div className="buttons">
+                  <a href="#webinar-preface" className="btn join">
+                    Join Now
+                  </a>
+                  <a
+                    href="#webinar-preface"
+                    className="btn learn"
+                    style={{ background: "#e0e0e0", color: "#333" }}
+                  >
+                    Learn More
+                  </a>
+                </div>
               </div>
             </div>
           </div>
