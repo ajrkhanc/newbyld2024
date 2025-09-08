@@ -1674,6 +1674,7 @@ h6 {
 
 .events_glaybg {
   background-image: url(/assets/img/new/banner/eventsImgBanner2.webp);
+  min-height: 100vh;
 }
 .blogsbg {
   background-image: url(/assets/img/new/banner/blogs.jpg);
