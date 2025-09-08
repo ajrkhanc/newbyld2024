@@ -1672,6 +1672,9 @@ h6 {
   background-image: url(/assets/img/new/banner/events.jpg);
 }
 
+.events_glaybg {
+  background-image: url(/assets/img/new/banner/eventsImgBanner2.webp);
+}
 .blogsbg {
   background-image: url(/assets/img/new/banner/blogs.jpg);
 }

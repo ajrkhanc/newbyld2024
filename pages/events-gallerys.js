@@ -17,23 +17,9 @@ export default function EventsGallerys() {
         />
       </Head>
 
-      <div class="rs-breadcrumbs eventsbg">
+      <div class="rs-breadcrumbs events_glaybg">
         <div class="container">
-          <div class="breadcrumb-container theme1 wow fadeInUp delay-0-2s animated animateUP">
-            <ul>
-              <li>
-                <a href="/">
-                  <span>Home</span>
-                </a>
-                <span class="separator">/</span>
-              </li>
-              <li>
-                <a href="/events-gallery">
-                  <span>Events</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+         
 
           <div className="row">
             <div className="col-sm-8">
