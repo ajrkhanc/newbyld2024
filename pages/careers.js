@@ -624,7 +624,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className="container ptt-60 pbb-60">
+      <div className="container  pbb-60">
         <div className="row ">
           <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
             Join the BYLD Family
