@@ -623,6 +623,27 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="container ptt-60 pbb-60">
+        <h2 className="title mb-20">Current Openings</h2>
+
+        {/* ✅ Keka Jobs Embed */}
+        <Script id="keka-config" strategy="afterInteractive">
+          {`
+            window.khConfig = {
+              identifier: '2eb863de-a5e4-4ffc-89f3-c05e44ce3a18',
+              domain: 'https://byld.keka.com/careers/',
+              targetContainer: '#khembedjobs'
+            }
+          `}
+        </Script>
+        <Script
+          src="https://byld.keka.com/careers/api/embedjobs/js/2eb863de-a5e4-4ffc-89f3-c05e44ce3a18"
+          strategy="afterInteractive"
+          defer
+        />
+        <div id="khembedjobs"></div>
+      </div>
+
       <div id="careerForm" class="homecon ptt-60">
         <div class="container">
           <div className="row">
