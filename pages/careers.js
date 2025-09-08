@@ -655,7 +655,7 @@ export default function Home() {
 
       <div id="careerForm" class="homecon ptt-60">
         <div class="container">
-          <div className="row">
+          <div className="row flex-column">
             <div className="col-sm-3">
               <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
                 Want to Grow with Us?
