@@ -1663,6 +1663,13 @@ h6 {
   padding-bottom: 5px;
 }
 
+.breadcrumbs-innerOne {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
 .buttons {
   display: flex;
   gap: 15px;
