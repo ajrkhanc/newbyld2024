@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
 import React from "react";
+import Script from "next/script";
 import {
   Accordion,
   AccordionItem,
