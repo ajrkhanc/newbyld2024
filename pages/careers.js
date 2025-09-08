@@ -51,111 +51,21 @@ export default function Home() {
     ],
   };
 
-  // const registerUser = async (event) => {
-  //   event.preventDefault();
-  //   document.getElementById("submitbuttonform").value = "Submitting form....";
-  //   const xhttp = new XMLHttpRequest();
-  //   xhttp.onload = function () {
-  //     console.log(this.responseText);
-  //   };
-  //   xhttp.open(
-  //     "Post",
-  //     "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/11/feedback"
-  //   );
-  //   xhttp.setRequestHeader(
-  //     "Content-Type",
-  //     "application/x-www-form-urlencoded;"
-  //   );
-  //   xhttp.onreadystatechange = function () {
-  //     if (xhttp.readyState == 4) {
-  //       if (xhttp.status == 200) {
-  //         document.getElementById("showlabel").innerHTML =
-  //           "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-
-  //         document.getElementById("showlabel").style.display = "block";
-  //         window.setTimeout(function () {
-  //           window.location.href = "/thank-you";
-  //         }, 3000);
-  //       } else {
-  //         alert("There was a problem with the request.");
-  //       }
-  //     }
-  //   };
-  //   xhttp.send(
-  //     "name=" +
-  //       event.target.name.value +
-  //       "&email=" +
-  //       event.target.email.value +
-  //       "&tel=" +
-  //       event.target.phone.value +
-  //       "&location=" +
-  //       event.target.Location.value +
-  //       "&Company=" +
-  //       event.target.organization.value +
-  //       "&Designation=" +
-  //       event.target.designation.value +
-  //       "&Product=" +
-  //       event.target.product.value +
-  //       "&referredby=" +
-  //       event.target.referredby.value +
-  //       "&textarea=" +
-  //       event.target.leadsquared_Notes.value
-  //   );
-  // };
-
-
-  // const registerUser = async (event) => {
-  //   event.preventDefault();
-  //   document.getElementById("submitbuttonform").value = "Submitting form....";
-  
-  //   const formData = new FormData();
-  //   formData.append("name", event.target.name.value);
-  //   formData.append("email", event.target.email.value);
-  //   formData.append("tel", event.target.phone.value);
-  //   formData.append("location", event.target.location ? event.target.location.value : "NULL"); // assuming you may need location field
-  //   formData.append("Company", event.target.organization.value);
-  //   formData.append("Designation", event.target.resume.files[0]); // for resume file
-  //   formData.append("Product", event.target.product.value);
-  //   formData.append("referredby", event.target.referredby ? event.target.referredby.value : "NULL"); // assuming you may need referredby
-  //   formData.append("textarea", event.target.leadsquared_Notes.value);
-  
-  //   const xhttp = new XMLHttpRequest();
-  //   xhttp.open(
-  //     "POST",
-  //     "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/11/feedback"
-  //   );
-    
-  //   xhttp.onreadystatechange = function () {
-  //     if (xhttp.readyState == 4) {
-  //       if (xhttp.status == 200) {
-  //         document.getElementById("showlabel").innerHTML =
-  //           "Thank you for submitting your details. Our subject matter experts will connect with you within 24 working hours.";
-  //         document.getElementById("showlabel").style.display = "block";
-  //         window.setTimeout(function () {
-  //           window.location.href = "/thank-you";
-  //         }, 3000);
-  //       } else {
-  //         alert("There was a problem with the request.");
-  //       }
-  //       document.getElementById("submitbuttonform").value = "Submit";
-  //     }
-  //   };
-    
-  //   xhttp.send(formData);
-  // };
-
   const registerUser = async (event) => {
     event.preventDefault();
     document.getElementById("submitbuttonform").value = "Submitting form....";
-    
-    const formData = new FormData(event.target);  // Automatically gathers form data
-  
+
+    const formData = new FormData(event.target); // Automatically gathers form data
+
     try {
-      const response = await fetch("https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback", {
-        method: "POST",
-        body: formData,
-      });
-  
+      const response = await fetch(
+        "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/499/feedback",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
       if (response.ok) {
         const result = await response.json();
         if (result.status === "mail_sent") {
@@ -175,15 +85,9 @@ export default function Home() {
       console.error("Error submitting form:", error);
       alert("There was an error submitting the form. Please try again later.");
     }
-  
+
     document.getElementById("submitbuttonform").value = "Submit";
   };
-  
-
- 
-  
-
-
 
   return (
     <>
@@ -401,7 +305,7 @@ export default function Home() {
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                    Paid Ads Specialist 
+                      Paid Ads Specialist
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
@@ -413,12 +317,8 @@ export default function Home() {
                       <h4>EXPERIENCE</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
-                          <li>
-                            2 + Years
-                          </li>
-                          <li>
-                            Marketing 
-                          </li>
+                          <li>2 + Years</li>
+                          <li>Marketing</li>
                         </ul>
                       </div>
                     </div>
@@ -428,17 +328,46 @@ export default function Home() {
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          Develop and execute paid advertising strategies across platforms (Google Ads, Facebook Ads, LinkedIn Ads, etc.).
+                            Develop and execute paid advertising strategies
+                            across platforms (Google Ads, Facebook Ads, LinkedIn
+                            Ads, etc.).
                           </li>
                           <li>
-                          Conduct market research and analyze competitor advertising activity.
+                            Conduct market research and analyze competitor
+                            advertising activity.
                           </li>
-                          <li>Create and optimize ad copy, images, and landing pages for maximum conversions.</li>
-                          <li> Manage and optimize campaign budgets, targeting, and bidding.</li>
-                          <li> Monitor and report on campaign performance (CPC, CTR, CPA, ROI)</li>
-                          <li> Collaborate with content, SEO, and social media teams to ensure integrated digital marketing strategies.</li>
-                          <li>Stay up-to-date with platform updates, algorithm changes, and industry trends.</li>
-                          <li> <strong> If interested, kindly share your CV at talentacquisition.aak@byldgroup.com</strong></li>
+                          <li>
+                            Create and optimize ad copy, images, and landing
+                            pages for maximum conversions.
+                          </li>
+                          <li>
+                            {" "}
+                            Manage and optimize campaign budgets, targeting, and
+                            bidding.
+                          </li>
+                          <li>
+                            {" "}
+                            Monitor and report on campaign performance (CPC,
+                            CTR, CPA, ROI)
+                          </li>
+                          <li>
+                            {" "}
+                            Collaborate with content, SEO, and social media
+                            teams to ensure integrated digital marketing
+                            strategies.
+                          </li>
+                          <li>
+                            Stay up-to-date with platform updates, algorithm
+                            changes, and industry trends.
+                          </li>
+                          <li>
+                            {" "}
+                            <strong>
+                              {" "}
+                              If interested, kindly share your CV at
+                              talentacquisition.aak@byldgroup.com
+                            </strong>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -447,16 +376,30 @@ export default function Home() {
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          2+ years of experience in paid advertising (Google Ads, Facebook Ads, LinkedIn Ads).
+                            2+ years of experience in paid advertising (Google
+                            Ads, Facebook Ads, LinkedIn Ads).
                           </li>
                           <li>
-                          Proven track record of improving campaign performance and ROI.
+                            Proven track record of improving campaign
+                            performance and ROI.
                           </li>
-                          <li>In-depth knowledge of paid advertising platforms and formats (text, image, video).</li>
-                          <li>Excellent analytical, problem-solving, and communication skills.</li>
-                          <li>Experience with advertising analytics tools (Google Analytics, Facebook Ads Manager).</li>
-                          <li> Familiarity with CRM software and marketing automation tools.</li>
-                          
+                          <li>
+                            In-depth knowledge of paid advertising platforms and
+                            formats (text, image, video).
+                          </li>
+                          <li>
+                            Excellent analytical, problem-solving, and
+                            communication skills.
+                          </li>
+                          <li>
+                            Experience with advertising analytics tools (Google
+                            Analytics, Facebook Ads Manager).
+                          </li>
+                          <li>
+                            {" "}
+                            Familiarity with CRM software and marketing
+                            automation tools.
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -464,16 +407,11 @@ export default function Home() {
                       <h4>Skills:</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
-                          <li>
-                          Paid advertising strategy and execution.
-                          </li>
-                          <li>
-                          Ad copywriting and creative optimization.
-                          </li>
+                          <li>Paid advertising strategy and execution.</li>
+                          <li>Ad copywriting and creative optimization.</li>
                           <li>Campaign management and optimization.</li>
                           <li>Analytics and reporting.</li>
                           <li>Communication and teamwork.</li>
-                         
                         </ul>
                       </div>
                     </div>
@@ -494,9 +432,7 @@ export default function Home() {
                 </AccordionItem>
                 <AccordionItem>
                   <AccordionItemHeading>
-                    <AccordionItemButton>
-                    Sr. Net Developer
-                    </AccordionItemButton>
+                    <AccordionItemButton>Sr. Net Developer</AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <div className="cafaq">
@@ -507,12 +443,8 @@ export default function Home() {
                       <h4>EXPERIENCE</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
-                          <li>
-                          5 Years +
-                          </li>
-                          <li>
-                            IT
-                          </li>
+                          <li>5 Years +</li>
+                          <li>IT</li>
                         </ul>
                       </div>
                     </div>
@@ -521,20 +453,16 @@ export default function Home() {
                       <h4>Report to</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
-                          <li>
-                          Manager
-                          </li>
-                         </ul>
+                          <li>Manager</li>
+                        </ul>
                       </div>
                     </div>
                     <div className="cafaq">
                       <h4>Entity</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
-                          <li>
-                          Yoma Tech
-                          </li>
-                         </ul>
+                          <li>Yoma Tech</li>
+                        </ul>
                       </div>
                     </div>
 
@@ -543,17 +471,30 @@ export default function Home() {
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          Write clean, scalable code using .NET programming languages
+                            Write clean, scalable code using .NET programming
+                            languages
                           </li>
                           <li>
-                          Remain up to date with the terminology, concepts and best practices for coding mobile apps
+                            Remain up to date with the terminology, concepts and
+                            best practices for coding mobile apps
                           </li>
-                          <li> Develop technical interfaces, specifications, and architecture</li>
-                          <li>Use and adapt existing web applications for apps</li>
+                          <li>
+                             Develop technical interfaces, specifications, and
+                            architecture
+                          </li>
+                          <li>
+                            Use and adapt existing web applications for apps
+                          </li>
                           <li>Create and test software prototypes</li>
                           <li>Develop client displays and user interfaces</li>
-                           <li>Assist software personnel in handling project related work and other requirements</li>
-                          <li>Coordinate with other software professionals and developers</li>
+                          <li>
+                            Assist software personnel in handling project
+                            related work and other requirements
+                          </li>
+                          <li>
+                            Coordinate with other software professionals and
+                            developers
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -562,37 +503,54 @@ export default function Home() {
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          Exposure to .NET Frameworks 4.0/4.5 and Dotnet Core
+                            Exposure to .NET Frameworks 4.0/4.5 and Dotnet Core
                           </li>
                           <li>
-                          Minimum 5+ year experience in .NET Dot Net Core, MVC 4.0/5.0, SQL &amp;amp; C#
+                            Minimum 5+ year experience in .NET Dot Net Core, MVC
+                            4.0/5.0, SQL &amp;amp; C#
                           </li>
-                          <li> Sound knowledge in Razor syntax, attribute-based routing, server, and client-side validations,
-                          partial views</li>
+                          <li>
+                             Sound knowledge in Razor syntax, attribute-based
+                            routing, server, and client-side validations,
+                            partial views
+                          </li>
                           <li>Experience in REST services e.g. Web API</li>
-                          <li>Adequate knowledge and experience in developing web applications</li>
-                          <li>Proficiency in programming in C# with knowledge of advanced subjects like LINQ, parallel</li>
+                          <li>
+                            Adequate knowledge and experience in developing web
+                            applications
+                          </li>
+                          <li>
+                            Proficiency in programming in C# with knowledge of
+                            advanced subjects like LINQ, parallel
+                          </li>
                           <li>programming, Generics</li>
-                          <li>Must have worked on any of the ORM technologies like Entity Framework, Dapper, etc.</li>
+                          <li>
+                            Must have worked on any of the ORM technologies like
+                            Entity Framework, Dapper, etc.
+                          </li>
                           <li>Experience in SQL Server 2008 and above</li>
-                          <li>Knowledge of client-side tools like JavaScript, JQuery, HTML, CSS</li>
-                          <li>Ability to write SQL queries, create stored procedures, functions, views</li>
+                          <li>
+                            Knowledge of client-side tools like JavaScript,
+                            JQuery, HTML, CSS
+                          </li>
+                          <li>
+                            Ability to write SQL queries, create stored
+                            procedures, functions, views
+                          </li>
                           <li>Knowledge of unit testing</li>
                           <li>Must have worked on 3-tier applications</li>
-                          
                         </ul>
                       </div>
                     </div>
-                   
+
                     <div className="cafaq">
                       <h4>Mandatory Skills:</h4>
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          .NET Dot Net Core, MVC 4.0/5.0, SQL,Ado.Net &amp;amp; C#
+                            .NET Dot Net Core, MVC 4.0/5.0, SQL,Ado.Net
+                            &amp;amp; C#
                           </li>
-                          
-                         
                         </ul>
                       </div>
                     </div>
@@ -602,22 +560,23 @@ export default function Home() {
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          Min. Bachelor’s /Master’s degree in Technology
-                          </li> 
-                          <li>
-                          If you are an energetic and ambitious individual with a background, we invite you to apply and
-                          be a partof our dynamic team
+                            Min. Bachelor’s /Master’s degree in Technology
                           </li>
-                          
-                         
+                          <li>
+                            If you are an energetic and ambitious individual
+                            with a background, we invite you to apply and be a
+                            partof our dynamic team
+                          </li>
                         </ul>
                       </div>
                     </div>
                     <div className="cafaq">
                       <h4>Working conditions</h4>
-                      <p>BYOD (bring your own device policy)- candidate will be eligible for monthly allowances apart from CTC
-                      for using their own assets/ devices.</p>
-                      
+                      <p>
+                        BYOD (bring your own device policy)- candidate will be
+                        eligible for monthly allowances apart from CTC for using
+                        their own assets/ devices.
+                      </p>
                     </div>
 
                     <div className="cafaq">
@@ -626,23 +585,20 @@ export default function Home() {
                       <div className="rs-estimate">
                         <ul className="estimate-info mtt-5">
                           <li>
-                          Learn directly from industry experts with 20+ years of experience
-                          </li> 
-                          <li>
-                          Professional and Healthy work atmosphere
+                            Learn directly from industry experts with 20+ years
+                            of experience
                           </li>
+                          <li>Professional and Healthy work atmosphere</li>
 
                           <li>
-                          Gain experience in world class management practices
+                            Gain experience in world class management practices
                           </li>
                           <li>
-                          Health Insurance Job role &amp; Skills trainings
+                            Health Insurance Job role &amp; Skills trainings
                           </li>
-                           <li>
-                           Wide range of Rewards &amp; Recognition programs
+                          <li>
+                            Wide range of Rewards &amp; Recognition programs
                           </li>
-                          
-                         
                         </ul>
                       </div>
                     </div>
@@ -661,252 +617,6 @@ export default function Home() {
                     </div>
                   </AccordionItemPanel>
                 </AccordionItem>
-                {/* <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>
-                      Training Consultant
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="cafaq">
-                      <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
-                    </div>
-                    <div className="cafaq">
-                      <h4>EXPERIENCE</h4>
-                      <div className="rs-estimate">
-                        <ul className="estimate-info mtt-5">
-                          <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
-                          </li>
-                          <li>
-                            Traning background and/or relevant business
-                            experience
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="cafaq">
-                      <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
-                      <div className="caapplybtn">
-                        <a className="cabtnc1" href="#">
-                          SEE MORE
-                        </a>
-                        <a className="cabtnc2" href="#careerForm">
-                          APPLY
-                        </a>
-                      </div>
-                    </div>
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>
-                      Business Consultant
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="cafaq">
-                      <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
-                    </div>
-                    <div className="cafaq">
-                      <h4>EXPERIENCE</h4>
-                      <div className="rs-estimate">
-                        <ul className="estimate-info mtt-5">
-                          <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
-                          </li>
-                          <li>
-                            Traning background and/or relevant business
-                            experience
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="cafaq">
-                      <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
-                      <div className="caapplybtn">
-                        <a className="cabtnc1" href="#">
-                          SEE MORE
-                        </a>
-                        <a className="cabtnc2" href="#careerForm">
-                          APPLY
-                        </a>
-                      </div>
-                    </div>
-                  </AccordionItemPanel>
-                </AccordionItem>
-
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>Program Manager</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="cafaq">
-                      <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
-                    </div>
-                    <div className="cafaq">
-                      <h4>EXPERIENCE</h4>
-                      <div className="rs-estimate">
-                        <ul className="estimate-info mtt-5">
-                          <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
-                          </li>
-                          <li>
-                            Traning background and/or relevant business
-                            experience
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="cafaq">
-                      <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
-                      <div className="caapplybtn">
-                        <a className="cabtnc1" href="#">
-                          SEE MORE
-                        </a>
-                        <a className="cabtnc2" href="#careerForm">
-                          APPLY
-                        </a>
-                      </div>
-                    </div>
-                  </AccordionItemPanel>
-                </AccordionItem>
-
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>HR generalist</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="cafaq">
-                      <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
-                    </div>
-                    <div className="cafaq">
-                      <h4>EXPERIENCE</h4>
-                      <div className="rs-estimate">
-                        <ul className="estimate-info mtt-5">
-                          <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
-                          </li>
-                          <li>
-                            Traning background and/or relevant business
-                            experience
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="cafaq">
-                      <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
-                      <div className="caapplybtn">
-                        <a className="cabtnc1" href="#">
-                          SEE MORE
-                        </a>
-                        <a className="cabtnc2" href="#careerForm">
-                          APPLY
-                        </a>
-                      </div>
-                    </div>
-                  </AccordionItemPanel>
-                </AccordionItem>
-
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>
-                      Business Consultant
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="cafaq">
-                      <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
-                    </div>
-                    <div className="cafaq">
-                      <h4>EXPERIENCE</h4>
-                      <div className="rs-estimate">
-                        <ul className="estimate-info mtt-5">
-                          <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
-                          </li>
-                          <li>
-                            Traning background and/or relevant business
-                            experience
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="cafaq">
-                      <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
-                      <div className="caapplybtn">
-                        <a className="cabtnc1" href="#">
-                          SEE MORE
-                        </a>
-                        <a className="cabtnc2" href="#careerForm">
-                          APPLY
-                        </a>
-                      </div>
-                    </div>
-                  </AccordionItemPanel>
-                </AccordionItem>
-
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>
-                      Trainer – Retail Banking
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <div className="cafaq">
-                      <h4>JOB ROLE</h4>
-                      <p>Training Consultant</p>
-                    </div>
-                    <div className="cafaq">
-                      <h4>EXPERIENCE</h4>
-                      <div className="rs-estimate">
-                        <ul className="estimate-info mtt-5">
-                          <li>
-                            5+ years business / management experience (of
-                            companies with more than Rs. 5 Cr revenue )
-                          </li>
-                          <li>
-                            Traning background and/or relevant business
-                            experience
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="cafaq">
-                      <h4>WORK LOCATION</h4>
-                      <p>NCR / Bangalore / Mumbai</p>
-                      <div className="caapplybtn">
-                        <a className="cabtnc1" href="#">
-                          SEE MORE
-                        </a>
-                        <a className="cabtnc2" href="#careerForm">
-                          APPLY
-                        </a>
-                      </div>
-                    </div>
-                  </AccordionItemPanel>
-                </AccordionItem> */}
               </Accordion>
             </div>
           </div>
