@@ -286,7 +286,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      {/* 
       <div id="rs-faq" class="rs-faq ptt-60 pbb-50 zinc">
         <div className="container">
           <div className="row ">
@@ -622,7 +622,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container ptt-60 pbb-60">
         <div className="row ">
