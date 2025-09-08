@@ -1742,6 +1742,13 @@ h6 {
   margin-bottom: 20px !important;
 }
 
+.kh-badge {
+  background: #007bff !important;
+  color: #fff;
+  padding: 2px 27px !important;
+  border-radius: 12px !important;
+}
+
 @media (max-width: 992px) {
   .siderco h1 {
     height: 223px;
