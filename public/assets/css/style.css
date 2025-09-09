@@ -9753,7 +9753,7 @@ body .search-modal .close:hover {
   color: #ffffff;
 }
 .rs-footer.style1 .footer-top .site-map li a:hover {
-  color: #2a6db5;
+  color: #2a6db5 !important;
 }
 .rs-footer.style1 .footer-top .site-map li:last-child {
   margin-bottom: 0;
