@@ -89,6 +89,7 @@ export default function EventsGallerys() {
                     </div>
                   </a>
                 </div>
+                <div className="overlay"></div>
               </div>
             </div>
           </div>
