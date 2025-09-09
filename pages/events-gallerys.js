@@ -78,14 +78,16 @@ export default function EventsGallerys() {
         </div>
         <div className="container ">
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-lg-4 col-sm-12">
               <div className="galleryBox">
                 <div class="gallery-item">
-                  <img src="/assets/img/new/ysImg.webp" alt="Gallery item" />
-                  <div class="caption">
-                    <h3>Hawaiian Islands</h3>
-                    <p>by Logan Lambert</p>
-                  </div>
+                  <a href="#">
+                    <img src="/assets/img/new/ysImg.webp" alt="Gallery item" />
+                    <div class="caption">
+                      <h3>Hawaiian Islands</h3>
+                      <p>by Logan Lambert</p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
