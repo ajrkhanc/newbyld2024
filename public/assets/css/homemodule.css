@@ -1672,25 +1672,23 @@ h6 {
 .breadcrumbs-innerOne h1 {
   font-size: 48px;
   font-weight: 500;
-
 }
 
-.calender_bg{
+.calender_bg {
   background-image: url(/assets/img/new/calender_bgImg.webp);
 }
 
-.calenderIcon{
+.calenderIcon {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.calenderIconInner{
+.calenderIconInner {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .buttons {

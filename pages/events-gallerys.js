@@ -42,8 +42,8 @@ export default function EventsGallerys() {
           </div>
         </div>
       </div>
-      <section>
-        <div className="container calender_bg">
+      <section className="calender_bg">
+        <div className="container">
           <div className="row pt-5 pb-5">
             <div className="col-sm-8 m-auto">
               <div className="calendarBox">
