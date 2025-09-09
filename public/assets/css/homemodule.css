@@ -1675,17 +1675,15 @@ h6 {
 }
 
 .calender_bg {
- 
-      background-image: url(/assets/img/new/calender_bgImg.webp);
-    background-color: rgba(255, 255, 255, 0.5);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
+  background-image: url(/assets/img/new/calender_bgImg.webp);
+  background-color: rgb(255 255 255 / 86%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
-
 
 .calenderIcon {
   display: flex;
@@ -1695,13 +1693,25 @@ border-radius: 10px;
 }
 
 .calenderIconInner {
-display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-    margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  margin-right: 50px;
 }
 
+.calendarBox h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.calenderIconInner span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
 
 .buttons {
   display: flex;
