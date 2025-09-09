@@ -2086,6 +2086,36 @@ h6 {
     height: 350px;
   }
 
+  .breadcrumbs-innerOne h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .btn.join {
+    width: 100%;
+  }
+
+  .btn.learn {
+    width: 100%;
+  }
+
+  .breadcrumbs-innerOne h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .calendarBox h3 {
+    font-size: 30px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  .calenderIcon {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
   .slide2c {
     background: url(https://ik.imagekit.io/byld/BYLD/byldallasests/byldho2smallSize_2_-sjKtlxC9j.webp);
     background-position: center center;
