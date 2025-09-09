@@ -106,6 +106,7 @@ export default function EventsGallerys() {
                     <img
                       src="/assets/img/new/galleryImg2.webp"
                       alt="Gallery item"
+                     
                     />
                     <div class="caption">
                       <h3>Founder's Day</h3>
