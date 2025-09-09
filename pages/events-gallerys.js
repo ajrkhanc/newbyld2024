@@ -23,7 +23,8 @@ export default function EventsGallerys() {
             <div className="col-sm-12">
               <div class="breadcrumbs-innerOne">
                 <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP text-white">
-                  Where Leaders Emerge, Ideas Transform, and Growth Begins
+                  Where Leaders Emerge, <br /> Ideas Transform, and Growth
+                  Begins
                 </h1>
                 <div className="buttons">
                   <a href="#webinar-preface" className="btn join">
@@ -72,6 +73,13 @@ export default function EventsGallerys() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <h2 className="text-center pb-4">Events Gallery</h2>
             </div>
           </div>
         </div>
