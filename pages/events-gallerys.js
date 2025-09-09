@@ -31,7 +31,7 @@ export default function EventsGallerys() {
                     Join Now
                   </a>
                   <a
-                    href="/mission-vision-values"
+                    href="/about-us"
                     className="btn learn"
                     style={{ background: "#e0e0e0", color: "#333" }}
                   >
