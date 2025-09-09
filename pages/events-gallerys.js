@@ -43,7 +43,7 @@ export default function EventsGallerys() {
           </div>
         </div>
       </div>
-      <section className="">
+      <section className=" pbb-100 ">
         <div className="container calender_bg">
           <div className="row pt-5 pb-5">
             <div className="col-sm-8 m-auto">
@@ -76,17 +76,20 @@ export default function EventsGallerys() {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container ">
           <div className="row">
             <div className="col-sm-12">
               <div className="galleryBox">
-              <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1539137571959-2fef8104f030" alt="Gallery item"/>
+                <div class="gallery-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1539137571959-2fef8104f030"
+                    alt="Gallery item"
+                  />
                   <div class="caption">
-                      <h3>Hawaiian Islands</h3>
-                      <p>by Logan Lambert</p>
+                    <h3>Hawaiian Islands</h3>
+                    <p>by Logan Lambert</p>
                   </div>
-             </div>
+                </div>
               </div>
             </div>
           </div>
