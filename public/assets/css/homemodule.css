@@ -1683,6 +1683,8 @@ h6 {
   background-position: center;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  position: relative;
+  bottom: 100px;
 }
 
 .calenderIcon {
