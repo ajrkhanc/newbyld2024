@@ -78,7 +78,7 @@ export default function EventsGallerys() {
         </div>
         <div className="container ">
           <div className="row">
-            <div className="col-lg-4 col-sm-12">
+            <div className="col-lg-4 col-sm-12 mb-2">
               <div className="galleryBox">
                 <div class="gallery-item">
                   <a href="#">
@@ -90,6 +90,111 @@ export default function EventsGallerys() {
                     <div className="overlay">
                       <div className="overlay-text">
                         <h3>Conclave</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-12 mb-2">
+              <div className="galleryBox">
+                <div class="gallery-item">
+                  <a href="#">
+                    <img
+                      src="/assets/img/new/galleryImg2.webp"
+                      alt="Gallery item"
+                    />
+                    <div class="caption">
+                      <h3>Founder's Day</h3>
+                    </div>
+
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>Founder's Day</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-12 mb-2">
+              <div className="galleryBox">
+                <div class="gallery-item">
+                  <a href="#">
+                    <img
+                      src="/assets/img/new/galleryImg3.webp"
+                      alt="Gallery item"
+                    />
+                    <div class="caption">
+                      <h3>Women's Day</h3>
+                    </div>
+
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>Women's Day</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-12 mb-2">
+              <div className="galleryBox">
+                <div class="gallery-item">
+                  <a href="#">
+                    <img
+                      src="/assets/img/new/galleryImg4.webp"
+                      alt="Gallery item"
+                    />
+                    <div class="caption">
+                      <h3>Republic Day</h3>
+                    </div>
+
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>Republic Day</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-12 mb-2">
+              <div className="galleryBox">
+                <div class="gallery-item">
+                  <a href="#">
+                    <img
+                      src="/assets/img/new/galleryImg5.webp"
+                      alt="Gallery item"
+                    />
+                    <div class="caption">
+                      <h3>Indoor Sports League</h3>
+                    </div>
+
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>Indoor Sports League</h3>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-12 mb-2">
+              <div className="galleryBox">
+                <div class="gallery-item">
+                  <a href="#">
+                    <img
+                      src="/assets/img/new/galleryImg6.webp"
+                      alt="Gallery item"
+                    />
+                    <div class="caption">
+                      <h3>Holi</h3>
+                    </div>
+
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>Holi</h3>
                       </div>
                     </div>
                   </a>
