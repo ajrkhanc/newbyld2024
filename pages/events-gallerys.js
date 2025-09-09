@@ -79,7 +79,15 @@ export default function EventsGallerys() {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <h2 className="text-center pb-4">Events Gallery</h2>
+              <div className="galleryBox">
+              <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1539137571959-2fef8104f030" alt="Gallery item"/>
+                  <div class="caption">
+                      <h3>Hawaiian Islands</h3>
+                      <p>by Logan Lambert</p>
+                  </div>
+             </div>
+              </div>
             </div>
           </div>
         </div>
