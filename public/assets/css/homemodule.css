@@ -1675,8 +1675,17 @@ h6 {
 }
 
 .calender_bg {
-  background-image: url(/assets/img/new/calender_bgImg.webp);
+ 
+      background-image: url(/assets/img/new/calender_bgImg.webp);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
 }
+
 
 .calenderIcon {
   display: flex;
@@ -1686,10 +1695,13 @@ h6 {
 }
 
 .calenderIconInner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin-right: 50px;
 }
+
 
 .buttons {
   display: flex;
