@@ -87,10 +87,12 @@ export default function EventsGallerys() {
                       <h3>Hawaiian Islands</h3>
                       <p>by Logan Lambert</p>
                     </div>
-                    <div className="overlay-text">
-                      <h3>Conclave</h3>
+
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>Conclave</h3>
+                      </div>
                     </div>
-                    <div className="overlay"></div>
                   </a>
                 </div>
               </div>
