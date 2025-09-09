@@ -83,7 +83,7 @@ export default function EventsGallerys() {
                 <div class="gallery-item">
                   <a href="#">
                     <img
-                      src="/assets/img/new/galleryImg1.webp"
+                      src="/assets/img/new/galleryImg1.1.webp"
                       alt="Gallery item"
                     />
                     <div class="caption">
