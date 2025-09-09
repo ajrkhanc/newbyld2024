@@ -88,8 +88,8 @@ export default function EventsGallerys() {
                       <p>by Logan Lambert</p>
                     </div>
                   </a>
+                  <div className="overlay"></div>
                 </div>
-                <div className="overlay"></div>
               </div>
             </div>
           </div>
