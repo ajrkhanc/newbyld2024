@@ -84,8 +84,7 @@ export default function EventsGallerys() {
                   <a href="#">
                     <img src="/assets/img/new/ysImg.webp" alt="Gallery item" />
                     <div class="caption">
-                      <h3>Hawaiian Islands</h3>
-                      <p>by Logan Lambert</p>
+                      <h3>Conclave</h3>
                     </div>
 
                     <div className="overlay">
