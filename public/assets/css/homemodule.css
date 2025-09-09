@@ -1730,6 +1730,12 @@ h6 {
   font-weight: bold;
 }
 
+.galleryBox {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
 .gallery-item {
   position: relative;
   width: 100%;
