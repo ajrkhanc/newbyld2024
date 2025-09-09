@@ -1669,6 +1669,10 @@ h6 {
   height: 100vh;
   justify-content: center;
 }
+.breadcrumbs-innerOne h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
 
 .buttons {
   display: flex;
