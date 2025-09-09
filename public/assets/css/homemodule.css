@@ -1775,8 +1775,15 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+
   z-index: 2;
+}
+
+.overlay-text h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .caption {
