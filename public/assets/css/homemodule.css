@@ -1822,7 +1822,7 @@ h6 {
 
 /* Hover effects */
 .gallery-item:hover img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transform: scale(1);
 }
 
