@@ -27,11 +27,11 @@ export default function EventsGallerys() {
                   Begins
                 </h1>
                 <div className="buttons">
-                  <a href="#webinar-preface" className="btn join">
+                  <a href="/contact-us" className="btn join">
                     Join Now
                   </a>
                   <a
-                    href="#webinar-preface"
+                    href="/mission-vision-values"
                     className="btn learn"
                     style={{ background: "#e0e0e0", color: "#333" }}
                   >
@@ -106,7 +106,6 @@ export default function EventsGallerys() {
                     <img
                       src="/assets/img/new/galleryImg2.webp"
                       alt="Gallery item"
-                     
                     />
                     <div class="caption">
                       <h3>Founder's Day</h3>
