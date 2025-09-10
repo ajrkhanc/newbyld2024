@@ -6,17 +6,45 @@ import "react-image-lightbox/style.css";
 export default function EventsGallerys() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [photoIndex, setPhotoIndex] = React.useState(0);
+  const [currentGroup, setCurrentGroup] = React.useState([]); // current images group
 
-  const images = [
-    "/assets/img/new/galleryImg1.1.webp",
-    "/assets/img/new/galleryImg1.2.webp",
-    "/assets/img/new/galleryImg1.3.webp",
-  ];
+  // Grouped event images
+  const galleries = {
+    Conclave: [
+      "/assets/img/new/galleryImg1.1.webp",
+      "/assets/img/new/galleryImg1.2.webp",
+      "/assets/img/new/galleryImg1.3.webp",
+    ],
+    "Founder's Day": [
+      "/assets/img/new/galleryImg2.webp",
+      "/assets/img/new/galleryImg2.1.webp",
+    ],
+    "Women's Day": [
+      "/assets/img/new/galleryImg3.webp",
+      "/assets/img/new/galleryImg3.1.webp",
+      "/assets/img/new/galleryImg3.2.webp",
+    ],
+    "Republic Day": [
+      "/assets/img/new/galleryImg4.webp",
+      "/assets/img/new/galleryImg4.1.webp",
+    ],
+    "Indoor Sports League": [
+      "/assets/img/new/galleryImg5.webp",
+      "/assets/img/new/galleryImg5.1.webp",
+      "/assets/img/new/galleryImg5.2.webp",
+    ],
+    Holi: [
+      "/assets/img/new/galleryImg6.webp",
+      "/assets/img/new/galleryImg6.1.webp",
+    ],
+  };
 
-  const openLightbox = (index) => {
+  const openLightbox = (eventName, index) => {
+    setCurrentGroup(galleries[eventName]); // set group images
     setPhotoIndex(index);
     setIsOpen(true);
   };
+
   return (
     <>
       <Head>
@@ -59,7 +87,7 @@ export default function EventsGallerys() {
           </div>
         </div>
       </div>
-      <section className=" pbb-100 ">
+      {/* <section className=" pbb-100 ">
         <div className="container calender_bg">
           <div className="row pt-5 pb-5">
             <div className="col-sm-8 m-auto">
@@ -222,6 +250,57 @@ export default function EventsGallerys() {
             </div>
           </div>
         </div>
+      </section> */}
+
+      <section className="pbb-100">
+        <div className="container">
+          <div className="row">
+            {Object.keys(galleries).map((eventName, idx) => (
+              <div className="col-lg-4 col-sm-12 mb-2" key={idx}>
+                <div
+                  className="galleryBox"
+                  onClick={() => openLightbox(eventName, 0)} // open first image of that event
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="gallery-item">
+                    {/* Thumbnail image = group ka first image */}
+                    <img src={galleries[eventName][0]} alt={eventName} />
+                    <div className="caption">
+                      <h3>{eventName}</h3>
+                    </div>
+                    <div className="overlay">
+                      <div className="overlay-text">
+                        <h3>{eventName}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Lightbox */}
+        {isOpen && (
+          <Lightbox
+            mainSrc={currentGroup[photoIndex]}
+            nextSrc={currentGroup[(photoIndex + 1) % currentGroup.length]}
+            prevSrc={
+              currentGroup[
+                (photoIndex + currentGroup.length - 1) % currentGroup.length
+              ]
+            }
+            onCloseRequest={() => setIsOpen(false)}
+            onMovePrevRequest={() =>
+              setPhotoIndex(
+                (photoIndex + currentGroup.length - 1) % currentGroup.length
+              )
+            }
+            onMoveNextRequest={() =>
+              setPhotoIndex((photoIndex + 1) % currentGroup.length)
+            }
+          />
+        )}
       </section>
     </>
   );
