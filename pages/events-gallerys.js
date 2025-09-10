@@ -253,6 +253,38 @@ export default function EventsGallerys() {
       </section> */}
 
       <section className="pbb-100">
+        <div className="container calender_bg">
+          <div className="row pt-5 pb-5">
+            <div className="col-sm-8 m-auto">
+              <div className="calendarBox">
+                <h3>Join Us for an Exclusive Leadership Meetup</h3>
+                <div className="calenderIcon">
+                  <div className="calenderIconInner">
+                    <img
+                      src="/assets/img/new/calenderIcon1.png"
+                      alt="calender_icon"
+                    />
+                    <span>Lorem Ipsum</span>
+                  </div>
+                  <div className="calenderIconInner">
+                    <img
+                      src="/assets/img/new/calenderIcon2.png"
+                      alt="calender_icon2"
+                    />
+                    <span>Lorem Ipsum</span>
+                  </div>
+                  <div className="calenderIconInner">
+                    <img
+                      src="/assets/img/new/calenderIcon3.png"
+                      alt="calender_icon3"
+                    />
+                    <span>Lorem Ipsum</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container">
           <div className="row">
             {Object.keys(galleries).map((eventName, idx) => (
