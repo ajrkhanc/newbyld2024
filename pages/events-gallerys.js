@@ -77,8 +77,14 @@ export default function EventsGallerys() {
       "/assets/img/new/women-day/md17.webp",
     ],
     "Republic Day": [
-      "/assets/img/new/galleryImg4.webp",
-      "/assets/img/new/galleryImg4.1.webp",
+      "/assets/img/new/republic-day/galleryImg4.webp",
+      "/assets/img/new/republic-day/rd1.webp",
+      "/assets/img/new/republic-day/rd2.webp",
+      "/assets/img/new/republic-day/rd3.webp",
+      "/assets/img/new/republic-day/rd4.webp",
+      "/assets/img/new/republic-day/rd5.webp",
+      "/assets/img/new/republic-day/rd6.webp",
+      "/assets/img/new/republic-day/rd7.webp",
     ],
     "Indoor Sports League": [
       "/assets/img/new/galleryImg5.webp",
