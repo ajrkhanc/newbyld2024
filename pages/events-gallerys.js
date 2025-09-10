@@ -59,7 +59,6 @@ export default function EventsGallerys() {
     ],
     "Women's Day": [
       "/assets/img/new/women-day/galleryImg3.webp",
-      "/assets/img/new/women-day/md1.webp",
       "/assets/img/new/women-day/md2.webp",
       "/assets/img/new/women-day/md3.webp",
       "/assets/img/new/women-day/md4.webp",
