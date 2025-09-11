@@ -106,7 +106,7 @@ export default function EventsGallerys() {
       "/assets/img/new/indoorsports-leagues/id16.webp",
       "/assets/img/new/indoorsports-leagues/id17.webp",
       "/assets/img/new/indoorsports-leagues/id18.webp",
-      "/assets/img/new/indoorsports-leagues/id19.webp",
+
       "/assets/img/new/indoorsports-leagues/id20.webp",
       "/assets/img/new/indoorsports-leagues/id21.webp",
       "/assets/img/new/indoorsports-leagues/id22.webp",
