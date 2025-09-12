@@ -66,6 +66,14 @@ const CoachingKnowledgeAssessment = () => {
     // ✅ If all valid, open modal for personal info
     setShowModal(true);
   };
+  const generateSlug = (name, phone) => {
+    const cleanName = name
+      .replace(/[^a-zA-Z0-9 ]/g, "")
+      .toLowerCase()
+      .split(" ")
+      .join("-");
+    return `${cleanName}${phone}`;
+  };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -81,63 +89,159 @@ const CoachingKnowledgeAssessment = () => {
     const phone = formData.get("phone");
     const email = formData.get("email");
     const organization = formData.get("organization") || "Null";
+    const newnameurl = generateSlug(name, phone);
+
+    const answers = {};
+    let qCounter = 1;
+
+    scenarios.forEach((scenario) => {
+      const scenarioAnswers = selectedAnswersPerScenario[scenario.id] || {};
+      Object.entries(scenarioAnswers).forEach(([qIndex, optIndex]) => {
+        const questionIndex = parseInt(qIndex);
+        const question = scenario.questions[questionIndex];
+        const selectedOption = question.options[optIndex];
+        answers[`q${qCounter}`] = selectedOption?.value?.toString() || "0";
+        qCounter++;
+      });
+    });
+
+    while (qCounter <= 80) {
+      answers[`q${qCounter}`] = "0";
+      qCounter++;
+    }
+
+    answers.name = name;
+    answers.phone = phone;
+    answers.email = email;
+    answers.organization = organization;
+    answers.newnameurl = newnameurl;
 
     try {
-      // ✅ Send data to Contact Form 7 WordPress API
-      const cf7FormData = new FormData();
-      cf7FormData.append("name", name);
-      cf7FormData.append("email", email);
-      cf7FormData.append("phone", phone);
-      cf7FormData.append("organization", organization); // if supported by your CF7 form
-
       const response = await fetch(
-        "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/526/feedback",
+        "https://byldblogs.vercel.app/api/coach-knowledge-assessment",
         {
           method: "POST",
-          body: cf7FormData,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(answers),
         }
       );
 
       const data = await response.json();
+      console.log("Submission response:", data);
 
-      if (data.status === "mail_sent") {
-        toast.success("Submitted Successfully!");
+      if (data.status === 0 || data.status === "success") {
+        // Submit to CF7
+        const cf7FormData = new FormData();
+        cf7FormData.append("name", name);
+        cf7FormData.append("email", email);
+        cf7FormData.append("phone", phone);
+
+        await fetch(
+          "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/526/feedback",
+          {
+            method: "POST",
+            body: cf7FormData,
+          }
+        );
+
+        // ✅ Show toast instead of DOM text
+        toast.success(data.message || "Submitted Successfully!");
+
         form.reset();
         setSelectedAnswersPerScenario({});
         setActiveTab(1);
         setShowModal(false);
-
         setTimeout(() => {
-          window.location.href = "/thank-you";
+          window.location.href = `/coaching/coach-knowledge-assessment-m/${newnameurl}`;
+          setIsLoading(false); // stop loader after redirect
         }, 2500);
       } else {
-        toast.error(data.message || "Submission failed.");
+        toast.error("Email is already registered.");
       }
     } catch (error) {
-      console.error("CF7 Submission Error:", error);
+      console.error("Submission Error:", error);
       toast.error("Submission failed. Please try again.");
     } finally {
       submitBtn.disabled = false;
       submitBtn.value = "Submit";
-      setIsLoading(false);
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
     }
   };
 
+  // const handleFormSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsLoading(true);
+
+  //   const form = e.target;
+  //   const submitBtn = document.getElementById("submitbuttonform");
+  //   submitBtn.disabled = true;
+  //   submitBtn.value = "Submitting...";
+
+  //   const formData = new FormData(form);
+  //   const name = formData.get("name");
+  //   const phone = formData.get("phone");
+  //   const email = formData.get("email");
+  //   const organization = formData.get("organization") || "Null";
+
+  //   try {
+  //     // ✅ Send data to Contact Form 7 WordPress API
+  //     const cf7FormData = new FormData();
+  //     cf7FormData.append("name", name);
+  //     cf7FormData.append("email", email);
+  //     cf7FormData.append("phone", phone);
+  //     cf7FormData.append("organization", organization); // if supported by your CF7 form
+
+  //     const response = await fetch(
+  //       "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/526/feedback",
+  //       {
+  //         method: "POST",
+  //         body: cf7FormData,
+  //       }
+  //     );
+
+  //     const data = await response.json();
+
+  //     if (data.status === "mail_sent") {
+  //       toast.success("Submitted Successfully!");
+  //       form.reset();
+  //       setSelectedAnswersPerScenario({});
+  //       setActiveTab(1);
+  //       setShowModal(false);
+
+  //       setTimeout(() => {
+  //         window.location.href = "/thank-you";
+  //       }, 2500);
+  //     } else {
+  //       toast.error(data.message || "Submission failed.");
+  //     }
+  //   } catch (error) {
+  //     console.error("CF7 Submission Error:", error);
+  //     toast.error("Submission failed. Please try again.");
+  //   } finally {
+  //     submitBtn.disabled = false;
+  //     submitBtn.value = "Submit";
+  //     setIsLoading(false);
+  //   }
+  // };
+
   return (
     <div>
-       <section className=" ptt-20">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-12" style={{ textAlign: "right" }}>
-                    <img
-                      src="/assets/images/bcaLogo.webp"
-                      alt="bcaLogo"
-                      className={styles.bcaLogo}
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
+      <section className=" ptt-20">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12" style={{ textAlign: "right" }}>
+              <img
+                src="/assets/images/bcaLogo.webp"
+                alt="bcaLogo"
+                className={styles.bcaLogo}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="assesmentbannnerbg">
         <div className="container">
           <div className="row align-items-center">
