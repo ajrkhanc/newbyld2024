@@ -61,7 +61,7 @@ export default function Header() {
                           target="_blank"
                           href="https://twitter.com/Byld_Coaching"
                         >
-                           <FaXTwitter className="" />
+                          <FaXTwitter className="" />
                         </a>
                       </li>
                       <li>
@@ -280,6 +280,9 @@ export default function Header() {
                           <li className="menu-item-has-children">
                             <a href="#">EVENTS</a>
                             <ul className="sub-menu">
+                              <li>
+                                <a href="/speakerseries">Speaker-Series</a>
+                              </li>
                               {/* <li>
                                   <a href="/webinars-and-program-experience">
                                     Webinars
@@ -425,7 +428,7 @@ export default function Header() {
                 </li>
                 <li>
                   <a target="_blank" href="https://twitter.com/BYLDGroup">
-                     <FaXTwitter className="" />
+                    <FaXTwitter className="" />
                   </a>
                 </li>
                 <li>
@@ -622,6 +625,9 @@ export default function Header() {
               <li className="menu-item-has-children">
                 <a href="#">EVENTS</a>
                 <ul className="sub-menu">
+                  <li>
+                    <a href="/speakerseries">Speaker-Series</a>
+                  </li>
                   {/* <li>
                       <a href="/webinars-and-program-experience">Webinars</a>
                     </li> */}
