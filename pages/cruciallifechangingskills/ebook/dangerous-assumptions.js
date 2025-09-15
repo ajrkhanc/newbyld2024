@@ -24,7 +24,7 @@ export default function Ebook() {
           document.getElementById("contactForm").reset();
           document.getElementById("showlabel").style.display = "block";
           setTimeout(function () {
-            window.open("/classets/pdf/Costly-Conversationsf.pdf", "_blank");
+            window.open("/classets/pdf/Dangerous-AssumptionsPdf.pdf", "_blank");
           }, 3000);
         } else {
           alert("There was a problem with the request.");
@@ -53,7 +53,7 @@ export default function Ebook() {
         </title>
         <link
           rel="canonical"
-          href="https://byldgroup.com/cruciallifechangingskills/ebook/Dangerous-AssumptionsPdf"
+          href="https://byldgroup.com/cruciallifechangingskills/ebook/leaders-guide-to-team-productivity"
         />
         <meta
           name="description"
