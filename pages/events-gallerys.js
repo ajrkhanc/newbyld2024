@@ -419,30 +419,34 @@ export default function EventsGallerys() {
           </div>
         </div>
         <div className="container">
-          <div className={`extra-cards ${showAll ? "expanded" : ""}`}>
-            <div className="row">
-              {visibleKeys.map((eventName, idx) => (
-                <div className="col-lg-4 col-sm-12 mb-2" key={idx}>
-                  <div
-                    className="galleryBox"
-                    onClick={() => openLightbox(eventName, 0)} // open first image
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div className="gallery-item">
-                      <img src={galleries[eventName][0]} alt={eventName} />
-                      <div className="caption">
+          <div className="row">
+            {visibleKeys.map((eventName, idx) => (
+              <div
+                className={`col-lg-4 col-sm-12 mb-2 card-animate ${
+                  showAll ? "show" : ""
+                }`}
+                key={idx}
+                style={{ transitionDelay: `${idx * 0.1}s` }}
+              >
+                <div
+                  className="galleryBox"
+                  onClick={() => openLightbox(eventName, 0)} // open first image
+                  style={{ cursor: "pointer" }}
+                >
+                  <div className="gallery-item">
+                    <img src={galleries[eventName][0]} alt={eventName} />
+                    <div className="caption">
+                      <h3>{eventName}</h3>
+                    </div>
+                    <div className="overlay">
+                      <div className="overlay-text">
                         <h3>{eventName}</h3>
-                      </div>
-                      <div className="overlay">
-                        <div className="overlay-text">
-                          <h3>{eventName}</h3>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           {/* ✅ View More / View Less button */}
@@ -477,15 +481,15 @@ export default function EventsGallerys() {
           />
         )}
       </section>
-
       <style jsx>{`
-        .extra-cards {
-          max-height: 0;
-          overflow: hidden;
-          transition: max-height 0.6s ease-in-out;
+        .card-animate {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.6s ease, transform 0.6s ease;
         }
-        .extra-cards.expanded {
-          max-height: 2000px; /* big enough for all cards */
+        .card-animate.show {
+          opacity: 1;
+          transform: translateY(0);
         }
       `}</style>
     </>
