@@ -7,6 +7,7 @@ export default function EventsGallerys() {
   const [isOpen, setIsOpen] = React.useState(false);
   const [photoIndex, setPhotoIndex] = React.useState(0);
   const [currentGroup, setCurrentGroup] = React.useState([]); // current images group
+  const [showAll, setShowAll] = React.useState(false); // ✅ for "View More"
 
   // Grouped event images
   const galleries = {
@@ -171,6 +172,11 @@ export default function EventsGallerys() {
     setPhotoIndex(index);
     setIsOpen(true);
   };
+  // ✅ gallery keys
+  const galleryKeys = Object.keys(galleries);
+
+  // ✅ show first 6 if not expanded
+  const visibleKeys = showAll ? galleryKeys : galleryKeys.slice(0, 6);
 
   return (
     <>
@@ -414,15 +420,14 @@ export default function EventsGallerys() {
         </div>
         <div className="container">
           <div className="row">
-            {Object.keys(galleries).map((eventName, idx) => (
+            {visibleKeys.map((eventName, idx) => (
               <div className="col-lg-4 col-sm-12 mb-2" key={idx}>
                 <div
                   className="galleryBox"
-                  onClick={() => openLightbox(eventName, 0)} // open first image of that event
+                  onClick={() => openLightbox(eventName, 0)} // open first image
                   style={{ cursor: "pointer" }}
                 >
                   <div className="gallery-item">
-                    {/* Thumbnail image = group ka first image */}
                     <img src={galleries[eventName][0]} alt={eventName} />
                     <div className="caption">
                       <h3>{eventName}</h3>
@@ -437,6 +442,15 @@ export default function EventsGallerys() {
               </div>
             ))}
           </div>
+
+          {/* ✅ View More / View Less button */}
+          {galleryKeys.length > 6 && (
+            <div className="text-center mt-4">
+              <button className="btn join" onClick={() => setShowAll(!showAll)}>
+                {showAll ? "View Less" : "View More"}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Lightbox */}
