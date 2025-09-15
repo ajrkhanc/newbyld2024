@@ -2,47 +2,86 @@ import Head from "next/head";
 
 export default function Ebook() {
   const EbookForm = async (event) => {
+    // document.getElementById("submitbuttonform").value = "Submitting form....";
+    // const xhttp = new XMLHttpRequest();
+    // xhttp.onload = function () {
+    //   console.log(this.responseText);
+    // };
+    // xhttp.open(
+    //   "Post",
+    //   "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/25/feedback"
+    // );
+    // xhttp.setRequestHeader(
+    //   "Content-Type",
+    //   "application/x-www-form-urlencoded;"
+    // );
+    // xhttp.onreadystatechange = function () {
+    //   if (xhttp.readyState == 4) {
+    //     if (xhttp.status == 200) {
+    //       document.getElementById("showlabel").innerHTML =
+    //         "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+    //       document.getElementById("contactForm").reset();
+    //       document.getElementById("showlabel").style.display = "block";
+    //       setTimeout(function () {
+    //         window.open("/classets/pdf/Dangerous-AssumptionsPdf.pdf", "_blank");
+    //       }, 3000);
+    //     } else {
+    //       alert("There was a problem with the request.");
+    //     }
+    //   }
+    // };
+    // xhttp.send(
+    //   "yourname=" +
+    //     event.target.name.value +
+    //     "&youremail=" +
+    //     event.target.email.value +
+    //     "&phonenumber=" +
+    //     event.target.phone.value +
+    //     "&companyname=" +
+    //     event.target.organization.value +
+    //     "&ebookname=" +
+    //     event.target.ebookname.value
+    // );
+
     event.preventDefault();
-    document.getElementById("submitbuttonform").value = "Submitting form....";
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function () {
-      console.log(this.responseText);
-    };
-    xhttp.open(
-      "Post",
-      "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/25/feedback"
-    );
-    xhttp.setRequestHeader(
-      "Content-Type",
-      "application/x-www-form-urlencoded;"
-    );
-    xhttp.onreadystatechange = function () {
-      if (xhttp.readyState == 4) {
-        if (xhttp.status == 200) {
-          document.getElementById("showlabel").innerHTML =
-            "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
-          document.getElementById("contactForm").reset();
-          document.getElementById("showlabel").style.display = "block";
-          setTimeout(function () {
-            window.open("/classets/pdf/Dangerous-AssumptionsPdf.pdf", "_blank");
-          }, 3000);
-        } else {
-          alert("There was a problem with the request.");
+    const submitBtn = document.getElementById("submitbuttonform");
+    submitBtn.value = "Submitting form....";
+
+    const formData = new URLSearchParams();
+    formData.append("yourname", event.target.name.value);
+    formData.append("youremail", event.target.email.value);
+    formData.append("phonenumber", event.target.phone.value);
+    formData.append("companyname", event.target.organization.value);
+    formData.append("ebookname", event.target.ebookname.value);
+
+    try {
+      const res = await fetch(
+        "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/25/feedback",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: formData.toString(),
         }
+      );
+
+      if (res.ok) {
+        document.getElementById("showlabel").innerHTML =
+          "Thank you for submitting your details. Our subject matter experts will connect you within 24 working hours.";
+        document.getElementById("contactForm").reset();
+        document.getElementById("showlabel").style.display = "block";
+
+        setTimeout(() => {
+          window.open("/classets/pdf/Dangerous-AssumptionsPdf.pdf", "_blank");
+        }, 3000);
+      } else {
+        alert("There was a problem with the request.");
       }
-    };
-    xhttp.send(
-      "yourname=" +
-        event.target.name.value +
-        "&youremail=" +
-        event.target.email.value +
-        "&phonenumber=" +
-        event.target.phone.value +
-        "&companyname=" +
-        event.target.organization.value +
-        "&ebookname=" +
-        event.target.ebookname.value
-    );
+    } catch (error) {
+      alert("Request failed. Please try again.");
+      console.error(error);
+    } finally {
+      submitBtn.value = "Submit";
+    }
   };
 
   return (
