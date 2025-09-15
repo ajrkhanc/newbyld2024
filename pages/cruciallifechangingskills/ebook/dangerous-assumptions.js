@@ -153,7 +153,8 @@ export default function Ebook() {
                     maxlength="10"
                     minlength="10"
                     pattern="[0-9]*"
-                    placeholder="Phone No. (Optional)"
+                    placeholder="Phone No.*"
+                    required
                   />
                 </div>
 
