@@ -421,13 +421,7 @@ export default function EventsGallerys() {
         <div className="container">
           <div className="row">
             {visibleKeys.map((eventName, idx) => (
-              <div
-                className={`col-lg-4 col-sm-12 mb-2 card-animate ${
-                  showAll ? "show" : ""
-                }`}
-                key={idx}
-                style={{ transitionDelay: `${idx * 0.1}s` }}
-              >
+              <div className="col-lg-4 col-sm-12 mb-2" key={idx}>
                 <div
                   className="galleryBox"
                   onClick={() => openLightbox(eventName, 0)} // open first image
@@ -481,17 +475,6 @@ export default function EventsGallerys() {
           />
         )}
       </section>
-      <style jsx>{`
-        .card-animate {
-          opacity: 0;
-          transform: translateY(20px);
-          transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        .card-animate.show {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      `}</style>
     </>
   );
 }
