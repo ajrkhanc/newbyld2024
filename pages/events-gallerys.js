@@ -9,6 +9,15 @@ export default function EventsGallerys() {
   const [photoIndex, setPhotoIndex] = React.useState(0);
   const [currentGroup, setCurrentGroup] = React.useState([]); // current images group
   const [showAll, setShowAll] = React.useState(false); // ✅ for "View More"
+  const toggleShowAll = () => {
+    const currentScroll = window.scrollY; // current scroll save
+    setShowAll((prev) => !prev);
+
+    // next render cycle me scroll restore
+    setTimeout(() => {
+      window.scrollTo({ top: currentScroll, behavior: "auto" });
+    }, 0);
+  };
 
   // Grouped event images
   const galleries = {
@@ -457,7 +466,7 @@ export default function EventsGallerys() {
           {/* ✅ View More / View Less button */}
           {galleryKeys.length > 6 && (
             <div className="text-center mt-4">
-              <button className="btn join" onClick={() => setShowAll(!showAll)}>
+              <button className="btn join" onClick={toggleShowAll}>
                 {showAll ? "View Less" : "View More"}
               </button>
             </div>
