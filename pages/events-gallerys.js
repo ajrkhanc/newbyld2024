@@ -2,6 +2,7 @@ import Head from "next/head";
 import React, { Component } from "react";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function EventsGallerys() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -418,29 +419,39 @@ export default function EventsGallerys() {
             </div>
           </div>
         </div>
+        {/* ✅ Animated gallery grid */}
         <div className="container">
           <div className="row">
-            {visibleKeys.map((eventName, idx) => (
-              <div className="col-lg-4 col-sm-12 mb-2" key={idx}>
-                <div
-                  className="galleryBox"
-                  onClick={() => openLightbox(eventName, 0)} // open first image
-                  style={{ cursor: "pointer" }}
+            <AnimatePresence>
+              {visibleKeys.map((eventName, idx) => (
+                <motion.div
+                  className="col-lg-4 col-sm-12 mb-2"
+                  key={eventName}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 30 }}
+                  transition={{ duration: 0.4 }}
                 >
-                  <div className="gallery-item">
-                    <img src={galleries[eventName][0]} alt={eventName} />
-                    <div className="caption">
-                      <h3>{eventName}</h3>
-                    </div>
-                    <div className="overlay">
-                      <div className="overlay-text">
+                  <div
+                    className="galleryBox"
+                    onClick={() => openLightbox(eventName, 0)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div className="gallery-item">
+                      <img src={galleries[eventName][0]} alt={eventName} />
+                      <div className="caption">
                         <h3>{eventName}</h3>
+                      </div>
+                      <div className="overlay">
+                        <div className="overlay-text">
+                          <h3>{eventName}</h3>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            ))}
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
 
           {/* ✅ View More / View Less button */}
@@ -453,7 +464,7 @@ export default function EventsGallerys() {
           )}
         </div>
 
-        {/* Lightbox */}
+        {/* ✅ Lightbox */}
         {isOpen && (
           <Lightbox
             mainSrc={currentGroup[photoIndex]}
