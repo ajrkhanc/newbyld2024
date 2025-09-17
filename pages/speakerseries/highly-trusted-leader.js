@@ -40,7 +40,7 @@ export default function HighlyTrustedLeader() {
     cf7FormData.append("slot", slot);
 
     fetch(
-      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/532/feedback",
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/535/feedback",
       {
         method: "POST",
         body: cf7FormData,
