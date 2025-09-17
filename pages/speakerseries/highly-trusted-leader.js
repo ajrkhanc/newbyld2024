@@ -96,10 +96,12 @@ export default function HighlyTrustedLeader() {
           <div className="row">
             <div className="col-sm-12">
               <div className="content mb-5">
-                <h1 style={{ color: "#000" }}>Authentic Executive Presence</h1>
+                <h1 style={{ color: "#000" }}>
+                  Becoming a Highly Trusted Leader
+                </h1>
                 <p style={{ color: "#000" }}>
-                  Learn how authenticity creates lasting trust, impact, and
-                  leadership success.
+                  Build trust to inspire performance, deepen connection, and
+                  create thriving teams.
                 </p>
                 <div className="buttons">
                   <a href="#webinar-preface" className="btn join">
@@ -134,32 +136,41 @@ export default function HighlyTrustedLeader() {
             </div>
             <div className=" col-lg-6 col-md-12 col-sm-12 mb-5">
               <p>
-                In today’s fast-paced corporate world, leaders are remembered
-                not just for what they achieve, but for how they show up.
-                Authentic Executive Presence is the key to building credibility,
-                trust, and influence that lasts. Yet, many leaders struggle to
-                balance authority with authenticity, and confidence with care.
-                As part of the BYLD Group Speaker Series, this session on
-                “Authentic Executive Presence” explores the four pillars - Care,
-                Curiosity, Candor, and Courage - that define how leaders inspire
-                others, build stronger relationships, and create lasting impact.
+                Trust is the foundation of effective leadership. In every
+                organization, leaders who are highly trusted elevate performance
+                and strengthen connections—not by controlling outcomes, but by
+                creating environments where others can thrive. Yet, building and
+                sustaining trust often remains a challenge for many leaders.
               </p>
-              <h3>By attending this session, you will learn how to:</h3>
-              <div className="pointsPillS">
-                <ul className="row">
-                  <li className="PillSContent col-lg-5 col-md-12">Show care</li>
-                  <li className="PillSContent col-lg-5 col-md-12">
-                    Stay curious
-                  </li>
-                  <li className="PillSContent col-lg-5 col-md-12">Be clear</li>
-                  <li className="PillSContent col-lg-5 col-md-12">
-                    Lead with courage
-                  </li>
-                  <li className="PillSContent col-lg-5 col-md-12">
-                    Inspire authentically
-                  </li>
-                </ul>
-              </div>
+              <p>
+                As part of the Blanchard India Speaker Series, this session on
+                <strong>
+                  “Becoming a Highly Trusted Leader” explores the four core
+                  elements of trust - Able, Believable, Connected, and
+                  Dependable (ABCD)
+                </strong>
+                . Through interactive activities and guided reflection, you’ll
+                learn practical ways to build, sustain, and restore trust in
+                your teams and workplace.
+              </p>
+              <h3>By attending this session, you will learn how to</h3>
+              <ul>
+                <li>
+                  Understand the true meaning of trust and trustworthiness
+                </li>
+                <li>
+                  Apply the <strong>ABCD model</strong> to build stronger
+                  leadership credibility
+                </li>
+                <li>
+                  Recognize behaviors that <strong>build or erode trust</strong>
+                </li>
+                <li>Restore trust when it has been broken</li>
+                <li>
+                  Create a workplace culture where people feel safe, respected,
+                  and empowered
+                </li>
+              </ul>
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="form-wrapper">
@@ -243,23 +254,27 @@ export default function HighlyTrustedLeader() {
             <div className="col-lg-6 col-md-12 col-sm-12 mb-5">
               <h3>Program Facilitator</h3>
               <p>
-                Ronald Soans, Principal – Services Sector at BYLD Group, brings
-                over four decades of expertise in LNOD consulting, leadership
-                and soft skills training, sales, and recruitment. An ICF and
-                ACDP certified coach and IOC Certified Performance Coaching
-                Trainer, Ronald is also a Master Trainer in Everything DiSC, a
-                certified facilitator for Lumina Assessments, and a
-                Blanchard-certified facilitator for programs including
-                Situational Leadership® II, Legendary Service, Whale Done, and
-                Self Leadership. He has partnered with leading organizations
-                such as Samsung India, Pepsico, Tata Sky, Tata AIG, United
-                Spirits, and Bharat Benz, helping them strengthen talent
-                development and business effectiveness. With a passion for
-                mentoring and coaching,
+                Yogesh Sood is the Founder, Chairman & Managing Director of BYLD
+                Group, and leads the Indian boards of global organizations such
+                as DOOR Training, VitalSmarts USA, Blanchard International, and
+                Aspectum Consulting, Finland. With nearly four decades of
+                experience across sales, marketing, and L&D with companies like
+                Novartis, Amul, and Aditya Birla Group, he brings unmatched
+                industry insight and leadership acumen. An ICF-accredited Master
+                Certified Coach (MCC), Yogesh has over 19 years of coaching
+                experience, working closely with senior leadership teams to
+                enhance effectiveness, resolve conflicts, and drive business
+                outcomes.
                 {showText && (
                   <span>
-                    Ronald continues to inspire leaders to build authentic
-                    presence, unlock potential, and drive sustainable results.
+                    He was instrumental in establishing the first ICF chapter in
+                    South Asia and is a member of Korn Ferry’s global coaching
+                    panel. A Harvard Business School alumnus, Yogesh has
+                    advanced certifications in design thinking, digital
+                    strategies, and executive coaching. His thought leadership
+                    is featured in leading publications and books, and he has
+                    coached leaders from organizations such as Airtel, Canon,
+                    Microsoft India, Tata Sky, and Infosys.
                   </span>
                 )}
               </p>
@@ -274,26 +289,14 @@ export default function HighlyTrustedLeader() {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="ImgBox">
                 <img
-                  src="/assets/img/RonaldSoans.png"
+                  src="/assets/img/yogeshShoodImg.png"
                   alt="Speaker 1"
                   className="img"
                 />
                 <div className="contentBOx1">
-                  <p>Mr. Ronald Soans</p>
-                  <p>Principal Consultant & Evangelist</p>
-                  {/* <p className="smallText">(CMD BYLD Group)</p> */}
-                  <div>
-                    <a
-                      href="https://www.linkedin.com/in/ronald-soans-4b703412/
-"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <IoLogoLinkedin
-                        style={{ color: "#0A66C2", fontSize: "28px" }}
-                      />
-                    </a>
-                  </div>
+                  <p>Mr. Yogesh sood, ACTP, </p>
+                  <p>MCC(ICF)</p>
+                  <p className="smallText">(CMD BYLD Group)</p>
                 </div>
               </div>
             </div>
@@ -315,7 +318,7 @@ export default function HighlyTrustedLeader() {
                 </div>
                 <div className="eventContent">
                   <p>Date</p>
-                  <p className="smallTextOne"> 26 September, 2025</p>
+                  <p className="smallTextOne"> 21 November, 2025</p>
                 </div>
               </div>
             </div>
@@ -337,7 +340,7 @@ export default function HighlyTrustedLeader() {
                 </div>
                 <div className="eventContent">
                   <p>Facilitator</p>
-                  <p className="smallTextOne">Ronald Soans</p>
+                  <p className="smallTextOne">Mr. Yogesh Sood</p>
                 </div>
               </div>
             </div>
