@@ -99,7 +99,7 @@ export default function HighPerformingTeams() {
                 <h1 style={{ color: "#000" }}>
                   Foundations of High-Performing Teams
                 </h1>
-                <p style={{ color: "#000", fontSize: "24px" }}>
+                <p style={{ color: "#000", fontSize: "20px" }}>
                   Learn how to align, inspire, and sustain teams that
                   consistently deliver results.
                 </p>

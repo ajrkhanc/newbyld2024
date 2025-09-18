@@ -99,7 +99,7 @@ export default function HighlyTrustedLeader() {
                 <h1 style={{ color: "#000" }}>
                   Becoming a Highly Trusted Leader
                 </h1>
-                <p style={{ color: "#000" }}>
+                <p style={{ color: "#000", fontSize: "20px" }}>
                   Build trust to inspire performance, deepen connection, and
                   create thriving teams.
                 </p>
