@@ -275,6 +275,17 @@ export default function HighPerformingTeams() {
                   {/* <p>MCC(ICF)</p>
                   <p className="smallText">(CMD BYLD Group)</p> */}
                 </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/yogesh-sood/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IoLogoLinkedin
+                      style={{ color: "#0A66C2", fontSize: "28px" }}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

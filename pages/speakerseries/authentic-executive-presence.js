@@ -284,8 +284,7 @@ export default function AuthenticExecutivePresence() {
                   {/* <p className="smallText">(CMD BYLD Group)</p> */}
                   <div>
                     <a
-                      href="https://www.linkedin.com/in/ronald-soans-4b703412/
-"
+                      href="https://www.linkedin.com/in/ronald-soans-4b703412/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
