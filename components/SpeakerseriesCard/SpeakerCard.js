@@ -288,7 +288,7 @@ function SpeakerCard() {
                     <hr className="mt-0" />
 
                     <a
-                      href="/speakerseries/authentic-executive-presence"
+                      href="{ workshop.pageUrl }"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="orangebtn"
@@ -345,8 +345,7 @@ const workshops = [
     format: "Virtual",
     time: "3:00 PM - 5:00 PM",
     // amount: 28910,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
+    pageUrl: "https://byldgroup.com/speakerseries/authentic-executive-presence",
     description: `
       <p >Executive presence isn’t about titles—it’s about how you show up as a leader. This 90-minute, facilitator-led virtual session introduces leaders to the essentials of Authentic Executive Presence. Participants will explore what authenticity means in leadership, reflect on their own leadership situations, and understand the impact of executive presence.
 The session dives into the Four Pillars of authentic leadership—Care, Curiosity, Candor, and Courage— through guided discussion, self-reflection, and practical tools. Leaders leave with actionable strategies to strengthen trust, influence, and credibility in their day-to-day roles.</p>
@@ -361,8 +360,7 @@ The session dives into the Four Pillars of authentic leadership—Care, Curiosit
     format: "virtual",
     time: "3:00 PM - 5:00 PM",
     // amount: 41300,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    pageUrl: "https://byldgroup.com/speakerseries/high-performing-teams",
     description: `
       <p >High-performing teams don’t happen by chance—they are built through intentional leadership. This 90-minute, facilitator-led virtual session introduces leaders to the mindset, structure, and behaviors needed to create and sustain high-performing teams. Participants will explore the predictable stages of team development and understand how productivity and morale shift along the way.</p>
       <p>The session dives into core elements of team effectiveness—purpose, goals, roles, and norms—through guided discussion, observation strategies, and team charter development. Leaders gain practical approaches to foster trust, provide the right balance of direction and support, and keep teams focused, connected, and performing at their best.</p>
@@ -380,8 +378,7 @@ The session dives into the Four Pillars of authentic leadership—Care, Curiosit
     format: "virtual",
     time: "3:00 PM - 5:00 PM",
     // amount: 41300,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    pageUrl: "https://byldgroup.com/speakerseries/highly-trusted-leader",
     description: `
       <p >Trust is the foundation of effective leadership. This 90-minute, facilitator-led virtual session introduces leaders to the essentials of Becoming a Highly Trusted Leader. Participants will reflect on the meaning of trust in leadership, explore the benefits of high trust, and examine the costs of low trust in teams and organizations.</p>
       <p>The session dives into the Four Elements of Trust—Able, Believable, Connected, and Dependable—through guided discussion, self-reflection, and interactive activities. Leaders will learn practical ways to build, demonstrate, and restore trust, enabling them to elevate performance and deepen connection. They leave with actionable strategies to create environments where people feel safe, supported, and empowered to thrive.</p>
