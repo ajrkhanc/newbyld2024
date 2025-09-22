@@ -40,7 +40,7 @@ export default function HighPerformingTeams() {
     cf7FormData.append("slot", slot);
 
     fetch(
-      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/535/feedback",
+      "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/536/feedback",
       {
         method: "POST",
         body: cf7FormData,
@@ -80,7 +80,7 @@ export default function HighPerformingTeams() {
   return (
     <>
       <Head>
-        <title>Authentic Executive Presence</title>
+        <title>High-Performing Teams</title>
         <meta
           name="description"
           content="Learn how to give and receive feedback effectively in your organization."

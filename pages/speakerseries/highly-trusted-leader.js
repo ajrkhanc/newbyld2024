@@ -80,7 +80,7 @@ export default function HighlyTrustedLeader() {
   return (
     <>
       <Head>
-        <title>Authentic Executive Presence</title>
+        <title>Highly Trusted Leader</title>
         <meta
           name="description"
           content="Learn how to give and receive feedback effectively in your organization."
