@@ -272,11 +272,13 @@ export default function HighPerformingTeams() {
                 <img src="/assets/img/ad.png" alt="Speaker 1" className="img" />
                 <div className="contentBOx1">
                   <p>HR & Skilling by Mr. Anand Dewan  </p>
-                  {/* <p>MCC(ICF)</p>
-                  <p className="smallText">(CMD BYLD Group)</p> */}
+                  <p>CEO</p>
+                  <p className="smallText">
+                    American Management Association South Asia
+                  </p>
                   <div>
                     <a
-                      href="https://www.linkedin.com/in/yogesh-sood/"
+                      href="https://www.linkedin.com/in/dewananand/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -297,6 +297,18 @@ export default function HighlyTrustedLeader() {
                   <p>Mr. Yogesh sood, ACTP, </p>
                   <p>MCC(ICF)</p>
                   <p className="smallText">(CMD BYLD Group)</p>
+
+                  <div>
+                    <a
+                      href="https://www.linkedin.com/in/yogesh-sood/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IoLogoLinkedin
+                        style={{ color: "#0A66C2", fontSize: "28px" }}
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
