@@ -4511,11 +4511,36 @@ module.exports = {
         destination: "https://fivebehaviours.byldgroup.com",
         permanent: true,
       },
-
       {
         source: "/fivebehaviors/personal-development",
         destination:
           "https://fivebehaviours.byldgroup.com/personal-development",
+        permanent: true,
+      },
+      {
+        source: "/fivebehaviors/the-five-behaviors-of-a-cohesive-team",
+        destination: "https://fivebehaviours.byldgroup.com/team-development",
+        permanent: true,
+      },
+      {
+        source: "/fivebehaviors/the-five-behaviors-for-virtual-teams",
+        destination:
+          "https://fivebehaviours.byldgroup.com/the-five-behaviors-for-virtual-teams",
+        permanent: true,
+      },
+      {
+        source: "/fivebehaviors/SuccessStory",
+        destination: "https://fivebehaviours.byldgroup.com/success-story",
+        permanent: true,
+      },
+      {
+        source: "/fivebehaviors/research-reports",
+        destination: "https://fivebehaviours.byldgroup.com/research-reports",
+        permanent: true,
+      },
+      {
+        source: "/fivebehaviors/contact-us",
+        destination: "https://fivebehaviours.byldgroup.com/contact-us",
         permanent: true,
       },
     ];
