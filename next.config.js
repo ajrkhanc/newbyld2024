@@ -4505,6 +4505,19 @@ module.exports = {
         destination: "https://blanchardinternational.co.in",
         permanent: true,
       },
+
+      {
+        source: "/fivebehaviors",
+        destination: "https://fivebehaviours.byldgroup.com",
+        permanent: true,
+      },
+
+      {
+        source: "/fivebehaviors/personal-development",
+        destination:
+          "https://fivebehaviours.byldgroup.com/personal-development",
+        permanent: true,
+      },
     ];
   },
 };
