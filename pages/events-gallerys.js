@@ -434,7 +434,7 @@ export default function EventsGallerys() {
       <section className="pbb-100">
         <div className="container calender_bg">
           <div className="row pt-5 pb-5">
-            <div className="col-sm-8 m-auto">
+            <div className="col-sm-10 m-auto">
               <div className="calendarBox">
                 <h3>Our Moments</h3>
                 <div className="calenderIcon">
