@@ -436,28 +436,28 @@ export default function EventsGallerys() {
           <div className="row pt-5 pb-5">
             <div className="col-sm-8 m-auto">
               <div className="calendarBox">
-                <h3>Join Us for an Exclusive Leadership Meetup</h3>
+                <h3>Our Moments</h3>
                 <div className="calenderIcon">
                   <div className="calenderIconInner">
                     <img
                       src="/assets/img/new/calenderIcon1.png"
                       alt="calender_icon"
                     />
-                    <span>Lorem Ipsum</span>
+                    <span>Diwali Celebration </span>
                   </div>
                   <div className="calenderIconInner">
                     <img
                       src="/assets/img/new/calenderIcon2.png"
                       alt="calender_icon2"
                     />
-                    <span>Lorem Ipsum</span>
+                    <span>Friday, 17th October 2025,</span>
                   </div>
                   <div className="calenderIconInner">
                     <img
                       src="/assets/img/new/calenderIcon3.png"
                       alt="calender_icon3"
                     />
-                    <span>Lorem Ipsum</span>
+                    <span>10:00 AM to 2:00 PM </span>
                   </div>
                 </div>
               </div>
