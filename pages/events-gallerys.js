@@ -436,7 +436,7 @@ export default function EventsGallerys() {
           <div className="row pt-5 pb-5">
             <div className="col-sm-10 m-auto">
               <div className="calendarBox">
-                <h3>Our Moments</h3>
+                <h3>27 Years of People, Purpose, Progress.</h3>
                 <div className="calenderIcon">
                   <div className="calenderIconInner">
                     <img
