@@ -439,22 +439,19 @@ export default function EventsGallerys() {
                 <h3>27 Years of People, Purpose, Progress.</h3>
                 <div className="calenderIcon">
                   <div className="calenderIconInner">
-                    <img
-                      src="/assets/img/new/calenderIcon1.png"
-                      alt="calender_icon"
-                    />
+                    <img src="/assets/img/new/icons1.png" alt="calender_icon" />
                     <span>Diwali Celebration </span>
                   </div>
                   <div className="calenderIconInner">
                     <img
-                      src="/assets/img/new/calenderIcon2.png"
+                      src="/assets/img/new/icons2.png"
                       alt="calender_icon2"
                     />
                     <span>Friday, 17th October 2025,</span>
                   </div>
                   <div className="calenderIconInner">
                     <img
-                      src="/assets/img/new/calenderIcon3.png"
+                      src="/assets/img/new/icons3.png"
                       alt="calender_icon3"
                     />
                     <span>10:00 AM to 2:00 PM </span>
