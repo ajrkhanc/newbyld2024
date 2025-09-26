@@ -50,7 +50,7 @@ export default function Books() {
                 <h6 className="bookprice elerningf">Leadership Confessions</h6>
                 <a
                   class="booksbtn"
-                  href="/cruciallifechangingskills/ebook/dangerous-assumptions"
+                  href="/cruciallifechangingskills/ebook/leadership-confessions"
                 >
                   Read eBook
                 </a>
