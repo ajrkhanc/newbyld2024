@@ -27,6 +27,25 @@ export default function Books() {
               <div class="bookshd text-center">
                 <img
                   class="center-image mbb-15"
+                  src="/classets/img/3-oct-CL.webp"
+                  alt="books"
+                />
+                <h6 className="bookprice elerningf">
+                  A Manager&apos;s Dilemma
+                </h6>
+                <a
+                  class="booksbtn"
+                  href="/cruciallifechangingskills/ebook/Manager-dilemma"
+                >
+                  Read eBook
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 workshop-col">
+              <div class="bookshd text-center">
+                <img
+                  class="center-image mbb-15"
                   src="/classets/img/dangerous-assumptionsImg.webp"
                   alt="books"
                 />
