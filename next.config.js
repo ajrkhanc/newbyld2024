@@ -4543,6 +4543,11 @@ module.exports = {
         destination: "https://fivebehaviours.byldgroup.com/contact-us",
         permanent: true,
       },
+      {
+        source: "/blanchardindia/products-services/self-leadership",
+        destination:"https://blanchardinternational.co.in/our-content/programs/self-leadership",
+        permanent: true,
+      },
     ];
   },
 };
