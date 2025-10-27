@@ -4545,7 +4545,78 @@ module.exports = {
       },
       {
         source: "/blanchardindia/products-services/self-leadership",
-        destination:"https://blanchardinternational.co.in/our-content/programs/self-leadership",
+        destination:
+          "https://blanchardinternational.co.in/our-content/programs/self-leadership",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills",
+        destination: "https://cruciallearningindia.in/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/about-us",
+        destination: "https://cruciallearningindia.in/about-us",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/browse-courses",
+        destination: "https://cruciallearningindia.in/browse-courses/",
+        permanent: true,
+      },
+      {
+        source:
+          "/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+        destination:
+          "https://cruciallearningindia.in/crucial-conversations-for-mastering-dialogue/",
+        permanent: true,
+      },
+
+      {
+        source:
+          "/cruciallifechangingskills/crucial-conversations-for-accountability",
+        destination:
+          "https://cruciallearningindia.in/crucial-conversations-for-accountability/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/the-power-of-habit",
+        destination: "https://cruciallearningindia.in/the-power-of-habit/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/influencer",
+        destination: "https://cruciallearningindia.in/influencer/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/getting-things-done",
+        destination: "https://cruciallearningindia.in/getting-things-done/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/ebook",
+        destination: "https://cruciallearningindia.in/e-books/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/white-paper",
+        destination: "https://cruciallearningindia.in/white-paper/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/contact-us",
+        destination: "https://cruciallearningindia.in/contact-us/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/books",
+        destination: "https://cruciallearningindia.in/books/",
+        permanent: true,
+      },
+      {
+        source: "/cruciallifechangingskills/privacy-policy",
+        destination: "https://cruciallearningindia.in/privacy-policy/",
         permanent: true,
       },
     ];
