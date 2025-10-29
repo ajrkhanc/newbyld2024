@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 
+
 export const getServerSideProps = async ({ res }) => {
   res.statusCode = 301; // 👈 Sets 301 redirect
   res.setHeader("Location", "https://cruciallearningindia.in/privacy-policy/");
