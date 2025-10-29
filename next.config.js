@@ -4618,6 +4618,9 @@ module.exports = {
         source: "/cruciallifechangingskills/privacy-policy",
         destination: "https://cruciallearningindia.in/privacy-policy/",
         permanent: true,
+        
+        
+
       },
     ];
   },
