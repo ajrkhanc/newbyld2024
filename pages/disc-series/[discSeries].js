@@ -2,19 +2,27 @@ import Head from "next/head";
 
 // Fetch DISC result data for a specific user
 export async function getServerSideProps(context) {
-  const slug = context.params.discSeries;
+  const { discSeries } = context.params;
 
-  const res = await fetch(
-    `https://byldblogs.vercel.app/api/disc-series/${slug}`
-  );
-  const result = await res.json();
+  try {
+    const res = await fetch(
+      `https://byldblogs.vercel.app/api/disc-series/${discSeries}`
+    );
+    const result = await res.json();
 
-  return {
-    props: { result },
-  };
+    return {
+      props: { result },
+    };
+  } catch (error) {
+    console.error("Error fetching DISC result:", error);
+    return {
+      props: { result: [] },
+    };
+  }
 }
 
 export default function DiscResult({ result }) {
+  // Handle no result found
   if (!result || !Array.isArray(result) || result.length === 0) {
     return (
       <div className="container text-center p-10">
@@ -27,17 +35,15 @@ export default function DiscResult({ result }) {
     );
   }
 
-  // Take the first entry
   const data = result[0];
 
-  // Count DISC values
+  // Calculate DISC scores
   const scores = { D: 0, I: 0, S: 0, C: 0 };
   for (let i = 1; i <= 10; i++) {
-    const val = data[`q${i}`];
-    if (val && scores[val] !== undefined) scores[val]++;
+    const ans = data[`q${i}`];
+    if (ans && scores[ans] !== undefined) scores[ans]++;
   }
 
-  // Normalize to percentage
   const total = Object.values(scores).reduce((a, b) => a + b, 0);
   const perc = {
     D: ((scores.D / total) * 100).toFixed(1),
@@ -46,13 +52,11 @@ export default function DiscResult({ result }) {
     C: ((scores.C / total) * 100).toFixed(1),
   };
 
-  // Determine dominant & secondary
+  // Determine main types
   const sorted = Object.entries(perc).sort((a, b) => b[1] - a[1]);
   const dominant = sorted[0][0];
   const secondary = sorted[1][0];
-  const least = sorted[3][0];
 
-  // Mini interpretation summaries
   const descriptions = {
     D: {
       title: "Dominance (D)",
@@ -84,14 +88,14 @@ export default function DiscResult({ result }) {
     },
   };
 
-  const dominantDesc = descriptions[dominant];
-  const secondaryDesc = descriptions[secondary];
-
   return (
     <>
       <Head>
         <title>DISC Series Result</title>
-        <meta name="description" content="Your DISC Personality Style Report" />
+        <meta
+          name="description"
+          content="Your DISC Personality Assessment Result"
+        />
       </Head>
 
       <section className="pbb-40 ptt-40">
@@ -100,11 +104,11 @@ export default function DiscResult({ result }) {
             <h1 className="cacoh">Your DISC Assessment Result</h1>
             <h4>
               Hi <strong>{data.name}</strong>, here’s your personalized DISC
-              profile based on your responses.
+              profile based on your answers.
             </h4>
           </div>
 
-          {/* Score Table */}
+          {/* ---------- SCORE TABLE ---------- */}
           <div className="resultable text-center">
             <h3>Your Scores (out of 100%)</h3>
             <table className="table table-bordered mt-3 mb-5">
@@ -138,67 +142,55 @@ export default function DiscResult({ result }) {
             </table>
           </div>
 
-          {/* Interpretation Section */}
+          {/* ---------- INTERPRETATION SECTION ---------- */}
           <div className="cochingformat">
             <h3 className="yresultc">
               <span>Y</span>OUR <span>D</span>ISC <span>S</span>UMMARY
             </h3>
 
             <p className="mt-3">
-              Your dominant style is <strong>{dominant}</strong>, with a
-              secondary influence of <strong>{secondary}</strong>.{" "}
-              {dominant !== secondary && (
-                <>
-                  This makes you a{" "}
-                  <strong>
-                    {dominant}-{secondary}
-                  </strong>{" "}
-                  blend type — someone who demonstrates both{" "}
-                  {dominantDesc.title.replace(/\(.*\)/, "").trim()} and{" "}
-                  {secondaryDesc.title.replace(/\(.*\)/, "").trim()} traits.
-                </>
-              )}
+              Your dominant style is <strong>{dominant}</strong>, and your
+              secondary style is <strong>{secondary}</strong>. This means you
+              are a{" "}
+              <strong>
+                {dominant}-{secondary}
+              </strong>{" "}
+              blend, showing traits of{" "}
+              {descriptions[dominant].title.replace(/\(.*\)/, "").trim()} and{" "}
+              {descriptions[secondary].title.replace(/\(.*\)/, "").trim()}.
             </p>
 
             <div className="row mt-4">
               <div className="col-md-6">
                 <div className="result-card">
-                  <h4>{dominantDesc.title}</h4>
+                  <h4>{descriptions[dominant].title}</h4>
                   <p>
-                    <strong>Strengths:</strong> {dominantDesc.strengths}
+                    <strong>Strengths:</strong>{" "}
+                    {descriptions[dominant].strengths}
                   </p>
                   <p>
-                    <strong>Blind Spots:</strong> {dominantDesc.blind}
+                    <strong>Blind Spots:</strong> {descriptions[dominant].blind}
                   </p>
                 </div>
               </div>
 
               <div className="col-md-6">
                 <div className="result-card">
-                  <h4>{secondaryDesc.title}</h4>
+                  <h4>{descriptions[secondary].title}</h4>
                   <p>
-                    <strong>Strengths:</strong> {secondaryDesc.strengths}
+                    <strong>Strengths:</strong>{" "}
+                    {descriptions[secondary].strengths}
                   </p>
                   <p>
-                    <strong>Blind Spots:</strong> {secondaryDesc.blind}
+                    <strong>Blind Spots:</strong>{" "}
+                    {descriptions[secondary].blind}
                   </p>
                 </div>
               </div>
             </div>
-
-            <div className="mt-5 text-center">
-              <h5>
-                Least Expressed Style: <strong>{least}</strong>
-              </h5>
-              <p className="small text-muted">
-                You may find it challenging to connect with people who strongly
-                exhibit this style, but learning to flex toward it can improve
-                communication and leadership balance.
-              </p>
-            </div>
           </div>
 
-          {/* Summary Table */}
+          {/* ---------- SCORING MODEL ---------- */}
           <div className="mt-5">
             <h4 className="yresultc ccn">
               <span>S</span>CORING & <span>I</span>NTERPRETATION <span>M</span>
