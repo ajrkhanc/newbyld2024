@@ -1,16 +1,6 @@
 import Head from "next/head";
-import { useState } from "react";
-import {
-  Modal,
-  ModalHeader,
-  ModalBody,
-  Form,
-  FormGroup,
-  Input,
-  Button,
-  Label,
-} from "reactstrap";
 
+// Fetch DISC result data for a specific user
 export async function getServerSideProps(context) {
   const { discSeries } = context.params;
 
@@ -19,45 +9,20 @@ export async function getServerSideProps(context) {
       `https://byldblogs.vercel.app/api/disc-series/${discSeries}`
     );
     const result = await res.json();
-    return { props: { result } };
+
+    return {
+      props: { result },
+    };
   } catch (error) {
     console.error("Error fetching DISC result:", error);
-    return { props: { result: [] } };
+    return {
+      props: { result: [] },
+    };
   }
 }
 
 export default function DiscResult({ result }) {
-  const [showModal, setShowModal] = useState(false);
-  const toggleModal = () => setShowModal(!showModal);
-
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-    designation: "",
-    interest: "",
-  });
-
-  const handleChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-    alert("✅ Thank you! We’ll contact you soon.");
-    toggleModal();
-  };
-
-  // 🔹 Interest options (easy to modify anytime)
-  const interestOptions = [
-    "Everything DiSC® Certification | 11th - 14th Nov 2025 | Virtual",
-    "Everything DiSC® Certification | 16th - 19th Dec 2025 | Virtual",
-    "Everything DiSC® Certification | 20th - 23rd Jan 2026 | Virtual",
-    "Everything DiSC® Certification | 10th - 13th Feb 2026 | Virtual",
-  ];
-
-  // ---------- DISC result logic ----------
+  // Handle no result found
   if (!result || !Array.isArray(result) || result.length === 0) {
     return (
       <div className="container text-center p-10">
@@ -71,6 +36,8 @@ export default function DiscResult({ result }) {
   }
 
   const data = result[0];
+
+  // Calculate DISC scores
   const scores = { D: 0, I: 0, S: 0, C: 0 };
   for (let i = 1; i <= 10; i++) {
     const ans = data[`q${i}`];
@@ -85,6 +52,7 @@ export default function DiscResult({ result }) {
     C: ((scores.C / total) * 100).toFixed(1),
   };
 
+  // Determine main types
   const sorted = Object.entries(perc).sort((a, b) => b[1] - a[1]);
   const dominant = sorted[0][0];
   const secondary = sorted[1][0];
@@ -174,7 +142,7 @@ export default function DiscResult({ result }) {
             </table>
           </div>
 
-          {/* ---------- SUMMARY ---------- */}
+          {/* ---------- INTERPRETATION SECTION ---------- */}
           <div className="cochingformat">
             <h3 className="yresultc">
               <span>Y</span>OUR <span>D</span>ISC <span>S</span>UMMARY
@@ -187,114 +155,88 @@ export default function DiscResult({ result }) {
               <strong>
                 {dominant}-{secondary}
               </strong>{" "}
-              blend.
+              blend, showing traits of{" "}
+              {descriptions[dominant].title.replace(/\(.*\)/, "").trim()} and{" "}
+              {descriptions[secondary].title.replace(/\(.*\)/, "").trim()}.
             </p>
+
+            <div className="row mt-4">
+              <div className="col-md-6">
+                <div className="result-card">
+                  <h4>{descriptions[dominant].title}</h4>
+                  <p>
+                    <strong>Strengths:</strong>{" "}
+                    {descriptions[dominant].strengths}
+                  </p>
+                  <p>
+                    <strong>Blind Spots:</strong> {descriptions[dominant].blind}
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-6">
+                <div className="result-card">
+                  <h4>{descriptions[secondary].title}</h4>
+                  <p>
+                    <strong>Strengths:</strong>{" "}
+                    {descriptions[secondary].strengths}
+                  </p>
+                  <p>
+                    <strong>Blind Spots:</strong>{" "}
+                    {descriptions[secondary].blind}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* ---------- CTA ---------- */}
+          {/* ---------- SCORING MODEL ---------- */}
+          <div className="mt-5">
+            <h4 className="yresultc ccn">
+              <span>S</span>CORING & <span>I</span>NTERPRETATION <span>M</span>
+              ODEL
+            </h4>
+            <table className="table mt-3">
+              <thead>
+                <tr>
+                  <th>Range</th>
+                  <th>Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>70% +</td>
+                  <td>
+                    Strongly dominant in that style — highly expressive traits.
+                  </td>
+                </tr>
+                <tr>
+                  <td>50% - 69%</td>
+                  <td>
+                    Moderate tendency — shows this style in familiar settings.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Below 50%</td>
+                  <td>
+                    Less natural preference — may adapt this style
+                    situationally.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <div className="mt-5 text-center">
             <p className="mb-3 text-muted">
-              Want to continue your learning journey? Enroll in Everything DiSC®
-              Certification!
+              You may find it challenging to connect with people who strongly
+              exhibit this style, but learning to flex toward it can improve
+              communication and leadership balance.
             </p>
-            <Button variant="primary" onClick={toggleModal}>
-              Get Started
-            </Button>
+            <button className="readon2">Get Started</button>
           </div>
         </div>
       </section>
-
-      {/* ---------- MODAL FORM ---------- */}
-
-      {/* 🔹 Reactstrap Modal */}
-      <Modal isOpen={showModal} toggle={toggleModal} centered>
-        <ModalHeader toggle={toggleModal}>
-          Unlock the potential of your people and the power of your culture with
-          the Everything DiSC®.
-        </ModalHeader>
-
-        <ModalBody>
-          <Form onSubmit={handleSubmit}>
-            <FormGroup>
-              <Input
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Input
-                type="text"
-                name="phone"
-                placeholder="Contact No."
-                required
-                maxLength={10}
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Input
-                type="text"
-                name="company"
-                placeholder="Company Name"
-                value={formData.company}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Input
-                type="text"
-                name="designation"
-                placeholder="Designation"
-                value={formData.designation}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            {/* 🔹 Interest dropdown */}
-            <FormGroup>
-              <Input
-                type="select"
-                name="interest"
-                required
-                value={formData.interest}
-                onChange={handleChange}
-              >
-                <option value="">Interested In</option>
-                {interestOptions.map((opt, index) => (
-                  <option key={index} value={opt}>
-                    {opt}
-                  </option>
-                ))}
-              </Input>
-            </FormGroup>
-
-            <div className="text-center">
-              <Button color="primary" type="submit">
-                Submit
-              </Button>
-            </div>
-          </Form>
-        </ModalBody>
-      </Modal>
     </>
   );
 }
