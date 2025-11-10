@@ -1,6 +1,7 @@
 import Head from "next/head";
+import { useState } from "react";
+import { Modal, Button, Form } from "react-bootstrap";
 
-// Fetch DISC result data for a specific user
 export async function getServerSideProps(context) {
   const { discSeries } = context.params;
 
@@ -9,20 +10,46 @@ export async function getServerSideProps(context) {
       `https://byldblogs.vercel.app/api/disc-series/${discSeries}`
     );
     const result = await res.json();
-
-    return {
-      props: { result },
-    };
+    return { props: { result } };
   } catch (error) {
     console.error("Error fetching DISC result:", error);
-    return {
-      props: { result: [] },
-    };
+    return { props: { result: [] } };
   }
 }
 
 export default function DiscResult({ result }) {
-  // Handle no result found
+  const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    designation: "",
+    interest: "",
+  });
+
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
+
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted:", formData);
+    alert("✅ Thank you! We’ll contact you soon.");
+    handleClose();
+  };
+
+  // 🔹 Interest options (easy to modify anytime)
+  const interestOptions = [
+    "Everything DiSC® Certification | 11th - 14th Nov 2025 | Virtual",
+    "Everything DiSC® Certification | 16th - 19th Dec 2025 | Virtual",
+    "Everything DiSC® Certification | 20th - 23rd Jan 2026 | Virtual",
+    "Everything DiSC® Certification | 10th - 13th Feb 2026 | Virtual",
+  ];
+
+  // ---------- DISC result logic ----------
   if (!result || !Array.isArray(result) || result.length === 0) {
     return (
       <div className="container text-center p-10">
@@ -36,8 +63,6 @@ export default function DiscResult({ result }) {
   }
 
   const data = result[0];
-
-  // Calculate DISC scores
   const scores = { D: 0, I: 0, S: 0, C: 0 };
   for (let i = 1; i <= 10; i++) {
     const ans = data[`q${i}`];
@@ -52,7 +77,6 @@ export default function DiscResult({ result }) {
     C: ((scores.C / total) * 100).toFixed(1),
   };
 
-  // Determine main types
   const sorted = Object.entries(perc).sort((a, b) => b[1] - a[1]);
   const dominant = sorted[0][0];
   const secondary = sorted[1][0];
@@ -142,7 +166,7 @@ export default function DiscResult({ result }) {
             </table>
           </div>
 
-          {/* ---------- INTERPRETATION SECTION ---------- */}
+          {/* ---------- SUMMARY ---------- */}
           <div className="cochingformat">
             <h3 className="yresultc">
               <span>Y</span>OUR <span>D</span>ISC <span>S</span>UMMARY
@@ -155,88 +179,113 @@ export default function DiscResult({ result }) {
               <strong>
                 {dominant}-{secondary}
               </strong>{" "}
-              blend, showing traits of{" "}
-              {descriptions[dominant].title.replace(/\(.*\)/, "").trim()} and{" "}
-              {descriptions[secondary].title.replace(/\(.*\)/, "").trim()}.
+              blend.
             </p>
-
-            <div className="row mt-4">
-              <div className="col-md-6">
-                <div className="result-card">
-                  <h4>{descriptions[dominant].title}</h4>
-                  <p>
-                    <strong>Strengths:</strong>{" "}
-                    {descriptions[dominant].strengths}
-                  </p>
-                  <p>
-                    <strong>Blind Spots:</strong> {descriptions[dominant].blind}
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6">
-                <div className="result-card">
-                  <h4>{descriptions[secondary].title}</h4>
-                  <p>
-                    <strong>Strengths:</strong>{" "}
-                    {descriptions[secondary].strengths}
-                  </p>
-                  <p>
-                    <strong>Blind Spots:</strong>{" "}
-                    {descriptions[secondary].blind}
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
-          {/* ---------- SCORING MODEL ---------- */}
-          <div className="mt-5">
-            <h4 className="yresultc ccn">
-              <span>S</span>CORING & <span>I</span>NTERPRETATION <span>M</span>
-              ODEL
-            </h4>
-            <table className="table mt-3">
-              <thead>
-                <tr>
-                  <th>Range</th>
-                  <th>Meaning</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>70% +</td>
-                  <td>
-                    Strongly dominant in that style — highly expressive traits.
-                  </td>
-                </tr>
-                <tr>
-                  <td>50% - 69%</td>
-                  <td>
-                    Moderate tendency — shows this style in familiar settings.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Below 50%</td>
-                  <td>
-                    Less natural preference — may adapt this style
-                    situationally.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
+          {/* ---------- CTA ---------- */}
           <div className="mt-5 text-center">
             <p className="mb-3 text-muted">
-              You may find it challenging to connect with people who strongly
-              exhibit this style, but learning to flex toward it can improve
-              communication and leadership balance.
+              Want to continue your learning journey? Enroll in Everything DiSC®
+              Certification!
             </p>
-            <button className="readon2">Get Started</button>
+            <Button variant="primary" onClick={handleShow}>
+              Get Started
+            </Button>
           </div>
         </div>
       </section>
+
+      {/* ---------- MODAL FORM ---------- */}
+      <Modal show={showModal} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            Unlock the potential of your people and the power of your culture
+            with the Everything DiSC®.
+          </Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className="mb-3">
+              <Form.Control
+                type="text"
+                placeholder="Name"
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                name="email"
+                required
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Control
+                type="text"
+                placeholder="Contact No."
+                name="phone"
+                required
+                value={formData.phone}
+                onChange={handleChange}
+                maxLength={10}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Control
+                type="text"
+                placeholder="Company Name"
+                name="company"
+                value={formData.company}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            <Form.Group className="mb-3">
+              <Form.Control
+                type="text"
+                placeholder="Designation"
+                name="designation"
+                value={formData.designation}
+                onChange={handleChange}
+              />
+            </Form.Group>
+
+            {/* 🔹 Interest Dropdown */}
+            <Form.Group className="mb-3">
+              <Form.Select
+                name="interest"
+                required
+                value={formData.interest}
+                onChange={handleChange}
+              >
+                <option value="">Interested In</option>
+                {interestOptions.map((option, index) => (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </Form.Select>
+            </Form.Group>
+
+            <div className="text-center">
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </div>
+          </Form>
+        </Modal.Body>
+      </Modal>
     </>
   );
 }
