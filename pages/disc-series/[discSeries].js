@@ -1,6 +1,15 @@
 import Head from "next/head";
 import { useState } from "react";
-import { Modal, Button, Form } from "react-bootstrap";
+import {
+  Modal,
+  ModalHeader,
+  ModalBody,
+  Form,
+  FormGroup,
+  Input,
+  Button,
+  Label,
+} from "reactstrap";
 
 export async function getServerSideProps(context) {
   const { discSeries } = context.params;
@@ -19,6 +28,8 @@ export async function getServerSideProps(context) {
 
 export default function DiscResult({ result }) {
   const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => setShowModal(!showModal);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,9 +39,6 @@ export default function DiscResult({ result }) {
     interest: "",
   });
 
-  const handleClose = () => setShowModal(false);
-  const handleShow = () => setShowModal(true);
-
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
@@ -38,7 +46,7 @@ export default function DiscResult({ result }) {
     e.preventDefault();
     console.log("Form Submitted:", formData);
     alert("✅ Thank you! We’ll contact you soon.");
-    handleClose();
+    toggleModal();
   };
 
   // 🔹 Interest options (easy to modify anytime)
@@ -189,7 +197,7 @@ export default function DiscResult({ result }) {
               Want to continue your learning journey? Enroll in Everything DiSC®
               Certification!
             </p>
-            <Button variant="primary" onClick={handleShow}>
+            <Button variant="primary" onClick={toggleModal}>
               Get Started
             </Button>
           </div>
@@ -197,94 +205,95 @@ export default function DiscResult({ result }) {
       </section>
 
       {/* ---------- MODAL FORM ---------- */}
-      <Modal show={showModal} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            Unlock the potential of your people and the power of your culture
-            with the Everything DiSC®.
-          </Modal.Title>
-        </Modal.Header>
 
-        <Modal.Body>
+      {/* 🔹 Reactstrap Modal */}
+      <Modal isOpen={showModal} toggle={toggleModal} centered>
+        <ModalHeader toggle={toggleModal}>
+          Unlock the potential of your people and the power of your culture with
+          the Everything DiSC®.
+        </ModalHeader>
+
+        <ModalBody>
           <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3">
-              <Form.Control
+            <FormGroup>
+              <Input
                 type="text"
-                placeholder="Name"
                 name="name"
+                placeholder="Name"
                 required
                 value={formData.name}
                 onChange={handleChange}
               />
-            </Form.Group>
+            </FormGroup>
 
-            <Form.Group className="mb-3">
-              <Form.Control
+            <FormGroup>
+              <Input
                 type="email"
-                placeholder="Email"
                 name="email"
+                placeholder="Email"
                 required
                 value={formData.email}
                 onChange={handleChange}
               />
-            </Form.Group>
+            </FormGroup>
 
-            <Form.Group className="mb-3">
-              <Form.Control
+            <FormGroup>
+              <Input
                 type="text"
-                placeholder="Contact No."
                 name="phone"
+                placeholder="Contact No."
                 required
+                maxLength={10}
                 value={formData.phone}
                 onChange={handleChange}
-                maxLength={10}
               />
-            </Form.Group>
+            </FormGroup>
 
-            <Form.Group className="mb-3">
-              <Form.Control
+            <FormGroup>
+              <Input
                 type="text"
-                placeholder="Company Name"
                 name="company"
+                placeholder="Company Name"
                 value={formData.company}
                 onChange={handleChange}
               />
-            </Form.Group>
+            </FormGroup>
 
-            <Form.Group className="mb-3">
-              <Form.Control
+            <FormGroup>
+              <Input
                 type="text"
-                placeholder="Designation"
                 name="designation"
+                placeholder="Designation"
                 value={formData.designation}
                 onChange={handleChange}
               />
-            </Form.Group>
+            </FormGroup>
 
-            {/* 🔹 Interest Dropdown */}
-            <Form.Group className="mb-3">
-              <Form.Select
+            {/* 🔹 Interest dropdown */}
+            <FormGroup>
+              <Input
+                type="select"
                 name="interest"
                 required
                 value={formData.interest}
                 onChange={handleChange}
               >
                 <option value="">Interested In</option>
-                {interestOptions.map((option, index) => (
-                  <option key={index} value={option}>
-                    {option}
+                {interestOptions.map((opt, index) => (
+                  <option key={index} value={opt}>
+                    {opt}
                   </option>
                 ))}
-              </Form.Select>
-            </Form.Group>
+              </Input>
+            </FormGroup>
 
             <div className="text-center">
-              <Button variant="primary" type="submit">
+              <Button color="primary" type="submit">
                 Submit
               </Button>
             </div>
           </Form>
-        </Modal.Body>
+        </ModalBody>
       </Modal>
     </>
   );
