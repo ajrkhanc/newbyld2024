@@ -495,7 +495,7 @@ export default function DiscResult({ result }) {
   // 🔹 Interest Dropdown List
   const interestOptions = [
     "Everything DiSC® Certification | 16th - 19th Dec 2025 | Virtual",
-    "Everything DiSC® Certification | 20th - 23rd Jan 2026 | Virtual",
+   
   ];
 
   // ---------- DISC result logic ----------
@@ -611,6 +611,92 @@ export default function DiscResult({ result }) {
                     </td>
                   </tr>
                 ))}
+              </tbody>
+            </table>
+          </div>
+
+          
+            {/* ---------- INTERPRETATION SECTION ---------- */}
+          <div className="cochingformat">
+            <h3 className="yresultc">
+              <span>Y</span>OUR <span>D</span>ISC <span>S</span>UMMARY
+            </h3>
+
+            <p className="mt-3">
+              Your dominant style is <strong>{dominant}</strong>, and your
+              secondary style is <strong>{secondary}</strong>. This means you
+              are a{" "}
+              <strong>
+                {dominant}-{secondary}
+              </strong>{" "}
+              blend, showing traits of{" "}
+              {descriptions[dominant].title.replace(/\(.*\)/, "").trim()} and{" "}
+              {descriptions[secondary].title.replace(/\(.*\)/, "").trim()}.
+            </p>
+
+            <div className="row mt-4">
+              <div className="col-md-6">
+                <div className="result-card">
+                  <h4>{descriptions[dominant].title}</h4>
+                  <p>
+                    <strong>Strengths:</strong>{" "}
+                    {descriptions[dominant].strengths}
+                  </p>
+                  <p>
+                    <strong>Blind Spots:</strong> {descriptions[dominant].blind}
+                  </p>
+                </div>
+              </div>
+
+              <div className="col-md-6">
+                <div className="result-card">
+                  <h4>{descriptions[secondary].title}</h4>
+                  <p>
+                    <strong>Strengths:</strong>{" "}
+                    {descriptions[secondary].strengths}
+                  </p>
+                  <p>
+                    <strong>Blind Spots:</strong>{" "}
+                    {descriptions[secondary].blind}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ---------- SCORING MODEL ---------- */}
+          <div className="mt-5">
+            <h4 className="yresultc ccn">
+              <span>S</span>CORING & <span>I</span>NTERPRETATION <span>M</span>
+              ODEL
+            </h4>
+            <table className="table mt-3">
+              <thead>
+                <tr>
+                  <th>Range</th>
+                  <th>Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>70% +</td>
+                  <td>
+                    Strongly dominant in that style — highly expressive traits.
+                  </td>
+                </tr>
+                <tr>
+                  <td>50% - 69%</td>
+                  <td>
+                    Moderate tendency — shows this style in familiar settings.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Below 50%</td>
+                  <td>
+                    Less natural preference — may adapt this style
+                    situationally.
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
