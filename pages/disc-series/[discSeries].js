@@ -280,7 +280,7 @@ export default function DiscResult({ result }) {
       {/* 🔹 Reactstrap Modal */}
       <Modal isOpen={showModal} toggle={toggleModal} centered>
         <ModalHeader toggle={toggleModal}>
-          <h4 className="yresultc ccn" style={{ padding: "0" }}>
+          <h4 className="yresultc ccn" style={{ padding: 0 }}>
             Unlock the potential of your people and the power of your culture
             with the Everything DiSC®.
           </h4>
