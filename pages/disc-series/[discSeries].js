@@ -289,77 +289,88 @@ export default function DiscResult({ result }) {
 
         <ModalBody>
           <Form onSubmit={handleSubmit}>
-            <FormGroup>
-              <Input
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </FormGroup>
+            <div className="row mb-3">
+              <div className="col-lg-6 col-md-12">
+                <FormGroup>
+                  <Input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </div>
+              <div className="col-lg-6 col-md-12">
+                <FormGroup>
+                  <Input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </div>
+              <div className=" col-lg-6 col-md-12">
+                <FormGroup>
+                  <Input
+                    type="text"
+                    name="phone"
+                    placeholder="Contact No."
+                    required
+                    maxLength={10}
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </div>
 
-            <FormGroup>
-              <Input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </FormGroup>
+              <div className=" col-lg-6 col-md-12">
+                <FormGroup>
+                  <Input
+                    type="text"
+                    name="company"
+                    placeholder="Company Name"
+                    value={formData.company}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </div>
+              <div className=" col-lg-6 col-md-12">
+                <FormGroup>
+                  <Input
+                    type="text"
+                    name="designation"
+                    placeholder="Designation"
+                    value={formData.designation}
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+              </div>
 
-            <FormGroup>
-              <Input
-                type="text"
-                name="phone"
-                placeholder="Contact No."
-                required
-                maxLength={10}
-                value={formData.phone}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Input
-                type="text"
-                name="company"
-                placeholder="Company Name"
-                value={formData.company}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              <Input
-                type="text"
-                name="designation"
-                placeholder="Designation"
-                value={formData.designation}
-                onChange={handleChange}
-              />
-            </FormGroup>
-
-            {/* 🔹 Interest dropdown */}
-            <FormGroup>
-              <Input
-                type="select"
-                name="interest"
-                required
-                value={formData.interest}
-                onChange={handleChange}
-              >
-                <option value="">Interested In</option>
-                {interestOptions.map((opt, index) => (
-                  <option key={index} value={opt}>
-                    {opt}
-                  </option>
-                ))}
-              </Input>
-            </FormGroup>
+              <div className=" col-lg-6 col-md-12">
+                {/* 🔹 Interest dropdown */}
+                <FormGroup>
+                  <Input
+                    type="select"
+                    name="interest"
+                    required
+                    value={formData.interest}
+                    onChange={handleChange}
+                  >
+                    <option value="">Interested In</option>
+                    {interestOptions.map((opt, index) => (
+                      <option key={index} value={opt}>
+                        {opt}
+                      </option>
+                    ))}
+                  </Input>
+                </FormGroup>
+              </div>
+            </div>
 
             <div className="text-center">
               <Button color="primary" type="submit">
