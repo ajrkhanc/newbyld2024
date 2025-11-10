@@ -1,4 +1,15 @@
 import Head from "next/head";
+import { useState } from "react";
+import {
+  Modal,
+  ModalHeader,
+  ModalBody,
+  Form,
+  FormGroup,
+  Input,
+  Button,
+  Label,
+} from "reactstrap";
 
 // Fetch DISC result data for a specific user
 export async function getServerSideProps(context) {
@@ -22,6 +33,36 @@ export async function getServerSideProps(context) {
 }
 
 export default function DiscResult({ result }) {
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => setShowModal(!showModal);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    designation: "",
+    interest: "",
+  });
+
+  const handleChange = (e) =>
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Submitted:", formData);
+    alert("✅ Thank you! We’ll contact you soon.");
+    toggleModal();
+  };
+
+  // 🔹 Dynamic options list
+  const interestOptions = [
+    "Everything DiSC® Certification | 11th - 14th Nov 2025 | Virtual",
+    "Everything DiSC® Certification | 16th - 19th Dec 2025 | Virtual",
+    "Everything DiSC® Certification | 20th - 23rd Jan 2026 | Virtual",
+    "Everything DiSC® Certification | 10th - 13th Feb 2026 | Virtual",
+  ];
+
   // Handle no result found
   if (!result || !Array.isArray(result) || result.length === 0) {
     return (
@@ -233,10 +274,101 @@ export default function DiscResult({ result }) {
               exhibit this style, but learning to flex toward it can improve
               communication and leadership balance.
             </p>
-            <button className="readon2">Get Started</button>
+            <button className="readon2" onClick={toggleModal}>
+              Get Started
+            </button>
           </div>
         </div>
       </section>
+      {/* 🔹 Reactstrap Modal */}
+      <Modal isOpen={showModal} toggle={toggleModal} centered>
+        <ModalHeader toggle={toggleModal}>
+          Unlock the potential of your people and the power of your culture with
+          the Everything DiSC®.
+        </ModalHeader>
+
+        <ModalBody>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup>
+              <Input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                type="text"
+                name="phone"
+                placeholder="Contact No."
+                required
+                maxLength={10}
+                value={formData.phone}
+                onChange={handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                type="text"
+                name="company"
+                placeholder="Company Name"
+                value={formData.company}
+                onChange={handleChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                type="text"
+                name="designation"
+                placeholder="Designation"
+                value={formData.designation}
+                onChange={handleChange}
+              />
+            </FormGroup>
+
+            {/* 🔹 Interest dropdown */}
+            <FormGroup>
+              <Input
+                type="select"
+                name="interest"
+                required
+                value={formData.interest}
+                onChange={handleChange}
+              >
+                <option value="">Interested In</option>
+                {interestOptions.map((opt, index) => (
+                  <option key={index} value={opt}>
+                    {opt}
+                  </option>
+                ))}
+              </Input>
+            </FormGroup>
+
+            <div className="text-center">
+              <Button color="primary" type="submit">
+                Submit
+              </Button>
+            </div>
+          </Form>
+        </ModalBody>
+      </Modal>
     </>
   );
 }
