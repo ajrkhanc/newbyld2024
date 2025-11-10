@@ -73,16 +73,23 @@ export default function DiscResult({ result }) {
 
   // Lock scroll when modal open
   useEffect(() => {
+    const body = document.querySelector("body");
+
     if (showModal) {
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = "0px";
+      // Lock background scroll manually
+      const scrollBarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      body.style.overflow = "hidden";
+      body.style.paddingRight = `${scrollBarWidth}px`;
     } else {
-      document.body.style.overflow = "auto";
-      document.body.style.paddingRight = "0px";
+      // Unlock scroll
+      body.style.overflow = "auto";
+      body.style.paddingRight = "0px";
     }
+
     return () => {
-      document.body.style.overflow = "auto";
-      document.body.style.paddingRight = "0px";
+      body.style.overflow = "auto";
+      body.style.paddingRight = "0px";
     };
   }, [showModal]);
 
@@ -525,13 +532,7 @@ export default function DiscResult({ result }) {
         </ModalBody>
       </Modal>
 
-      {/* ✅ Global fix for background shift */}
-      <style jsx global>{`
-        body.modal-open {
-          overflow: hidden !important;
-          padding-right: 0 !important;
-        }
-      `}</style>
+     
     </>
   );
 }
