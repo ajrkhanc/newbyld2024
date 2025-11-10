@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../../styles/coachKnowledge.module.css";
 import { FaDownload } from "react-icons/fa6";
 import {
@@ -70,6 +70,21 @@ export default function DiscResult({ result }) {
 
   const [showModal, setShowModal] = useState(false);
   const toggleModal = () => setShowModal(!showModal);
+
+  // Lock scroll when modal open
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = "0px";
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0px";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+      document.body.style.paddingRight = "0px";
+    };
+  }, [showModal]);
 
   const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
@@ -384,8 +399,15 @@ export default function DiscResult({ result }) {
         </section>
       </section>
 
-      {/* ---------- Reactstrap Modal ---------- */}
-      <Modal isOpen={showModal} toggle={toggleModal} centered fade={false}>
+      {/* ---------- MODAL ---------- */}
+      <Modal
+        isOpen={showModal}
+        toggle={toggleModal}
+        centered
+        fade={false}
+        scrollable
+        backdrop="static"
+      >
         <ModalHeader toggle={toggleModal}>
           Unlock the potential of your people and the power of your culture with
           the Everything DiSC®.
@@ -393,10 +415,12 @@ export default function DiscResult({ result }) {
 
         <ModalBody>
           {/* ✅ Success/Failure message */}
-          <p
+          <div
             id="showlabel"
             style={{
-              display: message ? "block" : "none",
+              minHeight: "24px",
+              transition: "opacity 0.3s ease",
+              opacity: message ? 1 : 0,
               color: message.includes("Thank you") ? "#28a745" : "red",
               textAlign: "center",
               fontWeight: "500",
@@ -404,7 +428,7 @@ export default function DiscResult({ result }) {
             }}
           >
             {message}
-          </p>
+          </div>
 
           <Form onSubmit={handleSubmit}>
             <div className="row mb-3">
@@ -500,6 +524,14 @@ export default function DiscResult({ result }) {
           </Form>
         </ModalBody>
       </Modal>
+
+      {/* ✅ Global fix for background shift */}
+      <style jsx global>{`
+        body.modal-open {
+          overflow: hidden !important;
+          padding-right: 0 !important;
+        }
+      `}</style>
     </>
   );
 }
