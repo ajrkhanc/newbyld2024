@@ -226,6 +226,15 @@ export default function DiscResult({ result }) {
               </tbody>
             </table>
           </div>
+
+          <div className="mt-5 text-center">
+            <p className="small text-muted">
+              You may find it challenging to connect with people who strongly
+              exhibit this style, but learning to flex toward it can improve
+              communication and leadership balance.
+            </p>
+            <button className="submit">Get Started</button>
+          </div>
         </div>
       </section>
     </>
