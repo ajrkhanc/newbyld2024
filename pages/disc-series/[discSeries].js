@@ -57,10 +57,7 @@ export default function DiscResult({ result }) {
 
   // 🔹 Dynamic options list
   const interestOptions = [
-    "Everything DiSC® Certification | 11th - 14th Nov 2025 | Virtual",
     "Everything DiSC® Certification | 16th - 19th Dec 2025 | Virtual",
-    "Everything DiSC® Certification | 20th - 23rd Jan 2026 | Virtual",
-    "Everything DiSC® Certification | 10th - 13th Feb 2026 | Virtual",
   ];
 
   // Handle no result found
