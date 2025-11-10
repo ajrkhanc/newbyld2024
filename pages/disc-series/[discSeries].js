@@ -634,10 +634,13 @@ export default function DiscResult({ result }) {
 
   const [message, setMessage] = useState("");
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   // ---------- Submit Form ----------
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage("");
+    setIsSubmitting(true); // 🔹 Start loading
 
     const formBody = new URLSearchParams({
       name: nameRef.current.value,
@@ -676,6 +679,8 @@ export default function DiscResult({ result }) {
     } catch (error) {
       console.error("Error submitting form:", error);
       setMessage("❌ Network error. Please try again later.");
+    } finally {
+      setIsSubmitting(false); // 🔹 Stop loading
     }
   };
 
@@ -1019,8 +1024,8 @@ export default function DiscResult({ result }) {
             </div>
 
             <div className="text-center">
-              <Button color="primary" type="submit">
-                Submit
+              <Button color="primary" type="submit" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
               </Button>
             </div>
           </Form>
