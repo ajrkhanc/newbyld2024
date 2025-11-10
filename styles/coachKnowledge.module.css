@@ -1,3 +1,7 @@
+#showlabel {
+  transition: opacity 0.3s ease;
+}
+
 .eventsbox {
   display: flex;
 

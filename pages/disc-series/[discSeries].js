@@ -87,7 +87,7 @@ export default function DiscResult({ result }) {
   // 🔹 Contact Form 7 API Submit Handler
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setMessage(""); // reset previous message
+    setMessage(""); // clear old message first
 
     try {
       const formBody = new URLSearchParams({
@@ -103,9 +103,7 @@ export default function DiscResult({ result }) {
         "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/541/feedback",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: formBody.toString(),
         }
       );
@@ -113,22 +111,24 @@ export default function DiscResult({ result }) {
       const data = await res.json();
 
       if (res.ok && data.status === "mail_sent") {
-        // ✅ Show success message
+        // ✅ Update message first (UI stable)
         setMessage(
           "✅ Thank you! Your details have been submitted successfully."
         );
 
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          company: "",
-          designation: "",
-          interest: "",
-        });
+        // Reset form after short delay (to avoid UI jump)
+        setTimeout(() => {
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            designation: "",
+            interest: "",
+          });
+        }, 1000);
 
-        // Hide after 3 seconds
+        // Auto-close after 3 seconds
         setTimeout(() => {
           setMessage("");
           toggleModal();
@@ -141,7 +141,6 @@ export default function DiscResult({ result }) {
       setMessage("❌ Network error. Please try again later.");
     }
   };
-
   // 🔹 Interest Dropdown List
   const interestOptions = [
     "Everything DiSC® Certification | 16th - 19th Dec 2025 | Virtual",
@@ -386,7 +385,7 @@ export default function DiscResult({ result }) {
       </section>
 
       {/* ---------- Reactstrap Modal ---------- */}
-      <Modal isOpen={showModal} toggle={toggleModal} centered>
+      <Modal isOpen={showModal} toggle={toggleModal} centered fade={false}>
         <ModalHeader toggle={toggleModal}>
           <h4 className="yresultc ccn" style={{ padding: 0 }}>
             Unlock the potential of your people and the power of your culture
