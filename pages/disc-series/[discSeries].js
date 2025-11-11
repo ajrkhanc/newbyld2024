@@ -912,7 +912,7 @@ export default function DiscResult({ result }) {
 
             {/* ---------- CTA BUTTON ---------- */}
             <div className="mt-5 text-center">
-              <p className="mb-3 text-muted " style={{ fontSize: "20" }}>
+              <p className="mb-3 text-muted " style={{ fontSize: "20px" }}>
                 Want to continue your learning journey? Join our Everything
                 DiSC® Certification!
               </p>
