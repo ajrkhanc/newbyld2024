@@ -181,10 +181,10 @@ export default function DiscAssessment() {
                     do?
                   </h2>
                   {[
-                    ["D", "Take over and push them to catch up (D)"],
-                    ["I", "Energize the team and boost morale (I)"],
-                    ["S", "Support them and manage stress (S)"],
-                    ["C", "Analyze causes and adjust the plan (C)"],
+                    ["D", "Take over and push them to catch up"],
+                    ["I", "Energize the team and boost morale"],
+                    ["S", "Support them and manage stress"],
+                    ["C", "Analyze causes and adjust the plan"],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
                       <input
@@ -202,10 +202,10 @@ export default function DiscAssessment() {
                 <div className="fcol1 newassesment">
                   <h2>4. In meetings, how do you typically behave?</h2>
                   {[
-                    ["D", "Steer the conversation toward outcomes (D)"],
-                    ["I", "Engage everyone and keep energy high (I)"],
-                    ["S", "Listen, encourage quieter voices (S)"],
-                    ["C", "Bring facts, data, and clarify questions (C)"],
+                    ["D", "Steer the conversation toward outcomes"],
+                    ["I", "Engage everyone and keep energy high"],
+                    ["S", "Listen, encourage quieter voices"],
+                    ["C", "Bring facts, data, and clarify questions"],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
                       <input
@@ -223,10 +223,10 @@ export default function DiscAssessment() {
                 <div className="fcol1 newassesment">
                   <h2>5. How do you handle sudden changes to plans?</h2>
                   {[
-                    ["D", "React quickly and reset direction (D)"],
-                    ["I", "See the opportunity and excite others (I)"],
-                    ["S", "Adapt carefully and support people (S)"],
-                    ["C", "Evaluate and plan methodically (C)"],
+                    ["D", "React quickly and reset direction"],
+                    ["I", "See the opportunity and excite others"],
+                    ["S", "Adapt carefully and support people"],
+                    ["C", "Evaluate and plan methodically"],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
                       <input
@@ -245,15 +245,15 @@ export default function DiscAssessment() {
                     6. If you receive criticism, your immediate reaction is to…
                   </h2>
                   {[
-                    ["D", "Take action to fix things fast (D)"],
-                    ["I", "Ask for dialogue and stay positive (I)"],
+                    ["D", "Take action to fix things fast"],
+                    ["I", "Ask for dialogue and stay positive"],
                     [
                       "S",
-                      "Reflect on how it affects everyone, consider feelings(S)",
+                      "Reflect on how it affects everyone, consider feelings",
                     ],
                     [
                       "C",
-                      "Analyze whether it's valid, then incorporate improvements (C)",
+                      "Analyze whether it's valid, then incorporate improvements",
                     ],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
@@ -274,10 +274,10 @@ export default function DiscAssessment() {
                     7. You prefer that your manager gives you feedback how?{" "}
                   </h2>
                   {[
-                    ["D", "Brief, direct, to the point (D)"],
-                    ["I", "Friendly, informal, encouraging (I)"],
-                    ["S", "Gentle, supportive, giving context (S)"],
-                    ["C", "Detailed, logical, with examples (C)"],
+                    ["D", "Brief, direct, to the point"],
+                    ["I", "Friendly, informal, encouraging"],
+                    ["S", "Gentle, supportive, giving context"],
+                    ["C", "Detailed, logical, with examples"],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
                       <input
@@ -297,10 +297,10 @@ export default function DiscAssessment() {
                     8. When working on a long project, how do you pace yourself?
                   </h2>
                   {[
-                    ["D", "Push, sprint phases to get quick wins (D)"],
-                    ["I", "Keep the team motivated and energized (I)"],
-                    ["S", "Maintain steady, consistent work throughout (S)"],
-                    ["C", "Plan and check quality continuously (C)"],
+                    ["D", "Push, sprint phases to get quick wins"],
+                    ["I", "Keep the team motivated and energized"],
+                    ["S", "Maintain steady, consistent work throughout"],
+                    ["C", "Plan and check quality continuously"],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
                       <input
@@ -318,15 +318,15 @@ export default function DiscAssessment() {
                 <div className="fcol1 newassesment">
                   <h2>9. When in conflict, you are most likely to…</h2>
                   {[
-                    ["D", "Confront it directly and move to resolution (D)"],
+                    ["D", "Confront it directly and move to resolution"],
                     [
                       "I",
-                      "Try to lighten the mood and keep things positive (I)",
+                      "Try to lighten the mood and keep things positive",
                     ],
-                    ["S", "Seek compromise and calm things down (S)"],
+                    ["S", "Seek compromise and calm things down"],
                     [
                       "C",
-                      "Analyze objectively and propose a fair solution (C)",
+                      "Analyze objectively and propose a fair solution",
                     ],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
@@ -347,15 +347,15 @@ export default function DiscAssessment() {
                     first?
                   </h2>
                   {[
-                    ["D", "Pick the task that will impact results most (D)"],
+                    ["D", "Pick the task that will impact results most"],
                     [
                       "I",
-                      "Choose tasks that involve people/collaboration first (I)",
+                      "Choose tasks that involve people/collaboration first",
                     ],
-                    ["S", "Do tasks steadily, avoid disruption (S)"],
+                    ["S", "Do tasks steadily, avoid disruption"],
                     [
                       "C",
-                      "Do tasks with complex detail first, then simpler ones (C)",
+                      "Do tasks with complex detail first, then simpler ones",
                     ],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
