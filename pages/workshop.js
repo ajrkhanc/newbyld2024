@@ -137,10 +137,10 @@ export default function Workshops() {
                   better results.
                 </p>
                 <p className="mb-15">
-                  WHAT YOU’LL LEARN Why your motives matter more than your
-                  message in high-stakes moments How to clarify what you really
-                  want—and don’t want—before you speak How to stay focused on
-                  your goals for the conversation
+                  What You’ll Learn <br /> Why your motives matter more than
+                  your message in high-stakes moments How to clarify what you
+                  really want—and don’t want—before you speak How to stay
+                  focused on your goals for the conversation
                 </p>
               </div>
             </div>
