@@ -120,7 +120,7 @@ export default function Workshops() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 col-sm-12 mb-30">
+            <div className="col-lg-7 col-sm-12 mb-30 mt-30">
               <div className="eventcontentbox">
                 <h4 className="mb-30">The Heart Behind Every Tough Talk</h4>
                 <p className="mb-15" style={{ color: "#e88027" }}>
