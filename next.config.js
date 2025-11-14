@@ -4614,6 +4614,11 @@ module.exports = {
         destination: "https://cruciallearningindia.in/books/",
         permanent: true,
       },
+      {
+        source: "/workshops",
+        destination: "/https://byldgroup.com/workshop",
+        permanent: true,
+      },
     ];
   },
 };

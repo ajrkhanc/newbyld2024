@@ -59,10 +59,10 @@ export default function Workshops() {
     <>
       <Head>
         <title>Events - BYLD Group</title>
-        <link rel="canonical" href="https://byldgroup.com/workshop-event" />
+        <link rel="canonical" href="https://byldgroup.com/workshop" />
         <meta
           name="description"
-          content="April 29th, 2022Trapologist At Work™TM Workshop Virtual Public Workshop: April 29th, 2022 Learn More & Register April 26th – 29th, 2022DISC Train-the-Trainer (TTT) Virtual Public Workshop: April 26th – 29th, 2022 Learn More & Register May 9th – 12th, 2022Blanchard India Online Workshop Virtual Public Workshop: May 9th – 12th, 2022 Reserve Your Seat May… Continue reading Events"
+          content="April 29th, 2022Trapologist At Work™TM Workshop Virtual Public Workshop: April 29th, 2022 Learn More & Register April 26th – 29th, 2022DISC Train-the-Trainer (TTT) Virtual Public Workshop: April 26th – 29th, 2022 Learn More & Register May 9th – 12th, 2022Blanchard India Online Workshop Virtual Public Workshop: May 9th – 12th, 2022 Reserve Your Seat May… Continue reading workshop"
         />
         <link
           rel="stylesheet"
@@ -82,8 +82,8 @@ export default function Workshops() {
                 <span class="separator">/</span>
               </li>
               <li>
-                <a href="/workshop-event">
-                  <span>Events</span>
+                <a href="/workshop">
+                  <span>Workshop</span>
                 </a>
               </li>
             </ul>
