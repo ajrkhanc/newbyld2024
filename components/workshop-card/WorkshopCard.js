@@ -331,30 +331,30 @@ export default WorkshopCard;
 const workshops = [
   {
     id: 1,
-    courseName: "The Heart Behind Every Tough Talk",
-    dateRangeOne: "December 4, 2025",
-    dateRangeTwo: "December 4, 2025",
-    location: "India | Gurgaon",
-    format: "In Person",
-    imageUrl: "",
-    // amount: 28910,
-    // pageUrl:
-    //   "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
-    description: "What you mean matters more than what you say.",
+    courseName: "Getting Things Done®",
+    dateRangeOne: "August 29, 2025",
+    dateRangeTwo: "",
+    location: "India",
+    format: "Virtual",
+    amount: 28910,
+    pageUrl:
+      "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
+    description:
+      "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
   },
-  // {
-  //   id: 2,
-  //   courseName: "Crucial Conversations for Mastering Dialogue ",
-  //   dateRangeOne: "July 28, 2025",
-  //   dateRangeTwo: "July 29, 2025",
-  //   location: "India | Bangalore",
-  //   format: "In Person",
-  //   amount: 41300,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
-  //   description:
-  //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
-  // },
+  {
+    id: 2,
+    courseName: "Crucial Conversations for Mastering Dialogue ",
+    dateRangeOne: "July 28, 2025",
+    dateRangeTwo: "July 29, 2025",
+    location: "India | Bangalore",
+    format: "In Person",
+    amount: 41300,
+    pageUrl:
+      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    description:
+      "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
+  },
   // {
   //   id: 3,
   //   courseName: "Crucial Influence",
@@ -392,19 +392,19 @@ const workshops = [
   //   description:
   //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   // },
-  // {
-  //   id: 6,
-  //   courseName: "Crucial Conversations® For Mastering Dialogue",
-  //   dateRangeOne: "August  28, 2025",
-  //   dateRangeTwo: "August  29, 2025",
-  //   location: "India | Gurugram",
-  //   format: "In Person",
-  //   amount: 41300,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
-  //   description:
-  //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
-  // },
+  {
+    id: 6,
+    courseName: "Crucial Conversations® For Mastering Dialogue",
+    dateRangeOne: "August  28, 2025",
+    dateRangeTwo: "August  29, 2025",
+    location: "India | Gurugram",
+    format: "In Person",
+    amount: 41300,
+    pageUrl:
+      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    description:
+      "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
+  },
   // {
   //   id: 7,
   //   courseName: "Crucial Conversations® For Mastering Dialogue TTT",
@@ -418,30 +418,30 @@ const workshops = [
   //   description:
   //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   // },
-  // {
-  //   id: 8,
-  //   courseName: "The SLII Experience™",
-  //   dateRangeOne: "July 29, 2025",
-  //   dateRangeTwo: "July 30, 2025",
-  //   location: "India | Gurugram",
-  //   format: "In Person",
-  //   amount: 53100,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
-  // {
-  //   id: 9,
-  //   courseName: "The SLII Experience™ TTT",
-  //   dateRangeOne: "July 31, 2025",
-  //   dateRangeTwo: "August 1, 2025",
-  //   location: "India | Gurugram",
-  //   format: "In Person",
-  //   amount: 442500,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
+  {
+    id: 8,
+    courseName: "The SLII Experience™",
+    dateRangeOne: "July 29, 2025",
+    dateRangeTwo: "July 30, 2025",
+    location: "India | Gurugram",
+    format: "In Person",
+    amount: 53100,
+    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    description:
+      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
+  },
+  {
+    id: 9,
+    courseName: "The SLII Experience™ TTT",
+    dateRangeOne: "July 31, 2025",
+    dateRangeTwo: "August 1, 2025",
+    location: "India | Gurugram",
+    format: "In Person",
+    amount: 442500,
+    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    description:
+      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
+  },
   // {
   //   id: 10,
   //   courseName: "The SLII Experience™ T4T F2F",
@@ -454,30 +454,30 @@ const workshops = [
   //   description:
   //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   // },
-  // {
-  //   id: 11,
-  //   courseName: "The SLII Experience™",
-  //   dateRangeOne: "August  20, 2025",
-  //   dateRangeTwo: "August  21, 2025",
-  //   location: "India | Bangalore",
-  //   format: "In Person",
-  //   amount: 53100,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
-  // {
-  //   id: 12,
-  //   courseName: "The SLII Experience™ TTT",
-  //   dateRangeOne: "August  22, 2025",
-  //   dateRangeTwo: "August  23, 2025",
-  //   location: "India | Bangalore",
-  //   format: "In Person",
-  //   amount: 442500,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
+  {
+    id: 11,
+    courseName: "The SLII Experience™",
+    dateRangeOne: "August  20, 2025",
+    dateRangeTwo: "August  21, 2025",
+    location: "India | Bangalore",
+    format: "In Person",
+    amount: 53100,
+    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    description:
+      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
+  },
+  {
+    id: 12,
+    courseName: "The SLII Experience™ TTT",
+    dateRangeOne: "August  22, 2025",
+    dateRangeTwo: "August  23, 2025",
+    location: "India | Bangalore",
+    format: "In Person",
+    amount: 442500,
+    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    description:
+      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
+  },
   // {
   //   id: 4,
   //   courseName: "Disc Certification®",
@@ -593,30 +593,30 @@ const workshops = [
   //   description:
   //     "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
   // },
-  // {
-  //   id: 14,
-  //   courseName: "The SLII Experience™",
-  //   dateRangeOne: "September 23, 2025",
-  //   dateRangeTwo: "September 24, 2025",
-  //   location: "India | Gurugram",
-  //   format: "In Person",
-  //   amount: 53100,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
-  // {
-  //   id: 15,
-  //   courseName: "The SLII Experience™ TTT",
-  //   dateRangeOne: "September 25, 2025",
-  //   dateRangeTwo: "September 26, 2025",
-  //   location: "India | Gurugram",
-  //   format: "In Person",
-  //   amount: 442500,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
+  {
+    id: 14,
+    courseName: "The SLII Experience™",
+    dateRangeOne: "September 23, 2025",
+    dateRangeTwo: "September 24, 2025",
+    location: "India | Gurugram",
+    format: "In Person",
+    amount: 53100,
+    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    description:
+      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
+  },
+  {
+    id: 15,
+    courseName: "The SLII Experience™ TTT",
+    dateRangeOne: "September 25, 2025",
+    dateRangeTwo: "September 26, 2025",
+    location: "India | Gurugram",
+    format: "In Person",
+    amount: 442500,
+    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    description:
+      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
+  },
 
   // {
   //   id: 24,
@@ -632,17 +632,17 @@ const workshops = [
   //     "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
   // },
 
-  // {
-  //   id: 25,
-  //   courseName: "Crucial Conversations for Mastering Dialogue ",
-  //   dateRangeOne: "September 25, 2025",
-  //   dateRangeTwo: "September 26, 2025",
-  //   location: "India | Mumbai",
-  //   format: "In Person",
-  //   amount: 41300,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
-  //   description:
-  //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
-  // },
+  {
+    id: 25,
+    courseName: "Crucial Conversations for Mastering Dialogue ",
+    dateRangeOne: "September 25, 2025",
+    dateRangeTwo: "September 26, 2025",
+    location: "India | Mumbai",
+    format: "In Person",
+    amount: 41300,
+    pageUrl:
+      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    description:
+      "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
+  },
 ];
