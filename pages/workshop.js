@@ -124,24 +124,17 @@ export default function Workshops() {
               <div className="eventcontentbox">
                 <h2 className="mb-15">Workshop Overview</h2>
                 <p className="mb-15">
-                  Tough talks are inevitable in both our personal and
-                  professional lives. Whether it’s providing constructive
-                  feedback, addressing performance issues, or navigating
-                  conflicts, these conversations can be challenging. However,
-                  avoiding tough talks can lead to misunderstandings, decreased
-                  productivity, and strained relationships. The key to
-                  navigating tough talks lies in understanding the heart behind
-                  every conversation.
-                </p>
-                <p className="mb-15">
-                  This workshop is designed to equip participants with the
-                  skills and strategies needed to approach tough talks with
-                  confidence and empathy. Through interactive exercises,
-                  real-life scenarios, and practical tools, participants will
-                  learn how to navigate tough talks effectively and build
-                  stronger relationships.
+                  In this session, you’ll discover why your intent matters more
+                  than your message and how clarifying what you really want—for
+                  yourself, for others, and for the relationship—changes the
+                  course of every Crucial Conversation. Whether you’re a Crucial
+                  Conversations expert or just getting started, master trainer
+                  Scott Robley will share practical skills that will help you
+                  ground yourself in purpose, build trust, and ultimately drive
+                  better results.
                 </p>
               </div>
+            </div>
           </div>
         </div>
         <div className="clearfix"></div>
@@ -153,25 +146,25 @@ export default function Workshops() {
         </div>
       </section>
 
-      <div id="Register" class="homecon ptt-60">
+      <div id="Register" className="homecon ptt-60">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 text-center">
-              <h2 class="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
+              <h2 className="title mb-0 md-pb-20 h2call wow fadeInUp delay-0-2s animated animateUP">
                 Register Now
               </h2>
             </div>
           </div>
 
-          <div class="row y-middle">
-            <div class="col-lg-5 md-mb-50">
-              <div class="contact-img wow fadeInUp delay-0-2s animated animateUP">
+          <div className="row y-middle">
+            <div className="col-lg-5 md-mb-50">
+              <div className="contact-img wow fadeInUp delay-0-2s animated animateUP">
                 <img src="/assets/img/homeb/contactl.png" alt="Contact" />
               </div>
             </div>
 
-            <div class="col-lg-7">
-              <div class="contact-wrap">
+            <div className="col-lg-7">
+              <div className="contact-wrap">
                 <div className="bannerform wow fadeInUp delay-0-2s animated animateUP">
                   <form
                     id="contact-form"
