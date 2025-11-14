@@ -107,7 +107,7 @@ export default function Workshops() {
             <div className="col-sm-4">
               <div className="eventsbox">
                 <div className="eventmiddle">
-                  <img src="/assets/img/evnt1.webp" alt="evnt1" />
+                  <img src="/assets/img/evn2.webp" alt="evnt1" />
                   <span>Event 4th & 5th, December-2025</span>
                 </div>
                 <div className="eventbottom">
