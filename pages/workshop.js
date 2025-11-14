@@ -122,7 +122,10 @@ export default function Workshops() {
             </div>
             <div className="col-lg-7 col-sm-12 mb-30">
               <div className="eventcontentbox">
-                <h2 className="mb-30">Workshop Overview</h2>
+                <h4 className="mb-30">The Heart Behind Every Tough Talk</h4>
+                <p className="mb-15" style={{ color: "#e88027" }}>
+                  Event 4th & 5th, December-2025
+                </p>
                 <p className="mb-15">
                   In this session, you’ll discover why your intent matters more
                   than your message and how clarifying what you really want—for
