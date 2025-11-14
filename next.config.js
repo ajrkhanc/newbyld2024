@@ -4616,7 +4616,7 @@ module.exports = {
       },
       {
         source: "/workshops",
-        destination: "/https://byldgroup.com/workshop",
+        destination: "https://byldgroup.com/workshop",
         permanent: true,
       },
     ];
