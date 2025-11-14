@@ -73,7 +73,7 @@ export default function DiscAssessment() {
         ).catch(() => {});
 
         // Redirect after success
-        setTimeout(() => router.push(`/disc-series/${newnameurl}`), 1000);
+        setTimeout(() => router.push(`/yourdiscstyle/${newnameurl}`), 1000);
       } else {
         responseBox.innerHTML = "Something went wrong, please try again.";
       }
@@ -319,15 +319,9 @@ export default function DiscAssessment() {
                   <h2>9. When in conflict, you are most likely to…</h2>
                   {[
                     ["D", "Confront it directly and move to resolution"],
-                    [
-                      "I",
-                      "Try to lighten the mood and keep things positive",
-                    ],
+                    ["I", "Try to lighten the mood and keep things positive"],
                     ["S", "Seek compromise and calm things down"],
-                    [
-                      "C",
-                      "Analyze objectively and propose a fair solution",
-                    ],
+                    ["C", "Analyze objectively and propose a fair solution"],
                   ].map(([val, label], i) => (
                     <div className="fcolmain" key={i}>
                       <input
