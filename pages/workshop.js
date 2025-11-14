@@ -104,7 +104,7 @@ export default function Workshops() {
       <section className="ptt-60 pbb-60 positionrelative">
         <div className="container">
           <div className="row zindx">
-            <div className="col-lg-4 col-sm-12 mb-30">
+            <div className="col-lg-6 col-sm-12 mb-30">
               <div className="eventsbox">
                 <div className="eventmiddle">
                   <img src="/assets/img/evn2.webp" alt="evnt1" />
@@ -120,7 +120,7 @@ export default function Workshops() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 col-sm-12 mb-30">
+            <div className="col-lg-6 col-sm-12 mb-30">
               <div className="eventcontentbox">
                 <h2 className="mb-15">Workshop Overview</h2>
                 <p className="mb-15">
