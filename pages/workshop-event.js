@@ -58,11 +58,11 @@ export default function Workshops() {
   return (
     <>
       <Head>
-        <title>Workshops - BYLD Group</title>
-        <link rel="canonical" href="https://byldgroup.com/workshops" />
+        <title>Events - BYLD Group</title>
+        <link rel="canonical" href="https://byldgroup.com/workshop-event" />
         <meta
           name="description"
-          content="April 29th, 2022Trapologist At Work™TM Workshop Virtual Public Workshop: April 29th, 2022 Learn More & Register April 26th – 29th, 2022DISC Train-the-Trainer (TTT) Virtual Public Workshop: April 26th – 29th, 2022 Learn More & Register May 9th – 12th, 2022Blanchard India Online Workshop Virtual Public Workshop: May 9th – 12th, 2022 Reserve Your Seat May… Continue reading Workshops"
+          content="April 29th, 2022Trapologist At Work™TM Workshop Virtual Public Workshop: April 29th, 2022 Learn More & Register April 26th – 29th, 2022DISC Train-the-Trainer (TTT) Virtual Public Workshop: April 26th – 29th, 2022 Learn More & Register May 9th – 12th, 2022Blanchard India Online Workshop Virtual Public Workshop: May 9th – 12th, 2022 Reserve Your Seat May… Continue reading Events"
         />
         <link
           rel="stylesheet"
@@ -82,8 +82,8 @@ export default function Workshops() {
                 <span class="separator">/</span>
               </li>
               <li>
-                <a href="/workshops">
-                  <span>Workshops</span>
+                <a href="/workshop-event">
+                  <span>Events</span>
                 </a>
               </li>
             </ul>
@@ -93,7 +93,7 @@ export default function Workshops() {
             <div className="col-sm-8">
               <div class="breadcrumbs-inner">
                 <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
-                  Workshops - BYLD Group
+                  Events - BYLD Group
                 </h1>
               </div>
             </div>
