@@ -122,7 +122,7 @@ export default function Workshops() {
             </div>
             <div className="col-lg-7 col-sm-12 mb-30">
               <div className="eventcontentbox">
-                <h2 className="mb-15">Workshop Overview</h2>
+                <h2 className="mb-30">Workshop Overview</h2>
                 <p className="mb-15">
                   In this session, you’ll discover why your intent matters more
                   than your message and how clarifying what you really want—for
@@ -132,6 +132,12 @@ export default function Workshops() {
                   Scott Robley will share practical skills that will help you
                   ground yourself in purpose, build trust, and ultimately drive
                   better results.
+                </p>
+                <p className="mb-15">
+                  WHAT YOU’LL LEARN Why your motives matter more than your
+                  message in high-stakes moments How to clarify what you really
+                  want—and don’t want—before you speak How to stay focused on
+                  your goals for the conversation
                 </p>
               </div>
             </div>
