@@ -104,7 +104,7 @@ export default function Workshops() {
       <section className="ptt-60 pbb-60 positionrelative">
         <div className="container">
           <div className="row zindx">
-            <div className="col-sm-4">
+            <div className="col-lg-4 col-sm-12 mb-30">
               <div className="eventsbox">
                 <div className="eventmiddle">
                   <img src="/assets/img/evn2.webp" alt="evnt1" />
@@ -112,7 +112,7 @@ export default function Workshops() {
                 </div>
                 <div className="eventbottom">
                   {/* <h4 className="eventtitlec">Time: 4:00 PM - 5:00 PM</h4> */}
-                  <h3>The Heart Behind Every Tough Talk </h3>
+                  <h3 className="mb-0">The Heart Behind Every Tough Talk </h3>
                   <p>What you mean matters more than what you say.</p>
                   <a className="eventbtn" href="#Register">
                     Reserve Your Seat
@@ -120,6 +120,28 @@ export default function Workshops() {
                 </div>
               </div>
             </div>
+            <div className="col-lg-8 col-sm-12 mb-30">
+              <div className="eventcontentbox">
+                <h2 className="mb-15">Workshop Overview</h2>
+                <p className="mb-15">
+                  Tough talks are inevitable in both our personal and
+                  professional lives. Whether it’s providing constructive
+                  feedback, addressing performance issues, or navigating
+                  conflicts, these conversations can be challenging. However,
+                  avoiding tough talks can lead to misunderstandings, decreased
+                  productivity, and strained relationships. The key to
+                  navigating tough talks lies in understanding the heart behind
+                  every conversation.
+                </p>
+                <p className="mb-15">
+                  This workshop is designed to equip participants with the
+                  skills and strategies needed to approach tough talks with
+                  confidence and empathy. Through interactive exercises,
+                  real-life scenarios, and practical tools, participants will
+                  learn how to navigate tough talks effectively and build
+                  stronger relationships.
+                </p>
+              </div>
           </div>
         </div>
         <div className="clearfix"></div>
