@@ -134,7 +134,8 @@ export default function DiscResult({ result }) {
         setTimeout(() => {
           setMessage("");
           toggleModal();
-        }, 3000);
+          window.location.href = "/thank-you";
+        }, 1000);
       } else {
         setMessage("⚠️ Something went wrong. Please try again.");
       }
