@@ -93,7 +93,7 @@ export default function Workshops() {
             <div className="col-sm-8">
               <div class="breadcrumbs-inner">
                 <h1 class="page-title wow fadeInUp delay-0-2s animated animateUP">
-                  Events - BYLD Group
+                  Workshops - BYLD Group
                 </h1>
               </div>
             </div>
