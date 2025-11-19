@@ -120,7 +120,7 @@ export default function Jenson8() {
                   and expertise
                 </h5>
                 <p>
-                  <span>Access –</span> Evaluate the key skills required to
+                  <span>Assess –</span> Evaluate the key skills required to
                   transition from “As Is” to “To Be” situation
                 </p>
                 <p>
