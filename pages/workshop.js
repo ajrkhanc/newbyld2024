@@ -285,8 +285,6 @@ export default function Workshops() {
                 </div>
               </div>
             </div>
-
-            <div className="col-sm-2"></div>
           </div>
         </div>
       </div>
