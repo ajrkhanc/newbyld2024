@@ -4619,6 +4619,81 @@ module.exports = {
         destination: "https://byldgroup.com/workshop",
         permanent: true,
       },
+      {
+        source: "/everythingdisc",
+        destination: "https://everythingdisc.byldgroup.com",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/everything-disc-agile-eq",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-agile-eq/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/everything-disc-sales",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-sales/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/everything-disc-363-for-leaders",
+        destination:
+          "https://everythingdisc.byldgroup.com/everything-disc-workplace-certification/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/everything-disc-productive-conflict",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-productive-conflict/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/workplace",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-workplace/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/everything-disc-work-of-leaders",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-work-of-leaders/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/solutions/everything-disc-management",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-management/",
+        permanent: true,
+      },
+
+      {
+        source:
+          "/everythingdisc/solutions/everything-disc-workplace-on-catalyst",
+        destination:
+          "https://everythingdisc.byldgroup.com/everythingdisc-catalyst/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/ebook",
+        destination: "https://everythingdisc.byldgroup.com/e-books/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/SuccessStory",
+        destination: "https://everythingdisc.byldgroup.com/success-story",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/contact-us",
+        destination: "https://everythingdisc.byldgroup.com/contact",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/everythingdisc-privacy-policy",
+        destination: "https://everythingdisc.byldgroup.com/privacy-policy",
+        permanent: true,
+      },
     ];
   },
 };
