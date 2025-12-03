@@ -28,6 +28,9 @@ export default function BrowseCourses() {
     nameurl = nameurl.toLowerCase();
     const newnameurl = nameurl.split(" ").join("-");
 
+    // CREATE RESULT URL FOR EMAIL
+    const resultUrl = `https://byldgroup.com/cruciallifechangingskills/assessment/style-under-stress-assessment/${newnameurl}`;
+
     var xhr = new XMLHttpRequest();
     xhr.open(
       "POST",
@@ -113,7 +116,9 @@ export default function BrowseCourses() {
           "&designation=" +
           Designation +
           "&assessment=" +
-          Assessment
+          Assessment +
+          "&resultUrl=" +
+          resultUrl
       );
     };
 
