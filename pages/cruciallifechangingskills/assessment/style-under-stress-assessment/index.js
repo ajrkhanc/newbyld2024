@@ -104,22 +104,22 @@ export default function BrowseCourses() {
       );
 
       var Assessment = "Style Under Stress - Assessment Form Marketing";
-      xhttp.send(
-        "name=" +
-          name +
-          "&email=" +
-          email +
-          "&phone=" +
-          phone +
-          "&organization=" +
-          organization +
-          "&designation=" +
-          Designation +
-          "&assessment=" +
-          Assessment +
-          "&resultUrl=" +
-          resultUrl
-      );
+     xhttp.send(
+       "name=" +
+         name +
+         "&email=" +
+         email +
+         "&phone=" +
+         phone +
+         "&organization=" +
+         organization +
+         "&designation=" +
+         Designation +
+         "&assessment=" +
+         Assessment +
+         "&resulturl=" + 
+         resultUrl
+     );
     };
 
     xhr.onerror = function () {
