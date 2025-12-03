@@ -11,35 +11,19 @@ export default function BrowseCourses() {
     var q4 = event.target.q4.value;
     var q5 = event.target.q5.value;
     var q6 = event.target.q6.value;
-    // var q7 = event.target.q7.value;
-    // var q8 = event.target.q8.value;
-    // var q9 = event.target.q9.value;
-    // var q10 = event.target.q10.value;
-    // var q11 = event.target.q11.value;
-    // var q12 = event.target.q12.value;
     var q13 = event.target.q13.value;
     var q14 = event.target.q14.value;
     var q15 = event.target.q15.value;
     var q16 = event.target.q16.value;
     var q17 = event.target.q17.value;
     var q18 = event.target.q18.value;
-    // var q19 = event.target.q19.value;
-    // var q20 = event.target.q20.value;
-    // var q21 = event.target.q21.value;
-    // var q22 = event.target.q22.value;
-    // var q23 = event.target.q23.value;
-    // var q24 = event.target.q24.value;
-    // var q25 = event.target.q25.value;
-    // var q26 = event.target.q26.value;
-    // var q27 = event.target.q27.value;
-    // var q28 = event.target.q28.value;
-    // var q29 = event.target.q29.value;
-    // var q30 = event.target.q30.value;
 
     const name = event.target.name.value;
     const email = event.target.email.value;
     const phone = event.target.phone.value;
     const organization = event.target.organization.value;
+    const Designation = event.target.designation.value; // FIXED
+
     var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
     nameurl = nameurl.toLowerCase();
     const newnameurl = nameurl.split(" ").join("-");
@@ -63,12 +47,6 @@ export default function BrowseCourses() {
         q5 +
         "&q6=" +
         q6 +
-        //   '&q7=' + q7 +
-        //   '&q8=' + q8 +
-        //   '&q9=' + q9 +
-        //   '&q10=' + q10 +
-        //   '&q11=' + q11 +
-        //   '&q12=' + q12 +
         "&q13=" +
         q13 +
         "&q14=" +
@@ -81,19 +59,6 @@ export default function BrowseCourses() {
         q17 +
         "&q18=" +
         q18 +
-        //   '&q19=' + q19 +
-        //   '&q20=' + q20 +
-        //   '&q21=' + q21 +
-        //   '&q22=' + q22 +
-        //   '&q23=' + q23 +
-        //   '&q24=' + q24 +
-        //   '&q25=' + q25 +
-        //   '&q26=' + q26 +
-        //   '&q27=' + q27 +
-        //   '&q28=' + q28 +
-        //   '&q29=' + q29 +
-        //   '&q30=' + q30 +
-
         "&name=" +
         name +
         "&email=" +
@@ -108,7 +73,6 @@ export default function BrowseCourses() {
 
     xhr.onreadystatechange = function () {
       if (xhr.status == 200) {
-        // document.getElementById("formreset").reset()
         document.getElementById("response").innerHTML = "Assessment Result";
 
         window.setTimeout(function () {
@@ -116,7 +80,7 @@ export default function BrowseCourses() {
         }, 1000);
       } else {
         document.getElementById("response").innerHTML =
-          "You Have Submeted to go";
+          "You Have Submitted to go";
         setTimeout(function () {
           document.getElementById("response").innerHTML = "";
           document.getElementById("submitbuttonform").value = "Submit JobForm";
@@ -128,7 +92,7 @@ export default function BrowseCourses() {
         console.log(this.responseText);
       };
       xhttp.open(
-        "Post",
+        "POST",
         "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/158/feedback"
       );
       xhttp.setRequestHeader(
@@ -139,7 +103,7 @@ export default function BrowseCourses() {
       var Assessment = "Style Under Stress - Assessment Form Marketing";
       xhttp.send(
         "name=" +
-          event.target.name.value +
+          name +
           "&email=" +
           email +
           "&phone=" +
