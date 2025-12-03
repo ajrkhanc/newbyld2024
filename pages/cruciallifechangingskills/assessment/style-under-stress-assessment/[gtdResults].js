@@ -18,9 +18,19 @@ export async function getServerSideProps(context) {
 }
 
 export default function Home({ result }) {
-  function downloadAsPDF() {
-    var element = document.getElementById("demo");
-    html2pdf(element);
+  async function downloadAsPDF() {
+    const html2pdf = (await import("html2pdf.js")).default;
+    const element = document.getElementById("demo");
+
+    const opt = {
+      margin: 0.5,
+      filename: "style-under-stress-result.pdf",
+      image: { type: "jpeg", quality: 1 },
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(opt).from(element).save();
   }
 
   return (
@@ -62,7 +72,7 @@ export default function Home({ result }) {
         </div>
       </section>
 
-      <section id="demo" className="assesmentpart2">
+      <section className="assesmentpart2">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
