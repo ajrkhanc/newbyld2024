@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function BrowseCourses() {
   const submitF = async (event) => {
     event.preventDefault();
-    document.getElementById("submitbuttonform").value = "Submitting form....";
+    document.getElementById("submitbuttonform").value = "Submitting form...";
 
     var q1 = event.target.q1.value;
     var q2 = event.target.q2.value;
@@ -22,13 +22,11 @@ export default function BrowseCourses() {
     const email = event.target.email.value;
     const phone = event.target.phone.value;
     const organization = event.target.organization.value;
-    const Designation = event.target.designation.value; // FIXED
+    const Designation = event.target.designation.value;
 
-    var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
-    nameurl = nameurl.toLowerCase();
+    var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
     const newnameurl = nameurl.split(" ").join("-");
 
-    // CREATE RESULT URL FOR EMAIL
     const resultUrl = `https://byldgroup.com/cruciallifechangingskills/assessment/style-under-stress-assessment/${newnameurl}`;
 
     var xhr = new XMLHttpRequest();
@@ -75,51 +73,55 @@ export default function BrowseCourses() {
     );
 
     xhr.onreadystatechange = function () {
-      if (xhr.status == 200) {
+      // ✅ Only run when request is fully complete
+      if (xhr.readyState !== 4) return;
+
+      if (xhr.status === 200) {
         document.getElementById("response").innerHTML = "Assessment Result";
 
-        window.setTimeout(function () {
+        // ⬇️ Send email to CF7 only once
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+          console.log(this.responseText);
+        };
+        xhttp.open(
+          "POST",
+          "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/158/feedback"
+        );
+        xhttp.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+
+        var Assessment = "Style Under Stress - Assessment Form Marketing";
+        xhttp.send(
+          "name=" +
+            name +
+            "&email=" +
+            email +
+            "&phone=" +
+            phone +
+            "&organization=" +
+            organization +
+            "&designation=" +
+            Designation +
+            "&assessment=" +
+            Assessment +
+            "&resulturl=" +
+            resultUrl
+        );
+
+        // ⬇️ Redirect user after 1 second
+        setTimeout(() => {
           window.location.href = `/cruciallifechangingskills/assessment/style-under-stress-assessment/${newnameurl}`;
         }, 1000);
       } else {
-        document.getElementById("response").innerHTML =
-          "You Have Submitted to go";
+        document.getElementById("response").innerHTML = "Something went wrong!";
         setTimeout(function () {
           document.getElementById("response").innerHTML = "";
-          document.getElementById("submitbuttonform").value = "Submit JobForm";
+          document.getElementById("submitbuttonform").value = "Submit";
         }, 3000);
       }
-
-      var xhttp = new XMLHttpRequest();
-      xhttp.onload = function () {
-        console.log(this.responseText);
-      };
-      xhttp.open(
-        "POST",
-        "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/158/feedback"
-      );
-      xhttp.setRequestHeader(
-        "Content-Type",
-        "application/x-www-form-urlencoded"
-      );
-
-      var Assessment = "Style Under Stress - Assessment Form Marketing";
-     xhttp.send(
-       "name=" +
-         name +
-         "&email=" +
-         email +
-         "&phone=" +
-         phone +
-         "&organization=" +
-         organization +
-         "&designation=" +
-         Designation +
-         "&assessment=" +
-         Assessment +
-         "&resulturl=" + 
-         resultUrl
-     );
     };
 
     xhr.onerror = function () {
