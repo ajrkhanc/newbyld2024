@@ -86,7 +86,7 @@ export default function BrowseCourses() {
         };
         xhttp.open(
           "POST",
-          "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/158/feedback"
+          "https://byldgroup.in/cruciallifechangingskills/wp-json/contact-form-7/v1/contact-forms/158/submit"
         );
         xhttp.setRequestHeader(
           "Content-Type",
