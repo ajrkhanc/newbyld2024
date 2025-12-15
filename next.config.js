@@ -4694,6 +4694,13 @@ module.exports = {
         destination: "https://everythingdisc.byldgroup.com/privacy-policy",
         permanent: true,
       },
+      {
+        source:
+          "/cruciallifechangingskills/assessment/style-under-stress-assessment",
+        destination:
+          "https://cruciallearningindia.in/style-under-stress-assessment/",
+        permanent: true,
+      },
     ];
   },
 };
