@@ -4701,6 +4701,98 @@ module.exports = {
           "https://cruciallearningindia.in/style-under-stress-assessment/",
         permanent: true,
       },
+      {
+        source: "/our-solutions/experiential-learning",
+        destination: "https://experientiallearning.byldgroup.com/",
+        permanent: true,
+      },
+      {
+        source: "/jenson-8",
+        destination: "https://experientiallearning.byldgroup.com/jenson8/",
+        permanent: true,
+      },
+      {
+        source: "/business-today-simulations",
+        destination:
+          "https://experientiallearning.byldgroup.com/business-today-simulation/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia",
+        destination: "https://experientiallearning.byldgroup.com/eaglesflight/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/museum-caper",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/museum-caper/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/king-kahufu",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/king-kahufu/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/gold-of-the-desert-kings",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/gold-of-the-desert-kings/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/council-of-the-marble-star",
+        destination:
+          "https://experientiallearning.byldgroup.com/council-of-the-marble-star/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/rattlesnake-canyon",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/rattlesnake-canyon/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/promises-promises",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/promises-promises/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/expedition-outback",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/expedition-outback/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/our-offerings/windjammer",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/wind-jammer/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/the-company",
+        destination: "https://experientiallearning.byldgroup.com/about-us/",
+        permanent: true,
+      },
+      {
+        source: "/eaglesflightindia/contact-us",
+        destination:
+          "https://experientiallearning.byldgroup.com/eaglesflight/contact-us/",
+        permanent: true,
+      },
+      {
+        source: "/efassets/pdf/Museum-Caper-Brochure.pdf",
+        destination:
+          "https://experientiallearning.byldgroup.com/wp-content/uploads/2025/08/museum.pdf",
+        permanent: true,
+      },
+      {
+        source: "/efassets/pdf/King-Kahafu-Brochure.pdf",
+        destination:
+          "https://experientiallearning.byldgroup.com/wp-content/uploads/2025/08/King_Kahufu.pdf",
+        permanent: true,
+      },
     ];
   },
 };
