@@ -83,7 +83,7 @@ export default function Ebookpage() {
           <div className="row rs-vertical-middle">
             <div className="col-lg-6 pr-0">
               <div className="onlyshd">
-                <img src="/assets/img/ebook/hr-and-trendsImg.png" alt="books" />
+                <img src="/assets/img/ebook/image.png" alt="books" />
               </div>
             </div>
             <div className="col-lg-6 md-pt-50">
