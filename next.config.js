@@ -4793,6 +4793,13 @@ module.exports = {
           "https://experientiallearning.byldgroup.com/wp-content/uploads/2025/08/King_Kahufu.pdf",
         permanent: true,
       },
+
+      {
+        source: "/ebook/2023-hr-and-trends",
+        destination:
+          "https://byldgroup.com/ebook/hr-and-trends",
+        permanent: true,
+      },
     ];
   },
 };
