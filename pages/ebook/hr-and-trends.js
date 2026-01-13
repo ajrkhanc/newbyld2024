@@ -75,6 +75,55 @@ export default function Ebookpage() {
               </div>
             </div>
           </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="servicesContent">
+                <h3 className="font26 mb-15">
+                  Turning Uncertainty into Opportunity
+                </h3>
+
+                <p>Leadership development is no longer a support initiative.</p>
+
+                <p>
+                  <strong>It’s a strategic business lever.</strong>
+                </p>
+
+                <p>
+                  Blanchard’s{" "}
+                  <strong>2026 HR &amp; L&amp;D Trends Survey</strong>,
+                  featuring insights from nearly{" "}
+                  <strong>500 leaders globally</strong>, highlights the shifts
+                  shaping leadership, learning, and workplace culture in the
+                  year ahead.
+                </p>
+
+                <p className="mt-10">
+                  <strong>The message is clear:</strong>
+                </p>
+
+                <ul className="mt-10">
+                  <li>
+                    Leadership capability directly influences organizational
+                    performance
+                  </li>
+                  <li>
+                    Agility, engagement, and retention are driven by behavior
+                  </li>
+                  <li>
+                    Organizations that invest in human-centered leadership are
+                    better equipped to navigate uncertainty and drive
+                    sustainable results
+                  </li>
+                </ul>
+
+                <p className="mt-15">
+                  For HR and L&amp;D leaders planning their{" "}
+                  <strong>2026 strategy</strong>, this report offers timely
+                  insights and practical direction.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
