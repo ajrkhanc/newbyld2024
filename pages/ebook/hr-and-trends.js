@@ -53,10 +53,13 @@ export default function Ebookpage() {
   return (
     <>
       <Head>
-        <title>2026 HR and L&D Trends - BYLD Group</title>
+        <title>
+          2026 HR & L&D Trends E-Book | Key Insights for HR Professionals – BYLD
+          Group
+        </title>
         <meta
           name="description"
-          content="InsideOut Development is an award-winning training and development company that helps drive results at the individual, team, and organizational levels. For over two decades, InsideOut Development has helped free up tens of thousands of people using best-in-class training programs, coaching services, and business performance solutions that help our clients turn existing potential into high performance."
+          content="I Download BYLD Group’s 2026 HR & L&D Trends E-Book to explore the latest workforce, leadership, and learning & development strategies shaping the future of HR. Get expert insights and practical guidance to stay ahead in talent management, capability building, and organizational performance."
         />
       </Head>
 
@@ -80,10 +83,7 @@ export default function Ebookpage() {
           <div className="row rs-vertical-middle">
             <div className="col-lg-6 pr-0">
               <div className="onlyshd">
-                <img
-                  src="/assets/img/ebook/2023-hr-and-trends.jpg"
-                  alt="books"
-                />
+                <img src="/assets/img/ebook/hr-and-trendsImg.png" alt="books" />
               </div>
             </div>
             <div className="col-lg-6 md-pt-50">
