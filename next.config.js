@@ -4796,9 +4796,9 @@ module.exports = {
 
       {
         source: "/ebook/2023-hr-and-trends",
-        destination:
-          "https://byldgroup.com/ebook/hr-and-trends",
+        destination: "https://byldgroup.com/ebook/hr-and-trends",
         permanent: true,
+        
       },
     ];
   },
