@@ -4799,6 +4799,33 @@ module.exports = {
         destination: "/ebook/hr-and-trends",
         permanent: true,
       },
+      {
+        source: "/wiley",
+        destination: "https://byldgroup.com/wiley",
+        permanent: true,
+      },
+      {
+        source: "/wiley/event-calendar",
+        destination: "https://everythingdisc.byldgroup.com/disc-workshop/",
+        permanent: true,
+      },
+      {
+        source: "/wiley/contact-us",
+        destination: "https://everythingdisc.byldgroup.com/contact/",
+        permanent: true,
+      },
+      {
+        source: "/wiley/listening-profile",
+        destination:
+          "https://everythingdisc.byldgroup.com/disc-certification-training/",
+        permanent: true,
+      },
+      {
+        source: "/everythingdisc/everything-disc-ttt-vt-lp",
+        destination:
+          "https://everythingdisc.byldgroup.com/disc-certification-training/",
+        permanent: true,
+      },
     ];
   },
 };
