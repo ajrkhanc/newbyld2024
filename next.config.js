@@ -4801,7 +4801,7 @@ module.exports = {
       },
       {
         source: "/wiley",
-        destination: "https://byldgroup.com/wiley",
+        destination: "https://everythingdisc.byldgroup.com/",
         permanent: true,
       },
       {
