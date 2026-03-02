@@ -454,7 +454,7 @@ export default function EventsGallerys() {
                       src="/assets/img/new/icons3.png"
                       alt="calender_icon3"
                     />
-                    <span>4:00 PM to 6:00 PM </span>
+                    <span>4:30 PM to 6:00 PM </span>
                   </div>
                 </div>
               </div>
