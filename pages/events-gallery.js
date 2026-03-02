@@ -439,22 +439,22 @@ export default function EventsGallerys() {
                 <h3>27 Years of People, Purpose, Progress.</h3>
                 <div className="calenderIcon">
                   <div className="calenderIconInner">
-                    <img src="/assets/img/new/icons1.png" alt="calender_icon" />
-                    <span>Diwali Celebration </span>
+                    <img src="/assets/img/new/holi1.png" alt="calender_icon" />
+                    <span>Holi Celebration </span>
                   </div>
                   <div className="calenderIconInner">
                     <img
                       src="/assets/img/new/icons2.png"
                       alt="calender_icon2"
                     />
-                    <span>Friday, 17th October 2025,</span>
+                    <span>Tuesday 3rd march 2026</span>
                   </div>
                   <div className="calenderIconInner">
                     <img
                       src="/assets/img/new/icons3.png"
                       alt="calender_icon3"
                     />
-                    <span>10:00 AM to 2:00 PM </span>
+                    <span>4:00 PM to 6:00 PM </span>
                   </div>
                 </div>
               </div>
@@ -519,7 +519,7 @@ export default function EventsGallerys() {
             onCloseRequest={() => setIsOpen(false)}
             onMovePrevRequest={() =>
               setPhotoIndex(
-                (photoIndex + currentGroup.length - 1) % currentGroup.length
+                (photoIndex + currentGroup.length - 1) % currentGroup.length,
               )
             }
             onMoveNextRequest={() =>
