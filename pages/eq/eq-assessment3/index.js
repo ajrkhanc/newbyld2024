@@ -27,8 +27,8 @@ export default function BrowseCourses() {
     var q20 = event.target.q20.value;
 
     const name = event.target.name.value;
-    const email = event.target.email?.value || "";
-    const phone = event.target.phone?.value || "";
+    const email = event.target.email?.value || "noemail@dummy.com";
+    const phone = event.target.phone?.value || "0000000000";
     const organization = event.target.organization.value;
     var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
     nameurl = nameurl.toLowerCase();
