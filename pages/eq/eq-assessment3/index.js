@@ -1,146 +1,242 @@
+import { useState } from "react";
 import Head from "next/head";
 
 export default function BrowseCourses() {
-  const submitF = async (event) => {
+   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+  // const submitF = async (event) => {
+  //   event.preventDefault();
+  //   document.getElementById("submitbuttonform").value = "Submitting";
+
+  //   var q1 = event.target.q1.value;
+  //   var q2 = event.target.q2.value;
+  //   var q3 = event.target.q3.value;
+  //   var q4 = event.target.q4.value;
+  //   var q5 = event.target.q5.value;
+  //   var q6 = event.target.q6.value;
+  //   var q7 = event.target.q7.value;
+  //   var q8 = event.target.q8.value;
+  //   var q9 = event.target.q9.value;
+  //   var q10 = event.target.q10.value;
+  //   var q11 = event.target.q11.value;
+  //   var q12 = event.target.q12.value;
+  //   var q13 = event.target.q13.value;
+  //   var q14 = event.target.q14.value;
+  //   var q15 = event.target.q15.value;
+  //   var q16 = event.target.q16.value;
+  //   var q17 = event.target.q17.value;
+  //   var q18 = event.target.q18.value;
+  //   var q19 = event.target.q19.value;
+  //   var q20 = event.target.q20.value;
+
+  //   const name = event.target.name.value;
+  //   const email = event.target.email?.value || "noemail@dummy.com";
+  //   const phone = event.target.phone?.value || "0000000000";
+  //   const organization = event.target.organization.value;
+  //   var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
+  //   nameurl = nameurl.toLowerCase();
+  //   const newnameurl = nameurl.split(" ").join("-") + phone;
+  //   const result = `https://byldgroup.com/eq/eq-assessment3/${newnameurl}`;
+
+  //   var xhr = new XMLHttpRequest();
+  //   xhr.open("POST", "https://byldblogs.vercel.app/api/dtci-assessment");
+  //   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  //   xhr.send(
+  //     "q1=" +
+  //       q1 +
+  //       "&q2=" +
+  //       q2 +
+  //       "&q3=" +
+  //       q3 +
+  //       "&q4=" +
+  //       q4 +
+  //       "&q5=" +
+  //       q5 +
+  //       "&q6=" +
+  //       q6 +
+  //       "&q7=" +
+  //       q7 +
+  //       "&q8=" +
+  //       q8 +
+  //       "&q9=" +
+  //       q9 +
+  //       "&q10=" +
+  //       q10 +
+  //       "&q11=" +
+  //       q11 +
+  //       "&q12=" +
+  //       q12 +
+  //       "&q13=" +
+  //       q13 +
+  //       "&q14=" +
+  //       q14 +
+  //       "&q15=" +
+  //       q15 +
+  //       "&q16=" +
+  //       q16 +
+  //       "&q17=" +
+  //       q17 +
+  //       "&q18=" +
+  //       q18 +
+  //       "&q19=" +
+  //       q19 +
+  //       "&q20=" +
+  //       q20 +
+  //       "&name=" +
+  //       name +
+  //       "&email=" +
+  //       email +
+  //       "&phone=" +
+  //       phone +
+  //       "&organization=" +
+  //       organization +
+  //       "&newnameurl=" +
+  //       newnameurl,
+  //   );
+  //   logmaintane(name, phone, email, organization, "eq-assessment", result);
+  //   xhr.onreadystatechange = function () {
+  //     if (xhr.status == 200) {
+  //       var data = JSON.parse(xhr.responseText);
+
+  //       document.getElementById("response").innerHTML = data.message;
+
+  //       if (data.status == 0) {
+  //         var xhttp = xhr;
+  //         xhttp.open(
+  //           "Post",
+  //           "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
+  //         );
+  //         xhttp.setRequestHeader(
+  //           "Content-Type",
+  //           "application/x-www-form-urlencoded",
+  //         );
+
+  //         var Assessment = "EQ+ Assessment";
+  //         xhttp.send(
+  //           "name=" +
+  //             event.target.name.value +
+  //             "&email=" +
+  //             email +
+  //             "&phone=" +
+  //             phone +
+  //             "&organization=" +
+  //             organization +
+  //             "&assessment=" +
+  //             Assessment +
+  //             "&result=" +
+  //             result,
+  //         );
+
+  //         window.setTimeout(function () {
+  //           window.location.href = `/thank-you`;
+  //         }, 1000);
+  //       }
+  //     } else {
+  //       document.getElementById("response").innerHTML = "Fetching your result";
+  //       setTimeout(function () {
+  //         document.getElementById("response").innerHTML = "";
+  //         document.getElementById("submitbuttonform").value = "Submit";
+  //       }, 3000);
+  //     }
+  //   };
+
+  //   xhr.onerror = function () {
+  //     console.log("error");
+  //   };
+  // };
+
+ const submitF = async (event) => {
     event.preventDefault();
-    document.getElementById("submitbuttonform").value = "Submitting";
+    setLoading(true);
+    setMessage("");
 
-    var q1 = event.target.q1.value;
-    var q2 = event.target.q2.value;
-    var q3 = event.target.q3.value;
-    var q4 = event.target.q4.value;
-    var q5 = event.target.q5.value;
-    var q6 = event.target.q6.value;
-    var q7 = event.target.q7.value;
-    var q8 = event.target.q8.value;
-    var q9 = event.target.q9.value;
-    var q10 = event.target.q10.value;
-    var q11 = event.target.q11.value;
-    var q12 = event.target.q12.value;
-    var q13 = event.target.q13.value;
-    var q14 = event.target.q14.value;
-    var q15 = event.target.q15.value;
-    var q16 = event.target.q16.value;
-    var q17 = event.target.q17.value;
-    var q18 = event.target.q18.value;
-    var q19 = event.target.q19.value;
-    var q20 = event.target.q20.value;
+    try {
+      const form = event.target;
 
-    const name = event.target.name.value;
-    const email = event.target.email?.value || "noemail@dummy.com";
-    const phone = event.target.phone?.value || "0000000000";
-    const organization = event.target.organization.value;
-    var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
-    nameurl = nameurl.toLowerCase();
-    const newnameurl = nameurl.split(" ").join("-") + phone;
-    const result = `https://byldgroup.com/eq/eq-assessment3/${newnameurl}`;
-
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://byldblogs.vercel.app/api/dtci-assessment");
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send(
-      "q1=" +
-        q1 +
-        "&q2=" +
-        q2 +
-        "&q3=" +
-        q3 +
-        "&q4=" +
-        q4 +
-        "&q5=" +
-        q5 +
-        "&q6=" +
-        q6 +
-        "&q7=" +
-        q7 +
-        "&q8=" +
-        q8 +
-        "&q9=" +
-        q9 +
-        "&q10=" +
-        q10 +
-        "&q11=" +
-        q11 +
-        "&q12=" +
-        q12 +
-        "&q13=" +
-        q13 +
-        "&q14=" +
-        q14 +
-        "&q15=" +
-        q15 +
-        "&q16=" +
-        q16 +
-        "&q17=" +
-        q17 +
-        "&q18=" +
-        q18 +
-        "&q19=" +
-        q19 +
-        "&q20=" +
-        q20 +
-        "&name=" +
-        name +
-        "&email=" +
-        email +
-        "&phone=" +
-        phone +
-        "&organization=" +
-        organization +
-        "&newnameurl=" +
-        newnameurl,
-    );
-    logmaintane(name, phone, email, organization, "eq-assessment", result);
-    xhr.onreadystatechange = function () {
-      if (xhr.status == 200) {
-        var data = JSON.parse(xhr.responseText);
-
-        document.getElementById("response").innerHTML = data.message;
-
-        if (data.status == 0) {
-          var xhttp = xhr;
-          xhttp.open(
-            "Post",
-            "https://ajrkhan.xyz/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
-          );
-          xhttp.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded",
-          );
-
-          var Assessment = "EQ+ Assessment";
-          xhttp.send(
-            "name=" +
-              event.target.name.value +
-              "&email=" +
-              email +
-              "&phone=" +
-              phone +
-              "&organization=" +
-              organization +
-              "&assessment=" +
-              Assessment +
-              "&result=" +
-              result,
-          );
-
-          window.setTimeout(function () {
-            window.location.href = `/thank-you`;
-          }, 1000);
+      // ✅ collect answers safely
+      const data = {};
+      for (let i = 1; i <= 20; i++) {
+        const value = form[`q${i}`]?.value;
+        if (!value) {
+          throw new Error("Please answer all questions");
         }
-      } else {
-        document.getElementById("response").innerHTML = "Fetching your result";
-        setTimeout(function () {
-          document.getElementById("response").innerHTML = "";
-          document.getElementById("submitbuttonform").value = "Submit";
-        }, 3000);
+        data[`q${i}`] = value;
       }
-    };
 
-    xhr.onerror = function () {
-      console.log("error");
-    };
+      const name = form.name.value.trim();
+      const organization = form.organization.value.trim();
+
+      if (!name || !organization) {
+        throw new Error("All fields are required");
+      }
+
+      // ✅ dynamic values
+      const phone = "0000000000";
+      const email = `user_${Date.now()}@dummy.com`;
+
+      const nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
+      const newnameurl = nameurl.split(" ").join("-") + phone;
+
+      const result = `https://byldgroup.com/eq/eq-assessment3/${newnameurl}`;
+
+      const payload = new URLSearchParams({
+        ...data,
+        name,
+        email,
+        phone,
+        organization,
+        newnameurl,
+      });
+
+      // ✅ API 1
+      const res = await fetch(
+        "https://byldblogs.vercel.app/api/dtci-assessment",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: payload,
+        }
+      );
+
+      if (!res.ok) throw new Error("Server error. Try again.");
+
+      const resultData = await res.json();
+      setMessage(resultData.message || "Submitted successfully");
+
+      // ✅ API 2
+      if (resultData.status == 0) {
+        await fetch(
+          "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: new URLSearchParams({
+              name,
+              email,
+              phone,
+              organization,
+              assessment: "EQ+ Assessment",
+              result,
+            }),
+          }
+        );
+
+        // ✅ redirect
+        setTimeout(() => {
+          window.location.href = "/thank-you";
+        }, 1000);
+      }
+    } catch (error) {
+      setMessage(error.message || "Something went wrong");
+    } finally {
+      setLoading(false);
+    }
   };
+
   function logmaintane(
     nameabc,
     phoneabc,
@@ -2007,14 +2103,24 @@ export default function BrowseCourses() {
                       />
                     </div>
                     <div className="col-sm-12">
-                      <input
+                      {/*<input
                         type="submit"
                         value="Submit"
                         id="submitbuttonform"
                         class="assesmetmain"
                         tabindex="201"
-                      />
-                      <p class="feedbackcolor" id="response"></p>
+                      />*/}
+                        <input
+                      type="submit"
+                      value={loading ? "Submitting..." : "Submit"}
+                      disabled={loading}
+                      id="submitbuttonform"
+                       class="assesmetmain"
+                        tabindex="201"
+                    />
+                      {/* ✅ clean message handling */}
+                      {message && <p className="feedbackcolor">{message}</p>}
+                      {/* <p class="feedbackcolor" id="response"></p> */}
                     </div>
                   </div>
                 </div>
