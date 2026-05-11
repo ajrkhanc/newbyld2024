@@ -156,19 +156,16 @@ export default function BrowseCourses() {
               "&result=" +
               result,
           );
-
-          window.setTimeout(function () {
-            window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
-            setIsLoading(false); // Stop the loader after redirecting
-          }, 6000);
         }
+
+        window.setTimeout(function () {
+          window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+          setIsLoading(false);
+        }, 6000);
       } else {
         setTimeout(function () {
-          document.getElementById("response").innerHTML =
-            "Fetching your result";
-          document.getElementById("response").innerHTML = "";
-          document.getElementById("submitbuttonform").value = "Submit";
-          setIsLoading(false); // Stop the loader on error
+          window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+          setIsLoading(false);
         }, 8000);
       }
     };
