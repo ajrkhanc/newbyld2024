@@ -179,186 +179,382 @@ export default function BrowseCourses() {
   //   };
   // };
 
+  // const submitF = async (event) => {
+  //   event.preventDefault();
+
+  //   setIsLoading(true);
+  //   document.getElementById("submitbuttonform").value = "Submitting form....";
+
+  //   var trust1 = event.target.trust1.value;
+  //   var trust2 = event.target.trust2.value;
+  //   var trust3 = event.target.trust3.value;
+  //   var trust4 = event.target.trust4.value;
+  //   var trust5 = event.target.trust5.value;
+
+  //   var ec1 = event.target.ec1.value;
+  //   var ec2 = event.target.ec2.value;
+  //   var ec3 = event.target.ec3.value;
+  //   var ec4 = event.target.ec4.value;
+  //   var ec5 = event.target.ec5.value;
+  //   var ec6 = event.target.ec6.value;
+  //   var ec7 = event.target.ec7.value;
+  //   var ec8 = event.target.ec8.value;
+  //   var ec9 = event.target.ec9.value;
+  //   var ec10 = event.target.ec10.value;
+  //   var ec11 = event.target.ec11.value;
+  //   var ec12 = event.target.ec12.value;
+  //   var ec13 = event.target.ec13.value;
+  //   var ec14 = event.target.ec14.value;
+
+  //   var pf1 = event.target.pf1.value;
+  //   var pf2 = event.target.pf2.value;
+  //   var pf3 = event.target.pf3.value;
+  //   var pf4 = event.target.pf4.value;
+  //   var pf5 = event.target.pf5.value;
+  //   var pf6 = event.target.pf6.value;
+
+  //   var cr1 = event.target.cr1.value;
+  //   var cr2 = event.target.cr2.value;
+  //   var cr3 = event.target.cr3.value;
+  //   var cr4 = event.target.cr4.value;
+  //   var cr5 = event.target.cr5.value;
+
+  //   var organization = "Null";
+
+  //   const name = event.target.name.value;
+  //   const email = event.target.email.value;
+  //   const phone = event.target.phone.value;
+
+  //   // SAFE URL
+  //   var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
+  //   nameurl = nameurl.toLowerCase();
+
+  //   const uniqueId = Date.now();
+
+  //   // phone/email hide
+  //   const newnameurl = `${nameurl.split(" ").join("-")}-${uniqueId}`;
+
+  //   const result = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
+
+  //   var xhr = new XMLHttpRequest();
+
+  //   xhr.open("POST", "https://clblogs.vercel.app/api/career-coaching-snapshot");
+
+  //   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+  //   xhr.send(
+  //     "trust1=" +
+  //       encodeURIComponent(trust1) +
+  //       "&trust2=" +
+  //       encodeURIComponent(trust2) +
+  //       "&trust3=" +
+  //       encodeURIComponent(trust3) +
+  //       "&trust4=" +
+  //       encodeURIComponent(trust4) +
+  //       "&trust5=" +
+  //       encodeURIComponent(trust5) +
+  //       "&ec1=" +
+  //       encodeURIComponent(ec1) +
+  //       "&ec2=" +
+  //       encodeURIComponent(ec2) +
+  //       "&ec3=" +
+  //       encodeURIComponent(ec3) +
+  //       "&ec4=" +
+  //       encodeURIComponent(ec4) +
+  //       "&ec5=" +
+  //       encodeURIComponent(ec5) +
+  //       "&ec6=" +
+  //       encodeURIComponent(ec6) +
+  //       "&ec7=" +
+  //       encodeURIComponent(ec7) +
+  //       "&ec8=" +
+  //       encodeURIComponent(ec8) +
+  //       "&ec9=" +
+  //       encodeURIComponent(ec9) +
+  //       "&ec10=" +
+  //       encodeURIComponent(ec10) +
+  //       "&ec11=" +
+  //       encodeURIComponent(ec11) +
+  //       "&ec12=" +
+  //       encodeURIComponent(ec12) +
+  //       "&ec13=" +
+  //       encodeURIComponent(ec13) +
+  //       "&ec14=" +
+  //       encodeURIComponent(ec14) +
+  //       "&pf1=" +
+  //       encodeURIComponent(pf1) +
+  //       "&pf2=" +
+  //       encodeURIComponent(pf2) +
+  //       "&pf3=" +
+  //       encodeURIComponent(pf3) +
+  //       "&pf4=" +
+  //       encodeURIComponent(pf4) +
+  //       "&pf5=" +
+  //       encodeURIComponent(pf5) +
+  //       "&pf6=" +
+  //       encodeURIComponent(pf6) +
+  //       "&cr1=" +
+  //       encodeURIComponent(cr1) +
+  //       "&cr2=" +
+  //       encodeURIComponent(cr2) +
+  //       "&cr3=" +
+  //       encodeURIComponent(cr3) +
+  //       "&cr4=" +
+  //       encodeURIComponent(cr4) +
+  //       "&cr5=" +
+  //       encodeURIComponent(cr5) +
+  //       "&name=" +
+  //       encodeURIComponent(name) +
+  //       "&email=" +
+  //       encodeURIComponent(email) +
+  //       "&phone=" +
+  //       encodeURIComponent(phone) +
+  //       "&organization=" +
+  //       encodeURIComponent(organization) +
+  //       "&newnameurl=" +
+  //       encodeURIComponent(newnameurl),
+  //   );
+
+  //   // logmaintane(name, phone, email, organization, "IOC-assessment", result);
+
+  //   xhr.onreadystatechange = function () {
+  //     if (xhr.readyState === 4) {
+  //       console.log("STATUS:", xhr.status);
+  //       console.log("RESPONSE:", xhr.responseText);
+
+  //       setIsLoading(false);
+
+  //       if (xhr.status === 200) {
+  //         try {
+  //           var data = JSON.parse(xhr.responseText);
+
+  //           console.log(data);
+
+  //           document.getElementById("response").innerHTML =
+  //             data.message || "Submitted Successfully";
+
+  //           // redirect directly
+  //           window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+  //         } catch (e) {
+  //           console.log("JSON ERROR", e);
+
+  //           document.getElementById("response").innerHTML =
+  //             "Invalid server response";
+  //         }
+  //       } else {
+  //         document.getElementById("response").innerHTML =
+  //           "Server Error: " + xhr.status;
+  //       }
+
+  //       document.getElementById("submitbuttonform").value = "Submit";
+  //     }
+  //   };
+
+  //   xhr.onerror = function () {
+  //     console.log("error");
+
+  //     setIsLoading(false);
+
+  //     document.getElementById("response").innerHTML =
+  //       "Network error. Please try again.";
+  //   };
+  // };
+
   const submitF = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
-    setIsLoading(true);
-    document.getElementById("submitbuttonform").value = "Submitting form....";
+  setIsLoading(true);
 
-    var trust1 = event.target.trust1.value;
-    var trust2 = event.target.trust2.value;
-    var trust3 = event.target.trust3.value;
-    var trust4 = event.target.trust4.value;
-    var trust5 = event.target.trust5.value;
+  document.getElementById("submitbuttonform").value =
+    "Submitting form....";
 
-    var ec1 = event.target.ec1.value;
-    var ec2 = event.target.ec2.value;
-    var ec3 = event.target.ec3.value;
-    var ec4 = event.target.ec4.value;
-    var ec5 = event.target.ec5.value;
-    var ec6 = event.target.ec6.value;
-    var ec7 = event.target.ec7.value;
-    var ec8 = event.target.ec8.value;
-    var ec9 = event.target.ec9.value;
-    var ec10 = event.target.ec10.value;
-    var ec11 = event.target.ec11.value;
-    var ec12 = event.target.ec12.value;
-    var ec13 = event.target.ec13.value;
-    var ec14 = event.target.ec14.value;
+  // FORM VALUES
+  var trust1 = event.target.trust1.value;
+  var trust2 = event.target.trust2.value;
+  var trust3 = event.target.trust3.value;
+  var trust4 = event.target.trust4.value;
+  var trust5 = event.target.trust5.value;
 
-    var pf1 = event.target.pf1.value;
-    var pf2 = event.target.pf2.value;
-    var pf3 = event.target.pf3.value;
-    var pf4 = event.target.pf4.value;
-    var pf5 = event.target.pf5.value;
-    var pf6 = event.target.pf6.value;
+  var ec1 = event.target.ec1.value;
+  var ec2 = event.target.ec2.value;
+  var ec3 = event.target.ec3.value;
+  var ec4 = event.target.ec4.value;
+  var ec5 = event.target.ec5.value;
+  var ec6 = event.target.ec6.value;
+  var ec7 = event.target.ec7.value;
+  var ec8 = event.target.ec8.value;
+  var ec9 = event.target.ec9.value;
+  var ec10 = event.target.ec10.value;
+  var ec11 = event.target.ec11.value;
+  var ec12 = event.target.ec12.value;
+  var ec13 = event.target.ec13.value;
+  var ec14 = event.target.ec14.value;
 
-    var cr1 = event.target.cr1.value;
-    var cr2 = event.target.cr2.value;
-    var cr3 = event.target.cr3.value;
-    var cr4 = event.target.cr4.value;
-    var cr5 = event.target.cr5.value;
+  var pf1 = event.target.pf1.value;
+  var pf2 = event.target.pf2.value;
+  var pf3 = event.target.pf3.value;
+  var pf4 = event.target.pf4.value;
+  var pf5 = event.target.pf5.value;
+  var pf6 = event.target.pf6.value;
 
-    var organization = "Null";
+  var cr1 = event.target.cr1.value;
+  var cr2 = event.target.cr2.value;
+  var cr3 = event.target.cr3.value;
+  var cr4 = event.target.cr4.value;
+  var cr5 = event.target.cr5.value;
 
-    const name = event.target.name.value;
-    const email = event.target.email.value;
-    const phone = event.target.phone.value;
+  const name = event.target.name.value;
+  const email = event.target.email.value;
+  const phone = event.target.phone.value;
 
-    // SAFE URL
-    var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
-    nameurl = nameurl.toLowerCase();
+  const organization = "Null";
 
-    const uniqueId = Date.now();
+  // URL SAFE NAME
+  var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
+  nameurl = nameurl.toLowerCase();
 
-    // phone/email hide
-    const newnameurl = `${nameurl.split(" ").join("-")}-${uniqueId}`;
+  // DUMMY PHONE ONLY FOR URL
+  const dummyPhone = "9999999999";
 
-    const result = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
+  // BACKEND COMPATIBLE URL
+  const newnameurl = nameurl.split(" ").join("-") + dummyPhone;
 
-    var xhr = new XMLHttpRequest();
+  const result = `https://byldgroup.com/coaching/coaching-snapshot-pre-program-assessment/${newnameurl}`;
 
-    xhr.open("POST", "https://clblogs.vercel.app/api/career-coaching-snapshot");
+  // MAIN API
+  var xhr = new XMLHttpRequest();
 
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.open(
+    "POST",
+    "https://clblogs.vercel.app/api/career-coaching-snapshot",
+    true
+  );
 
-    xhr.send(
-      "trust1=" +
-        encodeURIComponent(trust1) +
-        "&trust2=" +
-        encodeURIComponent(trust2) +
-        "&trust3=" +
-        encodeURIComponent(trust3) +
-        "&trust4=" +
-        encodeURIComponent(trust4) +
-        "&trust5=" +
-        encodeURIComponent(trust5) +
-        "&ec1=" +
-        encodeURIComponent(ec1) +
-        "&ec2=" +
-        encodeURIComponent(ec2) +
-        "&ec3=" +
-        encodeURIComponent(ec3) +
-        "&ec4=" +
-        encodeURIComponent(ec4) +
-        "&ec5=" +
-        encodeURIComponent(ec5) +
-        "&ec6=" +
-        encodeURIComponent(ec6) +
-        "&ec7=" +
-        encodeURIComponent(ec7) +
-        "&ec8=" +
-        encodeURIComponent(ec8) +
-        "&ec9=" +
-        encodeURIComponent(ec9) +
-        "&ec10=" +
-        encodeURIComponent(ec10) +
-        "&ec11=" +
-        encodeURIComponent(ec11) +
-        "&ec12=" +
-        encodeURIComponent(ec12) +
-        "&ec13=" +
-        encodeURIComponent(ec13) +
-        "&ec14=" +
-        encodeURIComponent(ec14) +
-        "&pf1=" +
-        encodeURIComponent(pf1) +
-        "&pf2=" +
-        encodeURIComponent(pf2) +
-        "&pf3=" +
-        encodeURIComponent(pf3) +
-        "&pf4=" +
-        encodeURIComponent(pf4) +
-        "&pf5=" +
-        encodeURIComponent(pf5) +
-        "&pf6=" +
-        encodeURIComponent(pf6) +
-        "&cr1=" +
-        encodeURIComponent(cr1) +
-        "&cr2=" +
-        encodeURIComponent(cr2) +
-        "&cr3=" +
-        encodeURIComponent(cr3) +
-        "&cr4=" +
-        encodeURIComponent(cr4) +
-        "&cr5=" +
-        encodeURIComponent(cr5) +
-        "&name=" +
-        encodeURIComponent(name) +
-        "&email=" +
-        encodeURIComponent(email) +
-        "&phone=" +
-        encodeURIComponent(phone) +
-        "&organization=" +
-        encodeURIComponent(organization) +
-        "&newnameurl=" +
-        encodeURIComponent(newnameurl),
-    );
+  xhr.setRequestHeader(
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+  );
 
-    // logmaintane(name, phone, email, organization, "IOC-assessment", result);
+  const params =
+    "trust1=" + encodeURIComponent(trust1) +
+    "&trust2=" + encodeURIComponent(trust2) +
+    "&trust3=" + encodeURIComponent(trust3) +
+    "&trust4=" + encodeURIComponent(trust4) +
+    "&trust5=" + encodeURIComponent(trust5) +
+    "&ec1=" + encodeURIComponent(ec1) +
+    "&ec2=" + encodeURIComponent(ec2) +
+    "&ec3=" + encodeURIComponent(ec3) +
+    "&ec4=" + encodeURIComponent(ec4) +
+    "&ec5=" + encodeURIComponent(ec5) +
+    "&ec6=" + encodeURIComponent(ec6) +
+    "&ec7=" + encodeURIComponent(ec7) +
+    "&ec8=" + encodeURIComponent(ec8) +
+    "&ec9=" + encodeURIComponent(ec9) +
+    "&ec10=" + encodeURIComponent(ec10) +
+    "&ec11=" + encodeURIComponent(ec11) +
+    "&ec12=" + encodeURIComponent(ec12) +
+    "&ec13=" + encodeURIComponent(ec13) +
+    "&ec14=" + encodeURIComponent(ec14) +
+    "&pf1=" + encodeURIComponent(pf1) +
+    "&pf2=" + encodeURIComponent(pf2) +
+    "&pf3=" + encodeURIComponent(pf3) +
+    "&pf4=" + encodeURIComponent(pf4) +
+    "&pf5=" + encodeURIComponent(pf5) +
+    "&pf6=" + encodeURIComponent(pf6) +
+    "&cr1=" + encodeURIComponent(cr1) +
+    "&cr2=" + encodeURIComponent(cr2) +
+    "&cr3=" + encodeURIComponent(cr3) +
+    "&cr4=" + encodeURIComponent(cr4) +
+    "&cr5=" + encodeURIComponent(cr5) +
+    "&name=" + encodeURIComponent(name) +
+    "&email=" + encodeURIComponent(email) +
+    "&phone=" + encodeURIComponent(phone) +
+    "&organization=" + encodeURIComponent(organization) +
+    "&newnameurl=" + encodeURIComponent(newnameurl);
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        console.log("STATUS:", xhr.status);
-        console.log("RESPONSE:", xhr.responseText);
+  xhr.send(params);
 
-        setIsLoading(false);
+  // LOG API
+  logmaintane(
+    name,
+    phone,
+    email,
+    organization,
+    "IOC-assessment",
+    result
+  );
 
-        if (xhr.status === 200) {
-          try {
-            var data = JSON.parse(xhr.responseText);
-
-            console.log(data);
-
-            document.getElementById("response").innerHTML =
-              data.message || "Submitted Successfully";
-
-            // redirect directly
-            window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
-          } catch (e) {
-            console.log("JSON ERROR", e);
-
-            document.getElementById("response").innerHTML =
-              "Invalid server response";
-          }
-        } else {
-          document.getElementById("response").innerHTML =
-            "Server Error: " + xhr.status;
-        }
-
-        document.getElementById("submitbuttonform").value = "Submit";
-      }
-    };
-
-    xhr.onerror = function () {
-      console.log("error");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
 
       setIsLoading(false);
 
-      document.getElementById("response").innerHTML =
-        "Network error. Please try again.";
-    };
+      document.getElementById("submitbuttonform").value =
+        "Submit";
+
+      console.log(xhr.responseText);
+
+      if (xhr.status === 200) {
+
+        try {
+
+          const data = JSON.parse(xhr.responseText);
+
+          document.getElementById("response").innerHTML =
+            data.message || "Submitted Successfully";
+
+          // CF7 API
+          var xhttp = new XMLHttpRequest();
+
+          xhttp.open(
+            "POST",
+            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback",
+            true
+          );
+
+          xhttp.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded"
+          );
+
+          xhttp.send(
+            "name=" + encodeURIComponent(name) +
+            "&email=" + encodeURIComponent(email) +
+            "&phone=" + encodeURIComponent(phone) +
+            "&result=" + encodeURIComponent(result)
+          );
+
+          // REDIRECT
+          window.location.href =
+            `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+
+        } catch (error) {
+
+          console.log(error);
+
+          document.getElementById("response").innerHTML =
+            "Invalid server response";
+        }
+
+      } else {
+
+        document.getElementById("response").innerHTML =
+          "Server Error";
+      }
+    }
   };
+
+  xhr.onerror = function () {
+
+    setIsLoading(false);
+
+    document.getElementById("submitbuttonform").value =
+      "Submit";
+
+    document.getElementById("response").innerHTML =
+      "Network error";
+  };
+};
 
   function logmaintane(
     nameabc,
