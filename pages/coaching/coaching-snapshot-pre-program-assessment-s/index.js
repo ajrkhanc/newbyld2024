@@ -126,7 +126,7 @@ export default function BrowseCourses() {
         "&organization=" +
         organization +
         "&newnameurl=" +
-        newnameurl
+        newnameurl,
     );
 
     logmaintane(name, phone, email, organization, "IOC-assessment", result);
@@ -140,11 +140,11 @@ export default function BrowseCourses() {
           var xhttp = xhr;
           xhttp.open(
             "POST",
-            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback"
+            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback",
           );
           xhttp.setRequestHeader(
             "Content-Type",
-            "application/x-www-form-urlencoded"
+            "application/x-www-form-urlencoded",
           );
           xhttp.send(
             "name=" +
@@ -154,7 +154,7 @@ export default function BrowseCourses() {
               "&phone=" +
               phone +
               "&result=" +
-              result
+              result,
           );
 
           window.setTimeout(function () {
@@ -185,7 +185,7 @@ export default function BrowseCourses() {
     emailabc,
     organizationabc,
     assessmentabc,
-    resultabc
+    resultabc,
   ) {
     var person = new Object();
     person.name = nameabc;
@@ -211,8 +211,6 @@ export default function BrowseCourses() {
       },
     });
   }
-
-
 
   // const [isLoading, setIsLoading] = useState(false);
 
@@ -2699,7 +2697,7 @@ export default function BrowseCourses() {
 
                 <div className="fcol1 lastinp ptt-20">
                   <div className="row inpuut">
-                    <div className="col-sm-12 mb-12">
+                    <div className="col-sm-4 mb-12">
                       <input
                         className="form-control"
                         type="text"
@@ -2708,16 +2706,8 @@ export default function BrowseCourses() {
                         required
                       />
                     </div>
-                    <input
-                      type="hidden"
-                      name="email"
-                      defaultValue=""
-                    />
-                    <input
-                      type="hidden"
-                      name="phone"
-                      defaultValue=""
-                    />
+                    <input type="hidden" name="email" defaultValue="" />
+                    <input type="hidden" name="phone" defaultValue="" />
 
                     <div className="col-sm-12">
                       <input
