@@ -315,50 +315,36 @@ export default function BrowseCourses() {
         encodeURIComponent(newnameurl),
     );
 
-    logmaintane(name, phone, email, organization, "IOC-assessment", result);
+    // logmaintane(name, phone, email, organization, "IOC-assessment", result);
 
     xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        var data = JSON.parse(xhr.responseText);
+      if (xhr.readyState === 4) {
+        console.log("STATUS:", xhr.status);
+        console.log("RESPONSE:", xhr.responseText);
 
-        console.log(data);
-
-        document.getElementById("response").innerHTML = data.message;
-
-        if (data) {
-          // CF7
-          var xhttp = new XMLHttpRequest();
-
-          xhttp.open(
-            "POST",
-            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback",
-          );
-
-          xhttp.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded",
-          );
-
-          xhttp.send(
-            "name=" +
-              encodeURIComponent(name) +
-              "&email=" +
-              encodeURIComponent(email) +
-              "&phone=" +
-              encodeURIComponent(phone) +
-              "&result=" +
-              encodeURIComponent(result),
-          );
-
-          setIsLoading(false);
-
-          // redirect
-          window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
-        }
-      } else if (xhr.readyState === 4) {
         setIsLoading(false);
 
-        document.getElementById("response").innerHTML = "Something went wrong";
+        if (xhr.status === 200) {
+          try {
+            var data = JSON.parse(xhr.responseText);
+
+            console.log(data);
+
+            document.getElementById("response").innerHTML =
+              data.message || "Submitted Successfully";
+
+            // redirect directly
+            window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
+          } catch (e) {
+            console.log("JSON ERROR", e);
+
+            document.getElementById("response").innerHTML =
+              "Invalid server response";
+          }
+        } else {
+          document.getElementById("response").innerHTML =
+            "Server Error: " + xhr.status;
+        }
 
         document.getElementById("submitbuttonform").value = "Submit";
       }
