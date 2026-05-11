@@ -318,55 +318,49 @@ export default function BrowseCourses() {
     logmaintane(name, phone, email, organization, "IOC-assessment", result);
 
     xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText);
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var data = JSON.parse(xhr.responseText);
 
-          document.getElementById("response").innerHTML = data.message;
+        console.log(data);
 
-          if (data.status === 0) {
-            // SEND CF7 DATA
-            var xhttp = new XMLHttpRequest();
+        document.getElementById("response").innerHTML = data.message;
 
-            xhttp.open(
-              "POST",
-              "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback",
-            );
+        if (data) {
+          // CF7
+          var xhttp = new XMLHttpRequest();
 
-            xhttp.setRequestHeader(
-              "Content-Type",
-              "application/x-www-form-urlencoded",
-            );
+          xhttp.open(
+            "POST",
+            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback",
+          );
 
-            xhttp.send(
-              "name=" +
-                encodeURIComponent(name) +
-                "&email=" +
-                encodeURIComponent(email) +
-                "&phone=" +
-                encodeURIComponent(phone) +
-                "&result=" +
-                encodeURIComponent(result),
-            );
+          xhttp.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded",
+          );
 
-            // DIRECT RESULT PAGE REDIRECT
-            setIsLoading(false);
+          xhttp.send(
+            "name=" +
+              encodeURIComponent(name) +
+              "&email=" +
+              encodeURIComponent(email) +
+              "&phone=" +
+              encodeURIComponent(phone) +
+              "&result=" +
+              encodeURIComponent(result),
+          );
 
-            window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
-          } else {
-            setIsLoading(false);
-
-            document.getElementById("response").innerHTML =
-              "Something went wrong.";
-          }
-        } else {
           setIsLoading(false);
 
-          document.getElementById("response").innerHTML =
-            "Server error. Please try again.";
-
-          document.getElementById("submitbuttonform").value = "Submit";
+          // redirect
+          window.location.href = `/coaching/coaching-snapshot-pre-program-assessment-s/${newnameurl}`;
         }
+      } else if (xhr.readyState === 4) {
+        setIsLoading(false);
+
+        document.getElementById("response").innerHTML = "Something went wrong";
+
+        document.getElementById("submitbuttonform").value = "Submit";
       }
     };
 
