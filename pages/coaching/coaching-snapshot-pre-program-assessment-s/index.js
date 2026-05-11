@@ -43,11 +43,14 @@ export default function BrowseCourses() {
     var cr3 = event.target.cr3.value;
     var cr4 = event.target.cr4.value;
     var cr5 = event.target.cr5.value;
-
+    const timestamp = Date.now();
     var organization = "Null";
     const name = event.target.name.value;
-    const email = event.target.email.value;
-    const phone = event.target.phone.value;
+    // const email = event.target.email.value;
+    // const phone = event.target.phone.value;
+    // unique dummy values
+    const email = `user${timestamp}@gmail.com`;
+    const phone = `99999${Math.floor(10000 + Math.random() * 90000)}`;
     var nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "");
     nameurl = nameurl.toLowerCase();
     const newnameurl = nameurl.split(" ").join("-") + phone;
@@ -126,7 +129,7 @@ export default function BrowseCourses() {
         "&organization=" +
         organization +
         "&newnameurl=" +
-        newnameurl
+        newnameurl,
     );
 
     logmaintane(name, phone, email, organization, "IOC-assessment", result);
@@ -140,11 +143,11 @@ export default function BrowseCourses() {
           var xhttp = xhr;
           xhttp.open(
             "POST",
-            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback"
+            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/66/feedback",
           );
           xhttp.setRequestHeader(
             "Content-Type",
-            "application/x-www-form-urlencoded"
+            "application/x-www-form-urlencoded",
           );
           xhttp.send(
             "name=" +
@@ -154,7 +157,7 @@ export default function BrowseCourses() {
               "&phone=" +
               phone +
               "&result=" +
-              result
+              result,
           );
 
           window.setTimeout(function () {
@@ -185,7 +188,7 @@ export default function BrowseCourses() {
     emailabc,
     organizationabc,
     assessmentabc,
-    resultabc
+    resultabc,
   ) {
     var person = new Object();
     person.name = nameabc;
@@ -211,8 +214,6 @@ export default function BrowseCourses() {
       },
     });
   }
-
-
 
   // const [isLoading, setIsLoading] = useState(false);
 
@@ -2711,7 +2712,7 @@ export default function BrowseCourses() {
                     <div className="col-sm-4 mb-12">
                       <input
                         className="form-control"
-                        type="email"
+                        type="hidden"
                         name="email"
                         placeholder="Work Email/Email*"
                         required
@@ -2720,7 +2721,7 @@ export default function BrowseCourses() {
                     <div className="col-sm-4 mb-12">
                       <input
                         className="form-control"
-                        type="text"
+                        type="hidden"
                         name="phone"
                         maxlength="10"
                         minlength="10"
