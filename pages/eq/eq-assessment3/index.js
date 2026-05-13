@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 
 export default function BrowseCourses() {
-   const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   // const submitF = async (event) => {
   //   event.preventDefault();
@@ -145,24 +145,125 @@ export default function BrowseCourses() {
   //   };
   // };
 
- const submitF = async (event) => {
+  //  const submitF = async (event) => {
+  //     event.preventDefault();
+  //     setLoading(true);
+  //     setMessage("");
+
+  //     try {
+  //       const form = event.target;
+
+  //       // ✅ collect answers safely
+  //       const data = {};
+  //       for (let i = 1; i <= 20; i++) {
+  //         const value = form[`q${i}`]?.value;
+  //         if (!value) {
+  //           throw new Error("Please answer all questions");
+  //         }
+  //         data[`q${i}`] = value;
+  //       }
+
+  //       const name = form.name.value.trim();
+  //       const organization = form.organization.value.trim();
+
+  //       if (!name || !organization) {
+  //         throw new Error("All fields are required");
+  //       }
+
+  //       // ✅ dynamic values
+  //       const phone = "0000000000";
+  //       const email = `user_${Date.now()}@dummy.com`;
+
+  //       const nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
+  //       const newnameurl = nameurl.split(" ").join("-") + phone;
+
+  //       const result = `https://byldgroup.com/eq/eq-assessment3/${newnameurl}`;
+
+  //       const payload = new URLSearchParams({
+  //         ...data,
+  //         name,
+  //         email,
+  //         phone,
+  //         organization,
+  //         newnameurl,
+  //       });
+
+  //       // ✅ API 1
+  //       const res = await fetch(
+  //         "https://byldblogs.vercel.app/api/dtci-assessment",
+  //         {
+  //           method: "POST",
+  //           headers: {
+  //             "Content-Type": "application/x-www-form-urlencoded",
+  //           },
+  //           body: payload,
+  //         }
+  //       );
+
+  //       if (!res.ok) throw new Error("Server error. Try again.");
+
+  //       const resultData = await res.json();
+  //       setMessage(resultData.message || "Submitted successfully");
+
+  //       // ✅ API 2
+  //       if (resultData.status == 0) {
+  //         await fetch(
+  //           "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
+  //           {
+  //             method: "POST",
+  //             headers: {
+  //               "Content-Type": "application/x-www-form-urlencoded",
+  //             },
+  //             body: new URLSearchParams({
+  //               name,
+  //               email,
+  //               phone,
+  //               organization,
+  //               assessment: "EQ+ Assessment",
+  //               result,
+  //             }),
+  //           }
+  //         );
+
+  //         // ✅ redirect
+  //         setTimeout(() => {
+  //           window.location.href = "/thank-you";
+  //         }, 1000);
+  //       }
+  //     } catch (error) {
+  //       setMessage(error.message || "Something went wrong");
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  const submitF = async (event) => {
     event.preventDefault();
+
     setLoading(true);
     setMessage("");
 
     try {
       const form = event.target;
 
-      // ✅ collect answers safely
+      // =========================
+      // Collect Questions
+      // =========================
       const data = {};
+
       for (let i = 1; i <= 20; i++) {
         const value = form[`q${i}`]?.value;
+
         if (!value) {
           throw new Error("Please answer all questions");
         }
+
         data[`q${i}`] = value;
       }
 
+      // =========================
+      // User Details
+      // =========================
       const name = form.name.value.trim();
       const organization = form.organization.value.trim();
 
@@ -170,15 +271,28 @@ export default function BrowseCourses() {
         throw new Error("All fields are required");
       }
 
-      // ✅ dynamic values
+      // =========================
+      // Hidden Dummy Values
+      // =========================
       const phone = "0000000000";
       const email = `user_${Date.now()}@dummy.com`;
 
+      // =========================
+      // URL Slug
+      // =========================
       const nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
+
       const newnameurl = nameurl.split(" ").join("-") + phone;
 
-      const result = `https://byldgroup.com/eq/eq-assessment3/${newnameurl}`;
+      // =========================
+      // RESULT PAGE URL
+      // IMPORTANT FIX
+      // =========================
+      const result = `https://payments.byldgroup.com/Assessment/EQAssessment/${newnameurl}`;
 
+      // =========================
+      // Payload
+      // =========================
       const payload = new URLSearchParams({
         ...data,
         name,
@@ -188,7 +302,9 @@ export default function BrowseCourses() {
         newnameurl,
       });
 
-      // ✅ API 1
+      // =========================
+      // SAVE DATA API
+      // =========================
       const res = await fetch(
         "https://byldblogs.vercel.app/api/dtci-assessment",
         {
@@ -197,40 +313,60 @@ export default function BrowseCourses() {
             "Content-Type": "application/x-www-form-urlencoded",
           },
           body: payload,
-        }
+        },
       );
 
-      if (!res.ok) throw new Error("Server error. Try again.");
+      if (!res.ok) {
+        throw new Error("Server Error");
+      }
 
       const resultData = await res.json();
-      setMessage(resultData.message || "Submitted successfully");
 
-      // ✅ API 2
-      if (resultData.status == 0) {
-        await fetch(
-          "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
+      console.log("API RESPONSE =>", resultData);
+
+      setMessage(resultData.message || "Submitted Successfully");
+
+      // =========================
+      // SUCCESS
+      // =========================
+      if (resultData.status == 0 || resultData.success || resultData.message) {
+        // =========================
+        // SEND TO CF7
+        // =========================
+        try {
+          await fetch(
+            "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: new URLSearchParams({
+                name,
+                email,
+                phone,
+                organization,
+                assessment: "EQ+ Assessment",
+                result,
+              }),
             },
-            body: new URLSearchParams({
-              name,
-              email,
-              phone,
-              organization,
-              assessment: "EQ+ Assessment",
-              result,
-            }),
-          }
-        );
+          );
+        } catch (err) {
+          console.log("CF7 API Error", err);
+        }
 
-        // ✅ redirect
+        // =========================
+        // THANK YOU PAGE
+        // =========================
         setTimeout(() => {
           window.location.href = "/thank-you";
         }, 1000);
+      } else {
+        throw new Error(resultData.message || "Submission Failed");
       }
     } catch (error) {
+      console.log(error);
+
       setMessage(error.message || "Something went wrong");
     } finally {
       setLoading(false);
@@ -2110,14 +2246,14 @@ export default function BrowseCourses() {
                         class="assesmetmain"
                         tabindex="201"
                       />*/}
-                        <input
-                      type="submit"
-                      value={loading ? "Submitting..." : "Submit"}
-                      disabled={loading}
-                      id="submitbuttonform"
-                       class="assesmetmain"
+                      <input
+                        type="submit"
+                        value={loading ? "Submitting..." : "Submit"}
+                        disabled={loading}
+                        id="submitbuttonform"
+                        class="assesmetmain"
                         tabindex="201"
-                    />
+                      />
                       {/* ✅ clean message handling */}
                       {message && <p className="feedbackcolor">{message}</p>}
                       {/* <p class="feedbackcolor" id="response"></p> */}
