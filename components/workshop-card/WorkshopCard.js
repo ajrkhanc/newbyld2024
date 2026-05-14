@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { BiCalendar, BiMap, BiGlobe } from "react-icons/bi";
-import { RiMoneyRupeeCircleFill } from "react-icons/ri";
-import { FaRegCalendarDays } from "react-icons/fa6";
+import { FaRegCalendarDays, FaUserCircle } from "react-icons/fa6";
 import { Button } from "reactstrap";
 import BookNowFormModal from "../BookNowFromModal/BookNowFromModal";
 import WorkShopCalenderList from "../ByldWorkShopPdf/WorkShopCalenderList";
@@ -260,24 +259,12 @@ function WorkshopCard() {
                       <span className="ms-2">{workshop.format}</span>
                     </div>
                     <div className="d-flex align-items-center ml-15">
-                      <RiMoneyRupeeCircleFill />
-                      <span className="ms-2">
-                        {workshop.amount} <span>(Inclusive of GST)</span>{" "}
-                      </span>
+                      <FaUserCircle />
+                      <span className="ms-2">{workshop.trainerName}</span>
                     </div>
                   </div>
 
-                  <p className="mt-3 fs-18">
-                    {workshop.description}{" "}
-                    <a
-                      href={workshop.pageUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {" "}
-                      Know More
-                    </a>{" "}
-                  </p>
+                  <p className="mt-3 fs-18">{workshop.description}</p>
                   <hr className="mt-0" />
                   <Button
                     className="orangebtn"
@@ -332,13 +319,11 @@ const workshops = [
   {
     id: 1,
     courseName: "Getting Things Done®",
-    dateRangeOne: "August 29, 2025",
+    dateRangeOne: "May 22, 2026",
     dateRangeTwo: "",
     location: "India",
     format: "Virtual",
-    amount: 28910,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
+    trainerName: "Trainer Name",
     description:
       "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
   },
@@ -349,9 +334,7 @@ const workshops = [
     dateRangeTwo: "July 29, 2025",
     location: "India | Bangalore",
     format: "In Person",
-    amount: 41300,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    trainerName: "Trainer Name",
     description:
       "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   },
@@ -399,9 +382,7 @@ const workshops = [
     dateRangeTwo: "August  29, 2025",
     location: "India | Gurugram",
     format: "In Person",
-    amount: 41300,
-    pageUrl:
-      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
+    trainerName: "Trainer Name",
     description:
       "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   },
@@ -425,8 +406,7 @@ const workshops = [
     dateRangeTwo: "July 30, 2025",
     location: "India | Gurugram",
     format: "In Person",
-    amount: 53100,
-    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    trainerName: "Trainer Name",
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
@@ -437,8 +417,7 @@ const workshops = [
     dateRangeTwo: "August 1, 2025",
     location: "India | Gurugram",
     format: "In Person",
-    amount: 442500,
-    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    trainerName: "Trainer Name",
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
@@ -461,8 +440,7 @@ const workshops = [
     dateRangeTwo: "August  21, 2025",
     location: "India | Bangalore",
     format: "In Person",
-    amount: 53100,
-    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    trainerName: "Trainer Name",
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
@@ -473,8 +451,7 @@ const workshops = [
     dateRangeTwo: "August  23, 2025",
     location: "India | Bangalore",
     format: "In Person",
-    amount: 442500,
-    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    trainerName: "Trainer Name",
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
@@ -600,8 +577,7 @@ const workshops = [
     dateRangeTwo: "September 24, 2025",
     location: "India | Gurugram",
     format: "In Person",
-    amount: 53100,
-    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    trainerName: "Trainer Name",
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
@@ -612,8 +588,7 @@ const workshops = [
     dateRangeTwo: "September 26, 2025",
     location: "India | Gurugram",
     format: "In Person",
-    amount: 442500,
-    pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
+    trainerName: "Trainer Name",
     description:
       "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
   },
@@ -639,8 +614,7 @@ const workshops = [
     dateRangeTwo: "September 26, 2025",
     location: "India | Mumbai",
     format: "In Person",
-    amount: 41300,
-    pageUrl:
+    trainerName: "Trainer Name",
       "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
     description:
       "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
