@@ -615,7 +615,6 @@ const workshops = [
     location: "India | Mumbai",
     format: "In Person",
     trainerName: "Trainer Name",
-      "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
     description:
       "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   },
