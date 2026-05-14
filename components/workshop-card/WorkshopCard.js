@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { BiCalendar, BiMap, BiGlobe } from "react-icons/bi";
-import { FaRegCalendarDays, FaUserCircle } from "react-icons/fa6";
+import { BiCalendar, BiMap, BiGlobe, BiUserCircle } from "react-icons/bi";
+import { FaRegCalendarDays } from "react-icons/fa6";
 import { Button } from "reactstrap";
 import BookNowFormModal from "../BookNowFromModal/BookNowFromModal";
 import WorkShopCalenderList from "../ByldWorkShopPdf/WorkShopCalenderList";
@@ -259,7 +259,7 @@ function WorkshopCard() {
                       <span className="ms-2">{workshop.format}</span>
                     </div>
                     <div className="d-flex align-items-center ml-15">
-                      <FaUserCircle />
+                      <BiUserCircle />
                       <span className="ms-2">{workshop.trainerName}</span>
                     </div>
                   </div>
