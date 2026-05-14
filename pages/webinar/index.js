@@ -5,10 +5,7 @@ export default function Workshops() {
   return (
     <>
       <Head>
-        <title>
-          Leadership Skills Workshops & Training | Leadership Development
-          Workshops by BYLD
-        </title>
+        <title>Leadership Skills Workshops & Training | Leadership Development Workshops by BYLD</title>
         <link rel="canonical" href="https://byldgroup.com/workshops" />
         <meta
           name="description"
@@ -50,7 +47,7 @@ export default function Workshops() {
           </div>
         </div>
       </div>
-      <WorkshopCard></WorkshopCard>
+     <WorkshopCard></WorkshopCard>
     </>
   );
 }
