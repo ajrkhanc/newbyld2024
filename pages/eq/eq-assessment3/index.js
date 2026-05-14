@@ -2264,7 +2264,7 @@ export default function BrowseCourses() {
                       <button
                         type="submit"
                         disabled={loading}
-                        className="submit"
+                        className="submit assesmetmain"
                       >
                         {loading ? "Submitting..." : "Submit"}
                       </button>
