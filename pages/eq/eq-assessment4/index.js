@@ -2,7 +2,7 @@ import { useState } from "react";
 import Head from "next/head";
 
 export default function BrowseCourses() {
-   const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   // const submitF = async (event) => {
   //   event.preventDefault();
@@ -145,42 +145,66 @@ export default function BrowseCourses() {
   //   };
   // };
 
- const submitF = async (event) => {
+  const submitF = async (event) => {
     event.preventDefault();
+
     setLoading(true);
     setMessage("");
 
     try {
       const form = event.target;
 
-      // ✅ collect answers safely
+      // =========================
+      // QUESTIONS
+      // =========================
       const data = {};
+
       for (let i = 1; i <= 20; i++) {
         const value = form[`q${i}`]?.value;
+
         if (!value) {
           throw new Error("Please answer all questions");
         }
+
         data[`q${i}`] = value;
       }
 
+      // =========================
+      // USER DATA
+      // =========================
       const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const phone = form.phone.value.trim();
       const organization = form.organization.value.trim();
 
-      if (!name || !organization) {
+      if (!name || !email || !phone || !organization) {
         throw new Error("All fields are required");
       }
 
-      // ✅ dynamic values
-      // const phone = "0000000000";
-      // const email = `user_${Date.now()}@dummy.com`;
-      const email = form.email.value.trim();
-const phone = form.phone.value.trim();
+      // =========================
+      // PHONE VALIDATION
+      // =========================
+      if (!/^[0-9]{10}$/.test(phone)) {
+        throw new Error("Enter valid 10 digit phone number");
+      }
+
+      // =========================
+      // UNIQUE URL
+      // =========================
+      const uniqueId = Date.now();
 
       const nameurl = name.replace(/[^a-zA-Z0-9 ]/g, "").toLowerCase();
-      const newnameurl = nameurl.split(" ").join("-") + phone;
 
-      const result = `https://byldgroup.com/eq/eq-assessment3/${newnameurl}`;
+      const newnameurl = nameurl.split(" ").join("-") + "-" + uniqueId;
 
+      // =========================
+      // RESULT URL
+      // =========================
+      const result = `https://byldgroup.com/eq/eq-assessment4/${newnameurl}`;
+
+      // =========================
+      // PAYLOAD
+      // =========================
       const payload = new URLSearchParams({
         ...data,
         name,
@@ -190,7 +214,9 @@ const phone = form.phone.value.trim();
         newnameurl,
       });
 
-      // ✅ API 1
+      // =========================
+      // SAVE API
+      // =========================
       const res = await fetch(
         "https://byldblogs.vercel.app/api/dtci-assessment",
         {
@@ -199,47 +225,71 @@ const phone = form.phone.value.trim();
             "Content-Type": "application/x-www-form-urlencoded",
           },
           body: payload,
-        }
+        },
       );
 
-      if (!res.ok) throw new Error("Server error. Try again.");
+      if (!res.ok) {
+        throw new Error("Server Error");
+      }
 
       const resultData = await res.json();
-      setMessage(resultData.message || "Submitted successfully");
 
-      // ✅ API 2
-      if (resultData.status == 0) {
-        await fetch(
-          "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: new URLSearchParams({
-              name,
-              email,
-              phone,
-              organization,
-              assessment: "EQ+ Assessment",
-              result,
-            }),
-          }
-        );
+      console.log(resultData);
 
-        // ✅ redirect
-        setTimeout(() => {
-          window.location.href = "/thank-you";
-        }, 1000);
+      if (resultData.status !== 0) {
+        throw new Error(resultData.message || "Submission Failed");
       }
+
+      // =========================
+      // YOMA API
+      // =========================
+      await logmaintane(
+        name,
+        phone,
+        email,
+        organization,
+        "EQ Assessment",
+        result,
+      );
+
+      // =========================
+      // CONTACT FORM API
+      // =========================
+      await fetch(
+        "https://byldgroup.in/byldgroup/wp-json/contact-form-7/v1/contact-forms/282/feedback",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams({
+            name,
+            email,
+            phone,
+            organization,
+            assessment: "EQ+ Assessment",
+            result,
+          }),
+        },
+      );
+
+      // =========================
+      // SUCCESS
+      // =========================
+      setMessage("Submitted Successfully");
+
+      setTimeout(() => {
+        window.location.href = result;
+      }, 1000);
     } catch (error) {
+      console.log(error);
+
       setMessage(error.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
   };
-
-  function logmaintane(
+  async function logmaintane(
     nameabc,
     phoneabc,
     emailabc,
@@ -247,29 +297,30 @@ const phone = form.phone.value.trim();
     assessmentabc,
     resultabc,
   ) {
-    var person = new Object();
-    person.name = nameabc;
-    person.phone = phoneabc;
-    person.email = emailabc;
-    person.organization = organizationabc;
-    person.assesment = assessmentabc;
-    person.result = resultabc;
+    try {
+      const person = {
+        name: nameabc,
+        phone: phoneabc,
+        email: emailabc,
+        organization: organizationabc,
+        assesment: assessmentabc,
+        result: resultabc,
+      };
 
-    $.ajax({
-      url: "https://api.yoma.co.in/api/Byldwebsite",
-      type: "POST",
-      dataType: "json",
-      crossDomain: true,
-      "Access-Control-Allow-Origin": "*",
+      const response = await fetch("https://api.yoma.co.in/api/Byldwebsite", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(person),
+      });
 
-      data: person,
-      success: function (data, textStatus, xhr) {
-        console.log(data);
-      },
-      error: function (xhr, textStatus, errorThrown) {
-        console.log("Error in Operation");
-      },
-    });
+      const data = await response.json();
+
+      console.log("YOMA SUCCESS", data);
+    } catch (error) {
+      console.log("YOMA ERROR", error);
+    }
   }
   return (
     <>
@@ -320,39 +371,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="1" id="q1a" required />
-                    <label for="q1a">1</label>
+                    <label htmlFor="q1a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="2" id="q1b" required />
-                    <label for="q1b">2</label>
+                    <label htmlFor="q1b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="3" id="q1c" required />
-                    <label for="q1c">3</label>
+                    <label htmlFor="q1c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="4" id="q1d" required />
-                    <label for="q1d">4</label>
+                    <label htmlFor="q1d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="5" id="q1e" required />
-                    <label for="q1e">5</label>
+                    <label htmlFor="q1e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="6" id="q1f" required />
-                    <label for="q1f">6</label>
+                    <label htmlFor="q1f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="7" id="q1g" required />
-                    <label for="q1g">7</label>
+                    <label htmlFor="q1g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="8" id="q1h" required />
-                    <label for="q1h">8</label>
+                    <label htmlFor="q1h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q1" value="9" id="q1i" required />
-                    <label for="q1i">9</label>
+                    <label htmlFor="q1i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -362,7 +413,7 @@ const phone = form.phone.value.trim();
                       id="q1j"
                       required
                     />
-                    <label for="q1j">10</label>
+                    <label htmlFor="q1j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very often</label>
@@ -379,39 +430,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="1" id="q2a" required />
-                    <label for="q2a">1</label>
+                    <label htmlFor="q2a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="2" id="q2b" required />
-                    <label for="q2b">2</label>
+                    <label htmlFor="q2b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="3" id="q2c" required />
-                    <label for="q2c">3</label>
+                    <label htmlFor="q2c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="4" id="q2d" required />
-                    <label for="q2d">4</label>
+                    <label htmlFor="q2d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="5" id="q2e" required />
-                    <label for="q2e">5</label>
+                    <label htmlFor="q2e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="6" id="q2f" required />
-                    <label for="q2f">6</label>
+                    <label htmlFor="q2f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="7" id="q2g" required />
-                    <label for="q2g">7</label>
+                    <label htmlFor="q2g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="8" id="q2h" required />
-                    <label for="q2h">8</label>
+                    <label htmlFor="q2h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q2" value="9" id="q2i" required />
-                    <label for="q2i">9</label>
+                    <label htmlFor="q2i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -421,7 +472,7 @@ const phone = form.phone.value.trim();
                       id="q2j"
                       required
                     />
-                    <label for="q2j">10</label>
+                    <label htmlFor="q2j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at all</label>
@@ -435,39 +486,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="1" id="q3a" required />
-                    <label for="q3a">1</label>
+                    <label htmlFor="q3a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="2" id="q3b" required />
-                    <label for="q3b">2</label>
+                    <label htmlFor="q3b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="3" id="q3c" required />
-                    <label for="q3c">3</label>
+                    <label htmlFor="q3c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="4" id="q3d" required />
-                    <label for="q3d">4</label>
+                    <label htmlFor="q3d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="5" id="q3e" required />
-                    <label for="q3e">5</label>
+                    <label htmlFor="q3e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="6" id="q3f" required />
-                    <label for="q3f">6</label>
+                    <label htmlFor="q3f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="7" id="q3g" required />
-                    <label for="q3g">7</label>
+                    <label htmlFor="q3g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="8" id="q3h" required />
-                    <label for="q3h">8</label>
+                    <label htmlFor="q3h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q3" value="9" id="q3i" required />
-                    <label for="q3i">9</label>
+                    <label htmlFor="q3i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -477,7 +528,7 @@ const phone = form.phone.value.trim();
                       id="q3j"
                       required
                     />
-                    <label for="q3j">10</label>
+                    <label htmlFor="q3j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -495,39 +546,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="1" id="q4a" required />
-                    <label for="q4a">1</label>
+                    <label htmlFor="q4a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="2" id="q4b" required />
-                    <label for="q4b">2</label>
+                    <label htmlFor="q4b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="3" id="q4c" required />
-                    <label for="q4c">3</label>
+                    <label htmlFor="q4c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="4" id="q4d" required />
-                    <label for="q4d">4</label>
+                    <label htmlFor="q4d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="5" id="q4e" required />
-                    <label for="q4e">5</label>
+                    <label htmlFor="q4e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="6" id="q4f" required />
-                    <label for="q4f">6</label>
+                    <label htmlFor="q4f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="7" id="q4g" required />
-                    <label for="q4g">7</label>
+                    <label htmlFor="q4g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="8" id="q4h" required />
-                    <label for="q4h">8</label>
+                    <label htmlFor="q4h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q4" value="9" id="q4i" required />
-                    <label for="q4i">9</label>
+                    <label htmlFor="q4i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -537,7 +588,7 @@ const phone = form.phone.value.trim();
                       id="q4j"
                       required
                     />
-                    <label for="q4j">10</label>
+                    <label htmlFor="q4j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -554,39 +605,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="1" id="q5a" required />
-                    <label for="q5a">1</label>
+                    <label htmlFor="q5a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="2" id="q5b" required />
-                    <label for="q5b">2</label>
+                    <label htmlFor="q5b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="3" id="q5c" required />
-                    <label for="q5c">3</label>
+                    <label htmlFor="q5c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="4" id="q5d" required />
-                    <label for="q5d">4</label>
+                    <label htmlFor="q5d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="5" id="q5e" required />
-                    <label for="q5e">5</label>
+                    <label htmlFor="q5e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="6" id="q5f" required />
-                    <label for="q5f">6</label>
+                    <label htmlFor="q5f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="7" id="q5g" required />
-                    <label for="q5g">7</label>
+                    <label htmlFor="q5g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="8" id="q5h" required />
-                    <label for="q5h">8</label>
+                    <label htmlFor="q5h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q5" value="9" id="q5i" required />
-                    <label for="q5i">9</label>
+                    <label htmlFor="q5i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -596,7 +647,7 @@ const phone = form.phone.value.trim();
                       id="q5j"
                       required
                     />
-                    <label for="q5j">10</label>
+                    <label htmlFor="q5j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -616,39 +667,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="1" id="q6a" required />
-                    <label for="q6a">1</label>
+                    <label htmlFor="q6a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="2" id="q6b" required />
-                    <label for="q6b">2</label>
+                    <label htmlFor="q6b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="3" id="q6c" required />
-                    <label for="q6c">3</label>
+                    <label htmlFor="q6c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="4" id="q6d" required />
-                    <label for="q6d">4</label>
+                    <label htmlFor="q6d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="5" id="q6e" required />
-                    <label for="q6e">5</label>
+                    <label htmlFor="q6e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="6" id="q6f" required />
-                    <label for="q6f">6</label>
+                    <label htmlFor="q6f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="7" id="q6g" required />
-                    <label for="q6g">7</label>
+                    <label htmlFor="q6g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="8" id="q6h" required />
-                    <label for="q6h">8</label>
+                    <label htmlFor="q6h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q6" value="9" id="q6i" required />
-                    <label for="q6i">9</label>
+                    <label htmlFor="q6i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -658,7 +709,7 @@ const phone = form.phone.value.trim();
                       id="q6j"
                       required
                     />
-                    <label for="q6j">10</label>
+                    <label htmlFor="q6j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -675,39 +726,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="1" id="q7a" required />
-                    <label for="q7a">1</label>
+                    <label htmlFor="q7a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="2" id="q7b" required />
-                    <label for="q7b">2</label>
+                    <label htmlFor="q7b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="3" id="q7c" required />
-                    <label for="q7c">3</label>
+                    <label htmlFor="q7c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="4" id="q7d" required />
-                    <label for="q7d">4</label>
+                    <label htmlFor="q7d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="5" id="q7e" required />
-                    <label for="q7e">5</label>
+                    <label htmlFor="q7e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="6" id="q7f" required />
-                    <label for="q7f">6</label>
+                    <label htmlFor="q7f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="7" id="q7g" required />
-                    <label for="q7g">7</label>
+                    <label htmlFor="q7g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="8" id="q7h" required />
-                    <label for="q7h">8</label>
+                    <label htmlFor="q7h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q7" value="9" id="q7i" required />
-                    <label for="q7i">9</label>
+                    <label htmlFor="q7i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -717,7 +768,7 @@ const phone = form.phone.value.trim();
                       id="q7j"
                       required
                     />
-                    <label for="q7j">10</label>
+                    <label htmlFor="q7j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -734,39 +785,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="1" id="q8a" required />
-                    <label for="q8a">1</label>
+                    <label htmlFor="q8a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="2" id="q8b" required />
-                    <label for="q8b">2</label>
+                    <label htmlFor="q8b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="3" id="q8c" required />
-                    <label for="q8c">3</label>
+                    <label htmlFor="q8c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="4" id="q8d" required />
-                    <label for="q8d">4</label>
+                    <label htmlFor="q8d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="5" id="q8e" required />
-                    <label for="q8e">5</label>
+                    <label htmlFor="q8e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="6" id="q8f" required />
-                    <label for="q8f">6</label>
+                    <label htmlFor="q8f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="7" id="q8g" required />
-                    <label for="q8g">7</label>
+                    <label htmlFor="q8g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="8" id="q8h" required />
-                    <label for="q8h">8</label>
+                    <label htmlFor="q8h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q8" value="9" id="q8i" required />
-                    <label for="q8i">9</label>
+                    <label htmlFor="q8i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -776,7 +827,7 @@ const phone = form.phone.value.trim();
                       id="q8j"
                       required
                     />
-                    <label for="q8j">10</label>
+                    <label htmlFor="q8j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -789,39 +840,39 @@ const phone = form.phone.value.trim();
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="1" id="q9a" required />
-                    <label for="q9a">1</label>
+                    <label htmlFor="q9a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="2" id="q9b" required />
-                    <label for="q9b">2</label>
+                    <label htmlFor="q9b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="3" id="q9c" required />
-                    <label for="q9c">3</label>
+                    <label htmlFor="q9c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="4" id="q9d" required />
-                    <label for="q9d">4</label>
+                    <label htmlFor="q9d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="5" id="q9e" required />
-                    <label for="q9e">5</label>
+                    <label htmlFor="q9e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="6" id="q9f" required />
-                    <label for="q9f">6</label>
+                    <label htmlFor="q9f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="7" id="q9g" required />
-                    <label for="q9g">7</label>
+                    <label htmlFor="q9g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="8" id="q9h" required />
-                    <label for="q9h">8</label>
+                    <label htmlFor="q9h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input type="radio" name="q9" value="9" id="q9i" required />
-                    <label for="q9i">9</label>
+                    <label htmlFor="q9i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -831,7 +882,7 @@ const phone = form.phone.value.trim();
                       id="q9j"
                       required
                     />
-                    <label for="q9j">10</label>
+                    <label htmlFor="q9j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -854,7 +905,7 @@ const phone = form.phone.value.trim();
                       id="q10a"
                       required
                     />
-                    <label for="q10a">1</label>
+                    <label htmlFor="q10a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -864,7 +915,7 @@ const phone = form.phone.value.trim();
                       id="q10b"
                       required
                     />
-                    <label for="q10b">2</label>
+                    <label htmlFor="q10b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -874,7 +925,7 @@ const phone = form.phone.value.trim();
                       id="q10c"
                       required
                     />
-                    <label for="q10c">3</label>
+                    <label htmlFor="q10c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -884,7 +935,7 @@ const phone = form.phone.value.trim();
                       id="q10d"
                       required
                     />
-                    <label for="q10d">4</label>
+                    <label htmlFor="q10d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -894,7 +945,7 @@ const phone = form.phone.value.trim();
                       id="q10e"
                       required
                     />
-                    <label for="q10e">5</label>
+                    <label htmlFor="q10e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -904,7 +955,7 @@ const phone = form.phone.value.trim();
                       id="q10f"
                       required
                     />
-                    <label for="q10f">6</label>
+                    <label htmlFor="q10f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -914,7 +965,7 @@ const phone = form.phone.value.trim();
                       id="q10g"
                       required
                     />
-                    <label for="q10g">7</label>
+                    <label htmlFor="q10g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -924,7 +975,7 @@ const phone = form.phone.value.trim();
                       id="q10h"
                       required
                     />
-                    <label for="q10h">8</label>
+                    <label htmlFor="q10h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -934,7 +985,7 @@ const phone = form.phone.value.trim();
                       id="q10i"
                       required
                     />
-                    <label for="q10i">9</label>
+                    <label htmlFor="q10i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -944,7 +995,7 @@ const phone = form.phone.value.trim();
                       id="q10j"
                       required
                     />
-                    <label for="q10j">10</label>
+                    <label htmlFor="q10j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -969,7 +1020,7 @@ const phone = form.phone.value.trim();
                       id="q11a"
                       required
                     />
-                    <label for="q11a">1</label>
+                    <label htmlFor="q11a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -979,7 +1030,7 @@ const phone = form.phone.value.trim();
                       id="q11b"
                       required
                     />
-                    <label for="q11b">2</label>
+                    <label htmlFor="q11b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -989,7 +1040,7 @@ const phone = form.phone.value.trim();
                       id="q11c"
                       required
                     />
-                    <label for="q11c">3</label>
+                    <label htmlFor="q11c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -999,7 +1050,7 @@ const phone = form.phone.value.trim();
                       id="q11d"
                       required
                     />
-                    <label for="q11d">4</label>
+                    <label htmlFor="q11d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1009,7 +1060,7 @@ const phone = form.phone.value.trim();
                       id="q11e"
                       required
                     />
-                    <label for="q11e">5</label>
+                    <label htmlFor="q11e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1019,7 +1070,7 @@ const phone = form.phone.value.trim();
                       id="q11f"
                       required
                     />
-                    <label for="q11f">6</label>
+                    <label htmlFor="q11f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1029,7 +1080,7 @@ const phone = form.phone.value.trim();
                       id="q11g"
                       required
                     />
-                    <label for="q11g">7</label>
+                    <label htmlFor="q11g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1039,7 +1090,7 @@ const phone = form.phone.value.trim();
                       id="q11h"
                       required
                     />
-                    <label for="q11h">8</label>
+                    <label htmlFor="q11h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1049,7 +1100,7 @@ const phone = form.phone.value.trim();
                       id="q11i"
                       required
                     />
-                    <label for="q11i">9</label>
+                    <label htmlFor="q11i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1059,7 +1110,7 @@ const phone = form.phone.value.trim();
                       id="q11j"
                       required
                     />
-                    <label for="q11j">10</label>
+                    <label htmlFor="q11j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -1082,7 +1133,7 @@ const phone = form.phone.value.trim();
                       id="q12a"
                       required
                     />
-                    <label for="q12a">1</label>
+                    <label htmlFor="q12a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1092,7 +1143,7 @@ const phone = form.phone.value.trim();
                       id="q12b"
                       required
                     />
-                    <label for="q12b">2</label>
+                    <label htmlFor="q12b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1102,7 +1153,7 @@ const phone = form.phone.value.trim();
                       id="q12c"
                       required
                     />
-                    <label for="q12c">3</label>
+                    <label htmlFor="q12c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1112,7 +1163,7 @@ const phone = form.phone.value.trim();
                       id="q12d"
                       required
                     />
-                    <label for="q12d">4</label>
+                    <label htmlFor="q12d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1122,7 +1173,7 @@ const phone = form.phone.value.trim();
                       id="q12e"
                       required
                     />
-                    <label for="q12e">5</label>
+                    <label htmlFor="q12e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1132,7 +1183,7 @@ const phone = form.phone.value.trim();
                       id="q12f"
                       required
                     />
-                    <label for="q12f">6</label>
+                    <label htmlFor="q12f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1142,7 +1193,7 @@ const phone = form.phone.value.trim();
                       id="q12g"
                       required
                     />
-                    <label for="q12g">7</label>
+                    <label htmlFor="q12g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1152,7 +1203,7 @@ const phone = form.phone.value.trim();
                       id="q12h"
                       required
                     />
-                    <label for="q12h">8</label>
+                    <label htmlFor="q12h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1162,7 +1213,7 @@ const phone = form.phone.value.trim();
                       id="q12i"
                       required
                     />
-                    <label for="q12i">9</label>
+                    <label htmlFor="q12i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1172,7 +1223,7 @@ const phone = form.phone.value.trim();
                       id="q12j"
                       required
                     />
-                    <label for="q12j">10</label>
+                    <label htmlFor="q12j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -1192,7 +1243,7 @@ const phone = form.phone.value.trim();
                       id="q13a"
                       required
                     />
-                    <label for="q13a">1</label>
+                    <label htmlFor="q13a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1202,7 +1253,7 @@ const phone = form.phone.value.trim();
                       id="q13b"
                       required
                     />
-                    <label for="q13b">2</label>
+                    <label htmlFor="q13b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1212,7 +1263,7 @@ const phone = form.phone.value.trim();
                       id="q13c"
                       required
                     />
-                    <label for="q13c">3</label>
+                    <label htmlFor="q13c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1222,7 +1273,7 @@ const phone = form.phone.value.trim();
                       id="q13d"
                       required
                     />
-                    <label for="q13d">4</label>
+                    <label htmlFor="q13d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1232,7 +1283,7 @@ const phone = form.phone.value.trim();
                       id="q13e"
                       required
                     />
-                    <label for="q13e">5</label>
+                    <label htmlFor="q13e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1242,7 +1293,7 @@ const phone = form.phone.value.trim();
                       id="q13f"
                       required
                     />
-                    <label for="q13f">6</label>
+                    <label htmlFor="q13f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1252,7 +1303,7 @@ const phone = form.phone.value.trim();
                       id="q13g"
                       required
                     />
-                    <label for="q13g">7</label>
+                    <label htmlFor="q13g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1262,7 +1313,7 @@ const phone = form.phone.value.trim();
                       id="q13h"
                       required
                     />
-                    <label for="q13h">8</label>
+                    <label htmlFor="q13h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1272,7 +1323,7 @@ const phone = form.phone.value.trim();
                       id="q13i"
                       required
                     />
-                    <label for="q13i">9</label>
+                    <label htmlFor="q13i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1282,7 +1333,7 @@ const phone = form.phone.value.trim();
                       id="q13j"
                       required
                     />
-                    <label for="q13j">10</label>
+                    <label htmlFor="q13j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -1302,7 +1353,7 @@ const phone = form.phone.value.trim();
                       id="q14a"
                       required
                     />
-                    <label for="q14a">1</label>
+                    <label htmlFor="q14a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1312,7 +1363,7 @@ const phone = form.phone.value.trim();
                       id="q14b"
                       required
                     />
-                    <label for="q14b">2</label>
+                    <label htmlFor="q14b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1322,7 +1373,7 @@ const phone = form.phone.value.trim();
                       id="q14c"
                       required
                     />
-                    <label for="q14c">3</label>
+                    <label htmlFor="q14c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1332,7 +1383,7 @@ const phone = form.phone.value.trim();
                       id="q14d"
                       required
                     />
-                    <label for="q14d">4</label>
+                    <label htmlFor="q14d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1342,7 +1393,7 @@ const phone = form.phone.value.trim();
                       id="q14e"
                       required
                     />
-                    <label for="q14e">5</label>
+                    <label htmlFor="q14e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1352,7 +1403,7 @@ const phone = form.phone.value.trim();
                       id="q14f"
                       required
                     />
-                    <label for="q14f">6</label>
+                    <label htmlFor="q14f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1362,7 +1413,7 @@ const phone = form.phone.value.trim();
                       id="q14g"
                       required
                     />
-                    <label for="q14g">7</label>
+                    <label htmlFor="q14g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1372,7 +1423,7 @@ const phone = form.phone.value.trim();
                       id="q14h"
                       required
                     />
-                    <label for="q14h">8</label>
+                    <label htmlFor="q14h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1382,7 +1433,7 @@ const phone = form.phone.value.trim();
                       id="q14i"
                       required
                     />
-                    <label for="q14i">9</label>
+                    <label htmlFor="q14i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1392,7 +1443,7 @@ const phone = form.phone.value.trim();
                       id="q14j"
                       required
                     />
-                    <label for="q14j">10</label>
+                    <label htmlFor="q14j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -1415,7 +1466,7 @@ const phone = form.phone.value.trim();
                       id="q15a"
                       required
                     />
-                    <label for="q15a">1</label>
+                    <label htmlFor="q15a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1425,7 +1476,7 @@ const phone = form.phone.value.trim();
                       id="q15b"
                       required
                     />
-                    <label for="q15b">2</label>
+                    <label htmlFor="q15b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1435,7 +1486,7 @@ const phone = form.phone.value.trim();
                       id="q15c"
                       required
                     />
-                    <label for="q15c">3</label>
+                    <label htmlFor="q15c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1445,7 +1496,7 @@ const phone = form.phone.value.trim();
                       id="q15d"
                       required
                     />
-                    <label for="q15d">4</label>
+                    <label htmlFor="q15d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1455,7 +1506,7 @@ const phone = form.phone.value.trim();
                       id="q15e"
                       required
                     />
-                    <label for="q15e">5</label>
+                    <label htmlFor="q15e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1465,7 +1516,7 @@ const phone = form.phone.value.trim();
                       id="q15f"
                       required
                     />
-                    <label for="q15f">6</label>
+                    <label htmlFor="q15f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1475,7 +1526,7 @@ const phone = form.phone.value.trim();
                       id="q15g"
                       required
                     />
-                    <label for="q15g">7</label>
+                    <label htmlFor="q15g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1485,7 +1536,7 @@ const phone = form.phone.value.trim();
                       id="q15h"
                       required
                     />
-                    <label for="q15h">8</label>
+                    <label htmlFor="q15h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1495,7 +1546,7 @@ const phone = form.phone.value.trim();
                       id="q15i"
                       required
                     />
-                    <label for="q15i">9</label>
+                    <label htmlFor="q15i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1505,7 +1556,7 @@ const phone = form.phone.value.trim();
                       id="q15j"
                       required
                     />
-                    <label for="q15j">10</label>
+                    <label htmlFor="q15j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -1533,7 +1584,7 @@ const phone = form.phone.value.trim();
                       id="q16a"
                       required
                     />
-                    <label for="q16a">1</label>
+                    <label htmlFor="q16a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1543,7 +1594,7 @@ const phone = form.phone.value.trim();
                       id="q16b"
                       required
                     />
-                    <label for="q16b">2</label>
+                    <label htmlFor="q16b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1553,7 +1604,7 @@ const phone = form.phone.value.trim();
                       id="q16c"
                       required
                     />
-                    <label for="q16c">3</label>
+                    <label htmlFor="q16c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1563,7 +1614,7 @@ const phone = form.phone.value.trim();
                       id="q16d"
                       required
                     />
-                    <label for="q16d">4</label>
+                    <label htmlFor="q16d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1573,7 +1624,7 @@ const phone = form.phone.value.trim();
                       id="q16e"
                       required
                     />
-                    <label for="q16e">5</label>
+                    <label htmlFor="q16e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1583,7 +1634,7 @@ const phone = form.phone.value.trim();
                       id="q16f"
                       required
                     />
-                    <label for="q16f">6</label>
+                    <label htmlFor="q16f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1593,7 +1644,7 @@ const phone = form.phone.value.trim();
                       id="q16g"
                       required
                     />
-                    <label for="q16g">7</label>
+                    <label htmlFor="q16g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1603,7 +1654,7 @@ const phone = form.phone.value.trim();
                       id="q16h"
                       required
                     />
-                    <label for="q16h">8</label>
+                    <label htmlFor="q16h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1613,7 +1664,7 @@ const phone = form.phone.value.trim();
                       id="q16i"
                       required
                     />
-                    <label for="q16i">9</label>
+                    <label htmlFor="q16i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1623,7 +1674,7 @@ const phone = form.phone.value.trim();
                       id="q16j"
                       required
                     />
-                    <label for="q16j">10</label>
+                    <label htmlFor="q16j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -1643,7 +1694,7 @@ const phone = form.phone.value.trim();
                       id="q17a"
                       required
                     />
-                    <label for="q17a">1</label>
+                    <label htmlFor="q17a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1653,7 +1704,7 @@ const phone = form.phone.value.trim();
                       id="q17b"
                       required
                     />
-                    <label for="q17b">2</label>
+                    <label htmlFor="q17b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1663,7 +1714,7 @@ const phone = form.phone.value.trim();
                       id="q17c"
                       required
                     />
-                    <label for="q17c">3</label>
+                    <label htmlFor="q17c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1673,7 +1724,7 @@ const phone = form.phone.value.trim();
                       id="q17d"
                       required
                     />
-                    <label for="q17d">4</label>
+                    <label htmlFor="q17d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1683,7 +1734,7 @@ const phone = form.phone.value.trim();
                       id="q17e"
                       required
                     />
-                    <label for="q17e">5</label>
+                    <label htmlFor="q17e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1693,7 +1744,7 @@ const phone = form.phone.value.trim();
                       id="q17f"
                       required
                     />
-                    <label for="q17f">6</label>
+                    <label htmlFor="q17f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1703,7 +1754,7 @@ const phone = form.phone.value.trim();
                       id="q17g"
                       required
                     />
-                    <label for="q17g">7</label>
+                    <label htmlFor="q17g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1713,7 +1764,7 @@ const phone = form.phone.value.trim();
                       id="q17h"
                       required
                     />
-                    <label for="q17h">8</label>
+                    <label htmlFor="q17h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1723,7 +1774,7 @@ const phone = form.phone.value.trim();
                       id="q17i"
                       required
                     />
-                    <label for="q17i">9</label>
+                    <label htmlFor="q17i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1733,7 +1784,7 @@ const phone = form.phone.value.trim();
                       id="q17j"
                       required
                     />
-                    <label for="q17j">10</label>
+                    <label htmlFor="q17j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -1755,7 +1806,7 @@ const phone = form.phone.value.trim();
                       id="q18a"
                       required
                     />
-                    <label for="q18a">1</label>
+                    <label htmlFor="q18a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1765,7 +1816,7 @@ const phone = form.phone.value.trim();
                       id="q18b"
                       required
                     />
-                    <label for="q18b">2</label>
+                    <label htmlFor="q18b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1775,7 +1826,7 @@ const phone = form.phone.value.trim();
                       id="q18c"
                       required
                     />
-                    <label for="q18c">3</label>
+                    <label htmlFor="q18c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1785,7 +1836,7 @@ const phone = form.phone.value.trim();
                       id="q18d"
                       required
                     />
-                    <label for="q18d">4</label>
+                    <label htmlFor="q18d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1795,7 +1846,7 @@ const phone = form.phone.value.trim();
                       id="q18e"
                       required
                     />
-                    <label for="q18e">5</label>
+                    <label htmlFor="q18e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1805,7 +1856,7 @@ const phone = form.phone.value.trim();
                       id="q18f"
                       required
                     />
-                    <label for="q18f">6</label>
+                    <label htmlFor="q18f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1815,7 +1866,7 @@ const phone = form.phone.value.trim();
                       id="q18g"
                       required
                     />
-                    <label for="q18g">7</label>
+                    <label htmlFor="q18g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1825,7 +1876,7 @@ const phone = form.phone.value.trim();
                       id="q18h"
                       required
                     />
-                    <label for="q18h">8</label>
+                    <label htmlFor="q18h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1835,7 +1886,7 @@ const phone = form.phone.value.trim();
                       id="q18i"
                       required
                     />
-                    <label for="q18i">9</label>
+                    <label htmlFor="q18i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1845,7 +1896,7 @@ const phone = form.phone.value.trim();
                       id="q18j"
                       required
                     />
-                    <label for="q18j">10</label>
+                    <label htmlFor="q18j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Very Often</label>
@@ -1865,7 +1916,7 @@ const phone = form.phone.value.trim();
                       id="q19a"
                       required
                     />
-                    <label for="q19a">1</label>
+                    <label htmlFor="q19a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1875,7 +1926,7 @@ const phone = form.phone.value.trim();
                       id="q19b"
                       required
                     />
-                    <label for="q19b">2</label>
+                    <label htmlFor="q19b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1885,7 +1936,7 @@ const phone = form.phone.value.trim();
                       id="q19c"
                       required
                     />
-                    <label for="q19c">3</label>
+                    <label htmlFor="q19c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1895,7 +1946,7 @@ const phone = form.phone.value.trim();
                       id="q19d"
                       required
                     />
-                    <label for="q19d">4</label>
+                    <label htmlFor="q19d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1905,7 +1956,7 @@ const phone = form.phone.value.trim();
                       id="q19e"
                       required
                     />
-                    <label for="q19e">5</label>
+                    <label htmlFor="q19e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1915,7 +1966,7 @@ const phone = form.phone.value.trim();
                       id="q19f"
                       required
                     />
-                    <label for="q19f">6</label>
+                    <label htmlFor="q19f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1925,7 +1976,7 @@ const phone = form.phone.value.trim();
                       id="q19g"
                       required
                     />
-                    <label for="q19g">7</label>
+                    <label htmlFor="q19g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1935,7 +1986,7 @@ const phone = form.phone.value.trim();
                       id="q19h"
                       required
                     />
-                    <label for="q19h">8</label>
+                    <label htmlFor="q19h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1945,7 +1996,7 @@ const phone = form.phone.value.trim();
                       id="q19i"
                       required
                     />
-                    <label for="q19i">9</label>
+                    <label htmlFor="q19i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1955,7 +2006,7 @@ const phone = form.phone.value.trim();
                       id="q19j"
                       required
                     />
-                    <label for="q19j">10</label>
+                    <label htmlFor="q19j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -1978,7 +2029,7 @@ const phone = form.phone.value.trim();
                       id="q20a"
                       required
                     />
-                    <label for="q20a">1</label>
+                    <label htmlFor="q20a">1</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1988,7 +2039,7 @@ const phone = form.phone.value.trim();
                       id="q20b"
                       required
                     />
-                    <label for="q20b">2</label>
+                    <label htmlFor="q20b">2</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -1998,7 +2049,7 @@ const phone = form.phone.value.trim();
                       id="q20c"
                       required
                     />
-                    <label for="q20c">3</label>
+                    <label htmlFor="q20c">3</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2008,7 +2059,7 @@ const phone = form.phone.value.trim();
                       id="q20d"
                       required
                     />
-                    <label for="q20d">4</label>
+                    <label htmlFor="q20d">4</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2018,7 +2069,7 @@ const phone = form.phone.value.trim();
                       id="q20e"
                       required
                     />
-                    <label for="q20e">5</label>
+                    <label htmlFor="q20e">5</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2028,7 +2079,7 @@ const phone = form.phone.value.trim();
                       id="q20f"
                       required
                     />
-                    <label for="q20f">6</label>
+                    <label htmlFor="q20f">6</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2038,7 +2089,7 @@ const phone = form.phone.value.trim();
                       id="q20g"
                       required
                     />
-                    <label for="q20g">7</label>
+                    <label htmlFor="q20g">7</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2048,7 +2099,7 @@ const phone = form.phone.value.trim();
                       id="q20h"
                       required
                     />
-                    <label for="q20h">8</label>
+                    <label htmlFor="q20h">8</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2058,7 +2109,7 @@ const phone = form.phone.value.trim();
                       id="q20i"
                       required
                     />
-                    <label for="q20i">9</label>
+                    <label htmlFor="q20i">9</label>
                   </div>
                   <div className="fcolmain">
                     <input
@@ -2068,7 +2119,7 @@ const phone = form.phone.value.trim();
                       id="q20j"
                       required
                     />
-                    <label for="q20j">10</label>
+                    <label htmlFor="q20j">10</label>
                   </div>
                   <div className="fcolmain">
                     <label className="beafinput">Not at All</label>
@@ -2089,11 +2140,26 @@ const phone = form.phone.value.trim();
                       />
                     </div>
                     <div className="col-sm-6 mb-12">
-                                            <input className='form-control' type="email" name="email" placeholder="Work Email/Email*" required />
-                                        </div>
+                      <input
+                        className="form-control"
+                        type="email"
+                        name="email"
+                        placeholder="Work Email/Email*"
+                        required
+                      />
+                    </div>
                     <div className="col-sm-6 mb-12">
-                                            <input className='form-control' type="text" name="phone" maxlength="10" minlength="10" pattern="[0-9]*" placeholder="Phone No.*" required />
-                                        </div>
+                      <input
+                        className="form-control"
+                        type="text"
+                        name="phone"
+                        maxLength="10"
+                        minLength="10"
+                        pattern="[0-9]*"
+                        placeholder="Phone No.*"
+                        required
+                      />
+                    </div>
 
                     <div className="col-sm-6 mb-12">
                       <input
@@ -2112,14 +2178,15 @@ const phone = form.phone.value.trim();
                         class="assesmetmain"
                         tabindex="201"
                       />*/}
-                        <input
-                      type="submit"
-                      value={loading ? "Submitting..." : "Submit"}
-                      disabled={loading}
-                      id="submitbuttonform"
-                       class="assesmetmain"
-                        tabindex="201"
-                    />
+                      <button
+                        type="submit"
+                        disabled={loading}
+                        id="submitbuttonform"
+                        className="assesmetmain"
+                        tabIndex="201"
+                      >
+                        {loading ? "Submitting..." : "Submit"}
+                      </button>
                       {/* ✅ clean message handling */}
                       {message && <p className="feedbackcolor">{message}</p>}
                       {/* <p class="feedbackcolor" id="response"></p> */}
