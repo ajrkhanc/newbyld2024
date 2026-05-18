@@ -4,23 +4,17 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 
 function BookNowFormModal({ isOpen, toggle, workshops }) {
-  const [showGSTFields, setShowGSTFields] = useState(false);
-  const [showGSTFieldsOne, setShowGSTFieldsOne] = useState(false);
-  const [gstNumber, setGstNumber] = useState("");
-  const [isGstNumberValid, setIsGstNumberValid] = useState(true);
-  const [panGST, setPanGST] = useState("");
-  const [isPanGSTValid, setIsPanGSTValid] = useState(true);
-  const [selectedWorkshop, setSelectedWorkshop] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
 
   const WorkShopHandle = async (event) => {
     event.preventDefault();
     setIsLoading(true);
+    setMessage("");
+    setMessageType("");
 
     const formData = new FormData(event.target);
-    let amount = selectedWorkshop?.amount || 1000; // Default to 1000 if no amount is selected
-    amount = parseFloat(amount); // Ensure amount is a number
 
     try {
       const response = await fetch(
@@ -36,12 +30,7 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
             "leadsquared-Mobile": formData.get("phone"),
             "leadsquared-Company": formData.get("organization"),
             "leadsquared-JobTitle": formData.get("designation"),
-            "leadsquared-GstNumber": formData.get("gst_number"),
-            "leadsquared-EntityName": formData.get("entity_name"),
-            "leadsquared-Address": formData.get("address"),
-            "leadsquared-PanNumber": formData.get("pan_number"),
             slot: formData.get("slot"),
-            gst: formData.get("gst"),
             comments: formData.get("comments"),
           }),
         }
@@ -49,65 +38,18 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
 
       if (response.ok) {
         setMessage("Thank you for submitting your details.");
-        setTimeout(() => {
-          const redirectURL = `https://payments.byldgroup.com/Razorpay/EagleFlight?name=${encodeURIComponent(
-            formData.get("name")
-          )}&email=${encodeURIComponent(
-            formData.get("email")
-          )}&contact=${encodeURIComponent(
-            formData.get("phone")
-          )}&GstNumber=${encodeURIComponent(
-            formData.get("gst_number")
-          )}&EntityName=${encodeURIComponent(
-            formData.get("entity_name")
-          )}&Amount=${amount}&Address=${encodeURIComponent(
-            formData.get("address")
-          )}&PanNumber=${encodeURIComponent(
-            formData.get("pan_number")
-          )}&gst=${encodeURIComponent(formData.get("gst"))}`;
-          window.location.href = redirectURL;
-        }, 1000);
+        setMessageType("success");
       } else {
         setMessage("There was a problem with the request.");
-        setIsLoading(false);
+        setMessageType("error");
       }
     } catch (error) {
       console.error("Error submitting the form:", error);
       setMessage("There was a problem with the request.");
+      setMessageType("error");
+    } finally {
+      setIsLoading(false);
     }
-  };
-
-  const validateGSTNumber = (gstNumber) => {
-    const gstRegex = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z]{1}[0-9A-Z]{1}[Z]{1}$/;
-    return gstRegex.test(gstNumber);
-  };
-
-  const validatePAN = (panNumber) => {
-    const panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
-    return panRegex.test(panNumber);
-  };
-
-  const handleGstNumberChange = (event) => {
-    const value = event.target.value;
-    setGstNumber(value);
-    setIsGstNumberValid(value === "" || validateGSTNumber(value));
-  };
-
-  const handleGSTChange = (event) => {
-    const gstValue = event.target.value;
-    setShowGSTFields(gstValue === "Yes");
-    setShowGSTFieldsOne(gstValue === "No");
-  };
-
-  const handlePanGSTChange = (event) => {
-    const value = event.target.value.toUpperCase();
-    // const value = event.target.value;
-    setPanGST(value);
-    setIsPanGSTValid(value === "" || validatePAN(value));
-  };
-  const handleSlotChange = (event) => {
-    const selectedSlot = JSON.parse(event.target.value);
-    setSelectedWorkshop(selectedSlot);
   };
 
   return (
@@ -168,132 +110,26 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
               />
             </div>
 
-            {/* PAN Number */}
-            <div className="col-lg-6 col-md-12 col-sm-12 mb-12">
-              <input
-                type="text"
-                name="pan_number"
-                placeholder="PAN Number"
-                value={panGST}
-                onChange={handlePanGSTChange}
-               
-              />
-              {!isPanGSTValid && (
-                <span style={{ color: "red" }}>Invalid PAN Number</span>
-              )}
-            </div>
-
             {/* Slot Selection */}
             <div className="col-lg-6 col-md-12 col-sm-12 mb-12">
-           <select name="slot" required onChange={handleSlotChange} defaultValue="">
-              <option value="" disabled>
-                Pick any Slot*
-              </option>
-              {workshops.map((slot) => (
-                <option
-                  key={slot.id}
-                  value={JSON.stringify({
-                    courseName: slot.courseName,
-                    startDate: slot.dateRangeOne,
-                    endDate: slot.dateRangeTwo,
-                    location: slot.location,
-                    format: slot.format,
-                    amount: `${slot.amount} INR`,
-                  })}
-                >
-                  {`${slot.courseName}: ${slot.dateRangeOne}${
-                    slot.dateRangeTwo ? ` - ${slot.dateRangeTwo}` : ""
-                  }, ${slot.location} (${slot.format}) (${slot.amount} INR)`}
+              <select name="slot" required defaultValue="">
+                <option value="" disabled>
+                  Pick any Slot*
                 </option>
-              ))}
-            </select>
+                {workshops.map((slot) => (
+                  <option
+                    key={slot.id}
+                    value={`${slot.courseName}: ${slot.dateRangeOne}${
+                      slot.dateRangeTwo ? ` - ${slot.dateRangeTwo}` : ""
+                    }, ${slot.location} (${slot.format})`}
+                  >
+                    {`${slot.courseName}: ${slot.dateRangeOne}${
+                      slot.dateRangeTwo ? ` - ${slot.dateRangeTwo}` : ""
+                    }, ${slot.location} (${slot.format})`}
+                  </option>
+                ))}
+              </select>
             </div>
-
-            {/* GST Option */}
-            <div className="col-sm-12 mb-12">
-              <label>Are you under GST?</label>
-              <br />
-              <div className="d-flex mt-2">
-                <input
-                  className="w-auto ms-2 me-2"
-                  type="radio"
-                  name="gst"
-                  value="Yes"
-                  onChange={handleGSTChange}
-                  required
-                />{" "}
-                Yes
-                <input
-                  className="w-auto ms-2 me-2"
-                  type="radio"
-                  name="gst"
-                  value="No"
-                  onChange={handleGSTChange}
-                  required
-                />{" "}
-                No
-              </div>
-            </div>
-
-            {/* GST Fields */}
-            {showGSTFields && (
-              <div id="gst_fields" className="col-12">
-                <div className="row">
-                  {/* GST Number */}
-                  <div className="col-lg-6 col-md-12 col-sm-12 mb-12">
-                    <input
-                      type="text"
-                      name="gst_number"
-                      placeholder="GST Number*"
-                      value={gstNumber}
-                      onChange={handleGstNumberChange}
-                      required
-                    />
-                    {!isGstNumberValid && (
-                      <span style={{ color: "red" }}>Invalid GST Number</span>
-                    )}
-                  </div>
-
-                  {/* Entity Name */}
-                  <div className="col-lg-6 col-md-12 col-sm-12 mb-12">
-                    <input
-                      type="text"
-                      name="entity_name"
-                      placeholder="Entity Name*"
-                      required
-                    />
-                  </div>
-
-                  {/* Address */}
-                  <div className="col-lg-6 col-md-12 col-sm-12 mb-12">
-                    <input
-                      type="text"
-                      name="address"
-                      placeholder="Address*"
-                      required
-                    />
-                  </div>
-
-                  {/* Additional Fields if Needed */}
-                  {/* Add more fields here if necessary */}
-                </div>
-              </div>
-            )}
-
-            {/* GST Not Applicable Fields */}
-            {showGSTFieldsOne && (
-              <div
-                id="gst_fields_one"
-                className="col-lg-6 col-md-12 col-sm-12 mb-12"
-              >
-                <input
-                  type="text"
-                  name="address"
-                  placeholder="Address*"
-                  required
-                />
-              </div>
-            )}
 
             {/* Comments/Message */}
             <div className="col-lg-12 col-md-12 col-sm-12 mb-12">
@@ -321,7 +157,7 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
                 <span
                   style={{
                     display: "block",
-                    color: isLoading ? "green" : "red",
+                    color: messageType === "success" ? "green" : "red",
                   }}
                 >
                   {message}
@@ -359,12 +195,13 @@ BookNowFormModal.propTypes = {
   toggle: PropTypes.func.isRequired,
   workshops: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       courseName: PropTypes.string.isRequired,
       dateRangeOne: PropTypes.string.isRequired,
       dateRangeTwo: PropTypes.string,
       location: PropTypes.string.isRequired,
       format: PropTypes.string.isRequired,
-      amount: PropTypes.number.isRequired,
+      amount: PropTypes.number,
       description: PropTypes.string,
     })
   ).isRequired,
