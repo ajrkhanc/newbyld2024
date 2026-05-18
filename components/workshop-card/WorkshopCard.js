@@ -183,7 +183,7 @@ function WorkshopCard() {
       {/* TOP SECTION */}
       {/* ========================= */}
 
-      <div className="row mt-3">
+      {/* <div className="row mt-3">
         <div className="col-12 d-flex justify-content-end">
           <button
             className="btn btn-primary d-flex align-items-center gap-2"
@@ -198,7 +198,7 @@ function WorkshopCard() {
           isOpen={viewCalenderOpen}
           OpenViewCalender={OpenViewCalender}
         />
-      </div>
+      </div> */}
 
       {/* ========================= */}
       {/* MAIN CONTENT */}
