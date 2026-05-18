@@ -492,7 +492,7 @@ const workshops = [
     courseName: "Crucial Conversations®",
     dateRangeOne: "2026-05-28",
     dateRangeTwo: "2026-05-29",
-    location: ["Mumbai", "Bangalore"],
+    location: ["Mumbai", "&", "Bangalore"],
     format: "In Person",
     trainerName: "TBD",
     description:
