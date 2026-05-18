@@ -117,9 +117,9 @@ function WorkshopCard() {
   // =========================
 
   const isMatchingFilters = (workshop) => {
-    const workshopCities = workshop.location
-      ? workshop.location.split("|").map((city) => city.trim())
-      : [];
+    const workshopCities = Array.isArray(workshop.location)
+      ? workshop.location
+      : workshop.location?.split("|").map((city) => city.trim()) || [];
 
     return (
       // Course filter
@@ -444,7 +444,7 @@ const workshops = [
     courseName: "Getting Things Done®",
     dateRangeOne: "2026-05-22",
     dateRangeTwo: "",
-    location: "Gurugram",
+    location: "India",
     format: "Virtual",
     trainerName: "Mehernosh",
     description:
@@ -480,7 +480,7 @@ const workshops = [
     courseName: "Everything DiSC® Certification",
     dateRangeOne: "2026-05-21",
     dateRangeTwo: "2026-05-22",
-    location: "Mumbai",
+    location: "Bangalore",
     format: "In Person",
     trainerName: "BrijKC",
     description:
@@ -492,7 +492,7 @@ const workshops = [
     courseName: "Crucial Conversations®",
     dateRangeOne: "2026-05-28",
     dateRangeTwo: "2026-05-29",
-    location: "Mumbai | Bangalore",
+    location: ["Mumbai", "Bangalore"],
     format: "In Person",
     trainerName: "TBD",
     description:
