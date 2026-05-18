@@ -5,7 +5,10 @@ export default function Workshops() {
   return (
     <>
       <Head>
-        <title>Leadership Skills Workshops & Training | Leadership Development Workshops by BYLD</title>
+        <title>
+          Leadership Skills Workshops & Training | Leadership Development
+          Workshops by BYLD
+        </title>
         <link rel="canonical" href="https://byldgroup.com/workshops" />
         <meta
           name="description"
@@ -29,8 +32,8 @@ export default function Workshops() {
                 <span className="separator">/</span>
               </li>
               <li>
-                <a href="/workshops">
-                  <span>Workshops</span>
+                <a href="/webinars">
+                  <span>Webinars</span>
                 </a>
               </li>
             </ul>
@@ -40,14 +43,14 @@ export default function Workshops() {
             <div className="col-sm-8">
               <div className="breadcrumbs-inner">
                 <h1 className="page-title wow fadeInUp delay-0-2s animated animateUP">
-                  Workshops - BYLD Group
+                  Webinars - BYLD Group
                 </h1>
               </div>
             </div>
           </div>
         </div>
       </div>
-     <WorkshopCard></WorkshopCard>
+      <WorkshopCard></WorkshopCard>
     </>
   );
 }

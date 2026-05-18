@@ -123,7 +123,7 @@ function WorkshopCard() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentWorkshops = filteredWorkshops.slice(
     startIndex,
-    startIndex + itemsPerPage
+    startIndex + itemsPerPage,
   );
 
   const courseCountMap = workshops.reduce((acc, workshop) => {
@@ -323,299 +323,55 @@ const workshops = [
     dateRangeTwo: "",
     location: "India",
     format: "Virtual",
-    trainerName: "Trainer Name",
+    trainerName: "Mehernosh",
     description:
-      "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
+      "Based on the bestseller by David Allen, Getting Things Done teaches skills that improve focus and productivity while reducing stress and burnout.",
   },
   {
     id: 2,
-    courseName: "Crucial Conversations for Mastering Dialogue ",
-    dateRangeOne: "July 28, 2025",
-    dateRangeTwo: "July 29, 2025",
-    location: "India | Bangalore",
+    courseName: "The SLII Experience™",
+    dateRangeOne: "19 may 2026",
+    dateRangeTwo: "20 may 2026",
+    location: "Bangalore",
     format: "In Person",
-    trainerName: "Trainer Name",
+    trainerName: "RonaldS",
     description:
       "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
   },
-  // {
-  //   id: 3,
-  //   courseName: "Crucial Influence",
-  //   dateRangeOne: "February 20, 2025",
-  //   dateRangeTwo: "February 21, 2025",
-  //   location: "India",
-  //   format: "Virtual",
-  //   pageUrl: "https://byldgroup.com/cruciallifechangingskills/influencer",
-  //   amount: 41300,
-  //   description:
-  //     "Crucial Influence® teaches leadership skills that are essential to leaders at every level. Drawing on five decades of social science research and work with successful leaders around the world, the Crucial Influence Model reveals why people do what they do and how all leaders—from aspiring leaders to top executives—can influence others for lasting results.",
-  // },
-  // {
-  //   id: 4,
-  //   courseName: "Everything Disc Workshop Certification®",
-  //   dateRangeOne: "February 24, 2025",
-  //   dateRangeTwo: "February 27, 2025",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 37760,
-  //   pageUrl: "https://byldgroup.com/everythingdisc",
-  //   description:
-  //     "Everything DiSC is a personal development learning experience that measures an individual’s preferences and tendencies based on the DiSC ®  profile. This simple yet powerful model describes four basic styles: D, i, S, and C, and serves as the foundation for the Everything DiSC application suit. Participants receive personalized insights of DiSC Assessment that deepen their understanding of self and others, making workplace interactions more enjoyable and effective. The result of DiSC analysis is a more engaged and collaborative workforce that can spark meaningful culture improvement in your organization. Psychometric analysis, on the other hand, fulfills an organization’s requirement of knowing and evaluating a candidate with perfection.",
-  // },
-  // {
-  //   id: 5,
-  //   courseName: "Crucial Conversations® For Mastering Dialogue",
-  //   dateRangeOne: "February 28, 2025",
-  //   dateRangeTwo: "March 1, 2025",
-  //   location: "India | Mumbai",
-  //   format: "In Person",
-  //   amount: 41300,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
-  //   description:
-  //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
-  // },
-  {
-    id: 6,
-    courseName: "Crucial Conversations® For Mastering Dialogue",
-    dateRangeOne: "August  28, 2025",
-    dateRangeTwo: "August  29, 2025",
-    location: "India | Gurugram",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
-  },
-  // {
-  //   id: 7,
-  //   courseName: "Crucial Conversations® For Mastering Dialogue TTT",
-  //   dateRangeOne: "March 10th, 2025",
-  //   dateRangeTwo: "",
-  //   location: "India | Gurugram",
-  //   format: "Virtual",
-  //   amount: 41300,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/crucial-conversations-for-mastering-dialogue",
-  //   description:
-  //     "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
-  // },
-  {
-    id: 8,
-    courseName: "The SLII Experience™",
-    dateRangeOne: "July 29, 2025",
-    dateRangeTwo: "July 30, 2025",
-    location: "India | Gurugram",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  },
-  {
-    id: 9,
-    courseName: "The SLII Experience™ TTT",
-    dateRangeOne: "July 31, 2025",
-    dateRangeTwo: "August 1, 2025",
-    location: "India | Gurugram",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  },
-  // {
-  //   id: 10,
-  //   courseName: "The SLII Experience™ T4T F2F",
-  //   dateRangeOne: "March 20, 2025",
-  //   dateRangeTwo: "March 21, 2025",
-  //   location: "India | Hyderabad",
-  //   format: "In Person",
-  //   amount: 442500,
-  //   pageUrl: "https://byldgroup.com/blanchardindia/our-content/programs/slii",
-  //   description:
-  //     "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  // },
-  {
-    id: 11,
-    courseName: "The SLII Experience™",
-    dateRangeOne: "August  20, 2025",
-    dateRangeTwo: "August  21, 2025",
-    location: "India | Bangalore",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  },
-  {
-    id: 12,
-    courseName: "The SLII Experience™ TTT",
-    dateRangeOne: "August  22, 2025",
-    dateRangeTwo: "August  23, 2025",
-    location: "India | Bangalore",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  },
-  // {
-  //   id: 4,
-  //   courseName: "Disc Certification®",
-  //   dateRangeOne: "September 24, 2024",
-  //   dateRangeTwo: "September 27, 2024",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 37760,
-  //   pageUrl: "https://byldgroup.com/everythingdisc",
-  //   description:
-  //     "Everything DiSC is a personal development learning experience that measures an individual’s preferences and tendencies based on the DiSC ®  profile. This simple yet powerful model describes four basic styles: D, i, S, and C, and serves as the foundation for the Everything DiSC application suit. Participants receive personalized insights of DiSC Assessment that deepen their understanding of self and others, making workplace interactions more enjoyable and effective. The result of DiSC analysis is a more engaged and collaborative workforce that can spark meaningful culture improvement in your organization. Psychometric analysis, on the other hand, fulfills an organization’s requirement of knowing and evaluating a candidate with perfection.",
-  // },
-
-  // {
-  //   id: 6,
-  //   courseName: "The Power of Habit™",
-  //   dateRangeOne: "October 17, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India | Gurugram",
-  //   format: "In Person",
-  //   amount: 28910,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/the-power-of-habit",
-  //   description:
-  //     "Based on the bestseller by Charles Duhigg, The Power of Habit teaches a skillset for aligning behavior with values and goals, continually improving, adapting to the challenges and changes of work and life, and optimizing personal performance. *** FREE TRIAL *** To access a preview of The Power of Habit On Demand, click the “Free Trial” link in the upper right corner above “Enroll Now.”",
-  // },
-  // {
-  //   id: 7,
-  //   courseName: "Blanchard Management Essentials",
-  //   dateRangeOne: "October 18, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 29500,
-  //   pageUrl:
-  //     "https://byldgroup.com/blanchardindia/our-content/programs/blanchard-management-essentials",
-  //   description:
-  //     "Equip New Managers with Crucial Skills for Success When managers run into trouble, the costs are high: high turnover, low morale, low productivity, and more. Often, these performance challenges occur because they lack the basic management skills necessary for success. That's why we created Blanchard Management Essentials®: a transformational leadership training program for new managers and those who need to hone the essential skills needed to build relationships. Maintain a positive attitude towards team members, inspire engagement, and increase productivity.",
-  // },
-  // {
-  //   id: 8,
-  //   courseName: "Crucial Influence",
-  //   dateRangeOne: "November 12, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 41300,
-  //   pageUrl: "https://byldgroup.com/cruciallifechangingskills/influencer",
-  //   description:
-  //     "Crucial Influence® teaches leadership skills that are essential to leaders at every level. Drawing on five decades of social science research and work with successful leaders around the world, the Crucial Influence Model reveals why people do what they do and how all leaders—from aspiring leaders to top executives—can influence others for lasting results.",
-  // },
-  // {
-  //   id: 9,
-  //   courseName: "Getting Things Done®",
-  //   dateRangeOne: "December 13, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India | Bangalore",
-  //   format: "In Person",
-  //   amount: 28910,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
-  //   description:
-  //     "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
-  // },
-  // {
-  //   id: 10,
-  //   courseName: "Trapologist At Work™",
-  //   dateRangeOne: "December 16, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 28910,
-  //   pageUrl: "https://byldgroup.com/leadership-and-performance/trapologist",
-  //   description:
-  //     "The Trapologist at Work™ framework is unique and effective because it teaches you the restraining forces [traps] that are keeping you from achieving your goals and reaching your dreams. Most workshops do the opposite. They offer initiatives and to-dos to your already overwhelmed life.",
-  // },
-  // {
-  //   id: 11,
-  //   courseName: "Disc Certification®",
-  //   dateRangeOne: "December 10, 2024",
-  //   dateRangeTwo: "December 13, 2024",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 37760,
-  //   pageUrl: "https://byldgroup.com/everythingdisc",
-  //   //  amount: 1,
-  //   description:
-  //     "Everything DiSC is a personal development learning experience that measures an individual’s preferences and tendencies based on the DiSC ®  profile. This simple yet powerful model describes four basic styles: D, i, S, and C, and serves as the foundation for the Everything DiSC application suit. Participants receive personalized insights of DiSC Assessment that deepen their understanding of self and others, making workplace interactions more enjoyable and effective. The result of DiSC analysis is a more engaged and collaborative workforce that can spark meaningful culture improvement in your organization. Psychometric analysis, on the other hand, fulfills an organization’s requirement of knowing and evaluating a candidate with perfection.",
-  // },
-  // {
-  //   id: 12,
-  //   courseName: "Self Leadership",
-  //   dateRangeOne: "December 10, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India | Gurugram ",
-  //   format: "Virtual",
-  //   amount: 29500,
-  //   pageUrl:
-  //     "https://byldgroup.com/blanchardindia/our-content/programs/self-leadership",
-  //   description:
-  //     "Based on SLII ® , the most widely taught management model in the world, the Self Leadership course provides strategies for learners to gain more satisfaction from work by examining their motivation, confidence, knowledge, and skills.",
-  // },
-  // {
-  //   id: 13,
-  //   courseName: "Getting Things Done®",
-  //   dateRangeOne: "January 24, 2025",
-  //   dateRangeTwo: "",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 28910,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
-  //   description:
-  //     "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
-  // },
-  {
-    id: 14,
-    courseName: "The SLII Experience™",
-    dateRangeOne: "September 23, 2025",
-    dateRangeTwo: "September 24, 2025",
-    location: "India | Gurugram",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  },
-  {
-    id: 15,
-    courseName: "The SLII Experience™ TTT",
-    dateRangeOne: "September 25, 2025",
-    dateRangeTwo: "September 26, 2025",
-    location: "India | Gurugram",
-    format: "In Person",
-    trainerName: "Trainer Name",
-    description:
-      "SLII ®  is the most widely taught leadership model in the world. It teaches leaders to use the appropriate leadership style in response to the needs of the person and the situation. The course’s interactive learning design uses powerful techniques that immerse learners in SLII quickly, deeply, and effectively.",
-  },
-
-  // {
-  //   id: 24,
-  //   courseName: "Getting Things Done®",
-  //   dateRangeOne: "October 24, 2024",
-  //   dateRangeTwo: "",
-  //   location: "India",
-  //   format: "Virtual",
-  //   amount: 28910,
-  //   pageUrl:
-  //     "https://byldgroup.com/cruciallifechangingskills/getting-things-done",
-  //   description:
-  //     "Created more than 30 years ago by author and productivity expert David Allen, Getting Things Done® (GTD®) teaches skills to be focused and productive without stress and burnout. The on-demand course teaches learners how to increase individual focus; capture, prioritize, and organize ideas, projects, and requests; trust their choices; say no to low-priority work; and improve team productivity. Teams and organizations around the world have turned to Getting Things Done to improve their people’s ability to manage their time and attention so they can focus on the projects and people that matter most. Results include more predictable and consistent outcomes, less stress and burnout, and improved individual and team effectiveness.",
-  // },
 
   {
-    id: 25,
-    courseName: "Crucial Conversations for Mastering Dialogue ",
-    dateRangeOne: "September 25, 2025",
-    dateRangeTwo: "September 26, 2025",
-    location: "India | Mumbai",
+    id: 3,
+    courseName: "The SLII Experience™",
+    dateRangeOne: "21 may 2026",
+    dateRangeTwo: "22 may 2026",
+    location: "Bangalore",
     format: "In Person",
-    trainerName: "Trainer Name",
+    trainerName: "BrijKC",
     description:
-      "Crucial Conversations® for Mastering Dialogue teaches powerful skills to help you speak up quickly, directly, and effectively when it matters most. This course, grounded in decades of social science research, introduces the foundations of holding impactful dialogue and takes a deeper dive into mastering the most challenging conversations, at work and at home.",
+      "SLII® introduces a practical diagnostic lens that helps leaders assess what each individual needs in the moment, the right balance of direction and support to accelerate growth, build accountability, and drive performance.",
+  },
+
+  {
+    id: 4,
+    courseName: "Everything DiSC® Certification",
+    dateRangeOne: "21 may 2026",
+    dateRangeTwo: "22 may 2026",
+    location: "Bangalore",
+    format: "In Person",
+    trainerName: "BrijKC",
+    description:
+      "The Everything DiSC Certification course is an online two-week, blended learning experience designed for in-housepractitioners who want to implement and scale Everything DiSC within their organization.",
+  },
+
+  {
+    id: 5,
+    courseName: "CrucialConversations® for MasteringDialogue",
+    dateRangeOne: "28 may 2026",
+    dateRangeTwo: "29 may 2026",
+    location: "Mumbai | Bangalore",
+    format: "In Person",
+    trainerName: "TBD",
+    description:
+      "Crucial Conversations for Mastering Dialogue teaches nine research-backed skills through engaging video, interactive practice exercises, and personal application and making the learning both effective and lasting.",
   },
 ];
