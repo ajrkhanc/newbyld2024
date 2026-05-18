@@ -1,4 +1,3 @@
-
 import { Modal, ModalHeader, ModalBody, Spinner } from "reactstrap";
 import { useState } from "react";
 import PropTypes from "prop-types";
@@ -44,26 +43,26 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
             gst: formData.get("gst"),
             comments: formData.get("comments"),
           }),
-        }
+        },
       );
 
       if (response.ok) {
         setMessage("Thank you for submitting your details.");
         setTimeout(() => {
           const redirectURL = `https://payments.byldgroup.com/Razorpay/EagleFlight?name=${encodeURIComponent(
-            formData.get("name")
+            formData.get("name"),
           )}&email=${encodeURIComponent(
-            formData.get("email")
+            formData.get("email"),
           )}&contact=${encodeURIComponent(
-            formData.get("phone")
+            formData.get("phone"),
           )}&GstNumber=${encodeURIComponent(
-            formData.get("gst_number")
+            formData.get("gst_number"),
           )}&EntityName=${encodeURIComponent(
-            formData.get("entity_name")
+            formData.get("entity_name"),
           )}&Amount=${amount}&Address=${encodeURIComponent(
-            formData.get("address")
+            formData.get("address"),
           )}&PanNumber=${encodeURIComponent(
-            formData.get("pan_number")
+            formData.get("pan_number"),
           )}&gst=${encodeURIComponent(formData.get("gst"))}`;
           window.location.href = redirectURL;
         }, 1000);
@@ -176,7 +175,6 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
                 placeholder="PAN Number"
                 value={panGST}
                 onChange={handlePanGSTChange}
-               
               />
               {!isPanGSTValid && (
                 <span style={{ color: "red" }}>Invalid PAN Number</span>
@@ -185,28 +183,33 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
 
             {/* Slot Selection */}
             <div className="col-lg-6 col-md-12 col-sm-12 mb-12">
-           <select name="slot" required onChange={handleSlotChange} defaultValue="">
-              <option value="" disabled>
-                Pick any Slot*
-              </option>
-              {workshops.map((slot) => (
-                <option
-                  key={slot.id}
-                  value={JSON.stringify({
-                    courseName: slot.courseName,
-                    startDate: slot.dateRangeOne,
-                    endDate: slot.dateRangeTwo,
-                    location: slot.location,
-                    format: slot.format,
-                    amount: `${slot.amount} INR`,
-                  })}
-                >
-                  {`${slot.courseName}: ${slot.dateRangeOne}${
-                    slot.dateRangeTwo ? ` - ${slot.dateRangeTwo}` : ""
-                  }, ${slot.location} (${slot.format}) (${slot.amount} INR)`}
+              <select
+                name="slot"
+                required
+                onChange={handleSlotChange}
+                defaultValue=""
+              >
+                <option value="" disabled>
+                  Pick any Slot*
                 </option>
-              ))}
-            </select>
+                {workshops.map((slot) => (
+                  <option
+                    key={slot.id}
+                    value={JSON.stringify({
+                      courseName: slot.courseName,
+                      startDate: slot.dateRangeOne,
+                      endDate: slot.dateRangeTwo,
+                      location: slot.location,
+                      format: slot.format,
+                      amount: `${slot.amount} INR`,
+                    })}
+                  >
+                    {`${slot.courseName}: ${slot.dateRangeOne}${
+                      slot.dateRangeTwo ? ` - ${slot.dateRangeTwo}` : ""
+                    }, ${slot.location} (${slot.format}) (${slot.amount} INR)`}
+                  </option>
+                ))}
+              </select>
             </div>
 
             {/* GST Option */}
@@ -366,7 +369,7 @@ BookNowFormModal.propTypes = {
       format: PropTypes.string.isRequired,
       amount: PropTypes.number.isRequired,
       description: PropTypes.string,
-    })
+    }),
   ).isRequired,
 };
 
