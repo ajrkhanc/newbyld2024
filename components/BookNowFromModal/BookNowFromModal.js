@@ -39,6 +39,8 @@ function BookNowFormModal({ isOpen, toggle, workshops }) {
       if (response.ok) {
         setMessage("Thank you for submitting your details.");
         setMessageType("success");
+        event.target.reset();
+        toggle();
       } else {
         setMessage("There was a problem with the request.");
         setMessageType("error");
